@@ -34,6 +34,9 @@ layout: default
     <div class="verse-content">
         <h1>{{ page.title }}</h1>
 
+        {% comment %}
+        TODO: Add verse images when ready
+        Images will be named: verse_01.jpg, verse_02.jpg, etc.
         {% if page.verse_number < 10 %}
             {% assign verse_img = page.verse_number | prepend: '0' %}
         {% else %}
@@ -41,6 +44,7 @@ layout: default
         {% endif %}
         <img src="{{ '/images/verse_' | append: verse_img | append: '.jpg' | relative_url }}"
              alt="Image for {{ page.title }} - {{ t.labels.coming_soon }}">
+        {% endcomment %}
 
         <h2>{{ t.sections.devanagari }}</h2>
         <pre>{{ page.devanagari }}</pre>
