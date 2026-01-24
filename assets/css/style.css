@@ -106,7 +106,72 @@ main {
     min-height: 60vh;
 }
 
-/* Intro Section */
+/* Hero Section */
+.hero-section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.hero-section h2 {
+    color: #ff6b35;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.hero-section .blessing {
+    margin: 0.5rem auto 1.5rem;
+    max-width: 700px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* About Section (Collapsible) */
+.about-section {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.about-section summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #ff6b35;
+    padding: 0.5rem;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.about-section summary::before {
+    content: "▶ ";
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.about-section[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.about-section summary:hover {
+    color: #e55a2b;
+}
+
+.about-section p {
+    margin: 1rem 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Intro Section (Legacy) */
 .intro {
     margin-bottom: 3rem;
     text-align: center;

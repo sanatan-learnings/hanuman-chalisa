@@ -3,28 +3,30 @@ layout: default
 title: Home
 ---
 
-<div class="intro">
+<div class="hero-section">
     <h2>Welcome to the Hanuman Chalisa Guide</h2>
-    <p><em>May Lord Hanuman's blessings be with all who study and recite these sacred verses.</em></p>
-
-    <h3>About the Hanuman Chalisa</h3>
-    <p>The Hanuman Chalisa is a devotional hymn dedicated to Lord Hanuman, composed by the 16th-century
-    poet-saint Goswami Tulsidas. Written in Awadhi language, it consists of 40 verses (chaupais) preceded
-    by two introductory dohas (couplets) and followed by a closing doha.</p>
-
-    <p>The word "Chalisa" means "forty," referring to the 40 verses that extol Hanuman's virtues, strength,
-    and unwavering devotion to Lord Rama. Regular recitation of the Hanuman Chalisa is believed to bring
-    strength, courage, and protection from negative energies.</p>
-
-    <p>This comprehensive guide presents a detailed, verse-by-verse exploration with translations,
-    meanings, stories, and practical applications. Navigate through all verses using the links
-    below or use arrow keys (← →) when viewing individual verses.</p>
+    <p class="blessing"><em>May Lord Hanuman's blessings be with all who study and recite these sacred verses.</em></p>
 
     <div class="quick-actions">
         <a href="{{ '/full-chalisa' | relative_url }}" class="btn-primary">📖 Read Complete Chalisa</a>
         <a href="{{ '/search' | relative_url }}" class="btn-secondary">🔍 Search Verses</a>
         <a href="{{ '/docs/guide' | relative_url }}" class="btn-secondary">📚 Usage Guide</a>
     </div>
+
+    <details class="about-section">
+        <summary>About the Hanuman Chalisa</summary>
+        <p>The Hanuman Chalisa is a devotional hymn dedicated to Lord Hanuman, composed by the 16th-century
+        poet-saint Goswami Tulsidas. Written in Awadhi language, it consists of 40 verses (chaupais) preceded
+        by two introductory dohas (couplets) and followed by a closing doha.</p>
+
+        <p>The word "Chalisa" means "forty," referring to the 40 verses that extol Hanuman's virtues, strength,
+        and unwavering devotion to Lord Rama. Regular recitation of the Hanuman Chalisa is believed to bring
+        strength, courage, and protection from negative energies.</p>
+
+        <p>This comprehensive guide presents a detailed, verse-by-verse exploration with translations,
+        meanings, stories, and practical applications. Navigate through all verses using the links
+        below or use arrow keys (← →) when viewing individual verses.</p>
+    </details>
 </div>
 
 <section class="verse-navigation">
@@ -81,13 +83,5 @@ title: Home
     <h3>🙏 Closing Doha</h3>
     <ul>
         <li><a href="{{ '/verses/doha_closing' | relative_url }}">Closing Doha: Final Prayer</a></li>
-    </ul>
-</section>
-
-<section class="resources">
-    <h3>Additional Resources</h3>
-    <ul>
-        <li><a href="{{ '/docs/background' | relative_url }}">Background & History</a></li>
-        <li><a href="{{ '/docs/guide' | relative_url }}">Comprehensive Usage Guide</a></li>
     </ul>
 </section>
