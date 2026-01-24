@@ -1,5 +1,7 @@
 # Verse [Number]: [Brief Title/Theme]
 
+![Verse [Number]](../images/verse_[number].jpg)
+
 ## 1. Original Hindi Text (Devanagari Script)
 
 ```
@@ -78,15 +80,6 @@ Listen to the audio above for authentic pronunciation. The following breakdown h
 **When to Use This Verse:**
 [Brief description of life situations, challenges, or moments where this verse offers guidance and inspiration]
 
-## 10. Accompanying Image
-
-![Verse [Number] - [Description]](../images/verse_[number].jpg)
-
-**Iconographic Elements:**
-- [Description of visual elements]
-- [Symbolic significance]
-- [Traditional artistic interpretation]
-
----
+## 10. Recitation Guidelines
 
 *This verse is part of the [Hanuman Chalisa Comprehensive Guide](../README.md)*
