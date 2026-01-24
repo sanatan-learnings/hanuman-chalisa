@@ -22,6 +22,7 @@ sections:
 labels:
   audio_recitation: "ऑडियो पाठ"
   coming_soon: "जल्द आ रहा है"
+  audio_description: "एआई वॉइस सिंथेसिस का उपयोग करके पूर्ण-गति और धीमी-गति पाठ के लिए ऑडियो फ़ाइलें जल्द ही जोड़ी जाएंगी।"
   key_teaching: "मुख्य शिक्षा"
   when_to_use: "इस छंद का उपयोग कब करें"
   phonetic_breakdown: "ध्वन्यात्मक विवरण"

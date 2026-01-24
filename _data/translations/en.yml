@@ -22,6 +22,7 @@ sections:
 labels:
   audio_recitation: "Audio Recitation"
   coming_soon: "Coming Soon"
+  audio_description: "Audio files for full-speed and slow-speed recitation will be added soon using AI voice synthesis."
   key_teaching: "Key Teaching"
   when_to_use: "When to Use This Verse"
   phonetic_breakdown: "Phonetic Breakdown"

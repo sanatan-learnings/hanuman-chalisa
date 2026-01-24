@@ -2,40 +2,36 @@
 layout: default
 title: Home
 ---
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
 
 <div class="hero-section">
-    <p class="blessing"><em>May Lord Hanuman's blessings be with all who study and recite these sacred verses.</em></p>
+    <p class="blessing"><em><span data-lang="en">{{ t_en.home.blessing }}</span><span data-lang="hi">{{ t_hi.home.blessing }}</span></em></p>
 
     <div class="quick-actions">
-        <a href="{{ '/full-chalisa' | relative_url }}" class="btn-primary">📖 Read Complete Chalisa</a>
-        <a href="{{ '/search' | relative_url }}" class="btn-secondary">🔍 Search Verses</a>
-        <a href="{{ '/docs/guide' | relative_url }}" class="btn-secondary">📚 Usage Guide</a>
+        <a href="{{ '/full-chalisa' | relative_url }}" class="btn-primary">📖 <span data-lang="en">{{ t_en.home.read_complete }}</span><span data-lang="hi">{{ t_hi.home.read_complete }}</span></a>
+        <a href="{{ '/search' | relative_url }}" class="btn-secondary">🔍 <span data-lang="en">{{ t_en.home.search_verses }}</span><span data-lang="hi">{{ t_hi.home.search_verses }}</span></a>
+        <a href="{{ '/docs/guide' | relative_url }}" class="btn-secondary">📚 <span data-lang="en">{{ t_en.home.usage_guide }}</span><span data-lang="hi">{{ t_hi.home.usage_guide }}</span></a>
     </div>
 
     <details class="about-section">
-        <summary>About the Hanuman Chalisa</summary>
-        <p>The Hanuman Chalisa is a devotional hymn dedicated to Lord Hanuman, composed by the 16th-century
-        poet-saint Goswami Tulsidas. Written in Awadhi language, it consists of 40 verses (chaupais) preceded
-        by two introductory dohas (couplets) and followed by a closing doha.</p>
+        <summary><span data-lang="en">{{ t_en.home.about_title }}</span><span data-lang="hi">{{ t_hi.home.about_title }}</span></summary>
+        <p><span data-lang="en">{{ t_en.home.about_p1 }}</span><span data-lang="hi">{{ t_hi.home.about_p1 }}</span></p>
 
-        <p>The word "Chalisa" means "forty," referring to the 40 verses that extol Hanuman's virtues, strength,
-        and unwavering devotion to Lord Rama. Regular recitation of the Hanuman Chalisa is believed to bring
-        strength, courage, and protection from negative energies.</p>
+        <p><span data-lang="en">{{ t_en.home.about_p2 }}</span><span data-lang="hi">{{ t_hi.home.about_p2 }}</span></p>
 
-        <p>This comprehensive guide presents a detailed, verse-by-verse exploration with translations,
-        meanings, stories, and practical applications. Navigate through all verses using the links
-        below or use arrow keys (← →) when viewing individual verses.</p>
+        <p><span data-lang="en">{{ t_en.home.about_p3 }}</span><span data-lang="hi">{{ t_hi.home.about_p3 }}</span></p>
     </details>
 </div>
 
 <section class="verse-navigation">
-    <h3>🕉️ Opening Dohas</h3>
+    <h3>🕉️ <span data-lang="en">{{ t_en.home.opening_dohas }}</span><span data-lang="hi">{{ t_hi.home.opening_dohas }}</span></h3>
     <ul>
         <li><a href="{{ '/verses/doha_01' | relative_url }}">Doha 1: Invocation to the Guru</a></li>
         <li><a href="{{ '/verses/doha_02' | relative_url }}">Doha 2: Prayer to Hanuman</a></li>
     </ul>
 
-    <h3>📿 Main Chalisa (40 Verses)</h3>
+    <h3>📿 <span data-lang="en">{{ t_en.home.main_chalisa }}</span><span data-lang="hi">{{ t_hi.home.main_chalisa }}</span></h3>
     <ul class="verse-list">
         <li><a href="{{ '/verses/verse_01' | relative_url }}">Verse 1: Ocean of Knowledge and Virtues</a></li>
         <li><a href="{{ '/verses/verse_02' | relative_url }}">Verse 2: Rama's Messenger</a></li>
@@ -79,7 +75,7 @@ title: Home
         <li><a href="{{ '/verses/verse_40' | relative_url }}">Verse 40: Tulsidas's Prayer</a></li>
     </ul>
 
-    <h3>🙏 Closing Doha</h3>
+    <h3>🙏 <span data-lang="en">{{ t_en.home.closing_doha }}</span><span data-lang="hi">{{ t_hi.home.closing_doha }}</span></h3>
     <ul>
         <li><a href="{{ '/verses/doha_closing' | relative_url }}">Closing Doha: Final Prayer</a></li>
     </ul>

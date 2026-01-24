@@ -1,9 +1,7 @@
 {% assign lang = page.lang | default: "en" %}
-{% if site.data.translations[lang] %}
-  {% assign t = site.data.translations[lang] %}
-{% else %}
-  {% assign t = site.data.translations.en %}
-{% endif %}
+{% assign t = site.data.translations.en %}
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
 <!DOCTYPE html>
 <html lang="{{ lang }}" dir="{{ t.direction }}">
 <head>
@@ -20,7 +18,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="header-title">
-                    <h1><a href="{{ '/' | relative_url }}?lang={{ lang }}">{{ site.title }}</a></h1>
+                    <h1><a href="{{ '/' | relative_url }}?lang={{ lang }}"><span data-lang="en">{{ t_en.home.title }}</span><span data-lang="hi">{{ t_hi.home.title }}</span></a></h1>
                     <p class="subtitle">ॐ श्री हनुमते नमः</p>
                 </div>
                 <div class="language-switcher">
