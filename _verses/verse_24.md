@@ -53,13 +53,23 @@ word_meanings:
     roman: "Sunavai"
     meaning: "is uttered/spoken"
 
-literal_translation: "Ghosts and demons do not come near when the name of Mahavir (Hanuman) is uttered."
+literal_translation:
+  en: "Ghosts and demons do not come near when the name of Mahavir (Hanuman) is uttered."
+  hi: "भूत और पिशाच पास नहीं आते जब महावीर (हनुमान) का नाम लिया जाता है।"
 
-interpretive_meaning: "This verse addresses protection from negative forces - both external (evil spirits) and internal (negative thoughts, fears). The mere utterance of Hanuman's name creates a protective shield. It teaches that divine names carry power and that faith itself is protective. The verse is popular for overcoming fear, especially fear of the unknown."
+interpretive_meaning:
+  en: "This verse addresses protection from negative forces - both external (evil spirits) and internal (negative thoughts, fears). The mere utterance of Hanuman's name creates a protective shield. It teaches that divine names carry power and that faith itself is protective. The verse is popular for overcoming fear, especially fear of the unknown."
+  hi: "यह चौपाई नकारात्मक शक्तियों से सुरक्षा की बात करती है - बाहरी (दुष्ट आत्माएं) और आंतरिक (नकारात्मक विचार, भय) दोनों। हनुमान के नाम के उच्चारण मात्र से एक सुरक्षा कवच बन जाता है। यह सिखाता है कि दिव्य नामों में शक्ति है और विश्वास स्वयं सुरक्षात्मक है। यह चौपाई भय पर विजय पाने के लिए विशेष रूप से लोकप्रिय है, खासकर अज्ञात का भय।"
 
-story: "Hanuman is particularly invoked for protection against evil forces and negative energies. His fierce form and absolute dedication to dharma make him the destroyer of all negativity. Many devotees recite Hanuman Chalisa at night or during difficult times specifically for this protective quality. The tradition holds that spaces where Hanuman's name is chanted remain free from negative influences."
+story:
+  en: "Hanuman is particularly invoked for protection against evil forces and negative energies. His fierce form and absolute dedication to dharma make him the destroyer of all negativity. Many devotees recite Hanuman Chalisa at night or during difficult times specifically for this protective quality. The tradition holds that spaces where Hanuman's name is chanted remain free from negative influences."
+  hi: "हनुमान को विशेष रूप से दुष्ट शक्तियों और नकारात्मक ऊर्जाओं से सुरक्षा के लिए आह्वान किया जाता है। उनका उग्र रूप और धर्म के प्रति पूर्ण समर्पण उन्हें सभी नकारात्मकता के विनाशक बनाता है। कई भक्त विशेष रूप से इस सुरक्षात्मक गुण के लिए रात में या कठिन समय में हनुमान चालीसा का पाठ करते हैं। परंपरा मानती है कि जहां हनुमान का नाम जप किया जाता है, वह स्थान नकारात्मक प्रभावों से मुक्त रहता है।"
 
 practical_application:
-  teaching: "Chanting Hanuman's name creates a protective shield against all negative forces - external threats and internal fears alike."
-  when_to_use: "Recite this verse when experiencing fear of the dark, negative energies, or when you need protection from harmful influences."
+  teaching:
+    en: "Chanting Hanuman's name creates a protective shield against all negative forces - external threats and internal fears alike."
+    hi: "हनुमान के नाम का जप सभी नकारात्मक शक्तियों के विरुद्ध एक सुरक्षा कवच बनाता है - बाहरी खतरे और आंतरिक भय दोनों से।"
+  when_to_use:
+    en: "Recite this verse when experiencing fear of the dark, negative energies, or when you need protection from harmful influences."
+    hi: "इस चौपाई का पाठ करें जब अंधेरे का डर हो, नकारात्मक ऊर्जाएं महसूस हों, या जब हानिकारक प्रभावों से सुरक्षा की आवश्यकता हो।"
 ---

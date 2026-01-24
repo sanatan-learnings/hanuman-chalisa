@@ -53,13 +53,23 @@ word_meanings:
     roman: "Balbira"
     meaning: "mighty hero"
 
-literal_translation: "Crises are removed and all suffering is destroyed for one who remembers the mighty hero Hanuman."
+literal_translation:
+  en: "Crises are removed and all suffering is destroyed for one who remembers the mighty hero Hanuman."
+  hi: "संकट कट जाते हैं और सभी पीड़ा नष्ट हो जाती है जो बलवीर हनुमान को स्मरण करता है।"
 
-interpretive_meaning: "This verse reiterates Hanuman's role as "Sankat Mochan" with emphasis on "sumirai" (remembrance). Even simple remembrance, not elaborate rituals, is sufficient. The complete removal of both crisis (sankat) and suffering (pira) - external troubles and internal pain - shows Hanuman's comprehensive protection. The verse emphasizes accessibility - anyone can remember Hanuman anywhere."
+interpretive_meaning:
+  en: "This verse reiterates Hanuman's role as "Sankat Mochan" with emphasis on "sumirai" (remembrance). Even simple remembrance, not elaborate rituals, is sufficient. The complete removal of both crisis (sankat) and suffering (pira) - external troubles and internal pain - shows Hanuman's comprehensive protection. The verse emphasizes accessibility - anyone can remember Hanuman anywhere."
+  hi: "यह चौपाई 'सुमिरै' (स्मरण) पर जोर देते हुए हनुमान की 'संकट मोचन' भूमिका को दोहराती है। विस्तृत अनुष्ठानों की नहीं, केवल सरल स्मरण पर्याप्त है। संकट और पीरा दोनों का पूर्ण निवारण - बाहरी परेशानियां और आंतरिक दर्द - हनुमान की व्यापक सुरक्षा को दर्शाता है। यह चौपाई सुलभता पर जोर देती है - कोई भी कहीं भी हनुमान को स्मरण कर सकता है।"
 
-story: "Countless temples named "Sankat Mochan" across India testify to this attribute. Stories abound of devotees calling out to Hanuman in dire circumstances - imprisonment, illness, poverty, danger - and receiving miraculous help. The power lies not in elaborate worship but in sincere remembrance, making Hanuman accessible to all, regardless of education or resources."
+story:
+  en: "Countless temples named "Sankat Mochan" across India testify to this attribute. Stories abound of devotees calling out to Hanuman in dire circumstances - imprisonment, illness, poverty, danger - and receiving miraculous help. The power lies not in elaborate worship but in sincere remembrance, making Hanuman accessible to all, regardless of education or resources."
+  hi: "भारत भर में 'संकट मोचन' नाम के अनगिनत मंदिर इस गुण की गवाही देते हैं। भयानक परिस्थितियों - कारावास, बीमारी, गरीबी, खतरे - में हनुमान को पुकारने वाले भक्तों और चमत्कारी सहायता प्राप्त करने की कहानियां प्रचुर हैं। शक्ति विस्तृत पूजा में नहीं बल्कि सच्चे स्मरण में निहित है, जो हनुमान को शिक्षा या संसाधनों की परवाह किए बिना सभी के लिए सुलभ बनाती है।"
 
 practical_application:
-  teaching: "Simple, sincere remembrance of Hanuman is sufficient to remove all crises and suffering - no elaborate rituals required."
-  when_to_use: "Recite this verse during any crisis or pain, knowing that sincere remembrance of Hanuman brings comprehensive relief."
+  teaching:
+    en: "Simple, sincere remembrance of Hanuman is sufficient to remove all crises and suffering - no elaborate rituals required."
+    hi: "हनुमान का सरल, सच्चा स्मरण सभी संकटों और पीड़ाओं को दूर करने के लिए पर्याप्त है - कोई विस्तृत अनुष्ठान आवश्यक नहीं।"
+  when_to_use:
+    en: "Recite this verse during any crisis or pain, knowing that sincere remembrance of Hanuman brings comprehensive relief."
+    hi: "किसी भी संकट या पीड़ा के दौरान इस चौपाई का पाठ करें, यह जानते हुए कि हनुमान का सच्चा स्मरण व्यापक राहत लाता है।"
 ---
