@@ -51,14 +51,14 @@ For detailed information about the verse structure, see **[verse-structure.md](d
 
 ## Upcoming Features
 
-We have plans for several exciting enhancements. Issue templates are ready in `.github/ISSUE_TEMPLATES/`:
+We have several exciting enhancements planned! Check out our [GitHub Issues](https://github.com/arun-gupta/hanuman-chalisa/issues) for:
 
-1. **Audio Recitations** ([template](.github/ISSUE_TEMPLATES/audio-recitation.md)) - Generate audio files using ElevenLabs for all 43 verses (full speed + slow speed)
-2. **PDF Generation** ([template](.github/ISSUE_TEMPLATES/pdf-generation.md)) - Create a printable PDF with Devanagari text, transliteration, translations, and images
-3. **Alternate Image Themes** ([template](.github/ISSUE_TEMPLATES/alternate-image-themes.md)) - Multiple artistic styles (traditional, minimalist, photographic, etc.) with theme switcher
-4. **Localization** ([template](.github/ISSUE_TEMPLATES/localization.md)) - Translate the website into Hindi, Tamil, Telugu, Spanish, and other languages
+1. **Audio Recitations** - Generate audio files using ElevenLabs for all 43 verses (full speed + slow speed)
+2. **PDF Generation** - Create a printable PDF with Devanagari text, transliteration, translations, and images
+3. **Alternate Image Themes** - Multiple artistic styles (traditional, minimalist, photographic, etc.) with theme switcher
+4. **Localization** - Translate the website into Hindi, Tamil, Telugu, Spanish, and other languages
 
-Want to help? Create an issue on GitHub using these templates or see [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started!
+Want to help? Check the [issues](https://github.com/arun-gupta/hanuman-chalisa/issues) or see [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started!
 
 ## Contribution & Feedback
 
