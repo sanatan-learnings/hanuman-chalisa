@@ -25,7 +25,59 @@ layout: default
     </nav>
 
     <div class="verse-content">
-        {{ content }}
+        <h1>{{ page.title }}</h1>
+
+        {% assign verse_img = page.verse_number | prepend: '00' | slice: -2, 2 %}
+        <img src="{{ '/images/verse_' | append: verse_img | append: '.jpg' | relative_url }}"
+             alt="Image for {{ page.title }} - Coming Soon">
+
+        <h2>1. Original Hindi Text (Devanagari Script)</h2>
+        <pre>{{ page.devanagari }}</pre>
+
+        <h2>2. Simplified Transliteration</h2>
+        <pre>{{ page.transliteration }}</pre>
+
+        <h2>3. Pronunciation Guide</h2>
+        <p><strong>Audio Recitation:</strong> <em>(Coming Soon)</em></p>
+        <p>Audio files for full-speed and slow-speed recitation will be added soon using ElevenLabs AI voice synthesis. See our <a href="https://github.com/arun-gupta/hanuman-chalisa/issues">GitHub issues</a> for progress.</p>
+
+        {% if page.phonetic_notes %}
+        <p><strong>Phonetic Breakdown:</strong></p>
+        <p>Key words and their pronunciation:</p>
+        <ul>
+        {% for note in page.phonetic_notes %}
+            <li><strong>{{ note.word }}</strong> - [Phonetic: {{ note.phonetic }}] (emphasis on {{ note.emphasis }})</li>
+        {% endfor %}
+        </ul>
+        <p><em>For general recitation tips and guidelines, see the <a href="{{ '/docs/guide' | relative_url }}">Comprehensive Guide</a>.</em></p>
+        {% endif %}
+
+        <h2>4. Word-by-Word Meaning</h2>
+        <ul>
+        {% for item in page.word_meanings %}
+            <li><strong>{{ item.word }}</strong> ({{ item.roman }}) - {{ item.meaning }}</li>
+        {% endfor %}
+        </ul>
+
+        <h2>5. Literal Translation</h2>
+        <p>{{ page.literal_translation }}</p>
+
+        <h2>6. Interpretive Meaning</h2>
+        <p>{{ page.interpretive_meaning }}</p>
+
+        <h2>7. Story Behind the Verse</h2>
+        <p>{{ page.story }}</p>
+
+        <h2>9. Practical Application</h2>
+        <p><strong>Key Teaching:</strong><br>
+        {{ page.practical_application.teaching }}</p>
+
+        <p><strong>When to Use This Verse:</strong><br>
+        {{ page.practical_application.when_to_use }}</p>
+
+        <hr>
+
+        <p><em>For recitation guidelines and usage instructions, see the <a href="{{ '/docs/guide' | relative_url }}">Comprehensive Guide</a>.</em></p>
     </div>
 
     <nav class="verse-nav bottom">

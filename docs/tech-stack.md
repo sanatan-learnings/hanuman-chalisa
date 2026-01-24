@@ -1,479 +1,227 @@
 # Technology Stack
 
-This document outlines the technologies, tools, and services used to build and maintain the Hanuman Chalisa interactive website.
-
-## Tech Stack Overview
+## Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    DEVELOPMENT ENVIRONMENT                   │
-├─────────────────────────────────────────────────────────────┤
-│  Claude Code (AI Assistant) │  PyCharm (JetBrains IDE)     │
-│  - Content generation       │  - Human review              │
-│  - Code automation          │  - Diff view & validation    │
-│  - Terminal-based           │  - Git integration           │
-└──────────────┬──────────────┴───────────────┬──────────────┘
-               │                              │
-               ▼                              │
-┌──────────────────────────┐                  │
-│   CONTENT CREATION       │                  │
-├──────────────────────────┤                  │
-│ • Markdown (verses)      │ ◄────────────────┘
-│ • YAML (front matter)    │   (Human Review)
-│ • Devanagari script      │
-└──────────┬───────────────┘
-           │
-           ▼
-┌──────────────────────────────────────────────────────────────┐
-│                   MEDIA GENERATION                           │
-├──────────────────────────────────────────────────────────────┤
-│ • Midjourney (images) • ElevenLabs (audio)                  │
-└──────────────────────────┬───────────────────────────────────┘
-                           │
-                           ▼
-┌──────────────────────────────────────────────────────────────┐
-│                     VERSION CONTROL                          │
-├──────────────────────────────────────────────────────────────┤
-│  Git → GitHub Repository                                     │
-└──────────────────────────┬───────────────────────────────────┘
-                           │
-                           ▼
-┌──────────────────────────────────────────────────────────────┐
-│                  STATIC SITE GENERATION                      │
-├──────────────────────────────────────────────────────────────┤
-│  Jekyll (GitHub Pages)                                       │
-│  • Markdown → HTML                                          │
-│  • Liquid templates                                         │
-│  • Automatic builds                                         │
-└──────────────────────────┬───────────────────────────────────┘
-                           │
-                           ▼
-┌──────────────────────────────────────────────────────────────┐
-│                      LIVE WEBSITE                            │
-├──────────────────────────────────────────────────────────────┤
-│  https://arun-gupta.github.io/hanuman-chalisa/              │
-│  • HTML/CSS/JavaScript                                      │
-│  • Arrow key navigation                                     │
-│  • Audio/Image integration                                  │
-└──────────────────────────────────────────────────────────────┘
-```
-
-## Development Workflow
-
-```
-1. EDIT         → PyCharm: Edit Markdown files, add content
-                  Claude Code: Generate/automate repetitive tasks
-
-2. GENERATE     → Midjourney: Create verse images
-                  ElevenLabs: Generate audio recitations
-
-3. REVIEW       → PyCharm: Code review, diff view, syntax checking
-                  Claude Code: Suggest improvements, validate structure
-
-4. COMMIT       → Git: Version control with descriptive messages
-                  PyCharm: Visual git interface
-                  Claude Code: Automated git workflows
-
-5. PUSH         → GitHub: Remote repository sync
-
-6. BUILD        → Jekyll: Automatic build on GitHub Pages
-                  (1-2 minutes)
-
-7. DEPLOY       → Live website updated automatically
+┌─────────────────────────────────────────────┐
+│         DEVELOPMENT ENVIRONMENT              │
+├─────────────────────────────────────────────┤
+│  Claude Code (AI)  │  PyCharm (Human Review) │
+└──────────┬──────────┴──────────┬────────────┘
+           │                     │
+           ▼                     ▼
+┌──────────────────────────────────────────────┐
+│            CONTENT (YAML + Markdown)          │
+├──────────────────────────────────────────────┤
+│  • _verses/*.md (43 files with YAML)         │
+│  • _layouts/*.html (Liquid templates)        │
+│  • Devanagari, transliteration, meanings    │
+└──────────────────┬───────────────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────────────┐
+│       VERSION CONTROL & DEPLOYMENT           │
+├──────────────────────────────────────────────┤
+│  Git → GitHub → Jekyll Build → Live Site    │
+└──────────────────────────────────────────────┘
 ```
 
 ## Core Technologies
 
 ### Static Site Generation
+- **Jekyll** (v4.x) - Ruby-based static site generator
+- **GitHub Pages** - Free hosting with automatic Jekyll builds
+- **Liquid Templates** - Template engine for dynamic HTML generation
 
-**Jekyll** (v4.x)
-- Ruby-based static site generator
-- Built into GitHub Pages
-- Converts Markdown → HTML automatically
-- Uses Liquid templating language
-- **Why:** Zero-config deployment with GitHub Pages, perfect for content-focused sites
+### Frontend
+- **HTML5** - Semantic markup
+- **Custom CSS** - Responsive design with orange/saffron theme
+- **Vanilla JavaScript** - Arrow key navigation, no frameworks needed
 
-**GitHub Pages**
-- Free hosting service by GitHub
-- Automatic Jekyll builds on every push
-- Custom domain support
-- HTTPS enabled by default
-- **Why:** Free, reliable, and integrated with our git workflow
+### Content Structure
+- **YAML Front Matter** - All verse content structured as data
+- **Markdown Files** - Each verse is a `.md` file with YAML front matter
+- **Jekyll Collections** - `_verses/` directory with 43 verse files
 
-## Frontend
+## Project Structure
 
-### HTML/CSS/JavaScript
+```
+hanuman-chalisa/
+├── _config.yml              # Jekyll configuration
+├── _layouts/
+│   ├── default.html         # Base layout (header, footer)
+│   └── verse.html           # Verse rendering template
+├── _verses/                 # Jekyll collection (43 files)
+│   ├── doha_01.md          # YAML front matter only
+│   ├── doha_02.md
+│   ├── verse_01.md through verse_40.md
+│   └── doha_closing.md
+├── assets/
+│   ├── css/style.css       # Custom styling
+│   └── js/navigation.js    # Arrow key navigation
+├── images/                  # Verse images (coming soon)
+├── audio/                   # Audio recitations (coming soon)
+├── docs/                    # Documentation
+└── index.html              # Home page with navigation
+```
 
-**Vanilla JavaScript**
-- No frameworks needed for our use case
-- Arrow key navigation implementation
-- Keyboard shortcut handling
-- **Why:** Lightweight, fast, no dependencies
+## Content Architecture
 
-**Custom CSS**
-- Responsive design
-- Mobile-first approach
-- Orange/saffron color scheme (devotional theme)
-- **Why:** Full control, no bloated CSS frameworks needed
+### YAML Front Matter Structure
 
-### Fonts & Typography
+Each verse file (`_verses/*.md`) contains only YAML front matter:
 
-**System Fonts**
-- `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto`
-- Native Devanagari script support
-- **Why:** Fast loading, native look and feel
+```yaml
+---
+layout: verse
+title: "Verse 1: Ocean of Knowledge and Virtues"
+verse_number: 1
+previous_verse: "/verses/doha_02"
+next_verse: "/verses/verse_02"
 
-## Content Generation
+devanagari: |
+  जय हनुमान ज्ञान गुन सागर।
+  जय कपीस तिहुं लोक उजागर।।
+
+transliteration: |
+  Jai Hanuman Gyaan gun saagar
+  Jai Kapis Tihun lok ujagar
+
+phonetic_notes:
+  - word: "हनुमान"
+    phonetic: "ha-nu-maan"
+    emphasis: "last syllable"
+
+word_meanings:
+  - word: "जय"
+    roman: "Jai"
+    meaning: "victory/hail"
+
+literal_translation: "Hail Hanuman, ocean of knowledge..."
+interpretive_meaning: "Hanuman is described as an ocean..."
+story: "Hanuman was blessed by various gods..."
+
+practical_application:
+  teaching: "True greatness combines knowledge..."
+  when_to_use: "Recite when seeking wisdom..."
+---
+```
+
+### Template Rendering
+
+The `_layouts/verse.html` template renders all content from YAML data:
+- `{{ page.devanagari }}` - Devanagari text
+- `{{ page.transliteration }}` - Phonetic transliteration
+- `{% for item in page.word_meanings %}` - Word meanings loop
+- All formatting and structure defined once in template
+
+**Benefits:**
+- Change template once, affects all 43 verses
+- Clean separation of data and presentation
+- Easy to maintain and update
+
+## Development Workflow
+
+1. **Edit** - PyCharm or Claude Code edits YAML in `_verses/*.md`
+2. **Review** - PyCharm's diff view for visual code review
+3. **Commit** - Git with descriptive messages
+4. **Push** - GitHub receives changes
+5. **Build** - GitHub Pages automatically builds Jekyll site (1-2 min)
+6. **Deploy** - Live at https://arun-gupta.github.io/hanuman-chalisa/
+
+## Media Generation (Planned)
 
 ### Images
-
-**Midjourney** (Planned)
-- AI image generation service
-- Subscription-based: $10-$60/month
-- High-quality, artistic outputs
-- Perfect for iconographic representations
-
-**Workflow:**
-1. Create prompts for each verse theme
-2. Generate multiple variations
-3. Select best image
-4. Export as JPG (800×600px recommended)
-5. Place in `/images/` directory
-6. Naming: `verse_01.jpg`, `doha_01.jpg`, etc.
+- **Midjourney** - AI image generation
+- Export as JPG (800×600px)
+- Store in `/images/verse_01.jpg`, etc.
 
 ### Audio Recitations
-
-**ElevenLabs** (Planned)
-- AI voice synthesis and cloning
-- Multilingual support including Hindi
-- Natural-sounding voice generation
-- Subscription: $5-$330/month depending on usage
-
-**Workflow:**
-1. Input Hindi verse text
-2. Select or clone appropriate voice (devotional tone)
-3. Generate full-speed version
-4. Generate slow-speed version (adjust rate/pace)
-5. Export as MP3 (128kbps minimum)
-6. Place in `/audio/` directory
-7. Naming: `verse_01_full.mp3`, `verse_01_slow.mp3`, etc.
-
-### Content Creation & Writing
-
-**Content Creation Process:**
-1. **Claude Code generates** - Creates markdown content, templates, documentation
-2. **PyCharm reviews** - Human reviews all generated content (human-in-the-loop)
-3. **Iterate** - Make adjustments, refine, approve
-
-**Markdown**
-- All verse content written in Markdown
-- Easy to read, write, and version control
-- **Why:** Simple, portable, git-friendly
-
-**AI-Assisted Content Generation**
-- **Claude Code** generates initial content and scaffolding
-- **PyCharm IDE** provides the human review layer
-- **Human-in-the-loop** ensures quality, accuracy, and appropriateness
-- **Used for:** Template creation, Jekyll setup, documentation, workflow automation
-
-**Why This Matters:**
-- AI accelerates content creation
-- Human review ensures devotional appropriateness
-- IDE tools (diff view, preview) make review efficient
-- Best of both: Speed + Quality
-
-## Version Control & Deployment
-
-### Git & GitHub
-
-**Git**
-- Version control for all content and code
-- Full history of changes
-- Branch-based workflow
-
-**GitHub**
-- Remote repository hosting
-- Collaboration platform
-- Automatic Jekyll builds
-- Issue tracking for content improvements
-
-### Deployment Pipeline
-
-```
-Local Changes → Git Commit → Git Push → GitHub Pages Build → Live Site
-```
-
-**Build Time:** 1-2 minutes after push
+- **ElevenLabs** - AI voice synthesis
+- Full-speed and slow-speed versions
+- Export as MP3 (128kbps)
+- Store in `/audio/verse_01_full.mp3`, `/audio/verse_01_slow.mp3`
 
 ## Development Tools
 
-### Integrated Development Environment
+### PyCharm IDE
+- Code editing and project management
+- Visual git diff and merge tools
+- Markdown preview with Devanagari support
+- Structure view for navigation
+- Embedded terminal for Claude Code
 
-**PyCharm** (JetBrains IDE)
-- Professional Python IDE adapted for web development
-- **Primary role:** Code editing, project management, and code review
+### Claude Code
+- AI-assisted content generation
+- Project scaffolding (Jekyll setup, templates)
+- Bulk file operations (43 verse conversions)
+- Git workflow automation
+- Documentation generation
 
-**Key Features Used:**
-- **Markdown editing** with live preview and Devanagari script support
-- **Git integration** with visual diff, merge tools, and commit history
-- **Code review capabilities:**
-  - Side-by-side diff view
-  - Inline change tracking
-  - Syntax highlighting for all file types
-  - Structure view for quick navigation
-- **File management:**
-  - Project tree navigation
-  - Quick search (Cmd/Ctrl + Shift + F)
-  - Multi-file editing
-  - Refactoring tools
-- **Terminal integration:**
-  - Embedded terminal for Claude Code
-  - Multiple terminal sessions
-  - Git command execution
+**Collaboration Pattern:**
+1. Claude Code generates structure and content
+2. PyCharm shows visual diff of changes
+3. Human reviews in PyCharm UI
+4. Changes committed and pushed
+5. GitHub Pages builds automatically
 
-**Benefits for This Project:**
-- Visual code review before commits
-- Easy navigation across 43+ verse files
-- Markdown preview for content validation
-- Git blame and history for tracking changes
-- Safe refactoring with undo history
+## URLs and Navigation
 
-### AI-Assisted Development
+Each verse has its own URL:
+- `/verses/doha_01/`
+- `/verses/verse_01/`
+- `/verses/verse_02/`
+- etc.
 
-**Claude Code** (Anthropic)
-- AI-powered CLI tool running in PyCharm's terminal
-- **Primary role:** Development acceleration and automation
+Navigation:
+- Arrow keys (← →) between verses
+- Home (☰) button to main page
+- Previous/Next buttons on each verse
 
-**Key Capabilities:**
-- **Project scaffolding:**
-  - Jekyll configuration setup
-  - Layout template creation
-  - Directory structure generation
-- **Content generation:**
-  - Markdown file creation from templates
-  - Bulk file operations (43 verse files)
-  - Front matter injection
-- **Code automation:**
-  - Git workflow automation
-  - Batch file editing
-  - Repetitive task elimination
-- **Documentation:**
-  - Technical documentation generation
-  - README updates
-  - Code comments and explanations
+## Browser Compatibility
 
-**Development Benefits:**
-- **Speed:** Tasks that would take hours done in minutes
-  - Example: Adding front matter to 43 files took seconds
-- **Consistency:** Template-based generation ensures uniformity
-- **Code Review:** Suggests improvements and catches issues
-- **Learning:** Explains technologies and best practices as it works
-- **Automation:** Handles repetitive git commits and file operations
-
-**Workflow Integration:**
-```
-PyCharm (Visual)  ←→  Claude Code (Terminal)
-     ↓                      ↓
-   Review                Generate
-   Edit                  Automate
-   Refine                Validate
-```
-
-**Example Collaboration:**
-1. **Claude Code generates** 43 verse files with structure
-2. **PyCharm shows diff** of all changes visually
-3. **Developer reviews** in PyCharm's UI
-4. **Claude Code commits** with proper messages
-5. **PyCharm tracks** in git history
-
-
-### Local Testing (Optional)
-
-**Jekyll Local Server**
-```bash
-bundle install
-jekyll serve
-```
-- Preview changes before pushing
-- Hot reload during development
-- Runs on `http://localhost:4000`
-
-**Note:** Local testing is optional - you can edit and push directly to GitHub
-
-## Content Management
-
-### File Structure
-
-```
-Content (Markdown) → Jekyll Processing → Static HTML
-```
-
-**Markdown Files:** `/verses/*.md`
-- 43 verse files with front matter
-- Template-based structure
-- Easy to edit in any text editor
-
-**Static Assets:**
-- Images: `/images/` (43 JPG files)
-- Audio: `/audio/` (86 MP3 files)
-- CSS: `/assets/css/style.css`
-- JS: `/assets/js/navigation.js`
-
-## Browser Support
-
-### Target Browsers
-
-- Chrome/Edge (Chromium) - Latest 2 versions
-- Firefox - Latest 2 versions
-- Safari - Latest 2 versions
+- Chrome/Edge, Firefox, Safari (latest 2 versions)
 - Mobile browsers (iOS Safari, Chrome Mobile)
-
-### Features Used
-
-- CSS Grid & Flexbox (widely supported)
-- Arrow key events (universal support)
-- HTML5 Audio API (universal support)
-- Responsive images (universal support)
-
-**No polyfills needed** - all features well-supported
-
-## Analytics (Optional)
-
-Currently not implemented, but can add:
-- Google Analytics
-- Plausible Analytics (privacy-focused)
-- Simple analytics pixel
-
-**Privacy consideration:** Keep it minimal for a devotional site
+- CSS Grid, Flexbox, HTML5 Audio
+- No polyfills needed
 
 ## Performance
 
-### Current Optimizations
-
 - Static HTML (no server processing)
-- System fonts (no font downloads)
-- Lazy loading for images
-- Minified CSS (can be added)
+- System fonts (no downloads)
 - CDN via GitHub Pages
-
-### Metrics
-
-- **Load Time:** < 1 second (text only)
-- **Full Load:** 2-3 seconds (with images)
-- **Audio:** Loaded on demand
-- **Lighthouse Score:** Target 90+ (all categories)
-
-## Accessibility
-
-### Standards
-
-- Semantic HTML5
-- Keyboard navigation (arrow keys)
-- Screen reader compatible
-- High contrast text
-- Responsive design (mobile accessible)
-
-### WCAG Compliance
-
-Target: WCAG 2.1 Level AA
-- Keyboard navigation ✓
-- Color contrast ✓
-- Responsive design ✓
-- Semantic markup ✓
+- Load time: < 1 second (text)
+- Full load: 2-3 seconds (with images)
 
 ## Security
 
-### Built-in Security
+- Static site (no database, no server-side code)
+- HTTPS enforced by GitHub Pages
+- No user input or tracking
+- Minimal attack surface
 
-- **Static Site:** No database, no server-side code
-- **HTTPS:** Enforced by GitHub Pages
-- **No User Input:** Read-only content
-- **No Cookies:** No tracking
+## Cost
 
-**Attack Surface:** Minimal - just static content delivery
+- **Hosting**: Free (GitHub Pages)
+- **Domain** (optional): $10-15/year
+- **Images** (one-time): Midjourney $10-60/month
+- **Audio** (one-time): ElevenLabs $5-330/month
 
-## Cost Breakdown
+**Total**: Free for hosting, ~$50-200 one-time for media
 
-### Hosting & Infrastructure
-- GitHub Pages: **Free**
-- Domain (optional): $10-15/year
+## Resources
 
-### Content Generation
-- Midjourney: $10-60/month (one-time generation)
-- ElevenLabs: $5-330/month (based on usage)
-
-### Total Estimated Cost
-- **Initial Setup:** $50-200 (one-time for all images and audio)
-- **Ongoing:** $0/month (just hosting)
-- **Optional Domain:** $10-15/year
-
-## Future Enhancements
-
-Potential additions:
-
-### Features
-- Search functionality
-- Verse bookmarking
-- Print-friendly version
-- Dark mode toggle
-- Language selection (English/Hindi)
-
-### Content
-- Video recitations
-- Translation in multiple languages
-- Interactive quizzes
-- Commentary from scholars
-
-### Technical
-- Progressive Web App (PWA)
-- Offline support
-- Social sharing
-- RSS feed for updates
-
-## Resources & Documentation
-
-### Official Documentation
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [GitHub Pages Docs](https://docs.github.com/en/pages)
-- [Markdown Guide](https://www.markdownguide.org/)
-- [Midjourney Documentation](https://docs.midjourney.com/)
-- [ElevenLabs Documentation](https://docs.elevenlabs.io/)
+- [Liquid Template Guide](https://shopify.github.io/liquid/)
 
-### Internal Documentation
-- [github-pages-setup.md](github-pages-setup.md) - Setup and deployment guide
-- [verse-structure.md](verse-structure.md) - Verse content structure
-- [background.md](background.md) - Hanuman Chalisa background
-- [guide.md](guide.md) - Usage and recitation guide
+## Internal Documentation
 
-## Contributing
-
-### Content Updates
-1. Edit Markdown files in `/verses/`
-2. Commit changes
-3. Push to GitHub
-4. Site updates automatically
-
-### Technical Changes
-1. Edit files in `/_layouts/`, `/assets/`
-2. Test locally (optional)
-3. Commit and push
-4. Verify on live site
-
-### Media Assets
-1. Generate images (Midjourney) or audio (ElevenLabs)
-2. Add to `/images/` or `/audio/` directories
-3. Follow naming conventions
-4. Commit and push
-
-## Contact & Support
-
-For technical issues:
-- [GitHub Issues](https://github.com/arun-gupta/hanuman-chalisa/issues)
-
-For content suggestions:
-- Open an issue or submit a pull request
+- [verse-structure.md](verse-structure.md) - Verse YAML structure
+- [background.md](background.md) - Hanuman Chalisa history
+- [guide.md](guide.md) - Recitation guide
+- [github-pages-setup.md](github-pages-setup.md) - Deployment setup
 
 ---
 
 **Last Updated:** January 2026
-**Tech Stack Version:** 1.0
