@@ -7,7 +7,7 @@ next_verse: "/verses/verse_25"
 
 # Verse 24: Protection from Evil Spirits
 
-![Verse 24](../images/verse_24.jpg)
+![Image for Verse 24 - Coming Soon](../images/verse_24.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

@@ -7,7 +7,7 @@ next_verse: "/verses/verse_04"
 
 # Verse 3: Great Hero with Body Like Thunderbolt
 
-![Verse 3](../images/verse_03.jpg)
+![Image for Verse 3 - Coming Soon](../images/verse_03.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

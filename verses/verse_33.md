@@ -7,7 +7,7 @@ next_verse: "/verses/verse_34"
 
 # Verse 33: Path to Rama
 
-![Verse 33](../images/verse_33.jpg)
+![Image for Verse 33 - Coming Soon](../images/verse_33.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

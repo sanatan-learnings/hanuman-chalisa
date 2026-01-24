@@ -7,7 +7,7 @@ next_verse: "/verses/verse_21"
 
 # Verse 20: Making the Difficult Easy
 
-![Verse 20](../images/verse_20.jpg)
+![Image for Verse 20 - Coming Soon](../images/verse_20.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

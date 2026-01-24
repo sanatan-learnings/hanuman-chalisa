@@ -7,7 +7,7 @@ next_verse: "/verses/verse_07"
 
 # Verse 6: Avatar of Shiva, Son of Kesari
 
-![Verse 6](../images/verse_06.jpg)
+![Image for Verse 6 - Coming Soon](../images/verse_06.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

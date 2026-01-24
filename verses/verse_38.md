@@ -7,7 +7,7 @@ next_verse: "/verses/verse_39"
 
 # Verse 38: Power of Hundred Recitations
 
-![Verse 38](../images/verse_38.jpg)
+![Image for Verse 38 - Coming Soon](../images/verse_38.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

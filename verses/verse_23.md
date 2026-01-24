@@ -7,7 +7,7 @@ next_verse: "/verses/verse_24"
 
 # Verse 23: Self-Controlled Power
 
-![Verse 23](../images/verse_23.jpg)
+![Image for Verse 23 - Coming Soon](../images/verse_23.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

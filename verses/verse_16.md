@@ -7,7 +7,7 @@ next_verse: "/verses/verse_17"
 
 # Verse 16: Helper of Sugriva
 
-![Verse 16](../images/verse_16.jpg)
+![Image for Verse 16 - Coming Soon](../images/verse_16.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

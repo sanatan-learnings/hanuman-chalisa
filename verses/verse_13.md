@@ -7,7 +7,7 @@ next_verse: "/verses/verse_14"
 
 # Verse 13: Praised by Shesha
 
-![Verse 13](../images/verse_13.jpg)
+![Image for Verse 13 - Coming Soon](../images/verse_13.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

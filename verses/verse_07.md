@@ -7,7 +7,7 @@ next_verse: "/verses/verse_08"
 
 # Verse 7: Learned, Virtuous, and Eager to Serve
 
-![Verse 7](../images/verse_07.jpg)
+![Image for Verse 7 - Coming Soon](../images/verse_07.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

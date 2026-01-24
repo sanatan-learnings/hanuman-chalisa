@@ -7,7 +7,7 @@ next_verse: "/verses/verse_03"
 
 # Verse 2: Rama's Messenger
 
-![Verse 2](../images/verse_02.jpg)
+![Image for Verse 2 - Coming Soon](../images/verse_02.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

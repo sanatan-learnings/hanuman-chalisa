@@ -7,7 +7,7 @@ next_verse: "/verses/doha_closing"
 
 # Verse 40: Tulsidas's Personal Prayer
 
-![Verse 40](../images/verse_40.jpg)
+![Image for Verse 40 - Coming Soon](../images/verse_40.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

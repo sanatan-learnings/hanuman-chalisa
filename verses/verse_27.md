@@ -7,7 +7,7 @@ next_verse: "/verses/verse_28"
 
 # Verse 27: Accomplisher of Rama's Tasks
 
-![Verse 27](../images/verse_27.jpg)
+![Image for Verse 27 - Coming Soon](../images/verse_27.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

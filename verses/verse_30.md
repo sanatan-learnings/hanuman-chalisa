@@ -7,7 +7,7 @@ next_verse: "/verses/verse_31"
 
 # Verse 30: Protector of Saints, Destroyer of Demons
 
-![Verse 30](../images/verse_30.jpg)
+![Image for Verse 30 - Coming Soon](../images/verse_30.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

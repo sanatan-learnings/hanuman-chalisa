@@ -7,7 +7,7 @@ next_verse: "/verses/verse_02"
 
 # Verse 1: Ocean of Knowledge and Virtues
 
-![Verse 1](../images/verse_01.jpg)
+![Image for Verse 1 - Coming Soon](../images/verse_01.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

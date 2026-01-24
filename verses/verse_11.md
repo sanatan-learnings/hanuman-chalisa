@@ -7,7 +7,7 @@ next_verse: "/verses/verse_12"
 
 # Verse 11: Bringing the Sanjeevani Herb
 
-![Verse 11](../images/verse_11.jpg)
+![Image for Verse 11 - Coming Soon](../images/verse_11.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

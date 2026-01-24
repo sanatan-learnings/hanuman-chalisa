@@ -7,7 +7,7 @@ next_verse: "/verses/verse_23"
 
 # Verse 22: Refuge and Protection
 
-![Verse 22](../images/verse_22.jpg)
+![Image for Verse 22 - Coming Soon](../images/verse_22.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

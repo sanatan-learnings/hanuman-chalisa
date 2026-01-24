@@ -7,7 +7,7 @@ next_verse: "/verses/verse_05"
 
 # Verse 4: Golden Complexion and Beautiful Form
 
-![Verse 4](../images/verse_04.jpg)
+![Image for Verse 4 - Coming Soon](../images/verse_04.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

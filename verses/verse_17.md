@@ -7,7 +7,7 @@ next_verse: "/verses/verse_18"
 
 # Verse 17: Counselor to Vibhishana
 
-![Verse 17](../images/verse_17.jpg)
+![Image for Verse 17 - Coming Soon](../images/verse_17.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

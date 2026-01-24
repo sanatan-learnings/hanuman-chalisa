@@ -7,7 +7,7 @@ next_verse: "/verses/verse_15"
 
 # Verse 14: Praised by Gods and Sages
 
-![Verse 14](../images/verse_14.jpg)
+![Image for Verse 14 - Coming Soon](../images/verse_14.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

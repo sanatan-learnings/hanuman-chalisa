@@ -7,7 +7,7 @@ next_verse: "/verses/verse_10"
 
 # Verse 9: Master of Form - Tiny and Gigantic
 
-![Verse 9](../images/verse_09.jpg)
+![Image for Verse 9 - Coming Soon](../images/verse_09.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

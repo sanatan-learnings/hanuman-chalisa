@@ -7,7 +7,7 @@ next_verse: "/verses/verse_36"
 
 # Verse 35: Sufficient Devotion to Hanuman
 
-![Verse 35](../images/verse_35.jpg)
+![Image for Verse 35 - Coming Soon](../images/verse_35.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

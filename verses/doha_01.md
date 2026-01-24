@@ -7,7 +7,7 @@ next_verse: "/verses/doha_02"
 
 # Doha 1: Invocation to the Guru
 
-![Doha 1](../images/doha_01.jpg)
+![Image for Doha 1 - Coming Soon](../images/doha_01.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

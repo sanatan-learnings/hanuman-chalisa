@@ -7,7 +7,7 @@ next_verse: "/verses/verse_37"
 
 # Verse 36: Remover of Crises and Pain
 
-![Verse 36](../images/verse_36.jpg)
+![Image for Verse 36 - Coming Soon](../images/verse_36.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

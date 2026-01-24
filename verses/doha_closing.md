@@ -7,7 +7,7 @@ next_verse: ""
 
 # Closing Doha: Final Prayer
 
-![Closing Doha](../images/doha_closing.jpg)
+![Image for Closing Doha - Coming Soon](../images/doha_closing.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

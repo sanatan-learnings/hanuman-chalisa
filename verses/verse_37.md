@@ -7,7 +7,7 @@ next_verse: "/verses/verse_38"
 
 # Verse 37: Prayer for Guru-Like Grace
 
-![Verse 37](../images/verse_37.jpg)
+![Image for Verse 37 - Coming Soon](../images/verse_37.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

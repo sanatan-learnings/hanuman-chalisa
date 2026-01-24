@@ -7,7 +7,7 @@ next_verse: "/verses/verse_19"
 
 # Verse 18: Childhood Leap to the Sun
 
-![Verse 18](../images/verse_18.jpg)
+![Image for Verse 18 - Coming Soon](../images/verse_18.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

@@ -7,7 +7,7 @@ next_verse: "/verses/verse_26"
 
 # Verse 25: Healer of All Suffering
 
-![Verse 25](../images/verse_25.jpg)
+![Image for Verse 25 - Coming Soon](../images/verse_25.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

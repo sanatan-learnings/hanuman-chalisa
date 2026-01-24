@@ -7,7 +7,7 @@ next_verse: "/verses/verse_35"
 
 # Verse 34: Auspicious Death and Rebirth
 
-![Verse 34](../images/verse_34.jpg)
+![Image for Verse 34 - Coming Soon](../images/verse_34.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

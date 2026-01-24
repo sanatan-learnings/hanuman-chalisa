@@ -7,7 +7,7 @@ next_verse: "/verses/verse_32"
 
 # Verse 31: Giver of Eight Siddhis and Nine Treasures
 
-![Verse 31](../images/verse_31.jpg)
+![Image for Verse 31 - Coming Soon](../images/verse_31.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

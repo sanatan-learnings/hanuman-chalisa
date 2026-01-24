@@ -7,7 +7,7 @@ next_verse: "/verses/verse_09"
 
 # Verse 8: Passionate Listener with Rama in Heart
 
-![Verse 8](../images/verse_08.jpg)
+![Image for Verse 8 - Coming Soon](../images/verse_08.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

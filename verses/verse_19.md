@@ -7,7 +7,7 @@ next_verse: "/verses/verse_20"
 
 # Verse 19: Crossing the Ocean with Rama's Ring
 
-![Verse 19](../images/verse_19.jpg)
+![Image for Verse 19 - Coming Soon](../images/verse_19.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

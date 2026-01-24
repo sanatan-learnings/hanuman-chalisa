@@ -7,7 +7,7 @@ next_verse: "/verses/verse_01"
 
 # Doha 2: Prayer to Hanuman
 
-![Doha 2](../images/doha_02.jpg)
+![Image for Doha 2 - Coming Soon](../images/doha_02.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

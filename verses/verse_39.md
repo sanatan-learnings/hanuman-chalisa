@@ -7,7 +7,7 @@ next_verse: "/verses/verse_40"
 
 # Verse 39: Attainment of Siddhi
 
-![Verse 39](../images/verse_39.jpg)
+![Image for Verse 39 - Coming Soon](../images/verse_39.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

@@ -7,7 +7,7 @@ next_verse: "/verses/verse_06"
 
 # Verse 5: Bearer of Mace and Sacred Thread
 
-![Verse 5](../images/verse_05.jpg)
+![Image for Verse 5 - Coming Soon](../images/verse_05.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

@@ -7,7 +7,7 @@ next_verse: "/verses/verse_27"
 
 # Verse 26: Liberation from Crisis
 
-![Verse 26](../images/verse_26.jpg)
+![Image for Verse 26 - Coming Soon](../images/verse_26.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

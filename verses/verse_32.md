@@ -7,7 +7,7 @@ next_verse: "/verses/verse_33"
 
 # Verse 32: Possessor of Rama's Elixir
 
-![Verse 32](../images/verse_32.jpg)
+![Image for Verse 32 - Coming Soon](../images/verse_32.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

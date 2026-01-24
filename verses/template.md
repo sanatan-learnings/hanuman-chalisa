@@ -1,6 +1,6 @@
 # Verse [Number]: [Brief Title/Theme]
 
-![Verse [Number]](../images/verse_[number].jpg)
+![Image for Verse [Number] - Coming Soon](../images/verse_[number].jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

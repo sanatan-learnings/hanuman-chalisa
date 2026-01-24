@@ -7,7 +7,7 @@ next_verse: "/verses/verse_13"
 
 # Verse 12: Dear as Bharata
 
-![Verse 12](../images/verse_12.jpg)
+![Image for Verse 12 - Coming Soon](../images/verse_12.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

@@ -7,7 +7,7 @@ next_verse: "/verses/verse_30"
 
 # Verse 29: Glory Across All Ages
 
-![Verse 29](../images/verse_29.jpg)
+![Image for Verse 29 - Coming Soon](../images/verse_29.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

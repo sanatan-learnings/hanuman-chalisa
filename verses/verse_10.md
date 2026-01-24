@@ -7,7 +7,7 @@ next_verse: "/verses/verse_11"
 
 # Verse 10: Destroyer of Demons, Accomplisher of Rama's Work
 
-![Verse 10](../images/verse_10.jpg)
+![Image for Verse 10 - Coming Soon](../images/verse_10.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

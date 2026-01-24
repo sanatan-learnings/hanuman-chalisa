@@ -7,7 +7,7 @@ next_verse: "/verses/verse_29"
 
 # Verse 28: Fulfiller of Desires
 
-![Verse 28](../images/verse_28.jpg)
+![Image for Verse 28 - Coming Soon](../images/verse_28.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 

@@ -7,7 +7,7 @@ next_verse: "/verses/verse_22"
 
 # Verse 21: Guardian at Rama's Door
 
-![Verse 21](../images/verse_21.jpg)
+![Image for Verse 21 - Coming Soon](../images/verse_21.jpg)
 
 ## 1. Original Hindi Text (Devanagari Script)
 
