@@ -8,22 +8,29 @@ This document outlines the technologies, tools, and services used to build and m
 ┌─────────────────────────────────────────────────────────────┐
 │                    DEVELOPMENT ENVIRONMENT                   │
 ├─────────────────────────────────────────────────────────────┤
-│  PyCharm (JetBrains IDE)    │  Claude Code (AI Assistant)   │
-│  - Code editing & review    │  - Terminal-based            │
-│  - Git integration          │  - Code generation           │
-│  - Project management       │  - Automation                │
+│  Claude Code (AI Assistant) │  PyCharm (JetBrains IDE)     │
+│  - Content generation       │  - Human review              │
+│  - Code automation          │  - Diff view & validation    │
+│  - Terminal-based           │  - Git integration           │
 └──────────────┬──────────────┴───────────────┬──────────────┘
                │                              │
-               ▼                              ▼
-┌──────────────────────────┐   ┌──────────────────────────────┐
-│   CONTENT CREATION       │   │   MEDIA GENERATION           │
-├──────────────────────────┤   ├──────────────────────────────┤
-│ • Markdown (verses)      │   │ • Midjourney (images)        │
-│ • YAML (front matter)    │   │ • ElevenLabs (audio)         │
-│ • Devanagari script      │   │                              │
-└──────────┬───────────────┘   └────────────┬─────────────────┘
-           │                                │
-           ▼                                ▼
+               ▼                              │
+┌──────────────────────────┐                  │
+│   CONTENT CREATION       │                  │
+├──────────────────────────┤                  │
+│ • Markdown (verses)      │ ◄────────────────┘
+│ • YAML (front matter)    │   (Human Review)
+│ • Devanagari script      │
+└──────────┬───────────────┘
+           │
+           ▼
+┌──────────────────────────────────────────────────────────────┐
+│                   MEDIA GENERATION                           │
+├──────────────────────────────────────────────────────────────┤
+│ • Midjourney (images) • ElevenLabs (audio)                  │
+└──────────────────────────┬───────────────────────────────────┘
+                           │
+                           ▼
 ┌──────────────────────────────────────────────────────────────┐
 │                     VERSION CONTROL                          │
 ├──────────────────────────────────────────────────────────────┤
@@ -153,15 +160,27 @@ This document outlines the technologies, tools, and services used to build and m
 
 ### Content Creation & Writing
 
+**Content Creation Process:**
+1. **Claude Code generates** - Creates markdown content, templates, documentation
+2. **PyCharm reviews** - Human reviews all generated content (human-in-the-loop)
+3. **Iterate** - Make adjustments, refine, approve
+
 **Markdown**
 - All verse content written in Markdown
 - Easy to read, write, and version control
 - **Why:** Simple, portable, git-friendly
 
-**AI-Assisted Content Development**
-- **Claude Code** for project scaffolding and automation
-- **Claude (Anthropic)** for content structuring and organization
+**AI-Assisted Content Generation**
+- **Claude Code** generates initial content and scaffolding
+- **PyCharm IDE** provides the human review layer
+- **Human-in-the-loop** ensures quality, accuracy, and appropriateness
 - **Used for:** Template creation, Jekyll setup, documentation, workflow automation
+
+**Why This Matters:**
+- AI accelerates content creation
+- Human review ensures devotional appropriateness
+- IDE tools (diff view, preview) make review efficient
+- Best of both: Speed + Quality
 
 ## Version Control & Deployment
 
