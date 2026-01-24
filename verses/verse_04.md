@@ -19,7 +19,8 @@ next_verse: "/verses/verse_05"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Kanchan varan viraj subesa
+Kanan kundal kunchit kesa
 ```
 
 ## 3. Pronunciation Guide

@@ -19,7 +19,8 @@ next_verse: "/verses/verse_32"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Ashta siddhi nau nidhi ke data
+As bar deen Janaki mata
 ```
 
 ## 3. Pronunciation Guide

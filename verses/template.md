@@ -8,34 +8,31 @@
 [Insert verse in Devanagari script here]
 ```
 
-## 2. Transliteration
+## 2. Simplified Transliteration
 
 ```
-[Insert IAST transliteration here]
+[Insert simplified transliteration in Roman script here]
 ```
 
 ## 3. Pronunciation Guide
 
-**Audio Recitation:**
+**Audio Recitation:** *(Coming soon)*
 
-🔊 [Listen to Full Verse](../audio/verse_[number]_full.mp3)
-
-🔊 [Listen to Slow Recitation](../audio/verse_[number]_slow.mp3)
+Audio files for recitation will be added soon. See [issue #X](https://github.com/arun-gupta/hanuman-chalisa/issues) for progress.
 
 **Phonetic Breakdown:**
 
-Listen to the audio above for authentic pronunciation. The following breakdown highlights syllables and emphasis for challenging words:
+Key words and their pronunciation:
 
 - **[Word 1]** - [Phonetic: syllable-by-syllable] (emphasis on [syllable])
 - **[Word 2]** - [Phonetic: syllable-by-syllable] (emphasis on [syllable])
 - **[Word 3]** - [Phonetic: syllable-by-syllable] (emphasis on [syllable])
 
-**Tips for recitation:**
-- Listen to the audio multiple times before attempting recitation
-- Start with the slow version, then progress to full speed
-- Pay attention to: [specific sounds/combinations unique to this verse]
-- [Notes for non-native speakers on difficult sounds]
-- Practice difficult words separately: [list specific challenging words]
+**Challenging sounds in this verse:**
+- [Specific sounds/combinations unique to this verse]
+- [Notes for non-native speakers]
+
+*For general pronunciation tips and recitation guidelines, see the [Comprehensive Guide](../docs/guide.md).*
 
 ## 4. Word-by-Word Meaning
 
@@ -80,6 +77,6 @@ Listen to the audio above for authentic pronunciation. The following breakdown h
 **When to Use This Verse:**
 [Brief description of life situations, challenges, or moments where this verse offers guidance and inspiration]
 
-## 10. Recitation Guidelines
+---
 
-*This verse is part of the [Hanuman Chalisa Comprehensive Guide](../README.md)*
+*For recitation guidelines and usage instructions, see the [Comprehensive Guide](../docs/guide.md).*

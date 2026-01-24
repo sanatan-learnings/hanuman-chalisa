@@ -19,7 +19,8 @@ next_verse: "/verses/verse_38"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Jai jai jai Hanuman Gosain
+Kripa karahu gurudev ki nain
 ```
 
 ## 3. Pronunciation Guide

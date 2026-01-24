@@ -19,7 +19,8 @@ next_verse: "/verses/verse_29"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Aur manorath jo koi lavai
+Soi amit jivan phal pavai
 ```
 
 ## 3. Pronunciation Guide

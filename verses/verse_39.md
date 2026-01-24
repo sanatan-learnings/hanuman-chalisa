@@ -19,7 +19,8 @@ next_verse: "/verses/verse_40"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Jo yah padhai Hanuman Chalisa
+Hoye siddhi sakhi Gaurisa
 ```
 
 ## 3. Pronunciation Guide

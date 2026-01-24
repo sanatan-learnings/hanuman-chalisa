@@ -21,7 +21,10 @@ next_verse: ""
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Pavantanay sankat haran,
+Mangal murti roop
+Ram lakhan Sita sahit,
+Hriday basahu sur bhoop
 ```
 
 ## 3. Pronunciation Guide

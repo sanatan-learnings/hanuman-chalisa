@@ -19,7 +19,8 @@ next_verse: "/verses/verse_21"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Durgam kaaj jagat ke jete
+Sugam anugrah tumhare tete
 ```
 
 ## 3. Pronunciation Guide

@@ -19,7 +19,8 @@ next_verse: "/verses/verse_18"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Tumharo mantra Vibhishan mana
+Lankeshwar bhaye sab jag jana
 ```
 
 ## 3. Pronunciation Guide

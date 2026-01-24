@@ -19,7 +19,8 @@ next_verse: "/verses/verse_31"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sadhu sant ke tum rakhavare
+Asur nikandan Ram dulare
 ```
 
 ## 3. Pronunciation Guide

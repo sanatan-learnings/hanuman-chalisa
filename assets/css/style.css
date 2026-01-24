@@ -265,6 +265,22 @@ footer {
     border-top: 1px solid #dee2e6;
 }
 
+footer .footer-links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+footer .footer-links a {
+    color: #495057;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+footer .footer-links a:hover {
+    color: #ff6b35;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .verse-nav {

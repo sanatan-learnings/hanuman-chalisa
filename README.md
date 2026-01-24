@@ -9,7 +9,7 @@ _May Lord Hanuman's blessings be with all who study and recite these sacred vers
 
 ## Project Overview
 
-This project presents a detailed, verse-by-verse exploration of the Hanuman Chalisa, one of the most revered devotional hymns in Hinduism. Composed by the 16th-century poet-saint Goswami Tulsidas, the Hanuman Chalisa consists of 40 verses (chaupais) that glorify Lord Hanuman's virtues, strength, and unwavering devotion to Lord Rama.
+This project presents a detailed, verse-by-verse exploration of the Hanuman Chalisa, one of the most revered devotional hymns in Sanatan Dharma (Hinduism). Composed by the 16th-century poet-saint Goswami Tulsidas, the Hanuman Chalisa consists of 40 verses (chaupais) that glorify Lord Hanuman's virtues, strength, and unwavering devotion to Lord Rama.
 
 ## Purpose
 

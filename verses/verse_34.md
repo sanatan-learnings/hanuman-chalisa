@@ -19,7 +19,8 @@ next_verse: "/verses/verse_35"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Ant kaal Raghubar pur jai
+Jahan janam Haribhakt kahai
 ```
 
 ## 3. Pronunciation Guide

@@ -7,9 +7,18 @@ title: Home
     <h2>Welcome to the Hanuman Chalisa Guide</h2>
     <p><em>May Lord Hanuman's blessings be with all who study and recite these sacred verses.</em></p>
 
-    <p>This comprehensive guide presents a detailed, verse-by-verse exploration of the Hanuman Chalisa,
-    one of the most revered devotional hymns in Hinduism. Navigate through all verses using the links
-    below or use arrow keys when viewing individual verses.</p>
+    <h3>About the Hanuman Chalisa</h3>
+    <p>The Hanuman Chalisa is a devotional hymn dedicated to Lord Hanuman, composed by the 16th-century
+    poet-saint Goswami Tulsidas. Written in Awadhi language, it consists of 40 verses (chaupais) preceded
+    by two introductory dohas (couplets) and followed by a closing doha.</p>
+
+    <p>The word "Chalisa" means "forty," referring to the 40 verses that extol Hanuman's virtues, strength,
+    and unwavering devotion to Lord Rama. Regular recitation of the Hanuman Chalisa is believed to bring
+    strength, courage, and protection from negative energies.</p>
+
+    <p>This comprehensive guide presents a detailed, verse-by-verse exploration with translations,
+    meanings, stories, and practical applications. Navigate through all verses using the links
+    below or use arrow keys (← →) when viewing individual verses.</p>
 </div>
 
 <section class="verse-navigation">
@@ -21,10 +30,46 @@ title: Home
 
     <h3>Main Chalisa (40 Verses)</h3>
     <ul class="verse-list">
-        {% for i in (1..40) %}
-        {% assign verse_num = i | prepend: '0' | slice: -2, 2 %}
-        <li><a href="{{ '/verses/verse_' | append: verse_num | relative_url }}">Verse {{ i }}</a></li>
-        {% endfor %}
+        <li><a href="{{ '/verses/verse_01' | relative_url }}">Verse 1: Ocean of Knowledge and Virtues</a></li>
+        <li><a href="{{ '/verses/verse_02' | relative_url }}">Verse 2: Rama's Messenger</a></li>
+        <li><a href="{{ '/verses/verse_03' | relative_url }}">Verse 3: Great Hero with Vajra Body</a></li>
+        <li><a href="{{ '/verses/verse_04' | relative_url }}">Verse 4: Golden Complexion and Beautiful Form</a></li>
+        <li><a href="{{ '/verses/verse_05' | relative_url }}">Verse 5: Bearer of Mace and Sacred Thread</a></li>
+        <li><a href="{{ '/verses/verse_06' | relative_url }}">Verse 6: Son of Kesari, Like Shiva</a></li>
+        <li><a href="{{ '/verses/verse_07' | relative_url }}">Verse 7: Learned and Eager to Serve Rama</a></li>
+        <li><a href="{{ '/verses/verse_08' | relative_url }}">Verse 8: Devoted Listener of Rama's Stories</a></li>
+        <li><a href="{{ '/verses/verse_09' | relative_url }}">Verse 9: Master of Many Forms</a></li>
+        <li><a href="{{ '/verses/verse_10' | relative_url }}">Verse 10: Destroyer of Demons</a></li>
+        <li><a href="{{ '/verses/verse_11' | relative_url }}">Verse 11: Bringing the Sanjeevani Herb</a></li>
+        <li><a href="{{ '/verses/verse_12' | relative_url }}">Verse 12: Praised by Rama</a></li>
+        <li><a href="{{ '/verses/verse_13' | relative_url }}">Verse 13: Sung by Shesha</a></li>
+        <li><a href="{{ '/verses/verse_14' | relative_url }}">Verse 14: Praised by Gods and Sages</a></li>
+        <li><a href="{{ '/verses/verse_15' | relative_url }}">Verse 15: Beyond Description</a></li>
+        <li><a href="{{ '/verses/verse_16' | relative_url }}">Verse 16: Helper of Sugriva</a></li>
+        <li><a href="{{ '/verses/verse_17' | relative_url }}">Verse 17: Advisor to Vibhishana</a></li>
+        <li><a href="{{ '/verses/verse_18' | relative_url }}">Verse 18: The Sun Swallowing Incident</a></li>
+        <li><a href="{{ '/verses/verse_19' | relative_url }}">Verse 19: Crossing the Ocean</a></li>
+        <li><a href="{{ '/verses/verse_20' | relative_url }}">Verse 20: Remover of Difficulties</a></li>
+        <li><a href="{{ '/verses/verse_21' | relative_url }}">Verse 21: Guardian at Rama's Door</a></li>
+        <li><a href="{{ '/verses/verse_22' | relative_url }}">Verse 22: Source of All Happiness</a></li>
+        <li><a href="{{ '/verses/verse_23' | relative_url }}">Verse 23: Controller of Own Power</a></li>
+        <li><a href="{{ '/verses/verse_24' | relative_url }}">Verse 24: Protector from Evil Spirits</a></li>
+        <li><a href="{{ '/verses/verse_25' | relative_url }}">Verse 25: Destroyer of Disease</a></li>
+        <li><a href="{{ '/verses/verse_26' | relative_url }}">Verse 26: Liberator from Crises</a></li>
+        <li><a href="{{ '/verses/verse_27' | relative_url }}">Verse 27: Servant of the Supreme King</a></li>
+        <li><a href="{{ '/verses/verse_28' | relative_url }}">Verse 28: Granter of Desires</a></li>
+        <li><a href="{{ '/verses/verse_29' | relative_url }}">Verse 29: Renowned Through All Ages</a></li>
+        <li><a href="{{ '/verses/verse_30' | relative_url }}">Verse 30: Protector of Saints</a></li>
+        <li><a href="{{ '/verses/verse_31' | relative_url }}">Verse 31: Giver of Eight Siddhis</a></li>
+        <li><a href="{{ '/verses/verse_32' | relative_url }}">Verse 32: Possessor of Ram Rasayan</a></li>
+        <li><a href="{{ '/verses/verse_33' | relative_url }}">Verse 33: Path to Rama</a></li>
+        <li><a href="{{ '/verses/verse_34' | relative_url }}">Verse 34: Journey to Rama's Abode</a></li>
+        <li><a href="{{ '/verses/verse_35' | relative_url }}">Verse 35: Sufficient Devotion</a></li>
+        <li><a href="{{ '/verses/verse_36' | relative_url }}">Verse 36: Remover of All Suffering</a></li>
+        <li><a href="{{ '/verses/verse_37' | relative_url }}">Verse 37: Invocation for Grace</a></li>
+        <li><a href="{{ '/verses/verse_38' | relative_url }}">Verse 38: Freedom Through Recitation</a></li>
+        <li><a href="{{ '/verses/verse_39' | relative_url }}">Verse 39: Witness of Shiva</a></li>
+        <li><a href="{{ '/verses/verse_40' | relative_url }}">Verse 40: Tulsidas's Prayer</a></li>
     </ul>
 
     <h3>Closing Doha</h3>

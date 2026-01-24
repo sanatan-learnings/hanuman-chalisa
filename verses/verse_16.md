@@ -19,7 +19,8 @@ next_verse: "/verses/verse_17"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Tum upkar Sugrivahin kinha
+Ram milay raj pad dinha
 ```
 
 ## 3. Pronunciation Guide

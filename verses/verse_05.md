@@ -19,7 +19,8 @@ next_verse: "/verses/verse_06"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Hath bajra au dhvaja virajai
+Kandhe moonj janeoo sajai
 ```
 
 ## 3. Pronunciation Guide

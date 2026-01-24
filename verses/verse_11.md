@@ -19,7 +19,8 @@ next_verse: "/verses/verse_12"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Laaye sajeevan Lakhan jiyaye
+Shri Raghubir harashi ur laye
 ```
 
 ## 3. Pronunciation Guide

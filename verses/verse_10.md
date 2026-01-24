@@ -19,7 +19,8 @@ next_verse: "/verses/verse_11"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Bhima roop dhari asur sanhare
+Ramchandra ke kaaj sanvare
 ```
 
 ## 3. Pronunciation Guide

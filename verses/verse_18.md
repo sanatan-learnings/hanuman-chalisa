@@ -19,7 +19,8 @@ next_verse: "/verses/verse_19"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Jug sahastra jojan par bhanu
+Leelyo tahi madhur phal janu
 ```
 
 ## 3. Pronunciation Guide

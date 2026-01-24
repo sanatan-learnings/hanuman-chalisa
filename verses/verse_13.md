@@ -19,7 +19,8 @@ next_verse: "/verses/verse_14"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sahas badan tumharo jas gavain
+As kahi Shripati kanth lagavain
 ```
 
 ## 3. Pronunciation Guide

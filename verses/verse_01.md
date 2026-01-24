@@ -18,10 +18,13 @@ next_verse: "/verses/verse_02"
 तिहुं लोक उजागर।।
 ```
 
-## 2. Transliteration
+## 2. Simplified Transliteration
 
 ```
-[Insert IAST transliteration here]
+Jai Hanuman
+Gyaan gun saagar
+Jai Kapis
+Tihun lok ujagar
 ```
 
 ## 3. Pronunciation Guide

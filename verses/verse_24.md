@@ -19,7 +19,8 @@ next_verse: "/verses/verse_25"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Bhoot pisach nikat nahin avai
+Mahavir jab nam sunavai
 ```
 
 ## 3. Pronunciation Guide

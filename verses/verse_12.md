@@ -19,7 +19,8 @@ next_verse: "/verses/verse_13"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Raghupati kinhi bahut badai
+Tum mam priya Bharatahi sam bhai
 ```
 
 ## 3. Pronunciation Guide

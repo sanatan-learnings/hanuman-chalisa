@@ -19,7 +19,8 @@ next_verse: "/verses/verse_15"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sanakadik Brahmadi munisa
+Narad Sarad sahit ahisa
 ```
 
 ## 3. Pronunciation Guide

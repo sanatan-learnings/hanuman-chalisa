@@ -19,7 +19,8 @@ next_verse: "/verses/verse_23"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sab sukh lahai tumhari sarna
+Tum rakshak kahu ko dar na
 ```
 
 ## 3. Pronunciation Guide

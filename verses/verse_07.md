@@ -19,7 +19,8 @@ next_verse: "/verses/verse_08"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Vidyavan guni ati chatur
+Ram kaaj karibe ko aatur
 ```
 
 ## 3. Pronunciation Guide

@@ -19,7 +19,8 @@ next_verse: "/verses/verse_16"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Yam Kuber digpal jahan te
+Kabi kobid kahi sake kahan te
 ```
 
 ## 3. Pronunciation Guide

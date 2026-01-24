@@ -21,7 +21,10 @@ next_verse: "/verses/verse_04"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Mahavir
+Bikram bajrangi
+Kumati nivar
+Sumati ke sangi
 ```
 
 ## 3. Pronunciation Guide

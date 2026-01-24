@@ -19,7 +19,8 @@ next_verse: "/verses/verse_36"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Aur devata chitt na dharai
+Hanumat sei sarva sukh karai
 ```
 
 ## 3. Pronunciation Guide

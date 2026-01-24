@@ -19,7 +19,8 @@ next_verse: "/verses/verse_22"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Ram duare tum rakhavare
+Hot na agya binu paisare
 ```
 
 ## 3. Pronunciation Guide

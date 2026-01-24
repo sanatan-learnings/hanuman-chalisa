@@ -19,7 +19,8 @@ next_verse: "/verses/verse_07"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Shankar suvan Kesari nandan
+Tej pratap maha jag bandan
 ```
 
 ## 3. Pronunciation Guide

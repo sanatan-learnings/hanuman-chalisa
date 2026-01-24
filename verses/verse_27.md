@@ -19,7 +19,8 @@ next_verse: "/verses/verse_28"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sab par Ram tapasvi raja
+Tin ke kaaj sakal tum saja
 ```
 
 ## 3. Pronunciation Guide

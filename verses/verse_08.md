@@ -19,7 +19,8 @@ next_verse: "/verses/verse_09"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Prabhu charitra sunibe ko rasiya
+Ram lakhan Sita man basiya
 ```
 
 ## 3. Pronunciation Guide

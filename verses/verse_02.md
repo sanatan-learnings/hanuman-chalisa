@@ -21,7 +21,10 @@ next_verse: "/verses/verse_03"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Ram doot
+Atulit bal dhama
+Anjani-putra
+Pavansut nama
 ```
 
 ## 3. Pronunciation Guide

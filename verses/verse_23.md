@@ -19,7 +19,8 @@ next_verse: "/verses/verse_24"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Aapan tej samharo aapai
+Teenon lok hank ten kanpai
 ```
 
 ## 3. Pronunciation Guide

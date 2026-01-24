@@ -19,7 +19,8 @@ next_verse: "/verses/doha_closing"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Tulsidas sada Hari chera
+Keejai nath hriday mahan dera
 ```
 
 ## 3. Pronunciation Guide

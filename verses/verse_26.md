@@ -19,7 +19,8 @@ next_verse: "/verses/verse_27"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sankat ten Hanuman chhudavai
+Man kram bachan dhyan jo lavai
 ```
 
 ## 3. Pronunciation Guide

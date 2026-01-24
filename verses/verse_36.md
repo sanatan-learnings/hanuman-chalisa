@@ -19,7 +19,8 @@ next_verse: "/verses/verse_37"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sankat katai mitai sab peera
+Jo sumirai Hanumat balbeera
 ```
 
 ## 3. Pronunciation Guide

@@ -18,10 +18,13 @@ next_verse: "/verses/verse_01"
 हरहु कलेस बिकार।।
 ```
 
-## 2. Transliteration
+## 2. Simplified Transliteration
 
 ```
-[Insert IAST transliteration here]
+Buddhiheen tanu janike,
+Sumirou pavan-kumar
+Bal buddhi bidya dehu mohin,
+Harahu kales bikar
 ```
 
 ## 3. Pronunciation Guide
@@ -83,6 +86,6 @@ Recognizing our limitations with humility and seeking divine grace for strength,
 **When to Use This Verse:**
 Recite this verse when facing challenges that seem beyond your capabilities, when seeking mental clarity, or when you need strength to overcome obstacles and inner weaknesses.
 
-## 10. Recitation Guidelines
+---
 
-*This verse is part of the [Hanuman Chalisa Comprehensive Guide](../README.md)*
+*For recitation guidelines and usage instructions, see the [Comprehensive Guide](../docs/guide.md).*

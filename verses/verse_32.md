@@ -19,7 +19,8 @@ next_verse: "/verses/verse_33"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Ram rasayan tumhare pasa
+Sada raho Raghupati ke dasa
 ```
 
 ## 3. Pronunciation Guide

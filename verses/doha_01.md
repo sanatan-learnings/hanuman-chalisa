@@ -18,10 +18,13 @@ next_verse: "/verses/doha_02"
 जो दायकु फल चारि।।
 ```
 
-## 2. Transliteration
+## 2. Simplified Transliteration
 
 ```
-[Insert IAST transliteration here]
+Shri Guru charan saroj raj,
+Nij man mukuru sudhari
+Barnau Raghubar bimal jasu,
+Jo dayaku phal chari
 ```
 
 ## 3. Pronunciation Guide
@@ -86,6 +89,6 @@ True knowledge and spiritual progress comes through the grace of the guru and a 
 **When to Use This Verse:**
 Recite this verse at the beginning of any sacred work, study, or spiritual practice to invoke the guru's blessings and prepare your mind to receive divine wisdom.
 
-## 10. Recitation Guidelines
+---
 
-*This verse is part of the [Hanuman Chalisa Comprehensive Guide](../README.md)*
+*For recitation guidelines and usage instructions, see the [Comprehensive Guide](../docs/guide.md).*

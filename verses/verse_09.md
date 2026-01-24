@@ -19,7 +19,8 @@ next_verse: "/verses/verse_10"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Sukshma roop dhari siyahin dikhava
+Bikat roop dhari Lanka jarava
 ```
 
 ## 3. Pronunciation Guide

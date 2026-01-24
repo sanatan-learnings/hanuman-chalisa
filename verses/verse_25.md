@@ -19,7 +19,8 @@ next_verse: "/verses/verse_26"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Nasai rog harai sab peera
+Japat nirantar Hanumat beera
 ```
 
 ## 3. Pronunciation Guide

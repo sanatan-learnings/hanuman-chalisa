@@ -19,7 +19,8 @@ next_verse: "/verses/verse_30"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Charon jug partap tumhara
+Hai parsiddh jagat ujiyara
 ```
 
 ## 3. Pronunciation Guide

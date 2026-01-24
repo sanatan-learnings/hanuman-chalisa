@@ -19,7 +19,8 @@ next_verse: "/verses/verse_34"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Tumhare bhajan Ram ko pavai
+Janam janam ke dukh bisaravai
 ```
 
 ## 3. Pronunciation Guide

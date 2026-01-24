@@ -19,7 +19,8 @@ next_verse: "/verses/verse_39"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Jo sat baar path kar koi
+Chhutahi bandi maha sukh hoi
 ```
 
 ## 3. Pronunciation Guide

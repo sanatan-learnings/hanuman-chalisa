@@ -19,7 +19,8 @@ next_verse: "/verses/verse_20"
 ## 2. Transliteration
 
 ```
-[Insert IAST transliteration here]
+Prabhu mudrika meli mukh mahin
+Jaladhi langhi gaye acharaj nahin
 ```
 
 ## 3. Pronunciation Guide
