@@ -1,0 +1,18 @@
+---
+layout: none
+---
+[
+  {% for verse in site.verses %}
+  {
+    "title": {{ verse.title | jsonify }},
+    "url": {{ verse.url | jsonify }},
+    "verse_number": {{ verse.verse_number | jsonify }},
+    "devanagari": {{ verse.devanagari | jsonify }},
+    "transliteration": {{ verse.transliteration | jsonify }},
+    "literal_translation": {{ verse.literal_translation | jsonify }},
+    "interpretive_meaning": {{ verse.interpretive_meaning | jsonify }},
+    "story": {{ verse.story | jsonify }},
+    "word_meanings": {{ verse.word_meanings | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

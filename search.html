@@ -1,0 +1,397 @@
+---
+layout: default
+title: "Search Verses"
+description: "Search through all Hanuman Chalisa verses by keyword, phrase, or meaning"
+---
+
+<div class="search-container">
+    <div class="search-header">
+        <h1>🔍 Search Verses</h1>
+        <p>Search across all verses in Devanagari, transliteration, translations, and meanings</p>
+    </div>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter search term (e.g., 'Hanuman', 'courage', 'Lanka'...)"
+            autocomplete="off"
+        >
+        <button id="clearSearch" style="display: none;">✕ Clear</button>
+    </div>
+
+    <div class="search-filters">
+        <label><input type="checkbox" id="searchDevanagari" checked> Devanagari</label>
+        <label><input type="checkbox" id="searchTransliteration" checked> Transliteration</label>
+        <label><input type="checkbox" id="searchTranslation" checked> Translation</label>
+        <label><input type="checkbox" id="searchMeanings" checked> Word Meanings</label>
+    </div>
+
+    <div id="searchStats" class="search-stats"></div>
+
+    <div id="searchResults" class="search-results">
+        <p class="search-prompt">Start typing to search across all 43 verses...</p>
+    </div>
+</div>
+
+<style>
+.search-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-header h1 {
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.search-header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.search-box {
+    position: relative;
+    margin: 30px 0;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #ff6b35;
+}
+
+#clearSearch {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#clearSearch:hover {
+    background: #e55a2b;
+}
+
+.search-filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-filters label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-stats {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.search-results {
+    margin-top: 30px;
+}
+
+.search-prompt {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 40px 20px;
+}
+
+.no-results {
+    text-align: center;
+    color: #999;
+    padding: 40px 20px;
+}
+
+.search-result-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.search-result-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.result-title {
+    font-size: 1.3em;
+    color: #ff6b35;
+    margin: 0;
+}
+
+.result-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.result-link:hover {
+    text-decoration: underline;
+}
+
+.result-content {
+    margin-top: 10px;
+}
+
+.result-snippet {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.result-label {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.result-text {
+    color: #333;
+    margin-top: 5px;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .search-filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .result-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+</style>
+
+<script>
+let versesData = [];
+let searchTimeout;
+
+// Load verses data
+fetch('{{ "/search.json" | relative_url }}')
+    .then(response => response.json())
+    .then(data => {
+        versesData = data;
+        console.log(`Loaded ${versesData.length} verses for search`);
+    })
+    .catch(error => {
+        console.error('Error loading search data:', error);
+        document.getElementById('searchResults').innerHTML =
+            '<p class="no-results">Error loading search data. Please refresh the page.</p>';
+    });
+
+// Search input handler
+document.getElementById('searchInput').addEventListener('input', function(e) {
+    const query = e.target.value.trim();
+    const clearBtn = document.getElementById('clearSearch');
+
+    clearBtn.style.display = query ? 'block' : 'none';
+
+    // Debounce search
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => performSearch(query), 300);
+});
+
+// Clear button handler
+document.getElementById('clearSearch').addEventListener('click', function() {
+    document.getElementById('searchInput').value = '';
+    this.style.display = 'none';
+    document.getElementById('searchResults').innerHTML =
+        '<p class="search-prompt">Start typing to search across all 43 verses...</p>';
+    document.getElementById('searchStats').innerHTML = '';
+});
+
+// Filter change handlers
+['searchDevanagari', 'searchTransliteration', 'searchTranslation', 'searchMeanings'].forEach(id => {
+    document.getElementById(id).addEventListener('change', function() {
+        const query = document.getElementById('searchInput').value.trim();
+        if (query) performSearch(query);
+    });
+});
+
+function performSearch(query) {
+    const resultsDiv = document.getElementById('searchResults');
+    const statsDiv = document.getElementById('searchStats');
+
+    if (!query) {
+        resultsDiv.innerHTML = '<p class="search-prompt">Start typing to search across all 43 verses...</p>';
+        statsDiv.innerHTML = '';
+        return;
+    }
+
+    const filters = {
+        devanagari: document.getElementById('searchDevanagari').checked,
+        transliteration: document.getElementById('searchTransliteration').checked,
+        translation: document.getElementById('searchTranslation').checked,
+        meanings: document.getElementById('searchMeanings').checked
+    };
+
+    const results = searchVerses(query, filters);
+    displayResults(results, query);
+}
+
+function searchVerses(query, filters) {
+    const searchTerm = query.toLowerCase();
+    const results = [];
+
+    versesData.forEach(verse => {
+        const matches = [];
+
+        if (filters.devanagari && verse.devanagari) {
+            if (verse.devanagari.toLowerCase().includes(searchTerm)) {
+                matches.push({ type: 'Devanagari', text: verse.devanagari });
+            }
+        }
+
+        if (filters.transliteration && verse.transliteration) {
+            if (verse.transliteration.toLowerCase().includes(searchTerm)) {
+                matches.push({ type: 'Transliteration', text: verse.transliteration });
+            }
+        }
+
+        if (filters.translation) {
+            if (verse.literal_translation && verse.literal_translation.toLowerCase().includes(searchTerm)) {
+                matches.push({ type: 'Translation', text: verse.literal_translation });
+            }
+            if (verse.interpretive_meaning && verse.interpretive_meaning.toLowerCase().includes(searchTerm)) {
+                matches.push({ type: 'Meaning', text: verse.interpretive_meaning });
+            }
+            if (verse.story && verse.story.toLowerCase().includes(searchTerm)) {
+                matches.push({ type: 'Story', text: verse.story });
+            }
+        }
+
+        if (filters.meanings && verse.word_meanings) {
+            verse.word_meanings.forEach(item => {
+                const meaningText = `${item.word} (${item.roman}) - ${item.meaning}`;
+                if (meaningText.toLowerCase().includes(searchTerm)) {
+                    matches.push({ type: 'Word Meaning', text: meaningText });
+                }
+            });
+        }
+
+        if (matches.length > 0) {
+            results.push({
+                verse: verse,
+                matches: matches
+            });
+        }
+    });
+
+    return results;
+}
+
+function displayResults(results, query) {
+    const resultsDiv = document.getElementById('searchResults');
+    const statsDiv = document.getElementById('searchStats');
+
+    if (results.length === 0) {
+        resultsDiv.innerHTML = `<p class="no-results">No results found for "<strong>${escapeHtml(query)}</strong>". Try a different search term.</p>`;
+        statsDiv.innerHTML = '';
+        return;
+    }
+
+    statsDiv.innerHTML = `Found ${results.length} verse${results.length === 1 ? '' : 's'} matching "<strong>${escapeHtml(query)}</strong>"`;
+
+    let html = '';
+    results.forEach(result => {
+        const verse = result.verse;
+        html += `
+            <div class="search-result-item">
+                <div class="result-header">
+                    <h3 class="result-title">${escapeHtml(verse.title)}</h3>
+                    <a href="${verse.url}" class="result-link">View Full Verse →</a>
+                </div>
+                <div class="result-content">
+        `;
+
+        result.matches.forEach(match => {
+            const highlightedText = highlightQuery(match.text, query);
+            html += `
+                <div class="result-snippet">
+                    <div class="result-label">${match.type}</div>
+                    <div class="result-text">${highlightedText}</div>
+                </div>
+            `;
+        });
+
+        html += `
+                </div>
+            </div>
+        `;
+    });
+
+    resultsDiv.innerHTML = html;
+}
+
+function highlightQuery(text, query) {
+    if (!text) return '';
+    const escapedText = escapeHtml(text);
+    const escapedQuery = escapeHtml(query);
+    const regex = new RegExp(`(${escapedQuery})`, 'gi');
+    return escapedText.replace(regex, '<span class="highlight">$1</span>');
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Focus search input on page load
+document.getElementById('searchInput').focus();
+</script>

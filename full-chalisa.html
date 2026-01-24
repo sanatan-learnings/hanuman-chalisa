@@ -1,0 +1,291 @@
+---
+layout: default
+title: "Complete Hanuman Chalisa - Full Text"
+description: "Read the complete Hanuman Chalisa with all 43 verses on a single page with Devanagari text, transliteration, and translations"
+---
+
+<div class="full-chalisa-container">
+    <div class="full-chalisa-header">
+        <h1>Complete Hanuman Chalisa</h1>
+        <p class="subtitle">All 43 verses on one page</p>
+
+        <div class="view-options">
+            <label><input type="checkbox" id="toggle-transliteration" checked> Show Transliteration</label>
+            <label><input type="checkbox" id="toggle-translation" checked> Show Translation</label>
+            <label><input type="checkbox" id="toggle-meanings"> Show Word Meanings</label>
+            <button onclick="window.print()" class="print-all-button">🖨️ Print All</button>
+        </div>
+    </div>
+
+    <div class="verses-content">
+        {% assign sorted_verses = site.verses | sort: "verse_number" %}
+        {% for verse in sorted_verses %}
+        <article class="verse-item" id="{{ verse.url | split: '/' | last }}">
+            <div class="verse-header">
+                <h2>{{ verse.title }}</h2>
+                <a href="{{ verse.url | relative_url }}" class="verse-link">View Details →</a>
+            </div>
+
+            <div class="verse-section devanagari-section">
+                <h3>Devanagari</h3>
+                <pre class="devanagari-text">{{ verse.devanagari }}</pre>
+            </div>
+
+            <div class="verse-section transliteration-section">
+                <h3>Transliteration</h3>
+                <pre class="transliteration-text">{{ verse.transliteration }}</pre>
+            </div>
+
+            <div class="verse-section translation-section">
+                <h3>Translation</h3>
+                <p class="literal-translation">{{ verse.literal_translation }}</p>
+            </div>
+
+            <div class="verse-section meanings-section" style="display: none;">
+                <h3>Word-by-Word Meaning</h3>
+                <ul class="word-meanings">
+                {% for item in verse.word_meanings %}
+                    <li><strong>{{ item.word }}</strong> ({{ item.roman }}) - {{ item.meaning }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+
+            <hr class="verse-divider">
+        </article>
+        {% endfor %}
+    </div>
+
+    <div class="full-chalisa-footer">
+        <p><a href="{{ '/' | relative_url }}">← Back to Verse List</a></p>
+        <p><em>May Lord Hanuman's blessings be with all who recite these sacred verses.</em></p>
+    </div>
+</div>
+
+<style>
+.full-chalisa-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.full-chalisa-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ff6b35;
+}
+
+.full-chalisa-header h1 {
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.full-chalisa-header .subtitle {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.view-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.view-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.view-options input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.print-all-button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.print-all-button:hover {
+    background: #e55a2b;
+}
+
+.verses-content {
+    margin: 30px 0;
+}
+
+.verse-item {
+    margin-bottom: 40px;
+    scroll-margin-top: 100px;
+}
+
+.verse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #fff5f0 0%, #ffe8dc 100%);
+    border-left: 5px solid #ff6b35;
+    border-radius: 5px;
+}
+
+.verse-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.4em;
+}
+
+.verse-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.verse-link:hover {
+    text-decoration: underline;
+}
+
+.verse-section {
+    margin-bottom: 20px;
+}
+
+.verse-section h3 {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.devanagari-text {
+    font-size: 1.4em;
+    font-weight: 500;
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 3px solid #ff6b35;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.transliteration-text {
+    font-size: 1.2em;
+    font-style: italic;
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 3px solid #4a90e2;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.literal-translation {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.word-meanings {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.word-meanings li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.word-meanings li:last-child {
+    border-bottom: none;
+}
+
+.verse-divider {
+    border: none;
+    border-top: 2px dashed #ddd;
+    margin: 40px 0;
+}
+
+.full-chalisa-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 3px solid #ff6b35;
+}
+
+.full-chalisa-footer p {
+    margin: 10px 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .verse-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .view-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .devanagari-text,
+    .transliteration-text {
+        font-size: 1.2em;
+    }
+}
+
+/* Print styles */
+@media print {
+    .view-options,
+    .verse-link,
+    .print-all-button {
+        display: none !important;
+    }
+
+    .verse-item {
+        page-break-inside: avoid;
+    }
+
+    .verse-header {
+        background: none !important;
+        border: 1px solid #000;
+    }
+}
+</style>
+
+<script>
+// Toggle sections visibility
+document.getElementById('toggle-transliteration').addEventListener('change', function(e) {
+    const sections = document.querySelectorAll('.transliteration-section');
+    sections.forEach(section => {
+        section.style.display = e.target.checked ? 'block' : 'none';
+    });
+});
+
+document.getElementById('toggle-translation').addEventListener('change', function(e) {
+    const sections = document.querySelectorAll('.translation-section');
+    sections.forEach(section => {
+        section.style.display = e.target.checked ? 'block' : 'none';
+    });
+});
+
+document.getElementById('toggle-meanings').addEventListener('change', function(e) {
+    const sections = document.querySelectorAll('.meanings-section');
+    sections.forEach(section => {
+        section.style.display = e.target.checked ? 'block' : 'none';
+    });
+});
+</script>
