@@ -57,7 +57,9 @@ Listen to the audio above for authentic pronunciation. The following breakdown h
 - The broader context within Hindu mythology
 - Why Tulsidas chose to highlight this particular aspect
 
-## 8. Ramayana Citation
+## 8. Ramayana Citation *(Optional - Include only if there's a clear, direct reference)*
+
+> **Note:** Only include this section when the verse references a specific incident or episode from the Ramayana. Omit for verses that contain general praise or attributes without direct scriptural citations.
 
 **Valmiki Ramayana:**
 - [Kanda name] - [Chapter/Sarga number]
