@@ -21,25 +21,46 @@ This comprehensive guide aims to make the Hanuman Chalisa accessible and meaning
 - Proper pronunciation and recitation guidance
 - Devotional insights for spiritual growth
 
+## 🌐 Bilingual Support
+
+The entire website is fully bilingual, supporting both **English** and **हिन्दी (Hindi)**:
+
+- **Language Switcher** - Toggle between languages at any time from the header
+- **Persistent Selection** - Your language preference is remembered across all pages
+- **Complete Translation** - Every element of the site switches languages:
+  - All 43 verse titles
+  - Word-by-word meanings for every verse
+  - Literal translations, interpretive meanings, and stories
+  - Section headings, navigation buttons, and UI elements
+  - Page titles, descriptions, and footer content
+- **Client-Side Implementation** - Fast language switching without page reload
+- **Extensible Architecture** - Ready to support additional languages (Tamil, Telugu, Spanish planned)
+
+Whether you're more comfortable reading in English or हिन्दी, the complete devotional content and scholarly insights are available to you.
+
 ## Features
 
 ### Interactive Website
-- **Multi-language support** - English and Hindi (हिन्दी) with language switcher
-- **Full chalisa view** - Read all 43 verses on a single page
-- **Search functionality** - Search across all verses in Devanagari, transliteration, translations
-- **Arrow key navigation** (← →) between verses
-- **Print-friendly** - Optimized CSS for printing verses
-- **Mobile responsive** design
-- **Audio recitations** (coming soon)
-- **Beautiful images** for each verse (coming soon)
+- **🌐 Complete bilingual support** - Full site available in English and Hindi (हिन्दी)
+  - Language switcher in header preserves selection across all pages
+  - All UI elements, navigation, and content switch languages
+  - Verse titles, section headings, and word meanings fully translated
+- **📖 Full chalisa view** - Read all 43 verses on a single page with bilingual display
+- **🔍 Search functionality** - Search across all verses in Devanagari, transliteration, translations
+- **⌨️ Arrow key navigation** (← →) between verses
+- **🖨️ Print-friendly** - Optimized CSS for printing verses
+- **📱 Mobile responsive** design
+- **🎵 Audio recitations** (coming soon)
+- **🖼️ Beautiful images** for each verse (coming soon)
 
 ### Content for Each Verse
-- Original Hindi text with Devanagari script
-- Simplified English transliteration (phonetic, easy-to-read)
-- Word-by-word meanings
-- Literal and interpretive translations (English + Hindi)
-- Story and context from Ramayana
-- Practical application for daily life
+- **Original Hindi text** with Devanagari script
+- **Simplified English transliteration** (phonetic, easy-to-read)
+- **Word-by-word meanings** in both English and Hindi (शब्द-दर-शब्द अर्थ)
+- **Literal translations** in English and Hindi (शाब्दिक अनुवाद)
+- **Interpretive meanings** in English and Hindi (व्याख्यात्मक अर्थ)
+- **Story and context** from Ramayana in both languages
+- **Practical applications** for daily life in both languages
 
 For detailed information about the verse structure, see **[verse-structure.md](docs/verse-structure.md)**.
 
@@ -55,22 +76,27 @@ For detailed information about the verse structure, see **[verse-structure.md](d
 
 ## Completed Features ✓
 
-- ✅ **Multi-language support** - English + Hindi UI with extensible architecture
-- ✅ **Full chalisa view** - All 43 verses on single page with toggle controls
+- ✅ **Complete bilingual implementation** - Full English + Hindi support across entire site
+  - All 43 verse titles translated
+  - Word-by-word meanings in both languages (all verses)
+  - Literal translations, interpretive meanings, stories in both languages (all verses)
+  - All UI elements, navigation, section headings bilingual
+  - Client-side language switching with localStorage persistence
+- ✅ **Full chalisa view** - All 43 verses on single page with bilingual toggle controls
 - ✅ **Search functionality** - Client-side search across all content types
 - ✅ **Print-friendly CSS** - Optimized for printing verses
 - ✅ **YAML-based architecture** - Clean separation of data and presentation
+- ✅ **Pre-commit hooks** - Automated validation of YAML syntax and Jekyll builds
 
 ## Upcoming Features
 
 We have several exciting enhancements planned! Check out our [GitHub Issues](https://github.com/arun-gupta/hanuman-chalisa/issues) for:
 
-1. **Audio Recitations** - Generate audio files using ElevenLabs for all 43 verses (full speed + slow speed)
-2. **Complete Hindi Translations** - Finish translating all 43 verses to Hindi (22/43 completed)
-3. **Images** - Generate verse images using Midjourney (43 needed)
-4. **Additional Languages** - Add Tamil, Telugu, Spanish translations
-5. **PDF Generation** - Create printable PDF with Devanagari text, transliteration, translations, and images
-6. **Alternate Image Themes** - Multiple artistic styles with theme switcher
+1. **Audio Recitations** - Generate audio files using AI voice synthesis for all 43 verses (full speed + slow speed)
+2. **Images** - Generate verse images for visual accompaniment (43 needed)
+3. **Additional Languages** - Add Tamil (தமிழ்), Telugu (తెలుగు), Spanish (Español) translations
+4. **PDF Generation** - Create printable PDF with Devanagari text, transliteration, translations, and images
+5. **Alternate Image Themes** - Multiple artistic styles with theme switcher
 
 Want to help? Check the [issues](https://github.com/arun-gupta/hanuman-chalisa/issues) or see [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started!
 
