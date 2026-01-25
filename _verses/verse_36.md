@@ -5,6 +5,7 @@ title_hi: "चौपाई 36: संकट और पीड़ा के नि
 verse_number: 36
 previous_verse: "/verses/verse_35"
 next_verse: "/verses/verse_37"
+image: "/images/verse-36.png"
 
 devanagari: |
   संकट कटै मिटै सब पीरा।
