@@ -5,6 +5,7 @@ title_hi: "चौपाई 28: इच्छाओं को पूर्ण क�
 verse_number: 28
 previous_verse: "/verses/verse_27"
 next_verse: "/verses/verse_29"
+image: "/images/verse-28.png"
 
 devanagari: |
   और मनोरथ जो कोई लावै।

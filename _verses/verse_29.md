@@ -5,6 +5,7 @@ title_hi: "चौपाई 29: सभी युगों में महिम�
 verse_number: 29
 previous_verse: "/verses/verse_28"
 next_verse: "/verses/verse_30"
+image: "/images/verse-29.png"
 
 devanagari: |
   चारों जुग परताप तुम्हारा।

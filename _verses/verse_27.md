@@ -5,6 +5,7 @@ title_hi: "चौपाई 27: राम के कार्य सिद्ध 
 verse_number: 27
 previous_verse: "/verses/verse_26"
 next_verse: "/verses/verse_28"
+image: "/images/verse-27.png"
 
 devanagari: |
   सब पर राम तपस्वी राजा।

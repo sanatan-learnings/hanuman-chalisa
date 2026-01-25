@@ -5,6 +5,7 @@ title_hi: "चौपाई 30: संतों के रक्षक, राक
 verse_number: 30
 previous_verse: "/verses/verse_29"
 next_verse: "/verses/verse_31"
+image: "/images/verse-30.png"
 
 devanagari: |
   साधु संत के तुम रखवारे।

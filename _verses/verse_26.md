@@ -5,6 +5,7 @@ title_hi: "चौपाई 26: संकट से मुक्ति"
 verse_number: 26
 previous_verse: "/verses/verse_25"
 next_verse: "/verses/verse_27"
+image: "/images/verse-26.png"
 
 devanagari: |
   संकट तें हनुमान छुड़ावै।
