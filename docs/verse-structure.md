@@ -131,7 +131,7 @@ The `_layouts/verse.html` template processes the YAML data:
 When viewed on the website, each verse displays:
 
 ### **Verse Image**
-Visual representation at the top (coming soon via Midjourney)
+Visual representation at the top (generated via DALL-E 3, in progress - 6 images added so far)
 
 ### **1. Original Hindi Text (Devanagari Script)**
 The authentic verse in traditional form
@@ -140,7 +140,7 @@ The authentic verse in traditional form
 Phonetic Roman script for those unfamiliar with Devanagari
 
 ### **3. Pronunciation Guide**
-- Audio recitation notice (coming soon via ElevenLabs)
+- Audio recitation notice (coming soon via AI voice synthesis)
 - Phonetic breakdown of challenging words
 - Link to Comprehensive Guide for general tips
 

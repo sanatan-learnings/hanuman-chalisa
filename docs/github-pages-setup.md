@@ -244,18 +244,18 @@ Then visit: `http://localhost:4000/hanuman-chalisa/`
 
 ## File Requirements
 
-### Images (43 files needed)
-- Format: JPG or PNG
-- Recommended size: 800×600px
-- Naming: `doha_01.jpg`, `verse_01.jpg`, `verse_02.jpg`, etc.
-- To generate: Use Midjourney for AI-generated iconographic images
+### Images (43 files needed - In Progress)
+- Format: PNG (high resolution)
+- Naming: `opening-doha-01.png`, `verse-01.png`, etc.
+- To generate: Use DALL-E 3 via OpenAI for AI-generated iconographic images
+- Status: 6 images added (opening dohas 1-2, verses 1-4)
 
-### Audio (86 files needed)
+### Audio (86 files needed - Planned)
 - Format: MP3
 - Quality: 128kbps minimum
 - Two files per verse: `*_full.mp3` and `*_slow.mp3`
 - Example: `verse_01_full.mp3`, `verse_01_slow.mp3`
-- To generate: Use ElevenLabs for AI voice synthesis
+- To generate: Use AI voice synthesis (provider TBD)
 
 ### Verses (43 files - ✓ Complete)
 - Format: Markdown (.md) with YAML front matter only

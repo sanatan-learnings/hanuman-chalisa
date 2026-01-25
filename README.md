@@ -63,7 +63,7 @@ For detailed information about the verse structure, see **[verse-structure.md](d
 ## Documentation
 
 - **[verse-structure.md](docs/verse-structure.md)** - Detailed explanation of verse components and structure
-- **[tech-stack.md](docs/tech-stack.md)** - Technologies, tools, and services used (Jekyll, PyCharm, Claude Code, Midjourney, ElevenLabs)
+- **[tech-stack.md](docs/tech-stack.md)** - Technologies, tools, and services used (Jekyll, PyCharm, Claude Code, DALL-E 3)
 - **[multilingual-implementation.md](docs/multilingual-implementation.md)** - Multi-language architecture and implementation guide
 - **[background.md](docs/background.md)** - Complete history and context of the Hanuman Chalisa
 - **[guide.md](docs/guide.md)** - Comprehensive usage guide for different purposes

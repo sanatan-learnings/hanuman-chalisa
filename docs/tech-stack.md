@@ -217,15 +217,17 @@ See [multilingual-implementation.md](multilingual-implementation.md) for complet
 5. **Build** - GitHub Pages automatically builds Jekyll site (1-2 min)
 6. **Deploy** - Live at https://arun-gupta.github.io/hanuman-chalisa/
 
-## Media Generation (Planned)
+## Media Generation
 
 ### Images
-- **Midjourney** - AI image generation
-- Export as JPG (800×600px)
-- Store in `/images/verse_01.jpg`, etc.
+- **DALL-E 3** - AI image generation via OpenAI
+- Export as PNG (high resolution)
+- Store in `/images/` directory
+- Naming convention: `opening-doha-01.png`, `verse-01.png`, etc.
+- Currently implemented for opening dohas and first 4 verses
 
-### Audio Recitations
-- **ElevenLabs** - AI voice synthesis
+### Audio Recitations (Planned)
+- **AI voice synthesis** - Provider to be determined
 - Full-speed and slow-speed versions
 - Export as MP3 (128kbps)
 - Store in `/audio/verse_01_full.mp3`, `/audio/verse_01_slow.mp3`
@@ -292,10 +294,10 @@ Navigation:
 
 - **Hosting**: Free (GitHub Pages)
 - **Domain** (optional): $10-15/year
-- **Images** (one-time): Midjourney $10-60/month
-- **Audio** (one-time): ElevenLabs $5-330/month
+- **Images**: DALL-E 3 via OpenAI API (pay per image)
+- **Audio** (planned): TBD
 
-**Total**: Free for hosting, ~$50-200 one-time for media
+**Total**: Free for hosting, minimal cost for AI-generated media
 
 ## Resources
 
