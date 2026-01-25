@@ -5,6 +5,7 @@ title_hi: "चौपाई 4: सुनहरे वर्ण और सुं�
 verse_number: 4
 previous_verse: "/verses/verse_03"
 next_verse: "/verses/verse_05"
+image: "/images/verse-04.png"
 
 devanagari: |
   कंचन बरन बिराज सुबेसा।

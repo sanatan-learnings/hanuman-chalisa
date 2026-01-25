@@ -5,6 +5,7 @@ title_hi: "चौपाई 2: राम के दूत"
 verse_number: 2
 previous_verse: "/verses/verse_01"
 next_verse: "/verses/verse_03"
+image: "/images/verse-02.png"
 
 devanagari: |
   राम दूत

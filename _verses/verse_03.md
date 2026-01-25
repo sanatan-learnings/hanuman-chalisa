@@ -5,6 +5,7 @@ title_hi: "चौपाई 3: वज्र के समान शरीर व�
 verse_number: 3
 previous_verse: "/verses/verse_02"
 next_verse: "/verses/verse_04"
+image: "/images/verse-03.png"
 
 devanagari: |
   महाबीर

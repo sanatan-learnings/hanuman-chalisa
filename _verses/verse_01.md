@@ -5,6 +5,7 @@ title_hi: "चौपाई 1: ज्ञान और गुणों के स�
 verse_number: 1
 previous_verse: "/verses/doha_02"
 next_verse: "/verses/verse_02"
+image: "/images/verse-01.png"
 
 devanagari: |
   जय हनुमान
