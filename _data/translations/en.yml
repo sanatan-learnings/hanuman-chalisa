@@ -78,6 +78,19 @@ full_chalisa:
   translation: "Translation"
   word_meaning: "Word-by-Word Meaning"
 
+book:
+  title: "Generate Book"
+  subtitle: "Customize your printable Hanuman Chalisa book"
+  page_size: "Page Size"
+  content_to_include: "Content to Include"
+  layout_options: "Layout Options"
+  translation_language: "Translation Language"
+  image_theme: "Image Theme"
+  preview: "Preview"
+  print_pdf: "Print / Save as PDF"
+  book_preview: "Book Preview"
+  generate_book: "Generate Book"
+
 footer:
   blessing: "May Lord Hanuman's blessings be with all who study and recite these sacred verses."
   view_github: "View on GitHub"

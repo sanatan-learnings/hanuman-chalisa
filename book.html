@@ -1,0 +1,646 @@
+---
+layout: default
+title: "Generate Book"
+description: "Generate a printable book version of Hanuman Chalisa with customizable layout and content"
+---
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+
+<div class="book-generator-container">
+    <div class="book-config-panel">
+        <h1><span data-lang="en">📖 Generate Book</span><span data-lang="hi">📖 पुस्तक बनाएं</span></h1>
+        <p class="subtitle"><span data-lang="en">Customize your printable Hanuman Chalisa book</span><span data-lang="hi">अपनी मुद्रण योग्य हनुमान चालीसा पुस्तक को अनुकूलित करें</span></p>
+
+        <div class="config-sections">
+            <!-- Page Size -->
+            <div class="config-section">
+                <h3><span data-lang="en">📏 Page Size</span><span data-lang="hi">📏 पृष्ठ का आकार</span></h3>
+                <select id="pageSize" class="config-select">
+                    <option value="6x4">6" × 4" (Pocket Book)</option>
+                    <option value="8x6">8" × 6" (Medium Book)</option>
+                    <option value="a5">A5 (5.8" × 8.3")</option>
+                    <option value="a4">A4 (8.3" × 11.7")</option>
+                </select>
+            </div>
+
+            <!-- Content Options -->
+            <div class="config-section">
+                <h3><span data-lang="en">📝 Content to Include</span><span data-lang="hi">📝 शामिल करने के लिए सामग्री</span></h3>
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" id="includeImage" checked> <span data-lang="en">Image</span><span data-lang="hi">चित्र</span></label>
+                    <label><input type="checkbox" id="includeDevanagari" checked> <span data-lang="en">Hindi Text (Devanagari)</span><span data-lang="hi">हिंदी पाठ (देवनागरी)</span></label>
+                    <label><input type="checkbox" id="includeTransliteration"> <span data-lang="en">Transliteration</span><span data-lang="hi">लिप्यंतरण</span></label>
+                    <label><input type="checkbox" id="includeLiteralTranslation" checked> <span data-lang="en">Literal Translation</span><span data-lang="hi">शाब्दिक अनुवाद</span></label>
+                    <label><input type="checkbox" id="includeInterpretiveMeaning" checked> <span data-lang="en">Interpretive Meaning</span><span data-lang="hi">व्याख्यात्मक अर्थ</span></label>
+                    <label><input type="checkbox" id="includeWordMeanings"> <span data-lang="en">Word Meanings</span><span data-lang="hi">शब्द अर्थ</span></label>
+                    <label><input type="checkbox" id="includeStory"> <span data-lang="en">Story/Background</span><span data-lang="hi">कहानी/पृष्ठभूमि</span></label>
+                </div>
+            </div>
+
+            <!-- Layout Options -->
+            <div class="config-section">
+                <h3><span data-lang="en">🎨 Layout Options</span><span data-lang="hi">🎨 लेआउट विकल्प</span></h3>
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" id="includeVerseNumbers" checked> <span data-lang="en">Show Verse Numbers</span><span data-lang="hi">श्लोक संख्या दिखाएं</span></label>
+                    <label><input type="checkbox" id="includePageNumbers" checked> <span data-lang="en">Show Page Numbers</span><span data-lang="hi">पृष्ठ संख्या दिखाएं</span></label>
+                    <label><input type="checkbox" id="oneVersePerPage" checked> <span data-lang="en">One Verse Per Page</span><span data-lang="hi">प्रति पृष्ठ एक श्लोक</span></label>
+                </div>
+            </div>
+
+            <!-- Language Selection -->
+            <div class="config-section">
+                <h3><span data-lang="en">🌐 Translation Language</span><span data-lang="hi">🌐 अनुवाद भाषा</span></h3>
+                <select id="bookLanguage" class="config-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="both">Both / दोनों</option>
+                </select>
+            </div>
+
+            <!-- Theme Selection -->
+            <div class="config-section">
+                <h3><span data-lang="en">🎨 Image Theme</span><span data-lang="hi">🎨 चित्र थीम</span></h3>
+                <select id="bookTheme" class="config-select">
+                    {% for theme_data in site.data.themes %}
+                        {% assign theme_key = theme_data[0] %}
+                        {% assign theme = theme_data[1] %}
+                        <option value="{{ theme_key }}" {% if theme.default %}selected{% endif %}>
+                            {{ theme.name_en }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="previewBook" class="btn-primary">
+                <span data-lang="en">👁️ Preview</span><span data-lang="hi">👁️ पूर्वावलोकन</span>
+            </button>
+            <button id="printBook" class="btn-secondary">
+                <span data-lang="en">🖨️ Print / Save as PDF</span><span data-lang="hi">🖨️ प्रिंट / PDF सहेजें</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="bookPreview" class="book-preview" style="display: none;">
+        <div class="preview-header">
+            <h2><span data-lang="en">Book Preview</span><span data-lang="hi">पुस्तक पूर्वावलोकन</span></h2>
+            <button id="closePreview" class="btn-close">✕</button>
+        </div>
+        <div id="bookContent" class="book-content">
+            <!-- Content will be dynamically generated -->
+        </div>
+    </div>
+</div>
+
+<style>
+.book-generator-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.book-config-panel {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.book-config-panel h1 {
+    color: #ff6b35;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.config-sections {
+    display: grid;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.config-section {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.config-section h3 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 1.1em;
+}
+
+.config-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.config-select:focus {
+    outline: none;
+    border-color: #ff6b35;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.checkbox-grid label:hover {
+    background: #fff;
+}
+
+.checkbox-grid input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #ff6b35;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-secondary {
+    background: #4a90e2;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.book-preview {
+    margin-top: 30px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ff6b35;
+}
+
+.preview-header h2 {
+    color: #ff6b35;
+    margin: 0;
+}
+
+.btn-close {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.btn-close:hover {
+    background: #e55a2b;
+}
+
+.book-content {
+    background: #f5f5f5;
+    padding: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Book Page Styles */
+.book-page {
+    background: white;
+    margin: 0 auto 20px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    page-break-after: always;
+    page-break-inside: avoid;
+    position: relative;
+}
+
+.book-page.size-6x4 {
+    width: 6in;
+    height: 4in;
+}
+
+.book-page.size-8x6 {
+    width: 8in;
+    height: 6in;
+}
+
+.book-page.size-a5 {
+    width: 5.8in;
+    height: 8.3in;
+}
+
+.book-page.size-a4 {
+    width: 8.3in;
+    height: 11.7in;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.verse-number-label {
+    color: #ff6b35;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.book-image {
+    width: 100%;
+    max-height: 35%;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.book-devanagari {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.book-transliteration {
+    font-size: 1em;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.book-translation {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #444;
+    margin: 12px 0;
+    text-align: justify;
+}
+
+.book-meaning {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+    margin: 12px 0;
+    text-align: justify;
+}
+
+.book-story {
+    font-size: 0.85em;
+    line-height: 1.5;
+    color: #666;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 3px solid #ff6b35;
+    border-radius: 3px;
+}
+
+.book-word-meanings {
+    font-size: 0.85em;
+    margin: 10px 0;
+}
+
+.book-word-meanings ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.book-word-meanings li {
+    padding: 3px 0;
+    color: #555;
+}
+
+.section-label {
+    font-weight: bold;
+    color: #ff6b35;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .book-config-panel,
+    .preview-header,
+    header,
+    footer,
+    nav {
+        display: none !important;
+    }
+
+    .book-preview {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background: none;
+    }
+
+    .book-content {
+        background: none;
+        padding: 0;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .book-page {
+        margin: 0;
+        padding: 0.5in;
+        box-shadow: none;
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+
+    .book-page.size-6x4 {
+        width: 6in;
+        height: 4in;
+    }
+
+    .book-page.size-8x6 {
+        width: 8in;
+        height: 6in;
+    }
+
+    .book-page.size-a5 {
+        width: 5.8in;
+        height: 8.3in;
+    }
+
+    .book-page.size-a4 {
+        width: 8.3in;
+        height: 11.7in;
+    }
+
+    @page {
+        margin: 0;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}
+</style>
+
+<script>
+// Load verse data
+let versesData = [];
+fetch('{{ "/search.json" | relative_url }}')
+    .then(response => response.json())
+    .then(data => {
+        versesData = data;
+        console.log(`Loaded ${versesData.length} verses for book generation`);
+    })
+    .catch(error => {
+        console.error('Error loading verse data:', error);
+    });
+
+// Get current language
+function getCurrentLanguage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    const storedLang = localStorage.getItem('preferredLanguage');
+    return urlLang || storedLang || 'en';
+}
+
+// Generate book content
+function generateBook() {
+    const config = {
+        pageSize: document.getElementById('pageSize').value,
+        includeImage: document.getElementById('includeImage').checked,
+        includeDevanagari: document.getElementById('includeDevanagari').checked,
+        includeTransliteration: document.getElementById('includeTransliteration').checked,
+        includeLiteralTranslation: document.getElementById('includeLiteralTranslation').checked,
+        includeInterpretiveMeaning: document.getElementById('includeInterpretiveMeaning').checked,
+        includeWordMeanings: document.getElementById('includeWordMeanings').checked,
+        includeStory: document.getElementById('includeStory').checked,
+        includeVerseNumbers: document.getElementById('includeVerseNumbers').checked,
+        includePageNumbers: document.getElementById('includePageNumbers').checked,
+        oneVersePerPage: document.getElementById('oneVersePerPage').checked,
+        language: document.getElementById('bookLanguage').value,
+        theme: document.getElementById('bookTheme').value
+    };
+
+    const bookContent = document.getElementById('bookContent');
+    bookContent.innerHTML = '';
+
+    let pageNumber = 1;
+
+    versesData.forEach((verse, index) => {
+        const page = document.createElement('div');
+        page.className = `book-page size-${config.pageSize}`;
+
+        let html = '';
+
+        // Verse number
+        if (config.includeVerseNumbers) {
+            const title = config.language === 'hi' ? verse.title_hi : verse.title_en;
+            html += `<div class="verse-number-label">${title || verse.title_en}</div>`;
+        }
+
+        // Image
+        if (config.includeImage && verse.url) {
+            const imagePath = verse.url.replace('/verses/', `/images/${config.theme}/`).replace(/\/$/, '') + '.png';
+            html += `<img src="{{ site.baseurl }}${imagePath}" class="book-image" alt="Verse ${verse.verse_number}">`;
+        }
+
+        // Devanagari
+        if (config.includeDevanagari && verse.devanagari) {
+            html += `<div class="book-devanagari">${escapeHtml(verse.devanagari)}</div>`;
+        }
+
+        // Transliteration
+        if (config.includeTransliteration && verse.transliteration) {
+            html += `<div class="book-transliteration">${escapeHtml(verse.transliteration)}</div>`;
+        }
+
+        // Literal Translation
+        if (config.includeLiteralTranslation) {
+            if (config.language === 'both') {
+                if (verse.literal_translation_en) {
+                    html += `<div class="section-label">Literal Translation</div>`;
+                    html += `<div class="book-translation">${escapeHtml(verse.literal_translation_en)}</div>`;
+                }
+                if (verse.literal_translation_hi) {
+                    html += `<div class="section-label">शाब्दिक अनुवाद</div>`;
+                    html += `<div class="book-translation">${escapeHtml(verse.literal_translation_hi)}</div>`;
+                }
+            } else {
+                const translation = config.language === 'hi' ? verse.literal_translation_hi : verse.literal_translation_en;
+                if (translation) {
+                    html += `<div class="book-translation">${escapeHtml(translation)}</div>`;
+                }
+            }
+        }
+
+        // Interpretive Meaning
+        if (config.includeInterpretiveMeaning) {
+            if (config.language === 'both') {
+                if (verse.interpretive_meaning_en) {
+                    html += `<div class="section-label">Interpretive Meaning</div>`;
+                    html += `<div class="book-meaning">${escapeHtml(verse.interpretive_meaning_en)}</div>`;
+                }
+                if (verse.interpretive_meaning_hi) {
+                    html += `<div class="section-label">व्याख्यात्मक अर्थ</div>`;
+                    html += `<div class="book-meaning">${escapeHtml(verse.interpretive_meaning_hi)}</div>`;
+                }
+            } else {
+                const meaning = config.language === 'hi' ? verse.interpretive_meaning_hi : verse.interpretive_meaning_en;
+                if (meaning) {
+                    html += `<div class="book-meaning">${escapeHtml(meaning)}</div>`;
+                }
+            }
+        }
+
+        // Word Meanings
+        if (config.includeWordMeanings && verse.word_meanings && verse.word_meanings.length > 0) {
+            const label = config.language === 'hi' ? 'शब्द अर्थ' : 'Word Meanings';
+            html += `<div class="section-label">${label}</div>`;
+            html += `<div class="book-word-meanings"><ul>`;
+            verse.word_meanings.forEach(item => {
+                const meaning = config.language === 'hi' ?
+                    (item.meaning?.hi || item.meaning) :
+                    (item.meaning?.en || item.meaning);
+                html += `<li><strong>${item.word}</strong> (${item.roman}) - ${meaning}</li>`;
+            });
+            html += `</ul></div>`;
+        }
+
+        // Story
+        if (config.includeStory) {
+            const story = config.language === 'hi' ? verse.story_hi : verse.story_en;
+            if (story) {
+                const label = config.language === 'hi' ? 'कहानी' : 'Story';
+                html += `<div class="section-label">${label}</div>`;
+                html += `<div class="book-story">${escapeHtml(story)}</div>`;
+            }
+        }
+
+        // Page number
+        if (config.includePageNumbers) {
+            html += `<div class="page-number">${pageNumber}</div>`;
+            pageNumber++;
+        }
+
+        page.innerHTML = html;
+        bookContent.appendChild(page);
+    });
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Event listeners
+document.getElementById('previewBook').addEventListener('click', function() {
+    if (versesData.length === 0) {
+        alert('Please wait while verse data is loading...');
+        return;
+    }
+    generateBook();
+    document.getElementById('bookPreview').style.display = 'block';
+    document.getElementById('bookPreview').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('printBook').addEventListener('click', function() {
+    if (versesData.length === 0) {
+        alert('Please wait while verse data is loading...');
+        return;
+    }
+    generateBook();
+    setTimeout(() => {
+        window.print();
+    }, 500);
+});
+
+document.getElementById('closePreview').addEventListener('click', function() {
+    document.getElementById('bookPreview').style.display = 'none';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>

@@ -78,6 +78,19 @@ full_chalisa:
   translation: "अनुवाद"
   word_meaning: "शब्द-दर-शब्द अर्थ"
 
+book:
+  title: "पुस्तक बनाएं"
+  subtitle: "अपनी मुद्रण योग्य हनुमान चालीसा पुस्तक को अनुकूलित करें"
+  page_size: "पृष्ठ का आकार"
+  content_to_include: "शामिल करने के लिए सामग्री"
+  layout_options: "लेआउट विकल्प"
+  translation_language: "अनुवाद भाषा"
+  image_theme: "चित्र थीम"
+  preview: "पूर्वावलोकन"
+  print_pdf: "प्रिंट / PDF सहेजें"
+  book_preview: "पुस्तक पूर्वावलोकन"
+  generate_book: "पुस्तक बनाएं"
+
 footer:
   blessing: "भगवान हनुमान का आशीर्वाद उन सभी के साथ हो जो इन पवित्र छंदों का अध्ययन और पाठ करते हैं।"
   view_github: "GitHub पर देखें"
