@@ -2,6 +2,39 @@
 
 This directory contains scripts for generating verse images using AI image generation APIs.
 
+## ⚡ Quick Start (Simplest Way)
+
+Use the wrapper script for one-command generation:
+
+```bash
+# Basic usage
+./scripts/generate.sh traditional-art
+
+# With custom style
+./scripts/generate.sh watercolor "soft watercolor painting style"
+```
+
+**First Time Setup (30 seconds):**
+1. Get API key: https://platform.openai.com/api-keys
+2. Set it: `export OPENAI_API_KEY='your-key-here'`
+3. Run: `./scripts/generate.sh your-theme-name`
+
+Done! The script auto-installs dependencies and generates all 47 images.
+
+**Options:**
+```bash
+# HD quality (2x cost)
+QUALITY=hd ./scripts/generate.sh theme-name
+
+# Custom size
+SIZE=1024x1792 ./scripts/generate.sh theme-name
+
+# Resume from specific image
+RESUME=verse-15.png ./scripts/generate.sh theme-name
+```
+
+---
+
 ## Prerequisites
 
 ### 1. Python Environment

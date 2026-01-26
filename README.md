@@ -21,6 +21,22 @@ This comprehensive guide aims to make the Hanuman Chalisa accessible and meaning
 - Proper pronunciation and recitation guidance
 - Devotional insights for spiritual growth
 
+## 🎨 Generate Your Own Image Theme
+
+Want to create images in a different artistic style? Use our automated script:
+
+```bash
+# Get OpenAI API key from https://platform.openai.com/api-keys
+export OPENAI_API_KEY='your-key-here'
+
+# Generate all 47 images in your chosen style
+./scripts/generate.sh traditional-art "traditional Indian devotional art style"
+./scripts/generate.sh watercolor "soft watercolor painting style"
+./scripts/generate.sh pencil-sketch "detailed pencil drawings"
+```
+
+**Cost**: ~$2 for all 47 images (standard quality) | See [scripts/README.md](scripts/README.md) for details
+
 ## Features
 
 ### Interactive Website Features
