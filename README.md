@@ -72,12 +72,22 @@ For detailed information about the verse structure, see **[verse-structure.md](d
 
 ## Documentation
 
+### User Guides
+- **[guide.md](docs/guide.md)** - Comprehensive usage guide for different purposes
+- **[background.md](docs/background.md)** - Complete history and context of the Hanuman Chalisa
+
+### Technical Documentation
 - **[verse-structure.md](docs/verse-structure.md)** - Detailed explanation of verse components and structure
 - **[tech-stack.md](docs/tech-stack.md)** - Technologies, tools, and services used (Jekyll, PyCharm, Claude Code, DALL-E 3)
 - **[multilingual-implementation.md](docs/multilingual-implementation.md)** - Multi-language architecture and implementation guide
-- **[background.md](docs/background.md)** - Complete history and context of the Hanuman Chalisa
-- **[guide.md](docs/guide.md)** - Comprehensive usage guide for different purposes
 - **[github-pages-setup.md](docs/github-pages-setup.md)** - How the website is built and deployed with Jekyll and GitHub Pages
+
+### Image Theme System
+- **[adding-themes.md](docs/adding-themes.md)** - Guide for adding new image themes
+- **[image-prompts.md](docs/image-prompts.md)** - DALL-E 3 prompts used for generating images
+- **[scripts/README.md](scripts/README.md)** - Automated image generation using DALL-E 3 API
+
+### Contributing
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute to this project
 
 ## Upcoming Features

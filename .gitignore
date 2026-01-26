@@ -30,3 +30,14 @@ Gemfile.lock
 # Temporary files
 /tmp/
 *.tmp
+
+# Environment variables (API keys)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so

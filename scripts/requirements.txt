@@ -1,0 +1,13 @@
+# Requirements for image generation scripts
+
+# OpenAI API client for DALL-E 3
+openai>=1.0.0
+
+# HTTP requests for downloading images
+requests>=2.31.0
+
+# Image processing (optional, for validation/optimization)
+Pillow>=10.0.0
+
+# Environment variable management (optional)
+python-dotenv>=1.0.0
