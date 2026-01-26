@@ -5,6 +5,7 @@ title_hi: "चौपाई 39: सिद्धि की प्राप्त�
 verse_number: 39
 previous_verse: "/verses/verse_38"
 next_verse: "/verses/verse_40"
+image: "/images/verse-39.png"
 
 devanagari: |
   जो यह पढ़ै हनुमान चालीसा।
