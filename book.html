@@ -966,14 +966,18 @@ document.getElementById('printBook').addEventListener('click', async function() 
     btn.innerHTML = '<span data-lang="en">⏳ Loading images...</span><span data-lang="hi">⏳ चित्र लोड हो रहे हैं...</span>';
     btn.disabled = true;
 
+    const bookPreview = document.getElementById('bookPreview');
+    const wasVisible = bookPreview.style.display === 'block';
+
     generateBook();
 
-    // Make preview visible (but off-screen) so images can load
-    const bookPreview = document.getElementById('bookPreview');
+    // Make preview visible (but off-screen if it wasn't already visible) so images can load
+    if (!wasVisible) {
+        bookPreview.style.position = 'absolute';
+        bookPreview.style.left = '-9999px';
+        bookPreview.style.top = '0';
+    }
     bookPreview.style.display = 'block';
-    bookPreview.style.position = 'absolute';
-    bookPreview.style.left = '-9999px';
-    bookPreview.style.top = '0';
 
     // Wait for all images to load
     await waitForImagesToLoad();
@@ -982,14 +986,17 @@ document.getElementById('printBook').addEventListener('click', async function() 
     btn.innerHTML = originalText;
     btn.disabled = false;
 
-    // Hide preview again
-    bookPreview.style.position = '';
-    bookPreview.style.left = '';
-    bookPreview.style.top = '';
-    bookPreview.style.display = 'none';
-
-    // Now print
+    // Now print (keep preview visible during print - print CSS handles what to show)
     window.print();
+
+    // After print dialog, restore preview state
+    // If it wasn't visible before, hide it and restore positioning
+    if (!wasVisible) {
+        bookPreview.style.display = 'none';
+        bookPreview.style.position = '';
+        bookPreview.style.left = '';
+        bookPreview.style.top = '';
+    }
 });
 
 document.getElementById('closePreview').addEventListener('click', function() {
