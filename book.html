@@ -41,9 +41,25 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
             <div class="config-section">
                 <h3><span data-lang="en">🎨 Layout Options</span><span data-lang="hi">🎨 लेआउट विकल्प</span></h3>
                 <div class="checkbox-grid">
+                    <label><input type="checkbox" id="includeHeader" checked> <span data-lang="en">Show Header</span><span data-lang="hi">हेडर दिखाएं</span></label>
+                    <label><input type="checkbox" id="includeFooter" checked> <span data-lang="en">Show Footer</span><span data-lang="hi">फुटर दिखाएं</span></label>
                     <label><input type="checkbox" id="includePageNumbers" checked> <span data-lang="en">Show Page Numbers</span><span data-lang="hi">पृष्ठ संख्या दिखाएं</span></label>
                     <label><input type="checkbox" id="oneVersePerPage" checked> <span data-lang="en">One Verse Per Page</span><span data-lang="hi">प्रति पृष्ठ एक श्लोक</span></label>
                     <label><input type="checkbox" id="includeVerseNumbers"> <span data-lang="en">Show Verse Titles</span><span data-lang="hi">श्लोक शीर्षक दिखाएं</span></label>
+                </div>
+                <div style="margin-top: 15px;">
+                    <label style="display: block; margin-bottom: 10px;">
+                        <span data-lang="en">Custom Header Text (leave empty for default)</span>
+                        <span data-lang="hi">कस्टम हेडर टेक्स्ट (डिफ़ॉल्ट के लिए खाली छोड़ें)</span>
+                    </label>
+                    <input type="text" id="customHeader" class="config-select" placeholder="Om Shri Hanumate Namah | ॐ श्री हनुमते नमः">
+                </div>
+                <div style="margin-top: 10px;">
+                    <label style="display: block; margin-bottom: 10px;">
+                        <span data-lang="en">Custom Footer Text (leave empty for default)</span>
+                        <span data-lang="hi">कस्टम फुटर टेक्स्ट (डिफ़ॉल्ट के लिए खाली छोड़ें)</span>
+                    </label>
+                    <input type="text" id="customFooter" class="config-select" placeholder="Shri Hanuman Chalisa | हनुमान चालीसा">
                 </div>
             </div>
 
@@ -267,7 +283,7 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
 .book-page {
     background: white;
     margin: 0 auto 20px;
-    padding: 20px;
+    padding: 40px 20px 35px 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     page-break-after: always;
     page-break-inside: avoid;
@@ -281,7 +297,7 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
 .book-page-content-left {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100% - 60px);
     justify-content: center;
     align-items: center;
 }
@@ -323,6 +339,31 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
     color: #666;
 }
 
+.page-header {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.85em;
+    color: #ff6b35;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.85em;
+    color: #666;
+    padding: 5px 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
 .verse-number-label {
     color: #ff6b35;
     font-weight: bold;
@@ -337,7 +378,7 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
 .book-image {
     width: 100%;
     height: auto;
-    max-height: 100%;
+    max-height: calc(100% - 60px);
     object-fit: contain;
     border-radius: 6px;
 }
@@ -455,13 +496,14 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
 
     .book-page {
         margin: 0;
-        padding: 0.3in;
+        padding: 0.4in 0.3in 0.35in 0.3in;
         box-shadow: none;
         page-break-after: always;
         page-break-inside: avoid;
         display: grid;
         grid-template-columns: 40% 58%;
         gap: 2%;
+        position: relative;
     }
 
     .book-page.size-6x4 {
@@ -505,6 +547,20 @@ description: "Generate a printable book version of Hanuman Chalisa with customiz
 
     @page {
         margin: 0;
+        size: auto;
+    }
+
+    .book-image {
+        max-width: 100% !important;
+        max-height: 100% !important;
+        display: block !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    img {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 }
 
@@ -559,11 +615,25 @@ function generateBook() {
         includeInterpretiveMeaning: document.getElementById('includeInterpretiveMeaning').checked,
         includeWordMeanings: document.getElementById('includeWordMeanings').checked,
         includeStory: document.getElementById('includeStory').checked,
+        includeHeader: document.getElementById('includeHeader').checked,
+        includeFooter: document.getElementById('includeFooter').checked,
         includeVerseNumbers: document.getElementById('includeVerseNumbers').checked,
         includePageNumbers: document.getElementById('includePageNumbers').checked,
         oneVersePerPage: document.getElementById('oneVersePerPage').checked,
         language: document.getElementById('bookLanguage').value,
-        theme: document.getElementById('bookTheme').value
+        theme: document.getElementById('bookTheme').value,
+        customHeader: document.getElementById('customHeader').value.trim(),
+        customFooter: document.getElementById('customFooter').value.trim()
+    };
+
+    // Header and Footer text based on language (defaults)
+    const defaultHeaderText = {
+        en: 'Om Shri Hanumate Namah',
+        hi: 'ॐ श्री हनुमते नमः'
+    };
+    const defaultFooterText = {
+        en: 'Shri Hanuman Chalisa',
+        hi: 'हनुमान चालीसा'
     };
 
     const bookContent = document.getElementById('bookContent');
@@ -698,6 +768,34 @@ function generateBook() {
             }
         }
 
+        // Header
+        let headerHtml = '';
+        if (config.includeHeader) {
+            let header;
+            if (config.customHeader) {
+                header = config.customHeader;
+            } else {
+                header = config.language === 'both' ?
+                    `${defaultHeaderText.en} | ${defaultHeaderText.hi}` :
+                    (config.language === 'hi' ? defaultHeaderText.hi : defaultHeaderText.en);
+            }
+            headerHtml = `<div class="page-header">${escapeHtml(header)}</div>`;
+        }
+
+        // Footer
+        let footerHtml = '';
+        if (config.includeFooter) {
+            let footer;
+            if (config.customFooter) {
+                footer = config.customFooter;
+            } else {
+                footer = config.language === 'both' ?
+                    `${defaultFooterText.en} | ${defaultFooterText.hi}` :
+                    (config.language === 'hi' ? defaultFooterText.hi : defaultFooterText.en);
+            }
+            footerHtml = `<div class="page-footer">${escapeHtml(footer)}</div>`;
+        }
+
         // Page number
         let pageNumberHtml = '';
         if (config.includePageNumbers) {
@@ -705,14 +803,16 @@ function generateBook() {
             pageNumber++;
         }
 
-        // Combine left and right columns
+        // Combine all elements
         page.innerHTML = `
+            ${headerHtml}
             <div class="book-page-content-left">
                 ${leftHtml}
             </div>
             <div class="book-page-content-right">
                 ${rightHtml}
             </div>
+            ${footerHtml}
             ${pageNumberHtml}
         `;
         bookContent.appendChild(page);
