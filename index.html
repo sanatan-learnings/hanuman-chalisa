@@ -30,24 +30,78 @@ title: Home
 
 <section class="verse-navigation">
     <h3>🕉️ <span data-lang="en">{{ t_en.home.opening_dohas }}</span><span data-lang="hi">{{ t_hi.home.opening_dohas }}</span></h3>
-    <ul>
+    <div class="verse-grid">
         {% assign doha_01 = site.verses | where: "url", "/verses/doha_01/" | first %}
         {% assign doha_02 = site.verses | where: "url", "/verses/doha_02/" | first %}
-        <li><a href="{{ doha_01.url | relative_url }}"><span data-lang="en">{{ doha_01.title_en }}</span><span data-lang="hi">{{ doha_01.title_hi }}</span></a></li>
-        <li><a href="{{ doha_02.url | relative_url }}"><span data-lang="en">{{ doha_02.title_en }}</span><span data-lang="hi">{{ doha_02.title_hi }}</span></a></li>
-    </ul>
+
+        <a href="{{ doha_01.url | relative_url }}" class="verse-card">
+            {% if doha_01.image %}
+            <div class="card-image">
+                <img src="{{ doha_01.image | relative_url }}" alt="{{ doha_01.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">Doha 1</div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ doha_01.title_en }}</span>
+                    <span data-lang="hi">{{ doha_01.title_hi }}</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="{{ doha_02.url | relative_url }}" class="verse-card">
+            {% if doha_02.image %}
+            <div class="card-image">
+                <img src="{{ doha_02.image | relative_url }}" alt="{{ doha_02.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">Doha 2</div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ doha_02.title_en }}</span>
+                    <span data-lang="hi">{{ doha_02.title_hi }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
 
     <h3>📿 <span data-lang="en">{{ t_en.home.main_chalisa }}</span><span data-lang="hi">{{ t_hi.home.main_chalisa }}</span></h3>
-    <ul class="verse-list">
+    <div class="verse-grid">
         {% assign verses = site.verses | where_exp: "item", "item.url contains 'verse_'" | sort: "verse_number" %}
         {% for verse in verses %}
-        <li><a href="{{ verse.url | relative_url }}"><span data-lang="en">{{ verse.title_en }}</span><span data-lang="hi">{{ verse.title_hi }}</span></a></li>
+        <a href="{{ verse.url | relative_url }}" class="verse-card">
+            {% if verse.image %}
+            <div class="card-image">
+                <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">Verse {{ verse.verse_number }}</div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ verse.title_en }}</span>
+                    <span data-lang="hi">{{ verse.title_hi }}</span>
+                </div>
+            </div>
+        </a>
         {% endfor %}
-    </ul>
+    </div>
 
     <h3>🙏 <span data-lang="en">{{ t_en.home.closing_doha }}</span><span data-lang="hi">{{ t_hi.home.closing_doha }}</span></h3>
-    <ul>
+    <div class="verse-grid">
         {% assign doha_closing = site.verses | where: "url", "/verses/doha_closing/" | first %}
-        <li><a href="{{ doha_closing.url | relative_url }}"><span data-lang="en">{{ doha_closing.title_en }}</span><span data-lang="hi">{{ doha_closing.title_hi }}</span></a></li>
-    </ul>
+        <a href="{{ doha_closing.url | relative_url }}" class="verse-card">
+            {% if doha_closing.image %}
+            <div class="card-image">
+                <img src="{{ doha_closing.image | relative_url }}" alt="{{ doha_closing.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">Closing Doha</div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ doha_closing.title_en }}</span>
+                    <span data-lang="hi">{{ doha_closing.title_hi }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
 </section>
