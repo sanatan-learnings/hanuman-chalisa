@@ -56,18 +56,42 @@ Customize which elements to include in your book:
 
 ## 🎨 Layout Options
 
-### Verse Numbers
-Show or hide verse identification (e.g., "Verse 1", "Doha 1")
-- Recommended: **ON** for reference and study
+### Headers and Footers
+Add custom headers and footers to every page (except title page):
+
+**Show Header** (checked by default)
+- Displays text at the top of each page
+- Default: "Om Shri Hanumate Namah" (EN) / "ॐ श्री हनुमते नमः" (HI)
+- Customizable: Enter your own text in the input field
+- Automatically updates based on selected language
+
+**Show Footer** (checked by default)
+- Displays text at the bottom of each page
+- Default: "Shri Hanuman Chalisa" (EN) / "हनुमान चालीसा" (HI)
+- Customizable: Enter your own text in the input field
+- Automatically updates based on selected language
+
+**Custom Text**:
+- Leave input fields empty to use defaults
+- Enter custom text to override defaults
+- Custom text appears in all languages (not auto-translated)
+- Examples: "My Personal Prayer Book", "॥ जय श्री राम ॥"
 
 ### Page Numbers
 Add page numbers to the bottom-right corner
 - Recommended: **ON** for multi-page books
+- Starts from page 2 (title page is page 1)
 
 ### One Verse Per Page
 Each verse starts on a new page
 - Recommended: **ON** for 6×4 and 8×6 sizes
 - Optional: **OFF** for A4/A5 sizes to save paper
+
+### Verse Titles
+Show descriptive titles for each verse (unchecked by default)
+- Examples: "Ocean of Knowledge and Virtues", "Rama's Messenger"
+- Recommended: **OFF** for cleaner layout
+- Optional: **ON** for study and reference
 
 ## 🌐 Language Options
 
@@ -134,32 +158,46 @@ Images are automatically loaded based on selected theme.
 ```
 Page Size: 6" × 4"
 Content: Image, Devanagari, Literal Translation
-Layout: One verse per page, Page numbers ON
+Layout: Header ON, Footer ON, Page numbers ON, One verse per page
 Language: Your preferred language
+Custom Text: Leave empty for defaults
 ```
 
 ### Study Reference Book
 ```
 Page Size: A4
 Content: All options enabled
-Layout: Multiple verses per page OK, Page numbers ON
+Layout: Header ON, Footer ON, Verse Titles ON, Page numbers ON
 Language: Both
+Custom Text: Leave empty for defaults
 ```
 
 ### Gift Book
 ```
 Page Size: 8" × 6"
 Content: Image, Devanagari, Literal Translation, Interpretive Meaning
-Layout: One verse per page, Page numbers ON
+Layout: Header ON, Footer ON, Page numbers ON, One verse per page
 Language: Recipient's preferred language
+Custom Text: Consider personalizing (e.g., "With Love and Blessings")
 ```
 
 ### Minimalist Chanting Book
 ```
 Page Size: A5
 Content: Devanagari only
-Layout: Multiple verses per page, Page numbers OFF
+Layout: Header OFF, Footer OFF, Page numbers OFF
 Language: N/A (no translations)
+Custom Text: N/A
+```
+
+### Custom Personal Book
+```
+Page Size: 6" × 4"
+Content: Image, Devanagari only
+Layout: Header ON (custom), Footer ON (custom), Page numbers OFF
+Language: Hindi
+Custom Header: Your name or "॥ जय श्री राम ॥"
+Custom Footer: Date or personal dedication
 ```
 
 ## 🖨️ Printing Tips

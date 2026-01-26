@@ -48,8 +48,12 @@ Create custom physical books of the Hanuman Chalisa:
 
 - **Multiple page sizes**: 6"×4" pocket, 8"×6" medium, A5, A4
 - **Configurable content**: Choose what to include (images, translations, meanings, stories)
+- **Customizable headers/footers**: Add custom text or use language-aware defaults
+  - Default header: "Om Shri Hanumate Namah" / "ॐ श्री हनुमते नमः"
+  - Default footer: "Shri Hanuman Chalisa" / "हनुमान चालीसा"
 - **Bilingual options**: English, Hindi, or both languages side-by-side
 - **Theme selection**: Use any available image theme
+- **Professional layout**: Two-column design with centered content
 - **Print or PDF**: Generate print-ready books or save as PDF
 
 Visit the [Book Generation page](https://arun-gupta.github.io/hanuman-chalisa/book) or see [docs/book-generation.md](docs/book-generation.md) for full instructions.
