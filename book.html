@@ -609,17 +609,17 @@ function generateBook() {
         if (config.includeLiteralTranslation) {
             if (config.language === 'both') {
                 if (verse.literal_translation_en) {
-                    html += `<div class="section-label">Literal Translation</div>`;
-                    html += `<div class="book-translation">${escapeHtml(verse.literal_translation_en)}</div>`;
+                    rightHtml += `<div class="section-label">Literal Translation</div>`;
+                    rightHtml += `<div class="book-translation">${escapeHtml(verse.literal_translation_en)}</div>`;
                 }
                 if (verse.literal_translation_hi) {
-                    html += `<div class="section-label">शाब्दिक अनुवाद</div>`;
-                    html += `<div class="book-translation">${escapeHtml(verse.literal_translation_hi)}</div>`;
+                    rightHtml += `<div class="section-label">शाब्दिक अनुवाद</div>`;
+                    rightHtml += `<div class="book-translation">${escapeHtml(verse.literal_translation_hi)}</div>`;
                 }
             } else {
                 const translation = config.language === 'hi' ? verse.literal_translation_hi : verse.literal_translation_en;
                 if (translation) {
-                    html += `<div class="book-translation">${escapeHtml(translation)}</div>`;
+                    rightHtml += `<div class="book-translation">${escapeHtml(translation)}</div>`;
                 }
             }
         }
@@ -628,17 +628,17 @@ function generateBook() {
         if (config.includeInterpretiveMeaning) {
             if (config.language === 'both') {
                 if (verse.interpretive_meaning_en) {
-                    html += `<div class="section-label">Interpretive Meaning</div>`;
-                    html += `<div class="book-meaning">${escapeHtml(verse.interpretive_meaning_en)}</div>`;
+                    rightHtml += `<div class="section-label">Interpretive Meaning</div>`;
+                    rightHtml += `<div class="book-meaning">${escapeHtml(verse.interpretive_meaning_en)}</div>`;
                 }
                 if (verse.interpretive_meaning_hi) {
-                    html += `<div class="section-label">व्याख्यात्मक अर्थ</div>`;
-                    html += `<div class="book-meaning">${escapeHtml(verse.interpretive_meaning_hi)}</div>`;
+                    rightHtml += `<div class="section-label">व्याख्यात्मक अर्थ</div>`;
+                    rightHtml += `<div class="book-meaning">${escapeHtml(verse.interpretive_meaning_hi)}</div>`;
                 }
             } else {
                 const meaning = config.language === 'hi' ? verse.interpretive_meaning_hi : verse.interpretive_meaning_en;
                 if (meaning) {
-                    html += `<div class="book-meaning">${escapeHtml(meaning)}</div>`;
+                    rightHtml += `<div class="book-meaning">${escapeHtml(meaning)}</div>`;
                 }
             }
         }
@@ -646,15 +646,15 @@ function generateBook() {
         // Word Meanings
         if (config.includeWordMeanings && verse.word_meanings && verse.word_meanings.length > 0) {
             const label = config.language === 'hi' ? 'शब्द अर्थ' : 'Word Meanings';
-            html += `<div class="section-label">${label}</div>`;
-            html += `<div class="book-word-meanings"><ul>`;
+            rightHtml += `<div class="section-label">${label}</div>`;
+            rightHtml += `<div class="book-word-meanings"><ul>`;
             verse.word_meanings.forEach(item => {
                 const meaning = config.language === 'hi' ?
                     (item.meaning?.hi || item.meaning) :
                     (item.meaning?.en || item.meaning);
-                html += `<li><strong>${item.word}</strong> (${item.roman}) - ${meaning}</li>`;
+                rightHtml += `<li><strong>${item.word}</strong> (${item.roman}) - ${meaning}</li>`;
             });
-            html += `</ul></div>`;
+            rightHtml += `</ul></div>`;
         }
 
         // Story
@@ -662,8 +662,8 @@ function generateBook() {
             const story = config.language === 'hi' ? verse.story_hi : verse.story_en;
             if (story) {
                 const label = config.language === 'hi' ? 'कहानी' : 'Story';
-                html += `<div class="section-label">${label}</div>`;
-                html += `<div class="book-story">${escapeHtml(story)}</div>`;
+                rightHtml += `<div class="section-label">${label}</div>`;
+                rightHtml += `<div class="book-story">${escapeHtml(story)}</div>`;
             }
         }
 
