@@ -1,9 +1,6 @@
 # Hanuman Chalisa: A Comprehensive Guide
 
-ॐ श्री हनुमते नमः
-Om Shri Hanumate Namah
-
-🚩 **जय श्री राम | Jai Shri Ram** 🚩
+🚩 **Jai Hanuman 🏹 Jai Shri Ram**
 
 **🌐 [View the live interactive website →](https://arun-gupta.github.io/hanuman-chalisa/)**
 
@@ -105,7 +102,5 @@ May it serve the spiritual upliftment of all beings.
 
 ---
 
-**ॐ श्री हनुमते नमः** 🙏
-
-**जय श्री राम | Jai Shri Ram** 🚩
+🚩 **Jai Hanuman 🏹 Jai Shri Ram**
 
