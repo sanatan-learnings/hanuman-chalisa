@@ -1,0 +1,32 @@
+# Configuration for multilingual embedding generation
+#
+# To add a new language:
+# 1. Add verse translations with appropriate suffixes in _verses/*.md files
+# 2. Add the language code to the 'languages' list below
+# 3. Run: python scripts/generate_embeddings.py
+
+# Languages to generate embeddings for
+languages:
+  - en  # English
+  - hi  # Hindi
+  # - ta  # Tamil (future)
+  # - te  # Telugu (future)
+  # - es  # Spanish (future)
+
+# Embedding model configuration
+embedding:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  dimensions: 384
+  provider: "huggingface"
+  # Optional: Set HUGGINGFACE_API_TOKEN env var for higher rate limits
+
+# Output configuration
+output:
+  file: "embeddings.json"
+  indent: 2
+  ensure_ascii: false
+
+# Processing configuration
+processing:
+  delay_between_calls: 0.5  # seconds, to avoid rate limiting
+  retry_attempts: 3

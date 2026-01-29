@@ -94,6 +94,24 @@ book:
   book_preview: "Book Preview"
   generate_book: "Generate Book"
 
+guidance:
+  title: "Spiritual Guidance"
+  subtitle: "Ask questions and receive wisdom from Hanuman Chalisa verses"
+  api_key_prompt: "Enter your OpenAI API key to begin"
+  api_key_placeholder: "sk-..."
+  api_key_save: "Save API Key"
+  api_key_get: "Get API Key"
+  api_key_privacy: "Your API key is stored locally and only sent to OpenAI"
+  api_key_set: "API Key Set"
+  api_key_edit: "Edit"
+  input_placeholder: "Ask a question (e.g., 'How do I overcome fear?')"
+  send: "Send"
+  thinking: "Thinking..."
+  error_no_key: "Please set your OpenAI API key first"
+  error_api: "Error communicating with OpenAI"
+  relevant_verses: "Relevant Verses"
+  clear_chat: "Clear Chat"
+
 footer:
   blessing: "May Lord Hanuman's blessings be with all who study and recite these sacred verses."
   jai_shri_ram: "Jai Shri Ram"

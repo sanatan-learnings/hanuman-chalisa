@@ -30,6 +30,10 @@ exclude:
   - docs/verse-structure.md
   - docs/multilingual-implementation.md
   - docs/github-pages-setup.md
+  - venv/
+  - env/
+  - .venv/
+  - scripts/
 
 # Plugins
 plugins:

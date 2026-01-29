@@ -94,6 +94,24 @@ book:
   book_preview: "पुस्तक पूर्वावलोकन"
   generate_book: "पुस्तक बनाएं"
 
+guidance:
+  title: "आध्यात्मिक मार्गदर्शन"
+  subtitle: "प्रश्न पूछें और हनुमान चालीसा छंदों से ज्ञान प्राप्त करें"
+  api_key_prompt: "शुरू करने के लिए अपनी OpenAI API key दर्ज करें"
+  api_key_placeholder: "sk-..."
+  api_key_save: "API Key सहेजें"
+  api_key_get: "API Key प्राप्त करें"
+  api_key_privacy: "आपकी API key स्थानीय रूप से संग्रहीत है और केवल OpenAI को भेजी जाती है"
+  api_key_set: "API Key सेट हो गई है"
+  api_key_edit: "संपादित करें"
+  input_placeholder: "एक प्रश्न पूछें (उदा., 'मैं डर को कैसे दूर करूं?')"
+  send: "भेजें"
+  thinking: "सोच रहा है..."
+  error_no_key: "कृपया पहले अपनी OpenAI API key सेट करें"
+  error_api: "OpenAI के साथ संचार में त्रुटि"
+  relevant_verses: "प्रासंगिक श्लोक"
+  clear_chat: "चैट साफ़ करें"
+
 footer:
   blessing: "भगवान हनुमान का आशीर्वाद उन सभी के साथ हो जो इन पवित्र छंदों का अध्ययन और पाठ करते हैं।"
   jai_shri_ram: "जय श्री राम"

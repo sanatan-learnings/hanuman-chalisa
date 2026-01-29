@@ -1,0 +1,431 @@
+---
+layout: default
+title: "Spiritual Guidance"
+description: "Ask questions and receive spiritual guidance based on Hanuman Chalisa verses"
+---
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+
+<div class="guidance-container">
+    <div class="guidance-header">
+        <h1>💬 <span data-lang="en">{{ t_en.guidance.title }}</span><span data-lang="hi">{{ t_hi.guidance.title }}</span></h1>
+        <p><span data-lang="en">{{ t_en.guidance.subtitle }}</span><span data-lang="hi">{{ t_hi.guidance.subtitle }}</span></p>
+    </div>
+
+    <!-- API Key Section -->
+    <div id="apiKeySection" class="api-key-section">
+        <div id="apiKeyPrompt" class="api-key-prompt">
+            <h3>🔑 <span data-lang="en">{{ t_en.guidance.api_key_prompt }}</span><span data-lang="hi">{{ t_hi.guidance.api_key_prompt }}</span></h3>
+            <div class="api-key-input-group">
+                <input
+                    type="password"
+                    id="apiKeyInput"
+                    placeholder=""
+                    data-placeholder-en="{{ t_en.guidance.api_key_placeholder }}"
+                    data-placeholder-hi="{{ t_hi.guidance.api_key_placeholder }}"
+                    autocomplete="off"
+                >
+                <button id="saveApiKey" class="btn-primary">
+                    <span data-lang="en">{{ t_en.guidance.api_key_save }}</span>
+                    <span data-lang="hi">{{ t_hi.guidance.api_key_save }}</span>
+                </button>
+            </div>
+            <div class="api-key-help">
+                <p>
+                    <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener noreferrer">
+                        <span data-lang="en">{{ t_en.guidance.api_key_get }}</span>
+                        <span data-lang="hi">{{ t_hi.guidance.api_key_get }}</span>
+                    </a>
+                </p>
+                <p class="privacy-notice">
+                    <span data-lang="en">{{ t_en.guidance.api_key_privacy }}</span>
+                    <span data-lang="hi">{{ t_hi.guidance.api_key_privacy }}</span>
+                </p>
+            </div>
+        </div>
+
+        <div id="apiKeySet" class="api-key-set" style="display: none;">
+            <span class="key-status">
+                ✓ <span data-lang="en">{{ t_en.guidance.api_key_set }}</span>
+                <span data-lang="hi">{{ t_hi.guidance.api_key_set }}</span>
+            </span>
+            <button id="editApiKey" class="btn-secondary-small">
+                <span data-lang="en">{{ t_en.guidance.api_key_edit }}</span>
+                <span data-lang="hi">{{ t_hi.guidance.api_key_edit }}</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chatContainer" class="chat-container">
+        <div id="messageList" class="message-list">
+            <!-- Messages will be appended here -->
+        </div>
+
+        <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+            <div class="loading-spinner"></div>
+            <span data-lang="en">{{ t_en.guidance.thinking }}</span>
+            <span data-lang="hi">{{ t_hi.guidance.thinking }}</span>
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+        <div class="input-wrapper">
+            <textarea
+                id="queryInput"
+                rows="2"
+                placeholder=""
+                data-placeholder-en="{{ t_en.guidance.input_placeholder }}"
+                data-placeholder-hi="{{ t_hi.guidance.input_placeholder }}"
+            ></textarea>
+            <button id="sendButton" class="btn-send">
+                <span data-lang="en">{{ t_en.guidance.send }}</span>
+                <span data-lang="hi">{{ t_hi.guidance.send }}</span>
+            </button>
+        </div>
+        <button id="clearChat" class="btn-clear">
+            <span data-lang="en">{{ t_en.guidance.clear_chat }}</span>
+            <span data-lang="hi">{{ t_hi.guidance.clear_chat }}</span>
+        </button>
+    </div>
+</div>
+
+<style>
+.guidance-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 200px);
+}
+
+.guidance-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.guidance-header h1 {
+    color: #ff6b35;
+    margin-bottom: 10px;
+}
+
+.guidance-header p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* API Key Section */
+.api-key-section {
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.api-key-prompt h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.api-key-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#apiKeyInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+#apiKeyInput:focus {
+    border-color: #ff6b35;
+}
+
+.btn-primary {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e55a2b;
+}
+
+.api-key-help {
+    font-size: 0.9em;
+}
+
+.api-key-help a {
+    color: #ff6b35;
+    text-decoration: none;
+}
+
+.api-key-help a:hover {
+    text-decoration: underline;
+}
+
+.privacy-notice {
+    color: #666;
+    margin-top: 10px;
+}
+
+.api-key-set {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.key-status {
+    color: #28a745;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.btn-secondary-small {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.btn-secondary-small:hover {
+    background: #5a6268;
+}
+
+/* Chat Container */
+.chat-container {
+    flex: 1;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    display: flex;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.assistant {
+    justify-content: flex-start;
+}
+
+.message-content {
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+.message.user .message-content {
+    background: #ff6b35;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.message.assistant .message-content {
+    background: #f0f0f0;
+    color: #333;
+    border-bottom-left-radius: 4px;
+}
+
+.verse-citations {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.citation-header {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.citation-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    transition: box-shadow 0.2s;
+}
+
+.citation-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.citation-card a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.citation-card a:hover {
+    text-decoration: underline;
+}
+
+.citation-devanagari {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    color: #666;
+}
+
+.loading-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f0f0f0;
+    border-top-color: #ff6b35;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 1px solid #f5c6cb;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.input-wrapper {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+#queryInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+}
+
+#queryInput:focus {
+    border-color: #ff6b35;
+}
+
+.btn-send {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+.btn-send:hover:not(:disabled) {
+    background: #e55a2b;
+}
+
+.btn-send:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-clear {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.btn-clear:hover {
+    background: #5a6268;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .guidance-container {
+        height: calc(100vh - 150px);
+    }
+
+    .message-content {
+        max-width: 90%;
+    }
+
+    .api-key-input-group {
+        flex-direction: column;
+    }
+
+    .input-area {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+}
+</style>
+
+<script src="{{ '/assets/js/guidance.js' | relative_url }}"></script>

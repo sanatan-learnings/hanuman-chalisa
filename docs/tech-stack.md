@@ -57,11 +57,20 @@ hanuman-chalisa/
 │   ├── doha_02.md
 │   ├── verse_01.md through verse_40.md
 │   └── doha_closing.md
+├── _data/
+│   └── translations/        # UI translations
+│       ├── en.yml          # English (includes guidance strings)
+│       └── hi.yml          # Hindi
 ├── assets/
 │   ├── css/style.css       # Custom styling
 │   ├── js/navigation.js    # Arrow key navigation
 │   ├── js/language.js      # Language switching
-│   └── js/theme.js         # Image theme switching
+│   ├── js/theme.js         # Image theme switching
+│   └── js/guidance.js      # RAG system (NEW)
+├── scripts/                 # Python utilities
+│   ├── generate_embeddings_local.py  # Local embedding generation (NEW)
+│   ├── embedding_config.yaml         # Config for embeddings (NEW)
+│   └── requirements.txt     # Python dependencies
 ├── images/                  # Verse images (organized by theme)
 │   └── modern-minimalist/  # Current theme (47 images complete)
 │       ├── title-page.png
@@ -71,6 +80,9 @@ hanuman-chalisa/
 │       └── closing-doha.png
 ├── audio/                   # Audio recitations (coming soon)
 ├── docs/                    # Documentation
+├── venv/                    # Python virtual environment (NEW, excluded from Jekyll)
+├── embeddings.json          # Pre-computed embeddings - 1.1MB (NEW)
+├── guidance.html            # Spiritual guidance chat interface (NEW)
 └── index.html              # Home page with navigation
 ```
 
@@ -202,21 +214,45 @@ See [multilingual-implementation.md](multilingual-implementation.md) for complet
 - Result snippets with context
 - Generated JSON index (`search.json`)
 
-### 3. Navigation
+### 3. Spiritual Guidance (RAG System) (`/guidance`)
+- **AI-powered Q&A** - Ask spiritual questions and receive guidance
+- **Retrieval Augmented Generation (RAG)** - Finds relevant verses for context
+- **Keyword-based search** - Matches queries to verse content
+- **GPT-4 integration** - Generates spiritual guidance based on verses
+- **Bilingual support** - Works in English and Hindi
+- **Conversation history** - Maintains context for follow-up questions
+- **User-provided API key** - Uses OpenAI API (stored locally)
+- **Verse citations** - Links to relevant verses in responses
+
+**Technical Implementation:**
+- Pre-generated embeddings using `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions)
+- Local embedding generation via Python virtual environment
+- Keyword-based retrieval (fallback for client-side simplicity)
+- OpenAI GPT-4o for spiritual guidance generation
+- Cost: ~$0.01 per query (user's API key)
+
+**Files:**
+- `scripts/generate_embeddings_local.py` - Local embedding generation
+- `embeddings.json` - Pre-computed verse embeddings (1.1MB)
+- `guidance.html` - Chat interface
+- `assets/js/guidance.js` - RAG pipeline logic
+- `venv/` - Python virtual environment (excluded from Jekyll build)
+
+### 4. Navigation
 - Arrow keys (← →) between verses
 - Previous/Next buttons on each verse
 - Home button (☰ All Verses)
 - Language preserved in navigation
 - Keyboard shortcuts help
 
-### 4. Print Support
+### 5. Print Support
 - Dedicated print.css for printer-friendly output
 - Hide navigation and non-essential elements
 - Optimized typography for paper
 - A4 page configuration
 - Print button on full chalisa view
 
-### 5. Image Theme System
+### 6. Image Theme System
 - Theme selector in header (🎨 icon)
 - Multiple artistic styles for verse images
 - Instant switching via JavaScript (no page reload)
@@ -268,6 +304,31 @@ modern-minimalist:
 - Full-speed and slow-speed versions
 - Export as MP3 (128kbps)
 - Store in `/audio/verse_01_full.mp3`, `/audio/verse_01_slow.mp3`
+
+### Embeddings Generation (Python)
+- **sentence-transformers** - Local embedding generation
+- **Model**: sentence-transformers/all-MiniLM-L6-v2 (384 dimensions)
+- **Virtual environment** - `venv/` for isolated dependencies
+- **Cost**: FREE (runs locally, no API calls)
+- **Output**: `embeddings.json` (1.1MB for 43 verses × 2 languages)
+
+**Dependencies** (in `venv/`):
+```bash
+pip install sentence-transformers  # ~500MB including PyTorch
+```
+
+**Generation command:**
+```bash
+./venv/bin/python scripts/generate_embeddings_local.py
+```
+
+**Process:**
+1. Reads all 43 verse files from `_verses/`
+2. Extracts YAML front matter (title, transliteration, meanings, stories)
+3. Combines fields into rich semantic documents
+4. Generates 384-dimensional embeddings locally
+5. Outputs `embeddings.json` with verse metadata + vectors
+6. Takes ~2-3 minutes on modern hardware
 
 ## Development Tools
 

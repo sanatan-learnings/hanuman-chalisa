@@ -41,3 +41,6 @@ __pycache__/
 *.pyd
 .Python
 *.so
+venv/
+env/
+.venv/

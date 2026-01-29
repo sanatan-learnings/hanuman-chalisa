@@ -25,6 +25,16 @@ This guide provides deep understanding of each verse with translations, meanings
 - **Bilingual support** - Switch between English and Hindi instantly
 - **Beautiful AI-generated images** for each verse
 
+### 💬 Spiritual Guidance (AI-Powered)
+- **Ask questions** and receive spiritual guidance based on relevant verses
+- **RAG system** - Finds and cites specific verses for your questions
+- **GPT-4 powered** - Thoughtful, context-aware responses
+- **Bilingual** - Works in English and Hindi
+- **Conversation history** - Maintains context for follow-up questions
+- Requires your OpenAI API key (~$0.01 per query)
+
+[Try Spiritual Guidance →](https://arun-gupta.github.io/hanuman-chalisa/guidance)
+
 ### 📕 Generate Custom Books
 Create personalized printable books:
 - **Multiple sizes**: 6"×4" pocket, 8"×6" medium, A5, A4
@@ -46,10 +56,28 @@ Want to contribute or generate custom themes?
 **→ See the [Developer Guide](docs/developer-guide.md)** for:
 - Local development setup
 - Generating custom image themes with DALL-E 3 (~$2 for 47 images)
+- **Regenerating embeddings** for the RAG system (FREE, runs locally)
 - Project structure and architecture
 - Testing and deployment
 
 **→ See [CONTRIBUTING.md](CONTRIBUTING.md)** for contribution guidelines
+
+### Regenerating Embeddings (For New Languages)
+
+The spiritual guidance feature uses pre-computed embeddings. To regenerate them (e.g., when adding new language translations):
+
+```bash
+# Set up Python virtual environment (first time only)
+python3 -m venv venv
+./venv/bin/pip install sentence-transformers
+
+# Generate embeddings locally (FREE, no API needed)
+./venv/bin/python scripts/generate_embeddings_local.py
+
+# Output: embeddings.json (~1.1MB)
+```
+
+**Cost:** FREE - runs locally on your machine, no API calls required!
 
 ## Documentation
 
@@ -82,6 +110,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
 ### Content Creation
 - **DALL-E 3** (OpenAI) - AI-generated verse images
+- **GPT-4** (OpenAI) - Spiritual guidance generation
+- **sentence-transformers** (Hugging Face) - Local embeddings for semantic search
 - **Claude Code** (Anthropic) - AI-assisted content generation and development
 - **Human review** - All content validated for accuracy and devotional authenticity
 
