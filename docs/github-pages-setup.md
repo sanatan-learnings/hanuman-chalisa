@@ -20,51 +20,6 @@ This repository uses **Jekyll** (a static site generator) with **GitHub Pages** 
 
 No manual HTML generation needed! GitHub does it all automatically.
 
-## Directory Structure
-
-```
-hanuman-chalisa/
-├── _config.yml              # Jekyll configuration
-│
-├── _layouts/                # HTML templates (Liquid)
-│   ├── default.html        # Base template (header, footer)
-│   └── verse.html          # Template for verse pages
-│
-├── _verses/                 # Jekyll collection (YAML data)
-│   ├── doha_01.md          # Opening doha 1
-│   ├── doha_02.md          # Opening doha 2
-│   ├── verse_01.md         # Verse 1
-│   ├── verse_02.md         # Verse 2
-│   ├── ...                 # Verses 3-40
-│   └── doha_closing.md     # Closing doha
-│
-├── assets/                  # Static assets
-│   ├── css/
-│   │   └── style.css       # All styling
-│   └── js/
-│       └── navigation.js   # Arrow key navigation
-│
-├── images/                  # Verse images (coming soon)
-│   ├── doha_01.jpg
-│   ├── verse_01.jpg
-│   └── ...                 # One image per verse (43 total)
-│
-├── audio/                   # Audio recitations (coming soon)
-│   ├── doha_01_full.mp3
-│   ├── doha_01_slow.mp3
-│   └── ...                 # 2 audio files per verse (86 total)
-│
-├── docs/                    # Documentation
-│   ├── background.md
-│   ├── guide.md
-│   ├── verse-structure.md
-│   ├── tech-stack.md
-│   └── github-pages-setup.md (this file)
-│
-├── index.html              # Home page
-└── README.md               # Repository documentation
-```
-
 ## YAML Front Matter Architecture
 
 Each verse file in `_verses/` contains **YAML front matter only** (no markdown body):
