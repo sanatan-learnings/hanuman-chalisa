@@ -22,7 +22,7 @@ body {
 header {
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     color: white;
-    padding: 2rem 0;
+    padding: 1.25rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -31,7 +31,7 @@ header .header-content {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
 header .header-title {
@@ -42,7 +42,8 @@ header .header-title {
 
 header h1 {
     margin: 0 0 0.25rem 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 
 header h1 a {
@@ -51,7 +52,7 @@ header h1 a {
 }
 
 header .subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0;
     opacity: 0.95;
     display: flex;
@@ -84,7 +85,7 @@ header .subtitle .separator {
 /* Header Controls Container */
 .header-controls {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     flex-shrink: 0; /* Prevent controls from shrinking */
     margin-left: auto; /* Push to far right */
@@ -113,17 +114,17 @@ header .subtitle .separator {
     background: rgba(255, 255, 255, 0.2);
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 8px 30px 8px 12px;
+    padding: 6px 24px 6px 8px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
-    background-position: right 8px center;
-    background-size: 16px;
+    background-position: right 5px center;
+    background-size: 14px;
     transition: all 0.3s ease;
 }
 
