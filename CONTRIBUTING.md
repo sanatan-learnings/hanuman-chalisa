@@ -56,44 +56,10 @@ bundle exec jekyll serve
 - [ ] Mobile responsive
 - [ ] No console errors (F12)
 
-**→ For detailed setup, troubleshooting, and technical docs, see the [Developer Guide](docs/developer-guide.md)**
-
-**For Spiritual Guidance feature:**
-
-The spiritual guidance feature uses OpenAI's GPT-4 API and can work in two modes:
-
-**Mode 1: User-Provided API Key** (Default for testing)
-- Users enter their own OpenAI API key
-- No backend setup needed
-- Good for local development and testing
-
-**Mode 2: Cloudflare Worker** (Production)
-- Site owner's API key deployed as Cloudflare Worker
-- Users don't need API keys
-- Requires one-time deployment
-
-**Testing locally:**
-```bash
-# Test with user-provided key mode (no setup needed)
-# Just visit http://localhost:4000/hanuman-chalisa/guidance
-# Enter your OpenAI API key when prompted
-
-# Or test with Cloudflare Worker (if you have it deployed)
-# The WORKER_URL in assets/js/guidance.js should point to your worker
-```
-
-**Deploying Cloudflare Worker (for maintainers):**
-```bash
-# Quick automated deployment
-./scripts/deploy-cloudflare-worker.sh
-
-# Or manual deployment
-wrangler login
-wrangler deploy
-wrangler secret put OPENAI_API_KEY
-```
-
-See [docs/cloudflare-worker-setup.md](docs/cloudflare-worker-setup.md) for complete setup guide.
+**→ For detailed setup, troubleshooting, and technical configuration, see:**
+- **Jekyll setup:** [docs/local-development.md](docs/local-development.md)
+- **Cloudflare Worker:** [docs/cloudflare-worker-setup.md](docs/cloudflare-worker-setup.md)
+- **Technical overview:** [docs/developer-guide.md](docs/developer-guide.md)
 
 ### 5. Commit and Push
 

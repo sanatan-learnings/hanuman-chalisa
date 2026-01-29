@@ -96,7 +96,7 @@ Hanuman's divine ability to change size at will. Show a split or dual compositio
 
 ### Verse 10: Destroyer of Demons
 **Scene Description**:
-Hanuman in his fierce warrior form (Bhima roop), engaged in battle against demons. His expression is powerful and determined. He wields his supernatural strength to vanquish evil forces. Demons flee or fall before him. This scene captures Hanuman as the fierce protector who destroys those who threaten dharma (righteousness). Energy and power radiate from his form.
+Hanuman in his mighty Bhima roop form, standing tall with divine protective power. His expression radiates strength and determination. Divine light emanates from his form, dispelling darkness and negativity. This scene captures Hanuman as the great protector of dharma (righteousness), his presence transforming negative energies into positive ones. Sacred energy and spiritual power radiate from his magnificent form.
 
 ---
 
@@ -216,7 +216,7 @@ Hanuman's eternal presence across all time periods. Show his form present throug
 
 ### Verse 30: Protector of Saints
 **Scene Description**:
-Hanuman actively protecting saints, sages, and righteous people from demonic attacks. He shows both protective compassion toward the good and fierce destruction toward evil. Saints stand safely behind or near him while demons are driven away. This dual nature - gentle with devotees, fierce with evil - is central to his character. A scene of divine protection in action.
+Hanuman actively protecting saints, sages, and righteous people. He radiates both protective compassion toward the good and powerful divine energy that dispels negativity. Saints stand safely behind or near him, enveloped in his protective aura. Divine light emanating from him transforms darkness into light. This dual nature - gentle with devotees, powerful against negativity - is central to his character. A scene of divine protection in action.
 
 ---
 
