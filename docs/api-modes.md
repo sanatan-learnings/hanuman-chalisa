@@ -1,133 +1,68 @@
-# API Modes Comparison
+# Spiritual Guidance API Configuration
 
-The Hanuman Chalisa spiritual guidance feature supports two modes for OpenAI API access.
+The spiritual guidance feature uses OpenAI's API through a Cloudflare Worker proxy for secure, frictionless access.
 
-## Mode 1: User-Provided API Key (Current)
+## Current Setup: Cloudflare Worker
 
-**How it works:**
-- Users enter their own OpenAI API key
-- Key stored in browser localStorage
-- Direct API calls from browser to OpenAI
+**Architecture:**
+```
+User Browser → Cloudflare Worker → OpenAI API → Response
+                (proxies request)   (GPT-4 + embeddings)
+```
 
-**Pros:**
-✅ No backend needed
-✅ No ongoing costs for you
-✅ Simple setup
-
-**Cons:**
-❌ Users need their own OpenAI account
-❌ More friction (API key entry)
-❌ Users see their key in browser
+**Benefits:**
+- ✅ Users don't need their own OpenAI API key
+- ✅ Frictionless experience (no signup required)
+- ✅ API key securely stored as Cloudflare secret
+- ✅ Rate limiting built-in (10 req/min per IP)
+- ✅ Free Cloudflare tier (100k requests/day)
+- ✅ Works with GitHub Pages hosting
 
 **Configuration:**
 ```javascript
 // assets/js/guidance.js
-const WORKER_URL = ''; // Empty = user-provided key mode
+const WORKER_URL = 'https://hanuman-chalisa-api.arungupta.workers.dev';
 ```
 
----
+## How It Works
 
-## Mode 2: Cloudflare Worker (Recommended)
+1. User asks a question in the guidance interface
+2. Browser sends request to Cloudflare Worker
+3. Worker validates and rate-limits the request
+4. Worker forwards to OpenAI API (using secure API key)
+5. OpenAI returns spiritual guidance response
+6. Worker sends response back to browser
 
-**How it works:**
-- Your API key stored securely in Cloudflare
-- Users make requests to your worker
-- Worker proxies to OpenAI
+## Cost
 
-**Pros:**
-✅ No API key needed from users
-✅ Key hidden from users
-✅ Frictionless experience
-✅ Keep GitHub Pages hosting
-✅ Rate limiting built-in
-✅ Free tier (100k requests/day)
+- **Cloudflare Worker**: Free (within 100k requests/day limit)
+- **OpenAI API**: ~$0.01 per query
+  - Query embedding: ~$0.0000004
+  - GPT-4o input: ~$0.005
+  - GPT-4o output: ~$0.005
 
-**Cons:**
-❌ 10 minutes initial setup
-❌ You pay for all OpenAI usage
+**Example**: 100 queries/day = $1/day = ~$30/month
 
-**Configuration:**
+## Security
+
+- API key stored as Cloudflare Worker secret (never exposed to users)
+- Rate limiting prevents abuse (10 requests/min per IP address)
+- CORS configured to accept requests from any origin (can be restricted to your domain)
+- No sensitive user data stored
+
+## Alternative: User-Provided API Key
+
+The code supports an alternative mode where users provide their own OpenAI API keys:
+
 ```javascript
-// assets/js/guidance.js
-const WORKER_URL = 'https://hanuman-chalisa-api.your-subdomain.workers.dev';
+// To enable user-provided key mode:
+const WORKER_URL = ''; // Empty string
 ```
 
----
+This removes all costs for you but adds friction (users must create OpenAI accounts and enter API keys).
 
-## Switching Between Modes
+**Not currently used** - keeping Cloudflare Worker for better UX.
 
-### Enable Worker Mode
-1. Deploy Cloudflare Worker (see [cloudflare-worker-setup.md](cloudflare-worker-setup.md))
-2. Update `WORKER_URL` in `assets/js/guidance.js` with your worker URL
-3. Commit and push
+## Deployment
 
-### Disable Worker Mode (Revert to User API Key)
-1. Set `WORKER_URL = ''` in `assets/js/guidance.js`
-2. Commit and push
-
-That's it! No other code changes needed.
-
----
-
-## Cost Comparison
-
-### Mode 1: User-Provided Key
-- **You pay:** $0 (users pay their own OpenAI costs)
-- **User pays:** ~$0.01 per query
-
-### Mode 2: Cloudflare Worker
-- **You pay:**
-  - Cloudflare: $0 (free tier: 100k requests/day)
-  - OpenAI: ~$0.01 per user query
-- **User pays:** $0
-
-**Example:** 100 queries/day = $1/day = $30/month OpenAI costs
-
----
-
-## Which Should I Choose?
-
-### Choose User-Provided Key if:
-- You want zero ongoing costs
-- Your users are technical (comfortable with API keys)
-- Low traffic site
-- Testing/development
-
-### Choose Cloudflare Worker if:
-- You want best user experience
-- Users shouldn't need OpenAI accounts
-- You can afford $0.01 per query
-- Production site
-- Want analytics and rate limiting
-
----
-
-## Hybrid Approach (Future)
-
-Possible to support both modes simultaneously:
-- Check if `WORKER_URL` is set
-- If yes, use worker (no API key UI)
-- If no, show API key input
-
-Current implementation already supports this! Just change `WORKER_URL`.
-
----
-
-## Security Notes
-
-### Mode 1 (User Key)
-- Key stored in browser localStorage
-- Visible in browser DevTools
-- Each user controls their own key
-
-### Mode 2 (Worker)
-- Your key stored as Cloudflare secret
-- Never exposed to browser
-- You control rate limiting and access
-- **Recommendation:** Set CORS to your domain only
-
----
-
-## Questions?
-
-See [cloudflare-worker-setup.md](cloudflare-worker-setup.md) for deployment guide.
+See [cloudflare-worker-setup.md](cloudflare-worker-setup.md) for deployment instructions.

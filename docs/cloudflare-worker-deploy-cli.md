@@ -28,7 +28,6 @@ This opens your browser to authenticate.
 From your project root:
 
 ```bash
-cd /Users/arungupta/workspaces/hanuman-chalisa
 wrangler deploy
 ```
 
