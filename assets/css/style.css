@@ -35,8 +35,14 @@ header .header-content {
 }
 
 header .header-title {
-    text-align: center;
+    text-align: left;
     flex: 1;
+    min-width: 0; /* Allow flex item to shrink below content size */
+}
+
+header h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.8rem;
 }
 
 header h1 a {
@@ -45,12 +51,12 @@ header h1 a {
 }
 
 header .subtitle {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 0;
     opacity: 0.95;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.5rem;
     flex-wrap: wrap;
 }
@@ -80,6 +86,8 @@ header .subtitle .separator {
     display: flex;
     gap: 10px;
     align-items: center;
+    flex-shrink: 0; /* Prevent controls from shrinking */
+    margin-left: auto; /* Push to far right */
 }
 
 /* Screen reader only label */
@@ -142,6 +150,14 @@ header .subtitle .separator {
     header .header-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    header .header-title {
+        text-align: center;
+    }
+
+    header .subtitle {
+        justify-content: center;
     }
 
     .header-controls {
