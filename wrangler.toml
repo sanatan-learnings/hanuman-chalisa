@@ -1,0 +1,23 @@
+# Cloudflare Worker Configuration
+# This deploys ONLY the worker script, not the entire site.
+# Your Jekyll site stays on GitHub Pages.
+
+name = "hanuman-chalisa-api"
+main = "cloudflare-worker.js"
+compatibility_date = "2026-01-29"
+
+# Workers configuration
+workers_dev = true
+
+# Environment variables (set these in Cloudflare dashboard)
+# OPENAI_API_KEY = "your-key-here" (set via dashboard, not here!)
+
+# Account ID (optional - wrangler will prompt if not set)
+# Get this from: https://dash.cloudflare.com/ > Workers & Pages > Overview
+# account_id = "your-account-id"
+
+# Route configuration (optional - for custom domains)
+# [env.production]
+# routes = [
+#   { pattern = "api.hanumanchalisa.com/*", zone_name = "hanumanchalisa.com" }
+# ]
