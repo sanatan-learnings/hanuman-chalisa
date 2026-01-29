@@ -221,22 +221,59 @@ See [multilingual-implementation.md](multilingual-implementation.md) for complet
 - **GPT-4 integration** - Generates spiritual guidance based on verses
 - **Bilingual support** - Works in English and Hindi
 - **Conversation history** - Maintains context for follow-up questions
-- **User-provided API key** - Uses OpenAI API (stored locally)
+- **Two deployment modes** - User-provided API key OR Cloudflare Worker (serverless)
 - **Verse citations** - Links to relevant verses in responses
 
 **Technical Implementation:**
-- Pre-generated embeddings using `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions)
-- Local embedding generation via Python virtual environment
-- Keyword-based retrieval (fallback for client-side simplicity)
+- Pre-generated embeddings using OpenAI `text-embedding-3-small` (1536 dimensions)
+- Pluggable embedding generation (supports OpenAI or local HuggingFace)
+- Keyword-based retrieval for client-side simplicity
 - OpenAI GPT-4o for spiritual guidance generation
-- Cost: ~$0.01 per query (user's API key)
+- Cost: ~$0.01 per query
+
+**Architecture - Two Modes:**
+
+**Mode 1: User-Provided API Key** (Default)
+- Users enter their own OpenAI API key
+- Key stored in browser localStorage
+- Direct API calls from browser to OpenAI
+- No backend required
+- Zero cost for site owner
+
+**Mode 2: Cloudflare Worker** (Production)
+- Serverless proxy deployed to Cloudflare Workers
+- Site owner's API key stored securely as Cloudflare secret
+- Users make requests to worker endpoint
+- Worker forwards to OpenAI API
+- Frictionless UX (no API key entry needed)
+- Rate limiting built-in (10 req/min per IP)
+- Free tier: 100,000 requests/day
+- CORS-enabled for browser requests
+- Current deployment: `https://hanuman-chalisa-api.arungupta.workers.dev`
 
 **Files:**
-- `scripts/generate_embeddings_local.py` - Local embedding generation
-- `embeddings.json` - Pre-computed verse embeddings (1.1MB)
+- `scripts/generate_embeddings.py` - Pluggable embedding generation (OpenAI or HuggingFace)
+- `scripts/generate_embeddings_local.py` - Local HuggingFace embedding generation (legacy)
+- `embeddings.json` - Pre-computed verse embeddings (4.2MB, 1536-dim)
 - `guidance.html` - Chat interface
-- `assets/js/guidance.js` - RAG pipeline logic
+- `assets/js/guidance.js` - RAG pipeline logic (supports both modes)
+- `cloudflare-worker.js` - Serverless API proxy for OpenAI
+- `wrangler.toml` - Cloudflare Worker configuration
+- `scripts/deploy-cloudflare-worker.sh` - Automated deployment script
 - `venv/` - Python virtual environment (excluded from Jekyll build)
+
+**Deployment:**
+- Automated script: `./scripts/deploy-cloudflare-worker.sh`
+- Manual CLI: `wrangler deploy` + `wrangler secret put OPENAI_API_KEY`
+- Dashboard: Copy/paste worker code via Cloudflare UI
+- See: [docs/cloudflare-worker-setup.md](cloudflare-worker-setup.md)
+
+**Switching Modes:**
+```javascript
+// In assets/js/guidance.js:
+const WORKER_URL = '';  // Empty = user-provided key mode
+const WORKER_URL = 'https://...workers.dev';  // Set = worker mode
+```
 
 ### 4. Navigation
 - Arrow keys (← →) between verses
