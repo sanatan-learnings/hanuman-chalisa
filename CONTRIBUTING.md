@@ -88,8 +88,7 @@ Here are some ways you can contribute:
 - Add Ramayana citations where missing
 
 ### Translations
-- **Complete Hindi translations** - Help translate remaining verses (22/43 completed)
-- **Add new languages** - Tamil, Telugu, Spanish, or other languages
+- **Add new languages** - [Tamil](https://github.com/arun-gupta/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Tamil), [Telugu](https://github.com/arun-gupta/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Telugu), [Spanish](https://github.com/arun-gupta/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Spanish), or other languages
 - **Translate UI strings** - Add new language file in `_data/translations/`
 - Review and improve existing translations
 - **Translation format:**
