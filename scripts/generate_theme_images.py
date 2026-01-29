@@ -2,14 +2,20 @@
 """
 Generate Hanuman Chalisa verse images using DALL-E 3.
 
-This script reads prompts from docs/image-prompts.md and generates all 47 images
-for a new theme using OpenAI's DALL-E 3 API.
+This script combines scene descriptions from docs/image-prompts.md with visual
+style specifications from docs/themes/<theme-name>.yml to generate all 47 images
+using OpenAI's DALL-E 3 API.
+
+Architecture:
+    1. Scene descriptions (what's happening) come from docs/image-prompts.md
+    2. Visual style (colors, character design, mood) comes from docs/themes/*.yml
+    3. Script combines both to create complete DALL-E 3 prompts
 
 Usage:
-    python scripts/generate_theme_images.py --theme-name traditional-art --style "traditional Indian devotional art style"
+    python scripts/generate_theme_images.py --theme-name kids-friendly
 
 Requirements:
-    pip install openai requests pillow
+    pip install openai requests pillow pyyaml
 """
 
 import os
@@ -70,10 +76,10 @@ class ImageGenerator:
 
     def parse_prompts_file(self) -> Dict[str, str]:
         """
-        Parse the image-prompts.md file to extract all prompts.
+        Parse the image-prompts.md file to extract scene descriptions.
 
         Returns:
-            Dictionary mapping filename to prompt text
+            Dictionary mapping filename to scene description text
         """
         if not PROMPTS_FILE.exists():
             raise FileNotFoundError(f"Prompts file not found: {PROMPTS_FILE}")
@@ -83,60 +89,61 @@ class ImageGenerator:
 
         prompts = {}
 
-        # Extract banner/title page prompt
-        banner_match = re.search(
-            r'### Banner/Title Page.*?\*\*Full Prompt\*\*:\s*```\s*(.*?)\s*```',
+        # Extract title page scene description
+        title_match = re.search(
+            r'### Title Page.*?\*\*Scene Description\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
             content,
             re.DOTALL
         )
-        if banner_match:
-            prompts['title-page.png'] = banner_match.group(1).strip()
+        if title_match:
+            prompts['title-page.png'] = title_match.group(1).strip()
 
-        # Extract opening doha prompts
+        # Extract opening doha scene descriptions
         doha_sections = re.findall(
-            r'### Opening Doha (\d+):.*?\*\*Base Prompt\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
+            r'### Opening Doha (\d+):.*?\*\*Scene Description\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
             content,
             re.DOTALL
         )
-        for doha_num, prompt in doha_sections:
+        for doha_num, scene_desc in doha_sections:
             filename = f'opening-doha-{doha_num.zfill(2)}.png'
-            prompts[filename] = prompt.strip()
+            prompts[filename] = scene_desc.strip()
 
-        # Extract verse prompts
+        # Extract verse scene descriptions
         verse_sections = re.findall(
-            r'### Verse (\d+):.*?\*\*Base Prompt\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
+            r'### Verse (\d+):.*?\*\*Scene Description\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
             content,
             re.DOTALL
         )
-        for verse_num, prompt in verse_sections:
+        for verse_num, scene_desc in verse_sections:
             filename = f'verse-{verse_num.zfill(2)}.png'
-            prompts[filename] = prompt.strip()
+            prompts[filename] = scene_desc.strip()
 
-        # Extract closing doha prompt
+        # Extract closing doha scene description
         closing_match = re.search(
-            r'### Closing Doha:.*?\*\*Base Prompt\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
+            r'### Closing Doha:.*?\*\*Scene Description\*\*:\s*(.*?)(?=\n---|\n###|\Z)',
             content,
             re.DOTALL
         )
         if closing_match:
             prompts['closing-doha.png'] = closing_match.group(1).strip()
 
-        print(f"✓ Parsed {len(prompts)} prompts from {PROMPTS_FILE.name}")
+        print(f"✓ Parsed {len(prompts)} scene descriptions from {PROMPTS_FILE.name}")
         return prompts
 
-    def build_full_prompt(self, base_prompt: str) -> str:
+    def build_full_prompt(self, scene_description: str) -> str:
         """
-        Build the full prompt by combining base prompt with style modifier.
+        Build the full prompt by combining scene description with theme style modifier.
 
         Args:
-            base_prompt: The base prompt from the documentation
+            scene_description: The scene description from docs/image-prompts.md
 
         Returns:
             Complete prompt for DALL-E 3
         """
         if self.style_modifier:
-            return f"{base_prompt}\n\nStyle: {self.style_modifier}"
-        return base_prompt
+            # Combine scene description with visual style from theme
+            return f"{scene_description}\n\nVisual Style: {self.style_modifier}"
+        return scene_description
 
     def generate_image(self, filename: str, prompt: str, retry_count: int = 3) -> bool:
         """
@@ -160,7 +167,7 @@ class ImageGenerator:
         full_prompt = self.build_full_prompt(prompt)
 
         print(f"\n→ Generating {filename}...")
-        print(f"  Prompt: {prompt[:80]}...")
+        print(f"  Scene: {prompt[:80]}...")
 
         for attempt in range(retry_count):
             try:

@@ -1,0 +1,467 @@
+# Kids-Friendly Theme - Comprehensive Specification
+# Hanuman Chalisa Visual Theme Definition for Children (Ages 5-12)
+
+theme:
+  # ===== Identity =====
+  id: kids-friendly
+  version: "1.0"
+  created: "2026-01"
+  last_updated: "2026-01"
+  generator: DALL-E 3
+
+  # ===== Naming =====
+  name:
+    en: "Kids Friendly"
+    hi: "बच्चों के अनुकूल"
+    technical: "Children's Storybook Illustration Style"
+
+  # ===== Purpose & Intent =====
+  purpose: "Create engaging, educational, and child-appropriate illustrations of the Hanuman Chalisa that introduce children to Hindu mythology through playful, colorful storybook art while maintaining cultural respect and spiritual authenticity."
+
+  intent:
+    primary: "Make the Hanuman Chalisa accessible and engaging for children ages 5-12"
+    secondary: "Foster early spiritual education through friendly, non-intimidating visual storytelling"
+    spiritual: "Introduce divine concepts through joyful, warm imagery that invites curiosity and questions"
+    accessibility: "Create a safe, welcoming visual environment for children to explore Hindu stories and values"
+
+  target_audience:
+    age_range: "5-12 years old"
+    contexts:
+      - "Parents teaching children about Hanuman Chalisa"
+      - "Sunday schools and religious education classes"
+      - "Children's bedtime story reading"
+      - "Educational introduction to Hindu mythology"
+      - "Family devotional activities"
+
+  # ===== Visual Style Core =====
+  style:
+    aesthetic: "Playful Children's Storybook Illustration"
+    movement: "Contemporary Kids' Educational Art"
+    influence:
+      - "Modern children's picture books"
+      - "Educational cartoon illustration"
+      - "Friendly character design"
+      - "Bright, inviting visual storytelling"
+
+    description:
+      primary: "Bright, colorful, cartoon-style illustrations with friendly character designs and clear visual storytelling"
+      atmosphere: "Joyful, magical, warm, and inviting with positive energy"
+      approach: "Simple compositions with large, expressive characters that children can easily understand and relate to"
+
+  # ===== Color Palette =====
+  color_palette:
+    primary:
+      - name: "Sunshine Yellow"
+        hex: "#FFD700"
+        significance: "Happiness, positivity, divine light in child-friendly form"
+        usage: "Main backgrounds, halos, joyful divine energy"
+
+      - name: "Happy Orange"
+        hex: "#FF9933"
+        significance: "Hanuman's friendly appearance, warmth, approachability"
+        usage: "Hanuman's form, warm accents, energy"
+
+      - name: "Sky Blue"
+        hex: "#87CEEB"
+        significance: "Peace, openness, friendly skies"
+        usage: "Sky backgrounds, peaceful elements, Rama's connection"
+
+    secondary:
+      - name: "Grass Green"
+        hex: "#7CFC00"
+        usage: "Nature, forests, positive energy, life"
+
+      - name: "Lotus Pink"
+        hex: "#FFB6C1"
+        usage: "Soft highlights, flowers, gentle elements"
+
+      - name: "Royal Purple"
+        hex: "#9370DB"
+        usage: "Divine elements, special magical moments"
+
+    background:
+      - name: "Soft Cream"
+        hex: "#FFF8DC"
+        usage: "Main backgrounds, gentle base colors"
+
+      - name: "Light Lavender"
+        hex: "#E6E6FA"
+        usage: "Spiritual backgrounds, calm peaceful scenes"
+
+      - name: "Cloud White"
+        hex: "#FFFAFA"
+        usage: "Clouds, light elements, purity"
+
+    accents:
+      - name: "Peacock Teal"
+        hex: "#40E0D0"
+        usage: "Decorative elements, jewelry, sparkles"
+
+      - name: "Mango Red"
+        hex: "#FF6347"
+        usage: "Energy, action, strength (child-appropriate)"
+
+      - name: "Bright Gold"
+        hex: "#FFD700"
+        usage: "Divine glow, special objects, treasure"
+
+    mood: "Bright, cheerful, optimistic, welcoming with vibrant but not overwhelming colors"
+
+  # ===== Depiction Rules =====
+  depiction_rules:
+    hanuman:
+      form: "Friendly monkey character with cartoon-like proportions"
+      complexion: "Golden-orange with soft, warm tones"
+      physique: "Strong but approachable, superhero-like for children"
+      face: "Large expressive eyes, warm friendly smile, gentle features"
+      tail: "Long, expressive, often shown in playful dynamic poses"
+      fur: "Soft appearance with cartoon-like texture, not too detailed"
+
+      attributes:
+        mandatory:
+          - "Simple orange dhoti or child-friendly warrior outfit"
+          - "Small crown or decorative headpiece"
+          - "Tilak on forehead (visible but simple)"
+          - "Friendly, welcoming expression"
+
+        common:
+          - "Colorful armlets and jewelry (not too elaborate)"
+          - "Simple necklace"
+          - "Gada (mace) shown as magical glowing staff"
+          - "Bare feet or simple sandals"
+
+        avoid:
+          - "Overly muscular or intimidating appearance"
+          - "Complex elaborate jewelry"
+          - "Scary or fierce expressions"
+          - "Realistic anatomical details"
+
+      expressions:
+        default: "Warm, friendly smile showing kindness and strength"
+        brave: "Confident and determined, like a superhero"
+        gentle: "Caring and nurturing, comforting"
+        powerful: "Strong but never scary, heroic"
+        wise: "Thoughtful and kind, like a wise friend"
+        joyful: "Happy and playful, celebrating"
+
+    rama:
+      when_depicted: "As a kind prince and loving friend to Hanuman"
+      appearance: "Gentle blue-teal or brown skin, simple royal clothing, bow and arrow (friendly, not threatening)"
+      treatment: "Shown as caring older brother figure, warm and approachable"
+      expressions: "Kind, loving, appreciative toward Hanuman"
+
+    sita:
+      when_depicted: "As a gentle, motherly, graceful presence"
+      appearance: "Beautiful sari in pink or green, flowers in hair, kind eyes"
+      treatment: "Nurturing and peaceful, like a loving mother"
+      expressions: "Gentle smile, blessing gestures, peaceful"
+
+    other_deities:
+      consistency: "All deities shown as friendly divine beings with bright halos"
+      approach: "Recognizable but approachable, not intimidating"
+      colors: "Vibrant traditional colors appropriate for each"
+
+    demons:
+      style: "Comical rather than scary, silly exaggerated features"
+      colors: "Dark but not frightening, cartoonish"
+      treatment: "Clearly antagonists but not nightmare-inducing"
+      expressions: "Bumbling, comic, defeated easily"
+      note: "Should be more funny than frightening"
+
+    animals:
+      monkeys: "Friendly monkey friends with various expressions"
+      birds: "Colorful, cheerful birds"
+      other: "Gentle deer, friendly elephants, playful animals"
+      style: "All animals friendly and inviting"
+
+    devotees:
+      representation: "Children and families, diverse, modern and relatable"
+      expressions: "Curious, joyful, learning"
+      relationship: "Looking up with wonder and happiness"
+
+  # ===== Composition Principles =====
+  composition:
+    layout:
+      orientation: "Portrait (2:3 ratio)"
+      focus: "Large, clear focal point - usually Hanuman prominent in center"
+      balance: "Simple, centered, easy for children to parse"
+      white_space: "Generous margins, not cluttered or overwhelming"
+
+    focal_points:
+      primary: "Hanuman's face and expression (large and clear)"
+      secondary: "One or two supporting elements, never too many"
+
+    perspective:
+      preferred: "Straight-on eye level for accessibility"
+      alternative: "Slight low angle for heroic moments"
+      avoid: "Complex angles that confuse spatial relationships"
+
+    depth:
+      layers: "Simple 2-3 layers maximum"
+      foreground: "Main character in clear focus"
+      midground: "Supporting elements"
+      background: "Simple solid color or gentle pattern"
+
+    clarity:
+      - "One main action or idea per image"
+      - "Large, recognizable shapes"
+      - "Clear visual hierarchy"
+      - "Easy to understand at a glance"
+
+  # ===== Lighting & Atmosphere =====
+  lighting:
+    primary_source: "Bright, even lighting like a sunny day"
+    quality: "Soft, friendly, warm, inviting"
+    direction: "Front-lit or gently from above, no harsh shadows"
+
+    effects:
+      - "Gentle glow around divine figures (like sunshine)"
+      - "Sparkles and twinkles for magical moments"
+      - "Rainbow rays for special blessings"
+      - "Star effects for night scenes"
+      - "No dark dramatic shadows"
+
+    mood: "Cheerful, optimistic, magical, safe"
+    contrast: "Moderate contrast - clear but not harsh"
+
+  # ===== Pattern & Ornamentation =====
+  patterns:
+    decorative_elements:
+      - "Simple paisley in bright colors"
+      - "Flower garlands (marigolds, lotus)"
+      - "Stars and hearts for sparkle"
+      - "Colorful dots and circles"
+      - "Child-friendly mandalas with bold shapes"
+      - "Rainbow patterns"
+      - "Butterfly and bird motifs"
+
+    borders:
+      style: "Optional decorative frame, playful"
+      complexity: "Simple, not distracting"
+      colors: "Rainbow or bright gradient"
+
+    background:
+      - "Friendly clouds with faces (optional)"
+      - "Flowers and grass in foreground"
+      - "Butterflies and birds flying"
+      - "Gentle sun rays"
+      - "Sparkles and stars"
+
+    integration: "Patterns are fun additions, never overwhelming"
+
+  # ===== Symbolic Elements =====
+  symbolism:
+    recurring_motifs:
+      - element: "Divine light"
+        treatment: "Golden sparkles, gentle glow, sunshine rays"
+
+      - element: "Om symbol"
+        treatment: "Large, friendly, can have smiley face"
+
+      - element: "Lotus flowers"
+        treatment: "Bright pink, fully bloomed, cheerful"
+
+      - element: "Mountains"
+        treatment: "Rounded gentle peaks, friendly shapes"
+
+      - element: "Sun and moon"
+        treatment: "Smiling faces, warm and friendly"
+
+      - element: "Stars"
+        treatment: "Twinkling, magical, abundant"
+
+    color_symbolism:
+      orange: "Hanuman's warmth and friendliness"
+      blue: "Peace and calm"
+      yellow: "Happiness and divine light"
+      green: "Nature and growth"
+      pink: "Love and gentleness"
+
+  # ===== Technical Specifications =====
+  technical:
+    resolution:
+      width: 1024
+      height: 1536
+      unit: "pixels"
+      aspect_ratio: "2:3 (portrait)"
+
+    format:
+      file_type: "PNG"
+      bit_depth: 24
+      transparency: "No transparency (solid backgrounds)"
+      color_space: "sRGB"
+
+    quality:
+      detail_level: "Moderate - clear but not overly complex"
+      clarity: "High clarity for main subjects, simple backgrounds"
+      texture: "Smooth, cartoon-like finish"
+
+    generation_parameters:
+      model: "DALL-E 3"
+      quality: "standard"
+      size: "1024x1792 (cropped to 1024x1536)"
+      iterations: "Select most child-appropriate and engaging variations"
+
+  # ===== Generation Configuration =====
+  # This section is used by scripts/generate_theme_images.py
+  generation:
+    # Style modifier appended to base prompts from docs/image-prompts.md
+    style_modifier: |
+      Children's book illustration in vibrant cartoon style, playful and educational,
+      safe for kids ages 5-12. Hanuman depicted as friendly cartoon character with
+      large expressive eyes, warm smile, and approachable appearance. Bright colors:
+      sunshine yellow, happy orange, sky blue, grass green. Clean cartoon aesthetic
+      with simple clear compositions. No scary elements - demons are comical and silly.
+      Joyful, magical atmosphere with sparkles, stars, and gentle glows. Storybook
+      quality with child-friendly character designs. Educational and inviting, like
+      modern children's picture books. Hindu mythology presented in accessible,
+      age-appropriate style while maintaining cultural respect.
+
+    # DALL-E 3 API parameters
+    dalle_params:
+      model: "dall-e-3"
+      size: "1024x1792"
+      quality: "standard"
+      style: "natural"
+      n: 1
+
+    # Generation behavior
+    retry_count: 3
+    rate_limit_delay: 2
+    skip_existing: true
+
+    # Content safety
+    content_guidelines:
+      - "Always include 'child-appropriate', 'safe for children', 'ages 5-12'"
+      - "Specify 'cartoon style', 'storybook illustration', 'friendly characters'"
+      - "Use 'playful', 'joyful', 'educational', 'warm' descriptors"
+      - "Avoid 'realistic', 'dark', 'scary', 'violent', 'threatening'"
+      - "Demons should be 'comical', 'silly', 'cartoon villains'"
+
+  # ===== File Organization =====
+  files:
+    total_count: 47
+    structure:
+      title: "title-page.png (1 file)"
+      opening_dohas: "opening-doha-01.png, opening-doha-02.png (2 files)"
+      verses: "verse-01.png through verse-40.png (40 files)"
+      closing: "closing-doha.png (1 file)"
+
+    naming_convention: "lowercase-with-hyphens-and-number.png"
+    location: "images/kids-friendly/"
+
+  # ===== Artistic Principles =====
+  principles:
+    child_safety:
+      - "No frightening imagery or scary faces"
+      - "Violence implied through heroic poses, not graphic action"
+      - "Demons are comical, not nightmarish"
+      - "All content appropriate for elementary school age"
+
+    educational_value:
+      - "Clear visual storytelling that invites questions"
+      - "Characters and actions easy for children to understand"
+      - "Promotes positive values: courage, kindness, devotion, wisdom"
+      - "Culturally educational while accessible"
+
+    cultural_authenticity:
+      - "Respect traditional Hindu iconography"
+      - "Maintain recognizable deity characteristics"
+      - "Traditional elements like tilak, lotus, om visible but simplified"
+      - "Balance authenticity with child-friendly presentation"
+
+    engagement:
+      - "Bright, inviting colors that attract children"
+      - "Expressive characters that convey emotion clearly"
+      - "Compositions that tell mini-stories"
+      - "Visual elements that reward closer inspection"
+
+    visual_coherence:
+      - "Consistent character design across all 47 images"
+      - "Unified color palette throughout"
+      - "Similar cartoon style and line quality"
+      - "Recognizable Hanuman in every appearance"
+
+  # ===== Theme Variations =====
+  variations:
+    title_banner:
+      style: "Extra bright and welcoming, rainbow elements"
+      mood: "Excited invitation to learn"
+      characters: "Hanuman waving hello with big smile"
+
+    opening_dohas:
+      style: "Gentle and calm, introducing the story"
+      mood: "Peaceful, like story-time beginning"
+      complexity: "Simple, not overwhelming"
+
+    main_verses:
+      style: "Full color, dynamic storytelling"
+      mood: "Range from joyful to brave to gentle"
+      action: "Clear hero moments, mini-adventures"
+
+    closing_doha:
+      style: "Warm, complete, like story's happy ending"
+      mood: "Fulfilled, blessed, peaceful"
+      characters: "Hanuman blessing with gentle smile"
+
+  # ===== Usage Guidelines =====
+  usage:
+    appropriate_contexts:
+      - "Children's religious education"
+      - "Family devotional activities"
+      - "Bedtime story reading"
+      - "Sunday school materials"
+      - "Children's apps and digital books"
+      - "Classroom teaching about Hindu mythology"
+
+    age_appropriateness:
+      minimum_age: "5 years old"
+      maximum_age: "12 years old"
+      sweet_spot: "7-10 years old"
+
+    parental_guidance:
+      - "Parents can use images to start conversations"
+      - "Each image designed to prompt questions and discussions"
+      - "Suitable for independent viewing by children"
+      - "No content requiring parental content warnings"
+
+    attribution:
+      required: "Images generated using DALL-E 3 for Hanuman Chalisa Kids Edition"
+      style_credit: "Kids-Friendly theme for ages 5-12"
+
+  # ===== Keywords & Tags =====
+  keywords:
+    - "children's religious art"
+    - "kids Hindu mythology"
+    - "educational cartoon illustration"
+    - "family-friendly devotional art"
+    - "storybook style"
+    - "child-appropriate sacred art"
+    - "playful spiritual education"
+    - "cartoon Hanuman"
+    - "kids Ramayana stories"
+    - "elementary school Hindu education"
+
+  # ===== Design Philosophy =====
+  philosophy: |
+    This theme introduces children to the profound spiritual teachings of the
+    Hanuman Chalisa through a visual language they understand and love - bright,
+    playful, storybook illustration. By presenting these sacred stories in a
+    child-friendly format, we plant early seeds of spiritual awareness and
+    cultural connection.
+
+    Every image is designed to be both educationally valuable and emotionally safe.
+    Hanuman appears as a strong but friendly hero whom children can admire and
+    emulate. Complex theological concepts are presented through simple, clear
+    visual metaphors that children can grasp intuitively.
+
+    The bright, joyful color palette creates an inviting atmosphere where children
+    feel welcome to explore, ask questions, and learn. This is not about dumbing
+    down sacred content, but rather presenting timeless wisdom in a form that
+    respects children's developmental stage while honoring the spiritual depth
+    of the original text.
+
+    Parents and educators can use these images as conversation starters, helping
+    children understand values like courage, devotion, wisdom, and service through
+    Hanuman's example. Each image is a doorway to deeper discussion, making the
+    Hanuman Chalisa accessible to the youngest generation of devotees.

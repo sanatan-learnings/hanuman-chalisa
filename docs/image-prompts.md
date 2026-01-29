@@ -1,475 +1,297 @@
-# Hanuman Chalisa - Image Generation Prompts
+# Hanuman Chalisa - Scene Descriptions for Image Generation
 
-This document contains the base image prompts used to generate AI artwork for each verse of the Hanuman Chalisa. These prompts describe the key visual elements and themes for each verse, and can be adapted for different artistic styles, cultural interpretations, or generation methods.
+**Document Purpose**: Theme-agnostic scene descriptions that capture the narrative and spiritual meaning of each verse, independent of any visual style.
 
-## How to Use These Prompts
+## Architecture
 
-These base prompts can be adapted for different purposes:
+This file contains **what happens** in each image. Visual specifications (colors, style, character design) are defined separately in `docs/themes/*.yml` files.
 
-1. **AI Image Generation**: Add style modifiers like "traditional Indian miniature painting style," "realistic digital art," "watercolor illustration," etc.
-2. **Artist Commissioning**: Share these descriptions with human artists as a starting point for custom illustrations
-3. **Theme Variations**: Apply different cultural or artistic themes while maintaining the core spiritual meaning
-4. **Search Terms**: Use these descriptions to find existing traditional artwork or reference images
-
-### Example Theme Adaptations
-
-**Traditional Style**: "Create a [base prompt] in the style of traditional Mughal miniature painting with intricate details, gold leaf accents, and vibrant colors"
-
-**Modern Style**: "Create a [base prompt] in a contemporary digital art style with dramatic lighting and cinematic composition"
-
-**Devotional Art**: "Create a [base prompt] in traditional Hindu devotional art style with sacred geometry and spiritual symbolism"
+**How it works:**
+- **Scene descriptions** (this file) + **Theme specifications** (`docs/themes/*.yml`) = **Complete DALL-E 3 prompts**
+- Each description focuses on: action, characters, setting, and spiritual significance
+- Use `scripts/generate_theme_images.py` to automatically combine scene + theme
 
 ---
 
-## Theme Used for This Project
+## Scene Descriptions
 
-All images in this project were generated using DALL-E 3 with a consistent modern, minimalist theme that combines traditional Indian spiritual aesthetics with contemporary design sensibilities. This approach ensures visual coherence across all 47 images while maintaining cultural authenticity and respect.
-
-### Banner/Title Page
+### Title Page
 
 **File**: `title-page.png`
 
-**Visual Theme**: Modern Minimalist Spiritual Design
-
-**Full Prompt**:
-```
-A high-quality 4k title banner for a GitHub project. The theme is 'Hanuman Chalisa'.
-The image features a modern, minimalist artistic silhouette of Lord Hanuman in saffron
-orange against a clean white or dark charcoal background. Include sacred mandala patterns
-in the background with a subtle glow. The text 'Hanuman Chalisa' is written in elegant,
-modern Devanagari calligraphy. Professional, clean, and spiritual aesthetic, 16:9 aspect ratio.
-```
-
-**Note**: This banner establishes the visual theme used throughout the project - a modern, minimalist approach with saffron orange as the primary color, clean backgrounds, and elegant typography.
+**Scene Description**:
+Welcoming title composition featuring Lord Hanuman in a central, prominent position with an inviting gesture. Hanuman is surrounded by divine elements representing the sacred nature of the Chalisa. The composition should feel like the opening of a sacred text - reverent yet accessible.
 
 ---
 
 ## Opening Dohas
 
 ### Opening Doha 1: Invocation to the Guru
-**Visual Theme**: Guru's Grace and Devotion
-
-**Base Prompt**:
-Image of a guru's lotus feet with a devotee bowing, or Tulsidas sitting in meditation before his spiritual teacher.
+**Scene Description**:
+A devotional scene showing reverence to the guru. Either depict a guru's lotus feet with a devotee bowing in deep respect, or show the poet Tulsidas sitting in meditation before his spiritual teacher. The mood is one of humility, gratitude, and spiritual preparation - the beginning of a sacred journey.
 
 ---
 
 ### Opening Doha 2: Prayer to Hanuman
-**Visual Theme**: Humility and Supplication
-
-**Base Prompt**:
-Hanuman in a humble, seated posture with joined palms (anjali mudra), symbolizing his request for strength, wisdom, and knowledge.
+**Scene Description**:
+Hanuman in a humble, seated posture with hands joined in anjali mudra (prayer gesture). His expression is earnest and devotional, requesting divine strength, wisdom, and knowledge. This represents the invocation before beginning the main Chalisa, showing Hanuman as both powerful and humble.
 
 ---
 
 ## Main Chalisa (40 Verses)
 
 ### Verse 1: Ocean of Knowledge and Virtues
-**Visual Theme**: Divine Radiance and Cosmic Illumination
-
-**Base Prompt**:
-Hanuman standing majestically, radiating golden light that illuminates the three worlds (heaven, earth, netherworld shown in layers).
+**Scene Description**:
+Hanuman standing in a majestic pose, radiating divine light that illuminates all three realms - heaven (above), earth (middle), and the netherworld (below). The three worlds can be shown as cosmic layers or spheres. Hanuman is the source of illumination, representing his boundless knowledge and virtues spreading throughout the universe. His presence brings enlightenment to all beings.
 
 ---
 
 ### Verse 2: Rama's Messenger
-**Visual Theme**: Divine Mission and Swift Movement
-
-**Base Prompt**:
-Hanuman flying/leaping across the sky, carrying Rama's message, with wind swirling around him.
+**Scene Description**:
+Hanuman in dynamic motion - flying or leaping across the sky with incredible speed. He carries Rama's message (can be shown as a ring, scroll, or divine light). Wind swirls around him showing his swift movement. His expression shows determination and devotion to his mission. The sky and clouds rush past, emphasizing speed and purpose.
 
 ---
 
 ### Verse 3: Great Hero with Body Like Thunderbolt
-**Visual Theme**: Divine Strength and Power
-
-**Base Prompt**:
-Hanuman in a powerful warrior stance, displaying his muscular form, with a glowing aura representing his vajra-like body.
+**Scene Description**:
+Hanuman in a powerful warrior stance displaying his extraordinary strength and indestructible form. His body radiates divine energy like a thunderbolt (vajra). Muscles are pronounced but graceful. A divine aura surrounds him, symbolizing his invincible nature. His stance is confident and protective, ready to defend righteousness.
 
 ---
 
 ### Verse 4: Golden Complexion and Beautiful Form
-**Visual Theme**: Divine Beauty and Majesty
-
-**Base Prompt**:
-Close-up of Hanuman's face showing his golden complexion, curly hair, ornate earrings, and divine beauty.
+**Scene Description**:
+Portrait-style composition focusing on Hanuman's face and upper body, showcasing his divine beauty. His complexion glows with radiance. Distinctive features include expressive eyes, curly hair, ornate earrings. His expression combines strength with gentleness. This verse celebrates his physical beauty as a reflection of his divine nature.
 
 ---
 
 ### Verse 5: Bearer of Mace and Sacred Thread
-**Visual Theme**: Divine Authority and Spiritual Identity
-
-**Base Prompt**:
-Hanuman holding his mace (gada) in one hand and a flag in the other, with the sacred thread (janeu) visible across his shoulder.
+**Scene Description**:
+Hanuman holding his iconic mace (gada) in one hand and a victory flag in the other. The sacred thread (janeu) is clearly visible across his shoulder, marking his high spiritual status. He stands with authority and nobility. These symbols represent his role as both warrior and spiritual being - strength combined with righteousness.
 
 ---
 
 ### Verse 6: Son of Kesari, Like Shiva
-**Visual Theme**: Divine Connection and Spiritual Lineage
-
-**Base Prompt**:
-Hanuman in a meditative or powerful pose with Shiva's symbol (trishul or third eye) subtly incorporated, showing their connection.
+**Scene Description**:
+Hanuman in a powerful or meditative pose with subtle visual connections to Lord Shiva. This can be shown through symbols like the trishul (trident), third eye imagery, or Shiva's blessing gesture visible in the background. The scene emphasizes Hanuman's spiritual lineage and his blessing from Shiva, representing his divine parentage and spiritual power.
 
 ---
 
 ### Verse 7: Learned and Eager to Serve Rama
-**Visual Theme**: Devotion and Scholarship
-
-**Base Prompt**:
-Hanuman studying scriptures under the sun, or eagerly flying toward Rama to serve him.
+**Scene Description**:
+Two aspects of Hanuman: his scholarly nature and devotional service. Show Hanuman either studying sacred texts under divine light (representing his vast learning), or flying eagerly toward Rama with a joyful, devoted expression. Both scenes capture his wisdom and his eagerness to serve - a perfect devotee who combines knowledge with action.
 
 ---
 
 ### Verse 8: Devoted Listener of Rama's Stories
-**Visual Theme**: Heart Full of Devotion (Iconic Image)
-
-**Base Prompt**:
-Hanuman with his chest opened, revealing Rama, Sita, and Lakshmana seated in his heart - one of the most iconic images.
+**Scene Description**:
+The iconic image of Hanuman with his chest opened, revealing Lord Rama, Sita, and Lakshmana seated within his heart. This powerful metaphor shows that Rama resides perpetually in Hanuman's heart. Hanuman's expression is one of pure devotion and love. Rama, Sita, and Lakshmana are clearly visible within, glowing with divine light. This is one of the most famous and beloved images in Hindu devotional art.
 
 ---
 
 ### Verse 9: Master of Many Forms
-**Visual Theme**: Divine Transformation and Adaptability
-
-**Base Prompt**:
-Split image - tiny Hanuman before Sita in the Ashoka grove, and giant Hanuman with burning tail setting Lanka ablaze.
+**Scene Description**:
+Hanuman's divine ability to change size at will. Show a split or dual composition: on one side, tiny Hanuman before Sita in the Ashoka grove (making himself small to avoid detection), and on the other side, giant Hanuman with his tail ablaze, setting Lanka on fire. This dramatic contrast demonstrates his mastery over his form - becoming minuscule to comfort Sita, then growing massive to wreak havoc on her captors.
 
 ---
 
 ### Verse 10: Destroyer of Demons
-**Visual Theme**: Divine Warrior and Protector
-
-**Base Prompt**:
-Hanuman in fierce battle form (Bhima roop), fighting demons with supernatural power.
+**Scene Description**:
+Hanuman in his fierce warrior form (Bhima roop), engaged in battle against demons. His expression is powerful and determined. He wields his supernatural strength to vanquish evil forces. Demons flee or fall before him. This scene captures Hanuman as the fierce protector who destroys those who threaten dharma (righteousness). Energy and power radiate from his form.
 
 ---
 
 ### Verse 11: Bringing the Sanjeevani Herb
-**Visual Theme**: Divine Healer and Savior (Famous Episode)
-
-**Base Prompt**:
-Hanuman flying while carrying the entire Dronagiri mountain with the Sanjeevani herb glowing on it.
+**Scene Description**:
+The famous episode of Hanuman flying through the sky while carrying the entire Dronagiri mountain. The Sanjeevani herb glows with healing light on the mountain peak. Hanuman's expression shows determination and urgency as he rushes to save Lakshmana's life. The mountain is massive, yet Hanuman holds it effortlessly in one hand. This is one of the most beloved and recognizable scenes from the Ramayana.
 
 ---
 
 ### Verse 12: Dear as Bharata
-**Visual Theme**: Divine Love and Brotherhood
-
-**Base Prompt**:
-Rama embracing Hanuman warmly, both figures showing deep affection and mutual respect.
+**Scene Description**:
+An intimate moment showing the deep love between Rama and Hanuman. Rama embraces Hanuman warmly, or places his hand affectionately on Hanuman's shoulder. Both figures express deep affection, mutual respect, and spiritual love. The verse compares this bond to Rama's love for his brother Bharata. The scene should feel warm, loving, and deeply emotional - the perfect devotee-deity relationship.
 
 ---
 
 ### Verse 13: Sung by Shesha
-**Visual Theme**: Cosmic Praise and Divine Recognition
-
-**Base Prompt**:
-Shesha Naga (thousand-headed serpent) in the cosmic ocean, with all heads singing praises, while Rama embraces Hanuman.
+**Scene Description**:
+Cosmic scene featuring Shesha Naga, the thousand-headed serpent who supports the universe, floating in the cosmic ocean. All of Shesha's heads are singing praises of Hanuman. In the scene, Rama can be shown embracing or blessing Hanuman. This represents how even the greatest cosmic beings cannot fully express Hanuman's glory. The setting is transcendent and universal.
 
 ---
 
 ### Verse 14: Praised by Gods and Sages
-**Visual Theme**: Universal Divine Reverence
-
-**Base Prompt**:
-Multiple celestial beings - the Kumaras, Brahma, Narada, Saraswati, Shesha - all surrounding and honoring Hanuman.
+**Scene Description**:
+Hanuman at the center, surrounded by an assembly of celestial beings all honoring him: the four Kumaras (child sages), Lord Brahma, sage Narada with his veena, goddess Saraswati, and Shesha again. Multiple divine figures from different directions, all paying homage to Hanuman. This shows that beings from all realms recognize and revere Hanuman's greatness. A grand assembly scene.
 
 ---
 
 ### Verse 15: Beyond Description
-**Visual Theme**: Limitless Divine Glory
-
-**Base Prompt**:
-Yama, Kubera, and the eight Digpalas (directional guardians) looking overwhelmed, unable to fully describe Hanuman's glory.
+**Scene Description**:
+Powerful cosmic beings - Yama (god of death), Kubera (god of wealth), and the eight Digpalas (guardians of the eight directions) - all appearing overwhelmed or in humble postures. They recognize that words cannot capture Hanuman's full glory. Their expressions show awe and the limits of their ability to describe him. Hanuman stands radiant, his greatness truly beyond description.
 
 ---
 
 ### Verse 16: Helper of Sugriva
-**Visual Theme**: Divine Friendship and Alliance
-
-**Base Prompt**:
-Hanuman introducing Sugriva to Rama, with the three figures standing together on Rishyamukh mountain.
+**Scene Description**:
+The pivotal meeting on Rishyamukh mountain. Hanuman introduces Sugriva (the exiled monkey king) to Lord Rama. All three figures stand together - Rama with his bow, Sugriva looking hopeful, and Hanuman facilitating their alliance. This moment marks the beginning of the great friendship and alliance that will lead to Sita's rescue. The mountain setting provides a dramatic backdrop.
 
 ---
 
 ### Verse 17: Advisor to Vibhishana
-**Visual Theme**: Divine Guidance and Righteous Path
-
-**Base Prompt**:
-Vibhishana crossing from Lanka to Rama's camp, with Hanuman guiding or blessing him.
+**Scene Description**:
+Vibhishana (Ravana's righteous brother) crossing from Lanka to join Rama's side. Hanuman is shown either guiding Vibhishana across, or blessing/welcoming him to Rama's camp. This scene represents choosing righteousness over family loyalty when faced with evil. Hanuman plays a key role in accepting and supporting those who choose the righteous path. The moment is significant and dramatic - a defection that changes the war's outcome.
 
 ---
 
 ### Verse 18: The Sun Swallowing Incident
-**Visual Theme**: Childhood Divine Play and Innocence
-
-**Base Prompt**:
-Baby Hanuman leaping toward the sun in the sky, thinking it's a fruit, with his child-like innocence visible.
+**Scene Description**:
+Young Hanuman as a child, leaping through the sky toward the sun, mistaking it for a ripe fruit. His expression is innocent, playful, and determined. The sun shines brightly above. This famous childhood episode shows Hanuman's divine power present even in infancy, as well as his innocent nature. His small form contrasts with the mighty leap and fearless ambition. A joyful, lighthearted scene showing the origin of his powers.
 
 ---
 
 ### Verse 19: Crossing the Ocean
-**Visual Theme**: Divine Mission and Fearlessness
-
-**Base Prompt**:
-Hanuman leaping across the ocean with Rama's ring held in his mouth, waves far below.
+**Scene Description**:
+Hanuman in mid-leap across the vast ocean, traveling from the mainland to Lanka to find Sita. Rama's ring is held in his mouth or hand - a token to prove his identity to Sita. Enormous waves and expansive water stretch far below. His powerful leap shows fearlessness and determination. The ocean appears vast and daunting, but Hanuman crosses it effortlessly. A dramatic scene of courage and mission.
 
 ---
 
 ### Verse 20: Remover of Difficulties
-**Visual Theme**: Divine Protection and Relief
-
-**Base Prompt**:
-Devotees facing various difficulties, with Hanuman's large protective form appearing to help them.
+**Scene Description**:
+Devotees facing various life challenges and difficulties - illness, danger, despair. Hanuman appears in a large, protective form bringing divine help and relief. His presence dispels their troubles. The devotees look up with hope and faith. This scene illustrates Hanuman's role as the remover of obstacles for all who call upon him. The mood shifts from distress to relief and salvation.
 
 ---
 
 ### Verse 21: Guardian at Rama's Door
-**Visual Theme**: Divine Devotion and Service
-
-**Base Prompt**:
-Hanuman standing guard at an ornate gateway/door, with Rama's palace visible in the background.
+**Scene Description**:
+Hanuman standing as a devoted guardian at the entrance to Rama's dwelling. An ornate gateway or door frames the scene, with Rama's palace visible in the background. Hanuman's posture is alert and protective, yet devotional. This represents his eternal role as the faithful servant who guards and serves Rama. His vigilance never wavers. A scene of perfect devotion and service.
 
 ---
 
 ### Verse 22: Refuge and Protection
-**Visual Theme**: Divine Shelter and Safety
-
-**Base Prompt**:
-Devotees taking shelter at Hanuman's feet, with a protective aura surrounding them, all fears dissipated.
+**Scene Description**:
+Multiple devotees taking shelter at Hanuman's feet, finding safety and peace. A protective divine aura or light surrounds them, dispelling all fears and dangers. Their expressions transform from fear to peace. Hanuman stands as the great protector, offering refuge to all who seek him. The scene shows complete safety and divine shelter - no harm can reach those under Hanuman's protection.
 
 ---
 
 ### Verse 23: Controller of Own Power
-**Visual Theme**: Divine Might and Universal Impact
-
-**Base Prompt**:
-Hanuman roaring with such power that the three worlds (shown as spheres or layers) visibly tremble.
+**Scene Description**:
+Hanuman roaring or speaking with such tremendous power that the three worlds themselves tremble. The cosmic realms (heaven, earth, underworld) can be shown as spheres or layers, all visibly shaking from his voice. This demonstrates his control over immense power - he possesses it but uses it only when needed. The scene is dramatic and awe-inspiring, showing universal impact.
 
 ---
 
 ### Verse 24: Protector from Evil Spirits
-**Visual Theme**: Divine Protection from Darkness
-
-**Base Prompt**:
-Hanuman's fierce face or form with ghosts and demons fleeing in terror from his mere presence.
+**Scene Description**:
+Hanuman in a fierce protective form, his mere presence causing evil spirits, ghosts, and negative forces to flee in terror. Dark entities scatter and disappear before him. His face shows fierce determination. A devotee may be shown protected behind him. This illustrates how Hanuman's name alone drives away all negative forces and dark energies. Protection through divine power.
 
 ---
 
 ### Verse 25: Destroyer of Disease
-**Visual Theme**: Divine Healing Power
-
-**Base Prompt**:
-A sick person chanting Hanuman's name, with healing energy or light flowing from Hanuman toward them.
+**Scene Description**:
+A sick person chanting Hanuman's name or thinking of him. Divine healing energy or light flows from Hanuman toward the ill person, bringing cure and relief. The person's expression changes from suffering to peace and healing. Hanuman appears either physically or as a divine presence. This shows his power to heal all ailments - physical, mental, and spiritual - for those who call upon him.
 
 ---
 
 ### Verse 26: Liberator from Crises
-**Visual Theme**: Divine Rescue and Liberation
-
-**Base Prompt**:
-Person in crisis (prison, danger, illness) calling to Hanuman, who appears to rescue them.
+**Scene Description**:
+Someone in severe crisis - imprisoned, in danger, facing disaster, or gravely ill - calling out to Hanuman. Hanuman appears in response, bringing immediate rescue and liberation. Chains break, doors open, dangers dissipate. The person's face shows relief and gratitude. This represents Hanuman's quick response to devotees in distress. No crisis is too great for him to resolve.
 
 ---
 
 ### Verse 27: Servant of the Supreme King
-**Visual Theme**: Perfect Devotional Service
-
-**Base Prompt**:
-Rama in ascetic clothing sitting in meditation, with Hanuman serving him in various ways.
+**Scene Description**:
+Lord Rama shown in ascetic or meditative pose, and Hanuman engaged in devoted service to him. This can show various forms of service - bringing offerings, standing ready to serve, or simply being present in attendance. The relationship of perfect devotee to perfect Lord. Hanuman's entire existence is dedicated to serving Rama. A scene of ultimate devotional service and surrender.
 
 ---
 
 ### Verse 28: Granter of Desires
-**Visual Theme**: Divine Blessing and Fulfillment
-
-**Base Prompt**:
-Hanuman blessing devotees, with their wishes materializing or being fulfilled around them.
+**Scene Description**:
+Hanuman in a blessing posture toward devotees. Their sincere wishes and prayers are being fulfilled - this can be shown symbolically with manifestations of their desires appearing or glowing around them. Devotees' faces show joy and gratitude. This illustrates how Hanuman grants the wishes of true devotees who approach him with faith. Fulfillment through divine grace.
 
 ---
 
 ### Verse 29: Renowned Through All Ages
-**Visual Theme**: Eternal Divine Presence
-
-**Base Prompt**:
-Hanuman's form spanning across the four yugas, showing his eternal presence through time.
+**Scene Description**:
+Hanuman's eternal presence across all time periods. Show his form present through the four yugas (cosmic ages) - perhaps with visual representations of different time periods, or his presence spanning from ancient to modern times. This illustrates that Hanuman's glory and availability to devotees transcends time. He is worshipped in every age and will continue to be. A cosmic, timeless scene.
 
 ---
 
 ### Verse 30: Protector of Saints
-**Visual Theme**: Divine Protection of Righteousness
-
-**Base Prompt**:
-Hanuman protecting saints/sages from demons, showing both his protective and destructive aspects.
+**Scene Description**:
+Hanuman actively protecting saints, sages, and righteous people from demonic attacks. He shows both protective compassion toward the good and fierce destruction toward evil. Saints stand safely behind or near him while demons are driven away. This dual nature - gentle with devotees, fierce with evil - is central to his character. A scene of divine protection in action.
 
 ---
 
 ### Verse 31: Giver of Eight Siddhis
-**Visual Theme**: Divine Empowerment and Blessings
-
-**Base Prompt**:
-Sita blessing Hanuman in the Ashoka grove, with symbols of the eight siddhis and nine nidhis appearing around them.
+**Scene Description**:
+Sita blessing Hanuman in the Ashoka grove during his secret visit to Lanka. Symbols of the eight siddhis (supernatural powers) and nine nidhis (divine treasures) appear around them as glowing emblems or manifestations. This represents Sita's blessing that makes Hanuman the bestower of all spiritual powers to deserving devotees. A significant moment of divine blessing and empowerment.
 
 ---
 
 ### Verse 32: Possessor of Ram Rasayan
-**Visual Theme**: Eternal Devotion and Service
-
-**Base Prompt**:
-Hanuman in eternal service to Rama, with the nectar of devotion (represented as a glowing vessel) visible.
+**Scene Description**:
+Hanuman in eternal, joyful service to Rama. The "nectar of Rama" (Ram Rasayan) - representing the sweetness of devotion - can be shown as a glowing presence or vessel. Hanuman is completely immersed in devotion, finding supreme bliss in service. This illustrates the highest spiritual state - where service itself becomes nectar, and devotion is its own reward.
 
 ---
 
 ### Verse 33: Path to Rama
-**Visual Theme**: Spiritual Journey and Liberation
-
-**Base Prompt**:
-Path from Hanuman leading to Rama, with a devotee walking this path, freed from cycles of birth.
+**Scene Description**:
+A visual metaphor showing Hanuman as the bridge or path leading to Rama. A devotee walks this path toward Rama's presence. The devotee appears freed from the cycles of birth and death (samsara) - chains broken, burdens lifted. Hanuman facilitates this liberation. The scene shows the spiritual journey and the role of devotion to Hanuman as the means to reach the ultimate goal.
 
 ---
 
 ### Verse 34: Journey to Rama's Abode
-**Visual Theme**: Divine Destination and Liberation
-
-**Base Prompt**:
-A dying person's soul ascending to Vaikuntha (Rama's divine abode), guided by Hanuman.
+**Scene Description**:
+A departing soul at death, being gently guided by Hanuman upward toward Vaikuntha (Rama's divine heavenly abode). Rama's radiant abode is visible above. Hanuman escorts the devotee's soul, ensuring safe passage to the eternal realm. This shows that devotees of Hanuman attain the supreme destination after death. A transcendent, peaceful scene of spiritual ascension.
 
 ---
 
 ### Verse 35: Sufficient Devotion
-**Visual Theme**: Complete Divine Refuge
-
-**Base Prompt**:
-Hanuman at the center with other deities in the background, showing his sufficiency for devotees.
+**Scene Description**:
+Hanuman at the center in a prominent, radiant form. Other deities visible in the background or periphery. The composition shows that for true devotees, Hanuman alone is sufficient - one need not seek multiple gods when one has Hanuman's grace. His all-encompassing nature and complete ability to fulfill all devotee needs is central. A scene emphasizing his sufficiency and completeness.
 
 ---
 
 ### Verse 36: Remover of Crises and Pain
-**Visual Theme**: Comprehensive Divine Protection
-
-**Base Prompt**:
-Multiple people in various crises, all being rescued simultaneously by Hanuman's grace.
+**Scene Description**:
+Multiple people experiencing different types of suffering and crises - illness, fear, poverty, danger - all simultaneously receiving Hanuman's grace. His divine energy reaches all of them at once, removing their difficulties. This emphasizes the universality and immediacy of his help. No matter how many call upon him, Hanuman responds to all. A scene of comprehensive divine intervention.
 
 ---
 
 ### Verse 37: Invocation for Grace
-**Visual Theme**: Spiritual Teacher and Guide
-
-**Base Prompt**:
-Devotee bowing before Hanuman, who appears in the form of a guru imparting wisdom.
+**Scene Description**:
+A devotee in a humble posture before Hanuman, who appears in the form of a spiritual guru or teacher. Hanuman imparts wisdom, guidance, and grace. The devotee seeks Hanuman as the eternal protector and guide of their life. This represents the guru-disciple relationship and the prayer for ongoing divine guidance. A scene of seeking and receiving spiritual wisdom.
 
 ---
 
 ### Verse 38: Freedom Through Recitation
-**Visual Theme**: Liberation Through Devotion
-
-**Base Prompt**:
-Person reciting the Chalisa 100 times, with chains of bondage breaking and light surrounding them.
+**Scene Description**:
+A person engaged in reciting the Hanuman Chalisa repeatedly (the verse mentions 100 times). As they recite, visible chains of worldly bondage break and fall away. Divine light surrounds them. Liberation (mukti) comes through this devoted practice. The person's expression shows spiritual transformation and freedom. This illustrates the liberating power of sincere Chalisa recitation.
 
 ---
 
 ### Verse 39: Attainment of Siddhi
-**Visual Theme**: Divine Witness and Validation
-
-**Base Prompt**:
-Person reading the Chalisa with Lord Shiva appearing as witness in the background or sky.
+**Scene Description**:
+A person absorbed in reading or reciting the Chalisa with complete faith. Lord Shiva appears as a divine witness in the sky or background, validating and blessing this devotion. This represents that even the great Lord Shiva witnesses and approves of Hanuman Chalisa recitation. Spiritual attainment (siddhi) comes with such witnessed, blessed practice. A scene of divine validation.
 
 ---
 
 ### Verse 40: Tulsidas's Prayer
-**Visual Theme**: Author's Devotion and Inner Dwelling
-
-**Base Prompt**:
-Tulsidas writing the Chalisa, with Hanuman dwelling in his heart (shown through a divine glow from his chest).
+**Scene Description**:
+The poet Tulsidas sitting with writing materials, composing the Hanuman Chalisa. A divine glow emanates from his chest area, revealing Hanuman dwelling within his heart. This autobiographical verse shows Tulsidas's personal prayer that Hanuman remain forever in his heart. The scene captures the moment of composition itself and the deep devotional relationship between author and deity.
 
 ---
 
 ## Closing Doha
 
 ### Closing Doha: Final Prayer
-**Visual Theme**: Complete Divine Family in Heart
-
-**Base Prompt**:
-Hanuman with Rama, Sita, and Lakshmana all residing in a devotee's heart (shown as glowing within the chest), or the four divine figures together blessing the devotee.
+**Scene Description**:
+The culminating image showing the complete divine family together. Either show Hanuman with Rama, Sita, and Lakshmana all dwelling within a devotee's heart (glowing through the chest), or show all four divine figures together blessing the devotee. This represents the complete fulfillment of devotion - having the entire divine family present in one's heart through Hanuman's grace. A scene of completion, blessing, and divine presence.
 
 ---
 
-## Generation Guidelines
+## File Naming Convention
 
-### Visual Style Consistency
-When creating images for the entire Chalisa, maintain consistency in:
-- Color palette (warm golds, reds, oranges for divine figures)
-- Hanuman's appearance (golden/orange complexion, distinctive features)
-- Iconographic elements (mace, tail, jewelry, sacred thread)
-- Background elements (clouds, celestial spheres, natural settings)
-
-### Cultural Sensitivity
-- Respect traditional Hindu iconography and symbolism
-- Ensure deity depictions follow accepted artistic conventions
-- Avoid commercial or disrespectful representations
-- Consider consulting with cultural advisors for authenticity
-
-### Technical Specifications
-- **Resolution**: **1024 x 1536 pixels (REQUIRED)** - All images must be generated at this exact dimension
-- **Aspect Ratio**: Portrait 2:3 (1024x1536)
-- **Format**: PNG with transparency where appropriate
-- **File Naming**: Use consistent naming convention (verse-01.png, verse-02.png, etc.)
-- **Important**: Maintain exact 1024x1536 dimensions across all 47 images for visual consistency
-
-### AI Generation Tips
-When using AI tools like DALL-E 3, Midjourney, or Stable Diffusion:
-1. Start with the base prompt from this document
-2. Add style modifiers appropriate to your chosen aesthetic
-3. **Set dimensions to exactly 1024x1536 pixels** (portrait orientation, 2:3 aspect ratio)
-4. Include technical parameters (quality, style intensity)
-5. Iterate on compositions that don't capture the spiritual essence
-6. Consider generating multiple variations and selecting the most appropriate
-
-**Critical**: All images must be generated at 1024x1536 pixels to ensure consistency across the book and website layouts.
-
-### Example Full Prompt for AI Generation
-```
-[Base Prompt from this document] in the style of traditional Indian devotional art,
-with rich colors, divine auras, detailed ornamentation, sacred atmosphere,
-spiritual symbolism, high quality, detailed, reverent composition.
-Portrait orientation, 1024x1536 pixels, 2:3 aspect ratio.
-```
-
-**For DALL-E 3**: Use size parameter `--size 1024x1792` (closest available) and crop to 1024x1536
-**For Midjourney**: Use `--ar 2:3` aspect ratio parameter
-**For Stable Diffusion**: Set width=1024, height=1536 in generation parameters
-
----
-
-## Attribution
-
-All original images for this website were generated using **DALL-E 3** via OpenAI API with a consistent modern, minimalist theme featuring saffron orange as the primary color, clean backgrounds, and contemporary spiritual aesthetics. This unified visual approach ensures coherence across all 47 images while maintaining cultural authenticity.
-
-Base prompts can be used freely for:
-- Personal devotional use
-- Educational purposes
-- Creating new interpretations of the Hanuman Chalisa
-- Commissioning custom artwork
-- Research and study
-
-When creating derivative works, please maintain respect for the sacred nature of these texts and images.
-
----
-
-## Notes on Adaptation
-
-These prompts are designed to be theme-agnostic while capturing the essential spiritual meaning of each verse. When adapting for different themes:
-
-1. **Traditional Styles**: Add references to specific art traditions (Madhubani, Rajasthani, Kerala murals, etc.)
-2. **Modern Interpretations**: Include contemporary artistic elements while respecting the sacred content
-3. **Cultural Variations**: Adapt to different regional artistic traditions within Hindu culture
-4. **Accessibility**: Consider creating simplified versions for children or educational purposes
-5. **Meditation Art**: Focus on contemplative, peaceful compositions for spiritual practice
-
-The goal is to create images that enhance understanding and devotion while remaining true to the spiritual teachings of the Hanuman Chalisa.
-
----
-
-**Document Created**: January 2026
-**Last Updated**: January 2026
-**Version**: 1.0
+- Title page: `title-page.png`
+- Opening dohas: `opening-doha-01.png`, `opening-doha-02.png`
+- Main verses: `verse-01.png` through `verse-40.png`
+- Closing doha: `closing-doha.png`
+- **Total**: 47 images per theme

@@ -24,6 +24,15 @@ theme:
     spiritual: "Invoke divine presence through radiant, luminous depictions that inspire devotion and spiritual contemplation"
     accessibility: "Appeal to younger, globally-distributed audiences while respecting traditional iconography"
 
+  target_audience:
+    age_range: "Young adults to seniors (18+)"
+    contexts:
+      - "Digital devotional platforms and websites"
+      - "Personal spiritual practice and meditation"
+      - "Modern Hindu community spaces"
+      - "Educational resources for adults"
+      - "Contemporary religious art appreciation"
+
   # ===== Visual Style Core =====
   style:
     aesthetic: "Contemporary Spiritual Minimalism"
