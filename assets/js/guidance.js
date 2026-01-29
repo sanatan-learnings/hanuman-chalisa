@@ -27,7 +27,7 @@ const TEMPERATURE = 0.7;
 // Cloudflare Worker URL (set this after deploying your worker)
 // If set, the worker will be used and API key won't be required from users
 // Example: 'https://hanuman-chalisa-api.your-subdomain.workers.dev'
-const WORKER_URL = ''; // Leave empty to use user-provided API key mode
+const WORKER_URL = 'https://hanuman-chalisa-api.arungupta.workers.dev'; // Leave empty to use user-provided API key mode
 
 /**
  * Initialize the guidance system on page load
