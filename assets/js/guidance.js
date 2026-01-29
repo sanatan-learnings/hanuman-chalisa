@@ -354,6 +354,14 @@ async function getGuidance(query, verses, lang) {
 
         if (!response.ok) {
             const error = await response.json();
+            console.error('OpenAI API Error Response:', error);
+            console.error('HTTP Status:', response.status);
+            console.error('Error details:', {
+                message: error.error?.message,
+                type: error.error?.type,
+                code: error.error?.code,
+                param: error.error?.param
+            });
             throw new Error(error.error?.message || `HTTP ${response.status}`);
         }
 
@@ -361,6 +369,7 @@ async function getGuidance(query, verses, lang) {
         return data.choices[0].message.content;
     } catch (error) {
         console.error('Error getting guidance:', error);
+        console.error('Error stack:', error.stack);
         throw error;
     }
 }
@@ -451,7 +460,14 @@ async function handleSendQuery() {
     } catch (error) {
         hideLoading();
 
-        console.error('Error in RAG pipeline:', error);
+        // Log detailed error information to console
+        console.error('=== ERROR IN RAG PIPELINE ===');
+        console.error('Error message:', error.message);
+        console.error('Error object:', error);
+        console.error('Error stack:', error.stack);
+        console.error('API key (first 8 chars):', apiKey ? apiKey.substring(0, 8) + '...' : 'NOT SET');
+        console.error('Query:', query);
+        console.error('==============================');
 
         const lang = getCurrentLanguage();
         let errorMsg = lang === 'hi'
@@ -467,6 +483,7 @@ async function handleSendQuery() {
             errorMsg = lang === 'hi'
                 ? 'OpenAI API सीमा पार हो गई। कृपया अपने खाते में क्रेडिट जोड़ें।'
                 : 'OpenAI API quota exceeded. Please add credits to your account.';
+            console.error('💡 To fix: Add credits at https://platform.openai.com/account/billing');
         } else if (error.message.includes('rate limit')) {
             errorMsg = lang === 'hi'
                 ? 'API सीमा पार हो गई। कृपया बाद में पुनः प्रयास करें।'
