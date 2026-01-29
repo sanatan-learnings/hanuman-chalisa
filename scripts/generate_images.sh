@@ -17,6 +17,7 @@ NC='\033[0m' # No Color
 QUALITY="${QUALITY:-standard}"
 SIZE="${SIZE:-1024x1024}"
 RESUME="${RESUME:-}"
+REGENERATE=""
 THEME_NAME=""
 STYLE=""
 
@@ -30,11 +31,12 @@ show_usage() {
     echo "  <theme-name>              Name of the theme (e.g., modern-minimalist, watercolor)"
     echo ""
     echo "Options:"
-    echo "  -s, --style <description> Custom style description (overrides theme YAML)"
-    echo "  -q, --quality <level>     Image quality: 'standard' or 'hd' (default: from theme or standard)"
-    echo "  --size <dimensions>       Image size: '1024x1024' or '1024x1792' (default: from theme or 1024x1024)"
-    echo "  -r, --resume <filename>   Resume from specific image (e.g., verse-15.png)"
-    echo "  -h, --help                Show this help message"
+    echo "  -s, --style <description>     Custom style description (overrides theme YAML)"
+    echo "  -q, --quality <level>         Image quality: 'standard' or 'hd' (default: from theme or standard)"
+    echo "  --size <dimensions>           Image size: '1024x1024' or '1024x1792' (default: from theme or 1024x1024)"
+    echo "  -r, --resume <filename>       Resume from specific image (e.g., verse-15.png)"
+    echo "  --regenerate <file1,file2>    Regenerate specific images (comma-separated, e.g., verse-10.png,verse-25.png)"
+    echo "  -h, --help                    Show this help message"
     echo ""
     echo "Theme YAML Files:"
     echo "  If a file exists at docs/themes/<theme-name>.yml, the script will"
@@ -43,16 +45,19 @@ show_usage() {
     echo ""
     echo "Examples:"
     echo "  # Generate using theme YAML settings (simplest)"
-    echo "  ./scripts/generate.sh modern-minimalist"
+    echo "  ./scripts/generate_images.sh modern-minimalist"
     echo ""
     echo "  # Generate with custom style (no theme YAML)"
-    echo "  ./scripts/generate.sh watercolor --style 'soft watercolor painting style'"
+    echo "  ./scripts/generate_images.sh watercolor --style 'soft watercolor painting style'"
     echo ""
     echo "  # Override theme settings"
-    echo "  ./scripts/generate.sh modern-minimalist -s 'different style' -q hd"
+    echo "  ./scripts/generate_images.sh modern-minimalist -s 'different style' -q hd"
     echo ""
     echo "  # Resume interrupted generation"
-    echo "  ./scripts/generate.sh traditional-art --resume verse-15.png"
+    echo "  ./scripts/generate_images.sh traditional-art --resume verse-15.png"
+    echo ""
+    echo "  # Regenerate specific failed images"
+    echo "  ./scripts/generate_images.sh kids-friendly --regenerate verse-10.png,verse-25.png"
     echo ""
     echo "Cost Estimates (all 47 images):"
     echo "  Standard quality (1024x1024): ~\$2.00"
@@ -92,6 +97,10 @@ while [[ $# -gt 0 ]]; do
             ;;
         -r|--resume)
             RESUME="$2"
+            shift 2
+            ;;
+        --regenerate)
+            REGENERATE="$2"
             shift 2
             ;;
         -*)
@@ -158,7 +167,41 @@ echo "Style: ${STYLE:-default}"
 echo "Quality: $QUALITY"
 echo "Size: $SIZE"
 [ -n "$RESUME" ] && echo "Resume from: $RESUME"
+[ -n "$REGENERATE" ] && echo "Regenerate: $REGENERATE"
 echo ""
+
+# Handle --regenerate option
+if [ -n "$REGENERATE" ]; then
+    IMAGES_DIR="images/$THEME_NAME"
+    if [ ! -d "$IMAGES_DIR" ]; then
+        echo -e "${RED}Error: Theme directory not found: $IMAGES_DIR${NC}"
+        exit 1
+    fi
+
+    echo -e "${YELLOW}Preparing to regenerate specific images...${NC}"
+    IFS=',' read -ra FILES <<< "$REGENERATE"
+    DELETED_COUNT=0
+
+    for FILE in "${FILES[@]}"; do
+        FILE=$(echo "$FILE" | xargs)  # Trim whitespace
+        FILE_PATH="$IMAGES_DIR/$FILE"
+
+        if [ -f "$FILE_PATH" ]; then
+            rm "$FILE_PATH"
+            echo -e "  ${GREEN}✓${NC} Deleted: $FILE"
+            DELETED_COUNT=$((DELETED_COUNT + 1))
+        else
+            echo -e "  ${YELLOW}⚠${NC} Not found (will generate): $FILE"
+        fi
+    done
+
+    echo ""
+    if [ $DELETED_COUNT -gt 0 ]; then
+        echo -e "${GREEN}Deleted $DELETED_COUNT existing image(s).${NC}"
+    fi
+    echo -e "${YELLOW}Will now regenerate missing images...${NC}"
+    echo ""
+fi
 
 # Build command
 CMD=("python3" "$SCRIPT_DIR/generate_theme_images.py" "--theme-name" "$THEME_NAME" "--quality" "$QUALITY" "--size" "$SIZE")
