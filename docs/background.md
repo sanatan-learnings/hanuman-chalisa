@@ -7,10 +7,10 @@ _May Lord Hanuman's blessings guide and protect all who seek refuge in his name.
 
 ## Historical Context
 
-**Composer:** Goswami Tulsidas (1511-1623 CE)  
-**Language:** Awadhi Hindi  
-**Structure:** 40 Chaupais (four-line verses) plus opening and closing verses  
-**Meter:** Chaupai Chanda  
+**Composer:** Goswami Tulsidas (1511-1623 CE)
+**Language:** Awadhi Hindi
+**Structure:** 40 Chaupais (four-line verses) plus opening and closing verses
+**Meter:** Chaupai (four-line verses with 16 syllabic units per line)
 **Place of Composition:** Varanasi (Kashi), India
 
 ## About the Composer
@@ -94,5 +94,3 @@ While these guidelines come from traditional practice, the most important elemen
 - By anyone, regardless of background or tradition
 
 The power lies not in perfect pronunciation or strict adherence to rules, but in the purity of heart and sincerity of devotion.
-
----
