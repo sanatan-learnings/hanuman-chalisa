@@ -15,6 +15,8 @@ NC='\033[0m' # No Color
 
 # Default values
 RESUME="${RESUME:-}"
+ONLY=""
+REGENERATE=""
 VOICE_ID=""
 
 # Show usage
@@ -24,13 +26,21 @@ show_usage() {
     echo "Usage: ./scripts/generate_audio.sh [options]"
     echo ""
     echo "Options:"
-    echo "  -r, --resume <filename>    Resume from specific file (e.g., verse_15_full.mp3)"
-    echo "  -v, --voice-id <id>        Eleven Labs voice ID (default: Rachel - 21m00Tcm4TlvDq8ikWAM)"
-    echo "  -h, --help                 Show this help message"
+    echo "  --only <filename>               Generate only one specific file (e.g., doha_01_full.mp3)"
+    echo "  --regenerate <file1,file2>      Regenerate specific files (comma-separated)"
+    echo "  -r, --resume <filename>         Resume from specific file (e.g., verse_15_full.mp3)"
+    echo "  -v, --voice-id <id>             Eleven Labs voice ID (default: Rachel - 21m00Tcm4TlvDq8ikWAM)"
+    echo "  -h, --help                      Show this help message"
     echo ""
     echo "Examples:"
     echo "  # Generate all audio files"
     echo "  ./scripts/generate_audio.sh"
+    echo ""
+    echo "  # Test with single file"
+    echo "  ./scripts/generate_audio.sh --only doha_01_full.mp3"
+    echo ""
+    echo "  # Regenerate specific failed files"
+    echo "  ./scripts/generate_audio.sh --regenerate doha_01_full.mp3,verse_10_slow.mp3"
     echo ""
     echo "  # Resume from specific file"
     echo "  ./scripts/generate_audio.sh --resume verse_15_full.mp3"
@@ -58,6 +68,14 @@ while [[ $# -gt 0 ]]; do
     case $1 in
         -h|--help)
             show_usage
+            ;;
+        --only)
+            ONLY="$2"
+            shift 2
+            ;;
+        --regenerate)
+            REGENERATE="$2"
+            shift 2
             ;;
         -r|--resume)
             RESUME="$2"
@@ -115,12 +133,22 @@ if [ -z "$ELEVENLABS_API_KEY" ]; then
 fi
 
 echo -e "${GREEN}🎙️  Generating audio files for Hanuman Chalisa${NC}"
+[ -n "$ONLY" ] && echo "Mode: Generate single file ($ONLY)"
+[ -n "$REGENERATE" ] && echo "Mode: Regenerate specific files ($REGENERATE)"
 [ -n "$RESUME" ] && echo "Resume from: $RESUME"
 [ -n "$VOICE_ID" ] && echo "Voice ID: $VOICE_ID"
 echo ""
 
 # Build command
 CMD=(python3 "$SCRIPT_DIR/generate_audio.py")
+
+if [ -n "$ONLY" ]; then
+    CMD+=(--only "$ONLY")
+fi
+
+if [ -n "$REGENERATE" ]; then
+    CMD+=(--regenerate "$REGENERATE")
+fi
 
 if [ -n "$RESUME" ]; then
     CMD+=(--start-from "$RESUME")

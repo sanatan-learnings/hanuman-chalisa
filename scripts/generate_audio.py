@@ -196,18 +196,37 @@ class AudioGenerator:
 
         return False
 
-    def generate_all(self, start_from: Optional[str] = None):
+    def generate_all(self, start_from: Optional[str] = None, only_file: Optional[str] = None, regenerate_files: Optional[list] = None):
         """
         Generate all audio files for all verses.
 
         Args:
             start_from: Optional filename to resume from (e.g., 'verse_15_full.mp3')
+            only_file: Optional single filename to generate (e.g., 'doha_01_full.mp3')
+            regenerate_files: Optional list of filenames to regenerate
         """
         verses = self.parse_verse_files()
 
         if not verses:
             print("Error: No verses found in _verses/ directory")
             return
+
+        # Handle --regenerate option: delete specified files
+        if regenerate_files:
+            print(f"\n🎙️  Preparing to regenerate {len(regenerate_files)} file(s)...\n")
+            deleted_count = 0
+            for filename in regenerate_files:
+                file_path = AUDIO_DIR / filename
+                if file_path.exists():
+                    file_path.unlink()
+                    print(f"  ✓ Deleted: {filename}")
+                    deleted_count += 1
+                else:
+                    print(f"  ⚠ Not found (will generate): {filename}")
+
+            if deleted_count > 0:
+                print(f"\n✓ Deleted {deleted_count} existing file(s).")
+            print(f"→ Will now regenerate missing files...\n")
 
         total_files = len(verses) * 2  # full and slow for each verse
         generated = 0
@@ -217,13 +236,22 @@ class AudioGenerator:
         # Determine starting point
         should_skip = start_from is not None
 
-        print(f"\n🎙️  Starting audio generation for {len(verses)} verses ({total_files} files total)\n")
+        # Handle --only option: generate just one file
+        if only_file:
+            print(f"\n🎙️  Generating single file: {only_file}\n")
+            total_files = 1
+        else:
+            print(f"\n🎙️  Starting audio generation for {len(verses)} verses ({total_files} files total)\n")
 
         for idx, (base_name, devanagari) in enumerate(verses.items(), 1):
             # Generate both full and slow versions
             for speed in ["full", "slow"]:
                 filename = f"{base_name}_{speed}.mp3"
                 output_path = AUDIO_DIR / filename
+
+                # If --only is specified, skip files that don't match
+                if only_file and filename != only_file:
+                    continue
 
                 # Check if we should skip (for resume functionality)
                 if should_skip:
@@ -234,9 +262,10 @@ class AudioGenerator:
                         skipped += 1
                         continue
 
-                # Skip if file already exists
-                if output_path.exists():
-                    print(f"[{generated + failed + skipped + 1}/{total_files}] ⊙ Skipping {filename} (already exists)")
+                # Skip if file already exists (unless we're regenerating it)
+                if output_path.exists() and not (regenerate_files and filename in regenerate_files):
+                    if not only_file:  # Don't show skip message if using --only
+                        print(f"[{generated + failed + skipped + 1}/{total_files}] ⊙ Skipping {filename} (already exists)")
                     skipped += 1
                     continue
 
@@ -283,6 +312,16 @@ def main():
         metavar="FILENAME"
     )
     parser.add_argument(
+        "--only",
+        help="Generate only one specific file (e.g., doha_01_full.mp3)",
+        metavar="FILENAME"
+    )
+    parser.add_argument(
+        "--regenerate",
+        help="Regenerate specific files (comma-separated, e.g., doha_01_full.mp3,verse_10_slow.mp3)",
+        metavar="FILES"
+    )
+    parser.add_argument(
         "--voice-id",
         help=f"Eleven Labs voice ID (default: {DEFAULT_VOICE_ID})",
         default=DEFAULT_VOICE_ID,
@@ -301,11 +340,20 @@ def main():
         print("\nGet your API key from: https://elevenlabs.io/app/settings/api-keys")
         sys.exit(1)
 
+    # Parse regenerate files if provided
+    regenerate_files = None
+    if args.regenerate:
+        regenerate_files = [f.strip() for f in args.regenerate.split(',')]
+
     # Initialize generator
     generator = AudioGenerator(api_key=api_key, voice_id=args.voice_id)
 
     # Generate audio files
-    generator.generate_all(start_from=args.start_from)
+    generator.generate_all(
+        start_from=args.start_from,
+        only_file=args.only,
+        regenerate_files=regenerate_files
+    )
 
 
 if __name__ == "__main__":
