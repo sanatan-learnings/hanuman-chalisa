@@ -2,7 +2,7 @@
 # This deploys ONLY the worker script, not the entire site.
 # Your Jekyll site stays on GitHub Pages.
 
-name = "hanuman-chalisa-api"
+name = "hanuman-chalisa"
 main = "workers/cloudflare-worker.js"
 compatibility_date = "2026-01-29"
 
