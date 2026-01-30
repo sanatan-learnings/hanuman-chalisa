@@ -214,7 +214,7 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
             success "Changes committed and pushed!"
             echo ""
             info "GitHub Pages will rebuild in 1-2 minutes."
-            info "Then visit: https://arun-gupta.github.io/hanuman-chalisa/guidance"
+            info "Then visit: https://sanatan-learnings.github.io/hanuman-chalisa/guidance"
         else
             warning "Changes not committed. Commit manually when ready:"
             echo "  git add $GUIDANCE_JS"
@@ -250,7 +250,7 @@ echo ""
 if [ -z "$CURRENT_URL" ] || [ "$CURRENT_URL" != "$WORKER_URL" ]; then
     info "Next steps:"
     echo "  1. Wait 1-2 minutes for GitHub Pages to rebuild"
-    echo "  2. Visit: https://arun-gupta.github.io/hanuman-chalisa/guidance"
+    echo "  2. Visit: https://sanatan-learnings.github.io/hanuman-chalisa/guidance"
     echo "  3. Try asking a spiritual question (no API key needed!)"
     echo ""
 fi

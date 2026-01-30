@@ -87,7 +87,7 @@ git push
 ### 7. Test Your Site
 
 1. Wait 1-2 minutes for GitHub Pages to rebuild
-2. Visit your site: https://arun-gupta.github.io/hanuman-chalisa/guidance
+2. Visit your site: https://sanatan-learnings.github.io/hanuman-chalisa/guidance
 3. The API key section should now be hidden!
 4. Try asking a question - it should work without entering an API key
 
@@ -116,7 +116,7 @@ For production, restrict access to only your GitHub Pages domain:
    ```
    To:
    ```javascript
-   'Access-Control-Allow-Origin': 'https://arun-gupta.github.io',
+   'Access-Control-Allow-Origin': 'https://sanatan-learnings.github.io',
    ```
 3. Save and deploy
 

@@ -328,7 +328,7 @@ The code supports an alternative "user-provided API key" mode for development by
 3. **Commit** - Git with descriptive messages
 4. **Push** - GitHub receives changes
 5. **Build** - GitHub Pages automatically builds Jekyll site (1-2 min)
-6. **Deploy** - Live at https://arun-gupta.github.io/hanuman-chalisa/
+6. **Deploy** - Live at https://sanatan-learnings.github.io/hanuman-chalisa/
 
 ## Media Generation
 

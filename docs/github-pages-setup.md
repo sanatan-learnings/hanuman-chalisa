@@ -4,7 +4,7 @@ This document explains how the Hanuman Chalisa website is structured and how Git
 
 ## Live Website
 
-**🌐 View the live site:** [https://arun-gupta.github.io/hanuman-chalisa/](https://arun-gupta.github.io/hanuman-chalisa/)
+**🌐 View the live site:** [https://sanatan-learnings.github.io/hanuman-chalisa/](https://sanatan-learnings.github.io/hanuman-chalisa/)
 
 ## How It Works
 
@@ -167,7 +167,7 @@ If GitHub Pages is not yet enabled:
    - Folder: `/ (root)`
 4. Click "Save"
 5. Wait 1-2 minutes for the first build
-6. Site will be live at: `https://arun-gupta.github.io/hanuman-chalisa/`
+6. Site will be live at: `https://sanatan-learnings.github.io/hanuman-chalisa/`
 
 ## Local Development (Optional)
 
@@ -272,4 +272,4 @@ Then visit: `http://localhost:4000/hanuman-chalisa/`
 
 ## Questions or Issues?
 
-Open an issue at: [GitHub Issues](https://github.com/arun-gupta/hanuman-chalisa/issues)
+Open an issue at: [GitHub Issues](https://github.com/sanatan-learnings/hanuman-chalisa/issues)

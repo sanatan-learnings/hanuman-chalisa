@@ -183,7 +183,7 @@
 
     /* Print-specific: Add verse URL at bottom */
     body:after {
-        content: "Source: https://arun-gupta.github.io/hanuman-chalisa/";
+        content: "Source: https://sanatan-learnings.github.io/hanuman-chalisa/";
         display: block;
         margin-top: 2em;
         padding-top: 1em;

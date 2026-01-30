@@ -6,14 +6,14 @@ Thank you for your interest in contributing to this devotional project! 🙏
 
 ### 1. Find or Suggest an Idea
 
-- Browse [existing issues](https://github.com/arun-gupta/hanuman-chalisa/issues) for contribution ideas
-- Suggest new ideas by [creating an issue](https://github.com/arun-gupta/hanuman-chalisa/issues/new)
+- Browse [existing issues](https://github.com/sanatan-learnings/hanuman-chalisa/issues) for contribution ideas
+- Suggest new ideas by [creating an issue](https://github.com/sanatan-learnings/hanuman-chalisa/issues/new)
 
 ### 2. Fork and Clone
 
 ```bash
 # Fork the repository on GitHub, then:
-git clone https://github.com/YOUR-USERNAME/hanuman-chalisa.git
+git clone https://github.com/sanatan-learnings/hanuman-chalisa.git
 cd hanuman-chalisa
 ```
 
@@ -88,7 +88,7 @@ Here are some ways you can contribute:
 - Add Ramayana citations where missing
 
 ### Translations
-- **Add new languages** - [Tamil](https://github.com/arun-gupta/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Tamil), [Telugu](https://github.com/arun-gupta/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Telugu), [Spanish](https://github.com/arun-gupta/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Spanish), or other languages
+- **Add new languages** - [Tamil](https://github.com/sanatan-learnings/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Tamil), [Telugu](https://github.com/sanatan-learnings/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Telugu), [Spanish](https://github.com/sanatan-learnings/hanuman-chalisa/issues?q=is%3Aissue+is%3Aopen+label%3Atranslation+Spanish), or other languages
 - **Translate UI strings** - Add new language file in `_data/translations/`
 - Review and improve existing translations
 - **Translation format:**
@@ -128,7 +128,7 @@ See [multilingual-implementation.md](docs/multilingual-implementation.md) for tr
 - Enhance keyboard navigation
 - Add audio descriptions
 
-**See the [complete list of contribution ideas](https://github.com/arun-gupta/hanuman-chalisa/issues) in our issues.**
+**See the [complete list of contribution ideas](https://github.com/sanatan-learnings/hanuman-chalisa/issues) in our issues.**
 
 ## Guidelines
 
@@ -177,8 +177,8 @@ Co-Authored-By: Your Name <your.email@example.com>
 
 ## Getting Help
 
-- **Questions?** [Open a discussion](https://github.com/arun-gupta/hanuman-chalisa/discussions)
-- **Bug found?** [Create an issue](https://github.com/arun-gupta/hanuman-chalisa/issues/new)
+- **Questions?** [Open a discussion](https://github.com/sanatan-learnings/hanuman-chalisa/discussions)
+- **Bug found?** [Create an issue](https://github.com/sanatan-learnings/hanuman-chalisa/issues/new)
 - **Not sure?** Comment on an existing issue
 
 ## Code of Conduct
@@ -200,8 +200,8 @@ Contributors will be:
 ## Questions?
 
 Feel free to reach out by:
-- [Creating an issue](https://github.com/arun-gupta/hanuman-chalisa/issues/new)
-- [Starting a discussion](https://github.com/arun-gupta/hanuman-chalisa/discussions)
+- [Creating an issue](https://github.com/sanatan-learnings/hanuman-chalisa/issues/new)
+- [Starting a discussion](https://github.com/sanatan-learnings/hanuman-chalisa/discussions)
 
 ---
 

@@ -2,7 +2,7 @@
 
 🚩 **Jai Hanuman 🏹 Jai Shri Ram**
 
-**🌐 [View the live interactive website →](https://arun-gupta.github.io/hanuman-chalisa/)**
+**🌐 [View the live interactive website →](https://sanatan-learnings.github.io/hanuman-chalisa/)**
 
 _May Lord Hanuman's blessings be with all who study and recite these sacred verses._
 
@@ -41,7 +41,7 @@ This guide provides deep understanding of each verse with translations, meanings
 - **Conversation history** - Maintains context for follow-up questions
 - Requires your OpenAI API key (~$0.01 per query)
 
-[Try Spiritual Guidance →](https://arun-gupta.github.io/hanuman-chalisa/guidance)
+[Try Spiritual Guidance →](https://sanatan-learnings.github.io/hanuman-chalisa/guidance)
 
 ### 📕 Generate Custom Books
 Create personalized printable books:
@@ -50,7 +50,7 @@ Create personalized printable books:
 - **Custom headers/footers**: Personalize with your own text
 - **Print or PDF**: Ready for home or professional printing
 
-[Visit Book Generator →](https://arun-gupta.github.io/hanuman-chalisa/book)
+[Visit Book Generator →](https://sanatan-learnings.github.io/hanuman-chalisa/book)
 
 ### 🎨 Multiple Themes
 - Switch between different artistic styles
@@ -112,7 +112,7 @@ We welcome contributions! Whether it's:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
-**Upcoming Features:** Check [GitHub Issues](https://github.com/arun-gupta/hanuman-chalisa/issues)
+**Upcoming Features:** Check [GitHub Issues](https://github.com/sanatan-learnings/hanuman-chalisa/issues)
 
 ## Acknowledgments
 
