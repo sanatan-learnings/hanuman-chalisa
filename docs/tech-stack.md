@@ -302,15 +302,21 @@ The code supports an alternative "user-provided API key" mode for development by
 ## Media Generation
 
 ### Images
-- **DALL-E 3** - AI image generation via OpenAI API
-- **Format**: PNG (high resolution, 1024x1024)
-- **Directory Structure**: `/images/{theme-name}/`
-- **Naming Convention**: `title-page.png`, `opening-doha-01.png`, `verse-01.png`, `closing-doha.png`
-- **Status**: ✅ Complete - All 47 images generated (title + 2 dohas + 40 verses + closing)
-- **Current Themes**: Modern Minimalist, Kids Friendly
-- **Theme System**: Extensible architecture to support multiple artistic styles
 
-**Generation Script:**
+**Technology:**
+- **DALL-E 3** - AI image generation via OpenAI API
+- **Python script** - `scripts/generate_theme_images.py`
+- **Bash wrapper** - `scripts/generate_images.sh`
+
+**Output:**
+- **Format**: PNG (high resolution, 1024×1024)
+- **Total files**: 47 images per theme (title + 2 opening dohas + 40 verses + closing doha)
+- **Naming**: `title-page.png`, `opening-doha-01.png`, `verse-01.png`, `closing-doha.png`
+- **Directory**: `/images/{theme-name}/`
+
+**Status:** ✅ Complete - Two themes generated (Modern Minimalist, Kids Friendly)
+
+**Generation Commands:**
 ```bash
 # Generate all images for a theme
 ./scripts/generate_images.sh modern-minimalist
@@ -324,6 +330,16 @@ The code supports an alternative "user-provided API key" mode for development by
 # Force regenerate ALL images
 ./scripts/generate_images.sh modern-minimalist --force
 ```
+
+**Pipeline:**
+1. Read scene descriptions from `docs/image-prompts.md`
+2. Generate images via DALL-E 3 API (1024×1792 portrait)
+3. Crop to 1024×1536 (2:3 ratio for verse pages)
+4. Save as PNG in `/images/{theme-name}/`
+
+**Requirements:**
+- OpenAI API key (stored in `.env`)
+- Python packages: `openai`, `pillow`, `requests`
 
 **Cost:** ~$2 per theme (47 images × $0.040 standard quality)
 
@@ -346,28 +362,38 @@ modern-minimalist:
 - Extensible to support future themes (Traditional, Watercolor, etc.)
 
 ### Audio Recitations
+
+**Technology:**
 - **Eleven Labs** - AI text-to-speech (eleven_multilingual_v2 model for Hindi/Sanskrit)
 - **ffmpeg** - Audio post-processing for speed control
+- **Python script** - `scripts/generate_audio.py`
+- **Bash wrapper** - `scripts/generate_audio.sh`
+
+**Output:**
 - **Format**: MP3 (128kbps+, Eleven Labs default)
+- **Total files**: 86 audio files (43 verses × 2 speeds)
 - **Two versions per verse**:
   - Full speed: Natural conversational pace
-  - Slow speed: 75% speed (slowed via ffmpeg `atempo` filter) + pauses for learning
+  - Slow speed: 75% speed (slowed via ffmpeg `atempo` filter)
+- **Naming**: `doha_01_full.mp3`, `doha_01_slow.mp3`, `verse_01_full.mp3`, `verse_01_slow.mp3`
+- **Directory**: `/audio/`
 - **Voice**: Rachel (default) - clear, neutral female voice
-- **Data Residency**: EU endpoint support for EU-based API keys
-- **Status**: ✅ Complete - All 86 files generated (43 verses × 2 speeds)
-- **Directory**: `/audio/{base_name}_{speed}.mp3`
-  - Example: `doha_01_full.mp3`, `doha_01_slow.mp3`, `verse_01_full.mp3`, `verse_01_slow.mp3`
 
-**Technical Implementation:**
+**Status:** ✅ Complete - All 86 files generated
+
+**Generation Commands:**
 ```bash
 # Generate all audio files
 ./scripts/generate_audio.sh
 
-# Test single file
+# Generate single file for testing
 ./scripts/generate_audio.sh --only doha_01_full.mp3
 
 # Regenerate specific files
 ./scripts/generate_audio.sh --regenerate verse_10_full.mp3,verse_10_slow.mp3
+
+# Force regenerate ALL files
+./scripts/generate_audio.sh --force
 ```
 
 **Pipeline:**
@@ -378,13 +404,10 @@ modern-minimalist:
 
 **Requirements:**
 - Eleven Labs API key (stored in `.env`)
-- `ffmpeg` installed for slow speed processing (`brew install ffmpeg` on macOS)
+- `ffmpeg` for slow speed processing (`brew install ffmpeg` on macOS)
 - Python packages: `elevenlabs`, `python-dotenv`
 
-**Cost:**
-- Eleven Labs free tier: 10,000 characters/month
-- Total characters needed: ~10,000-15,000 (all 43 verses)
-- One-time generation fits within free tier
+**Cost:** ~$0.02 total (fits within free tier: 10,000 characters/month)
 
 ### Embeddings Generation (Python)
 - **sentence-transformers** - Local embedding generation
