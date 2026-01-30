@@ -749,6 +749,47 @@ footer .footer-links a:hover {
     color: #ff6b35;
 }
 
+/* Audio Player Styles */
+.audio-player-container {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe0b3 100%);
+    border-radius: 8px;
+    border-left: 4px solid #ff6b35;
+}
+
+.audio-players {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.audio-player label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.audio-player audio {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.audio-player audio:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .verse-nav {

@@ -46,7 +46,29 @@ layout: default
             <pre>{{ page.transliteration }}</pre>
 
             <h2>{{ t_en.sections.pronunciation }}</h2>
-            <p><strong>{{ t_en.labels.audio_recitation }}:</strong> <em>({{ t_en.labels.coming_soon }})</em></p>
+            {% assign audio_base = page.path | split: "/" | last | split: "." | first %}
+            {% assign audio_full = "/audio/" | append: audio_base | append: "_full.mp3" %}
+            {% assign audio_slow = "/audio/" | append: audio_base | append: "_slow.mp3" %}
+
+            <div class="audio-player-container">
+                <p><strong>{{ t_en.labels.audio_recitation }}:</strong></p>
+                <div class="audio-players">
+                    <div class="audio-player">
+                        <label>🎵 <span data-lang="en">Full Speed</span><span data-lang="hi">सामान्य गति</span>:</label>
+                        <audio controls preload="metadata">
+                            <source src="{{ audio_full | relative_url }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-player">
+                        <label>🐢 <span data-lang="en">Slow Speed (Learning)</span><span data-lang="hi">धीमी गति (सीखने के लिए)</span>:</label>
+                        <audio controls preload="metadata">
+                            <source src="{{ audio_slow | relative_url }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
             <p>{{ t_en.labels.audio_description }}</p>
 
             {% if page.phonetic_notes %}
