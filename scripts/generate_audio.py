@@ -157,12 +157,12 @@ class AudioGenerator:
 
         for attempt in range(1, retry_count + 1):
             try:
-                # Generate audio
-                audio = self.client.generate(
+                # Generate audio using text_to_speech API
+                audio = self.client.text_to_speech.convert(
+                    voice_id=self.voice_id,
                     text=text,
-                    voice=self.voice_id,
-                    voice_settings=voice_settings,
-                    model="eleven_multilingual_v2"  # Supports Hindi
+                    model_id="eleven_multilingual_v2",  # Supports Hindi
+                    voice_settings=voice_settings
                 )
 
                 # Save to file
