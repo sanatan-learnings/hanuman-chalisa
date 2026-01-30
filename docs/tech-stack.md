@@ -53,6 +53,37 @@
 - **Jekyll Collections** - `_verses/` directory with 43 verse files
 - **Multi-Language Support** - English + Hindi with extensible architecture
 
+## Development Tools
+
+### PyCharm IDE
+- Code editing and project management
+- Visual git diff and merge tools
+- Markdown preview with Devanagari support
+- Structure view for navigation
+- Embedded terminal for Claude Code
+
+### Claude Code
+- AI-assisted content generation
+- Project scaffolding (Jekyll setup, templates)
+- Bulk file operations (43 verse conversions)
+- Git workflow automation
+- Documentation generation
+
+### System Dependencies
+- **Python 3.8+** - For image and audio generation scripts
+- **ffmpeg** - Audio post-processing for slow speed versions
+  - macOS: `brew install ffmpeg`
+  - Linux: `sudo apt-get install ffmpeg`
+- **Ruby 3.3+** - For Jekyll local development
+- **Node.js** (optional) - For Cloudflare Worker development
+
+**Collaboration Pattern:**
+1. Claude Code generates structure and content
+2. PyCharm shows visual diff of changes
+3. Human reviews in PyCharm UI
+4. Changes committed and pushed
+5. GitHub Pages builds automatically
+
 ## Project Structure
 
 ```
@@ -434,37 +465,6 @@ pip install sentence-transformers  # ~500MB including PyTorch
 5. Outputs `data/embeddings.json` with verse metadata + vectors
 6. Takes ~2-3 minutes on modern hardware
 
-## Development Tools
-
-### PyCharm IDE
-- Code editing and project management
-- Visual git diff and merge tools
-- Markdown preview with Devanagari support
-- Structure view for navigation
-- Embedded terminal for Claude Code
-
-### Claude Code
-- AI-assisted content generation
-- Project scaffolding (Jekyll setup, templates)
-- Bulk file operations (43 verse conversions)
-- Git workflow automation
-- Documentation generation
-
-### System Dependencies
-- **Python 3.8+** - For image and audio generation scripts
-- **ffmpeg** - Audio post-processing for slow speed versions
-  - macOS: `brew install ffmpeg`
-  - Linux: `sudo apt-get install ffmpeg`
-- **Ruby 3.3+** - For Jekyll local development
-- **Node.js** (optional) - For Cloudflare Worker development
-
-**Collaboration Pattern:**
-1. Claude Code generates structure and content
-2. PyCharm shows visual diff of changes
-3. Human reviews in PyCharm UI
-4. Changes committed and pushed
-5. GitHub Pages builds automatically
-
 ## URLs and Navigation
 
 Each verse has its own URL:
@@ -529,7 +529,3 @@ Navigation:
 - [background.md](background.md) - Hanuman Chalisa history
 - [user-guide.md](user-guide.md) - Recitation guide
 - [github-pages-setup.md](github-pages-setup.md) - Deployment setup
-
----
-
-**Last Updated:** January 2026
