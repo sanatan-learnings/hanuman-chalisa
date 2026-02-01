@@ -151,12 +151,12 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-# Check if required packages are installed
-if ! python3 -c "import openai" 2>/dev/null; then
-    echo -e "${YELLOW}Installing required packages...${NC}"
-    pip3 install -r "$SCRIPT_DIR/requirements.txt" || {
-        echo -e "${RED}Error: Failed to install dependencies${NC}"
-        echo "Try running: pip3 install -r scripts/requirements.txt"
+# Check if verse-content-sdk is installed
+if ! command -v verse-images &> /dev/null; then
+    echo -e "${YELLOW}Installing verse-content-sdk...${NC}"
+    pip3 install git+https://github.com/sanatan-learnings/verse-content-sdk.git || {
+        echo -e "${RED}Error: Failed to install verse-content-sdk${NC}"
+        echo "Try running: pip3 install git+https://github.com/sanatan-learnings/verse-content-sdk.git"
         exit 1
     }
 fi
@@ -252,7 +252,7 @@ if [ -n "$REGENERATE" ]; then
 fi
 
 # Build command
-CMD=("python3" "$SCRIPT_DIR/generate_theme_images.py" "--theme-name" "$THEME_NAME" "--quality" "$QUALITY" "--size" "$SIZE")
+CMD=("verse-images" "--theme-name" "$THEME_NAME" "--quality" "$QUALITY" "--size" "$SIZE")
 
 if [ -n "$STYLE" ]; then
     CMD+=("--style" "$STYLE")

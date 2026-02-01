@@ -114,12 +114,12 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-# Check if required packages are installed
-if ! python3 -c "import elevenlabs" 2>/dev/null; then
-    echo -e "${YELLOW}Installing required packages...${NC}"
-    pip3 install -r "$SCRIPT_DIR/requirements.txt" || {
-        echo -e "${RED}Error: Failed to install dependencies${NC}"
-        echo "Try running: pip3 install elevenlabs python-dotenv"
+# Check if verse-content-sdk is installed
+if ! command -v verse-audio &> /dev/null; then
+    echo -e "${YELLOW}Installing verse-content-sdk...${NC}"
+    pip3 install git+https://github.com/sanatan-learnings/verse-content-sdk.git || {
+        echo -e "${RED}Error: Failed to install verse-content-sdk${NC}"
+        echo "Try running: pip3 install git+https://github.com/sanatan-learnings/verse-content-sdk.git"
         exit 1
     }
 fi
@@ -201,7 +201,7 @@ echo -e "${GREEN}🎙️  Generating audio files for Hanuman Chalisa${NC}"
 echo ""
 
 # Build command
-CMD=(python3 "$SCRIPT_DIR/generate_audio.py")
+CMD=(verse-audio)
 
 if [ -n "$ONLY" ]; then
     CMD+=(--only "$ONLY")

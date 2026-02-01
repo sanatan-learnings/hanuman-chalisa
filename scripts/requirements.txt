@@ -1,19 +1,16 @@
-# Requirements for image and audio generation scripts
+# Requirements for verse content generation scripts
+# Now using the unified verse-content-sdk
 
-# OpenAI API client for DALL-E 3, embeddings, GPT
-openai>=1.0.0
+# Verse Content SDK - provides all tools for embeddings, audio, images, and deployment
+# Install from GitHub:
+git+https://github.com/sanatan-learnings/verse-content-sdk.git
 
-# Eleven Labs API client for text-to-speech
-elevenlabs>=1.0.0
-
-# HTTP requests for downloading images
-requests>=2.31.0
-
-# Image processing (optional, for validation/optimization)
-Pillow>=10.0.0
-
-# Environment variable management
-python-dotenv>=1.0.0
-
-# YAML parsing for theme configuration files
-PyYAML>=6.0.0
+# Note: The SDK includes all necessary dependencies:
+# - openai (for DALL-E 3, embeddings, GPT)
+# - elevenlabs (for text-to-speech)
+# - requests (for downloading images)
+# - Pillow (for image processing)
+# - python-dotenv (for environment variables)
+# - PyYAML (for theme configuration)
+# - sentence-transformers (for local embeddings)
+# - torch (for local models)

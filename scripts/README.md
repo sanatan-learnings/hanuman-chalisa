@@ -1,460 +1,286 @@
-# Image Generation Scripts
+# Content Generation Scripts
 
-This directory contains scripts for generating verse images using AI image generation APIs.
+This directory contains configuration files for generating multimedia content for Hanuman Chalisa using the [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk).
 
-## ⚡ Quick Start (Simplest Way)
+## 📦 What's in This Directory
 
-### Option 1: Generate from Theme YAML (Recommended)
+All content generation is now handled by the **verse-content-sdk** CLI tools:
 
-If a theme specification exists at `docs/themes/<theme-name>.yml`:
+- **verse-embeddings** - Generate vector embeddings for semantic search
+- **verse-audio** - Generate audio pronunciations using ElevenLabs
+- **verse-images** - Generate AI images using DALL-E 3
+- **verse-deploy** - Deploy Cloudflare Workers
+
+### Legacy Scripts
+
+Old scripts have been moved to `scripts/legacy/` for reference:
+- Python scripts: `generate_embeddings.py`, `generate_audio.py`, `generate_theme_images.py`, etc.
+- Shell wrappers: `generate_audio.sh`, `generate_images.sh` (replaced by SDK commands)
+
+## ⚡ Quick Start
+
+### 1. Install the SDK
 
 ```bash
-# Just specify the theme name - everything else is automatic!
-./scripts/generate.sh modern-minimalist
+pip install git+https://github.com/sanatan-learnings/verse-content-sdk.git
 ```
 
-The script reads all settings (style, quality, size) from the theme YAML file.
-
-### Option 2: Generate with Custom Style
-
-For new custom themes without a YAML file:
-
+Or use the provided requirements.txt:
 ```bash
-./scripts/generate.sh watercolor --style "soft watercolor painting style"
+pip install -r scripts/requirements.txt
 ```
 
-**First Time Setup (30 seconds):**
-1. Get API key: https://platform.openai.com/api-keys
-2. Set it: `export OPENAI_API_KEY='your-key-here'`
-3. Run: `./scripts/generate.sh modern-minimalist`
+### 2. Set API Keys
 
-Done! The script auto-installs dependencies and generates all 47 images.
-
-### CLI Options
-
+Create a `.env` file in the project root:
 ```bash
-./scripts/generate.sh <theme-name> [options]
+# OpenAI API (for embeddings and images)
+OPENAI_API_KEY=sk-your-key-here
 
-Options:
-  -s, --style <description>  Custom style (overrides theme YAML if present)
-  -q, --quality <level>      Image quality: 'standard' or 'hd' (default: from theme or standard)
-      --size <dimensions>    Image size: '1024x1024' or '1024x1792' (default: from theme or 1024x1024)
-  -r, --resume <filename>    Resume from specific image (e.g., verse-15.png)
-  -h, --help                 Show help message
+# Eleven Labs API (for audio)
+ELEVENLABS_API_KEY=your-key-here
 ```
 
-**Examples:**
+Get your API keys:
+- OpenAI: https://platform.openai.com/api-keys
+- Eleven Labs: https://eu.residency.elevenlabs.io/app/developers/api-keys
+
+## 🎨 Generate Images
+
 ```bash
-# Generate using theme YAML settings (simplest)
-./scripts/generate.sh modern-minimalist
+# Generate using theme YAML settings
+verse-images --theme-name modern-minimalist
 
-# Override theme quality with HD (2x cost)
-./scripts/generate.sh modern-minimalist --quality hd
+# Generate with custom style
+verse-images --theme-name watercolor --style "soft watercolor painting style"
 
-# Custom style for new theme
-./scripts/generate.sh watercolor --style "soft watercolor painting style"
-
-# Override theme style completely
-./scripts/generate.sh modern-minimalist --style "completely different style"
+# HD quality (2x cost)
+verse-images --theme-name modern-minimalist --quality hd
 
 # Resume from specific image
-./scripts/generate.sh theme-name --resume verse-15.png
+verse-images --theme-name my-theme --start-from verse-15.png
 
-# Multiple options
-./scripts/generate.sh pencil-sketch \
-  --style "detailed pencil drawings" \
-  --quality hd \
-  --resume verse-20.png
+# Regenerate specific failed images
+verse-images --theme-name my-theme --regenerate verse-10.png,verse-25.png
+
+# Force regenerate ALL images (with confirmation)
+verse-images --theme-name my-theme --force
 ```
 
----
+**Cost Estimates:**
+- Standard: 47 images × $0.040 = $1.88
+- HD: 47 images × $0.080 = $3.76
 
-## Prerequisites
+**All Options:**
+```
+--theme-name TEXT       Theme name (required)
+--style TEXT            Custom style description
+--quality {standard,hd} Image quality (default: standard)
+--size TEXT             Image size (default: 1024x1792)
+--start-from TEXT       Resume from specific file
+--regenerate TEXT       Comma-separated files to regenerate
+--force                 Delete and regenerate ALL (asks for confirmation)
+```
 
-### 1. Python Environment
-
-Python 3.8 or higher is required.
+## 🎙️ Generate Audio
 
 ```bash
-python --version  # Should be 3.8+
+# Generate all audio files
+verse-audio
+
+# Test with single file
+verse-audio --only doha_01_full.mp3
+
+# Regenerate specific files
+verse-audio --regenerate doha_01_full.mp3,verse_10_slow.mp3
+
+# Resume from specific file
+verse-audio --start-from verse_15_full.mp3
+
+# Force regenerate ALL (with confirmation)
+verse-audio --force
 ```
 
-### 2. Install Dependencies
+**Output:** 86 MP3 files (43 verses × 2 speeds: full and slow)
+
+**All Options:**
+```
+--only TEXT         Generate only one file
+--start-from TEXT   Resume from specific file
+--regenerate TEXT   Comma-separated files to regenerate
+--voice-id TEXT     Eleven Labs voice ID (default: Rachel)
+--force             Delete and regenerate ALL (asks for confirmation)
+```
+
+## 🔍 Generate Embeddings
 
 ```bash
-cd scripts/
-pip install -r requirements.txt
+# Using OpenAI (default)
+verse-embeddings
+
+# Using local models (free, no API key needed)
+verse-embeddings --provider huggingface
+
+# With custom paths
+verse-embeddings --verses-dir _verses --output data/embeddings.json
 ```
 
-Or install individually:
-```bash
-pip install openai requests pillow python-dotenv
+**Providers:**
+- `openai` - Uses OpenAI API (fast, small cost ~$0.01)
+- `huggingface` - Uses local sentence-transformers (free, slower first run)
+
+**All Options:**
+```
+--provider {openai,huggingface}  Embedding provider (default: openai)
+--verses-dir TEXT                Verse files directory (default: _verses)
+--output TEXT                    Output file (default: data/embeddings.json)
 ```
 
-### 3. OpenAI API Key
-
-You need an OpenAI API key to use DALL-E 3.
-
-**Get an API key:**
-1. Go to https://platform.openai.com/api-keys
-2. Sign in or create an account
-3. Click "Create new secret key"
-4. Copy the key (starts with `sk-...`)
-
-**Set the API key:**
-
-Option A - Environment Variable:
-```bash
-export OPENAI_API_KEY='sk-your-api-key-here'
-```
-
-Option B - .env File (recommended):
-```bash
-# Create .env file in project root
-echo "OPENAI_API_KEY=sk-your-api-key-here" > ../.env
-```
-
-Option C - Command Line Argument:
-```bash
-python generate_theme_images.py --api-key sk-your-api-key-here --theme-name my-theme
-```
-
-## Usage
-
-### Basic Usage
-
-Generate a new theme with default settings:
+## 🚀 Deploy Cloudflare Worker
 
 ```bash
-python generate_theme_images.py --theme-name my-theme
+verse-deploy
 ```
 
-### With Style Modifier
+The deployment script will:
+1. Check for Node.js and Wrangler CLI
+2. Authenticate with Cloudflare
+3. Deploy the worker
+4. Set the OPENAI_API_KEY secret
+5. Test the deployment
 
-Add a style description to customize the output:
+## 📂 Directory Structure
+
+```
+scripts/
+├── README.md                    # This file
+├── requirements.txt             # SDK installation
+├── embedding_config.yaml        # Embedding configuration
+└── legacy/                      # Old scripts (for reference)
+    ├── generate_embeddings.py
+    ├── generate_embeddings_local.py
+    ├── generate_audio.py
+    ├── generate_audio.sh           # Shell wrapper (replaced by verse-audio)
+    ├── generate_theme_images.py
+    ├── generate_images.sh          # Shell wrapper (replaced by verse-images)
+    ├── deploy-cloudflare-worker.sh
+    └── README-deploy-worker.md
+```
+
+## 🔧 Common Workflows
+
+### Create a New Image Theme
 
 ```bash
-python generate_theme_images.py \
-  --theme-name traditional-art \
-  --style "traditional Indian devotional art style with rich colors, gold leaf accents, and intricate details"
-```
+# 1. Generate images with custom style
+verse-images --theme-name my-theme --style "artistic style description"
 
-### Advanced Options
+# 2. Review images
+open images/my-theme/
 
-```bash
-python generate_theme_images.py \
-  --theme-name watercolor \
-  --style "soft watercolor painting style with gentle colors" \
-  --quality hd \
-  --size 1024x1024
-```
+# 3. If some failed, regenerate specific ones
+verse-images --theme-name my-theme --regenerate verse-10.png,verse-25.png
 
-### Resume Interrupted Generation
+# 4. Update Jekyll config
+# Edit _data/themes.yml to add your theme
 
-If generation is interrupted, resume from where you left off:
-
-```bash
-python generate_theme_images.py \
-  --theme-name my-theme \
-  --start-from verse-15.png
-```
-
-## Command Line Options
-
-| Option | Description | Default |
-|--------|-------------|---------|
-| `--theme-name` | Theme directory name (required) | - |
-| `--style` | Style modifier to append to prompts | "" |
-| `--api-key` | OpenAI API key | `$OPENAI_API_KEY` |
-| `--start-from` | Resume from specific file | - |
-| `--size` | Image size (1024x1024, 1024x1792, 1792x1024) | 1024x1024 |
-| `--quality` | Image quality (standard, hd) | standard |
-| `--style-type` | DALL-E style (natural, vivid) | natural |
-
-## Cost Estimates
-
-DALL-E 3 pricing (as of January 2026):
-- **Standard Quality**: $0.040 per image
-- **HD Quality**: $0.080 per image
-
-For all 47 images:
-- Standard: 47 × $0.040 = **$1.88**
-- HD: 47 × $0.080 = **$3.76**
-
-Check current pricing at: https://openai.com/pricing
-
-## Examples
-
-### 1. Modern Minimalist (Using Theme YAML)
-
-```bash
-# Simplest - reads everything from docs/themes/modern-minimalist.yml
-./scripts/generate.sh modern-minimalist
-```
-
-### 2. Traditional Indian Art (Custom Style)
-
-```bash
-./scripts/generate.sh traditional-art \
-  --style "traditional Indian devotional art style inspired by Mughal miniature paintings, rich colors, gold leaf accents, intricate details, sacred atmosphere"
-```
-
-### 3. Watercolor Style
-
-```bash
-./scripts/generate.sh watercolor \
-  --style "soft watercolor illustration with gentle colors, flowing brush strokes, dreamy contemplative mood, hand-painted artistic feel"
-```
-
-### 4. Pencil Sketch
-
-```bash
-./scripts/generate.sh pencil-sketch \
-  --style "detailed pencil sketch drawing, black and white, classical line art, timeless artistic aesthetic"
-```
-
-### 5. Contemporary Digital Art
-
-```bash
-./scripts/generate.sh digital-art \
-  --style "contemporary digital illustration, vibrant colors, dynamic composition, modern graphic novel style with spiritual symbolism"
-```
-
-### 6. Override Theme Settings
-
-```bash
-# Use modern-minimalist theme but with different style
-./scripts/generate.sh modern-minimalist \
-  --style "modern minimalist with cool blue tones instead of orange"
-
-# Use theme style but with HD quality
-./scripts/generate.sh modern-minimalist --quality hd
-```
-
-## Configuration Information Required
-
-### Essential Configuration
-
-1. **OpenAI API Key** (required)
-   - Get from: https://platform.openai.com/api-keys
-   - Set via: environment variable, .env file, or command line
-
-2. **Theme Name** (required)
-   - Lowercase with hyphens only
-   - Examples: `traditional-art`, `watercolor`, `pencil-sketch`
-
-### Optional Configuration
-
-3. **Style Modifier** (recommended)
-   - Description of artistic style
-   - Appended to base prompts from docs/image-prompts.md
-   - Example: "traditional Indian devotional art style"
-
-4. **Image Quality**
-   - `standard`: Faster, cheaper ($0.040/image)
-   - `hd`: Higher quality, 2x cost ($0.080/image)
-
-5. **Image Size**
-   - `1024x1024`: Square (recommended for thumbnails)
-   - `1024x1792`: Portrait
-   - `1792x1024`: Landscape
-
-6. **DALL-E Style Type**
-   - `natural`: More realistic, toned down
-   - `vivid`: More dramatic, hyper-real
-
-## Output
-
-Generated images are saved to:
-```
-images/{theme-name}/
-├── title-page.png
-├── opening-doha-01.png
-├── opening-doha-02.png
-├── verse-01.png
-├── verse-02.png
-├── ... (verse-03.png through verse-40.png)
-└── closing-doha.png
-```
-
-## Creating a New Theme
-
-### Method A: Create Theme YAML First (Recommended)
-
-1. **Create theme specification**: Copy `docs/themes/modern-minimalist.yml` to `docs/themes/my-theme.yml`
-2. **Edit generation settings**: Update the `generation.style_modifier` section with your desired style
-3. **Generate images**: Run `./scripts/generate.sh my-theme`
-4. **Review and iterate**: Check images, adjust theme YAML if needed, regenerate
-
-### Method B: Generate First, Document Later
-
-1. **Generate images**: Run `./scripts/generate.sh my-theme --style "your style description"`
-2. **Create theme YAML**: Document your theme in `docs/themes/my-theme.yml` for future reference
-
-### After Generation
-
-#### 1. Review Images
-
-```bash
-open images/your-theme-name/  # macOS
-xdg-open images/your-theme-name/  # Linux
-explorer images\your-theme-name\  # Windows
-```
-
-#### 2. Update Theme Configuration
-
-Edit `_data/themes.yml` to add simple Jekyll config:
-
-```yaml
-your-theme-name:
-  name_en: "Your Theme Name"
-  name_hi: "आपकी थीम का नाम"
-  description_en: "Description in English"
-  description_hi: "हिन्दी में विवरण"
-  folder: "your-theme-name"
-  default: false
-```
-
-#### 3. Create Theme Documentation (if not done)
-
-Create `docs/themes/your-theme-name.yml` with complete specifications:
-- Visual style guidelines
-- Color palette
-- Generation configuration
-- Usage guidelines
-
-See `docs/themes/modern-minimalist.yml` for a complete example.
-
-#### 4. Test Locally
-
-```bash
-cd ..
+# 5. Test locally
 jekyll serve
-# Open http://localhost:4000/hanuman-chalisa/
-# Test theme switching
 ```
 
-#### 5. Commit and Push
+### Regenerate Audio After Voice Change
 
 ```bash
-git add images/your-theme-name/
-git add _data/themes.yml
-git add docs/themes/your-theme-name.yml
-git commit -m "Add [Your Theme Name] image theme"
-git push origin main
+# Delete all and regenerate with new voice
+verse-audio --force --voice-id NEW_VOICE_ID
 ```
 
-## Theme YAML Files
+### Update Embeddings After Content Changes
 
-Theme YAML files in `docs/themes/` serve dual purposes:
-
-1. **Design Documentation**: Complete visual style guides, color palettes, depiction rules
-2. **Generation Configuration**: Automated settings for image generation
-
-### Key Sections for Generation
-
-```yaml
-generation:
-  # Style description appended to base prompts
-  style_modifier: |
-    Your detailed style description here...
-
-  # DALL-E 3 API parameters
-  dalle_params:
-    model: "dall-e-3"
-    size: "1024x1792"
-    quality: "standard"  # or "hd"
-    style: "natural"     # or "vivid"
-
-  # Generation behavior
-  retry_count: 3
-  rate_limit_delay: 2
-  skip_existing: true
-```
-
-### Benefits of Theme YAML
-
-- **Consistency**: Ensures reproducible results
-- **Documentation**: Records design decisions and rationale
-- **Simplicity**: One command generates entire theme: `./scripts/generate.sh theme-name`
-- **Flexibility**: Can override any setting via command line
-
-## Troubleshooting
-
-### API Key Not Found
-
-```
-Error: OpenAI API key not found!
-```
-
-**Solution**: Set the `OPENAI_API_KEY` environment variable or use `--api-key` flag.
-
-### Rate Limit Error
-
-```
-Error: Rate limit exceeded
-```
-
-**Solution**: Wait a few minutes. The script includes automatic retry with backoff. For free tier, you may need to wait longer between batches.
-
-### Insufficient Credits
-
-```
-Error: Insufficient credits
-```
-
-**Solution**: Add credits to your OpenAI account at https://platform.openai.com/account/billing
-
-### Generation Interrupted
-
-**Solution**: Resume using `--start-from` flag:
 ```bash
-python generate_theme_images.py \
-  --theme-name my-theme \
-  --start-from verse-20.png
+# Regenerate embeddings (fast with OpenAI)
+verse-embeddings
+
+# Or use local models (free)
+verse-embeddings --provider huggingface
 ```
 
-### Image Quality Issues
+## 📚 Documentation
 
-**Solution**:
-- Try `--quality hd` for higher quality (2x cost)
-- Refine your `--style` description
-- Adjust `--style-type` between `natural` and `vivid`
-- Regenerate specific images by deleting them and re-running
+- [Adding Themes](../docs/adding-themes.md)
+- [Image Prompts](../docs/image-prompts.md)
+- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)
+- [OpenAI API](https://platform.openai.com/docs)
+- [Eleven Labs API](https://elevenlabs.io/docs)
 
-## Rate Limits
+## 🔧 Troubleshooting
 
-OpenAI API rate limits (may vary by account tier):
-- Free tier: 3 requests per minute
-- Paid tier: Higher limits based on usage history
+### SDK not installed
 
-The script includes:
-- 2-second delay between requests
-- Automatic retry with exponential backoff
-- Resume capability for interrupted generation
+```bash
+pip install git+https://github.com/sanatan-learnings/verse-content-sdk.git
 
-## Tips for Best Results
+# Verify installation
+verse-audio --help
+verse-images --help
+verse-embeddings --help
+```
 
-1. **Style Consistency**: Use detailed, consistent style descriptions
-2. **Test First**: Generate 2-3 images first to verify style before generating all 47
-3. **Review Prompts**: Check `docs/image-prompts.md` to understand base prompts
-4. **Cultural Sensitivity**: Ensure respectful representation of Hindu deities
-5. **Iterate**: Regenerate specific images that don't meet quality standards
-6. **HD Quality**: Consider using HD for final production images
+### API key errors
 
-## Support
+```bash
+# Check your .env file
+cat .env
 
-For issues or questions:
-- Check [docs/adding-themes.md](../docs/adding-themes.md) for theme guidelines
-- Open an issue on GitHub
-- Review OpenAI API documentation
+# Set keys manually
+export OPENAI_API_KEY='sk-your-key-here'
+export ELEVENLABS_API_KEY='your-key-here'
+```
 
-## Resources
+### Force regeneration safety
 
-- [OpenAI API Documentation](https://platform.openai.com/docs/guides/images)
-- [DALL-E 3 Guide](https://platform.openai.com/docs/guides/images/usage)
-- [Project Theme Documentation](../docs/adding-themes.md)
-- [Base Image Prompts](../docs/image-prompts.md)
+All `--force` options ask for confirmation before deleting files:
+```
+⚠️  WARNING: Force regeneration will delete 86 existing audio files!
+Are you sure you want to delete and regenerate ALL audio files? (y/n):
+```
+
+Type `y` or `yes` to confirm, anything else to abort.
+
+### Rate limits
+
+The SDK includes automatic retry with exponential backoff. For free tier accounts, you may need to wait between generations.
+
+## 💡 Tips
+
+1. **Test First**: Use `--only` to generate one file first to verify setup
+2. **Use Theme YAML**: Store style settings in `docs/themes/<theme>.yml`
+3. **Resume on Failure**: Use `--start-from` to continue interrupted generations
+4. **Check Costs**: Review API pricing before generating large batches
+5. **Regenerate Selectively**: Use `--regenerate` for specific files instead of `--force`
+
+## 🆕 What Changed
+
+The shell wrapper scripts (`generate_audio.sh`, `generate_images.sh`) have been **deprecated** and moved to `legacy/`. All their functionality is now in the SDK commands:
+
+**Before:**
+```bash
+./scripts/generate_audio.sh --force
+./scripts/generate_images.sh modern-minimalist --quality hd
+```
+
+**Now:**
+```bash
+verse-audio --force
+verse-images --theme-name modern-minimalist --quality hd
+```
+
+The SDK commands provide:
+- ✅ All shell wrapper features (--force, --regenerate)
+- ✅ Interactive confirmations for destructive operations
+- ✅ Better error messages and validation
+- ✅ Cross-platform support (works on Windows, Mac, Linux)
+- ✅ Easier to maintain and test
 
 ---
 
