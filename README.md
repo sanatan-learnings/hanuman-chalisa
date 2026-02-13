@@ -14,7 +14,7 @@ A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Han
 
 **Currently featured:**
 - **Hanuman Chalisa** ✅ Complete - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
-- **Sankat Mochan Hanumanashtak** 🚧 In Progress - 9 of 8 verses for removing obstacles
+- **Sankat Mochan Hanumanashtak** ✅ Complete - 8 verses for removing obstacles
 - **Sundar Kaand** 🚧 In Progress - 6 verses from Ramcharitmanas describing Hanuman's journey to Lanka
 
 **Coming soon:**
