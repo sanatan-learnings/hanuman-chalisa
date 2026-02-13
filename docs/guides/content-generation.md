@@ -207,7 +207,7 @@ Here's what happens when you run `/verse-generator Create chaupai_05 for sundar-
 2. **AI Assistance**: Offers to help research transliteration, meanings, translations, and context
 3. **Create Files**: Generates complete verse markdown at `_verses/sundar-kaand/chaupai_05.md`
 4. **Scene Description**: Adds to `docs/image-prompts/sundar-kaand.md`
-5. **Generate Multimedia**: Runs `verse-generate --collection sundar-kaand --verse chaupai_05 --all`
+5. **Generate Multimedia**: Runs `verse-generate --collection sundar-kaand --verse 5 --verse-id chaupai_05 --all`
    - Image: `images/sundar-kaand/modern-minimalist/chaupai-05.png` (~3 MB)
    - Audio: `audio/sundar-kaand/chaupai_05_full.mp3` + `chaupai_05_slow.mp3`
 6. **Update Embeddings**: Regenerates `data/embeddings.json` with new verse

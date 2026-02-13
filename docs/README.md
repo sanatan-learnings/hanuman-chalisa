@@ -13,7 +13,8 @@ pip install verse-content-sdk
 # Generate everything for a verse (image, audio, embeddings)
 verse-generate \
   --collection sundar-kaand \
-  --verse chaupai_05 \
+  --verse 5 \
+  --verse-id chaupai_05 \
   --all \
   --theme modern-minimalist
 
@@ -56,7 +57,7 @@ docs/
 
 ```bash
 # Generate complete content for one verse (image + audio + embeddings)
-verse-generate --collection sundar-kaand --verse chaupai_05 --all --theme modern-minimalist
+verse-generate --collection sundar-kaand --verse 5 --verse-id chaupai_05 --all --theme modern-minimalist
 ```
 
 ### Batch Operations
