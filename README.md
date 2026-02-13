@@ -10,20 +10,24 @@ _May Lord Hanuman's blessings be with all who study and recite these sacred vers
 
 ## About
 
-A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Hanuman. Currently features:
-- **Hanuman Chalisa** - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
-- **Sankat Mochan Hanumanashtak** - 8 verses for removing obstacles
-- **Sundar Kaand** - Selected verses from Ramcharitmanas describing Hanuman's journey to Lanka
-- **Hanuman Stuti** - Devotional hymns
-- **Hanuman Kavacham** - Protective armor of Hanuman
-- **Hanuman Bahuk** - Additional sacred verses
+A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Hanuman.
+
+**Currently featured:**
+- **Hanuman Chalisa** ✅ Complete - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
+- **Sankat Mochan Hanumanashtak** 🚧 In Progress - 9 of 8 verses for removing obstacles
+- **Sundar Kaand** 🚧 In Progress - 6 verses from Ramcharitmanas describing Hanuman's journey to Lanka
+
+**Coming soon:**
+- Hanuman Stuti - Devotional hymns
+- Hanuman Kavacham - Protective armor of Hanuman
+- Hanuman Bahuk - Additional sacred verses
 
 This guide provides deep understanding of each verse with translations, meanings, stories from the Ramayana, and practical applications for modern life - all available in **English** and **हिन्दी (Hindi)**.
 
 ## Features
 
 ### 📖 Read & Study
-- **6 Sacred Collections** - Hanuman Chalisa, Sankat Mochan Hanumanashtak, Sundar Kaand, Hanuman Stuti, Hanuman Kavacham, Hanuman Bahuk
+- **3 Collections** - Hanuman Chalisa (complete), Sankat Mochan Hanumanashtak & Sundar Kaand (in progress)
 - **Original Devanagari text** and transliteration
 - **Word-by-word meanings** and literal translations
 - **Interpretive meanings** explaining spiritual depth
