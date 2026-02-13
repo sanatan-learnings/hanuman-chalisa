@@ -22,7 +22,7 @@
 ┌──────────────────────────────────────────────┐
 │           AI-GENERATED MEDIA ASSETS           │
 ├──────────────────────────────────────────────┤
-│  • images/ (47 PNG per theme) - verse-images│
+│  • images/ (43 PNG per theme) - verse-images│
 │  • audio/ (86 MP3 files) - verse-audio      │
 │  • embeddings/ - verse-embeddings           │
 └──────────────────┬───────────────────────────┘
@@ -401,7 +401,7 @@ Navigation:
 
 - **Hosting**: Free (GitHub Pages)
 - **Domain** (optional): $10-15/year
-- **Images**: $1.88 per theme (47 images × $0.040) via verse-images
+- **Images**: $1.72 per theme (43 images × $0.040) via verse-images
 - **Audio**: FREE (Eleven Labs free tier) via verse-audio
 - **Embeddings**: FREE (local HuggingFace) or $0.01 (OpenAI) via verse-embeddings
 - **Spiritual Guidance**: ~$0.01 per query (Cloudflare Worker proxy)

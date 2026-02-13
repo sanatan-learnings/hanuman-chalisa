@@ -2,6 +2,36 @@
 
 Documentation for the Hanuman GPT website (multi-collection sacred texts).
 
+## ⚡ Generate Complete Verse Content
+
+**One command** to create image + audio + embeddings for any verse:
+
+```bash
+# Install verse-content-sdk
+pip install verse-content-sdk
+
+# Generate everything for a verse (image, audio, embeddings)
+verse-generate \
+  --collection sundar-kaand \
+  --verse chaupai_05 \
+  --all \
+  --theme modern-minimalist
+
+# Output:
+#   ✓ Image: images/sundar-kaand/modern-minimalist/chaupai-05.png
+#   ✓ Audio: audio/sundar-kaand/chaupai_05_full.mp3 + chaupai_05_slow.mp3
+#   ✓ Embeddings: Updated automatically
+```
+
+**Or use the Claude Skill** for fully automated workflow:
+```
+/verse-generator Create chaupai_05 for sundar-kaand
+```
+
+See [Content Generation Guide](guides/content-generation.md) for complete documentation.
+
+---
+
 ## Structure
 
 ```
@@ -12,12 +42,12 @@ docs/
 │   └── cloudflare-worker-setup.md # API proxy deployment
 ├── reference/                   # Reference material
 │   ├── tech-stack.md            # Technical architecture
-│   ├── image-prompts.md         # Scene descriptions
 │   ├── background.md            # About Hanuman Chalisa
 │   ├── book-generation.md       # PDF/print book generation
 │   ├── spiritual-guidance.md    # RAG system
 │   └── multilingual.md          # Internationalization
-└── themes/                      # Image theme configurations
+├── themes/                      # Image theme configurations
+└── image-prompts/               # Scene descriptions for image generation
 ```
 
 ## Quick Start
@@ -44,10 +74,14 @@ verse-audio --collection hanuman-chalisa
 
 ### Commands
 
+- `verse-generate` - Orchestrate complete multimedia generation (images + audio) for verses
+- `verse-fetch-text` - Fetch traditional Devanagari text from authoritative web sources
 - `verse-embeddings` - Generate embeddings for semantic search (supports `--multi-collection`)
 - `verse-images` - Generate images using DALL-E 3
 - `verse-audio` - Generate audio using ElevenLabs
 - `verse-deploy` - Deploy Cloudflare Worker
+
+**Claude Skill**: Use `/verse-generator` for automated verse creation workflow.
 
 See [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) for full SDK documentation.
 
