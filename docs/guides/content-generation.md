@@ -36,9 +36,12 @@ hanuman-gpt/
 │   ├── default.html          # Main site layout
 │   └── verse.html            # Individual verse layout
 ├── _verses/                  # Multi-collection verse files
+│   ├── hanuman-bahuk/        # Hanuman Bahuk verses
 │   ├── hanuman-chalisa/      # 43 Chalisa verses
-│   ├── sundar-kaand/         # Sundar Kaand verses
-│   └── bajrang-baan/         # Future collection
+│   ├── hanuman-kavacham/     # Hanuman Kavacham verses
+│   ├── hanuman-stuti/        # Hanuman Stuti verses
+│   ├── sankat-mochan-hanumanashtak/  # Sankat Mochan Hanumanashtak verses
+│   └── sundar-kaand/         # Sundar Kaand verses
 ├── assets/
 │   ├── css/
 │   ├── js/
@@ -46,18 +49,31 @@ hanuman-gpt/
 │   │   └── guidance.js       # Multi-collection RAG system
 │   └── images/
 ├── audio/                    # Collection-specific audio
-│   └── hanuman-chalisa/      # 86 audio files (full + slow)
+│   ├── hanuman-chalisa/      # 86 audio files (full + slow)
+│   ├── sankat-mochan-hanumanashtak/  # Audio files
+│   └── sundar-kaand/         # Audio files
 ├── images/                   # Collection-specific images
-│   ├── hanuman-chalisa/      # Chalisa images (3 themes)
-│   └── sundar-kaand/         # Sundar Kaand images (1 theme)
+│   ├── hanuman-chalisa/      # Chalisa images (multiple themes)
+│   ├── modern-minimalist/    # Modern minimalist theme images
+│   ├── sankat-mochan-hanumanashtak/  # Theme images
+│   └── sundar-kaand/         # Theme images
 ├── data/
 │   └── embeddings.json       # Multi-collection embeddings (4.6MB)
+├── scripts/
+│   ├── README.md             # SDK command documentation
+│   └── requirements.txt      # Python dependencies (verse-content-sdk)
 ├── chalisa/                  # Chalisa-specific pages
 │   ├── index.html            # Chalisa landing page
 │   ├── full-chalisa.html     # Complete chalisa view
 │   └── book.html             # Book generator
 ├── sundar-kaand/             # Sundar Kaand pages
 │   └── index.html            # Sundar Kaand landing page
+├── hanuman-bahuk/            # Hanuman Bahuk pages
+├── hanuman-kavacham/         # Hanuman Kavacham pages
+├── hanuman-stuti/            # Hanuman Stuti pages
+├── sankat-mochan-hanumanashtak/  # Sankat Mochan pages
+├── bajrang-baan/             # Bajrang Baan pages
+├── workers/                  # Cloudflare Workers
 ├── index.html                # Multi-collection home page
 ├── guidance.html             # AI spiritual guidance (all collections)
 └── search.html               # Search (all collections)
@@ -144,8 +160,8 @@ pip install verse-content-sdk
 # Get API key from https://platform.openai.com/api-keys
 export OPENAI_API_KEY='your-key-here'
 
-# Generate all 47 images
-verse-images traditional-art --style "traditional Indian devotional art"
+# Generate images for a theme
+verse-images --theme-name traditional-art --style "traditional Indian devotional art"
 
 # See all options
 verse-images --help
@@ -154,20 +170,32 @@ verse-images --help
 ### Configuration Options
 
 ```bash
+# Basic usage with theme name (required)
+verse-images --theme-name my-theme
+
 # Quality (standard or hd)
-verse-images my-theme --quality hd
+verse-images --theme-name my-theme --quality hd
 
 # Size (1024x1024 or 1024x1792)
-verse-images my-theme --size 1024x1792
+verse-images --theme-name my-theme --size 1024x1792
 
 # Resume from specific image
-verse-images my-theme --resume verse-15.png
+verse-images --theme-name my-theme --start-from verse-15.png
+
+# Regenerate specific images
+verse-images --theme-name my-theme --regenerate verse-10.png,verse-25.png
+
+# Force regenerate ALL images (asks for confirmation)
+verse-images --theme-name my-theme --force
 ```
 
 ### Cost Estimate
 
-- **Standard quality**: ~$2 for 47 images ($0.040 per image)
-- **HD quality**: ~$4 for 47 images ($0.080 per image)
+Varies by collection. For Hanuman Chalisa (47 images):
+- **Standard quality**: ~$1.88 (47 × $0.040 per image)
+- **HD quality**: ~$3.76 (47 × $0.080 per image)
+
+Other collections will have different costs based on verse count.
 
 ### Adding Your Theme
 
@@ -214,7 +242,7 @@ pip install verse-content-sdk
 # Get API key from https://elevenlabs.io/app/settings/api-keys
 export ELEVENLABS_API_KEY='your-key-here'
 
-# Generate all 86 audio files (43 verses × 2 speeds)
+# Generate all audio files for a collection
 verse-audio
 
 # See all options
@@ -230,11 +258,11 @@ verse-audio --only doha_01_full.mp3
 # Regenerate specific files
 verse-audio --regenerate verse_10_full.mp3,verse_10_slow.mp3
 
-# Force regenerate ALL files
+# Force regenerate ALL files (asks for confirmation)
 verse-audio --force
 
 # Resume from specific file
-verse-audio --resume verse_15_full.mp3
+verse-audio --start-from verse_15_full.mp3
 
 # Use different voice
 verse-audio --voice-id YOUR_VOICE_ID
@@ -242,16 +270,19 @@ verse-audio --voice-id YOUR_VOICE_ID
 
 ### Cost Estimate
 
-- **Total cost**: ~$0.02 for 86 audio files
+Varies by collection. For Hanuman Chalisa:
+- **Total cost**: ~$0.02 for 86 audio files (43 verses × 2 speeds)
 - **Eleven Labs Free Tier**: 10,000 characters/month (sufficient for one-time generation)
 - **Model**: eleven_multilingual_v2 (supports Hindi/Sanskrit)
+
+Other collections will have different costs based on verse count.
 
 ### Audio Specifications
 
 - **Format**: MP3 (128kbps+)
 - **Full speed**: Natural recitation pace via Eleven Labs
 - **Slow speed**: 75% speed via ffmpeg atempo filter (25% slower)
-- **Total files**: 86 (43 verses × 2 speeds)
+- **Files per verse**: 2 (full speed + slow speed)
 
 ### Requirements
 
@@ -424,7 +455,7 @@ IMAGE_STYLE = "natural"  # or "vivid"
 
 Override via command-line options:
 ```bash
-verse-images my-theme --quality hd --size 1024x1792 --style vivid
+verse-images --theme-name my-theme --quality hd --size 1024x1792
 ```
 
 ## Contributing

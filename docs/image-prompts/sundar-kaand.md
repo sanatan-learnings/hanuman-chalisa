@@ -27,3 +27,10 @@ Lord Hanuman standing at the ocean shore in a respectful, humble posture with ha
 
 **Scene Description**:
 Hanuman kneeling in deep devotion, head bowed, hands in prayer mudra, before the luminous lotus feet of Lord Rama. Divine golden-white light radiates from above where Rama's feet are visible. Hanuman's orange-red form is surrounded by spiritual aura and sacred energy. Lotus petals fall from above. Om symbol glows in the background. Ethereal, mystical atmosphere with soft sacred geometry patterns. Emphasis on devotion and divine grace with dramatic spiritual lighting.
+
+---
+
+### Verse 4: Hanuman's Bold Declaration
+
+**Scene Description**:
+Mighty Hanuman standing confidently at the shore, his powerful orange-red form radiating divine energy, addressing the gathered vanaras (monkey warriors) with an inspiring gesture. Sugriva the vanara king and prophetic vision of Vibhishana in ethereal golden light stand among the crowd. Hanuman's posture shows both humility and unshakeable determination. The vast ocean stretches behind him under a dramatic sky. Sacred symbols and divine auras surround all figures. Luminous spiritual energy flows between them representing collective faith and blessing. Epic cinematic composition with volumetric light rays and mystical atmosphere.

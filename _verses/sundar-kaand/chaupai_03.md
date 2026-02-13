@@ -6,7 +6,7 @@ title_en: "Chaupai 3: Bowing to Lord Rama's Lotus Feet"
 title_hi: "चौपाई 3: प्रभु के चरण कमलों को प्रणाम"
 verse_number: 3
 previous_verse: "/sundar-kaand/chaupai_02"
-next_verse: null
+next_verse: "/sundar-kaand/chaupai_04"
 image: "/images/sundar-kaand/modern-minimalist/chaupai-03.png"
 
 devanagari: |
