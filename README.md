@@ -11,15 +11,19 @@ _May Lord Hanuman's blessings be with all who study and recite these sacred vers
 ## About
 
 A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Hanuman. Currently features:
-- **Hanuman Chalisa** - 40 verses (chaupais) by Goswami Tulsidas glorifying Lord Hanuman
+- **Hanuman Chalisa** - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
+- **Sankat Mochan Hanumanashtak** - 8 verses for removing obstacles
 - **Sundar Kaand** - Selected verses from Ramcharitmanas describing Hanuman's journey to Lanka
+- **Hanuman Stuti** - Devotional hymns
+- **Hanuman Kavacham** - Protective armor of Hanuman
+- **Hanuman Bahuk** - Additional sacred verses
 
 This guide provides deep understanding of each verse with translations, meanings, stories from the Ramayana, and practical applications for modern life - all available in **English** and **हिन्दी (Hindi)**.
 
 ## Features
 
 ### 📖 Read & Study
-- **Multiple collections** - Hanuman Chalisa (43 verses) + Sundar Kaand (3 verses)
+- **6 Sacred Collections** - Hanuman Chalisa, Sankat Mochan Hanumanashtak, Sundar Kaand, Hanuman Stuti, Hanuman Kavacham, Hanuman Bahuk
 - **Original Devanagari text** and transliteration
 - **Word-by-word meanings** and literal translations
 - **Interpretive meanings** explaining spiritual depth
@@ -65,35 +69,67 @@ Create personalized printable books:
 
 Want to contribute or generate custom themes?
 
-**→ See the [Developer Guide](docs/developer-guide.md)** for:
+**→ See the [Developer Guide](docs/guides/content-generation.md)** for:
 - Local development setup
-- Generating custom image themes with DALL-E 3 (~$2 for 47 images)
-- Generating audio files with Eleven Labs (~$0.02 for 86 files)
+- Generating custom image themes with DALL-E 3 (~$1.72 for 43 images)
+- Generating audio files with Eleven Labs (~$0.0002 for 86 files)
 - **Regenerating embeddings** for the RAG system (FREE, runs locally)
 - Project structure and architecture
 - Testing and deployment
 
 **→ See [CONTRIBUTING.md](CONTRIBUTING.md)** for contribution guidelines
 
-### Regenerating Embeddings
+### 🤖 Automated Verse Creation with Claude Code
 
-The spiritual guidance feature uses pre-computed embeddings. To regenerate them (e.g., when adding new collections or translations):
+For developers using [Claude Code](https://claude.ai/claude-code), use the `/verse-generator` slash command to automate the complete verse creation workflow:
+
+```
+/verse-generator Create chaupai_07 for sundar-kaand
+```
+
+**What it does:**
+- Creates verse markdown file with complete content
+- Generates AI image using DALL-E 3
+- Generates audio (full + slow speed) using ElevenLabs
+- Updates embeddings for search functionality
+- Updates navigation links between verses
+- Prepares git commit
+
+**Time savings:** 30-45 minutes per verse → 5-10 minutes
+
+See [Content Generation Guide](docs/guides/content-generation.md#automated-verse-creation-with-claude-skill) for details.
+
+### Quick Start: Generate Verse Content
 
 ```bash
-# Install verse-content-sdk (first time only)
+# Install verse-content-sdk
 pip install verse-content-sdk
 
-# Generate embeddings for all enabled collections
+# Generate complete content for a single verse (image + audio + embeddings)
+verse-generate --collection sundar-kaand --verse 5 --all --theme modern-minimalist --update-embeddings
+```
+
+**What it generates:**
+- Image: `images/sundar-kaand/modern-minimalist/chaupai-05.png`
+- Audio: `audio/sundar-kaand/chaupai_05_full.mp3` + `chaupai_05_slow.mp3`
+- Embeddings: Updated automatically
+
+**Cost:** ~$0.04 per verse (DALL-E 3 + ElevenLabs + embeddings)
+
+### Regenerating Embeddings
+
+The spiritual guidance feature uses pre-computed embeddings. To regenerate them for all collections:
+
+```bash
 verse-embeddings --multi-collection \
   --collections-file _data/collections.yml \
   --verses-dir _verses \
-  --output data/embeddings.json \
-  --language en hi
+  --output data/embeddings.json
 
 # Output: data/embeddings.json (~4.6MB with all collections)
 ```
 
-**Cost:** Requires OpenAI API key (~$0.01 per collection)
+**Cost:** ~$0.01 total (OpenAI API)
 
 ## Documentation
 
