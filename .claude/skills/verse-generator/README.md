@@ -4,19 +4,19 @@ A Claude Skill that automates the complete workflow for creating verses with mul
 
 ## Installation
 
-This skill is located in the project at `skills/verse-generator/`
+This skill is located in the project at `.claude/skills/verse-generator/`
 
 To make it available as a slash command, create a symlink:
 
 ```bash
 mkdir -p ~/.claude/skills
-ln -s /Users/arungupta/workspaces/hanuman-gpt/skills/verse-generator ~/.claude/skills/verse-generator
+ln -s "$(pwd)/.claude/skills/verse-generator" ~/.claude/skills/verse-generator
 ```
 
 Or copy it to the global skills directory:
 
 ```bash
-cp -r skills/verse-generator ~/.claude/skills/
+cp -r .claude/skills/verse-generator ~/.claude/skills/
 ```
 
 ## Usage

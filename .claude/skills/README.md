@@ -25,29 +25,27 @@ To use these skills as slash commands in Claude Code, you need to link or copy t
 ```bash
 # Create symlinks (recommended - stays in sync with project)
 mkdir -p ~/.claude/skills
-ln -s "$(pwd)/skills/verse-generator" ~/.claude/skills/verse-generator
+ln -s "$(pwd)/.claude/skills/verse-generator" ~/.claude/skills/verse-generator
 
 # Or copy (one-time install)
-cp -r skills/verse-generator ~/.claude/skills/
+cp -r .claude/skills/verse-generator ~/.claude/skills/
 ```
 
 ## Creating New Skills
 
 To create a new skill:
 
-1. Create a directory under `skills/` with your skill name
-2. Add three required files:
-   - `skill.json` - Metadata (name, version, description, entrypoint)
-   - `instructions.md` - Workflow instructions for Claude
-   - `README.md` - User documentation
+1. Create a directory under `.claude/skills/` with your skill name
+2. Add required files:
+   - `SKILL.md` - Markdown file with YAML frontmatter (name, description, instructions)
+   - `README.md` - User documentation (optional)
 
 Example structure:
 ```
-skills/
+.claude/skills/
 └── my-skill/
-    ├── skill.json
-    ├── instructions.md
-    └── README.md
+    ├── SKILL.md      # Required: YAML frontmatter + markdown instructions
+    └── README.md     # Optional: documentation
 ```
 
 See [verse-generator](verse-generator/) as a reference implementation.
