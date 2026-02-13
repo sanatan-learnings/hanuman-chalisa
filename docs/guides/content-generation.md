@@ -166,13 +166,13 @@ Enable the skill by creating a symlink:
 
 ```bash
 mkdir -p ~/.claude/skills
-ln -s "$(pwd)/skills/verse-generator" ~/.claude/skills/verse-generator
+ln -s "$(pwd)/.claude/skills/verse-generator" ~/.claude/skills/verse-generator
 ```
 
 Or copy it to your global skills directory:
 
 ```bash
-cp -r skills/verse-generator ~/.claude/skills/
+cp -r .claude/skills/verse-generator ~/.claude/skills/
 ```
 
 ### Usage
@@ -275,7 +275,7 @@ cat docs/image-prompts/sundar-kaand.md
 
 ### Documentation
 
-- Skill documentation: [skills/verse-generator/README.md](../../skills/verse-generator/README.md)
+- Skill documentation: [.claude/skills/verse-generator/README.md](../../.claude/skills/verse-generator/README.md)
 - SDK commands: [scripts/README.md](../../scripts/README.md)
 - verse-content-sdk: [GitHub](https://github.com/sanatan-learnings/verse-content-sdk)
 
