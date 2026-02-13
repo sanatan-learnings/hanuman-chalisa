@@ -6,7 +6,7 @@ title_en: "Chaupai 4: Hanuman's Bold Declaration"
 title_hi: "चौपाई 4: हनुमान का साहसिक घोषणा"
 verse_number: 4
 previous_verse: "/sundar-kaand/chaupai_03"
-next_verse: null
+next_verse: "/sundar-kaand/chaupai_05"
 image: "/images/sundar-kaand/modern-minimalist/chaupai-04.png"
 
 devanagari: |

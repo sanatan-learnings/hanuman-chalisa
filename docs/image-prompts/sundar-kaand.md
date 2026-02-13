@@ -34,3 +34,10 @@ Hanuman kneeling in deep devotion, head bowed, hands in prayer mudra, before the
 
 **Scene Description**:
 Mighty Hanuman standing confidently at the shore, his powerful orange-red form radiating divine energy, addressing the gathered vanaras (monkey warriors) with an inspiring gesture. Sugriva the vanara king and prophetic vision of Vibhishana in ethereal golden light stand among the crowd. Hanuman's posture shows both humility and unshakeable determination. The vast ocean stretches behind him under a dramatic sky. Sacred symbols and divine auras surround all figures. Luminous spiritual energy flows between them representing collective faith and blessing. Epic cinematic composition with volumetric light rays and mystical atmosphere.
+
+---
+
+### Verse 5: Hanuman's Playful Leap to Mount Mahendra
+
+**Scene Description**:
+Hanuman in mid-leap, his powerful orange-red form joyfully bounding onto the summit of Mount Mahendra (Mahendra Parvat), a majestic mountain rising from the ocean shore. His expression radiates childlike joy and playful confidence (kautuk). The beautiful mountain has lush vegetation and sacred atmosphere. The vast blue ocean stretches endlessly in the background under dramatic sky with golden-orange sunset rays. Hanuman's posture is dynamic and graceful, showing effortless power. Divine golden energy trails follow his movement. Sacred geometry patterns shimmer in the air. The scene captures both the playfulness and the gathering of cosmic energy for his impending great leap. Cinematic composition with dramatic lighting emphasizing the epic scale - tiny shore below, massive mountain, infinite ocean beyond.
