@@ -6,7 +6,7 @@ title_en: "Chaupai 5: Hanuman's Playful Leap to Mount Mahendra"
 title_hi: "चौपाई 5: हनुमान की कौतुकपूर्ण छलांग महेंद्र पर्वत पर"
 verse_number: 5
 previous_verse: "/sundar-kaand/chaupai_04"
-next_verse: null
+next_verse: "/sundar-kaand/chaupai_06"
 image: "/images/sundar-kaand/modern-minimalist/chaupai-05.png"
 
 devanagari: |

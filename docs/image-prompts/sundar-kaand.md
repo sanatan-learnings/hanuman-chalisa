@@ -41,3 +41,10 @@ Mighty Hanuman standing confidently at the shore, his powerful orange-red form r
 
 **Scene Description**:
 Hanuman in mid-leap, his powerful orange-red form joyfully bounding onto the summit of Mount Mahendra (Mahendra Parvat), a majestic mountain rising from the ocean shore. His expression radiates childlike joy and playful confidence (kautuk). The beautiful mountain has lush vegetation and sacred atmosphere. The vast blue ocean stretches endlessly in the background under dramatic sky with golden-orange sunset rays. Hanuman's posture is dynamic and graceful, showing effortless power. Divine golden energy trails follow his movement. Sacred geometry patterns shimmer in the air. The scene captures both the playfulness and the gathering of cosmic energy for his impending great leap. Cinematic composition with dramatic lighting emphasizing the epic scale - tiny shore below, massive mountain, infinite ocean beyond.
+
+---
+
+### Verse 6: Hanuman's Divine Strength and Wisdom
+
+**Scene Description**:
+Majestic Hanuman standing powerfully atop Mount Mahendra, his muscular orange-red form radiating both immense physical strength and profound spiritual wisdom. His posture embodies perfect balance - powerful warrior stance with contemplative, serene expression. Divine wind energy (representing his father Vayu) swirls around him in visible golden-white currents. His aura shows multiple layers: outer aura of raw power (wind-like currents), middle aura of luminous intelligence (geometric patterns and sacred yantra symbols), inner aura of pure wisdom (soft golden light with Om symbols). Third eye subtly glowing indicating heightened consciousness. Ancient Sanskrit shlokas and mathematical/astronomical symbols float ethereally around him representing knowledge (vigyana). Background shows the vast ocean and distant Lanka, with storm clouds gathering but Hanuman calm and centered. Sacred books and weapons both present around him symbolizing the union of wisdom and strength. Epic cinematic composition emphasizing his complete divine nature - both Maruti (son of wind) and Buddhimaan (possessor of supreme intelligence).
