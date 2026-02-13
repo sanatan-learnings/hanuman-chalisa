@@ -53,10 +53,15 @@ hanuman-gpt/
 │   ├── sankat-mochan-hanumanashtak/  # Audio files
 │   └── sundar-kaand/         # Audio files
 ├── images/                   # Collection-specific images
-│   ├── hanuman-chalisa/      # Chalisa images (multiple themes)
-│   ├── modern-minimalist/    # Modern minimalist theme images
-│   ├── sankat-mochan-hanumanashtak/  # Theme images
-│   └── sundar-kaand/         # Theme images
+│   ├── hanuman-chalisa/      # Hanuman Chalisa images
+│   │   ├── modern-minimalist/
+│   │   ├── traditional/
+│   │   └── kids-friendly/
+│   ├── modern-minimalist/    # Legacy: Chalisa images (root level)
+│   ├── sankat-mochan-hanumanashtak/
+│   │   └── modern-minimalist/
+│   └── sundar-kaand/
+│       └── modern-minimalist/
 ├── data/
 │   └── embeddings.json       # Multi-collection embeddings (4.6MB)
 ├── scripts/
