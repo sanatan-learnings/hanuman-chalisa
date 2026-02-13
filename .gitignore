@@ -10,8 +10,9 @@
 .AppleDouble
 .LSOverride
 
-# Claude
+# Claude (ignore all except skills)
 .claude/
+!.claude/skills/
 
 # Jekyll build artifacts
 _site/

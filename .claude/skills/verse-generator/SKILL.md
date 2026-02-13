@@ -70,7 +70,8 @@ Ask the user for:
 Try to fetch traditional Devanagari text from authoritative online sources:
 
 ```bash
-./venv/bin/python3 scripts/fetch-verse-text.py \
+set -a && source .env && set +a && \
+/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-fetch-text \
   --collection sundar-kaand \
   --verse chaupai_06 \
   --format json

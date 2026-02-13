@@ -10,10 +10,6 @@
 # Install from GitHub:
 git+https://github.com/sanatan-learnings/verse-content-sdk.git
 
-# Additional dependencies for verse text fetching
-beautifulsoup4>=4.12.0  # For web scraping verse text from authoritative sources
-requests>=2.31.0        # For HTTP requests (also included in SDK)
-
 # Note: The SDK includes all necessary dependencies:
 # - openai (for DALL-E 3, embeddings, GPT)
 # - elevenlabs (for text-to-speech)
@@ -23,3 +19,4 @@ requests>=2.31.0        # For HTTP requests (also included in SDK)
 # - PyYAML (for theme configuration)
 # - sentence-transformers (for local embeddings)
 # - torch (for local models)
+# - beautifulsoup4 (for fetching verse text from web sources)
