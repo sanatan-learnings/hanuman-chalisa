@@ -1,7 +1,0 @@
-{
-  "name": "verse-generator",
-  "version": "1.0.0",
-  "description": "Generate complete verse content with multimedia (image, audio, embeddings) using verse-content-sdk",
-  "author": "Arun Gupta",
-  "entrypoint": "instructions.md"
-}
