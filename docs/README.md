@@ -52,23 +52,26 @@ docs/
 
 ## Quick Start
 
-### Generate Content
+### Generate Single Verse (Recommended)
 
 ```bash
-# Install verse-content-sdk (one-time)
-pip install verse-content-sdk
+# Generate complete content for one verse (image + audio + embeddings)
+verse-generate --collection sundar-kaand --verse chaupai_05 --all --theme modern-minimalist
+```
 
+### Batch Operations
+
+```bash
 # Generate embeddings for all collections
 verse-embeddings --multi-collection \
   --collections-file _data/collections.yml \
   --verses-dir _verses \
-  --output data/embeddings.json \
-  --language en hi
+  --output data/embeddings.json
 
-# Generate images for a specific collection/theme
-verse-images --collection hanuman-chalisa --theme-name modern-minimalist
+# Generate all images for a collection/theme
+verse-images --collection hanuman-chalisa --theme modern-minimalist
 
-# Generate audio (Hanuman Chalisa only currently)
+# Generate all audio for a collection
 verse-audio --collection hanuman-chalisa
 ```
 
