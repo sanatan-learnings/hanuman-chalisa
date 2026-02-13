@@ -55,7 +55,7 @@ Ask the user for:
 1. **Collection** (e.g., sundar-kaand, hanuman-chalisa, sankat-mochan-hanumanashtak)
 2. **Verse identifier** (e.g., chaupai_05, verse_44, doha_02)
 3. **Verse content**:
-   - Devanagari text (required)
+   - Devanagari text (required - can try to fetch from authoritative sources)
    - English title (required)
    - Hindi title (required)
    - Transliteration (optional - offer to create it)
@@ -64,6 +64,21 @@ Ask the user for:
    - Interpretive meaning (optional - offer to write it)
    - Story context (optional - offer to research it)
    - Practical applications (optional - offer to write it)
+
+#### Option A: Fetch Devanagari Text Automatically (Experimental)
+
+Try to fetch traditional Devanagari text from authoritative online sources:
+
+```bash
+./venv/bin/python3 scripts/fetch-verse-text.py \
+  --collection sundar-kaand \
+  --verse chaupai_06 \
+  --format json
+```
+
+If successful, use the fetched text. If not, ask user to provide it.
+
+#### Option B: User Provides Text
 
 If minimal information provided, offer AI assistance to research and draft complete content based on traditional interpretations.
 
