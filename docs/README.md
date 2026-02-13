@@ -10,11 +10,10 @@ Documentation for the Hanuman GPT website (multi-collection sacred texts).
 # Install verse-content-sdk
 pip install verse-content-sdk
 
-# Generate everything for a verse (image, audio, embeddings)
+# Generate everything for a verse (verse ID auto-detected)
 verse-generate \
   --collection sundar-kaand \
   --verse 5 \
-  --verse-id chaupai_05 \
   --all \
   --theme modern-minimalist
 
@@ -56,8 +55,8 @@ docs/
 ### Generate Single Verse (Recommended)
 
 ```bash
-# Generate complete content for one verse (image + audio + embeddings)
-verse-generate --collection sundar-kaand --verse 5 --verse-id chaupai_05 --all --theme modern-minimalist
+# Generate complete content for one verse (verse ID auto-detected from existing files)
+verse-generate --collection sundar-kaand --verse 5 --all --theme modern-minimalist
 ```
 
 ### Batch Operations
