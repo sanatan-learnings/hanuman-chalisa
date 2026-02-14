@@ -120,20 +120,13 @@ verse-generate --collection sundar-kaand --verse 5 --all --theme modern-minimali
 
 **Cost:** ~$0.04 per verse (DALL-E 3 + ElevenLabs + embeddings)
 
-### Regenerating Embeddings
-
-The spiritual guidance feature uses pre-computed embeddings. To regenerate them for all collections:
-
+**Bulk regenerate embeddings** (only if you've manually edited multiple verses):
 ```bash
 verse-embeddings --multi-collection \
   --collections-file _data/collections.yml \
   --verses-dir _verses \
   --output data/embeddings.json
-
-# Output: data/embeddings.json (~4.6MB with all collections)
 ```
-
-**Cost:** ~$0.01 total (OpenAI API)
 
 ## Documentation
 
