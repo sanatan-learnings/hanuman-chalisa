@@ -9,11 +9,7 @@ previous_verse: /sundar-kaand/chaupai_03
 next_verse: /sundar-kaand/chaupai_05
 image: /images/sundar-kaand/modern-minimalist/chaupai-04.png
 devanagari: यह कहि नाइ सबन्हि कहुँ माथा। चलेउ हरषि हियँ धरि रघुनाथा॥
-transliteration: 'Tab lagi mohi parikhehau tumha bhai
-
-  Sahit Vibhishana Sugriva samai
-
-  '
+transliteration: Yaha kahi nāi sabanhi kahuṁ māthā. Chaleu harṣi hiyaṁ dhari raghunāthā.
 phonetic_notes:
 - word: परिखेहु
   phonetic: pa-ri-khe-hu
@@ -131,4 +127,27 @@ practical_application:
       यह विशेष रूप से शक्तिशाली है जब आपको साहसिक कार्रवाई करने के लिए साहस की आवश्यकता
       हो और आप अपने प्रियजनों को आश्वस्त करना चाहते हों कि आप सफल होंगे और सुरक्षित
       वापस लौटेंगे।
+meaning: 'This verse is from the Sundar-Kaand, a chapter in the Ramayana, an ancient
+  Indian epic. The speaker is Hanuman, the monkey god and devotee of Lord Rama. Hanuman
+  is preparing to embark on a mission to find Sita, Rama''s wife, who has been kidnapped
+  by the demon king Ravana. Before he leaves, he addresses his fellow monkeys and
+  expresses his devotion to Rama.
+
+  The verse is significant because it demonstrates Hanuman''s deep devotion and loyalty
+  to Rama. Even as he prepares for a dangerous mission, Hanuman''s heart is filled
+  with joy because he is serving his lord. His bowing to all with his head signifies
+  his humility and respect for his peers, despite his own divine status. The verse
+  also underscores the importance of duty and selfless service in Hinduism.'
+translation:
+  en: Saying this, I bow to all with my head. Holding joy in my heart, I go forth,
+    carrying Lord Rama.
 ---
+
+
+## Story & Context
+
+
+
+## Practical Applications
+
+1. Cultivate Humility: Despite his divine status and strength, Hanuman shows humility by bowing to his peers. This teaches us the importance of humility in our daily interactions, regardless of our status or achievements.
