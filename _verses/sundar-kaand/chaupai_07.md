@@ -9,11 +9,7 @@ previous_verse: /sundar-kaand/chaupai_06
 next_verse: /sundar-kaand/chaupai_08
 image: /images/sundar-kaand/modern-minimalist/chaupai-07.png
 devanagari: जेहिं गिरि चरन देइ हनुमंता। चलेउ सो गा पाताल तुरंता॥
-transliteration: 'So saba bhanti mora priya dasa
-
-  Sura gana jahin jahan inha vasa
-
-  '
+transliteration: Jehi giri carana de'i hanumāntā. Chaleu so gā pātāla turaṃtā.
 phonetic_notes:
 - word: भाँति
   phonetic: bhaan-ti
@@ -194,4 +190,37 @@ practical_application:
       परमात्मा के करीब होने से स्वाभाविक रूप से आता है। अंत में, जब आपको जीवन के सभी
       पहलुओं में पूर्ण, अटूट समर्पण के लिए प्रेरणा की आवश्यकता हो तो इसका पाठ करें,
       हनुमान के 'हर तरह से' समर्पित होने के उदाहरण का अनुसरण करते हुए।
+meaning: 'Jehi - The one (who)
+
+  Giri - Mountain
+
+  Carana - Foot
+
+  De''i - Gives
+
+  Hanumāntā - Hanuman
+
+  Chaleu - Goes
+
+  So - That
+
+  Gā - Cow
+
+  Pātāla - Underworld
+
+  Turaṃtā - Immediately'
+translation:
+  en: The mountain that Hanuman steps on, that cow immediately goes to the underworld.
 ---
+
+
+## Story & Context
+
+This verse is from the Sundar Kaand, a section of the Ramayana, an ancient Indian epic. The context of this verse is the part where Hanuman, the monkey god, is on a mission to find Sita, the wife of Lord Rama, who has been kidnapped by the demon king Ravana. Hanuman has to cross the ocean to reach Lanka, where Sita is held captive.
+In this verse, the mountain is metaphorically referred to as a cow. The verse illustrates the immense strength and speed of Hanuman. When he steps on a mountain (or takes a leap from it), it is said to sink into the underworld, indicating the force of his leap. The verse is a poetic way of expressing Hanuman's extraordinary power and the urgency of his mission.
+
+## Practical Applications
+
+1. The verse can inspire us to act with determination and urgency when faced with important tasks or challenges. Just as Hanuman didn't hesitate or delay in his mission, we should also strive to act promptly and decisively.
+2. The verse also highlights the power of devotion. Hanuman's strength and abilities were fueled by his unwavering devotion to Lord Rama. This can remind us of the potential of faith and devotion in our lives.
+3. Lastly, the verse can serve as a reminder of our potential to overcome obstacles. Just as Hanuman was able to leap across the ocean and make mountains sink, we too can overcome the challenges in our lives with determination, faith, and the right effort.
