@@ -153,18 +153,21 @@ practical_application:
       को दूर करने और अटल विश्वास के साथ एक कठिन कार्य करने की आवश्यकता हो।
 
       '
-meaning: Jaba (when), lagi (as long as), āvauṁ (I come), sītahi (to Sita), dekhī (see).
-  Hoihi (will be), kāju (task), mohi (my), harṣa (joy), biseṣī (special).
+meaning: Jaba (When), lagi (until), āvauṁ (I come), sītahi (to Sita), dekhī (and see).
+  Hoihi (will be accomplished), kāju (task), mohi (my), harṣa (joy), biseṣī (special).
 translation:
-  en: As long as I come and see Sita, my task will be accomplished with special joy.
+  en: Until the time I come and see Sita, my task will not be accomplished. My joy
+    will be special.
 ---
 
 
 ## Story & Context
 
-This verse is from the Sundar Kanda of the Ramayana, a Hindu epic. The Sundar Kanda is the fifth book and it primarily deals with Hanuman's heroic journey to Lanka to find Sita, who has been abducted by the demon king Ravana.
-In this particular verse, Hanuman is expressing his determination and hope. He is saying that as long as he can find and see Sita, his task (given by Lord Rama) will be accomplished with special joy. This reflects Hanuman's unwavering devotion to Lord Rama and Sita, and his commitment to his duty. It also signifies the joy and satisfaction one experiences when they successfully complete a task or duty, especially one that is done for the benefit of others or for a higher purpose.
+This verse is from the Sundar-Kaand, the fifth book in the Hindu epic, the Ramayana. The verse is spoken by Hanuman, the devoted servant of Lord Rama, who has been sent on a mission to find Rama's wife, Sita, who has been abducted by the demon king Ravana. Hanuman is expressing his determination to find Sita and his anticipation of the joy he will feel once he has accomplished his task.
+The Sundar-Kaand is considered one of the most important sections of the Ramayana because it symbolizes the power of devotion and the strength of determination. Hanuman's unwavering commitment to his task and his deep devotion to Rama are highlighted in this verse. The verse also underscores the theme of duty and responsibility that runs throughout the Ramayana. Hanuman is not just undertaking this task out of loyalty to Rama, but also because he understands it is his dharma, or moral duty.
 
 ## Practical Applications
 
-1. Dedication to Duty: This verse teaches us the importance of dedication to our duties. Just like Hanuman, we should be committed to our responsibilities, whether they are towards our family, work, or society.
+
+
+

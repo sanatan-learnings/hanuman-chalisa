@@ -43,112 +43,75 @@ Generate multimedia for existing verse:
 
 Before using this skill, verify:
 - ✅ Working in hanuman-gpt project directory
-- ✅ sanatan-sdk installed in venv (`./venv/bin/pip install sanatan-sdk`)
+- ✅ **sanatan-sdk 0.8.3+** installed in venv (`./venv/bin/pip install --upgrade sanatan-sdk`)
 - ✅ verse-* commands available: `./venv/bin/verse-generate`, `./venv/bin/verse-embeddings`, etc.
 - ✅ `.env` file exists with API keys: `OPENAI_API_KEY` and `ELEVENLABS_API_KEY`
 - ✅ Collection is enabled in `_data/collections.yml`
+- ✅ Canonical verse text exists in `data/verses/<collection>.yml` (required for --regenerate-content)
 
 ## Complete Workflow
 
-### Step 1: Gather Verse Information
+**IMPORTANT**: SDK 0.8.3+ can automatically generate ALL content from canonical YAML sources. Use `--regenerate-content` flag!
 
-Ask the user for:
+### Step 1: Verify Canonical Source
+
+Check if canonical verse text exists:
 1. **Collection** (e.g., sundar-kaand, hanuman-chalisa, sankat-mochan-hanumanashtak)
 2. **Verse identifier** (e.g., chaupai_05, verse_44, doha_02)
-3. **Verse content**:
-   - Devanagari text (required - can try to fetch from authoritative sources)
-   - English title (required)
-   - Hindi title (required)
-   - Transliteration (optional - offer to create it)
-   - Word meanings (optional - offer to research it)
-   - Literal translation (optional - offer to create it)
-   - Interpretive meaning (optional - offer to write it)
-   - Story context (optional - offer to research it)
-   - Practical applications (optional - offer to write it)
+3. **Canonical YAML**: Verify verse exists in `data/verses/<collection>.yml`
 
-#### Option A: Fetch Devanagari Text Automatically (Experimental)
+If canonical source exists (e.g., `data/verses/sundar-kaand.yml`), the SDK will:
+- ✅ Read Devanagari text from canonical YAML
+- ✅ Auto-generate transliteration
+- ✅ Auto-generate word meanings (English & Hindi)
+- ✅ Auto-generate literal translation
+- ✅ Auto-generate interpretive meaning
+- ✅ Auto-generate story context
+- ✅ Auto-generate practical applications
 
-Try to fetch traditional Devanagari text from authoritative online sources:
+**No manual content creation needed!** The SDK uses AI to generate everything from the canonical Devanagari text.
+
+### Step 2: Generate Complete Verse with SDK (SDK 0.8.3+)
+
+Use `verse-generate` with `--regenerate-content` to auto-generate everything:
 
 ```bash
 set -a && source .env && set +a && \
-./venv/bin/verse-fetch-text \
+./venv/bin/verse-generate \
+  --collection <collection> \
+  --verse <verse_number> \
+  --verse-id <verse_id> \
+  --regenerate-content \
+  --all
+
+# Example: Generate chaupai_03 for sundar-kaand
+set -a && source .env && set +a && \
+./venv/bin/verse-generate \
   --collection sundar-kaand \
-  --verse chaupai_06 \
-  --format json
+  --verse 3 \
+  --verse-id chaupai_03 \
+  --regenerate-content \
+  --all
 ```
 
-If successful, use the fetched text. If not, ask user to provide it.
+**What this does:**
+1. ✅ Reads Devanagari from `data/verses/sundar-kaand.yml` → `chaupai_03`
+2. ✅ Generates transliteration, word meanings, translations, story, practical applications using AI
+3. ✅ Creates/updates `_verses/<collection>/<verse_id>.md` with all content
+4. ✅ Generates image using DALL-E 3 (from scene description in `docs/image-prompts/<collection>.md`)
+5. ✅ Generates audio pronunciations (full + slow speed)
+6. ✅ Updates embeddings for semantic search
 
-#### Option B: User Provides Text
+**Parameters:**
+- `--verse <N>`: Verse number (e.g., 3 for chaupai_03)
+- `--verse-id <ID>`: Verse identifier (e.g., chaupai_03, verse_05, doha_01)
+- `--regenerate-content`: Generate AI content from canonical YAML
+- `--all`: Generate both image and audio
+- `--theme modern-minimalist`: Theme for image generation (optional, defaults to modern-minimalist)
 
-If minimal information provided, offer AI assistance to research and draft complete content based on traditional interpretations.
+### Step 3: Verify Scene Description Exists
 
-### Step 2: Create Verse File
-
-Create verse markdown at `_verses/<collection>/<verse_id>.md`:
-
-```yaml
----
-layout: verse
-collection_key: "<collection>"
-permalink: /<collection>/<verse_id>/
-title_en: "<English Title>"
-title_hi: "<Hindi Title>"
-verse_number: <number>
-previous_verse: "/<collection>/<previous_id>"
-next_verse: null
-image: "/images/<collection>/modern-minimalist/<verse_id>.png"
-
-devanagari: |
-  <Devanagari text>
-
-transliteration: |
-  <Transliteration>
-
-phonetic_notes:
-  - word: "<word>"
-    phonetic: "<phonetic>"
-    emphasis: "<emphasis>"
-
-word_meanings:
-  - word: "<word>"
-    roman: "<roman>"
-    meaning:
-      en: "<English meaning>"
-      hi: "<Hindi meaning>"
-
-literal_translation:
-  en: "<English literal translation>"
-  hi: "<Hindi literal translation>"
-
-interpretive_meaning:
-  en: "<Interpretive meaning>"
-  hi: "<Interpretive meaning in Hindi>"
-
-story:
-  en: "<Story context>"
-  hi: "<Story context in Hindi>"
-
-practical_application:
-  teaching:
-    en: "<Teaching>"
-    hi: "<Teaching in Hindi>"
-  when_to_use:
-    en: "<When to use>"
-    hi: "<When to use in Hindi>"
----
-```
-
-### Step 3: Update Previous Verse Navigation
-
-If not the first verse:
-1. Read the previous verse file
-2. Update its `next_verse` field to point to this new verse
-
-### Step 4: Add Scene Description
-
-Add scene description to `docs/image-prompts/<collection>.md`:
+**Before running verse-generate**, ensure scene description exists in `docs/image-prompts/<collection>.md`:
 
 ```markdown
 ---
@@ -159,82 +122,24 @@ Add scene description to `docs/image-prompts/<collection>.md`:
 <Detailed scene with characters, setting, lighting, sacred symbols, emotional tone, spiritual energy, artistic style>
 ```
 
-Follow existing scene descriptions in the file for style and detail level.
+Follow existing scene descriptions in the file for style and detail level. The SDK will use this to generate the image.
 
-### Step 5: Generate Multimedia with verse-generate
+### Step 4: Update Previous Verse Navigation (Manual)
 
-Run the verse-generate command (use verse NUMBER, not ID):
+If not the first verse:
+1. Read the previous verse file
+2. Update its `next_verse` field to point to this new verse
 
-```bash
-set -a && source .env && set +a && \
-./venv/bin/verse-generate \
-  --collection <collection> \
-  --verse <verse_number> \
-  --all \
-  --theme modern-minimalist
+### Step 5: Verify Generated Files
 
-# Example: for chaupai_07, use --verse 7
-./venv/bin/verse-generate \
-  --collection sundar-kaand \
-  --verse 7 \
-  --all \
-  --theme modern-minimalist
-```
-
-**Important**: The `--verse` argument expects a NUMBER (e.g., `7`), not the verse ID (e.g., `chaupai_07`).
-
-This generates:
-- Image: `images/<collection>/modern-minimalist/verse-NN.png` (rename to match convention)
-- Audio: May fail if naming doesn't match - generate manually with `verse-audio --collection <collection> --verse <verse_id>`
-
-### Step 6: Verify & Fix Naming Issues
-
-**Common issues:**
-
-1. **Image naming mismatch**: verse-generate creates `verse-NN.png` but you may need `chaupai-NN.png`
-   ```bash
-   mv images/<collection>/modern-minimalist/verse-07.png images/<collection>/modern-minimalist/chaupai-07.png
-   ```
-
-2. **Audio generation fails**: If verse-generate can't find the verse file, generate audio manually:
-   ```bash
-   set -a && source .env && set +a && \
-   ./venv/bin/verse-audio --collection <collection> --verse <verse_id>
-
-   # Example:
-   ./venv/bin/verse-audio --collection sundar-kaand --verse chaupai_07
-   ```
-
-**Common naming patterns:**
-- Sundar Kaand: `chaupai-01.png`, `chaupai_01_full.mp3`
-- Hanuman Chalisa: `verse-01.png`, `verse_01_full.mp3`
-- Opening verses: `doha_01.png`, `doha_01_full.mp3`
-
-### Step 7: Regenerate Embeddings
-
-Update embeddings for search:
-
-```bash
-set -a && source .env && set +a && \
-./venv/bin/verse-embeddings \
-  --multi-collection \
-  --collections-file _data/collections.yml \
-  --verses-dir _verses \
-  --output data/embeddings.json
-```
-
-### Step 8: Verify Generated Files
-
-List and verify all files:
-- ✅ Verse file: `_verses/<collection>/<verse_id>.md`
-- ✅ Image: `images/<collection>/modern-minimalist/<verse_id>.png` (~2-4 MB)
-- ✅ Audio full: `audio/<collection>/<verse_id>_full.mp3` (~50-70 KB)
-- ✅ Audio slow: `audio/<collection>/<verse_id>_slow.mp3` (~40-50 KB)
+List and verify all files generated by SDK:
+- ✅ Verse file: `_verses/<collection>/<verse_id>.md` (with AI-generated content)
+- ✅ Image: `images/<collection>/modern-minimalist/verse-NN.png` (~2-4 MB)
 - ✅ Embeddings: `data/embeddings.json` (updated)
-- ✅ Scene prompts: `docs/image-prompts/<collection>.md` (updated)
-- ✅ Previous verse: Updated with next_verse link
 
-### Step 9: Test & Commit
+**Note**: Audio generation may fail due to naming issues in SDK 0.8.3. If audio is missing, it can be generated later.
+
+### Step 6: Test & Commit
 
 Suggest testing locally:
 ```bash
@@ -249,56 +154,74 @@ Ask if user wants to commit. If yes:
 4. Commit with Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 5. Optionally push to remote
 
-## Cost Per Verse
+## Cost Per Verse (SDK 0.8.3+)
 
+- **AI Content Generation**: ~$0.01-0.02 (GPT-4 for transliteration, meanings, translations, story, practical applications)
 - **Image (standard)**: ~$0.04 (DALL-E 3)
 - **Image (HD)**: ~$0.08 (DALL-E 3, if using --quality hd)
 - **Audio (2 files)**: ~$0.0002 (ElevenLabs TTS)
 - **Embeddings**: ~$0.00003 (OpenAI text-embedding-3-small)
-- **Total**: ~$0.04 per verse (standard quality)
+- **Total**: ~$0.05-0.06 per verse (standard quality with AI content generation)
 
 ## Error Handling
 
+**--regenerate-content fails:**
+- Ensure sanatan-sdk 0.8.3+ is installed
+- Verify canonical YAML exists: `data/verses/<collection>.yml`
+- Check verse ID exists in canonical YAML (e.g., `chaupai_03`)
+- Verify OPENAI_API_KEY in .env for AI content generation
+
 **verse-generate fails:**
-- Verify API keys in .env
-- Check scene description exists in image-prompts file
+- Verify API keys in .env (OPENAI_API_KEY, ELEVENLABS_API_KEY)
+- Check scene description exists in `docs/image-prompts/<collection>.md`
 - Verify theme configuration exists at `docs/themes/<collection>/modern-minimalist.yml`
 - Check collection enabled in `_data/collections.yml`
-
-**Embeddings fail:**
-- Validate verse file YAML syntax
-- Check all required fields present
-- Verify OpenAI API key valid
 
 **Image not generated:**
 - Check scene description added to prompts file
 - Verify OPENAI_API_KEY in .env
 - Check theme configuration exists
 
-**Audio not generated:**
+**Audio not generated (Known issue in SDK 0.8.3):**
+- Audio generation may fail due to verse file naming issues
+- Can be generated separately later once SDK is fixed
 - Verify ELEVENLABS_API_KEY in .env
-- Check verse file has devanagari field
 - Ensure ffmpeg installed (for slow speed: `brew install ffmpeg`)
+
+**Embeddings fail:**
+- Validate verse file YAML syntax
+- Check all required fields present
+- Verify OPENAI_API_KEY valid
 
 ## Important Notes
 
-1. **Cultural sensitivity** - These are sacred texts; maintain authenticity and respect
-2. **Preserve existing content** - Don't modify other verses accidentally
-3. **Follow naming conventions** - Check existing files for patterns
-4. **Verify image paths** - Ensure verse file path matches actual filename
-5. **Test before committing** - Always suggest local testing first
-6. **API costs** - Inform user of costs before generating multimedia
+1. **Use SDK 0.8.3+ only** - Earlier versions have bugs with --regenerate-content
+2. **Canonical YAML required** - Verse must exist in `data/verses/<collection>.yml` before using --regenerate-content
+3. **Cultural sensitivity** - These are sacred texts; maintain authenticity and respect in AI-generated content
+4. **Never manually create content** - Always use SDK `--regenerate-content` to generate from canonical source
+5. **Preserve existing content** - Don't modify other verses accidentally
+6. **Follow naming conventions** - Check existing files for patterns
+7. **Test before committing** - Always suggest local testing first
+8. **API costs** - Inform user of costs before generating multimedia (~$0.05-0.06 per verse)
 
-## Success Criteria
+## Success Criteria (SDK 0.8.3+)
 
-✅ Verse markdown file with complete, accurate content
-✅ Scene description added to image-prompts file
-✅ Image generated and correctly named (>1MB file size)
-✅ Two audio files generated (full + slow)
-✅ Embeddings updated with new verse
+✅ Canonical verse text exists in `data/verses/<collection>.yml`
+✅ SDK successfully generated AI content with `--regenerate-content`
+✅ Verse markdown file created with:
+  - Devanagari text (from canonical source)
+  - Transliteration (AI-generated)
+  - Word meanings (AI-generated, English & Hindi)
+  - Literal translation (AI-generated)
+  - Interpretive meaning (AI-generated)
+  - Story context (AI-generated)
+  - Practical applications (AI-generated)
+✅ Image generated (>1MB file size)
+✅ Embeddings updated
 ✅ Navigation links updated (previous verse → new verse)
-✅ All files follow naming conventions
 ✅ Ready for local testing and git commit
+
+**Note**: Audio generation may be incomplete due to SDK naming issues (can be fixed later)
 
 ## Documentation
 
