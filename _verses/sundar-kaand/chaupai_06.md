@@ -9,11 +9,7 @@ previous_verse: /sundar-kaand/chaupai_05
 next_verse: /sundar-kaand/chaupai_07
 image: /images/sundar-kaand/modern-minimalist/chaupai-06.png
 devanagari: बार बार रघुबीर सँभारी। तरकेउ पवनतनय बल भारी॥
-transliteration: 'Pavan-tanaya bala pavan samana
-
-  Budhi bibeka bigyana nidhana
-
-  '
+transliteration: Bāra bāra raghubīra saṁbhārī। Tarakeu pavanatanaya bala bhārī॥
 phonetic_notes:
 - word: पवनतनय
   phonetic: pa-van-ta-na-ya
@@ -157,4 +153,30 @@ practical_application:
       है जो अपनी भौतिक/व्यावहारिक क्षमताओं को बौद्धिक/आध्यात्मिक विकास के साथ संतुलित
       करना चाहते हैं, या जब आप साहस और मन की स्पष्टता दोनों के लिए हनुमान का आशीर्वाद
       प्राप्त करना चाहते हैं।
+meaning: 'Bāra bāra - Again and again
+
+  Raghubīra - Lord Rama (descendant of the Raghu dynasty)
+
+  Saṁbhārī - Remembered
+
+  Tarakeu - Crossed over
+
+  Pavanatanaya - Son of the wind god, Hanuman
+
+  Bala bhārī - Mighty strength'
+translation:
+  en: Again and again, remembering the mighty Lord Rama, Hanuman, the son of the wind
+    god, crossed over with great strength.
 ---
+
+
+## Story & Context
+
+This verse is from the Sundar Kanda of the Ramayana, a sacred Hindu epic. The Sundar Kanda is the fifth book and it primarily focuses on the adventures of Hanuman. In this particular verse, Hanuman is preparing to cross the ocean to reach Lanka, where Sita, Lord Rama's wife, is held captive by the demon king Ravana.
+The verse signifies Hanuman's unwavering devotion and faith in Lord Rama. Despite the seemingly insurmountable task of crossing the vast ocean, Hanuman is able to do so by repeatedly remembering and invoking the strength of Lord Rama. His devotion empowers him to overcome the physical barriers in his path. This verse is often recited to inspire courage, devotion, and the strength to overcome obstacles.
+
+## Practical Applications
+
+a) Remembering the Divine: Just as Hanuman remembered Lord Rama in times of challenge, we can also invoke the divine or higher power in our lives when facing difficulties. This can provide us with strength and courage.
+b) Overcoming Obstacles: Hanuman's crossing of the ocean symbolizes the overcoming of obstacles. In our daily lives, we can apply this teaching by viewing challenges not as insurmountable obstacles, but as opportunities for growth and learning.
+c) Cultivating Devotion: Hanuman's devotion to Lord Rama is a central theme in this verse. We can apply this in our lives by cultivating devotion and dedication in our actions, whether it's in our work, relationships, or personal pursuits. This can bring a sense of purpose and fulfillment.
