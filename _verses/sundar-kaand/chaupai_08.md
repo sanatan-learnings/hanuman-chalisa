@@ -9,11 +9,7 @@ previous_verse: /sundar-kaand/chaupai_07
 next_verse: null
 image: /images/sundar-kaand/modern-minimalist/chaupai-08.png
 devanagari: जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना॥
-transliteration: 'Prabisi nagara kije saba kaja
-
-  Hridayan rakhi Kosalapura raja
-
-  '
+transliteration: Jimi amogha raghupati kara bānā। Ehi bhānti chaleu hanumānā॥
 phonetic_notes:
 - word: प्रबिसि
   phonetic: pra-bi-si
@@ -225,4 +221,32 @@ practical_application:
       करें, इस सिद्धांत को स्थापित करते हुए कि आपका सभी काम दिव्य चेतना को अपने आधार
       के रूप में रखकर किया जाना चाहिए। यह हर कार्य को आध्यात्मिक अभ्यास में और हर
       चुनौती को दिव्य कृपा के अवसर में बदल देता है।
+meaning: 'Jimi - Just like
+
+  Amogha - Infallible
+
+  Raghupati - Lord Rama (the chief of the Raghu dynasty)
+
+  Kara - Hand
+
+  Bānā - Arrow
+
+  Ehi bhānti - In this manner
+
+  Chaleu - Proceeded
+
+  Hanumānā - Hanuman'
+translation:
+  en: Just as the infallible arrow from the hand of Lord Rama, in this manner proceeded
+    Hanuman.
 ---
+
+
+## Story & Context
+
+This verse is from the Sundar-Kaand, the fifth book in the Hindu epic, the Ramayana. The verse describes the flight of Hanuman, the monkey god, as he leaps across the ocean to reach Lanka, where Sita, the wife of Lord Rama, is being held captive by the demon king Ravana.
+The comparison of Hanuman's journey to the infallible arrow of Lord Rama is significant. Just as an arrow released from Rama's bow never fails to hit its target, Hanuman, who is devoted to Rama, is determined and unwavering in his mission to find Sita. The verse conveys Hanuman's unwavering devotion to Rama and his determination to fulfill his duty, regardless of the obstacles in his path.
+
+## Practical Applications
+
+
