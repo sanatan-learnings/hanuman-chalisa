@@ -43,7 +43,7 @@ Generate multimedia for existing verse:
 
 Before using this skill, verify:
 - ✅ Working in hanuman-gpt project directory
-- ✅ verse-sdk installed at `/Users/arungupta/workspaces/verse-sdk/.venv/bin/`
+- ✅ verse-sdk installed at `/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/`
 - ✅ `.env` file exists with API keys: `OPENAI_API_KEY` and `ELEVENLABS_API_KEY`
 - ✅ Collection is enabled in `_data/collections.yml`
 
@@ -71,7 +71,7 @@ Try to fetch traditional Devanagari text from authoritative online sources:
 
 ```bash
 set -a && source .env && set +a && \
-/Users/arungupta/workspaces/verse-sdk/.venv/bin/verse-fetch-text \
+/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-fetch-text \
   --collection sundar-kaand \
   --verse chaupai_06 \
   --format json
@@ -166,7 +166,7 @@ Run the verse-generate command:
 
 ```bash
 set -a && source .env && set +a && \
-/Users/arungupta/workspaces/verse-sdk/.venv/bin/verse-generate \
+/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-generate \
   --collection <collection> \
   --verse <verse_id> \
   --all \
@@ -192,7 +192,7 @@ Update embeddings for search:
 
 ```bash
 set -a && source .env && set +a && \
-/Users/arungupta/workspaces/verse-sdk/.venv/bin/verse-embeddings \
+/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-embeddings \
   --multi-collection \
   --collections-file _data/collections.yml \
   --verses-dir _verses \
