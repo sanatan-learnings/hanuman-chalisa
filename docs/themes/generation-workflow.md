@@ -1,6 +1,6 @@
 # Theme Generation Workflow
 
-Generate theme images using [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk).
+Generate theme images using [verse-sdk](https://github.com/sanatan-learnings/verse-sdk).
 
 ## Quick Start
 
@@ -10,7 +10,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install verse-content-sdk
+pip install verse-sdk
 
 # Generate all images
 verse-images --theme-name traditional
@@ -106,4 +106,4 @@ verse-images --theme-name my-theme --force
 - [Theme README](README.md)
 - [Scripts README](../../scripts/README.md)
 - [Image Prompts](../image-prompts.md)
-- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)
+- [verse-sdk](https://github.com/sanatan-learnings/verse-sdk)

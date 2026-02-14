@@ -7,8 +7,8 @@ Documentation for the Hanuman GPT website (multi-collection sacred texts).
 **One command** to create image + audio + embeddings for any verse:
 
 ```bash
-# Install verse-content-sdk
-pip install verse-content-sdk
+# Install verse-sdk
+pip install verse-sdk
 
 # Generate everything for a verse (verse ID auto-detected)
 verse-generate \
@@ -86,7 +86,7 @@ verse-audio --collection hanuman-chalisa
 
 **Claude Skill**: Use `/verse-generator` for automated verse creation workflow.
 
-See [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) for full SDK documentation.
+See [verse-sdk](https://github.com/sanatan-learnings/verse-sdk) for full SDK documentation.
 
 ## Guides
 
@@ -107,5 +107,5 @@ See [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk) 
 ## Quick Links
 
 - 🌐 [Live Website](https://sanatan-learnings.github.io/hanuman-gpt/)
-- 📦 [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)
+- 📦 [verse-sdk](https://github.com/sanatan-learnings/verse-sdk)
 - 🐙 [GitHub Repository](https://github.com/sanatan-learnings/hanuman-gpt)

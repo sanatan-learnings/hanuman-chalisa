@@ -9,7 +9,7 @@ This directory contains Claude Code skills for automating workflows in the Hanum
 Automates the complete verse creation workflow:
 - Creates verse markdown files with full content
 - Adds scene descriptions for image generation
-- Generates multimedia using verse-content-sdk (images + audio)
+- Generates multimedia using verse-sdk (images + audio)
 - Updates embeddings for search functionality
 - Manages navigation links between verses
 - Helps with git commits
@@ -65,7 +65,7 @@ See [verse-generator](verse-generator/) as a reference implementation.
 ## Documentation
 
 - [Claude Code Skills Documentation](https://docs.anthropic.com/claude/docs/claude-code-skills)
-- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)
+- [verse-sdk](https://github.com/sanatan-learnings/verse-sdk)
 
 ## Contributing
 

@@ -73,8 +73,8 @@ python3 -m venv venv
 # Activate virtual environment
 source venv/bin/activate
 
-# Install verse-content-sdk
-pip install verse-content-sdk
+# Install verse-sdk
+pip install verse-sdk
 
 # Verify installation
 verse-images --help

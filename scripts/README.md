@@ -1,10 +1,10 @@
 # Content Generation Scripts
 
-This directory contains configuration files for generating multimedia content for Hanuman Chalisa using the [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk).
+This directory contains configuration files for generating multimedia content for Hanuman Chalisa using the [verse-sdk](https://github.com/sanatan-learnings/verse-sdk).
 
 ## 📦 What's in This Directory
 
-All content generation is now handled by the **verse-content-sdk** CLI tools:
+All content generation is now handled by the **verse-sdk** CLI tools:
 
 - **verse-embeddings** - Generate vector embeddings for semantic search
 - **verse-audio** - Generate audio pronunciations using ElevenLabs
@@ -27,7 +27,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install verse-content-sdk
+pip install verse-sdk
 ```
 
 Or use the provided requirements.txt:
@@ -216,7 +216,7 @@ verse-embeddings --provider huggingface
 
 - [Adding Themes](../docs/adding-themes.md)
 - [Image Prompts](../docs/image-prompts.md)
-- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)
+- [verse-sdk](https://github.com/sanatan-learnings/verse-sdk)
 - [OpenAI API](https://platform.openai.com/docs)
 - [Eleven Labs API](https://elevenlabs.io/docs)
 
@@ -230,7 +230,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install verse-content-sdk
+pip install verse-sdk
 
 # Verify installation
 verse-audio --help

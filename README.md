@@ -106,8 +106,8 @@ See [Content Generation Guide](docs/guides/content-generation.md#automated-verse
 ### Quick Start: Generate Verse Content
 
 ```bash
-# Install verse-content-sdk
-pip install verse-content-sdk
+# Install verse-sdk
+pip install verse-sdk
 
 # Generate complete content for a single verse (image + audio + embeddings)
 verse-generate --collection sundar-kaand --verse 5 --all --theme modern-minimalist --update-embeddings

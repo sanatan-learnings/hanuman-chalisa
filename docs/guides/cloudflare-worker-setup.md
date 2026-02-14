@@ -55,7 +55,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install verse-content-sdk
+pip install verse-sdk
 
 # Deploy
 verse-deploy

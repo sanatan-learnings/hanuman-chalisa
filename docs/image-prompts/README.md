@@ -14,7 +14,7 @@ docs/image-prompts/
 
 ## File Format
 
-Each prompt file follows the verse-content-sdk format:
+Each prompt file follows the verse-sdk format:
 
 ```markdown
 # Collection Name - Scene Descriptions for DALL-E 3
@@ -46,7 +46,7 @@ Another detailed prompt...
   - `sankat-mochan-hanumanashtak.md` → sankat-mochan-hanumanashtak collection
   - `sundar-kaand.md` → sundar-kaand collection
 
-## Usage with verse-content-sdk
+## Usage with verse-sdk
 
 The SDK expects a file named `docs/image-prompts.md` (singular), so create a temporary copy:
 
@@ -97,7 +97,7 @@ rm docs/image-prompts.md
 1. **Create prompt file**: `docs/image-prompts/<new-collection>.md`
 2. **Follow format**: Use existing files as templates
 3. **Create theme spec**: `docs/themes/<new-collection>/modern-minimalist.yml`
-4. **Test generation**: Use verse-content-sdk to generate sample images
+4. **Test generation**: Use verse-sdk to generate sample images
 5. **Commit both**: Prompt file and theme file together
 
 ## See Also
@@ -105,4 +105,4 @@ rm docs/image-prompts.md
 - [Theme Files Directory](../themes/README.md)
 - [Image Generation Workflow](../themes/generation-workflow.md)
 - [Images Directory](../../images/README.md)
-- [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk)
+- [verse-sdk](https://github.com/sanatan-learnings/verse-sdk)

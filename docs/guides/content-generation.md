@@ -66,7 +66,7 @@ hanuman-gpt/
 │   └── embeddings.json       # Multi-collection embeddings (4.6MB)
 ├── scripts/
 │   ├── README.md             # SDK command documentation
-│   └── requirements.txt      # Python dependencies (verse-content-sdk)
+│   └── requirements.txt      # Python dependencies (verse-sdk)
 ├── chalisa/                  # Chalisa-specific pages
 │   ├── index.html            # Chalisa landing page
 │   ├── full-chalisa.html     # Complete chalisa view
@@ -135,16 +135,16 @@ bundle exec jekyll serve --port 4001
 - Check `.github/workflows/` for CI configuration
 - Verify GitHub Pages compatible plugins
 
-## Content Generation with verse-content-sdk
+## Content Generation with verse-sdk
 
-All multimedia content is generated using the [verse-content-sdk](https://github.com/sanatan-learnings/verse-content-sdk):
+All multimedia content is generated using the [verse-sdk](https://github.com/sanatan-learnings/verse-sdk):
 
 - **verse-images** - Generate AI images with DALL-E 3
 - **verse-audio** - Generate audio pronunciations with ElevenLabs
 - **verse-embeddings** - Generate vector embeddings
 - **verse-deploy** - Deploy Cloudflare Workers
 
-Install once: `python3 -m venv venv && source venv/bin/activate && pip install verse-content-sdk`
+Install once: `python3 -m venv venv && source venv/bin/activate && pip install verse-sdk`
 
 See [scripts/README.md](../scripts/README.md) for complete documentation.
 
@@ -243,7 +243,7 @@ Here's what happens when you run `/verse-generator Create chaupai_05 for sundar-
 
 Before using the skill, ensure:
 
-- ✅ verse-content-sdk installed at `/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/`
+- ✅ verse-sdk installed at `/Users/arungupta/workspaces/verse-sdk/.venv/bin/`
 - ✅ `.env` file with API keys:
   ```bash
   OPENAI_API_KEY=sk-your-key-here
@@ -266,7 +266,7 @@ ln -s "$(pwd)/skills/verse-generator" ~/.claude/skills/verse-generator
 **verse-generate command fails:**
 ```bash
 # Check SDK installation
-ls /Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-generate
+ls /Users/arungupta/workspaces/verse-sdk/.venv/bin/verse-generate
 
 # Verify API keys
 cat .env | grep -E "OPENAI|ELEVENLABS"
@@ -282,7 +282,7 @@ cat docs/image-prompts/sundar-kaand.md
 
 - Skill documentation: [.claude/skills/verse-generator/README.md](../../.claude/skills/verse-generator/README.md)
 - SDK commands: [scripts/README.md](../../scripts/README.md)
-- verse-content-sdk: [GitHub](https://github.com/sanatan-learnings/verse-content-sdk)
+- verse-sdk: [GitHub](https://github.com/sanatan-learnings/verse-sdk)
 
 ## Generate Custom Image Themes
 
@@ -296,7 +296,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install verse-content-sdk
+pip install verse-sdk
 
 # Get API key from https://platform.openai.com/api-keys
 export OPENAI_API_KEY='your-key-here'
@@ -378,7 +378,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install verse-content-sdk
+pip install verse-sdk
 
 # Get API key from https://elevenlabs.io/app/settings/api-keys
 export ELEVENLABS_API_KEY='your-key-here'
@@ -455,7 +455,7 @@ See [audio/README.md](../audio/README.md) for detailed instructions.
 ### Development Tools
 
 - **Python 3.8+** - Content generation SDK
-- **verse-content-sdk** - Content generation toolkit (images, audio, embeddings)
+- **verse-sdk** - Content generation toolkit (images, audio, embeddings)
 - **OpenAI API** - DALL-E 3 integration for images
 - **Eleven Labs API** - Text-to-speech for audio
 - **ffmpeg** - Audio post-processing (speed control)
@@ -466,7 +466,7 @@ See [audio/README.md](../audio/README.md) for detailed instructions.
 
 - `jekyll-seo-tag` - SEO optimization
 - `jekyll-sitemap` - Sitemap generation
-- `verse-content-sdk` - Content generation SDK (includes openai, elevenlabs, requests, pillow)
+- `verse-sdk` - Content generation SDK (includes openai, elevenlabs, requests, pillow)
 
 ## File Formats
 
@@ -584,7 +584,7 @@ All images should be:
 
 ### DALL-E 3 Configuration
 
-The verse-content-sdk handles all API configuration. Default settings:
+The verse-sdk handles all API configuration. Default settings:
 
 ```python
 # verse_content_sdk/images/generator.py
