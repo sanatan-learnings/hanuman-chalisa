@@ -33,6 +33,16 @@ Or with arguments:
 /verse-generator Create verse 5 for sundar-kaand
 ```
 
+**Batch Processing (SDK 0.11.0+):**
+
+```
+/verse-generator Regenerate verses 1-10 for sundar-kaand
+```
+
+```
+/verse-generator Regenerate verses 5-20 for hanuman-chalisa
+```
+
 ## What It Does
 
 1. **Guides verse creation** - Helps create complete verse markdown with all content fields
@@ -41,13 +51,76 @@ Or with arguments:
 4. **Updates embeddings** - Regenerates search embeddings with new verse
 5. **Fixes navigation** - Links previous verse to new one
 6. **Commits changes** - Optionally commits everything to git
+7. **Batch processing** - Regenerate multiple verses at once with `--verse M-N` syntax (SDK 0.11.0+)
+
+## Understanding the Tools
+
+### `/verse-generator` (Claude Code Skill) vs `verse-generate` (SDK Command)
+
+**When to use `/verse-generator` (this skill):**
+- ✅ You want a **guided, automated workflow**
+- ✅ Includes verification steps (canonical source, scene descriptions, navigation)
+- ✅ Shows git status and handles commits automatically
+- ✅ Provides safety checks and error handling
+- ✅ Best for **interactive use** in Claude Code sessions
+
+**When to use `verse-generate` (SDK command directly):**
+- ✅ You want **direct control** over the process
+- ✅ You're **scripting** or automating in bash/CI/CD
+- ✅ You only need the core regeneration (no git workflow)
+- ✅ You're debugging or testing specific SDK features
+
+**How they relate:**
+```
+┌─────────────────────────────────────┐
+│  /verse-generator (Claude Skill)   │  ← Workflow automation layer
+├─────────────────────────────────────┤
+│  • Verifies prerequisites           │
+│  • Calls verse-generate             │  ← Uses SDK underneath
+│  • Verifies output                  │
+│  • Manages git commits              │
+└─────────────────────────────────────┘
+           │
+           ▼
+┌─────────────────────────────────────┐
+│  verse-generate (SDK command)       │  ← Core tool
+├─────────────────────────────────────┤
+│  • Reads canonical YAML             │
+│  • Generates AI content             │
+│  • Creates verse files              │
+│  • Generates multimedia             │
+│  • Updates embeddings               │
+└─────────────────────────────────────┘
+```
+
+**Example:**
+
+```bash
+# Option 1: Use the skill (recommended for interactive work)
+/verse-generator regenerate chaupai_05 for sundar-kaand
+
+# Option 2: Use SDK directly (for scripting)
+./venv/bin/verse-generate \
+  --collection sundar-kaand \
+  --verse 5 \
+  --verse-id chaupai_05 \
+  --regenerate-content \
+  --all
+
+# Option 3: Batch processing (SDK 0.11.0+)
+./venv/bin/verse-generate \
+  --collection sundar-kaand \
+  --verse 1-10 \
+  --regenerate-content \
+  --all
+```
 
 ## Prerequisites
 
 - Working in a hanuman-gpt project directory
-- sanatan-sdk installed at `/Users/arungupta/workspaces/sanatan-sdk/.venv/bin/`
+- **sanatan-sdk 0.11.0+** installed in local venv (`./venv/bin/verse-generate`)
 - `.env` file with API keys:
-  - `OPENAI_API_KEY` (for images)
+  - `OPENAI_API_KEY` (for images and embeddings)
   - `ELEVENLABS_API_KEY` (for audio)
 
 ## Example Workflows
@@ -78,13 +151,28 @@ Claude: Would you like me to help research and draft the complete content?
         [Helps with transliteration, meanings, translations, story, applications]
 ```
 
+### Batch Regeneration
+
+```
+User: /verse-generator Regenerate verses 1-10 for sundar-kaand
+Claude: [Processes all 10 verses in sequence, generating content, images, audio]
+        This will cost approximately $0.50-0.60 for 10 verses.
+        [Shows progress and results for each verse]
+```
+
 ## Cost Per Verse
 
+- AI Content Generation: ~$0.01-0.02
 - Image (standard): ~$0.04
 - Image (HD): ~$0.08
 - Audio (2 files): ~$0.0002
 - Embeddings: ~$0.00003
-- **Total: ~$0.04 per verse**
+- **Total: ~$0.05-0.06 per verse**
+
+**Batch Processing:**
+- 10 verses: ~$0.50-0.60
+- 20 verses: ~$1.00-1.20
+- 40 verses: ~$2.00-2.40
 
 ## Generated Files
 
@@ -106,6 +194,7 @@ Each verse generation creates:
 ✅ Git commit helper
 ✅ Cost tracking and estimates
 ✅ Error handling and validation
+✅ **Batch processing** (SDK 0.11.0+) - regenerate multiple verses at once
 
 ## Tips
 
@@ -114,6 +203,8 @@ Each verse generation creates:
 3. **Check naming conventions** - The skill will match existing patterns (chaupai vs verse)
 4. **Use AI assistance** - Let Claude help research meanings and context if needed
 5. **Verify multimedia** - Check image quality and audio pronunciation
+6. **Batch processing** - Use for regenerating multiple verses efficiently (SDK 0.11.0+)
+7. **API rate limits** - Be mindful of rate limits when processing large batches
 
 ## Troubleshooting
 
@@ -139,8 +230,11 @@ Direct SDK usage (without skill):
 # List collections
 verse-generate --list-collections
 
-# Generate multimedia
-verse-generate --collection sundar-kaand --verse chaupai_05 --all
+# Generate multimedia for single verse
+verse-generate --collection sundar-kaand --verse 5 --verse-id chaupai_05 --all
+
+# Batch processing (SDK 0.11.0+)
+verse-generate --collection sundar-kaand --verse 1-10 --regenerate-content --all
 
 # Regenerate embeddings
 verse-embeddings --multi-collection

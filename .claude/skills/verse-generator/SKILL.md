@@ -39,11 +39,25 @@ Generate multimedia for existing verse:
 /verse-generator Generate multimedia for chaupai_06 in sundar-kaand
 ```
 
+**Batch Processing (SDK 0.11.0+):**
+
+Regenerate multiple verses at once:
+
+```
+/verse-generator Regenerate verses 1-10 for sundar-kaand
+```
+
+Or specific range:
+
+```
+/verse-generator Regenerate verses 5-8 for hanuman-chalisa
+```
+
 ## Prerequisites
 
 Before using this skill, verify:
 - ✅ Working in hanuman-gpt project directory
-- ✅ **sanatan-sdk 0.8.3+** installed in venv (`./venv/bin/pip install --upgrade sanatan-sdk`)
+- ✅ **sanatan-sdk 0.11.0+** installed in venv (`./venv/bin/pip install --upgrade sanatan-sdk`)
 - ✅ verse-* commands available: `./venv/bin/verse-generate`, `./venv/bin/verse-embeddings`, etc.
 - ✅ `.env` file exists with API keys: `OPENAI_API_KEY` and `ELEVENLABS_API_KEY`
 - ✅ Collection is enabled in `_data/collections.yml`
@@ -51,7 +65,9 @@ Before using this skill, verify:
 
 ## Complete Workflow
 
-**IMPORTANT**: SDK 0.8.3+ can automatically generate ALL content from canonical YAML sources. Use `--regenerate-content` flag!
+**IMPORTANT**: SDK 0.11.0+ can automatically generate ALL content from canonical YAML sources. Use `--regenerate-content` flag!
+
+**NEW in SDK 0.11.0**: Batch processing support! Use `--verse M-N` syntax to regenerate multiple verses at once (e.g., `--verse 1-10`, `--verse 5-20`).
 
 ### Step 1: Verify Canonical Source
 
@@ -71,10 +87,11 @@ If canonical source exists (e.g., `data/verses/sundar-kaand.yml`), the SDK will:
 
 **No manual content creation needed!** The SDK uses AI to generate everything from the canonical Devanagari text.
 
-### Step 2: Generate Complete Verse with SDK (SDK 0.8.3+)
+### Step 2: Generate Complete Verse with SDK (SDK 0.11.0+)
 
 Use `verse-generate` with `--regenerate-content` to auto-generate everything:
 
+**Single Verse:**
 ```bash
 set -a && source .env && set +a && \
 ./venv/bin/verse-generate \
@@ -94,8 +111,26 @@ set -a && source .env && set +a && \
   --all
 ```
 
+**Batch Processing (NEW in SDK 0.11.0):**
+```bash
+set -a && source .env && set +a && \
+./venv/bin/verse-generate \
+  --collection <collection> \
+  --verse <M-N> \
+  --regenerate-content \
+  --all
+
+# Example: Regenerate verses 1-10 for sundar-kaand
+set -a && source .env && set +a && \
+./venv/bin/verse-generate \
+  --collection sundar-kaand \
+  --verse 1-10 \
+  --regenerate-content \
+  --all
+```
+
 **What this does:**
-1. ✅ Reads Devanagari from `data/verses/sundar-kaand.yml` → `chaupai_03`
+1. ✅ Reads Devanagari from `data/verses/<collection>.yml` for each verse in range
 2. ✅ Generates transliteration, word meanings, translations, story, practical applications using AI
 3. ✅ Creates/updates `_verses/<collection>/<verse_id>.md` with all content
 4. ✅ Generates image using DALL-E 3 (from scene description in `docs/image-prompts/<collection>.md`)
@@ -103,11 +138,14 @@ set -a && source .env && set +a && \
 6. ✅ Updates embeddings for semantic search
 
 **Parameters:**
-- `--verse <N>`: Verse number (e.g., 3 for chaupai_03)
-- `--verse-id <ID>`: Verse identifier (e.g., chaupai_03, verse_05, doha_01)
+- `--verse <N>`: Single verse number (e.g., 3 for chaupai_03)
+- `--verse <M-N>`: Verse range (e.g., 1-10, 5-20) - batch processing
+- `--verse-id <ID>`: Verse identifier (e.g., chaupai_03, verse_05, doha_01) - only for single verse
 - `--regenerate-content`: Generate AI content from canonical YAML
 - `--all`: Generate both image and audio
 - `--theme modern-minimalist`: Theme for image generation (optional, defaults to modern-minimalist)
+
+**Note**: When using batch processing (`--verse M-N`), do NOT specify `--verse-id`. The SDK will auto-detect verse IDs from existing files or canonical YAML sequence.
 
 ### Step 3: Verify Scene Description Exists
 
@@ -154,7 +192,7 @@ Ask if user wants to commit. If yes:
 4. Commit with Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 5. Optionally push to remote
 
-## Cost Per Verse (SDK 0.8.3+)
+## Cost Per Verse (SDK 0.11.0+)
 
 - **AI Content Generation**: ~$0.01-0.02 (GPT-4 for transliteration, meanings, translations, story, practical applications)
 - **Image (standard)**: ~$0.04 (DALL-E 3)
@@ -163,13 +201,24 @@ Ask if user wants to commit. If yes:
 - **Embeddings**: ~$0.00003 (OpenAI text-embedding-3-small)
 - **Total**: ~$0.05-0.06 per verse (standard quality with AI content generation)
 
+**Batch Processing Costs:**
+- 10 verses: ~$0.50-0.60
+- 20 verses: ~$1.00-1.20
+- 40 verses (full Hanuman Chalisa): ~$2.00-2.40
+
 ## Error Handling
 
 **--regenerate-content fails:**
-- Ensure sanatan-sdk 0.8.3+ is installed
+- Ensure sanatan-sdk 0.11.0+ is installed
 - Verify canonical YAML exists: `data/verses/<collection>.yml`
 - Check verse ID exists in canonical YAML (e.g., `chaupai_03`)
 - Verify OPENAI_API_KEY in .env for AI content generation
+
+**Batch processing fails:**
+- Verify all verses in range exist in canonical YAML
+- Check verse IDs can be auto-detected from existing files or canonical sequence
+- Do NOT use `--verse-id` with batch processing
+- Ensure sufficient API rate limits for batch operations
 
 **verse-generate fails:**
 - Verify API keys in .env (OPENAI_API_KEY, ELEVENLABS_API_KEY)
@@ -182,11 +231,11 @@ Ask if user wants to commit. If yes:
 - Verify OPENAI_API_KEY in .env
 - Check theme configuration exists
 
-**Audio not generated (Known issue in SDK 0.8.3):**
-- Audio generation may fail due to verse file naming issues
-- Can be generated separately later once SDK is fixed
+**Audio not generated:**
 - Verify ELEVENLABS_API_KEY in .env
 - Ensure ffmpeg installed (for slow speed: `brew install ffmpeg`)
+- Check verse file exists before audio generation
+- For batch processing, audio generation happens sequentially
 
 **Embeddings fail:**
 - Validate verse file YAML syntax
@@ -195,20 +244,22 @@ Ask if user wants to commit. If yes:
 
 ## Important Notes
 
-1. **Use SDK 0.8.3+ only** - Earlier versions have bugs with --regenerate-content
+1. **Use SDK 0.11.0+ only** - Earlier versions lack batch processing support
 2. **Canonical YAML required** - Verse must exist in `data/verses/<collection>.yml` before using --regenerate-content
 3. **Cultural sensitivity** - These are sacred texts; maintain authenticity and respect in AI-generated content
 4. **Never manually create content** - Always use SDK `--regenerate-content` to generate from canonical source
 5. **Preserve existing content** - Don't modify other verses accidentally
 6. **Follow naming conventions** - Check existing files for patterns
 7. **Test before committing** - Always suggest local testing first
-8. **API costs** - Inform user of costs before generating multimedia (~$0.05-0.06 per verse)
+8. **API costs** - Inform user of costs before generating multimedia (~$0.05-0.06 per verse, more for batch)
+9. **Batch processing** - Use `--verse M-N` syntax without `--verse-id` for batch operations
+10. **Rate limits** - Be mindful of OpenAI/ElevenLabs rate limits when processing large batches
 
-## Success Criteria (SDK 0.8.3+)
+## Success Criteria (SDK 0.11.0+)
 
 ✅ Canonical verse text exists in `data/verses/<collection>.yml`
 ✅ SDK successfully generated AI content with `--regenerate-content`
-✅ Verse markdown file created with:
+✅ Verse markdown file(s) created with:
   - Devanagari text (from canonical source)
   - Transliteration (AI-generated)
   - Word meanings (AI-generated, English & Hindi)
@@ -216,12 +267,16 @@ Ask if user wants to commit. If yes:
   - Interpretive meaning (AI-generated)
   - Story context (AI-generated)
   - Practical applications (AI-generated)
-✅ Image generated (>1MB file size)
+✅ Image(s) generated (>1MB file size each)
+✅ Audio files generated (full + slow speed)
 ✅ Embeddings updated
-✅ Navigation links updated (previous verse → new verse)
+✅ Navigation links updated (for single verse creation)
 ✅ Ready for local testing and git commit
 
-**Note**: Audio generation may be incomplete due to SDK naming issues (can be fixed later)
+**Batch Processing Success:**
+- All verses in range processed successfully
+- No partial failures (if any fail, review and retry)
+- Git commits organized logically (consider one commit per verse or batch)
 
 ## Documentation
 
