@@ -9,11 +9,7 @@ previous_verse: /sundar-kaand/chaupai_04
 next_verse: /sundar-kaand/chaupai_06
 image: /images/sundar-kaand/modern-minimalist/chaupai-05.png
 devanagari: सिंधु तीर एक भूधर सुंदर। कौतुक कूदि चढ़ेउ ता ऊपर॥
-transliteration: 'Sagar teer eka bhoodhar sundar
-
-  Kautuk koodi chadhaeu ta oopar
-
-  '
+transliteration: Sindhu tīra eka bhūdhara sundara. Kautuka kūdi chaḍheu tā ūpara.
 phonetic_notes:
 - word: सगर
   phonetic: sa-gar
@@ -158,4 +154,37 @@ practical_application:
       (अपना 'पर्वत' खोजने) की आवश्यकता हो, या जब आप उस हल्के-फुल्के आत्मविश्वास को
       विकसित करना चाहते हों जो यह जानने से आता है कि आप दिव्य कृपा और दूसरों के विश्वास
       से समर्थित हैं।
+meaning: 'Sindhu - Ocean
+
+  Tīra - Shore
+
+  Eka - One
+
+  Bhūdhara - Mountain
+
+  Sundara - Beautiful
+
+  Kautuka - With curiosity
+
+  Kūdi - Jumped
+
+  Chaḍheu - Climbed
+
+  Tā - That
+
+  Ūpara - On top'
+translation:
+  en: On the shore of the ocean, there was a beautiful mountain. With curiosity, he
+    jumped and climbed on top of it.
 ---
+
+
+## Story & Context
+
+This verse is from the Sundar Kanda of the Ramayana, an ancient Indian epic. The Sundar Kanda is the fifth book and it describes the adventures of Hanuman, the monkey god, in his quest to find Sita, the wife of Lord Rama, who has been abducted by the demon king Ravana.
+In this particular verse, Hanuman has reached the shore of the ocean, on the other side of which is Lanka, Ravana's kingdom where Sita is being held captive. He sees a beautiful mountain on the shore. Driven by curiosity and the need to get a better view of his destination, he jumps and climbs to the top of the mountain.
+The verse symbolizes Hanuman's determination and courage. Despite the daunting task ahead, he doesn't hesitate or turn back. Instead, he uses the mountain as a vantage point to assess the situation and plan his next move. It's a testament to his resourcefulness and strategic thinking.
+
+## Practical Applications
+
+1. Embrace Challenges: Just like Hanuman, we should not be daunted by the challenges that lie ahead. Instead, we should embrace them and use them as opportunities to grow and learn.
