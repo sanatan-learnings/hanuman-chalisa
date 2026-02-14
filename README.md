@@ -173,7 +173,9 @@ Content draws upon:
 - Living oral traditions of Hanuman Chalisa recitation
 
 ### Technology
-Built with Jekyll and GitHub Pages. Hosted on GitHub.
+Built with Jekyll, GitHub Pages, DALL-E 3, ElevenLabs, GPT-4, and sanatan-sdk.
+
+→ See [Tech Stack](docs/reference/tech-stack.md) for complete architecture and technology details
 
 ## License
 
