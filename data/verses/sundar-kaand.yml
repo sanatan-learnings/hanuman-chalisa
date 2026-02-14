@@ -1,0 +1,1898 @@
+# Sundar Kaand - Canonical Verse Texts
+# Parsed from Wikipedia definitive source
+# Structure: 3 opening shlokas, then alternating chaupais and dohas (~60 sets)
+
+_meta:
+  collection: sundar-kaand
+  source: https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%A3%E0%A5%8D%E0%A4%A1
+  description: Sundar Kaand from Ramcharitmanas by Goswami Tulsidas
+  note: 'DISCREPANCY: Traditional Ramcharitmanas has 524 chaupais + 60 dohas. This Wikipedia source has 522 chaupais + 58 dohas. See Issue #14.'
+  sequence:
+  - shloka_01
+  - shloka_02
+  - shloka_03
+  - chaupai_01
+  - chaupai_02
+  - chaupai_03
+  - chaupai_04
+  - chaupai_05
+  - chaupai_06
+  - chaupai_07
+  - chaupai_08
+  - chaupai_09
+  - doha_01
+  - chaupai_10
+  - chaupai_11
+  - chaupai_12
+  - chaupai_13
+  - chaupai_14
+  - chaupai_15
+  - chaupai_16
+  - chaupai_17
+  - chaupai_18
+  - chaupai_19
+  - chaupai_20
+  - chaupai_21
+  - doha_02
+  - chaupai_22
+  - chaupai_23
+  - chaupai_24
+  - chaupai_25
+  - chaupai_26
+  - chaupai_27
+  - chaupai_28
+  - chaupai_29
+  - chaupai_30
+  - chaupai_31
+  - chaupai_32
+  - doha_03
+  - chaupai_33
+  - chaupai_34
+  - chaupai_35
+  - chaupai_36
+  - chaupai_37
+  - chaupai_38
+  - chaupai_39
+  - chaupai_40
+  - doha_04
+  - chaupai_41
+  - chaupai_42
+  - chaupai_43
+  - chaupai_44
+  - chaupai_45
+  - chaupai_46
+  - chaupai_47
+  - chaupai_48
+  - doha_05
+  - chaupai_49
+  - chaupai_50
+  - chaupai_51
+  - chaupai_52
+  - chaupai_53
+  - chaupai_54
+  - chaupai_55
+  - chaupai_56
+  - doha_06
+  - chaupai_57
+  - chaupai_58
+  - chaupai_59
+  - chaupai_60
+  - chaupai_61
+  - chaupai_62
+  - chaupai_63
+  - chaupai_64
+  - doha_07
+  - chaupai_65
+  - chaupai_66
+  - chaupai_67
+  - chaupai_68
+  - chaupai_69
+  - chaupai_70
+  - chaupai_71
+  - chaupai_72
+  - doha_08
+  - chaupai_73
+  - chaupai_74
+  - chaupai_75
+  - chaupai_76
+  - chaupai_77
+  - chaupai_78
+  - chaupai_79
+  - chaupai_80
+  - chaupai_81
+  - doha_09
+  - chaupai_82
+  - chaupai_83
+  - chaupai_84
+  - chaupai_85
+  - chaupai_86
+  - chaupai_87
+  - chaupai_88
+  - chaupai_89
+  - chaupai_90
+  - doha_10
+  - chaupai_91
+  - chaupai_92
+  - chaupai_93
+  - chaupai_94
+  - chaupai_95
+  - chaupai_96
+  - chaupai_97
+  - chaupai_98
+  - doha_11
+  - chaupai_99
+  - chaupai_100
+  - chaupai_101
+  - chaupai_102
+  - chaupai_103
+  - chaupai_104
+  - chaupai_105
+  - chaupai_106
+  - chaupai_107
+  - chaupai_108
+  - chaupai_109
+  - chaupai_110
+  - soratha_01
+  - chaupai_111
+  - chaupai_112
+  - chaupai_113
+  - chaupai_114
+  - chaupai_115
+  - chaupai_116
+  - chaupai_117
+  - chaupai_118
+  - chaupai_119
+  - chaupai_120
+  - chaupai_121
+  - doha_12
+  - chaupai_122
+  - chaupai_123
+  - chaupai_124
+  - chaupai_125
+  - chaupai_126
+  - chaupai_127
+  - chaupai_128
+  - chaupai_129
+  - chaupai_130
+  - chaupai_131
+  - doha_13
+  - chaupai_132
+  - chaupai_133
+  - chaupai_134
+  - chaupai_135
+  - chaupai_136
+  - chaupai_137
+  - chaupai_138
+  - chaupai_139
+  - chaupai_140
+  - chaupai_141
+  - doha_14
+  - chaupai_142
+  - chaupai_143
+  - chaupai_144
+  - chaupai_145
+  - chaupai_146
+  - chaupai_147
+  - chaupai_148
+  - chaupai_149
+  - chaupai_150
+  - doha_15
+  - chaupai_151
+  - chaupai_152
+  - chaupai_153
+  - chaupai_154
+  - chaupai_155
+  - chaupai_156
+  - chaupai_157
+  - chaupai_158
+  - chaupai_159
+  - doha_16
+  - chaupai_160
+  - chaupai_161
+  - chaupai_162
+  - chaupai_163
+  - chaupai_164
+  - chaupai_165
+  - chaupai_166
+  - chaupai_167
+  - doha_17
+  - chaupai_168
+  - chaupai_169
+  - chaupai_170
+  - chaupai_171
+  - chaupai_172
+  - chaupai_173
+  - chaupai_174
+  - chaupai_175
+  - doha_18
+  - chaupai_176
+  - chaupai_177
+  - chaupai_178
+  - chaupai_179
+  - chaupai_180
+  - chaupai_181
+  - chaupai_182
+  - chaupai_183
+  - doha_19
+  - chaupai_184
+  - chaupai_185
+  - chaupai_186
+  - chaupai_187
+  - chaupai_188
+  - chaupai_189
+  - chaupai_190
+  - doha_20
+  - chaupai_191
+  - chaupai_192
+  - chaupai_193
+  - chaupai_194
+  - chaupai_195
+  - chaupai_196
+  - chaupai_197
+  - chaupai_198
+  - chaupai_199
+  - chaupai_200
+  - doha_21
+  - chaupai_201
+  - chaupai_202
+  - chaupai_203
+  - chaupai_204
+  - chaupai_205
+  - chaupai_206
+  - chaupai_207
+  - chaupai_208
+  - doha_22
+  - chaupai_209
+  - chaupai_210
+  - chaupai_211
+  - chaupai_212
+  - chaupai_213
+  - chaupai_214
+  - chaupai_215
+  - chaupai_216
+  - chaupai_217
+  - chaupai_218
+  - chaupai_219
+  - chaupai_220
+  - chaupai_221
+  - chaupai_222
+  - chaupai_223
+  - chaupai_224
+  - chaupai_225
+  - chaupai_226
+  - doha_23
+  - chaupai_227
+  - chaupai_228
+  - chaupai_229
+  - chaupai_230
+  - chaupai_231
+  - chaupai_232
+  - chaupai_233
+  - chaupai_234
+  - doha_24
+  - chaupai_235
+  - chaupai_236
+  - chaupai_237
+  - chaupai_238
+  - chaupai_239
+  - chaupai_240
+  - chaupai_241
+  - chaupai_242
+  - doha_25
+  - chaupai_243
+  - chaupai_244
+  - chaupai_245
+  - chaupai_246
+  - chaupai_247
+  - chaupai_248
+  - chaupai_249
+  - chaupai_250
+  - doha_26
+  - chaupai_251
+  - chaupai_252
+  - chaupai_253
+  - chaupai_254
+  - chaupai_255
+  - chaupai_256
+  - chaupai_257
+  - doha_27
+  - chaupai_258
+  - chaupai_259
+  - chaupai_260
+  - chaupai_261
+  - chaupai_262
+  - chaupai_263
+  - chaupai_264
+  - chaupai_265
+  - doha_28
+  - chaupai_266
+  - chaupai_267
+  - chaupai_268
+  - chaupai_269
+  - chaupai_270
+  - chaupai_271
+  - chaupai_272
+  - chaupai_273
+  - doha_29
+  - chaupai_274
+  - chaupai_275
+  - chaupai_276
+  - chaupai_277
+  - chaupai_278
+  - chaupai_279
+  - chaupai_280
+  - chaupai_281
+  - doha_30
+  - chaupai_282
+  - chaupai_283
+  - chaupai_284
+  - chaupai_285
+  - chaupai_286
+  - chaupai_287
+  - chaupai_288
+  - chaupai_289
+  - doha_31
+  - chaupai_290
+  - chaupai_291
+  - chaupai_292
+  - chaupai_293
+  - chaupai_294
+  - chaupai_295
+  - chaupai_296
+  - chaupai_297
+  - doha_32
+  - chaupai_298
+  - chaupai_299
+  - chaupai_300
+  - chaupai_301
+  - chaupai_302
+  - chaupai_303
+  - chaupai_304
+  - chaupai_305
+  - chaupai_306
+  - chaupai_307
+  - doha_33
+  - chaupai_308
+  - chaupai_309
+  - chaupai_310
+  - chaupai_311
+  - chaupai_312
+  - chaupai_313
+  - chaupai_314
+  - chaupai_315
+  - chaupai_316
+  - chaupai_317
+  - doha_34
+  - chaupai_318
+  - chaupai_319
+  - chaupai_320
+  - chaupai_321
+  - chaupai_322
+  - chaupai_323
+  - chaupai_324
+  - chaupai_325
+  - chaupai_326
+  - doha_35
+  - chaupai_327
+  - chaupai_328
+  - chaupai_329
+  - chaupai_330
+  - chaupai_331
+  - chaupai_332
+  - chaupai_333
+  - chaupai_334
+  - doha_36
+  - chaupai_335
+  - chaupai_336
+  - chaupai_337
+  - chaupai_338
+  - chaupai_339
+  - chaupai_340
+  - chaupai_341
+  - chaupai_342
+  - doha_37
+  - chaupai_343
+  - chaupai_344
+  - chaupai_345
+  - chaupai_346
+  - chaupai_347
+  - chaupai_348
+  - chaupai_349
+  - chaupai_350
+  - chaupai_351
+  - doha_38
+  - chaupai_352
+  - chaupai_353
+  - chaupai_354
+  - chaupai_355
+  - chaupai_356
+  - chaupai_357
+  - chaupai_358
+  - chaupai_359
+  - chaupai_360
+  - doha_39
+  - chaupai_361
+  - chaupai_362
+  - chaupai_363
+  - chaupai_364
+  - chaupai_365
+  - chaupai_366
+  - chaupai_367
+  - chaupai_368
+  - doha_40
+  - chaupai_369
+  - chaupai_370
+  - chaupai_371
+  - chaupai_372
+  - chaupai_373
+  - chaupai_374
+  - chaupai_375
+  - chaupai_376
+  - chaupai_377
+  - doha_41
+  - chaupai_378
+  - chaupai_379
+  - chaupai_380
+  - chaupai_381
+  - chaupai_382
+  - chaupai_383
+  - chaupai_384
+  - chaupai_385
+  - doha_42
+  - chaupai_386
+  - chaupai_387
+  - chaupai_388
+  - chaupai_389
+  - chaupai_390
+  - chaupai_391
+  - chaupai_392
+  - chaupai_393
+  - doha_43
+  - chaupai_394
+  - chaupai_395
+  - chaupai_396
+  - chaupai_397
+  - chaupai_398
+  - chaupai_399
+  - chaupai_400
+  - chaupai_401
+  - doha_44
+  - chaupai_402
+  - chaupai_403
+  - chaupai_404
+  - chaupai_405
+  - chaupai_406
+  - chaupai_407
+  - chaupai_408
+  - chaupai_409
+  - doha_45
+  - chaupai_410
+  - chaupai_411
+  - chaupai_412
+  - chaupai_413
+  - chaupai_414
+  - chaupai_415
+  - chaupai_416
+  - chaupai_417
+  - doha_46
+  - chaupai_418
+  - chaupai_419
+  - chaupai_420
+  - chaupai_421
+  - chaupai_422
+  - chaupai_423
+  - chaupai_424
+  - chaupai_425
+  - chaupai_426
+  - chaupai_427
+  - doha_47
+  - chaupai_428
+  - chaupai_429
+  - chaupai_430
+  - chaupai_431
+  - chaupai_432
+  - chaupai_433
+  - chaupai_434
+  - chaupai_435
+  - chaupai_436
+  - doha_48
+  - chaupai_437
+  - chaupai_438
+  - chaupai_439
+  - chaupai_440
+  - chaupai_441
+  - chaupai_442
+  - chaupai_443
+  - chaupai_444
+  - doha_49
+  - chaupai_445
+  - chaupai_446
+  - chaupai_447
+  - chaupai_448
+  - chaupai_449
+  - chaupai_450
+  - chaupai_451
+  - chaupai_452
+  - doha_50
+  - chaupai_453
+  - chaupai_454
+  - chaupai_455
+  - chaupai_456
+  - chaupai_457
+  - chaupai_458
+  - chaupai_459
+  - chaupai_460
+  - doha_51
+  - chaupai_461
+  - chaupai_462
+  - chaupai_463
+  - chaupai_464
+  - chaupai_465
+  - chaupai_466
+  - chaupai_467
+  - chaupai_468
+  - doha_52
+  - chaupai_469
+  - chaupai_470
+  - chaupai_471
+  - chaupai_472
+  - chaupai_473
+  - chaupai_474
+  - chaupai_475
+  - chaupai_476
+  - doha_53
+  - chaupai_477
+  - chaupai_478
+  - chaupai_479
+  - chaupai_480
+  - chaupai_481
+  - chaupai_482
+  - chaupai_483
+  - chaupai_484
+  - chaupai_485
+  - chaupai_486
+  - doha_54
+  - chaupai_487
+  - chaupai_488
+  - chaupai_489
+  - chaupai_490
+  - chaupai_491
+  - chaupai_492
+  - chaupai_493
+  - chaupai_494
+  - chaupai_495
+  - chaupai_496
+  - chaupai_497
+  - chaupai_498
+  - doha_55
+  - chaupai_499
+  - chaupai_500
+  - chaupai_501
+  - chaupai_502
+  - chaupai_503
+  - chaupai_504
+  - chaupai_505
+  - chaupai_506
+  - doha_56
+  - chaupai_507
+  - chaupai_508
+  - chaupai_509
+  - chaupai_510
+  - chaupai_511
+  - chaupai_512
+  - chaupai_513
+  - chaupai_514
+  - doha_57
+  - chaupai_515
+  - chaupai_516
+  - chaupai_517
+  - chaupai_518
+  - chaupai_519
+  - chaupai_520
+  - chaupai_521
+  - chaupai_522
+  - doha_58
+shloka_01:
+  devanagari: 'शान्तं शाश्वतमप्रमेयमनघं निर्वाणशान्तिप्रदं
+
+    ब्रह्माशम्भुफणीन्द्रसेव्यमनिशं वेदान्तवेद्यं विभुम् ।
+
+    रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं
+
+    वन्देऽहं करुणाकरं रघुवरं भूपालचूड़ामणिम्'
+shloka_02:
+  devanagari: 'नान्या स्पृहा रघुपते हृदयेऽस्मदीये
+
+    सत्यं वदामि च भवानखिलान्तरात्मा।
+
+    भक्तिं प्रयच्छ रघुपुङ्गव निर्भरां मे
+
+    कामादिदोषरहितं कुरु मानसं च'
+shloka_03:
+  devanagari: 'अतुलितबलधामं हेमशैलाभदेहं
+
+    दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्।
+
+    सकलगुणनिधानं वानराणामधीशं
+
+    रघुपतिप्रियभक्तं वातजातं नमामि'
+chaupai_01:
+  devanagari: जामवंत के बचन सुहाए। सुनि हनुमंत हृदय अति भाए॥
+chaupai_02:
+  devanagari: तब लगि मोहि परिखेहु तुम्ह भाई। सहि दुख कंद मूल फल खाई॥
+chaupai_03:
+  devanagari: जब लगि आवौं सीतहि देखी। होइहि काजु मोहि हरष बिसेषी॥
+chaupai_04:
+  devanagari: यह कहि नाइ सबन्हि कहुँ माथा। चलेउ हरषि हियँ धरि रघुनाथा॥
+chaupai_05:
+  devanagari: सिंधु तीर एक भूधर सुंदर। कौतुक कूदि चढ़ेउ ता ऊपर॥
+chaupai_06:
+  devanagari: बार बार रघुबीर सँभारी। तरकेउ पवनतनय बल भारी॥
+chaupai_07:
+  devanagari: जेहिं गिरि चरन देइ हनुमंता। चलेउ सो गा पाताल तुरंता॥
+chaupai_08:
+  devanagari: जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना॥
+chaupai_09:
+  devanagari: जलनिधि रघुपति दूत बिचारी। तैं मैनाक होहि श्रमहारी॥
+doha_01:
+  devanagari: 'हनूमान तेहि परसा कर पुनि कीन्ह प्रनाम।
+
+    राम काजु कीन्हें बिनु मोहि कहाँ बिश्राम'
+chaupai_10:
+  devanagari: जात पवनसुत देवन्ह देखा। जानैं कहुँ बल बुद्धि बिसेषा॥
+chaupai_11:
+  devanagari: सुरसा नाम अहिन्ह कै माता। पठइन्हि आइ कही तेहिं बाता॥
+chaupai_12:
+  devanagari: आजु सुरन्ह मोहि दीन्ह अहारा। सुनत बचन कह पवनकुमारा॥
+chaupai_13:
+  devanagari: राम काजु करि फिरि मैं आवौं। सीता कइ सुधि प्रभुहि सुनावौं॥
+chaupai_14:
+  devanagari: तब तव बदन पैठिहउँ आई। सत्य कहउँ मोहि जान दे माई॥
+chaupai_15:
+  devanagari: कबनेहुँ जतन देइ नहिं जाना। ग्रससि न मोहि कहेउ हनुमाना॥
+chaupai_16:
+  devanagari: जोजन भरि तेहिं बदनु पसारा। कपि तनु कीन्ह दुगुन बिस्तारा॥
+chaupai_17:
+  devanagari: सोरह जोजन मुख तेहिं ठयऊ। तुरत पवनसुत बत्तिस भयऊ॥
+chaupai_18:
+  devanagari: जस जस सुरसा बदनु बढ़ावा। तासु दून कपि रूप देखावा॥
+chaupai_19:
+  devanagari: सत जोजन तेहिं आनन कीन्हा। अति लघु रूप पवनसुत लीन्हा॥
+chaupai_20:
+  devanagari: बदन पइठि पुनि बाहेर आवा। मागा बिदा ताहि सिरु नावा॥
+chaupai_21:
+  devanagari: मोहि सुरन्ह जेहि लागि पठावा। बुधि बल मरमु तोर मै पावा॥
+doha_02:
+  devanagari: 'राम काजु सबु करिहहु तुम्ह बल बुद्धि निधान।
+
+    आसिष देह गई सो हरषि चलेउ हनुमान'
+chaupai_22:
+  devanagari: निसिचरि एक सिंधु महुँ रहई। करि माया नभु के खग गहई॥
+chaupai_23:
+  devanagari: जीव जंतु जे गगन उड़ाहीं। जल बिलोकि तिन्ह कै परिछाहीं॥
+chaupai_24:
+  devanagari: गहइ छाहँ सक सो न उड़ाई। एहि बिधि सदा गगनचर खाई॥
+chaupai_25:
+  devanagari: सोइ छल हनूमान कहँ कीन्हा। तासु कपटु कपि तुरतहिं चीन्हा॥
+chaupai_26:
+  devanagari: ताहि मारि मारुतसुत बीरा। बारिधि पार गयउ मतिधीरा॥
+chaupai_27:
+  devanagari: तहाँ जाइ देखी बन सोभा। गुंजत चंचरीक मधु लोभा॥
+chaupai_28:
+  devanagari: नाना तरु फल फूल सुहाए। खग मृग बृंद देखि मन भाए॥
+chaupai_29:
+  devanagari: सैल बिसाल देखि एक आगें। ता पर धाइ चढेउ भय त्यागें॥
+chaupai_30:
+  devanagari: उमा न कछु कपि कै अधिकाई। प्रभु प्रताप जो कालहि खाई॥
+chaupai_31:
+  devanagari: गिरि पर चढि लंका तेहिं देखी। कहि न जाइ अति दुर्ग बिसेषी॥
+chaupai_32:
+  devanagari: अति उतंग जलनिधि चहु पासा। कनक कोट कर परम प्रकासा॥
+doha_03:
+  devanagari: 'पुर रखवारे देखि बहु कपि मन कीन्ह बिचार।
+
+    अति लघु रूप धरौं निसि नगर करौं पइसार'
+chaupai_33:
+  devanagari: मसक समान रूप कपि धरी। लंकहि चलेउ सुमिरि नरहरी॥
+chaupai_34:
+  devanagari: नाम लंकिनी एक निसिचरी। सो कह चलेसि मोहि निंदरी॥
+chaupai_35:
+  devanagari: जानेहि नहीं मरमु सठ मोरा। मोर अहार जहाँ लगि चोरा॥
+chaupai_36:
+  devanagari: मुठिका एक महा कपि हनी। रुधिर बमत धरनीं ढनमनी॥
+chaupai_37:
+  devanagari: पुनि संभारि उठि सो लंका। जोरि पानि कर बिनय संसका॥
+chaupai_38:
+  devanagari: जब रावनहि ब्रह्म बर दीन्हा। चलत बिरंचि कहा मोहि चीन्हा॥
+chaupai_39:
+  devanagari: बिकल होसि तैं कपि कें मारे। तब जानेसु निसिचर संघारे॥
+chaupai_40:
+  devanagari: तात मोर अति पुन्य बहूता। देखेउँ नयन राम कर दूता॥
+doha_04:
+  devanagari: 'तात स्वर्ग अपबर्ग सुख धरिअ तुला एक अंग।
+
+    तूल न ताहि सकल मिलि जो सुख लव सतसंग'
+chaupai_41:
+  devanagari: प्रबिसि नगर कीजे सब काजा। हृदयँ राखि कौसलपुर राजा॥
+chaupai_42:
+  devanagari: गरल सुधा रिपु करहिं मिताई। गोपद सिंधु अनल सितलाई॥
+chaupai_43:
+  devanagari: गरुड़ सुमेरु रेनू सम ताही। राम कृपा करि चितवा जाही॥
+chaupai_44:
+  devanagari: अति लघु रूप धरेउ हनुमाना। पैठा नगर सुमिरि भगवाना॥
+chaupai_45:
+  devanagari: मंदिर मंदिर प्रति करि सोधा। देखे जहँ तहँ अगनित जोधा॥
+chaupai_46:
+  devanagari: गयउ दसानन मंदिर माहीं। अति बिचित्र कहि जात सो नाहीं॥
+chaupai_47:
+  devanagari: सयन किए देखा कपि तेही। मंदिर महुँ न दीखि बैदेही॥
+chaupai_48:
+  devanagari: भवन एक पुनि दीख सुहावा। हरि मंदिर तहँ भिन्न बनावा॥
+doha_05:
+  devanagari: 'रामायुध अंकित गृह सोभा बरनि न जाइ।
+
+    नव तुलसिका बृंद तहँ देखि हरषि कपिराइ'
+chaupai_49:
+  devanagari: लंका निसिचर निकर निवासा। इहाँ कहाँ सज्जन कर बासा॥
+chaupai_50:
+  devanagari: मन महुँ तरक करै कपि लागा। तेहीं समय बिभीषनु जागा॥
+chaupai_51:
+  devanagari: राम राम तेहिं सुमिरन कीन्हा। हृदयँ हरष कपि सज्जन चीन्हा॥
+chaupai_52:
+  devanagari: एहि सन हठि करिहउँ पहिचानी। साधु ते होइ न कारज हानी॥
+chaupai_53:
+  devanagari: बिप्र रुप धरि बचन सुनाए। सुनत बिभीषण उठि तहँ आए॥
+chaupai_54:
+  devanagari: करि प्रनाम पूँछी कुसलाई। बिप्र कहहु निज कथा बुझाई॥
+chaupai_55:
+  devanagari: की तुम्ह हरि दासन्ह महँ कोई। मोरें हृदय प्रीति अति होई॥
+chaupai_56:
+  devanagari: की तुम्ह रामु दीन अनुरागी। आयहु मोहि करन बड़भागी॥
+doha_06:
+  devanagari: 'तब हनुमंत कही सब राम कथा निज नाम।
+
+    सुनत जुगल तन पुलक मन मगन सुमिरि गुन ग्राम'
+chaupai_57:
+  devanagari: सुनहु पवनसुत रहनि हमारी। जिमि दसनन्हि महुँ जीभ बिचारी॥
+chaupai_58:
+  devanagari: तात कबहुँ मोहि जानि अनाथा। करिहहिं कृपा भानुकुल नाथा॥
+chaupai_59:
+  devanagari: तामस तनु कछु साधन नाहीं। प्रीति न पद सरोज मन माहीं॥
+chaupai_60:
+  devanagari: अब मोहि भा भरोस हनुमंता। बिनु हरिकृपा मिलहिं नहिं संता॥
+chaupai_61:
+  devanagari: जौ रघुबीर अनुग्रह कीन्हा। तौ तुम्ह मोहि दरसु हठि दीन्हा॥
+chaupai_62:
+  devanagari: सुनहु बिभीषन प्रभु कै रीती। करहिं सदा सेवक पर प्रीती॥
+chaupai_63:
+  devanagari: कहहु कवन मैं परम कुलीना। कपि चंचल सबहीं बिधि हीना॥
+chaupai_64:
+  devanagari: प्रात लेइ जो नाम हमारा। तेहि दिन ताहि न मिलै अहारा॥
+doha_07:
+  devanagari: 'अस मैं अधम सखा सुनु मोहू पर रघुबीर।
+
+    कीन्ही कृपा सुमिरि गुन भरे बिलोचन नीर'
+chaupai_65:
+  devanagari: जानतहूँ अस स्वामि बिसारी। फिरहिं ते काहे न होहिं दुखारी॥
+chaupai_66:
+  devanagari: एहि बिधि कहत राम गुन ग्रामा। पावा अनिर्बाच्य बिश्रामा॥
+chaupai_67:
+  devanagari: पुनि सब कथा बिभीषन कही। जेहि बिधि जनकसुता तहँ रही॥
+chaupai_68:
+  devanagari: तब हनुमंत कहा सुनु भ्राता। देखी चहउँ जानकी माता॥
+chaupai_69:
+  devanagari: जुगुति बिभीषन सकल सुनाई। चलेउ पवनसुत बिदा कराई॥
+chaupai_70:
+  devanagari: करि सोइ रूप गयउ पुनि तहवाँ। बन असोक सीता रह जहवाँ॥
+chaupai_71:
+  devanagari: देखि मनहि महुँ कीन्ह प्रनामा। बैठेहिं बीति जात निसि जामा॥
+chaupai_72:
+  devanagari: कृस तन सीस जटा एक बेनी। जपति हृदयँ रघुपति गुन श्रेनी॥
+doha_08:
+  devanagari: 'निज पद नयन दिएँ मन राम पद कमल लीन।
+
+    परम दुखी भा पवनसुत देखि जानकी दीन'
+chaupai_73:
+  devanagari: तरु पल्लव महुँ रहा लुकाई। करइ बिचार करौं का भाई॥
+chaupai_74:
+  devanagari: तेहि अवसर रावनु तहँ आवा। संग नारि बहु किएँ बनावा॥
+chaupai_75:
+  devanagari: बहु बिधि खल सीतहि समुझावा। साम दान भय भेद देखावा॥
+chaupai_76:
+  devanagari: कह रावनु सुनु सुमुखि सयानी। मंदोदरी आदि सब रानी॥
+chaupai_77:
+  devanagari: तव अनुचरीं करउँ पन मोरा। एक बार बिलोकु मम ओरा॥
+chaupai_78:
+  devanagari: तृन धरि ओट कहति बैदेही। सुमिरि अवधपति परम सनेही॥
+chaupai_79:
+  devanagari: सुनु दसमुख खद्योत प्रकासा। कबहुँ कि नलिनी करइ बिकासा॥
+chaupai_80:
+  devanagari: अस मन समुझु कहति जानकी। खल सुधि नहिं रघुबीर बान की॥
+chaupai_81:
+  devanagari: सठ सूने हरि आनेहि मोहि। अधम निलज्ज लाज नहिं तोही॥
+doha_09:
+  devanagari: 'आपुहि सुनि खद्योत सम रामहि भानु समान।
+
+    परुष बचन सुनि काढ़ि असि बोला अति खिसिआन'
+chaupai_82:
+  devanagari: सीता तैं मम कृत अपमाना। कटिहउँ तव सिर कठिन कृपाना॥
+chaupai_83:
+  devanagari: नाहिं त सपदि मानु मम बानी। सुमुखि होति न त जीवन हानी॥
+chaupai_84:
+  devanagari: स्याम सरोज दाम सम सुंदर। प्रभु भुज करि कर सम दसकंधर॥
+chaupai_85:
+  devanagari: सो भुज कंठ कि तव असि घोरा। सुनु सठ अस प्रवान पन मोरा॥
+chaupai_86:
+  devanagari: चंद्रहास हरु मम परितापं। रघुपति बिरह अनल संजातं॥
+chaupai_87:
+  devanagari: सीतल निसित बहसि बर धारा। कह सीता हरु मम दुख भारा॥
+chaupai_88:
+  devanagari: सुनत बचन पुनि मारन धावा। मयतनयाँ कहि नीति बुझावा॥
+chaupai_89:
+  devanagari: कहेसि सकल निसिचरिन्ह बोलाई। सीतहि बहु बिधि त्रासहु जाई॥
+chaupai_90:
+  devanagari: मास दिवस महुँ कहा न माना। तौ मैं मारबि काढ़ि कृपाना॥
+doha_10:
+  devanagari: 'भवन गयउ दसकंधर इहाँ पिसाचिनि बृंद।
+
+    सीतहि त्रास देखावहि धरहिं रूप बहु मंद'
+chaupai_91:
+  devanagari: त्रिजटा नाम राच्छसी एका। राम चरन रति निपुन बिबेका॥
+chaupai_92:
+  devanagari: सबन्हौ बोलि सुनाएसि सपना। सीतहि सेइ करहु हित अपना॥
+chaupai_93:
+  devanagari: सपनें बानर लंका जारी। जातुधान सेना सब मारी॥
+chaupai_94:
+  devanagari: खर आरूढ़ नगन दससीसा। मुंडित सिर खंडित भुज बीसा॥
+chaupai_95:
+  devanagari: एहि बिधि सो दच्छिन दिसि जाई। लंका मनहुँ बिभीषन पाई॥
+chaupai_96:
+  devanagari: नगर फिरी रघुबीर दोहाई। तब प्रभु सीता बोलि पठाई॥
+chaupai_97:
+  devanagari: यह सपना में कहउँ पुकारी। होइहि सत्य गएँ दिन चारी॥
+chaupai_98:
+  devanagari: तासु बचन सुनि ते सब डरीं। जनकसुता के चरनन्हि परीं॥
+doha_11:
+  devanagari: 'जहँ तहँ गईं सकल तब सीता कर मन सोच।
+
+    मास दिवस बीतें मोहि मारिहि निसिचर पोच'
+chaupai_99:
+  devanagari: त्रिजटा सन बोली कर जोरी। मातु बिपति संगिनि तैं मोरी॥
+chaupai_100:
+  devanagari: तजौं देह करु बेगि उपाई। दुसहु बिरहु अब नहिं सहि जाई॥
+chaupai_101:
+  devanagari: आनि काठ रचु चिता बनाई। मातु अनल पुनि देहि लगाई॥
+chaupai_102:
+  devanagari: सत्य करहि मम प्रीति सयानी। सुनै को श्रवन सूल सम बानी॥
+chaupai_103:
+  devanagari: सुनत बचन पद गहि समुझाएसि। प्रभु प्रताप बल सुजसु सुनाएसि॥
+chaupai_104:
+  devanagari: निसि न अनल मिल सुनु सुकुमारी। अस कहि सो निज भवन सिधारी॥
+chaupai_105:
+  devanagari: कह सीता बिधि भा प्रतिकूला। मिलहि न पावक मिटिहि न सूला॥
+chaupai_106:
+  devanagari: देखिअत प्रगट गगन अंगारा। अवनि न आवत एकउ तारा॥
+chaupai_107:
+  devanagari: पावकमय ससि स्त्रवत न आगी। मानहुँ मोहि जानि हतभागी॥
+chaupai_108:
+  devanagari: सुनहि बिनय मम बिटप असोका। सत्य नाम करु हरु मम सोका॥
+chaupai_109:
+  devanagari: नूतन किसलय अनल समाना। देहि अगिनि जनि करहि निदाना॥
+chaupai_110:
+  devanagari: देखि परम बिरहाकुल सीता। सो छन कपिहि कलप सम बीता॥
+soratha_01:
+  devanagari: '-कपि करि हृदयँ बिचार दीन्हि मुद्रिका डारी तब।
+
+    जनु असोक अंगार दीन्हि हरषि उठि कर गहेउ'
+chaupai_111:
+  devanagari: तब देखी मुद्रिका मनोहर। राम नाम अंकित अति सुंदर॥
+chaupai_112:
+  devanagari: चकित चितव मुदरी पहिचानी। हरष बिषाद हृदयँ अकुलानी॥
+chaupai_113:
+  devanagari: जीति को सकइ अजय रघुराई। माया तें असि रचि नहिं जाई॥
+chaupai_114:
+  devanagari: सीता मन बिचार कर नाना। मधुर बचन बोलेउ हनुमाना॥
+chaupai_115:
+  devanagari: रामचंद्र गुन बरनैं लागा। सुनतहिं सीता कर दुख भागा॥
+chaupai_116:
+  devanagari: लागीं सुनैं श्रवन मन लाई। आदिहु तें सब कथा सुनाई॥
+chaupai_117:
+  devanagari: श्रवनामृत जेहिं कथा सुहाई। कहि सो प्रगट होति किन भाई॥
+chaupai_118:
+  devanagari: तब हनुमंत निकट चलि गयऊ। फिरि बैंठीं मन बिसमय भयऊ॥
+chaupai_119:
+  devanagari: राम दूत मैं मातु जानकी। सत्य सपथ करुनानिधान की॥
+chaupai_120:
+  devanagari: यह मुद्रिका मातु मैं आनी। दीन्हि राम तुम्ह कहँ सहिदानी॥
+chaupai_121:
+  devanagari: नर बानरहि संग कहु कैसें। कहि कथा भइ संगति जैसें॥
+doha_12:
+  devanagari: 'कपि के बचन सप्रेम सुनि उपजा मन बिस्वास॥
+
+    जाना मन क्रम बचन यह कृपासिंधु कर दास'
+chaupai_122:
+  devanagari: हरिजन जानि प्रीति अति गाढ़ी। सजल नयन पुलकावलि बाढ़ी॥
+chaupai_123:
+  devanagari: बूड़त बिरह जलधि हनुमाना। भयउ तात मों कहुँ जलजाना॥
+chaupai_124:
+  devanagari: अब कहु कुसल जाउँ बलिहारी। अनुज सहित सुख भवन खरारी॥
+chaupai_125:
+  devanagari: कोमलचित कृपाल रघुराई। कपि केहि हेतु धरी निठुराई॥
+chaupai_126:
+  devanagari: सहज बानि सेवक सुख दायक। कबहुँक सुरति करत रघुनायक॥
+chaupai_127:
+  devanagari: कबहुँ नयन मम सीतल ताता। होइहहि निरखि स्याम मृदु गाता॥
+chaupai_128:
+  devanagari: बचनु न आव नयन भरे बारी। अहह नाथ हौं निपट बिसारी॥
+chaupai_129:
+  devanagari: देखि परम बिरहाकुल सीता। बोला कपि मृदु बचन बिनीता॥
+chaupai_130:
+  devanagari: मातु कुसल प्रभु अनुज समेता। तव दुख दुखी सुकृपा निकेता॥
+chaupai_131:
+  devanagari: जनि जननी मानहु जियँ ऊना। तुम्ह ते प्रेमु राम कें दूना॥
+doha_13:
+  devanagari: 'रघुपति कर संदेसु अब सुनु जननी धरि धीर।
+
+    अस कहि कपि गद गद भयउ भरे बिलोचन नीर'
+chaupai_132:
+  devanagari: कहेउ राम बियोग तव सीता। मो कहुँ सकल भए बिपरीता॥
+chaupai_133:
+  devanagari: नव तरु किसलय मनहुँ कृसानू। कालनिसा सम निसि ससि भानू॥
+chaupai_134:
+  devanagari: कुबलय बिपिन कुंत बन सरिसा। बारिद तपत तेल जनु बरिसा॥
+chaupai_135:
+  devanagari: जे हित रहे करत तेइ पीरा। उरग स्वास सम त्रिबिध समीरा॥
+chaupai_136:
+  devanagari: कहेहू तें कछु दुख घटि होई। काहि कहौं यह जान न कोई॥
+chaupai_137:
+  devanagari: तत्व प्रेम कर मम अरु तोरा। जानत प्रिया एकु मनु मोरा॥
+chaupai_138:
+  devanagari: सो मनु सदा रहत तोहि पाहीं। जानु प्रीति रसु एतेनहि माहीं॥
+chaupai_139:
+  devanagari: प्रभु संदेसु सुनत बैदेही। मगन प्रेम तन सुधि नहिं तेही॥
+chaupai_140:
+  devanagari: कह कपि हृदयँ धीर धरु माता। सुमिरु राम सेवक सुखदाता॥
+chaupai_141:
+  devanagari: उर आनहु रघुपति प्रभुताई। सुनि मम बचन तजहु कदराई॥
+doha_14:
+  devanagari: 'निसिचर निकर पतंग सम रघुपति बान कृसानु।
+
+    जननी हृदयँ धीर धरु जरे निसाचर जानु'
+chaupai_142:
+  devanagari: जौं रघुबीर होति सुधि पाई। करते नहिं बिलंबु रघुराई॥
+chaupai_143:
+  devanagari: रामबान रबि उएँ जानकी। तम बरूथ कहँ जातुधान की॥
+chaupai_144:
+  devanagari: अबहिं मातु मैं जाउँ लवाई। प्रभु आयसु नहिं राम दोहाई॥
+chaupai_145:
+  devanagari: कछुक दिवस जननी धरु धीरा। कपिन्ह सहित अइहहिं रघुबीरा॥
+chaupai_146:
+  devanagari: निसिचर मारि तोहि लै जैहहिं। तिहुँ पुर नारदादि जसु गैहहिं॥
+chaupai_147:
+  devanagari: हैं सुत कपि सब तुम्हहि समाना। जातुधान अति भट बलवाना॥
+chaupai_148:
+  devanagari: मोरें हृदय परम संदेहा। सुनि कपि प्रगट कीन्ह निज देहा॥
+chaupai_149:
+  devanagari: कनक भूधराकार सरीरा। समर भयंकर अतिबल बीरा॥
+chaupai_150:
+  devanagari: सीता मन भरोस तब भयऊ। पुनि लघु रूप पवनसुत लयऊ॥
+doha_15:
+  devanagari: 'सुनु माता साखामृग नहिं बल बुद्धि बिसाल।
+
+    प्रभु प्रताप तें गरुड़हि खाइ परम लघु ब्याल'
+chaupai_151:
+  devanagari: मन संतोष सुनत कपि बानी। भगति प्रताप तेज बल सानी॥
+chaupai_152:
+  devanagari: आसिष दीन्हि रामप्रिय जाना। होहु तात बल सील निधाना॥
+chaupai_153:
+  devanagari: अजर अमर गुननिधि सुत होहू। करहुँ बहुत रघुनायक छोहू॥
+chaupai_154:
+  devanagari: करहुँ कृपा प्रभु अस सुनि काना। निर्भर प्रेम मगन हनुमाना॥
+chaupai_155:
+  devanagari: बार बार नाएसि पद सीसा। बोला बचन जोरि कर कीसा॥
+chaupai_156:
+  devanagari: अब कृतकृत्य भयउँ मैं माता। आसिष तव अमोघ बिख्याता॥
+chaupai_157:
+  devanagari: सुनहु मातु मोहि अतिसय भूखा। लागि देखि सुंदर फल रूखा॥
+chaupai_158:
+  devanagari: सुनु सुत करहिं बिपिन रखवारी। परम सुभट रजनीचर भारी॥
+chaupai_159:
+  devanagari: तिन्ह कर भय माता मोहि नाहीं। जौं तुम्ह सुख मानहु मन माहीं॥
+doha_16:
+  devanagari: 'देखि बुद्धि बल निपुन कपि कहेउ जानकीं जाहु।
+
+    रघुपति चरन हृदयँ धरि तात मधुर फल खाहु'
+chaupai_160:
+  devanagari: चलेउ नाइ सिरु पैठेउ बागा। फल खाएसि तरु तोरैं लागा॥
+chaupai_161:
+  devanagari: रहे तहाँ बहु भट रखवारे। कछु मारेसि कछु जाइ पुकारे॥
+chaupai_162:
+  devanagari: नाथ एक आवा कपि भारी। तेहिं असोक बाटिका उजारी॥
+chaupai_163:
+  devanagari: खाएसि फल अरु बिटप उपारे। रच्छक मर्दि मर्दि महि डारे॥
+chaupai_164:
+  devanagari: सुनि रावन पठए भट नाना। तिन्हहि देखि गर्जेउ हनुमाना॥
+chaupai_165:
+  devanagari: सब रजनीचर कपि संघारे। गए पुकारत कछु अधमारे॥
+chaupai_166:
+  devanagari: पुनि पठयउ तेहिं अच्छकुमारा। चला संग लै सुभट अपारा॥
+chaupai_167:
+  devanagari: आवत देखि बिटप गहि तर्जा। ताहि निपाति महाधुनि गर्जा॥
+doha_17:
+  devanagari: 'कछु मारेसि कछु मर्देसि कछु मिलएसि धरि धूरि।
+
+    कछु पुनि जाइ पुकारे प्रभु मर्कट बल भूरि'
+chaupai_168:
+  devanagari: सुनि सुत बध लंकेस रिसाना। पठएसि मेघनाद बलवाना॥
+chaupai_169:
+  devanagari: मारसि जनि सुत बांधेसु ताही। देखिअ कपिहि कहाँ कर आही॥
+chaupai_170:
+  devanagari: चला इंद्रजित अतुलित जोधा। बंधु निधन सुनि उपजा क्रोधा॥
+chaupai_171:
+  devanagari: कपि देखा दारुन भट आवा। कटकटाइ गर्जा अरु धावा॥
+chaupai_172:
+  devanagari: अति बिसाल तरु एक उपारा। बिरथ कीन्ह लंकेस कुमारा॥
+chaupai_173:
+  devanagari: रहे महाभट ताके संगा। गहि गहि कपि मर्दइ निज अंगा॥
+chaupai_174:
+  devanagari: मुठिका मारि चढ़ा तरु जाई। ताहि एक छन मुरुछा आई॥
+chaupai_175:
+  devanagari: उठि बहोरि कीन्हिसि बहु माया। जीति न जाइ प्रभंजन जाया॥
+doha_18:
+  devanagari: 'ब्रह्म अस्त्र तेहिं साँधा कपि मन कीन्ह बिचार।
+
+    जौं न ब्रह्मसर मानउँ महिमा मिटइ अपार'
+chaupai_176:
+  devanagari: ब्रह्मबान कपि कहुँ तेहि मारा। परतिहुँ बार कटकु संघारा॥
+chaupai_177:
+  devanagari: तेहि देखा कपि मुरुछित भयऊ। नागपास बाँधेसि लै गयऊ॥
+chaupai_178:
+  devanagari: जासु नाम जपि सुनहु भवानी। भव बंधन काटहिं नर ग्यानी॥
+chaupai_179:
+  devanagari: तासु दूत कि बंध तरु आवा। प्रभु कारज लगि कपिहिं बँधावा॥
+chaupai_180:
+  devanagari: कपि बंधन सुनि निसिचर धाए। कौतुक लागि सभाँ सब आए॥
+chaupai_181:
+  devanagari: दसमुख सभा दीखि कपि जाई। कहि न जाइ कछु अति प्रभुताई॥
+chaupai_182:
+  devanagari: कर जोरें सुर दिसिप बिनीता। भृकुटि बिलोकत सकल सभीता॥
+chaupai_183:
+  devanagari: देखि प्रताप न कपि मन संका। जिमि अहिगन महुँ गरुड़ असंका॥
+doha_19:
+  devanagari: 'कपिहि बिलोकि दसानन बिहसा कहि दुर्बाद।
+
+    सुत बध सुरति कीन्हि पुनि उपजा हृदयँ बिषाद'
+chaupai_184:
+  devanagari: कह लंकेस कवन तैं कीसा। केहिं के बल घालेहि बन खीसा॥
+chaupai_185:
+  devanagari: की धौं श्रवन सुनेहि नहिं मोही। देखउँ अति असंक सठ तोही॥
+chaupai_186:
+  devanagari: मारे निसिचर केहिं अपराधा। कहु सठ तोहि न प्रान कइ बाधा॥
+chaupai_187:
+  devanagari: सुन रावन ब्रह्मांड निकाया। पाइ जासु बल बिरचित माया॥
+chaupai_188:
+  devanagari: जा बल सीस धरत सहसानन। अंडकोस समेत गिरि कानन॥
+chaupai_189:
+  devanagari: हर कोदंड कठिन जेहि भंजा। तेहि समेत नृप दल मद गंजा॥
+chaupai_190:
+  devanagari: खर दूषन त्रिसिरा अरु बाली। बधे सकल अतुलित बलसाली॥
+doha_20:
+  devanagari: 'जाके बल लवलेस तें जितेहु चराचर झारि।
+
+    तासु दूत मैं जा करि हरि आनेहु प्रिय नारि'
+chaupai_191:
+  devanagari: जानउँ मैं तुम्हारि प्रभुताई। सहसबाहु सन परी लराई॥
+chaupai_192:
+  devanagari: समर बालि सन करि जसु पावा। सुनि कपि बचन बिहसि बिहरावा॥
+chaupai_193:
+  devanagari: खायउँ फल प्रभु लागी भूँखा। कपि सुभाव तें तोरेउँ रूखा॥
+chaupai_194:
+  devanagari: सब कें देह परम प्रिय स्वामी। मारहिं मोहि कुमारग गामी॥
+chaupai_195:
+  devanagari: जिन्ह मोहि मारा ते मैं मारे। तेहि पर बाँधेउ तनयँ तुम्हारे॥
+chaupai_196:
+  devanagari: मोहि न कछु बाँधे कइ लाजा। कीन्ह चहउँ निज प्रभु कर काजा॥
+chaupai_197:
+  devanagari: बिनती करउँ जोरि कर रावन। सुनहु मान तजि मोर सिखावन॥
+chaupai_198:
+  devanagari: देखहु तुम्ह निज कुलहि बिचारी। भ्रम तजि भजहु भगत भय हारी॥
+chaupai_199:
+  devanagari: जाकें डर अति काल डेराई। जो सुर असुर चराचर खाई॥
+chaupai_200:
+  devanagari: तासों बयरु कबहुँ नहिं कीजै। मोरे कहें जानकी दीजै॥
+doha_21:
+  devanagari: 'प्रनतपाल रघुनायक करुना सिंधु खरारि।
+
+    गएँ सरन प्रभु राखिहैं तव अपराध बिसारि'
+chaupai_201:
+  devanagari: राम चरन पंकज उर धरहू। लंका अचल राज तुम्ह करहू॥
+chaupai_202:
+  devanagari: रिषि पुलिस्त जसु बिमल मंयका। तेहि ससि महुँ जनि होहु कलंका॥
+chaupai_203:
+  devanagari: राम नाम बिनु गिरा न सोहा। देखु बिचारि त्यागि मद मोहा॥
+chaupai_204:
+  devanagari: बसन हीन नहिं सोह सुरारी। सब भूषण भूषित बर नारी॥
+chaupai_205:
+  devanagari: राम बिमुख संपति प्रभुताई। जाइ रही पाई बिनु पाई॥
+chaupai_206:
+  devanagari: सजल मूल जिन्ह सरितन्ह नाहीं। बरषि गए पुनि तबहिं सुखाहीं॥
+chaupai_207:
+  devanagari: सुनु दसकंठ कहउँ पन रोपी। बिमुख राम त्राता नहिं कोपी॥
+chaupai_208:
+  devanagari: संकर सहस बिष्नु अज तोही। सकहिं न राखि राम कर द्रोही॥
+doha_22:
+  devanagari: 'मोहमूल बहु सूल प्रद त्यागहु तम अभिमान।
+
+    भजहु राम रघुनायक कृपा सिंधु भगवान'
+chaupai_209:
+  devanagari: जदपि कहि कपि अति हित बानी। भगति बिबेक बिरति नय सानी॥
+chaupai_210:
+  devanagari: बोला बिहसि महा अभिमानी। मिला हमहि कपि गुर बड़ ग्यानी॥
+chaupai_211:
+  devanagari: मृत्यु निकट आई खल तोही। लागेसि अधम सिखावन मोही॥
+chaupai_212:
+  devanagari: उलटा होइहि कह हनुमाना। मतिभ्रम तोर प्रगट मैं जाना॥
+chaupai_213:
+  devanagari: सुनि कपि बचन बहुत खिसिआना। बेगि न हरहुँ मूढ़ कर प्राना॥
+chaupai_214:
+  devanagari: नाइ सीस करि बिनय बहूता। नीति बिरोध न मारिअ दूता॥
+chaupai_215:
+  devanagari: आन दंड कछु करिअ गोसाँई। सबहीं कहा मंत्र भल भाई॥
+chaupai_216:
+  devanagari: सुनत बिहसि बोला दसकंधर। अंग भंग करि पठइअ बंदर॥
+chaupai_217:
+  devanagari: तेल बोरि पट बाँधि पुनि पावक देहु लगाइ
+chaupai_218:
+  devanagari: पूँछहीन बानर तहँ जाइहि। तब सठ निज नाथहि लइ आइहि॥
+chaupai_219:
+  devanagari: जिन्ह कै कीन्हसि बहुत बड़ाई। देखेउँûमैं तिन्ह कै प्रभुताई॥
+chaupai_220:
+  devanagari: बचन सुनत कपि मन मुसुकाना। भइ सहाय सारद मैं जाना॥
+chaupai_221:
+  devanagari: जातुधान सुनि रावन बचना। लागे रचैं मूढ़ सोइ रचना॥
+chaupai_222:
+  devanagari: रहा न नगर बसन घृत तेला। बाढ़ी पूँछ कीन्ह कपि खेला॥
+chaupai_223:
+  devanagari: कौतुक कहँ आए पुरबासी। मारहिं चरन करहिं बहु हाँसी॥
+chaupai_224:
+  devanagari: बाजहिं ढोल देहिं सब तारी। नगर फेरि पुनि पूँछ प्रजारी॥
+chaupai_225:
+  devanagari: पावक जरत देखि हनुमंता। भयउ परम लघु रुप तुरंता॥
+chaupai_226:
+  devanagari: निबुकि चढ़ेउ कपि कनक अटारीं। भई सभीत निसाचर नारीं॥
+doha_23:
+  devanagari: 'हरि प्रेरित तेहि अवसर चले मरुत उनचास।
+
+    अट्टहास करि गर्जéा कपि बढ़ि लाग अकास'
+chaupai_227:
+  devanagari: देह बिसाल परम हरुआई। मंदिर तें मंदिर चढ़ धाई॥
+chaupai_228:
+  devanagari: जरइ नगर भा लोग बिहाला। झपट लपट बहु कोटि कराला॥
+chaupai_229:
+  devanagari: तात मातु हा सुनिअ पुकारा। एहि अवसर को हमहि उबारा॥
+chaupai_230:
+  devanagari: हम जो कहा यह कपि नहिं होई। बानर रूप धरें सुर कोई॥
+chaupai_231:
+  devanagari: साधु अवग्या कर फलु ऐसा। जरइ नगर अनाथ कर जैसा॥
+chaupai_232:
+  devanagari: जारा नगरु निमिष एक माहीं। एक बिभीषन कर गृह नाहीं॥
+chaupai_233:
+  devanagari: ता कर दूत अनल जेहिं सिरिजा। जरा न सो तेहि कारन गिरिजा॥
+chaupai_234:
+  devanagari: उलटि पलटि लंका सब जारी। कूदि परा पुनि सिंधु मझारी॥
+doha_24:
+  devanagari: 'पूँछ बुझाइ खोइ श्रम धरि लघु रूप बहोरि।
+
+    जनकसुता के आगें ठाढ़ भयउ कर जोरि'
+chaupai_235:
+  devanagari: मातु मोहि दीजे कछु चीन्हा। जैसें रघुनायक मोहि दीन्हा॥
+chaupai_236:
+  devanagari: चूड़ामनि उतारि तब दयऊ। हरष समेत पवनसुत लयऊ॥
+chaupai_237:
+  devanagari: कहेहु तात अस मोर प्रनामा। सब प्रकार प्रभु पूरनकामा॥
+chaupai_238:
+  devanagari: दीन दयाल बिरिदु संभारी। हरहु नाथ मम संकट भारी॥
+chaupai_239:
+  devanagari: तात सक्रसुत कथा सुनाएहु। बान प्रताप प्रभुहि समुझाएहु॥
+chaupai_240:
+  devanagari: मास दिवस महुँ नाथु न आवा। तौ पुनि मोहि जिअत नहिं पावा॥
+chaupai_241:
+  devanagari: कहु कपि केहि बिधि राखौं प्राना। तुम्हहू तात कहत अब जाना॥
+chaupai_242:
+  devanagari: तोहि देखि सीतलि भइ छाती। पुनि मो कहुँ सोइ दिनु सो राती॥
+doha_25:
+  devanagari: 'जनकसुतहि समुझाइ करि बहु बिधि धीरजु दीन्ह।
+
+    चरन कमल सिरु नाइ कपि गवनु राम पहिं कीन्ह'
+chaupai_243:
+  devanagari: चलत महाधुनि गर्जेसि भारी। गर्भ स्त्रवहिं सुनि निसिचर नारी॥
+chaupai_244:
+  devanagari: नाघि सिंधु एहि पारहि आवा। सबद किलकिला कपिन्ह सुनावा॥
+chaupai_245:
+  devanagari: हरषे सब बिलोकि हनुमाना। नूतन जन्म कपिन्ह तब जाना॥
+chaupai_246:
+  devanagari: मुख प्रसन्न तन तेज बिराजा। कीन्हेसि रामचन्द्र कर काजा॥
+chaupai_247:
+  devanagari: मिले सकल अति भए सुखारी। तलफत मीन पाव जिमि बारी॥
+chaupai_248:
+  devanagari: चले हरषि रघुनायक पासा। पूँछत कहत नवल इतिहासा॥
+chaupai_249:
+  devanagari: तब मधुबन भीतर सब आए। अंगद संमत मधु फल खाए॥
+chaupai_250:
+  devanagari: रखवारे जब बरजन लागे। मुष्टि प्रहार हनत सब भागे॥
+doha_26:
+  devanagari: 'जाइ पुकारे ते सब बन उजार जुबराज।
+
+    सुनि सुग्रीव हरष कपि करि आए प्रभु काज'
+chaupai_251:
+  devanagari: जौं न होति सीता सुधि पाई। मधुबन के फल सकहिं कि खाई॥
+chaupai_252:
+  devanagari: एहि बिधि मन बिचार कर राजा। आइ गए कपि सहित समाजा॥
+chaupai_253:
+  devanagari: आइ सबन्हि नावा पद सीसा। मिलेउ सबन्हि अति प्रेम कपीसा॥
+chaupai_254:
+  devanagari: पूँछी कुसल कुसल पद देखी। राम कृपाँ भा काजु बिसेषी॥
+chaupai_255:
+  devanagari: नाथ काजु कीन्हेउ हनुमाना। राखे सकल कपिन्ह के प्राना॥
+chaupai_256:
+  devanagari: राम कपिन्ह जब आवत देखा। किएँ काजु मन हरष बिसेषा॥
+chaupai_257:
+  devanagari: फटिक सिला बैठे द्वौ भाई। परे सकल कपि चरनन्हि जाई॥
+doha_27:
+  devanagari: 'प्रीति सहित सब भेटे रघुपति करुना पुंज।
+
+    पूँछी कुसल नाथ अब कुसल देखि पद कंज'
+chaupai_258:
+  devanagari: जामवंत कह सुनु रघुराया। जा पर नाथ करहु तुम्ह दाया॥
+chaupai_259:
+  devanagari: ताहि सदा सुभ कुसल निरंतर। सुर नर मुनि प्रसन्न ता ऊपर॥
+chaupai_260:
+  devanagari: सोइ बिजई बिनई गुन सागर। तासु सुजसु त्रेलोक उजागर॥
+chaupai_261:
+  devanagari: प्रभु कीं कृपा भयउ सबु काजू। जन्म हमार सुफल भा आजू॥
+chaupai_262:
+  devanagari: नाथ पवनसुत कीन्हि जो करनी। सहसहुँ मुख न जाइ सो बरनी॥
+chaupai_263:
+  devanagari: पवनतनय के चरित सुहाए। जामवंत रघुपतिहि सुनाए॥
+chaupai_264:
+  devanagari: सुनत कृपानिधि मन अति भाए। पुनि हनुमान हरषि हियँ लाए॥
+chaupai_265:
+  devanagari: कहहु तात केहि भाँति जानकी। रहति करति रच्छा स्वप्रान की॥
+doha_28:
+  devanagari: 'नाम पाहरु दिवस निसि ध्यान तुम्हार कपाट।
+
+    लोचन निज पद जंत्रित जाहिं प्रान केहिं बाट'
+chaupai_266:
+  devanagari: चलत मोहि चूड़ामनि दीन्ही। रघुपति हृदयँ लाइ सोइ लीन्ही॥
+chaupai_267:
+  devanagari: नाथ जुगल लोचन भरि बारी। बचन कहे कछु जनककुमारी॥
+chaupai_268:
+  devanagari: अनुज समेत गहेहु प्रभु चरना। दीन बंधु प्रनतारति हरना॥
+chaupai_269:
+  devanagari: मन क्रम बचन चरन अनुरागी। केहि अपराध नाथ हौं त्यागी॥
+chaupai_270:
+  devanagari: अवगुन एक मोर मैं माना। बिछुरत प्रान न कीन्ह पयाना॥
+chaupai_271:
+  devanagari: नाथ सो नयनन्हि को अपराधा। निसरत प्रान करिहिं हठि बाधा॥
+chaupai_272:
+  devanagari: बिरह अगिनि तनु तूल समीरा। स्वास जरइ छन माहिं सरीरा॥
+chaupai_273:
+  devanagari: सीता के अति बिपति बिसाला। बिनहिं कहें भलि दीनदयाला॥
+doha_29:
+  devanagari: 'निमिष निमिष करुनानिधि जाहिं कलप सम बीति।
+
+    बेगि चलिय प्रभु आनिअ भुज बल खल दल जीति'
+chaupai_274:
+  devanagari: सुनि सीता दुख प्रभु सुख अयना। भरि आए जल राजिव नयना॥
+chaupai_275:
+  devanagari: बचन काँय मन मम गति जाही। सपनेहुँ बूझिअ बिपति कि ताही॥
+chaupai_276:
+  devanagari: कह हनुमंत बिपति प्रभु सोई। जब तव सुमिरन भजन न होई॥
+chaupai_277:
+  devanagari: केतिक बात प्रभु जातुधान की। रिपुहि जीति आनिबी जानकी॥
+chaupai_278:
+  devanagari: सुनु कपि तोहि समान उपकारी। नहिं कोउ सुर नर मुनि तनुधारी॥
+chaupai_279:
+  devanagari: प्रति उपकार करौं का तोरा। सनमुख होइ न सकत मन मोरा॥
+chaupai_280:
+  devanagari: सुनु सुत उरिन मैं नाहीं। देखेउँ करि बिचार मन माहीं॥
+chaupai_281:
+  devanagari: पुनि पुनि कपिहि चितव सुरत्राता। लोचन नीर पुलक अति गाता॥
+doha_30:
+  devanagari: 'सुनि प्रभु बचन बिलोकि मुख गात हरषि हनुमंत।
+
+    चरन परेउ प्रेमाकुल त्राहि त्राहि भगवंत'
+chaupai_282:
+  devanagari: बार बार प्रभु चहइ उठावा। प्रेम मगन तेहि उठब न भावा॥
+chaupai_283:
+  devanagari: प्रभु कर पंकज कपि कें सीसा। सुमिरि सो दसा मगन गौरीसा॥
+chaupai_284:
+  devanagari: सावधान मन करि पुनि संकर। लागे कहन कथा अति सुंदर॥
+chaupai_285:
+  devanagari: कपि उठाइ प्रभु हृदयँ लगावा। कर गहि परम निकट बैठावा॥
+chaupai_286:
+  devanagari: कहु कपि रावन पालित लंका। केहि बिधि दहेउ दुर्ग अति बंका॥
+chaupai_287:
+  devanagari: प्रभु प्रसन्न जाना हनुमाना। बोला बचन बिगत अभिमाना॥
+chaupai_288:
+  devanagari: साखामृग के बड़ि मनुसाई। साखा तें साखा पर जाई॥
+chaupai_289:
+  devanagari: सो सब तव प्रताप रघुराई। नाथ न कछू मोरि प्रभुताई॥
+doha_31:
+  devanagari: 'ता कहुँ प्रभु कछु अगम नहिं जा पर तुम्ह अनुकुल।
+
+    तब प्रभावँ बड़वानलहिं जारि सकइ खलु तूल'
+chaupai_290:
+  devanagari: नाथ भगति अति सुखदायनी। देहु कृपा करि अनपायनी॥
+chaupai_291:
+  devanagari: सुनि प्रभु परम सरल कपि बानी। एवमस्तु तब कहेउ भवानी॥
+chaupai_292:
+  devanagari: उमा राम सुभाउ जेहिं जाना। ताहि भजनु तजि भाव न आना॥
+chaupai_293:
+  devanagari: यह संवाद जासु उर आवा। रघुपति चरन भगति सोइ पावा॥
+chaupai_294:
+  devanagari: सुनि प्रभु बचन कहहिं कपिबृंदा। जय जय जय कृपाल सुखकंदा॥
+chaupai_295:
+  devanagari: तब रघुपति कपिपतिहि बोलावा। कहा चलैं कर करहु बनावा॥
+chaupai_296:
+  devanagari: अब बिलंबु केहि कारन कीजे। तुरत कपिन्ह कहुँ आयसु दीजे॥
+chaupai_297:
+  devanagari: कौतुक देखि सुमन बहु बरषी। नभ तें भवन चले सुर हरषी॥
+doha_32:
+  devanagari: 'कपिपति बेगि बोलाए आए जूथप जूथ।
+
+    नाना बरन अतुल बल बानर भालु बरूथ'
+chaupai_298:
+  devanagari: प्रभु पद पंकज नावहिं सीसा। गरजहिं भालु महाबल कीसा॥
+chaupai_299:
+  devanagari: देखी राम सकल कपि सेना। चितइ कृपा करि राजिव नैना॥
+chaupai_300:
+  devanagari: राम कृपा बल पाइ कपिंदा। भए पच्छजुत मनहुँ गिरिंदा॥
+chaupai_301:
+  devanagari: हरषि राम तब कीन्ह पयाना। सगुन भए सुंदर सुभ नाना॥
+chaupai_302:
+  devanagari: जासु सकल मंगलमय कीती। तासु पयान सगुन यह नीती॥
+chaupai_303:
+  devanagari: प्रभु पयान जाना बैदेहीं। फरकि बाम अँग जनु कहि देहीं॥
+chaupai_304:
+  devanagari: जोइ जोइ सगुन जानकिहि होई। असगुन भयउ रावनहि सोई॥
+chaupai_305:
+  devanagari: चला कटकु को बरनैं पारा। गर्जहि बानर भालु अपारा॥
+chaupai_306:
+  devanagari: नख आयुध गिरि पादपधारी। चले गगन महि इच्छाचारी॥
+chaupai_307:
+  devanagari: केहरिनाद भालु कपि करहीं। डगमगाहिं दिग्गज चिक्करहीं॥
+doha_33:
+  devanagari: 'एहि बिधि जाइ कृपानिधि उतरे सागर तीर।
+
+    जहँ तहँ लागे खान फल भालु बिपुल कपि बीर'
+chaupai_308:
+  devanagari: उहाँ निसाचर रहहिं ससंका। जब ते जारि गयउ कपि लंका॥
+chaupai_309:
+  devanagari: निज निज गृहँ सब करहिं बिचारा। नहिं निसिचर कुल केर उबारा॥
+chaupai_310:
+  devanagari: जासु दूत बल बरनि न जाई। तेहि आएँ पुर कवन भलाई॥
+chaupai_311:
+  devanagari: दूतन्हि सन सुनि पुरजन बानी। मंदोदरी अधिक अकुलानी॥
+chaupai_312:
+  devanagari: रहसि जोरि कर पति पग लागी। बोली बचन नीति रस पागी॥
+chaupai_313:
+  devanagari: कंत करष हरि सन परिहरहू। मोर कहा अति हित हियँ धरहु॥
+chaupai_314:
+  devanagari: समुझत जासु दूत कइ करनी। स्त्रवहीं गर्भ रजनीचर धरनी॥
+chaupai_315:
+  devanagari: तासु नारि निज सचिव बोलाई। पठवहु कंत जो चहहु भलाई॥
+chaupai_316:
+  devanagari: तब कुल कमल बिपिन दुखदाई। सीता सीत निसा सम आई॥
+chaupai_317:
+  devanagari: सुनहु नाथ सीता बिनु दीन्हें। हित न तुम्हार संभु अज कीन्हें॥
+doha_34:
+  devanagari: '–राम बान अहि गन सरिस निकर निसाचर भेक।
+
+    जब लगि ग्रसत न तब लगि जतनु करहु तजि टेक'
+chaupai_318:
+  devanagari: श्रवन सुनी सठ ता करि बानी। बिहसा जगत बिदित अभिमानी॥
+chaupai_319:
+  devanagari: सभय सुभाउ नारि कर साचा। मंगल महुँ भय मन अति काचा॥
+chaupai_320:
+  devanagari: जौं आवइ मर्कट कटकाई। जिअहिं बिचारे निसिचर खाई॥
+chaupai_321:
+  devanagari: कंपहिं लोकप जाकी त्रासा। तासु नारि सभीत बड़ि हासा॥
+chaupai_322:
+  devanagari: अस कहि बिहसि ताहि उर लाई। चलेउ सभाँ ममता अधिकाई॥
+chaupai_323:
+  devanagari: मंदोदरी हृदयँ कर चिंता। भयउ कंत पर बिधि बिपरीता॥
+chaupai_324:
+  devanagari: बैठेउ सभाँ खबरि असि पाई। सिंधु पार सेना सब आई॥
+chaupai_325:
+  devanagari: बूझेसि सचिव उचित मत कहहू। ते सब हँसे मष्ट करि रहहू॥
+chaupai_326:
+  devanagari: जितेहु सुरासुर तब श्रम नाहीं। नर बानर केहि लेखे माही॥
+doha_35:
+  devanagari: 'सचिव बैद गुर तीनि जौं प्रिय बोलहिं भय आस।
+
+    राज धर्म तन तीनि कर होइ बेगिहीं नास'
+chaupai_327:
+  devanagari: सोइ रावन कहुँ बनि सहाई। अस्तुति करहिं सुनाइ सुनाई॥
+chaupai_328:
+  devanagari: अवसर जानि बिभीषनु आवा। भ्राता चरन सीसु तेहिं नावा॥
+chaupai_329:
+  devanagari: पुनि सिरु नाइ बैठ निज आसन। बोला बचन पाइ अनुसासन॥
+chaupai_330:
+  devanagari: जौ कृपाल पूँछिहु मोहि बाता। मति अनुरुप कहउँ हित ताता॥
+chaupai_331:
+  devanagari: जो आपन चाहै कल्याना। सुजसु सुमति सुभ गति सुख नाना॥
+chaupai_332:
+  devanagari: सो परनारि लिलार गोसाईं। तजउ चउथि के चंद कि नाई॥
+chaupai_333:
+  devanagari: चौदह भुवन एक पति होई। भूतद्रोह तिष्टइ नहिं सोई॥
+chaupai_334:
+  devanagari: गुन सागर नागर नर जोऊ। अलप लोभ भल कहइ न कोऊ॥
+doha_36:
+  devanagari: 'काम क्रोध मद लोभ सब नाथ नरक के पंथ।
+
+    सब परिहरि रघुबीरहि भजहु भजहिं जेहि संत'
+chaupai_335:
+  devanagari: तात राम नहिं नर भूपाला। भुवनेस्वर कालहु कर काला॥
+chaupai_336:
+  devanagari: ब्रह्म अनामय अज भगवंता। ब्यापक अजित अनादि अनंता॥
+chaupai_337:
+  devanagari: गो द्विज धेनु देव हितकारी। कृपासिंधु मानुष तनुधारी॥
+chaupai_338:
+  devanagari: जन रंजन भंजन खल ब्राता। बेद धर्म रच्छक सुनु भ्राता॥
+chaupai_339:
+  devanagari: ताहि बयरु तजि नाइअ माथा। प्रनतारति भंजन रघुनाथा॥
+chaupai_340:
+  devanagari: देहु नाथ प्रभु कहुँ बैदेही। भजहु राम बिनु हेतु सनेही॥
+chaupai_341:
+  devanagari: सरन गएँ प्रभु ताहु न त्यागा। बिस्व द्रोह कृत अघ जेहि लागा॥
+chaupai_342:
+  devanagari: जासु नाम त्रय ताप नसावन। सोइ प्रभु प्रगट समुझु जियँ रावन॥
+doha_37:
+  devanagari: 'बार बार पद लागउँ बिनय करउँ दससीस।
+
+    परिहरि मान मोह मद भजहु कोसलाधीस॥३९(क)॥'
+chaupai_343:
+  devanagari: तुरत सो मैं प्रभु सन कही पाइ सुअवसरु तात॥३९(ख)॥
+chaupai_344:
+  devanagari: माल्यवंत अति सचिव सयाना। तासु बचन सुनि अति सुख माना॥
+chaupai_345:
+  devanagari: तात अनुज तव नीति बिभूषन। सो उर धरहु जो कहत बिभीषन॥
+chaupai_346:
+  devanagari: रिपु उतकरष कहत सठ दोऊ। दूरि न करहु इहाँ हइ कोऊ॥
+chaupai_347:
+  devanagari: माल्यवंत गृह गयउ बहोरी। कहइ बिभीषनु पुनि कर जोरी॥
+chaupai_348:
+  devanagari: सुमति कुमति सब कें उर रहहीं। नाथ पुरान निगम अस कहहीं॥
+chaupai_349:
+  devanagari: जहाँ सुमति तहँ संपति नाना। जहाँ कुमति तहँ बिपति निदाना॥
+chaupai_350:
+  devanagari: तव उर कुमति बसी बिपरीता। हित अनहित मानहु रिपु प्रीता॥
+chaupai_351:
+  devanagari: कालराति निसिचर कुल केरी। तेहि सीता पर प्रीति घनेरी॥
+doha_38:
+  devanagari: 'तात चरन गहि मागउँ राखहु मोर दुलार।
+
+    सीत देहु राम कहुँ अहित न होइ तुम्हार'
+chaupai_352:
+  devanagari: बुध पुरान श्रुति संमत बानी। कही बिभीषन नीति बखानी॥
+chaupai_353:
+  devanagari: सुनत दसानन उठा रिसाई। खल तोहि निकट मुत्यु अब आई॥
+chaupai_354:
+  devanagari: जिअसि सदा सठ मोर जिआवा। रिपु कर पच्छ मूढ़ तोहि भावा॥
+chaupai_355:
+  devanagari: कहसि न खल अस को जग माहीं। भुज बल जाहि जिता मैं नाही॥
+chaupai_356:
+  devanagari: मम पुर बसि तपसिन्ह पर प्रीती। सठ मिलु जाइ तिन्हहि कहु नीती॥
+chaupai_357:
+  devanagari: अस कहि कीन्हेसि चरन प्रहारा। अनुज गहे पद बारहिं बारा॥
+chaupai_358:
+  devanagari: उमा संत कइ इहइ बड़ाई। मंद करत जो करइ भलाई॥
+chaupai_359:
+  devanagari: तुम्ह पितु सरिस भलेहिं मोहि मारा। रामु भजें हित नाथ तुम्हारा॥
+chaupai_360:
+  devanagari: सचिव संग लै नभ पथ गयऊ। सबहि सुनाइ कहत अस भयऊ॥
+doha_39:
+  devanagari: 'रामु सत्यसंकल्प प्रभु सभा कालबस तोरि।
+
+    मै रघुबीर सरन अब जाउँ देहु जनि खोरि'
+chaupai_361:
+  devanagari: अस कहि चला बिभीषनु जबहीं। आयूहीन भए सब तबहीं॥
+chaupai_362:
+  devanagari: साधु अवग्या तुरत भवानी। कर कल्यान अखिल कै हानी॥
+chaupai_363:
+  devanagari: रावन जबहिं बिभीषन त्यागा। भयउ बिभव बिनु तबहिं अभागा॥
+chaupai_364:
+  devanagari: चलेउ हरषि रघुनायक पाहीं। करत मनोरथ बहु मन माहीं॥
+chaupai_365:
+  devanagari: देखिहउँ जाइ चरन जलजाता। अरुन मृदुल सेवक सुखदाता॥
+chaupai_366:
+  devanagari: जे पद परसि तरी रिषिनारी। दंडक कानन पावनकारी॥
+chaupai_367:
+  devanagari: जे पद जनकसुताँ उर लाए। कपट कुरंग संग धर धाए॥
+chaupai_368:
+  devanagari: हर उर सर सरोज पद जेई। अहोभाग्य मै देखिहउँ तेई॥
+doha_40:
+  devanagari: 'जिन्ह पायन्ह के पादुकन्हि भरतु रहे मन लाइ।
+
+    ते पद आजु बिलोकिहउँ इन्ह नयनन्हि अब जाइ'
+chaupai_369:
+  devanagari: एहि बिधि करत सप्रेम बिचारा। आयउ सपदि सिंधु एहिं पारा॥
+chaupai_370:
+  devanagari: कपिन्ह बिभीषनु आवत देखा। जाना कोउ रिपु दूत बिसेषा॥
+chaupai_371:
+  devanagari: ताहि राखि कपीस पहिं आए। समाचार सब ताहि सुनाए॥
+chaupai_372:
+  devanagari: कह सुग्रीव सुनहु रघुराई। आवा मिलन दसानन भाई॥
+chaupai_373:
+  devanagari: कह प्रभु सखा बूझिऐ काहा। कहइ कपीस सुनहु नरनाहा॥
+chaupai_374:
+  devanagari: जानि न जाइ निसाचर माया। कामरूप केहि कारन आया॥
+chaupai_375:
+  devanagari: भेद हमार लेन सठ आवा। राखिअ बाँधि मोहि अस भावा॥
+chaupai_376:
+  devanagari: सखा नीति तुम्ह नीकि बिचारी। मम पन सरनागत भयहारी॥
+chaupai_377:
+  devanagari: सुनि प्रभु बचन हरष हनुमाना। सरनागत बच्छल भगवाना॥
+doha_41:
+  devanagari: 'सरनागत कहुँ जे तजहिं निज अनहित अनुमानि।
+
+    ते नर पावँर पापमय तिन्हहि बिलोकत हानि'
+chaupai_378:
+  devanagari: कोटि बिप्र बध लागहिं जाहू। आएँ सरन तजउँ नहिं ताहू॥
+chaupai_379:
+  devanagari: सनमुख होइ जीव मोहि जबहीं। जन्म कोटि अघ नासहिं तबहीं॥
+chaupai_380:
+  devanagari: पापवंत कर सहज सुभाऊ। भजनु मोर तेहि भाव न काऊ॥
+chaupai_381:
+  devanagari: जौं पै दुष्टहदय सोइ होई। मोरें सनमुख आव कि सोई॥
+chaupai_382:
+  devanagari: निर्मल मन जन सो मोहि पावा। मोहि कपट छल छिद्र न भावा॥
+chaupai_383:
+  devanagari: भेद लेन पठवा दससीसा। तबहुँ न कछु भय हानि कपीसा॥
+chaupai_384:
+  devanagari: जग महुँ सखा निसाचर जेते। लछिमनु हनइ निमिष महुँ तेते॥
+chaupai_385:
+  devanagari: जौं सभीत आवा सरनाई। रखिहउँ ताहि प्रान की नाई॥
+doha_42:
+  devanagari: 'उभय भाँति तेहि आनहु हँसि कह कृपानिकेत।
+
+    जय कृपाल कहि चले अंगद हनू समेत'
+chaupai_386:
+  devanagari: सादर तेहि आगें करि बानर। चले जहाँ रघुपति करुनाकर॥
+chaupai_387:
+  devanagari: दूरिहि ते देखे द्वौ भ्राता। नयनानंद दान के दाता॥
+chaupai_388:
+  devanagari: बहुरि राम छबिधाम बिलोकी। रहेउ ठटुकि एकटक पल रोकी॥
+chaupai_389:
+  devanagari: भुज प्रलंब कंजारुन लोचन। स्यामल गात प्रनत भय मोचन॥
+chaupai_390:
+  devanagari: सिंघ कंध आयत उर सोहा। आनन अमित मदन मन मोहा॥
+chaupai_391:
+  devanagari: नयन नीर पुलकित अति गाता। मन धरि धीर कही मृदु बाता॥
+chaupai_392:
+  devanagari: नाथ दसानन कर मैं भ्राता। निसिचर बंस जनम सुरत्राता॥
+chaupai_393:
+  devanagari: सहज पापप्रिय तामस देहा। जथा उलूकहि तम पर नेहा॥
+doha_43:
+  devanagari: 'श्रवन सुजसु सुनि आयउँ प्रभु भंजन भव भीर।
+
+    त्राहि त्राहि आरति हरन सरन सुखद रघुबीर'
+chaupai_394:
+  devanagari: अस कहि करत दंडवत देखा। तुरत उठे प्रभु हरष बिसेषा॥
+chaupai_395:
+  devanagari: दीन बचन सुनि प्रभु मन भावा। भुज बिसाल गहि हृदयँ लगावा॥
+chaupai_396:
+  devanagari: अनुज सहित मिलि ढिग बैठारी। बोले बचन भगत भयहारी॥
+chaupai_397:
+  devanagari: कहु लंकेस सहित परिवारा। कुसल कुठाहर बास तुम्हारा॥
+chaupai_398:
+  devanagari: खल मंडलीं बसहु दिनु राती। सखा धरम निबहइ केहि भाँती॥
+chaupai_399:
+  devanagari: मैं जानउँ तुम्हारि सब रीती। अति नय निपुन न भाव अनीती॥
+chaupai_400:
+  devanagari: बरु भल बास नरक कर ताता। दुष्ट संग जनि देइ बिधाता॥
+chaupai_401:
+  devanagari: अब पद देखि कुसल रघुराया। जौं तुम्ह कीन्ह जानि जन दाया॥
+doha_44:
+  devanagari: 'तब लगि कुसल न जीव कहुँ सपनेहुँ मन बिश्राम।
+
+    जब लगि भजत न राम कहुँ सोक धाम तजि काम'
+chaupai_402:
+  devanagari: तब लगि हृदयँ बसत खल नाना। लोभ मोह मच्छर मद माना॥
+chaupai_403:
+  devanagari: जब लगि उर न बसत रघुनाथा। धरें चाप सायक कटि भाथा॥
+chaupai_404:
+  devanagari: ममता तरुन तमी अँधिआरी। राग द्वेष उलूक सुखकारी॥
+chaupai_405:
+  devanagari: तब लगि बसति जीव मन माहीं। जब लगि प्रभु प्रताप रबि नाहीं॥
+chaupai_406:
+  devanagari: अब मैं कुसल मिटे भय भारे। देखि राम पद कमल तुम्हारे॥
+chaupai_407:
+  devanagari: तुम्ह कृपाल जा पर अनुकूला। ताहि न ब्याप त्रिबिध भव सूला॥
+chaupai_408:
+  devanagari: मैं निसिचर अति अधम सुभाऊ। सुभ आचरनु कीन्ह नहिं काऊ॥
+chaupai_409:
+  devanagari: जासु रूप मुनि ध्यान न आवा। तेहिं प्रभु हरषि हृदयँ मोहि लावा॥
+doha_45:
+  devanagari: '–अहोभाग्य मम अमित अति राम कृपा सुख पुंज।
+
+    देखेउँ नयन बिरंचि सिब सेब्य जुगल पद कंज'
+chaupai_410:
+  devanagari: सुनहु सखा निज कहउँ सुभाऊ। जान भुसुंडि संभु गिरिजाऊ॥
+chaupai_411:
+  devanagari: जौं नर होइ चराचर द्रोही। आवे सभय सरन तकि मोही॥
+chaupai_412:
+  devanagari: तजि मद मोह कपट छल नाना। करउँ सद्य तेहि साधु समाना॥
+chaupai_413:
+  devanagari: जननी जनक बंधु सुत दारा। तनु धनु भवन सुह्रद परिवारा॥
+chaupai_414:
+  devanagari: सब कै ममता ताग बटोरी। मम पद मनहि बाँध बरि डोरी॥
+chaupai_415:
+  devanagari: समदरसी इच्छा कछु नाहीं। हरष सोक भय नहिं मन माहीं॥
+chaupai_416:
+  devanagari: अस सज्जन मम उर बस कैसें। लोभी हृदयँ बसइ धनु जैसें॥
+chaupai_417:
+  devanagari: तुम्ह सारिखे संत प्रिय मोरें। धरउँ देह नहिं आन निहोरें॥
+doha_46:
+  devanagari: 'सगुन उपासक परहित निरत नीति दृढ़ नेम।
+
+    ते नर प्रान समान मम जिन्ह कें द्विज पद प्रेम'
+chaupai_418:
+  devanagari: सुनु लंकेस सकल गुन तोरें। तातें तुम्ह अतिसय प्रिय मोरें॥
+chaupai_419:
+  devanagari: राम बचन सुनि बानर जूथा। सकल कहहिं जय कृपा बरूथा॥
+chaupai_420:
+  devanagari: सुनत बिभीषनु प्रभु कै बानी। नहिं अघात श्रवनामृत जानी॥
+chaupai_421:
+  devanagari: पद अंबुज गहि बारहिं बारा। हृदयँ समात न प्रेमु अपारा॥
+chaupai_422:
+  devanagari: सुनहु देव सचराचर स्वामी। प्रनतपाल उर अंतरजामी॥
+chaupai_423:
+  devanagari: उर कछु प्रथम बासना रही। प्रभु पद प्रीति सरित सो बही॥
+chaupai_424:
+  devanagari: अब कृपाल निज भगति पावनी। देहु सदा सिव मन भावनी॥
+chaupai_425:
+  devanagari: एवमस्तु कहि प्रभु रनधीरा। मागा तुरत सिंधु कर नीरा॥
+chaupai_426:
+  devanagari: जदपि सखा तव इच्छा नाहीं। मोर दरसु अमोघ जग माहीं॥
+chaupai_427:
+  devanagari: अस कहि राम तिलक तेहि सारा। सुमन बृष्टि नभ भई अपारा॥
+doha_47:
+  devanagari: 'रावन क्रोध अनल निज स्वास समीर प्रचंड।
+
+    जरत बिभीषनु राखेउ दीन्हेहु राजु अखंड॥४९(क)॥'
+chaupai_428:
+  devanagari: सोइ संपदा बिभीषनहि सकुचि दीन्ह रघुनाथ॥४९(ख)॥
+chaupai_429:
+  devanagari: अस प्रभु छाड़ि भजहिं जे आना। ते नर पसु बिनु पूँछ बिषाना॥
+chaupai_430:
+  devanagari: निज जन जानि ताहि अपनावा। प्रभु सुभाव कपि कुल मन भावा॥
+chaupai_431:
+  devanagari: पुनि सर्बग्य सर्ब उर बासी। सर्बरूप सब रहित उदासी॥
+chaupai_432:
+  devanagari: बोले बचन नीति प्रतिपालक। कारन मनुज दनुज कुल घालक॥
+chaupai_433:
+  devanagari: सुनु कपीस लंकापति बीरा। केहि बिधि तरिअ जलधि गंभीरा॥
+chaupai_434:
+  devanagari: संकुल मकर उरग झष जाती। अति अगाध दुस्तर सब भाँती॥
+chaupai_435:
+  devanagari: कह लंकेस सुनहु रघुनायक। कोटि सिंधु सोषक तव सायक॥
+chaupai_436:
+  devanagari: जद्यपि तदपि नीति असि गाई। बिनय करिअ सागर सन जाई॥
+doha_48:
+  devanagari: 'प्रभु तुम्हार कुलगुर जलधि कहिहि उपाय बिचारि।
+
+    बिनु प्रयास सागर तरिहि सकल भालु कपि धारि'
+chaupai_437:
+  devanagari: सखा कही तुम्ह नीकि उपाई। करिअ दैव जौं होइ सहाई॥
+chaupai_438:
+  devanagari: मंत्र न यह लछिमन मन भावा। राम बचन सुनि अति दुख पावा॥
+chaupai_439:
+  devanagari: नाथ दैव कर कवन भरोसा। सोषिअ सिंधु करिअ मन रोसा॥
+chaupai_440:
+  devanagari: कादर मन कहुँ एक अधारा। दैव दैव आलसी पुकारा॥
+chaupai_441:
+  devanagari: सुनत बिहसि बोले रघुबीरा। ऐसेहिं करब धरहु मन धीरा॥
+chaupai_442:
+  devanagari: अस कहि प्रभु अनुजहि समुझाई। सिंधु समीप गए रघुराई॥
+chaupai_443:
+  devanagari: प्रथम प्रनाम कीन्ह सिरु नाई। बैठे पुनि तट दर्भ डसाई॥
+chaupai_444:
+  devanagari: जबहिं बिभीषन प्रभु पहिं आए। पाछें रावन दूत पठाए॥
+doha_49:
+  devanagari: 'सकल चरित तिन्ह देखे धरें कपट कपि देह।
+
+    प्रभु गुन हृदयँ सराहहिं सरनागत पर नेह'
+chaupai_445:
+  devanagari: प्रगट बखानहिं राम सुभाऊ। अति सप्रेम गा बिसरि दुराऊ॥
+chaupai_446:
+  devanagari: रिपु के दूत कपिन्ह तब जाने। सकल बाँधि कपीस पहिं आने॥
+chaupai_447:
+  devanagari: कह सुग्रीव सुनहु सब बानर। अंग भंग करि पठवहु निसिचर॥
+chaupai_448:
+  devanagari: सुनि सुग्रीव बचन कपि धाए। बाँधि कटक चहु पास फिराए॥
+chaupai_449:
+  devanagari: बहु प्रकार मारन कपि लागे। दीन पुकारत तदपि न त्यागे॥
+chaupai_450:
+  devanagari: जो हमार हर नासा काना। तेहि कोसलाधीस कै आना॥
+chaupai_451:
+  devanagari: सुनि लछिमन सब निकट बोलाए। दया लागि हँसि तुरत छोडाए॥
+chaupai_452:
+  devanagari: रावन कर दीजहु यह पाती। लछिमन बचन बाचु कुलघाती॥
+doha_50:
+  devanagari: 'कहेहु मुखागर मूढ़ सन मम संदेसु उदार।
+
+    सीता देइ मिलेहु न त आवा काल तुम्हार'
+chaupai_453:
+  devanagari: तुरत नाइ लछिमन पद माथा। चले दूत बरनत गुन गाथा॥
+chaupai_454:
+  devanagari: कहत राम जसु लंकाँ आए। रावन चरन सीस तिन्ह नाए॥
+chaupai_455:
+  devanagari: बिहसि दसानन पूँछी बाता। कहसि न सुक आपनि कुसलाता॥
+chaupai_456:
+  devanagari: पुनि कहु खबरि बिभीषन केरी। जाहि मृत्यु आई अति नेरी॥
+chaupai_457:
+  devanagari: करत राज लंका सठ त्यागी। होइहि जब कर कीट अभागी॥
+chaupai_458:
+  devanagari: पुनि कहु भालु कीस कटकाई। कठिन काल प्रेरित चलि आई॥
+chaupai_459:
+  devanagari: जिन्ह के जीवन कर रखवारा। भयउ मृदुल चित सिंधु बिचारा॥
+chaupai_460:
+  devanagari: कहु तपसिन्ह कै बात बहोरी। जिन्ह के हृदयँ त्रास अति मोरी॥
+doha_51:
+  devanagari: '–की भइ भेंट कि फिरि गए श्रवन सुजसु सुनि मोर।
+
+    कहसि न रिपु दल तेज बल बहुत चकित चित तोर'
+chaupai_461:
+  devanagari: नाथ कृपा करि पूँछेहु जैसें। मानहु कहा क्रोध तजि तैसें॥
+chaupai_462:
+  devanagari: मिला जाइ जब अनुज तुम्हारा। जातहिं राम तिलक तेहि सारा॥
+chaupai_463:
+  devanagari: रावन दूत हमहि सुनि काना। कपिन्ह बाँधि दीन्हे दुख नाना॥
+chaupai_464:
+  devanagari: श्रवन नासिका काटै लागे। राम सपथ दीन्हे हम त्यागे॥
+chaupai_465:
+  devanagari: पूँछिहु नाथ राम कटकाई। बदन कोटि सत बरनि न जाई॥
+chaupai_466:
+  devanagari: नाना बरन भालु कपि धारी। बिकटानन बिसाल भयकारी॥
+chaupai_467:
+  devanagari: जेहिं पुर दहेउ हतेउ सुत तोरा। सकल कपिन्ह महँ तेहि बलु थोरा॥
+chaupai_468:
+  devanagari: अमित नाम भट कठिन कराला। अमित नाग बल बिपुल बिसाला॥
+doha_52:
+  devanagari: 'द्विबिद मयंद नील नल अंगद गद बिकटासि।
+
+    दधिमुख केहरि निसठ सठ जामवंत बलरासि'
+chaupai_469:
+  devanagari: ए कपि सब सुग्रीव समाना। इन्ह सम कोटिन्ह गनइ को नाना॥
+chaupai_470:
+  devanagari: राम कृपाँ अतुलित बल तिन्हहीं। तृन समान त्रेलोकहि गनहीं॥
+chaupai_471:
+  devanagari: अस मैं सुना श्रवन दसकंधर। पदुम अठारह जूथप बंदर॥
+chaupai_472:
+  devanagari: नाथ कटक महँ सो कपि नाहीं। जो न तुम्हहि जीतै रन माहीं॥
+chaupai_473:
+  devanagari: परम क्रोध मीजहिं सब हाथा। आयसु पै न देहिं रघुनाथा॥
+chaupai_474:
+  devanagari: सोषहिं सिंधु सहित झष ब्याला। पूरहीं न त भरि कुधर बिसाला॥
+chaupai_475:
+  devanagari: मर्दि गर्द मिलवहिं दससीसा। ऐसेइ बचन कहहिं सब कीसा॥
+chaupai_476:
+  devanagari: गर्जहिं तर्जहिं सहज असंका। मानहु ग्रसन चहत हहिं लंका॥
+doha_53:
+  devanagari: '–सहज सूर कपि भालु सब पुनि सिर पर प्रभु राम।
+
+    रावन काल कोटि कहु जीति सकहिं संग्राम'
+chaupai_477:
+  devanagari: राम तेज बल बुधि बिपुलाई। सेस सहस सत सकहि न गाई॥
+chaupai_478:
+  devanagari: सक सर एक सोसि सत सागर। तब भ्रातहि पूँछेउ नय नागर॥
+chaupai_479:
+  devanagari: तासु बचन सुनि सागर पाहीं। मागत पंथ कृपा मन माहीं॥
+chaupai_480:
+  devanagari: सुनत बचन बिहसा दससीसा। जौं असि मति सहाय कृत कीसा॥
+chaupai_481:
+  devanagari: सहज भीरु कर बचन दृढ़ाई। सागर सन ठानी मचलाई॥
+chaupai_482:
+  devanagari: मूढ़ मृषा का करसि बड़ाई। रिपु बल बुद्धि थाह मैं पाई॥
+chaupai_483:
+  devanagari: सचिव सभीत बिभीषन जाकें। बिजय बिभूति कहाँ जग ताकें॥
+chaupai_484:
+  devanagari: सुनि खल बचन दूत रिस बाढ़ी। समय बिचारि पत्रिका काढ़ी॥
+chaupai_485:
+  devanagari: रामानुज दीन्ही यह पाती। नाथ बचाइ जुड़ावहु छाती॥
+chaupai_486:
+  devanagari: बिहसि बाम कर लीन्ही रावन। सचिव बोलि सठ लाग बचावन॥
+doha_54:
+  devanagari: '–बातन्ह मनहि रिझाइ सठ जनि घालसि कुल खीस।
+
+    राम बिरोध न उबरसि सरन बिष्नु अज ईस॥५६(क)॥'
+chaupai_487:
+  devanagari: होहि कि राम सरानल खल कुल सहित पतंग॥५६(ख)॥
+chaupai_488:
+  devanagari: सुनत सभय मन मुख मुसुकाई। कहत दसानन सबहि सुनाई॥
+chaupai_489:
+  devanagari: भूमि परा कर गहत अकासा। लघु तापस कर बाग बिलासा॥
+chaupai_490:
+  devanagari: कह सुक नाथ सत्य सब बानी। समुझहु छाड़ि प्रकृति अभिमानी॥
+chaupai_491:
+  devanagari: सुनहु बचन मम परिहरि क्रोधा। नाथ राम सन तजहु बिरोधा॥
+chaupai_492:
+  devanagari: अति कोमल रघुबीर सुभाऊ। जद्यपि अखिल लोक कर राऊ॥
+chaupai_493:
+  devanagari: मिलत कृपा तुम्ह पर प्रभु करिही। उर अपराध न एकउ धरिही॥
+chaupai_494:
+  devanagari: जब तेहिं कहा देन बैदेही। चरन प्रहार कीन्ह सठ तेही॥
+chaupai_495:
+  devanagari: नाइ चरन सिरु चला सो तहाँ। कृपासिंधु रघुनायक जहाँ॥
+chaupai_496:
+  devanagari: करि प्रनामु निज कथा सुनाई। राम कृपाँ आपनि गति पाई॥
+chaupai_497:
+  devanagari: रिषि अगस्ति कीं साप भवानी। राछस भयउ रहा मुनि ग्यानी॥
+chaupai_498:
+  devanagari: बंदि राम पद बारहिं बारा। मुनि निज आश्रम कहुँ पगु धारा॥
+doha_55:
+  devanagari: 'बिनय न मानत जलधि जड़ गए तीन दिन बीति।
+
+    बोले राम सकोप तब भय बिनु होइ न प्रीति'
+chaupai_499:
+  devanagari: लछिमन बान सरासन आनू। सोषौं बारिधि बिसिख कृसानू॥
+chaupai_500:
+  devanagari: सठ सन बिनय कुटिल सन प्रीती। सहज कृपन सन सुंदर नीती॥
+chaupai_501:
+  devanagari: ममता रत सन ग्यान कहानी। अति लोभी सन बिरति बखानी॥
+chaupai_502:
+  devanagari: क्रोधिहि सम कामिहि हरि कथा। ऊसर बीज बएँ फल जथा॥
+chaupai_503:
+  devanagari: अस कहि रघुपति चाप चढ़ावा। यह मत लछिमन के मन भावा॥
+chaupai_504:
+  devanagari: संघानेउ प्रभु बिसिख कराला। उठी उदधि उर अंतर ज्वाला॥
+chaupai_505:
+  devanagari: मकर उरग झष गन अकुलाने। जरत जंतु जलनिधि जब जाने॥
+chaupai_506:
+  devanagari: कनक थार भरि मनि गन नाना। बिप्र रूप आयउ तजि माना॥
+doha_56:
+  devanagari: 'काटेहिं पइ कदरी फरइ कोटि जतन कोउ सींच।
+
+    बिनय न मान खगेस सुनु डाटेहिं पइ नव नीच'
+chaupai_507:
+  devanagari: सभय सिंधु गहि पद प्रभु केरे। छमहु नाथ सब अवगुन मेरे॥
+chaupai_508:
+  devanagari: गगन समीर अनल जल धरनी। इन्ह कइ नाथ सहज जड़ करनी॥
+chaupai_509:
+  devanagari: तव प्रेरित मायाँ उपजाए। सृष्टि हेतु सब ग्रंथनि गाए॥
+chaupai_510:
+  devanagari: प्रभु आयसु जेहि कहँ जस अहई। सो तेहि भाँति रहे सुख लहई॥
+chaupai_511:
+  devanagari: प्रभु भल कीन्ही मोहि सिख दीन्ही। मरजादा पुनि तुम्हरी कीन्ही॥
+chaupai_512:
+  devanagari: ढोल गवाँर सूद्र पसु नारी। सकल ताड़ना के अधिकारी॥
+chaupai_513:
+  devanagari: प्रभु प्रताप मैं जाब सुखाई। उतरिहि कटकु न मोरि बड़ाई॥
+chaupai_514:
+  devanagari: प्रभु अग्या अपेल श्रुति गाई। करौं सो बेगि जौ तुम्हहि सोहाई॥
+doha_57:
+  devanagari: 'सुनत बिनीत बचन अति कह कृपाल मुसुकाइ।
+
+    जेहि बिधि उतरै कपि कटकु तात सो कहहु उपाइ'
+chaupai_515:
+  devanagari: नाथ नील नल कपि द्वौ भाई। लरिकाई रिषि आसिष पाई॥
+chaupai_516:
+  devanagari: तिन्ह के परस किएँ गिरि भारे। तरिहहिं जलधि प्रताप तुम्हारे॥
+chaupai_517:
+  devanagari: मैं पुनि उर धरि प्रभुताई। करिहउँ बल अनुमान सहाई॥
+chaupai_518:
+  devanagari: एहि बिधि नाथ पयोधि बँधाइअ। जेहिं यह सुजसु लोक तिहुँ गाइअ॥
+chaupai_519:
+  devanagari: एहि सर मम उत्तर तट बासी। हतहु नाथ खल नर अघ रासी॥
+chaupai_520:
+  devanagari: सुनि कृपाल सागर मन पीरा। तुरतहिं हरी राम रनधीरा॥
+chaupai_521:
+  devanagari: देखि राम बल पौरुष भारी। हरषि पयोनिधि भयउ सुखारी॥
+chaupai_522:
+  devanagari: सकल चरित कहि प्रभुहि सुनावा। चरन बंदि पाथोधि सिधावा॥
+doha_58:
+  devanagari: 'सकल सुमंगल दायक रघुनायक गुन गान।
+
+    सादर सुनहिं ते तरहिं भव सिंधु बिना जलजान'
