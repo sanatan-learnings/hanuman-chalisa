@@ -6,7 +6,7 @@ title_en: "Chaupai 6: Hanuman's Divine Strength and Wisdom"
 title_hi: "चौपाई 6: हनुमान की दिव्य शक्ति और बुद्धि"
 verse_number: 6
 previous_verse: "/sundar-kaand/chaupai_05"
-next_verse: null
+next_verse: "/sundar-kaand/chaupai_07"
 image: "/images/sundar-kaand/modern-minimalist/chaupai-06.png"
 
 devanagari: |

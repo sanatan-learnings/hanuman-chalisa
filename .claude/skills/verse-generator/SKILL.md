@@ -163,29 +163,52 @@ Follow existing scene descriptions in the file for style and detail level.
 
 ### Step 5: Generate Multimedia with verse-generate
 
-Run the verse-generate command:
+Run the verse-generate command (use verse NUMBER, not ID):
 
 ```bash
 set -a && source .env && set +a && \
 ./venv/bin/verse-generate \
   --collection <collection> \
-  --verse <verse_id> \
+  --verse <verse_number> \
+  --all \
+  --theme modern-minimalist
+
+# Example: for chaupai_07, use --verse 7
+./venv/bin/verse-generate \
+  --collection sundar-kaand \
+  --verse 7 \
   --all \
   --theme modern-minimalist
 ```
 
+**Important**: The `--verse` argument expects a NUMBER (e.g., `7`), not the verse ID (e.g., `chaupai_07`).
+
 This generates:
-- Image: `images/<collection>/modern-minimalist/<verse_id>.png` or `verse-NN.png`
-- Audio: `audio/<collection>/<verse_id>_full.mp3` and `<verse_id>_slow.mp3`
+- Image: `images/<collection>/modern-minimalist/verse-NN.png` (rename to match convention)
+- Audio: May fail if naming doesn't match - generate manually with `verse-audio --collection <collection> --verse <verse_id>`
 
-### Step 6: Verify & Fix Image Naming
+### Step 6: Verify & Fix Naming Issues
 
-Check if generated image filename matches verse file's image path. Common naming patterns:
-- `chaupai-01.png`, `chaupai-02.png` (Sundar Kaand)
-- `verse-01.png`, `verse-02.png` (Hanuman Chalisa)
-- `doha_01.png` (opening verses)
+**Common issues:**
 
-If mismatch (e.g., `verse-05.png` vs `chaupai-05.png`), rename to match existing convention.
+1. **Image naming mismatch**: verse-generate creates `verse-NN.png` but you may need `chaupai-NN.png`
+   ```bash
+   mv images/<collection>/modern-minimalist/verse-07.png images/<collection>/modern-minimalist/chaupai-07.png
+   ```
+
+2. **Audio generation fails**: If verse-generate can't find the verse file, generate audio manually:
+   ```bash
+   set -a && source .env && set +a && \
+   ./venv/bin/verse-audio --collection <collection> --verse <verse_id>
+
+   # Example:
+   ./venv/bin/verse-audio --collection sundar-kaand --verse chaupai_07
+   ```
+
+**Common naming patterns:**
+- Sundar Kaand: `chaupai-01.png`, `chaupai_01_full.mp3`
+- Hanuman Chalisa: `verse-01.png`, `verse_01_full.mp3`
+- Opening verses: `doha_01.png`, `doha_01_full.mp3`
 
 ### Step 7: Regenerate Embeddings
 
