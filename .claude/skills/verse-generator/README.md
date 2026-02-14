@@ -1,6 +1,6 @@
 # Verse Generator Skill
 
-A Claude Skill that automates the complete workflow for creating verses with multimedia content using verse-sdk.
+A Claude Skill that automates the complete workflow for creating verses with multimedia content using sanatan-sdk.
 
 ## Installation
 
@@ -45,7 +45,7 @@ Or with arguments:
 ## Prerequisites
 
 - Working in a hanuman-gpt project directory
-- verse-sdk installed at `/Users/arungupta/workspaces/verse-sdk/.venv/bin/`
+- sanatan-sdk installed at `/Users/arungupta/workspaces/sanatan-sdk/.venv/bin/`
 - `.env` file with API keys:
   - `OPENAI_API_KEY` (for images)
   - `ELEVENLABS_API_KEY` (for audio)
@@ -129,7 +129,7 @@ cat .env | grep -E "OPENAI|ELEVENLABS"
 
 **SDK not found:**
 ```bash
-ls /Users/arungupta/workspaces/verse-sdk/.venv/bin/verse-generate
+ls /Users/arungupta/workspaces/sanatan-sdk/.venv/bin/verse-generate
 ```
 
 ## Related Commands

@@ -73,8 +73,8 @@ python3 -m venv venv
 # Activate virtual environment
 source venv/bin/activate
 
-# Install verse-sdk
-pip install verse-sdk
+# Install sanatan-sdk
+pip install sanatan-sdk
 
 # Verify installation
 verse-images --help

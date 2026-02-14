@@ -70,7 +70,7 @@
 - Documentation generation
 
 ### System Dependencies
-- **Python 3.8+** - For verse-sdk
+- **Python 3.8+** - For sanatan-sdk
 - **ffmpeg** - Audio post-processing (`brew install ffmpeg`)
 - **Ruby 3.3+** - For Jekyll local development
 - **Node.js** (optional) - For Cloudflare Worker deployment
@@ -107,7 +107,7 @@ hanuman-chalisa/
 │   └── js/guidance.js      # RAG system
 ├── scripts/                 # Content generation configuration
 │   ├── embedding_config.yaml       # Config for verse-embeddings
-│   ├── requirements.txt            # verse-sdk installation
+│   ├── requirements.txt            # sanatan-sdk installation
 │   └── legacy/                     # Old Python/bash scripts (deprecated)
 ├── images/                  # Verse images (organized by theme)
 │   └── modern-minimalist/  # 47 PNG files per theme
@@ -306,7 +306,7 @@ See [deployment guide](deployment.md) for details.
 
 ### Images
 
-**Technology**: DALL-E 3 via verse-sdk
+**Technology**: DALL-E 3 via sanatan-sdk
 
 **Commands**:
 ```bash
@@ -327,7 +327,7 @@ See [scripts/README.md](../scripts/README.md) for details.
 
 ### Audio Recitations
 
-**Technology**: Eleven Labs TTS via verse-sdk
+**Technology**: Eleven Labs TTS via sanatan-sdk
 
 **Commands**:
 ```bash
@@ -347,7 +347,7 @@ See [scripts/README.md](../scripts/README.md) for details.
 
 ### Embeddings
 
-**Technology**: OpenAI / HuggingFace via verse-sdk
+**Technology**: OpenAI / HuggingFace via sanatan-sdk
 
 **Commands**:
 ```bash

@@ -54,7 +54,7 @@ images/
 ## Image Specifications
 
 - **Format**: PNG
-- **Resolution**: 1024 × 1792 pixels (portrait orientation for verse-sdk)
+- **Resolution**: 1024 × 1792 pixels (portrait orientation for sanatan-sdk)
 - **Quality**: Standard or HD (DALL-E 3)
 - **Content**: Scene-based depictions following collection-specific prompt files
 
@@ -62,7 +62,7 @@ images/
 
 ### For New Collections
 
-Use the [verse-sdk](https://pypi.org/project/verse-sdk/) for standardized image generation:
+Use the [sanatan-sdk](https://pypi.org/project/sanatan-sdk/) for standardized image generation:
 
 ```bash
 # 1. Create prompt file in docs/image-prompts/ following SDK format
@@ -97,7 +97,7 @@ rm docs/image-prompts.md
 - Then manually move to full collection path with theme subdirectory
 - Keep prompt files named: `docs/<collection-key>-prompts.md` for clarity
 
-**Prompt file format** (required by verse-sdk):
+**Prompt file format** (required by sanatan-sdk):
 ```markdown
 ### Verse 1: Title
 
@@ -131,7 +131,7 @@ Use the legacy generation script for consistency:
 
 ## Cost Estimates
 
-### Using verse-sdk (Sundar Kaand)
+### Using sanatan-sdk (Sundar Kaand)
 - **Standard quality**: $0.040/image
 - **260 images**: $10.40 per theme
 - **HD quality**: $0.080/image = $20.80 per theme
@@ -176,7 +176,7 @@ images/sundar-kaand/modern-minimalist/
 
 2. **Create prompt file**: `docs/your-collection-prompts.md` following SDK format
 
-3. **Generate images** using verse-sdk:
+3. **Generate images** using sanatan-sdk:
    ```bash
    verse-images --theme-name your-collection --style "your style description"
    ```
@@ -248,7 +248,7 @@ images/sundar-kaand/modern-minimalist/
 - Other collections use single theme for now
 - Verify `_data/themes.yml` matches directory structure
 
-### verse-sdk Generation Issues
+### sanatan-sdk Generation Issues
 - Ensure prompt file follows exact format (see example above)
 - Check `**Scene Description**:` heading spelling/format
 - Verify OpenAI API key is set correctly
@@ -265,5 +265,5 @@ images/sundar-kaand/modern-minimalist/
 - **Hanuman Chalisa prompts**: [docs/image-prompts.md](../docs/image-prompts.md)
 - **Theme specs**: [docs/themes/](../docs/themes/)
 - **Generation scripts**: [scripts/generate_images.sh](../scripts/generate_images.sh)
-- **verse-sdk**: [PyPI](https://pypi.org/project/verse-sdk/)
+- **sanatan-sdk**: [PyPI](https://pypi.org/project/sanatan-sdk/)
 - **Developer guide**: [docs/developer-guide.md](../docs/developer-guide.md)

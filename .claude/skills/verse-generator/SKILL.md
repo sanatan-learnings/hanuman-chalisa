@@ -1,6 +1,6 @@
 ---
 name: verse-generator
-description: Generate complete verse content with multimedia (image, audio, embeddings) using verse-sdk. Automates verse creation for sacred text collections including Sundar Kaand, Hanuman Chalisa, etc. Use when creating new verses with Devanagari text, transliteration, meanings, translations, stories, images, and audio.
+description: Generate complete verse content with multimedia (image, audio, embeddings) using sanatan-sdk. Automates verse creation for sacred text collections including Sundar Kaand, Hanuman Chalisa, etc. Use when creating new verses with Devanagari text, transliteration, meanings, translations, stories, images, and audio.
 user-invocable: true
 ---
 
@@ -43,7 +43,8 @@ Generate multimedia for existing verse:
 
 Before using this skill, verify:
 - ✅ Working in hanuman-gpt project directory
-- ✅ verse-sdk installed at `/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/`
+- ✅ sanatan-sdk installed in venv (`./venv/bin/pip install sanatan-sdk`)
+- ✅ verse-* commands available: `./venv/bin/verse-generate`, `./venv/bin/verse-embeddings`, etc.
 - ✅ `.env` file exists with API keys: `OPENAI_API_KEY` and `ELEVENLABS_API_KEY`
 - ✅ Collection is enabled in `_data/collections.yml`
 
@@ -71,7 +72,7 @@ Try to fetch traditional Devanagari text from authoritative online sources:
 
 ```bash
 set -a && source .env && set +a && \
-/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-fetch-text \
+./venv/bin/verse-fetch-text \
   --collection sundar-kaand \
   --verse chaupai_06 \
   --format json
@@ -166,7 +167,7 @@ Run the verse-generate command:
 
 ```bash
 set -a && source .env && set +a && \
-/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-generate \
+./venv/bin/verse-generate \
   --collection <collection> \
   --verse <verse_id> \
   --all \
@@ -192,7 +193,7 @@ Update embeddings for search:
 
 ```bash
 set -a && source .env && set +a && \
-/Users/arungupta/workspaces/verse-content-sdk/.venv/bin/verse-embeddings \
+./venv/bin/verse-embeddings \
   --multi-collection \
   --collections-file _data/collections.yml \
   --verses-dir _verses \
