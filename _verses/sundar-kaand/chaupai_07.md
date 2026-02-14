@@ -6,7 +6,7 @@ title_en: "Chaupai 7: Ram's Most Beloved Devotee"
 title_hi: "चौपाई 7: राम के प्रिय भक्त"
 verse_number: 7
 previous_verse: "/sundar-kaand/chaupai_06"
-next_verse: null
+next_verse: "/sundar-kaand/chaupai_08"
 image: "/images/sundar-kaand/modern-minimalist/chaupai-07.png"
 
 devanagari: |
