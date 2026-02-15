@@ -15,15 +15,33 @@ title: Sundar Kaand
 <section class="verse-navigation">
     <h3>🏹 <span data-lang="en">Sundar Kaand</span><span data-lang="hi">सुंदर कांड</span></h3>
 
-    <p class="collection-description">
-        <span data-lang="en">Verses in canonical sequence</span>
-        <span data-lang="hi">प्रामाणिक अनुक्रम में पद</span>
-    </p>
-
     {% assign verses = site.verses | where: "collection_key", "sundar-kaand" | sort: "verse_number" %}
+    {% assign prev_type = "" %}
 
-    <div class="verse-grid">
-        {% for verse in verses %}
+    {% for verse in verses %}
+        {% comment %} When verse type changes, start new section {% endcomment %}
+        {% if verse.verse_type != prev_type %}
+            {% if prev_type != "" %}
+                </div></div> {% comment %} Close previous section {% endcomment %}
+            {% endif %}
+
+            <div class="verse-section">
+                <h4 class="section-header">
+                    {% if verse.verse_type == 'shloka' %}
+                        <span data-lang="en">📿 Invocatory Shlokas</span>
+                        <span data-lang="hi">📿 आरंभिक श्लोक</span>
+                    {% elsif verse.verse_type == 'chaupai' %}
+                        <span data-lang="en">🎵 Narrative Chaupais</span>
+                        <span data-lang="hi">🎵 कथा चौपाई</span>
+                    {% elsif verse.verse_type == 'doha' %}
+                        <span data-lang="en">💫 Transitional Dohas</span>
+                        <span data-lang="hi">💫 संक्रमण दोहा</span>
+                    {% endif %}
+                </h4>
+                <div class="verse-grid">
+        {% endif %}
+
+        {% comment %} Output verse card {% endcomment %}
         <a href="{{ verse.url | relative_url }}" class="verse-card">
             {% if verse.image %}
             <div class="card-image">
@@ -33,16 +51,16 @@ title: Sundar Kaand
             <div class="card-content">
                 <div class="verse-number">
                     {% if verse.verse_type == 'shloka' %}
-                        <span data-lang="en">📿 Shloka {{ verse.verse_number }}</span>
-                        <span data-lang="hi">📿 श्लोक {{ verse.verse_number }}</span>
+                        <span data-lang="en">Shloka {{ verse.verse_number }}</span>
+                        <span data-lang="hi">श्लोक {{ verse.verse_number }}</span>
                     {% elsif verse.verse_type == 'chaupai' %}
                         {% assign chaupai_num = verse.verse_number | minus: 3 %}
-                        <span data-lang="en">🎵 Chaupai {{ chaupai_num }}</span>
-                        <span data-lang="hi">🎵 चौपाई {{ chaupai_num }}</span>
+                        <span data-lang="en">Chaupai {{ chaupai_num }}</span>
+                        <span data-lang="hi">चौपाई {{ chaupai_num }}</span>
                     {% elsif verse.verse_type == 'doha' %}
                         {% assign doha_num = verse.verse_number | minus: 12 %}
-                        <span data-lang="en">💫 Doha {{ doha_num }}</span>
-                        <span data-lang="hi">💫 दोहा {{ doha_num }}</span>
+                        <span data-lang="en">Doha {{ doha_num }}</span>
+                        <span data-lang="hi">दोहा {{ doha_num }}</span>
                     {% endif %}
                 </div>
                 <div class="verse-title">
@@ -51,6 +69,12 @@ title: Sundar Kaand
                 </div>
             </div>
         </a>
-        {% endfor %}
-    </div>
+
+        {% assign prev_type = verse.verse_type %}
+    {% endfor %}
+
+    {% comment %} Close last section {% endcomment %}
+    {% if prev_type != "" %}
+        </div></div>
+    {% endif %}
 </section>
