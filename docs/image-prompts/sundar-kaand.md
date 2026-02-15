@@ -127,3 +127,17 @@ In a serene, ethereal atmosphere, the celestial serpent mother Surasa, with her 
 
 ---
 
+
+### Chaupai 12 (chaupai_12): Hanuman's Respectful Response
+
+**Scene Description**:
+In the vast ocean sky, the divine confrontation between Surasa and Hanuman intensifies. Surasa, the magnificent serpent mother with her powerful serpentine lower body coiling through the air, speaks to Hanuman with divine authority - her expression shows determination mixed with testing resolve as she declares the gods have sent him to her as food. Hanuman, hovering before her in his radiant orange-red form, responds with his hands in a respectful anjali mudra (prayer gesture), his face showing both reverence and calm intelligence. His expression is composed and diplomatic - showing no fear, only respect and quick thinking. The space between them crackles with divine energy, but the tone is one of sacred dialogue rather than hostility. Behind Surasa, her massive serpent coils shimmer with iridescent scales in jewel tones. The ocean below reflects the dramatic encounter, with waves responding to the divine energies above. Sacred geometric patterns float between them, representing the dharmic nature of this test. The ethereal forms of the Devas watch from distant clouds, observing Hanuman's response with interest. The lighting emphasizes both figures equally - Surasa's ancient power and Hanuman's awakening wisdom. The composition captures the moment of respectful exchange where intelligence must navigate divine challenge, showing Hanuman's combination of humility and brilliance. Epic scale with mystical atmosphere emphasizing the psychological aspect of this divine test.
+
+---
+### Verse 16 (chaupai_12): Hanuman Receives Divine Nourishment
+
+**Scene Description**:
+In a tranquil forest clearing bathed in the soft glow of twilight, the deity Hanuman, the son of the wind god Pavan, is seated, a serene expression on his face. Across from him, celestial beings, the Suras, illuminated in ethereal light, reverently offer him a feast of divine fruits and nectar. The scene is steeped in tranquility, the mystical aura underscored by the gentle glow of fireflies around. The focus is on Hanuman's compassionate gaze receiving the offerings, symbolizing his humility and the divine exchange between the mortal and the celestial.
+
+---
+
