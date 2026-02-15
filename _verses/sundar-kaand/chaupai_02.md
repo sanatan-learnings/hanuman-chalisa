@@ -2,23 +2,26 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_02/
-title_en: Enduring Suffering for a Higher Purpose
-title_hi: उच्च उद्देश्य के लिए दुःख सहन करना
+title_en: Endurance in Testing Times
+title_hi: कठिन समय में सहनशीलता
 verse_number: 5
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_01
 next_verse: /sundar-kaand/chaupai_03
 image: /images/sundar-kaand/modern-minimalist/chaupai-02.png
 devanagari: तब लगि मोहि परिखेहु तुम्ह भाई। सहि दुख कंद मूल फल खाई॥
-transliteration: taba lagi mohi parikhehu tumha bhāī. sahi duḥkha kaṇḍa mūla phala
+transliteration: taba lagi mohi parikhehu tumha bhāī. sahi dukha kanda mūla phala
   khāī.
 phonetic_notes:
 - word: परिखेहु
   phonetic: pa-ri-khe-hu
   emphasis: third syllable
-- word: सहज
-  phonetic: sa-haj
-  emphasis: second syllable
+- word: भाई
+  phonetic: bha-ai
+  emphasis: first syllable
+- word: खाई
+  phonetic: kha-ai
+  emphasis: first syllable
 word_meanings:
 - word: तब
   roman: Taba
@@ -39,7 +42,7 @@ word_meanings:
   roman: Parikhehu
   meaning:
     en: Test
-    hi: परीक्षा लो
+    hi: परीक्षा करो
 - word: तुम्ह
   roman: Tumha
   meaning:
@@ -55,20 +58,20 @@ word_meanings:
   meaning:
     en: Endure
     hi: सहना
-- word: दुःख
-  roman: Duḥkha
+- word: दुख
+  roman: Dukha
   meaning:
-    en: Suffering
+    en: Sorrow
     hi: दुःख
 - word: कंद
-  roman: Kaṇḍa
+  roman: Kanda
   meaning:
     en: Root
     hi: जड़
 - word: मूल
   roman: Mūla
   meaning:
-    en: Base
+    en: Origin
     hi: मूल
 - word: फल
   roman: Phala
@@ -81,33 +84,33 @@ word_meanings:
     en: Eat
     hi: खाना
 literal_translation:
-  en: Until then, test me, my brothers. Endure suffering, eat the root and fruit.
-  hi: तब तक, मुझे परीक्षा लो, मेरे भाई। दुःख सहन करो, जड़ और फल खाओ।
+  en: Until then, test me, brother. Endure sorrow, eat the root and fruit.
+  hi: तब तक, मुझे परीक्षा करो, भाई। दुःख सहना, जड़ और फल खाना।
 interpretive_meaning:
-  en: The verse symbolizes the spiritual journey where one must endure hardships and
-    consume the lessons of these experiences to grow and evolve.
-  hi: यह श्लोक आत्मिक यात्रा का प्रतीक है जहां एक को कठिनाईयों को सहन करना पड़ता है
-    और इन अनुभवों के सबको समझकर विकास और विकास करना पड़ता है।
+  en: The verse signifies the spiritual journey one must undertake, enduring hardships
+    and reaping the fruits of their actions.
+  hi: यह श्लोक एक आध्यात्मिक यात्रा का संकेत देता है, जिसमें कठिनाईयों को सहन करना
+    और अपने कर्मों के फल का अनुभव करना होता है।
 story:
-  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is preparing
-    to cross the ocean to find Sita. He is expressing his readiness to face any hardship
-    and consume the bitter and sweet fruits of his journey. It signifies his unwavering
-    commitment and determination to fulfill his duty.
-  hi: यह श्लोक रामायण के सुंदर कांड से है, जहां हनुमान सीता को ढूंढने के लिए समुद्र
-    को पार करने की तैयारी कर रहे हैं। वह अपनी यात्रा के कठिनाईयों का सामना करने और
-    उसके कड़वे और मीठे फलों को स्वीकार करने की अपनी तैयारी व्यक्त कर रहे हैं। यह उनकी
-    अटल समर्पण और कर्तव्य निभाने की दृढ़ संकल्प का संकेत है।
+  en: This verse is from the Sundar Kanda of Ramayana, where Hanuman is preparing
+    to cross the ocean to search for Sita. He is ready to face any hardship and consume
+    whatever is available, signifying his unwavering devotion and determination.
+  hi: यह श्लोक रामायण के सुंदर कांड से है, जहां हनुमान सीता की खोज में सागर पार करने
+    की तैयारी कर रहे हैं। वह किसी भी कठिनाई का सामना करने और जो कुछ भी उपलब्ध हो,
+    उसे खाने के लिए तैयार हैं, जो उनकी अटल भक्ति और संकल्पना को दर्शाता है।
 practical_application:
   teaching:
-    en: Embrace hardships as opportunities for growth and learning.
-    hi: कठिनाइयों को विकास और सीखने के अवसर के रूप में स्वीकार करें।
+    en: The verse teaches us to remain steadfast in our spiritual journey, enduring
+      hardships and accepting the outcomes of our actions.
+    hi: यह श्लोक हमें अपनी आध्यात्मिक यात्रा में दृढ़ रहने, कठिनाईयों को सहन करने
+      और अपने कर्मों के परिणाम स्वीकार करने की शिक्षा देता है।
   when_to_use:
-    en: This verse can be recited or remembered when facing challenges or hardships,
-      to instill courage and perseverance.
-    hi: जब सामना करना पड़े चुनौतियों या कठिनाइयों से, तो इस श्लोक का उच्चारण करें
-      या याद करें, जो साहस और दृढ़ता देगा।
-meaning: The verse is a plea from Hanuman to his brothers, asking them to test him
-  until he endures suffering and consumes the root and fruit of hardship.
+    en: This verse can be recited when facing challenges, to instill courage and determination.
+    hi: जब सामना करने की चुनौतियों का सामना करना पड़े, तो इस श्लोक का उच्चारण करके
+      साहस और संकल्प बढ़ाया जा सकता है।
+meaning: The verse is a plea from Hanuman to his brothers to test him until he endures
+  sorrow and consumes the root and fruit, symbolizing undergoing hardships and reaping
+  the results.
 translation:
-  en: Until then, test me, my brothers. Endure suffering, eat the root and fruit.
+  en: Until then, test me, brother. Endure sorrow, eat the root and fruit.
 ---

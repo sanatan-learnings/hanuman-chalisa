@@ -2,7 +2,7 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_05/
-title_en: Leaping onto a Beautiful Mountain
+title_en: Leaping onto the Beautiful Mountain
 title_hi: सुंदर पर्वत पर कूदना
 verse_number: 8
 verse_type: chaupai
@@ -10,13 +10,13 @@ previous_verse: /sundar-kaand/chaupai_04
 next_verse: /sundar-kaand/chaupai_06
 image: /images/sundar-kaand/modern-minimalist/chaupai-05.png
 devanagari: सिंधु तीर एक भूधर सुंदर। कौतुक कूदि चढ़ेउ ता ऊपर॥
-transliteration: sindhu tīra eka bhūdhara sundara. kautuka kūdi chaḍheu tā ūpara.
+transliteration: Sindhu tīra eka bhūdhara sundara. Kautuka kūdi chaḍheu tā ūpara.
 phonetic_notes:
-- word: सगर
-  phonetic: sa-gar
+- word: सिंधु
+  phonetic: sin-dhu
   emphasis: first syllable
 - word: भूधर
-  phonetic: bhoo-dhar
+  phonetic: bhuu-dhara
   emphasis: first syllable
 - word: कौतुक
   phonetic: kau-tuk
@@ -51,17 +51,17 @@ word_meanings:
   roman: Kautuka
   meaning:
     en: With joy
-    hi: खुशी से
+    hi: खुशी के साथ
 - word: कूदि
   roman: Kūdi
   meaning:
     en: Leaping
-    hi: कूदते हुए
+    hi: कूदना
 - word: चढ़ेउ
   roman: Chaḍheu
   meaning:
     en: Ascended
-    hi: चढ़े
+    hi: चढ़ा
 - word: ता
   roman: Tā
   meaning:
@@ -73,33 +73,40 @@ word_meanings:
     en: Above
     hi: ऊपर
 literal_translation:
-  en: On the ocean's shore, a beautiful mountain. With joy, leaped and ascended onto
-    it.
-  hi: समुद्र के किनारे, एक सुंदर पर्वत। खुशी से कूदकर उस पर चढ़ गए।
+  en: On the ocean's shore, a beautiful mountain. With joy, (he) leapt and ascended
+    onto it.
+  hi: समुद्र के किनारे, एक सुंदर पर्वत था। खुशी के साथ, (वह) उस पर कूदकर चढ़ गया।
 interpretive_meaning:
-  en: The verse metaphorically represents overcoming obstacles with joy and determination,
-    symbolized by the act of leaping onto a mountain.
-  hi: यह छंद मनोविज्ञानिक रूप से खुशी और संकल्प के साथ बाधाओं को पार करने का प्रतीक
-    है, जिसे पर्वत पर कूदने की क्रिया द्वारा प्रतीकित किया गया है।
+  en: The verse symbolizes Hanuman's determination and joy in his mission to find
+    Sita. The beautiful mountain represents the challenges that are joyfully overcome
+    in the path of duty.
+  hi: यह छंद हनुमान के संकल्प और उनके मिशन में खुशी का प्रतीक है, सीता को ढूंढने का।
+    सुंदर पर्वत कर्तव्य के पथ में खुशी से पार की गई चुनौतियों का प्रतिनिधित्व करता
+    है।
 story:
-  en: This verse is from the Sundar Kand of Ramayana, where Hanuman leaps onto a mountain
-    on the shore of the ocean, before his great leap to Lanka. It signifies his determination
-    and joy in the service of Lord Rama.
-  hi: यह श्लोक रामायण के सुंदरकाण्ड से है, जहां हनुमान लंका की ओर महान कूद करने से
-    पहले समुद्र के किनारे स्थित एक पर्वत पर कूदते हैं। यह उनके निर्धारितता और भगवान
-    राम की सेवा में खुशी का संकेत है।
+  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is on a mission
+    to find Sita. He leaps onto a beautiful mountain on the shore of the ocean, symbolizing
+    his determination and joy in overcoming challenges in his path. The mountain could
+    also symbolize the obstacles in our lives, which can be overcome with determination
+    and joy.
+  hi: यह छंद रामायण के सुंदरकांड से है, जहां हनुमान सीता को ढूंढने के मिशन पर होते
+    हैं। वह समुद्र के किनारे एक सुंदर पर्वत पर कूदते हैं, जो उनके पथ में चुनौतियों
+    को पार करने में उनके संकल्प और खुशी का प्रतीक है। पर्वत हमारे जीवन की बाधाओं का
+    भी प्रतीक हो सकता है, जिन्हें संकल्प और खुशी के साथ पार किया जा सकता है।
 practical_application:
   teaching:
-    en: Overcome obstacles with joy and determination.
-    hi: खुशी और संकल्प के साथ बाधाओं को पार करें।
+    en: The verse teaches us to face challenges with determination and joy, just like
+      Hanuman.
+    hi: यह छंद हमें हनुमान की तरह संकल्प और खुशी के साथ चुनौतियों का सामना करना सिखाता
+      है।
   when_to_use:
-    en: This verse can be recited or remembered when facing challenges, to inspire
-      courage and joy.
-    hi: जब सामना करना पड़े, तो साहस और खुशी को प्रेरित करने के लिए इस छंद का उच्चारण
-      किया जा सकता है या याद किया जा सकता है।
-meaning: This verse describes a scene where someone joyfully leaps and ascends onto
-  a beautiful mountain located on the shore of an ocean.
+    en: This verse can be recited when facing challenges, to invoke determination
+      and joy.
+    hi: जब चुनौतियों का सामना कर रहे हों, तो संकल्प और खुशी को जगाने के लिए इस छंद
+      का उच्चारण किया जा सकता है।
+meaning: On the shore of the ocean, there was a beautiful mountain. With joy, (Hanuman)
+  leapt and ascended onto it.
 translation:
-  en: On the ocean's shore, a beautiful mountain. With joy, leaped and ascended onto
-    it.
+  en: On the ocean's shore, a beautiful mountain. With joy, (he) leapt and ascended
+    onto it.
 ---

@@ -3,7 +3,7 @@ layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_03/
 title_en: Anticipation of Seeing Sita
-title_hi: सीता को देखने की उत्कण्ठा
+title_hi: सीता को देखने की उत्कंठा
 verse_number: 6
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_02
@@ -12,23 +12,20 @@ image: /images/sundar-kaand/modern-minimalist/chaupai-03.png
 devanagari: जब लगि आवौं सीतहि देखी। होइहि काजु मोहि हरष बिसेषी॥
 transliteration: Jab lagi āvauṁ sītahi dekhī. Hoihi kāju mohi harṣa biseṣī.
 phonetic_notes:
+- word: आवौं
+  phonetic: aa-vauṁ
+  emphasis: first syllable
 - word: सीतहि
   phonetic: see-ta-hi
   emphasis: first syllable
-- word: देखी
-  phonetic: de-khee
-  emphasis: second syllable
 - word: हरष
-  phonetic: ha-rash
-  emphasis: second syllable
-- word: बिसेषी
-  phonetic: bi-se-shee
-  emphasis: third syllable
+  phonetic: har-sha
+  emphasis: first syllable
 word_meanings:
 - word: जब
   roman: Jab
   meaning:
-    en: When
+    en: Until
     hi: जब
 - word: लगि
   roman: Lagi
@@ -63,8 +60,8 @@ word_meanings:
 - word: मोहि
   roman: Mohi
   meaning:
-    en: My
-    hi: मेरा
+    en: To me
+    hi: मुझे
 - word: हरष
   roman: Harṣa
   meaning:
@@ -79,34 +76,30 @@ literal_translation:
   en: Until I come to see Sita, my task will bring me special joy.
   hi: जब तक मैं सीता को देखने नहीं आता, मेरा कार्य मुझे विशेष खुशी देगा।
 interpretive_meaning:
-  en: The verse implies a deep longing and anticipation to see Sita, symbolizing the
-    soul's yearning to unite with the divine. The task of seeking the divine brings
-    immense joy and fulfillment.
-  hi: यह श्लोक सीता को देखने की गहरी उत्कण्ठा को दर्शाता है, जो आत्मा की दिव्यता से
-    मिलने की इच्छा का प्रतीक है। दिव्यता की खोज का कार्य अत्यधिक आनंद और पूर्णता लाता
-    है।
+  en: The verse conveys the deep longing and anticipation of meeting Sita, symbolizing
+    the soul's yearning for divine connection.
+  hi: यह पद सीता से मिलने की गहरी उत्कंठा और प्रतीक्षा को व्यक्त करता है, जो आत्मा
+    की दैवी संबंध की अभिलाषा का प्रतीक है।
 story:
-  en: This verse is from the Sundar Kand of Ramcharitmanas, where Hanuman is expressing
-    his anticipation of seeing Sita in Lanka. Hanuman's mission is to find Sita, and
-    his joy lies in the successful completion of this task. The verse signifies the
-    joy of seeking and finding the divine, represented by Sita.
-  hi: यह श्लोक रामचरितमानस के सुंदरकाण्ड से है, जहां हनुमान लंका में सीता को देखने
-    की अपनी उत्कण्ठा व्यक्त कर रहे हैं। हनुमान का मिशन सीता को ढूंढना है, और उनकी
-    खुशी इस कार्य के सफल समापन में है। यह श्लोक दिव्यता की खोज और पाने की खुशी का
-    संकेत देता है, जिसे सीता द्वारा प्रतिष्ठित किया गया है।
+  en: This verse is from the Sundar Kand of Ramayana where Hanuman is on a mission
+    to find Sita. His anticipation of seeing Sita is symbolic of the soul's yearning
+    for divine connection.
+  hi: यह श्लोक रामायण के सुंदरकाण्ड से है जहां हनुमान सीता को ढूंढने के लिए एक मिशन
+    पर हैं। सीता से मिलने की उनकी उत्कंठा आत्मा की दैवी संबंध की अभिलाषा का प्रतीक
+    है।
 practical_application:
   teaching:
-    en: The verse teaches us the joy of seeking and finding the divine, and the fulfillment
-      that comes from accomplishing our spiritual tasks.
-    hi: यह श्लोक हमें दिव्यता की खोज और पाने की खुशी, और अपने आध्यात्मिक कार्यों को
-      पूरा करने से मिलने वाली पूर्णता का पाठ पढ़ाता है।
+    en: The verse teaches us to anticipate and strive for divine connection with joy
+      and determination.
+    hi: यह श्लोक हमें खुशी और दृढ़ता के साथ दैवी संबंध की प्रतीक्षा और प्रयास करने
+      की शिक्षा देता है।
   when_to_use:
-    en: This verse can be recited or contemplated upon when seeking motivation or
-      joy in the pursuit of spiritual goals.
-    hi: जब आध्यात्मिक लक्ष्यों की खोज में प्रेरणा या खुशी की तलाश हो, तब इस श्लोक
-      का पाठ या विचार किया जा सकता है।
-meaning: The verse is expressing an anticipation and joy of seeing Sita. The speaker
-  is saying that until they come to see Sita, their task will bring them special joy.
+    en: This verse can be recited when seeking strength and guidance in times of uncertainty
+      and longing.
+    hi: अनिश्चितता और उत्कंठा के समय सामर्थ्य और मार्गदर्शन की खोज में यह श्लोक पढ़ा
+      जा सकता है।
+meaning: The verse expresses a longing to see Sita. It says, "Until I come to see
+  Sita, my task will bring me special joy."
 translation:
   en: Until I come to see Sita, my task will bring me special joy.
 ---

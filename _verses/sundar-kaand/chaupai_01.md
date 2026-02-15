@@ -3,7 +3,7 @@ layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_01/
 title_en: Hanuman's Heartfelt Joy
-title_hi: हनुमान की हृदय स्पर्शी खुशी
+title_hi: हनुमान की हृदय स्पर्शी आनंद
 verse_number: 4
 verse_type: chaupai
 next_verse: /sundar-kaand/chaupai_02
@@ -12,11 +12,14 @@ devanagari: जामवंत के बचन सुहाए। सुनि 
 transliteration: Jāmavanta ke bacana suhāye. Suni Hanumanta hṛdaya ati bhāye.
 phonetic_notes:
 - word: जामवंत
-  phonetic: jaa-ma-vant
+  phonetic: ja-ma-vant
   emphasis: first syllable
-- word: हनुमान
-  phonetic: ha-nu-maan
-  emphasis: last syllable
+- word: हनुमंत
+  phonetic: ha-nu-mant
+  emphasis: first syllable
+- word: हृदय
+  phonetic: hr-da-ya
+  emphasis: first syllable
 word_meanings:
 - word: जामवंत
   roman: Jāmavanta
@@ -32,17 +35,17 @@ word_meanings:
   roman: bacana
   meaning:
     en: words
-    hi: शब्द
+    hi: बातें
 - word: सुहाए
   roman: suhāye
   meaning:
-    en: beautiful
-    hi: सुंदर
+    en: pleasant
+    hi: सुहाने
 - word: सुनि
-  roman: Suni
+  roman: suni
   meaning:
     en: hearing
-    hi: सुनना
+    hi: सुनकर
 - word: हनुमंत
   roman: Hanumanta
   meaning:
@@ -57,42 +60,40 @@ word_meanings:
   roman: ati
   meaning:
     en: very
-    hi: बहुत
+    hi: अत्यधिक
 - word: भाए
   roman: bhāye
   meaning:
-    en: pleased
-    hi: खुश
+    en: liked
+    hi: पसंद आये
 literal_translation:
-  en: Hearing the beautiful words of Jambavan, Hanuman's heart was very pleased.
-  hi: जामवंत के सुंदर शब्दों को सुनकर, हनुमान का हृदय बहुत खुश हुआ।
+  en: The pleasant words of Jambavan, upon hearing, pleased Hanuman's heart greatly.
+  hi: जामवंत के सुहाने शब्दों को सुनकर, हनुमान का हृदय अत्यधिक प्रसन्न हुआ।
 interpretive_meaning:
-  en: This verse signifies the joy and motivation Hanuman felt upon hearing Jambavan's
-    encouraging words, inspiring him to undertake the great task of finding Sita.
-  hi: यह छंद हनुमान की खुशी और प्रेरणा को दर्शाता है, जो उन्हें जामवंत के प्रोत्साहन
-    शब्दों को सुनकर महान कार्य की ओर ले जाता है, सीता की खोज करने के लिए।
+  en: The verse signifies the joy and motivation Hanuman feels upon hearing Jambavan's
+    encouraging words, reflecting the power of positive reinforcement and faith.
+  hi: यह छंद हनुमान के आनंद और प्रेरणा को दर्शाता है, जो जामवंत के प्रोत्साहनात्मक
+    शब्दों को सुनने पर महसूस होता है, जिससे सकारात्मक प्रतिक्रिया और विश्वास की शक्ति
+    का प्रतिबिंबित होता है।
 story:
   en: This verse is from the Sundar Kanda of the Ramayana, where Hanuman is preparing
-    to leap across the ocean to find Sita. Jambavan, the wise bear king, encourages
-    Hanuman by reminding him of his divine powers. Upon hearing these words, Hanuman's
-    heart is filled with joy and determination.
-  hi: यह छंद रामायण के सुंदर कांड से है, जहां हनुमान सागर को पार करके सीता की खोज
+    to leap across the ocean to search for Sita. Jambavan, the wise bear king, encourages
+    Hanuman by reminding him of his divine powers. The verse captures Hanuman's joy
+    and motivation upon hearing these words.
+  hi: यह श्लोक रामायण के सुंदरकांड से है, जहां हनुमान सीता की खोज में समुद्र को पार
     करने के लिए कूदने की तैयारी कर रहे हैं। बुद्धिमान भालू राजा जामवंत, हनुमान को
-    उनकी दिव्य शक्तियों की याद दिलाकर प्रोत्साहित करते हैं। इन शब्दों को सुनकर, हनुमान
-    का हृदय खुशी और संकल्प से भर जाता है।
+    उनकी दिव्य शक्तियों की याद दिलाकर प्रोत्साहित करते हैं। यह श्लोक हनुमान के आनंद
+    और प्रेरणा को दर्शाता है, जो उन्हें इन शब्दों को सुनने पर महसूस होती है।
 practical_application:
   teaching:
-    en: This verse teaches us the power of positive encouragement and the strength
-      that comes from recognizing one's own abilities.
-    hi: यह छंद हमें सकारात्मक प्रोत्साहन की शक्ति और अपनी क्षमताओं की पहचान से मिलने
-      वाली शक्ति का पाठ पढ़ाता है।
+    en: Positive reinforcement and faith can motivate and bring joy.
+    hi: सकारात्मक प्रतिक्रिया और विश्वास प्रेरणा और आनंद ला सकते हैं।
   when_to_use:
-    en: This verse can be recited or remembered when one needs inspiration or motivation
-      to undertake a challenging task.
-    hi: जब किसी को कठिन कार्य को करने के लिए प्रेरणा या प्रोत्साहन की आवश्यकता होती
-      है, तब यह छंद पढ़ा या याद किया जा सकता है।
-meaning: Jāmavanta's (Jāmavanta) beautiful (suhāye) words (bacana), upon hearing (Suni),
-  Hanuman's (Hanumanta) heart (hṛdaya) was very (ati) pleased (bhāye).
+    en: Recite this verse when seeking motivation or encouragement.
+    hi: प्रेरणा या प्रोत्साहन की तलाश में इस श्लोक का उच्चारण करें।
+meaning: The words of Jambavan (Jāmavanta ke bacana) are pleasant (suhāye). Hearing
+  them (suni), Hanuman (Hanumanta) is very pleased (ati bhāye) in his heart (hṛdaya).
 translation:
-  en: Hearing the beautiful words of Jambavan, Hanuman's heart was very pleased.
+  en: The pleasant words of Jambavan, upon hearing, pleased Hanuman's heart greatly.
+previous_verse: /sundar-kaand/chaupai_03
 ---
