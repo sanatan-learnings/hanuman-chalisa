@@ -95,7 +95,19 @@ mv images/sundar-kaand/modern-minimalist/chaupai_12.png chaupai-12.png
 4. **Embeddings not updating**: Run verse-generate with --all flag
 
 ## SDK Version
-Currently using sanatan-sdk 0.14.2 - upgrade regularly for fixes.
+Currently using sanatan-sdk 0.14.3 - upgrade regularly for fixes.
+
+## Python Commands
+**ALWAYS run Python commands in the virtual environment:**
+```bash
+# Correct - uses venv
+./venv/bin/verse-generate --collection sundar-kaand --verse 18 ...
+./venv/bin/pip install --upgrade sanatan-sdk
+
+# Wrong - uses system Python
+verse-generate --collection sundar-kaand --verse 18 ...
+pip install --upgrade sanatan-sdk
+```
 
 ## Cost Per Verse
 ~$0.05-0.06 (AI content + image + audio + embeddings)
