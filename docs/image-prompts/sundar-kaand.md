@@ -141,3 +141,17 @@ In a tranquil forest clearing bathed in the soft glow of twilight, the deity Han
 
 ---
 
+### Chaupai 13 (chaupai_13): Hanuman's Unwavering Resolve
+
+**Scene Description**:
+In the vast expanse of the ocean sky, the mighty Hanuman soars forward with renewed determination and focus, his powerful orange-red form blazing with divine energy and unwavering resolve. His eyes are fixed on the distant horizon where Lanka awaits, burning with single-minded devotion to his sacred mission. His expression shows deep determination mixed with devotional love - the fire of service to Lord Rama illuminates his face. One hand is raised in a gesture of firm resolve (abhaya mudra), while the other touches his heart, symbolizing his promise to complete Rama's work. Behind him, the trials he has overcome (Mount Mainaka, Surasa's test) fade into ethereal light, while ahead, the golden shores of Lanka begin to shimmer in the distance. The sapphire ocean stretches endlessly below with white-capped waves. Sacred symbols and divine geometric patterns swirl around him, representing his focused intention. In the sky above, a subtle ethereal vision of Lord Rama and Sita appears in soft golden light, representing the purpose that drives him forward. His aura radiates with concentric circles of orange-golden energy showing his gathering power and determination. The composition emphasizes forward momentum and purposeful action - no more tests or distractions, only pure focused devotion to finding Sita and returning with news to his beloved Lord. Epic cinematic scale with dramatic lighting emphasizing Hanuman's transition from tested devotee to unstoppable divine messenger. The atmosphere is one of sacred determination, showing that nothing can now deter him from his mission.
+
+---
+
+### Verse 17 (chaupai_13): Hanuman's Commitment to Ram's Task
+
+**Scene Description**:
+In the mystical, twilight-lit forest, an ethereal figure of Hanuman, the monkey god, kneels on one knee, his golden fur glistening under the soft glow of the moon. His eyes are filled with determination and devotion, his gaze fixed on the distant silhouette of Lanka. In his hands, he holds a tiny, luminous figure of Lord Rama and Sita, symbolizing his mission. The atmosphere is serene yet filled with anticipation, the forest bathed in the soft, silver light of the moon, and a sense of spiritual reverence pervades the scene.
+
+---
+
