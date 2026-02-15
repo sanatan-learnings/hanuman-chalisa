@@ -101,7 +101,7 @@ set -a && source .env && set +a
 4. **Embeddings not updating**: Run verse-generate with --all flag
 
 ## SDK Version
-Currently using sanatan-sdk 0.16.0 - upgrade regularly for fixes.
+Currently using sanatan-sdk 0.16.1 - upgrade regularly for fixes.
 
 ## Python Commands
 **ALWAYS run Python commands in the virtual environment:**
