@@ -8,30 +8,33 @@ _meta:
   description: Brief description of this collection
   note: Optional notes about discrepancies, variations, or special considerations
   sequence:
-  - verse-type-01  # e.g., shloka-01, doha-01, chaupai-01
+  - verse-type-01  # e.g., shloka-01, doha-01, chaupai-01, verse-01
   - verse-type-02
   - verse-type-03
   # ... complete ordered sequence of all verses
 
 # Group verses by type with comments for organization
-# Use verse IDs with hyphens (e.g., chaupai-01, doha-01, shloka-01)
+# Common verse types: shloka (श्लोक), doha (दोहा), chaupai (चौपाई), verse (पद)
+# Use verse IDs with hyphens (e.g., chaupai-01, doha-01, shloka-01, verse-01)
 
 # Opening Verses (if applicable)
-verse-type-01:
+# Common types: shloka (invocatory verses), doha (couplets)
+shloka-01:
   devanagari: [Devanagari text here - single line, use । for line breaks within verse]
 
-verse-type-02:
+doha-01:
   devanagari: [Devanagari text here]
 
 # Main Verses
-verse-type-03:
+# Common types: chaupai (quatrains), verse (generic numbered verses)
+chaupai-01:
   devanagari: [Devanagari text here]
 
-verse-type-04:
+chaupai-02:
   devanagari: [Devanagari text here]
 
 # Closing Verses (if applicable)
-verse-type-closing:
+doha-closing:
   devanagari: [Devanagari text here]
 
 # IMPORTANT GUIDELINES:
@@ -40,6 +43,11 @@ verse-type-closing:
 #    - Always use hyphens, never underscores (chaupai-01, NOT chaupai_01)
 #    - Use consistent naming: <type>-<number> (e.g., shloka-01, doha-01, chaupai-01)
 #    - For closing verses: <type>-closing (e.g., doha-closing)
+#    - Common verse types:
+#      * shloka (श्लोक): Sanskrit invocatory verses, typically at the beginning
+#      * doha (दोहा): Hindi couplets, often transitional or conclusive
+#      * chaupai (चौपाई): Hindi quatrains, main narrative verses
+#      * verse (पद): Generic numbered verses when no specific type applies
 #
 # 2. _meta.sequence:
 #    - Must list ALL verses in exact reading order
