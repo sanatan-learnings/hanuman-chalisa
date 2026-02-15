@@ -9,34 +9,34 @@
 
 verses:
   # Opening Dohas
-  - verse_id: opening_doha_01
+  - verse_id: opening-doha-01
     devanagari: |
       श्रीगुरु चरन सरोज रज, निज मन मुकुर सुधारि।
       बरनउं रघुबर बिमल जसु, जो दायक फल चारि।।
     notes: "First opening doha"
 
-  - verse_id: opening_doha_02
+  - verse_id: opening-doha-02
     devanagari: |
       बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार।
       बल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार।।
     notes: "Second opening doha"
 
   # 40 Chaupais
-  - verse_id: verse_01
+  - verse_id: verse-01
     devanagari: |
       जय हनुमान ज्ञान गुन सागर।
       जय कपीस तिहुं लोक उजागर।।
     notes: "First chaupai"
 
   # Add remaining verses here
-  - verse_id: verse_02
+  - verse_id: verse-02
     devanagari: |
       [ENTER VERSE TEXT HERE]
     notes: "Verse 2 - pending input"
 
 # Template for new verses:
 #
-#  - verse_id: verse_XX
+#  - verse_id: verse-XX
 #    devanagari: |
 #      [Devanagari text line 1]
 #      [Devanagari text line 2]
