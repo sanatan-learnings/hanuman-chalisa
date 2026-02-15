@@ -134,3 +134,12 @@ In a tranquil moment after passing Surasa's test, Hanuman hovers in the vast oce
 In the vast expanse of the ocean sky, the mighty Hanuman soars forward with renewed determination and focus, his powerful orange-red form blazing with divine energy and unwavering resolve. His eyes are fixed on the distant horizon where Lanka awaits, burning with single-minded devotion to his sacred mission. His expression shows deep determination mixed with devotional love - the fire of service to Lord Rama illuminates his face. One hand is raised in a gesture of firm resolve (abhaya mudra), while the other touches his heart, symbolizing his promise to complete Rama's work. Behind him, the trials he has overcome (Mount Mainaka, Surasa's test) fade into ethereal light, while ahead, the golden shores of Lanka begin to shimmer in the distance. The sapphire ocean stretches endlessly below with white-capped waves. Sacred symbols and divine geometric patterns swirl around him, representing his focused intention. In the sky above, a subtle ethereal vision of Lord Rama and Sita appears in soft golden light, representing the purpose that drives him forward. His aura radiates with concentric circles of orange-golden energy showing his gathering power and determination. The composition emphasizes forward momentum and purposeful action - no more tests or distractions, only pure focused devotion to finding Sita and returning with news to his beloved Lord. Epic cinematic scale with dramatic lighting emphasizing Hanuman's transition from tested devotee to unstoppable divine messenger. The atmosphere is one of sacred determination, showing that nothing can now deter him from his mission.
 
 ---
+
+### Chaupai 19 (chaupai-15): Hanuman's Fearless Determination
+
+**Scene Description**:
+In the mystical glow of a twilight sky, the mighty Hanuman stands resiliently on the edge of a rocky cliff, his muscular form silhouetted against the horizon. His eyes gleam with determination and wisdom, looking upwards towards the heavens as if in silent communication with the divine. The air around him shimmers with spiritual energy, casting a warm glow on the myriad of undulating clouds beneath him. The focus is on Hanuman's confident stance, symbolizing his unwavering faith and courage, amidst the serene and ethereal atmosphere.
+
+---
+---
+---

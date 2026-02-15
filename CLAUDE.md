@@ -10,7 +10,7 @@ Jekyll-based website for sacred Hindu texts with multimedia content (images, aud
 - Image files: `chaupai-01.png` NOT `chaupai_01.png`
 - Permalinks: `/sundar-kaand/chaupai-01/` NOT `/sundar-kaand/chaupai_01/`
 
-**Known Issue:** sanatan-sdk generates underscores - manually rename all files to hyphens after generation.
+**Important:** Use verse IDs from YAML `_meta.sequence` directly in commands (e.g., `chaupai-15`) to ensure correct hyphenated filenames.
 
 ## Project Structure
 ```
@@ -32,37 +32,43 @@ docs/image-prompts/{collection}.md  # Scene descriptions for image generation
 **ALWAYS use the `/verse-generator` skill for new verse generation.**
 
 This automates the complete workflow:
-- Scene description management
+- Scene description verification
 - SDK verse generation with --regenerate-content
-- File renaming (underscore → hyphen)
-- Verse metadata fixes
+- Verse metadata validation
 - Navigation link updates
 - Git commits
 
 Example usage:
 ```
-/verse-generator Generate chaupai_13 for sundar-kaand
+/verse-generator Generate chaupai-15 for sundar-kaand
 ```
+
+The skill uses verse IDs from `data/verses/{collection}.yml` `_meta.sequence` to ensure correct hyphenated filenames.
 
 ### Manual Generation (Only if /verse-generator unavailable)
 ```bash
 # 1. Add scene description to docs/image-prompts/{collection}.md
-# 2. Generate verse
+
+# 2. Check YAML for verse ID in _meta.sequence
+# Example: chaupai-15 (not chaupai_15)
+
+# 3. Generate verse using the YAML verse ID directly
 set -a && source .env && set +a
 ./venv/bin/verse-generate \
   --collection sundar-kaand \
-  --verse 16 \
-  --verse-id chaupai_12 \
+  --verse chaupai-15 \
   --regenerate-content \
   --all
 
-# 3. Rename files (underscore → hyphen)
-mv _verses/sundar-kaand/chaupai_12.md chaupai-12.md
-mv audio/sundar-kaand/chaupai_12_full.mp3 chaupai-12-full.mp3
-mv audio/sundar-kaand/chaupai_12_slow.mp3 chaupai-12-slow.mp3
-mv images/sundar-kaand/modern-minimalist/chaupai_12.png chaupai-12.png
+# IMPORTANT: Do NOT use --verse-id parameter
+# SDK auto-infers correct hyphenated filenames from YAML sequence
 
-# 4. Fix verse file: permalink, verse_type, previous_verse, next_verse, image path
+# 4. Verify generated files use hyphens:
+#    - _verses/sundar-kaand/chaupai-15.md
+#    - audio/sundar-kaand/chaupai-15-full.mp3
+#    - audio/sundar-kaand/chaupai-15-slow.mp3
+#    - images/sundar-kaand/modern-minimalist/chaupai-15.png
+
 # 5. Update previous verse next_verse field
 # 6. Commit
 ```
