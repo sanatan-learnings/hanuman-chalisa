@@ -89,3 +89,38 @@ Majestic Hanuman standing powerfully atop Mount Mahendra, his muscular orange-re
 ---
 ---
 
+### Verse 4: chaupai_04
+
+**Scene Description**:
+In the golden dusk light, the regal figure of Raghunatha (Lord Rama), dressed in ancient Indian royal attire with a serene expression, is gently stepping forward on a path lined with sacred trees. He's joyfully addressing a crowd of devotee figures, all of whom are bowing their heads in reverence towards him. The focus is on Raghunatha, with his right hand raised in blessing, and the glow from the setting sun creating a divine halo around him. The atmosphere is one of spiritual elation, reverence, and deep tranquility, with the rich colors of the sunset and the lush greenery enhancing the sacred and serene ambiance.
+
+---
+
+### Verse 5: chaupai_05
+
+**Scene Description**:
+A majestic monkey deity, Hanuman, is captured mid-leap, poised to ascend a breathtakingly beautiful mountain peak on the shore of a vast, shimmering blue ocean. The golden rays of the setting sun paint the scene with a warm, serene hue, highlighting the curiosity and determination in Hanuman's eyes. The peak, a symbol of spiritual elevation, vibrates with a divine aura, while the ocean represents the vastness of life's challenges. The focus is on Hanuman, the embodiment of devotion and courage, his muscular form contrasted against the delicate beauty of the natural surroundings.
+
+---
+
+### Verse 6: chaupai_06
+
+**Scene Description**:
+In the ethereal glow of twilight, Lord Rama, the raghubir, is depicted multiple times in various dynamic poses, each symbolizing his strength and valor, against the backdrop of a vast, ancient landscape. In the foreground, Hanuman, the pavanatanay, is shown lifting a mountain with ease, his muscular form illuminated by the gentle moonlight, illustrating his immense power. The scene is suffused with a serene and divine atmosphere, with the focus on the contrast between the mighty, yet peaceful Rama and the powerful, yet humble Hanuman. The sky above is filled with celestial bodies, hinting at the presence of the devas, watching and admiring the scene unfold.
+
+---
+
+### Verse 7: chaupai_07
+
+**Scene Description**:
+In an ethereal landscape of towering mountains and vast blue skies, a majestic Hanuman is depicted, his foot firmly planted on a mountain peak. The mountain, in response, plunges into the depths of the underworld, Patala, creating a dramatic rift in the earth, while the sky above is bathed in the soft, warm hues of the setting sun. The focus is on the powerful and serene countenance of Hanuman, embodying strength and devotion, while symbolic elements like his gada (mace), the Ramayana text, and a silhouette of Lord Rama in the sky, subtly accentuate the spiritual context. The atmosphere is imbued with a divine sense of awe and reverence, illuminated by the gentle, golden twilight that casts long, mystic shadows.
+
+---
+
+### Verse 8: chaupai_08
+
+**Scene Description**:
+Under a radiant sky drenched in the hues of twilight, the mighty Hanuman strides forward, embodying the unstoppable force of Lord Rama's unerring arrows. His silhouette, both muscular and agile, stands against a backdrop of lush mountains, symbolizing the path he takes in Sundar-Kaand. A golden aura surrounds him, reflecting the unwavering resolve and divine purpose in his eyes. The composition's focus is on Hanuman's determined march, symbolizing his unstoppable journey, with the atmospheric lighting casting dramatic shadows that amplify the scene's spiritual intensity.
+
+---
+

@@ -2,18 +2,13 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_01/
-title_en: 'Chaupai 1: Jambavan''s Inspiring Words'
-title_hi: 'चौपाई 1: जामवंत के प्रेरणादायक वचन'
+title_en: Hanuman's Heartfelt Joy
+title_hi: हनुमान की अंतर्द्विप्ति
 verse_number: 1
-previous_verse: null
 next_verse: /sundar-kaand/chaupai_02
 image: /images/sundar-kaand/modern-minimalist/chaupai-01.png
 devanagari: जामवंत के बचन सुहाए। सुनि हनुमंत हृदय अति भाए॥
-transliteration: 'Jamavant ke bachan suhaye
-
-  Suni Hanuman hriday ati bhaye
-
-  '
+transliteration: Jāmavanta ke bacana suhāye. Suni Hanumanta hṛdaya ati bhāye.
 phonetic_notes:
 - word: जामवंत
   phonetic: jaa-ma-vant
@@ -23,65 +18,79 @@ phonetic_notes:
   emphasis: last syllable
 word_meanings:
 - word: जामवंत
-  roman: Jamavant
+  roman: Jāmavanta
   meaning:
-    en: Jambavan (wise bear king)
-    hi: जामवंत (बुद्धिमान भालु राजा)
+    en: Jambavan (the bear king)
+    hi: जामवंत (राजा भालू)
+- word: के
+  roman: ke
+  meaning:
+    en: of
+    hi: के
 - word: बचन
-  roman: Bachan
+  roman: bacana
   meaning:
-    en: words/speech
-    hi: वचन/शब्द
+    en: words
+    hi: शब्द
 - word: सुहाए
-  roman: Suhaye
+  roman: suhāye
   meaning:
-    en: pleasant/pleasing
-    hi: सुहावने/मधुर
+    en: beautiful
+    hi: सुंदर
+- word: सुनि
+  roman: suni
+  meaning:
+    en: hearing
+    hi: सुनकर
+- word: हनुमंत
+  roman: Hanumanta
+  meaning:
+    en: Hanuman
+    hi: हनुमान
 - word: हृदय
-  roman: Hriday
+  roman: hṛdaya
   meaning:
     en: heart
-    hi: हृदय/मन
-- word: भाए
-  roman: Bhaye
+    hi: हृदय
+- word: अति
+  roman: ati
   meaning:
-    en: pleased/delighted
-    hi: भाए/प्रसन्न हुए
+    en: very much
+    hi: अत्यधिक
+- word: भाए
+  roman: bhāye
+  meaning:
+    en: pleased
+    hi: भाया
 literal_translation:
-  en: Jambavan's words were pleasing; hearing them, Hanuman's heart was greatly delighted.
-  hi: जामवंत के वचन सुहावने थे; उन्हें सुनकर हनुमान का हृदय अत्यंत प्रसन्न हुआ।
+  en: The beautiful words of Jambavan, hearing them, Hanuman's heart is very pleased.
+  hi: जामवंत के सुंदर शब्दों को सुनकर, हनुमान का हृदय अत्यधिक खुश होता है।
 interpretive_meaning:
-  en: This chaupai describes the pivotal moment when Jambavan, the wise bear king,
-    reminded Hanuman of his immense powers. His encouraging and pleasant words awakened
-    Hanuman's dormant strength and filled his heart with joy and confidence, preparing
-    him to take the mighty leap across the ocean to Lanka.
-  hi: यह चौपाई उस महत्वपूर्ण क्षण का वर्णन करती है जब बुद्धिमान भालु राजा जामवंत ने
-    हनुमान को उनकी अपार शक्तियों की याद दिलाई। उनके प्रोत्साहनपूर्ण और मधुर शब्दों
-    ने हनुमान की सुप्त शक्ति को जगा दिया और उनके हृदय को आनंद और आत्मविश्वास से भर
-    दिया, जिससे वे लंका की ओर समुद्र पार करने के लिए तैयार हो गए।
+  en: The verse signifies the importance of wise counsel and its impact on the heart,
+    as represented by Hanuman's joy upon hearing Jambavan's words.
+  hi: यह श्लोक बुद्धिमान सलाह के महत्व और उसके हृदय पर प्रभाव को दर्शाता है, जैसा
+    कि हनुमान की खुशी में जामवंत के शब्दों को सुनने पर प्रतिष्ठित है।
 story:
-  en: When the vanaras reached the southern ocean in their search for Sita, they were
-    discouraged by the vast expanse of water. No one knew how to cross it. Jambavan,
-    the wise and ancient bear king who had served Lord Rama's ancestors, recognized
-    Hanuman's divine potential. He reminded Hanuman of his powers with sweet and inspiring
-    words. This moment marks the beginning of Hanuman's greatest adventure - his legendary
-    leap to Lanka.
-  hi: जब वानर सीता की खोज में दक्षिणी सागर तक पहुंचे, तो विशाल जल राशि देखकर वे हतोत्साहित
-    हो गए। किसी को नहीं पता था कि इसे कैसे पार किया जाए। बुद्धिमान और प्राचीन भालु
-    राजा जामवंत, जिन्होंने भगवान राम के पूर्वजों की सेवा की थी, ने हनुमान की दिव्य
-    क्षमता को पहचाना। उन्होंने मधुर और प्रेरणादायक शब्दों से हनुमान को उनकी शक्तियों
-    की याद दिलाई। यह क्षण हनुमान के सबसे महान साहसिक कार्य की शुरुआत है - लंका की
-    ओर उनकी पौराणिक छलांग।
+  en: This verse is from the Sundar Kanda of the Ramayana, where Hanuman is preparing
+    to leap across the ocean to search for Sita. Jambavan, the king of bears, gives
+    Hanuman a pep talk, reminding him of his divine powers. Hanuman, upon hearing
+    these words, feels greatly encouraged and joyful.
+  hi: यह श्लोक रामायण के सुंदर कांड से है, जहां हनुमान सीता की खोज में समुद्र को पार
+    करने के लिए कूदने की तैयारी कर रहे हैं। भालू के राजा जामवंत हनुमान को उत्साहित
+    करते हैं, उन्हें उनकी दैवीय शक्तियों की याद दिलाते हैं। हनुमान, इन शब्दों को सुनकर,
+    बहुत प्रोत्साहित और खुश महसूस करते हैं।
 practical_application:
   teaching:
-    en: Sometimes we need mentors and wise friends to remind us of our own dormant
-      capabilities. True guidance awakens the power that already exists within us.
-    hi: कभी-कभी हमें गुरुओं और बुद्धिमान मित्रों की आवश्यकता होती है जो हमें हमारी
-      सुप्त क्षमताओं की याद दिलाएं। सच्चा मार्गदर्शन उस शक्ति को जगाता है जो पहले
-      से हमारे भीतर मौजूद है।
+    en: The verse teaches us the power of positive reinforcement and encouragement.
+    hi: यह श्लोक हमें सकारात्मक प्रतिपुष्टि और प्रोत्साहन की शक्ति सिखाता है।
   when_to_use:
-    en: Recite this when feeling uncertain about your abilities or when you need inspiration
-      to take on a daunting challenge.
-    hi: जब आप अपनी क्षमताओं के बारे में अनिश्चित महसूस करें या जब आपको किसी कठिन चुनौती
-      का सामना करने के लिए प्रेरणा की आवश्यकता हो तो इसका पाठ करें।
+    en: This verse can be recited or remembered when one needs motivation or is about
+      to embark on a challenging task.
+    hi: जब कोई व्यक्ति प्रेरणा की आवश्यकता होती है या वह किसी कठिन कार्य पर प्रस्थान
+      करने वाला होता है, तब इस श्लोक का पाठ किया जा सकता है या उसे याद किया जा सकता
+      है।
+meaning: The verse describes the beautiful words of Jambavan, which upon hearing,
+  Hanuman's heart is very much pleased.
+translation:
+  en: The beautiful words of Jambavan, hearing them, Hanuman's heart is very pleased.
 ---

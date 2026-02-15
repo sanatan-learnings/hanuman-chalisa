@@ -2,14 +2,14 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_03/
-title_en: 'Chaupai 3: Hanuman''s Determined Resolve to Find Sita'
-title_hi: 'चौपाई 3: सीता को खोजने का हनुमान का दृढ़ संकल्प'
+title_en: Anticipation of Seeing Sita
+title_hi: सीता को देखने की उत्कण्ठा
 verse_number: 3
 previous_verse: /sundar-kaand/chaupai_02
 next_verse: /sundar-kaand/chaupai_04
 image: /images/sundar-kaand/modern-minimalist/chaupai-03.png
 devanagari: जब लगि आवौं सीतहि देखी। होइहि काजु मोहि हरष बिसेषी॥
-transliteration: Jaba lagi āvauṁ sītahi dekhī. Hoihi kāju mohi harṣa biseṣī.
+transliteration: Jab lagi āvauṁ sītahi dekhī. Hoihi kāju mohi harṣa biseṣī.
 phonetic_notes:
 - word: सीतहि
   phonetic: see-ta-hi
@@ -24,150 +24,84 @@ phonetic_notes:
   phonetic: bi-se-shee
   emphasis: third syllable
 word_meanings:
-- word: जब लगि
-  roman: Jab lagi
+- word: जब
+  roman: Jab
   meaning:
-    en: until / as long as
-    hi: जब तक
+    en: When
+    hi: जब
+- word: लगि
+  roman: Lagi
+  meaning:
+    en: Until
+    hi: तक
 - word: आवौं
-  roman: Aavau
+  roman: Āvauṁ
   meaning:
-    en: I return / I come back
-    hi: मैं लौटूं / वापस आऊं
+    en: I come
+    hi: मैं आऊं
 - word: सीतहि
-  roman: Sitahi
+  roman: Sītahi
   meaning:
-    en: Sita (accusative case)
+    en: To Sita
     hi: सीता को
 - word: देखी
-  roman: Dekhi
+  roman: Dekhī
   meaning:
-    en: having seen
-    hi: देखकर
+    en: See
+    hi: देखूं
 - word: होइहि
   roman: Hoihi
   meaning:
-    en: will be / will happen
+    en: Will be
     hi: होगा
 - word: काजु
-  roman: Kaju
+  roman: Kāju
   meaning:
-    en: task / work / mission
-    hi: कार्य / काम
+    en: Task
+    hi: कार्य
 - word: मोहि
   roman: Mohi
   meaning:
-    en: to me / for me
-    hi: मुझे / मेरे लिए
+    en: My
+    hi: मेरा
 - word: हरष
-  roman: Harash
+  roman: Harṣa
   meaning:
-    en: joy / happiness / delight
-    hi: प्रसन्नता / आनंद
+    en: Joy
+    hi: खुशी
 - word: बिसेषी
-  roman: Biseshi
+  roman: Biseṣī
   meaning:
-    en: special / extraordinary
-    hi: विशेष / असाधारण
+    en: Special
+    hi: विशेष
 literal_translation:
-  en: Until I return having seen Sita, the task will be accomplished with special
-    joy for me.
-  hi: जब तक मैं सीता को देखकर वापस नहीं आऊं, यह कार्य मेरे लिए विशेष आनंद के साथ पूर्ण
-    होगा।
+  en: Until I come to see Sita, my task will be filled with special joy.
+  hi: जब तक मैं सीता को देखने नहीं आता, मेरा कार्य विशेष खुशी से भरा होगा।
 interpretive_meaning:
-  en: 'Hanuman makes a solemn promise and expresses unwavering determination. He declares
-    that he will not return until he has seen Sita with his own eyes. His confidence
-    is remarkable - he doesn''t say "if" he finds her, but "when" he returns after
-    seeing her. The phrase "harash biseshi" (special joy) reveals that his happiness
-    lies not in personal glory, but in successfully completing the mission entrusted
-    to him by Lord Rama. This verse captures the essence of a true devotee - one who
-    finds supreme joy in serving their Lord and fulfilling their duty with complete
-    dedication.
-
-    '
-  hi: 'हनुमान एक दृढ़ प्रतिज्ञा करते हैं और अटल संकल्प व्यक्त करते हैं। वे घोषणा करते
-    हैं कि जब तक वे अपनी आंखों से सीता को नहीं देख लेते, तब तक वापस नहीं लौटेंगे।
-    उनका आत्मविश्वास उल्लेखनीय है - वे यह नहीं कहते कि "अगर" वे उन्हें पाते हैं, बल्कि
-    "जब" वे उन्हें देखने के बाद लौटेंगे। "हरष बिसेषी" (विशेष आनंद) वाक्यांश यह प्रकट
-    करता है कि उनकी खुशी व्यक्तिगत यश में नहीं, बल्कि भगवान राम द्वारा सौंपे गए मिशन
-    को सफलतापूर्वक पूरा करने में है। यह चौपाई एक सच्चे भक्त के सार को दर्शाती है -
-    जो अपने प्रभु की सेवा करने और पूर्ण समर्पण के साथ अपने कर्तव्य को निभाने में परम
-    आनंद पाता है।
-
-    '
+  en: The verse symbolizes the spiritual seeker's longing to realize the divine, represented
+    by Sita. The task of seeking is filled with joy and anticipation.
+  hi: यह छंद आत्मार्थी की दैवीक (सीता के रूप में प्रतिष्ठित) की प्राप्ति की उत्कण्ठा
+    का प्रतीक है। खोज का कार्य खुशी और पूर्वानुमान से भरा होता है।
 story:
-  en: 'Having received encouragement from Jambavan and the other vanaras, Hanuman
-    now makes his solemn declaration before beginning his historic journey across
-    the ocean to Lanka. This moment is significant because it shows Hanuman''s complete
-    faith in his mission''s success. He doesn''t express doubt or concern about the
-    challenges ahead - the vast ocean, the unknown land of Lanka, or the powerful
-    demon king Ravana. Instead, he speaks with absolute certainty that he will see
-    Sita and return. This unwavering confidence comes not from arrogance but from
-    his complete surrender to Lord Rama and faith in divine grace. The "special joy"
-    he mentions refers to the joy of a servant who knows he will be able to please
-    his master. This verse marks the transition from preparation to action, as Hanuman
-    is about to embark on one of the most celebrated adventures in Hindu mythology.
-
-    '
-  hi: 'जामवंत और अन्य वानरों से प्रोत्साहन प्राप्त करने के बाद, हनुमान अब समुद्र पार
-    करके लंका की अपनी ऐतिहासिक यात्रा शुरू करने से पहले अपनी दृढ़ घोषणा करते हैं।
-    यह क्षण महत्वपूर्ण है क्योंकि यह अपने मिशन की सफलता में हनुमान के पूर्ण विश्वास
-    को दर्शाता है। वे आगे की चुनौतियों के बारे में संदेह या चिंता व्यक्त नहीं करते
-    - विशाल समुद्र, लंका की अज्ञात भूमि, या शक्तिशाली राक्षस राजा रावण। इसके बजाय,
-    वे पूर्ण निश्चितता के साथ बोलते हैं कि वे सीता को देखेंगे और वापस लौटेंगे। यह
-    अटल आत्मविश्वास अहंकार से नहीं बल्कि भगवान राम के प्रति उनके पूर्ण समर्पण और दिव्य
-    कृपा में विश्वास से आता है। जिस "विशेष आनंद" का वे उल्लेख करते हैं, वह एक सेवक
-    के आनंद को संदर्भित करता है जो जानता है कि वह अपने स्वामी को प्रसन्न कर सकेगा।
-    यह चौपाई तैयारी से कार्य की ओर संक्रमण को चिह्नित करती है, क्योंकि हनुमान हिंदू
-    पौराणिक कथाओं के सबसे प्रसिद्ध साहसिक कार्यों में से एक को शुरू करने वाले हैं।
-
-    '
+  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is expressing
+    his anticipation and joy at the prospect of seeing Sita. It signifies his unwavering
+    devotion and commitment to his task.
+  hi: यह छंद रामायण के सुंदरकांड से है, जहां हनुमान सीता को देखने की संभावना पर अपनी
+    उत्कण्ठा और खुशी व्यक्त कर रहे हैं। इसका संकेत उनकी अटल भक्ति और अपने कार्य के
+    प्रति समर्पण है।
 practical_application:
   teaching:
-    en: 'When undertaking any important mission or goal, approach it with unwavering
-      determination and positive certainty of success. Don''t focus on obstacles or
-      difficulties - instead, keep your eyes fixed on the goal. Find your joy not
-      in personal recognition but in successfully completing what has been entrusted
-      to you. True confidence comes from surrendering to a higher purpose and having
-      faith in divine support.
-
-      '
-    hi: 'किसी भी महत्वपूर्ण मिशन या लक्ष्य को शुरू करते समय, अटल संकल्प और सफलता की
-      सकारात्मक निश्चितता के साथ इसे अपनाएं। बाधाओं या कठिनाइयों पर ध्यान केंद्रित
-      न करें - इसके बजाय, अपनी नज़र लक्ष्य पर टिकाए रखें। अपना आनंद व्यक्तिगत पहचान
-      में नहीं बल्कि आपको सौंपे गए कार्य को सफलतापूर्वक पूरा करने में खोजें। सच्चा
-      आत्मविश्वास एक उच्च उद्देश्य के प्रति समर्पण और दिव्य समर्थन में विश्वास से
-      आता है।
-
-      '
+    en: The verse teaches us to approach our tasks with joy and anticipation, especially
+      when they are aligned with our higher purpose.
+    hi: यह छंद हमें अपने कार्यों को खुशी और पूर्वानुमान के साथ करने की शिक्षा देता
+      है, खासकर जब वे हमारे उच्चतर उद्देश्य के अनुरूप हों।
   when_to_use:
-    en: 'Recite this chaupai when embarking on a challenging journey or mission. It
-      instills confidence, determination, and the right mindset - focusing on success
-      rather than obstacles. Particularly powerful when you need to overcome self-doubt
-      and approach a difficult task with unwavering faith.
-
-      '
-    hi: 'जब कोई चुनौतीपूर्ण यात्रा या मिशन शुरू कर रहे हों तो इस चौपाई का पाठ करें।
-      यह आत्मविश्वास, दृढ़ संकल्प और सही मानसिकता प्रदान करती है - बाधाओं के बजाय
-      सफलता पर ध्यान केंद्रित करती है। विशेष रूप से शक्तिशाली तब जब आपको आत्म-संदेह
-      को दूर करने और अटल विश्वास के साथ एक कठिन कार्य करने की आवश्यकता हो।
-
-      '
-meaning: Jaba (When), lagi (until), āvauṁ (I come), sītahi (to Sita), dekhī (and see).
-  Hoihi (will be accomplished), kāju (task), mohi (my), harṣa (joy), biseṣī (special).
+    en: Recite this verse when you need motivation and joy in your tasks, or when
+      you are seeking spiritual growth.
+    hi: जब आपको अपने कार्यों में प्रेरणा और खुशी की आवश्यकता हो, या जब आप आध्यात्मिक
+      विकास की खोज में हों, तब इस छंद का उच्चारण करें।
+meaning: The verse expresses a longing to see Sita. The speaker is saying that until
+  they come to see Sita, their task will be filled with special joy.
 translation:
-  en: Until the time I come and see Sita, my task will not be accomplished. My joy
-    will be special.
+  en: Until I come to see Sita, my task will be filled with special joy.
 ---
-
-
-## Story & Context
-
-This verse is from the Sundar-Kaand, the fifth book in the Hindu epic, the Ramayana. The verse is spoken by Hanuman, the devoted servant of Lord Rama, who has been sent on a mission to find Rama's wife, Sita, who has been abducted by the demon king Ravana. Hanuman is expressing his determination to find Sita and his anticipation of the joy he will feel once he has accomplished his task.
-The Sundar-Kaand is considered one of the most important sections of the Ramayana because it symbolizes the power of devotion and the strength of determination. Hanuman's unwavering commitment to his task and his deep devotion to Rama are highlighted in this verse. The verse also underscores the theme of duty and responsibility that runs throughout the Ramayana. Hanuman is not just undertaking this task out of loyalty to Rama, but also because he understands it is his dharma, or moral duty.
-
-## Practical Applications
-
-
-
-
