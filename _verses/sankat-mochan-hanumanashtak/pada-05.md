@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-05/
-title_en: 'Verse 5: Rescuer from Ahiravana''s Lair'
+permalink: /sankat-mochan-hanumanashtak/pada-05/
+title_en: 'Pada 5: Rescuer from Ahiravana''s Lair'
 title_hi: 'पद 5: अहिरावण की गुफा से बचाव'
 verse_number: 5
-previous_verse: /sankat-mochan-hanumanashtak/verse-04
-next_verse: /sankat-mochan-hanumanashtak/verse-06
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-05.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-04
+next_verse: /sankat-mochan-hanumanashtak/pada-06
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-05.png
 devanagari: 'बंधु समेत जबै अहिरावन ले रघुनाथ पताल सिधारो।
 
   देबिहिं पूजि भली बिधि सों बलि देउ सबै मिलि मंत्र बिचारो।।

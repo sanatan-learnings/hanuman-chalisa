@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-07/
-title_en: 'Verse 7: Destroyer of Sins'
+permalink: /sankat-mochan-hanumanashtak/pada-07/
+title_en: 'Pada 7: Destroyer of Sins'
 title_hi: 'पद 7: पापों का नाशक'
 verse_number: 7
-previous_verse: /sankat-mochan-hanumanashtak/verse-06
-next_verse: /sankat-mochan-hanumanashtak/verse-08
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-07.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-06
+next_verse: /sankat-mochan-hanumanashtak/pada-08
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-07.png
 devanagari: 'द्वार तुम्हार खरो हू महाप्रभु करि जोरि बिनती सुनि मोरी।
 
   जाते कोई आन देव नहिं जाकी मैं करों मनुहारी।।

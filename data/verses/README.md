@@ -61,8 +61,8 @@ Investigation needed to determine if Wikipedia source is incomplete or uses diff
 ### sankat-mochan-hanumanashtak.yml
 - **Source**: Traditional Sankat Mochan Hanumanashtak
 - **Total verses**: 8
-  - 8 verses (`verse-01` to `verse-08`)
-- **Description**: Eight verses for removing obstacles, attributed to Goswami Tulsidas
+  - 8 padas (`pada-01` to `pada-08`)
+- **Description**: Eight devotional verses (padas) for removing obstacles, attributed to Goswami Tulsidas
 
 ## Creating New Collections
 

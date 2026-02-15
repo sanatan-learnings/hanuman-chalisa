@@ -8,14 +8,14 @@ _meta:
   description: Brief description of this collection
   note: Optional notes about discrepancies, variations, or special considerations
   sequence:
-  - verse-type-01  # e.g., shloka-01, doha-01, chaupai-01, verse-01
+  - verse-type-01  # e.g., shloka-01, doha-01, chaupai-01, pada-01
   - verse-type-02
   - verse-type-03
   # ... complete ordered sequence of all verses
 
 # Group verses by type with comments for organization
-# Common verse types: shloka (श्लोक), doha (दोहा), chaupai (चौपाई), verse (पद)
-# Use verse IDs with hyphens (e.g., chaupai-01, doha-01, shloka-01, verse-01)
+# Common verse types: shloka (श्लोक), doha (दोहा), chaupai (चौपाई), pada (पद)
+# Use verse IDs with hyphens (e.g., chaupai-01, doha-01, shloka-01, pada-01)
 
 # Opening Verses (if applicable)
 # Common types: shloka (invocatory verses), doha (couplets)
@@ -47,7 +47,7 @@ doha-closing:
 #      * shloka (श्लोक): Sanskrit invocatory verses, typically at the beginning
 #      * doha (दोहा): Hindi couplets, often transitional or conclusive
 #      * chaupai (चौपाई): Hindi quatrains, main narrative verses
-#      * verse (पद): Generic numbered verses when no specific type applies
+#      * pada (पद): Devotional verses, used in collections like ashtakam (eight verses)
 #
 # 2. _meta.sequence:
 #    - Must list ALL verses in exact reading order
@@ -74,4 +74,4 @@ doha-closing:
 #
 # hanuman-chalisa: 2 opening dohas + 40 chaupais + 1 closing doha
 # sundar-kaand: 3 opening shlokas + ~500 chaupais/dohas alternating
-# sankat-mochan-hanumanashtak: 8 verses numbered verse-01 to verse-08
+# sankat-mochan-hanumanashtak: 8 padas numbered pada-01 to pada-08

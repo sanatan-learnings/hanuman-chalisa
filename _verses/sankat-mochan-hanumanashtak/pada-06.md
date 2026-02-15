@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-06/
-title_en: 'Verse 6: Healer with Sanjeevani'
+permalink: /sankat-mochan-hanumanashtak/pada-06/
+title_en: 'Pada 6: Healer with Sanjeevani'
 title_hi: 'पद 6: संजीवनी से उपचारक'
 verse_number: 6
-previous_verse: /sankat-mochan-hanumanashtak/verse-05
-next_verse: /sankat-mochan-hanumanashtak/verse-07
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-06.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-05
+next_verse: /sankat-mochan-hanumanashtak/pada-07
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-06.png
 devanagari: 'काज कियो बड़ देवन के तुम बीर महाप्रभु देखि बिचारो।
 
   कौन सो संकट मोर गरीब को जो तुमसों नहिं जात है टारो।।

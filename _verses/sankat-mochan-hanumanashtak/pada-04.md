@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-04/
-title_en: 'Verse 4: Vanquisher of Ahiravana'
+permalink: /sankat-mochan-hanumanashtak/pada-04/
+title_en: 'Pada 4: Vanquisher of Ahiravana'
 title_hi: 'पद 4: अहिरावण का विनाशक'
 verse_number: 4
-previous_verse: /sankat-mochan-hanumanashtak/verse-03
-next_verse: /sankat-mochan-hanumanashtak/verse-05
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-04.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-03
+next_verse: /sankat-mochan-hanumanashtak/pada-05
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-04.png
 devanagari: 'रावन त्रास दई सिय को सब राक्षसि सों कहि सोक निवारो।
 
   ताहि समय हनुमान महाप्रभु जाय महा रजनीचर मारो।।

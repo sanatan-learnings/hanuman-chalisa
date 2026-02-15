@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-02/
-title_en: 'Verse 2: Liberator from the Ocean'
+permalink: /sankat-mochan-hanumanashtak/pada-02/
+title_en: 'Pada 2: Liberator from the Ocean'
 title_hi: 'पद 2: सागर से मुक्तिदाता'
 verse_number: 2
-previous_verse: /sankat-mochan-hanumanashtak/verse-01
-next_verse: /sankat-mochan-hanumanashtak/verse-03
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-02.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-01
+next_verse: /sankat-mochan-hanumanashtak/pada-03
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-02.png
 devanagari: 'बालि की त्रास कपीस बसैं गिरि जात महाप्रभु पंथ निहारो।
 
   चौंकि महामुनि साप दियो तब चाहिय कौन बिचार बिचारो।।

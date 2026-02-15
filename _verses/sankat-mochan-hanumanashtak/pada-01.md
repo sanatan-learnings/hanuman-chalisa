@@ -1,12 +1,12 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-01/
-title_en: 'Verse 1: Remover of All Afflictions'
+permalink: /sankat-mochan-hanumanashtak/pada-01/
+title_en: 'Pada 1: Remover of All Afflictions'
 title_hi: 'पद 1: सभी कष्टों के निवारक'
 verse_number: 1
-next_verse: /sankat-mochan-hanumanashtak/verse-02
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-01.png
+next_verse: /sankat-mochan-hanumanashtak/pada-02
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-01.png
 devanagari: 'बाल समय रवि भक्षि लियो तब तीनहुं लोक भयो अंधियारो।
 
   ताहि सों त्रास भयो जग को यह संकट काहु सों जात न टारो।।

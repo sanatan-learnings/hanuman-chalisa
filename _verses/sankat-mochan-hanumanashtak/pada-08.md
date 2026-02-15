@@ -1,12 +1,12 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-08/
-title_en: 'Verse 8: Bestower of All Blessings'
+permalink: /sankat-mochan-hanumanashtak/pada-08/
+title_en: 'Pada 8: Bestower of All Blessings'
 title_hi: 'पद 8: सभी आशीर्वादों के दाता'
 verse_number: 8
-previous_verse: /sankat-mochan-hanumanashtak/verse-07
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-08.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-07
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-08.png
 devanagari: 'भजलो भाई, सोई सज्जन है, भज हनुमान गहे जो भजनु कों।
 
   कष्ट काटि भव सिन्धु तरायो, सुख सम्पति दै भजनु जनु जो को।।

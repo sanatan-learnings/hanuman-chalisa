@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: sankat-mochan-hanumanashtak
-permalink: /sankat-mochan-hanumanashtak/verse-03/
-title_en: 'Verse 3: Destroyer of Lanka'
+permalink: /sankat-mochan-hanumanashtak/pada-03/
+title_en: 'Pada 3: Destroyer of Lanka'
 title_hi: 'पद 3: लंका का संहारक'
 verse_number: 3
-previous_verse: /sankat-mochan-hanumanashtak/verse-02
-next_verse: /sankat-mochan-hanumanashtak/verse-04
-image: /images/sankat-mochan-hanumanashtak/modern-minimalist/verse-03.png
+previous_verse: /sankat-mochan-hanumanashtak/pada-02
+next_verse: /sankat-mochan-hanumanashtak/pada-04
+image: /images/sankat-mochan-hanumanashtak/modern-minimalist/pada-03.png
 devanagari: 'अंगद के सँग लेन गये सिय खोज कपीस यह बैन उचारो।
 
   जीवत ना बचिहौ हम सो जु बिना सुधि लाये इहाँ पगु धारो।।
