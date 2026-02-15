@@ -2,9 +2,9 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_06/
-title_en: Repeated Remembrance of Raghubeer
-title_hi: बार बार रघुबीर की स्मरण
-verse_number: 6
+title_en: Repeated Remembrance of the Valiant Raghubeer
+title_hi: रघुबीर की बार-बार स्मरण
+verse_number: 9
 previous_verse: /sundar-kaand/chaupai_05
 next_verse: /sundar-kaand/chaupai_07
 image: /images/sundar-kaand/modern-minimalist/chaupai-06.png
@@ -28,27 +28,27 @@ word_meanings:
   roman: bāra bāra
   meaning:
     en: again and again
-    hi: बार बार
+    hi: बार-बार
 - word: रघुबीर
   roman: raghubīra
   meaning:
-    en: Lord Rama
-    hi: भगवान राम
+    en: Raghubeer (Lord Rama)
+    hi: रघुबीर (भगवान राम)
 - word: सँभारी
   roman: saṁbhārī
   meaning:
     en: remembered
-    hi: याद किया
+    hi: स्मरण किया
 - word: तरकेउ
   roman: tarakeu
   meaning:
-    en: crossed over
-    hi: पार किया
+    en: defeated
+    hi: पराजित किया
 - word: पवनतनय
   roman: pavantanaya
   meaning:
     en: son of the wind (Hanuman)
-    hi: पवन पुत्र (हनुमान)
+    hi: पवनपुत्र (हनुमान)
 - word: बल
   roman: bala
   meaning:
@@ -57,40 +57,46 @@ word_meanings:
 - word: भारी
   roman: bhārī
   meaning:
-    en: heavy/immense
-    hi: भारी
+    en: heavy, significant
+    hi: भारी, महत्वपूर्ण
 literal_translation:
-  en: Again and again, remembering Raghubeer, the son of the wind (Hanuman) with immense
-    strength crossed over.
-  hi: बार बार रघुबीर को याद करके, पवन पुत्र (हनुमान) ने अपनी भारी शक्ति से पार किया।
+  en: Again and again, remembering Raghubeer, the son of the wind (Hanuman) defeated
+    (his enemies) with his significant strength.
+  hi: बार-बार रघुबीर को स्मरण करके, पवनपुत्र (हनुमान) ने अपनी महत्वपूर्ण शक्ति से
+    (अपने दुश्मनों को) पराजित किया।
 interpretive_meaning:
-  en: The verse signifies the power of devotion and remembrance of God, which provides
-    strength to overcome obstacles.
-  hi: यह श्लोक भगवान की स्मरण और भक्ति की शक्ति का संकेत देता है, जो बाधाओं को पार
-    करने में शक्ति प्रदान करता है।
+  en: The verse implies the power of constant remembrance of God (Lord Rama), which
+    gives one the strength to overcome obstacles and challenges, as demonstrated by
+    Hanuman.
+  hi: यह छंद ईश्वर (भगवान राम) के निरंतर स्मरण की शक्ति का संकेत देता है, जो हनुमान
+    द्वारा प्रदर्शित की गई, और जो एक व्यक्ति को बाधाओं और चुनौतियों को पार करने की
+    शक्ति देता है।
 story:
-  en: This verse is from the Sundar Kand of Ramcharitmanas, where Hanuman is on a
-    mission to find Sita. Hanuman, the son of the wind god, is a devoted follower
-    of Lord Rama. By repeatedly remembering Rama, he gains the strength to cross the
-    ocean and overcome all obstacles in his path.
-  hi: यह श्लोक रामचरितमानस के सुंदर कांड से है, जहां हनुमान सीता की खोज में हैं। पवन
-    पुत्र हनुमान भगवान राम के अत्यंत भक्त हैं। बार बार राम को याद करके, उन्हें समुद्र
-    को पार करने और अपने पथ में आने वाली सभी बाधाओं को पार करने की शक्ति मिलती है।
+  en: This verse is from Sundar Kand in the Ramcharitmanas, where Hanuman's exploits
+    in Lanka are described. Hanuman, the devotee of Lord Rama, is said to have gained
+    immense strength by constantly remembering his Lord. This strength helped him
+    overcome various challenges during his mission in Lanka, including defeating powerful
+    demons.
+  hi: यह छंद रामचरितमानस के सुंदरकाण्ड से है, जहां हनुमान के लंका में की गई कार्यवाहियों
+    का वर्णन किया गया है। हनुमान, भगवान राम के भक्त, कहे जाते हैं कि उन्होंने अपने
+    प्रभु को निरंतर स्मरण करके अत्यधिक शक्ति प्राप्त की। यह शक्ति ने उन्हें अपने लंका
+    में मिशन के दौरान विभिन्न चुनौतियों को पार करने में मदद की, जिसमें शक्तिशाली दानवों
+    को पराजित करना भी शामिल था।
 practical_application:
   teaching:
-    en: The verse teaches the power of devotion and remembrance of God in overcoming
-      obstacles.
-    hi: यह श्लोक बाधाओं को पार करने में भगवान की स्मरण और भक्ति की शक्ति को सिखाता
-      है।
+    en: The verse teaches the power of constant remembrance of God, which can give
+      one the strength to overcome challenges.
+    hi: यह छंद ईश्वर के निरंतर स्मरण की शक्ति को सिखाता है, जो एक व्यक्ति को चुनौतियों
+      को पार करने की शक्ति दे सकता है।
   when_to_use:
-    en: This verse can be recited when seeking strength to overcome challenges or
-      obstacles.
-    hi: जब बाधाओं या चुनौतियों को पार करने की शक्ति की तलाश हो, तब इस श्लोक का उच्चारण
-      किया जा सकता है।
-meaning: The verse is a praise of Lord Rama (Raghubir) and Hanuman (Pavantanaya).
-  It says that by repeatedly remembering Lord Rama, Hanuman was able to cross over
-  (tarakeu) obstacles due to his immense strength (bala bhārī).
+    en: This verse can be recited when seeking strength and courage to face challenges,
+      or during the worship of Lord Rama and Hanuman.
+    hi: जब चुनौतियों का सामना करने के लिए शक्ति और साहस की तलाश हो, या भगवान राम और
+      हनुमान की पूजा के दौरान, इस छंद का पाठ किया जा सकता है।
+meaning: The verse is a praise of Lord Rama (Raghubeer) and Hanuman (son of the wind).
+  It says that by remembering Raghubeer again and again, the son of the wind (Hanuman)
+  defeated his enemies with his significant strength.
 translation:
-  en: Again and again, remembering Raghubeer, the son of the wind (Hanuman) with immense
-    strength crossed over.
+  en: Again and again, remembering Raghubeer, the son of the wind (Hanuman) defeated
+    (his enemies) with his significant strength.
 ---

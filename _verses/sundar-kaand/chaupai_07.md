@@ -2,14 +2,14 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_07/
-title_en: Hanuman's Leap to the Underworld
-title_hi: हनुमान की पाताल लोक की यात्रा
-verse_number: 7
+title_en: Hanuman's Leap to Patala
+title_hi: हनुमान की पाताल की ओर कूद
+verse_number: 10
 previous_verse: /sundar-kaand/chaupai_06
 next_verse: /sundar-kaand/chaupai_08
 image: /images/sundar-kaand/modern-minimalist/chaupai-07.png
 devanagari: जेहिं गिरि चरन देइ हनुमंता। चलेउ सो गा पाताल तुरंता॥
-transliteration: jehi giri charan deei hanumāntā। chaleu so gā pātāl turaṁtā॥
+transliteration: jehi giri charan deei hanumāntā. chaleu so gā pātāla turaṁtā.
 phonetic_notes:
 - word: भाँति
   phonetic: bhaan-ti
@@ -27,8 +27,8 @@ word_meanings:
 - word: जेहिं
   roman: Jehi
   meaning:
-    en: Whichever
-    hi: जो
+    en: To whom
+    hi: जिसे
 - word: गिरि
   roman: Giri
   meaning:
@@ -37,7 +37,7 @@ word_meanings:
 - word: चरन
   roman: Charan
   meaning:
-    en: Foot
+    en: Feet
     hi: पैर
 - word: देइ
   roman: Deei
@@ -65,7 +65,7 @@ word_meanings:
     en: Earth
     hi: पृथ्वी
 - word: पाताल
-  roman: Pātāl
+  roman: Pātāla
   meaning:
     en: Underworld
     hi: पाताल
@@ -75,33 +75,33 @@ word_meanings:
     en: Immediately
     hi: तुरंत
 literal_translation:
-  en: Whichever mountain is stepped on by Hanuman, that piece of earth goes immediately
-    to the underworld.
-  hi: जिस पर्वत पर हनुमान पैर रखते हैं, वह भू-खंड तुरंत पाताल लोक में चला जाता है।
+  en: The mountain which Hanuman steps on, that earth immediately sinks to the underworld.
+  hi: जिस पर्वत पर हनुमान अपने पैर रखते हैं, वह पृथ्वी तुरंत पाताल में चली जाती है।
 interpretive_meaning:
-  en: This verse metaphorically represents the immense strength and power of Hanuman,
-    who is capable of shaking the very foundations of the earth with his might.
-  hi: यह छंद मेटाफॉरिकल रूप से हनुमान की अत्यधिक शक्ति और सामर्थ्य का प्रतिनिधित्व
-    करता है, जो अपनी प्रबलता से पृथ्वी की नींव हिला सकते हैं।
+  en: This verse metaphorically represents the immense strength and power of Hanuman.
+    His leap is so powerful that the earth sinks to the underworld.
+  hi: यह छंद हनुमान की अत्यधिक शक्ति और सामर्थ्य का प्रतीकात्मक प्रतिनिधित्व करता
+    है। उनकी कूद इतनी शक्तिशाली होती है कि पृथ्वी पाताल में डूब जाती है।
 story:
-  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is on his
-    mission to find Sita. The verse highlights Hanuman's strength and determination,
-    as he is willing to move mountains and even shake the earth to fulfill his mission.
-  hi: यह छंद रामायण के सुंदर कांड से है, जहां हनुमान सीता की खोज में हैं। यह छंद हनुमान
-    की शक्ति और संकल्पना को उजागर करता है, क्योंकि वह अपने मिशन को पूरा करने के लिए
-    पर्वतों को हटाने और पृथ्वी को हिलाने को तैयार है।
+  en: This verse is from the Sundar Kand of Ramayana, where Hanuman is on his mission
+    to find Sita. Hanuman's leap to Lanka is described as so powerful that the mountain
+    he leaps from sinks to the underworld. This is a metaphorical representation of
+    Hanuman's immense strength and power.
+  hi: यह छंद रामायण के सुंदर कांड से है, जहां हनुमान सीता की खोज में होते हैं। हनुमान
+    की लंका की ओर कूद को इतना शक्तिशाली बताया गया है कि जिस पर्वत से वे कूदते हैं,
+    वह पाताल में डूब जाता है। यह हनुमान की अत्यधिक शक्ति और सामर्थ्य का प्रतीकात्मक
+    प्रतिनिधित्व है।
 practical_application:
   teaching:
-    en: The verse teaches us about determination and the power of unwavering faith.
-    hi: यह छंद हमें संकल्प और अटल विश्वास की शक्ति के बारे में सिखाता है।
+    en: The verse teaches us about the immense power of faith and devotion.
+    hi: यह छंद हमें आस्था और भक्ति की अत्यधिक शक्ति के बारे में सिखाता है।
   when_to_use:
-    en: This verse can be recited or remembered when one needs strength and determination
-      in the face of challenges.
-    hi: जब किसी को चुनौतियों के सामने सामर्थ्य और दृढ़ता की आवश्यकता होती है, तब यह
-      छंद पढ़ा या याद किया जा सकता है।
-meaning: The verse describes the power of Hanuman, stating that whichever mountain
-  he steps on, that piece of earth goes straight to the underworld.
+    en: This verse can be recited when seeking strength and courage in challenging
+      situations.
+    hi: यह छंद चुनौतीपूर्ण परिस्थितियों में साहस और शक्ति की खोज में उच्चारित किया
+      जा सकता है।
+meaning: The verse describes Hanuman's leap to the underworld. It says that the mountain
+  to which Hanuman gives his feet, that earth goes to the underworld immediately.
 translation:
-  en: Whichever mountain is stepped on by Hanuman, that piece of earth goes immediately
-    to the underworld.
+  en: The mountain which Hanuman steps on, that earth immediately sinks to the underworld.
 ---

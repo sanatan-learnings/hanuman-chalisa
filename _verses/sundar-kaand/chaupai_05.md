@@ -2,14 +2,14 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_05/
-title_en: Leaping to the Beautiful Mountain
+title_en: Leaping onto a Beautiful Mountain
 title_hi: सुंदर पर्वत पर कूदना
-verse_number: 5
+verse_number: 8
 previous_verse: /sundar-kaand/chaupai_04
 next_verse: /sundar-kaand/chaupai_06
 image: /images/sundar-kaand/modern-minimalist/chaupai-05.png
 devanagari: सिंधु तीर एक भूधर सुंदर। कौतुक कूदि चढ़ेउ ता ऊपर॥
-transliteration: sindhu tīra eka bhūdhara sundara. kautuka kūdi chaṛheu tā ūpara.
+transliteration: sindhu tīra eka bhūdhara sundara. kautuka kūdi chaḍheu tā ūpara.
 phonetic_notes:
 - word: सगर
   phonetic: sa-gar
@@ -22,89 +22,83 @@ phonetic_notes:
   emphasis: first syllable
 word_meanings:
 - word: सिंधु
-  roman: sindhu
+  roman: Sindhu
   meaning:
     en: Ocean
     hi: समुद्र
 - word: तीर
-  roman: tīra
+  roman: Tīra
   meaning:
     en: Shore
     hi: किनारा
 - word: एक
-  roman: eka
+  roman: Eka
   meaning:
     en: One
     hi: एक
 - word: भूधर
-  roman: bhūdhara
+  roman: Bhūdhara
   meaning:
     en: Mountain
     hi: पर्वत
 - word: सुंदर
-  roman: sundara
+  roman: Sundara
   meaning:
     en: Beautiful
     hi: सुंदर
 - word: कौतुक
-  roman: kautuka
+  roman: Kautuka
   meaning:
     en: With joy
-    hi: खुशी के साथ
+    hi: खुशी से
 - word: कूदि
-  roman: kūdi
+  roman: Kūdi
   meaning:
     en: Leaping
-    hi: कूदना
+    hi: कूदते हुए
 - word: चढ़ेउ
-  roman: chaṛheu
+  roman: Chaḍheu
   meaning:
-    en: Climbed
-    hi: चढ़ा
+    en: Ascended
+    hi: चढ़े
 - word: ता
-  roman: tā
+  roman: Tā
   meaning:
     en: That
     hi: वह
 - word: ऊपर
-  roman: ūpara
+  roman: Ūpara
   meaning:
     en: Above
     hi: ऊपर
 literal_translation:
-  en: On the shore of the ocean, there was a beautiful mountain. With joy, (he) leaped
-    and climbed onto it.
-  hi: समुद्र के किनारे एक सुंदर पर्वत था। खुशी के साथ, (वह) उस पर कूदकर चढ़ गया।
+  en: On the ocean's shore, a beautiful mountain. With joy, leaped and ascended onto
+    it.
+  hi: समुद्र के किनारे, एक सुंदर पर्वत। खुशी से कूदकर उस पर चढ़ गए।
 interpretive_meaning:
-  en: This verse metaphorically represents overcoming obstacles with joy and enthusiasm.
-    The ocean symbolizes vast challenges, the mountain represents the goals or aspirations,
-    and the act of leaping signifies the enthusiastic effort to achieve them.
-  hi: यह श्लोक संकेतिक रूप से खुशी और उत्साह के साथ बाधाओं को पार करने का प्रतिनिधित्व
-    करता है। समुद्र विशाल चुनौतियों का प्रतीक है, पर्वत लक्ष्यों या आकांक्षाओं का
-    प्रतीक है, और कूदने की क्रिया उन्हें प्राप्त करने के लिए उत्साही प्रयास का संकेत
-    है।
+  en: The verse metaphorically represents overcoming obstacles with joy and determination,
+    symbolized by the act of leaping onto a mountain.
+  hi: यह छंद मनोविज्ञानिक रूप से खुशी और संकल्प के साथ बाधाओं को पार करने का प्रतीक
+    है, जिसे पर्वत पर कूदने की क्रिया द्वारा प्रतीकित किया गया है।
 story:
-  en: This verse is from the Sundar Kand of Ramayana, where Hanuman, the devotee of
-    Lord Rama, is in search of Sita. The ocean represents the vast sea he has to cross,
-    and the mountain symbolizes the island of Lanka. The verse signifies Hanuman's
-    determination and joy in overcoming obstacles in his path to fulfill his mission.
-  hi: यह श्लोक रामायण के सुंदरकांड से है, जहां भगवान राम के भक्त हनुमान, सीता की खोज
-    में हैं। समुद्र उस विशाल सागर का प्रतीक है जिसे उन्हें पार करना है, और पर्वत लंका
-    के द्वीप का प्रतीक है। यह श्लोक हनुमान के संकल्प और खुशी का संकेत देता है, जो
-    अपने मिशन को पूरा करने के लिए अपने पथ में आने वाली बाधाओं को पार करते हैं।
+  en: This verse is from the Sundar Kand of Ramayana, where Hanuman leaps onto a mountain
+    on the shore of the ocean, before his great leap to Lanka. It signifies his determination
+    and joy in the service of Lord Rama.
+  hi: यह श्लोक रामायण के सुंदरकाण्ड से है, जहां हनुमान लंका की ओर महान कूद करने से
+    पहले समुद्र के किनारे स्थित एक पर्वत पर कूदते हैं। यह उनके निर्धारितता और भगवान
+    राम की सेवा में खुशी का संकेत है।
 practical_application:
   teaching:
-    en: Overcome challenges with joy and determination.
-    hi: खुशी और संकल्प के साथ चुनौतियों का सामना करें।
+    en: Overcome obstacles with joy and determination.
+    hi: खुशी और संकल्प के साथ बाधाओं को पार करें।
   when_to_use:
-    en: This verse can be recited or remembered when facing challenges or obstacles,
-      to inspire determination and joy in overcoming them.
-    hi: जब चुनौतियों या बाधाओं का सामना कर रहे हों, तो उन्हें पार करने में संकल्प
-      और खुशी को प्रेरित करने के लिए इस श्लोक का उच्चारण किया जा सकता है या उसे याद
-      किया जा सकता है।
-meaning: The verse describes a scene where someone joyfully leaps and climbs onto
-  a beautiful mountain that is situated on the shore of an ocean.
+    en: This verse can be recited or remembered when facing challenges, to inspire
+      courage and joy.
+    hi: जब सामना करना पड़े, तो साहस और खुशी को प्रेरित करने के लिए इस छंद का उच्चारण
+      किया जा सकता है या याद किया जा सकता है।
+meaning: This verse describes a scene where someone joyfully leaps and ascends onto
+  a beautiful mountain located on the shore of an ocean.
 translation:
-  en: On the shore of the ocean, there was a beautiful mountain. With joy, (he) leaped
-    and climbed onto it.
+  en: On the ocean's shore, a beautiful mountain. With joy, leaped and ascended onto
+    it.
 ---

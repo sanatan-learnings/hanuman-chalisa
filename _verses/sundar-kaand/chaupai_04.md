@@ -3,8 +3,8 @@ layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_04/
 title_en: Raghunatha's Joyful Departure
-title_hi: रघुनाथ की हर्षित प्रस्थान
-verse_number: 4
+title_hi: रघुनाथ की आनंदमय प्रस्थान
+verse_number: 7
 previous_verse: /sundar-kaand/chaupai_03
 next_verse: /sundar-kaand/chaupai_05
 image: /images/sundar-kaand/modern-minimalist/chaupai-04.png
@@ -30,17 +30,17 @@ word_meanings:
   roman: Kahi
   meaning:
     en: Saying
-    hi: कहकर
+    hi: कहते हुए
 - word: नाइ
   roman: Nāi
   meaning:
-    en: Name
-    hi: नाम
+    en: Bow
+    hi: नमन
 - word: सबन्हि
   roman: Sabanhi
   meaning:
     en: To all
-    hi: सबको
+    hi: सभी को
 - word: कहुँ
   roman: Kahuṁ
   meaning:
@@ -60,7 +60,7 @@ word_meanings:
   roman: Harṣi
   meaning:
     en: Joyfully
-    hi: हर्षित होकर
+    hi: खुशी से
 - word: हियँ
   roman: Hiyaṁ
   meaning:
@@ -74,39 +74,40 @@ word_meanings:
 - word: रघुनाथा
   roman: Raghunāthā
   meaning:
-    en: Lord Rama
-    hi: रघुनाथ (राम)
+    en: Raghunatha (Lord Rama)
+    hi: रघुनाथ (भगवान राम)
 literal_translation:
-  en: Saying this, tell everyone the name and place it on their forehead. Raghunatha
-    departs holding joy in his heart.
-  hi: यह कहकर, सभी को नाम बताएं और उनके माथे पर रखें। हर्षित होकर रघुनाथ चले जाते
-    हैं।
+  en: Saying this, bowing to all, Raghunatha departed joyfully, holding joy in his
+    heart.
+  hi: यह कहकर, सभी को नमन करते हुए, रघुनाथ खुशी खुशी चले गए, अपने हृदय में खुशी को
+    संजोए।
 interpretive_meaning:
-  en: This verse signifies the joy and peace that comes from remembering and invoking
-    the name of Lord Rama. It suggests that the divine name is a source of bliss and
-    protection.
-  hi: यह श्लोक भगवान राम के नाम को याद करने और उसे आह्वान करने से आने वाले आनंद और
-    शांति का संकेत देता है। यह सुझाव देता है कि दिव्य नाम आनंद और सुरक्षा का स्रोत
-    है।
+  en: The verse signifies Lord Rama's humility and joy, even as he departs, symbolizing
+    the importance of maintaining a joyful and respectful demeanor in all circumstances.
+  hi: यह श्लोक भगवान राम की विनम्रता और खुशी का द्योतक है, जबकि वह प्रस्थान करते हैं,
+    जो सभी परिस्थितियों में खुशी और सम्मान की भावना को बनाए रखने के महत्व को संकेत
+    करता है।
 story:
-  en: This verse is from the Sundar Kaand of Ramcharitmanas, where Lord Rama is preparing
-    to depart after instructing everyone to chant his name for strength and protection.
-    The context is the divine power of Rama's name and the joy it brings to the heart.
-  hi: यह श्लोक रामचरितमानस के सुंदर कांड से है, जहां भगवान राम सबको अपने नाम का जाप
-    करने के लिए कहकर प्रस्थान करने की तैयारी कर रहे हैं। संदर्भ राम के नाम की दिव्य
-    शक्ति और उसके हृदय में लाने वाले आनंद का है।
+  en: This verse is from Sundar Kand, the fifth book of the Ramayana. It describes
+    the moment when Lord Rama, also known as Raghunatha, departs after bidding farewell
+    to everyone. Despite the challenges ahead, he maintains a joyful and respectful
+    demeanor, embodying the virtues of humility and joy.
+  hi: यह श्लोक रामायण की पांचवीं किताब सुंदर कांड से है। इसमें वर्णन किया गया है कि
+    जब भगवान राम, जिन्हें रघुनाथ भी कहा जाता है, सभी को विदा कहकर प्रस्थान करते हैं।
+    बावजूद आगे की चुनौतियों के, वह एक खुशी और सम्मानजनक व्यवहार को बनाए रखते हैं,
+    जो विनम्रता और खुशी की सद्गुणों का प्रतीक हैं।
 practical_application:
   teaching:
-    en: The divine name is a source of joy and protection.
-    hi: दिव्य नाम आनंद और सुरक्षा का स्रोत है।
+    en: Maintain a joyful and respectful demeanor in all circumstances.
+    hi: सभी परिस्थितियों में खुशी और सम्मान की भावना को बनाए रखें।
   when_to_use:
-    en: This verse can be recited or remembered when seeking joy, peace, and protection.
-    hi: जब आनंद, शांति और सुरक्षा की तलाश हो, तब इस श्लोक का पाठ किया जा सकता है या
-      उसे याद किया जा सकता है।
-meaning: This verse narrates the joyful departure of Lord Rama (Raghunatha). He says
-  the name (Nāi), tells it to everyone (Sabanhi Kahuṁ), and places it on their foreheads
-  (Māthā). Holding this joy (Harṣi) in his heart (Hiyaṁ), he departs (Chaleu).
+    en: Recite this verse to remind oneself of the importance of maintaining joy and
+      respect in all situations.
+    hi: इस श्लोक का पाठ करें ताकि खुद को याद दिलाएं कि सभी स्थितियों में खुशी और सम्मान
+      को बनाए रखने का महत्व।
+meaning: This verse describes Lord Rama's departure. He bows to everyone, holds joy
+  in his heart, and leaves.
 translation:
-  en: Saying this, tell everyone the name and place it on their forehead. Raghunatha
-    departs holding joy in his heart.
+  en: Saying this, bowing to all, Raghunatha departed joyfully, holding joy in his
+    heart.
 ---

@@ -2,9 +2,9 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_08/
-title_en: Hanuman's Unerring Flight
-title_hi: हनुमान की अचूक उड़ान
-verse_number: 8
+title_en: Hanuman's Unerring Journey
+title_hi: हनुमान की अचूक यात्रा
+verse_number: 11
 previous_verse: /sundar-kaand/chaupai_07
 image: /images/sundar-kaand/modern-minimalist/chaupai-08.png
 devanagari: जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना॥
@@ -29,12 +29,12 @@ word_meanings:
 - word: जिमि
   roman: Jimi
   meaning:
-    en: Just as
+    en: Just like
     hi: जैसे
 - word: अमोघ
   roman: Amogha
   meaning:
-    en: Unerring
+    en: Unerring, infallible
     hi: अचूक
 - word: रघुपति
   roman: Raghupati
@@ -50,60 +50,56 @@ word_meanings:
   roman: Bānā
   meaning:
     en: Arrow
-    hi: तीर
+    hi: बाण
 - word: एही
   roman: Ehi
   meaning:
-    en: This
-    hi: इस
+    en: In this way
+    hi: इसी तरह
 - word: भाँति
   roman: Bhānti
   meaning:
-    en: Manner
-    hi: तरीके
+    en: Manner, way
+    hi: तरीका
 - word: चलेउ
   roman: Chaleu
   meaning:
-    en: Moved
-    hi: चला
+    en: Proceeded
+    hi: चल पड़े
 - word: हनुमाना
   roman: Hanumānā
   meaning:
     en: Hanuman
     hi: हनुमान
 literal_translation:
-  en: Just as the arrow from Lord Rama's hand is unerring, in this manner moved Hanuman.
-  hi: जैसे भगवान राम के हाथ का तीर अचूक होता है, उसी तरीके से हनुमान चले।
+  en: Just like the unerring arrow from Lord Rama's hand, in this way, Hanuman proceeded.
+  hi: जैसे भगवान राम के हाथ का अचूक बाण, इसी तरह हनुमान चल पड़े।
 interpretive_meaning:
-  en: The verse metaphorically compares Hanuman's journey to Lanka with the unerring
-    arrow of Lord Rama, signifying his unwavering devotion and determination.
-  hi: यह श्लोक मनोवाचिक रूप से हनुमान की लंका यात्रा को भगवान राम के अचूक तीर के साथ
-    तुलना करता है, जिससे उनकी अड़ट भक्ति और संकल्प की ओर संकेत किया जाता है।
+  en: The verse metaphorically compares Hanuman's journey to the unerring arrow of
+    Lord Rama, emphasizing his determination, precision, and unwavering devotion.
+  hi: इस छंद में हनुमान की यात्रा को भगवान राम के अचूक बाण के साथ तुलनात्मक रूप से
+    तुलना की गई है, जिससे उनके संकल्प, सटीकता, और अटल भक्ति को बल दिया गया है।
 story:
-  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is on his
-    mission to find Sita in Lanka. The verse metaphorically compares Hanuman's journey
-    to the unerring arrow of Lord Rama, signifying his unwavering devotion and determination.
-    It underscores Hanuman's role as a devoted servant of Lord Rama, who carries out
-    his tasks with the same precision and certainty as an arrow shot from Rama's bow.
-  hi: यह श्लोक रामायण के सुंदर कांड से है, जहां हनुमान सीता को लंका में ढूंढने के
-    अपने मिशन पर हैं। श्लोक मनोवाचिक रूप से हनुमान की यात्रा को भगवान राम के अचूक
-    तीर के साथ तुलना करता है, जिससे उनकी अड़ट भक्ति और संकल्प की ओर संकेत किया जाता
-    है। यह हनुमान की भगवान राम के निष्ठावान सेवक के रूप में भूमिका को महत्वपूर्ण करता
-    है, जो अपने कार्यों को राम के धनुष से छोड़े गए तीर की तरह ही सटीकता और निश्चितता
-    के साथ करता है।
+  en: This verse is from the Sundar Kand of the Ramcharitmanas, where Hanuman is on
+    a mission to find Sita. The verse symbolizes Hanuman's unwavering determination
+    and devotion to Lord Rama, comparing his journey to the unerring arrow of Rama.
+  hi: यह छंद रामचरितमानस के सुंदरकाण्ड से है, जहां हनुमान सीता की खोज में हैं। यह
+    छंद हनुमान के अटल संकल्प और भगवान राम के प्रति भक्ति को प्रतीकित करता है, उनकी
+    यात्रा को राम के अचूक बाण के साथ तुलना करता है।
 practical_application:
   teaching:
-    en: The verse teaches us the importance of unwavering devotion and determination
-      in achieving our goals.
-    hi: यह श्लोक हमें अपने लक्ष्यों को प्राप्त करने में अड़ट भक्ति और संकल्प के महत्व
-      को सिखाता है।
+    en: This verse teaches us about unwavering determination, precision, and devotion
+      in our pursuits.
+    hi: यह छंद हमें अपने लक्ष्यों में अटल संकल्प, सटीकता, और भक्ति के बारे में सिखाता
+      है।
   when_to_use:
-    en: This verse can be recited when seeking strength and determination in the face
-      of challenges.
-    hi: चुनौतियों के सामने सामर्थ्य और संकल्प की खोज में इस श्लोक का उच्चारण किया
-      जा सकता है।
-meaning: Just as (jimi) the arrow (bānā) from the hand (kara) of Lord Rama (raghupati)
-  is unerring (amogha), in this (ehi) manner (bhānti) moved (chaleu) Hanuman (hanumānā).
+    en: This verse can be recited or remembered when one needs inspiration for determination
+      and precision in their endeavors.
+    hi: जब किसी को अपने प्रयासों में संकल्प और सटीकता के लिए प्रेरणा की आवश्यकता होती
+      है, तब यह छंद पढ़ा या याद किया जा सकता है।
+meaning: Just like the unerring arrow from Lord Rama's hand, in this manner, Hanuman
+  proceeded.
 translation:
-  en: Just as the arrow from Lord Rama's hand is unerring, in this manner moved Hanuman.
+  en: Just like the unerring arrow from Lord Rama's hand, in this way, Hanuman proceeded.
+next_verse: /sundar-kaand/chaupai_09
 ---

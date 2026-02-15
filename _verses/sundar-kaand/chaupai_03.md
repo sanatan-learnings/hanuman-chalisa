@@ -4,7 +4,7 @@ collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai_03/
 title_en: Anticipation of Seeing Sita
 title_hi: सीता को देखने की उत्कण्ठा
-verse_number: 3
+verse_number: 6
 previous_verse: /sundar-kaand/chaupai_02
 next_verse: /sundar-kaand/chaupai_04
 image: /images/sundar-kaand/modern-minimalist/chaupai-03.png
@@ -75,33 +75,37 @@ word_meanings:
     en: Special
     hi: विशेष
 literal_translation:
-  en: Until I come to see Sita, my task will be filled with special joy.
-  hi: जब तक मैं सीता को देखने नहीं आता, मेरा कार्य विशेष खुशी से भरा होगा।
+  en: Until I come to see Sita, my task will bring me special joy.
+  hi: जब तक मैं सीता को देखने नहीं आता, मेरा कार्य मुझे विशेष खुशी देगा।
 interpretive_meaning:
-  en: The verse symbolizes the spiritual seeker's longing to realize the divine, represented
-    by Sita. The task of seeking is filled with joy and anticipation.
-  hi: यह छंद आत्मार्थी की दैवीक (सीता के रूप में प्रतिष्ठित) की प्राप्ति की उत्कण्ठा
-    का प्रतीक है। खोज का कार्य खुशी और पूर्वानुमान से भरा होता है।
+  en: The verse implies a deep longing and anticipation to see Sita, symbolizing the
+    soul's yearning to unite with the divine. The task of seeking the divine brings
+    immense joy and fulfillment.
+  hi: यह श्लोक सीता को देखने की गहरी उत्कण्ठा को दर्शाता है, जो आत्मा की दिव्यता से
+    मिलने की इच्छा का प्रतीक है। दिव्यता की खोज का कार्य अत्यधिक आनंद और पूर्णता लाता
+    है।
 story:
-  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is expressing
-    his anticipation and joy at the prospect of seeing Sita. It signifies his unwavering
-    devotion and commitment to his task.
-  hi: यह छंद रामायण के सुंदरकांड से है, जहां हनुमान सीता को देखने की संभावना पर अपनी
-    उत्कण्ठा और खुशी व्यक्त कर रहे हैं। इसका संकेत उनकी अटल भक्ति और अपने कार्य के
-    प्रति समर्पण है।
+  en: This verse is from the Sundar Kand of Ramcharitmanas, where Hanuman is expressing
+    his anticipation of seeing Sita in Lanka. Hanuman's mission is to find Sita, and
+    his joy lies in the successful completion of this task. The verse signifies the
+    joy of seeking and finding the divine, represented by Sita.
+  hi: यह श्लोक रामचरितमानस के सुंदरकाण्ड से है, जहां हनुमान लंका में सीता को देखने
+    की अपनी उत्कण्ठा व्यक्त कर रहे हैं। हनुमान का मिशन सीता को ढूंढना है, और उनकी
+    खुशी इस कार्य के सफल समापन में है। यह श्लोक दिव्यता की खोज और पाने की खुशी का
+    संकेत देता है, जिसे सीता द्वारा प्रतिष्ठित किया गया है।
 practical_application:
   teaching:
-    en: The verse teaches us to approach our tasks with joy and anticipation, especially
-      when they are aligned with our higher purpose.
-    hi: यह छंद हमें अपने कार्यों को खुशी और पूर्वानुमान के साथ करने की शिक्षा देता
-      है, खासकर जब वे हमारे उच्चतर उद्देश्य के अनुरूप हों।
+    en: The verse teaches us the joy of seeking and finding the divine, and the fulfillment
+      that comes from accomplishing our spiritual tasks.
+    hi: यह श्लोक हमें दिव्यता की खोज और पाने की खुशी, और अपने आध्यात्मिक कार्यों को
+      पूरा करने से मिलने वाली पूर्णता का पाठ पढ़ाता है।
   when_to_use:
-    en: Recite this verse when you need motivation and joy in your tasks, or when
-      you are seeking spiritual growth.
-    hi: जब आपको अपने कार्यों में प्रेरणा और खुशी की आवश्यकता हो, या जब आप आध्यात्मिक
-      विकास की खोज में हों, तब इस छंद का उच्चारण करें।
-meaning: The verse expresses a longing to see Sita. The speaker is saying that until
-  they come to see Sita, their task will be filled with special joy.
+    en: This verse can be recited or contemplated upon when seeking motivation or
+      joy in the pursuit of spiritual goals.
+    hi: जब आध्यात्मिक लक्ष्यों की खोज में प्रेरणा या खुशी की तलाश हो, तब इस श्लोक
+      का पाठ या विचार किया जा सकता है।
+meaning: The verse is expressing an anticipation and joy of seeing Sita. The speaker
+  is saying that until they come to see Sita, their task will bring them special joy.
 translation:
-  en: Until I come to see Sita, my task will be filled with special joy.
+  en: Until I come to see Sita, my task will bring me special joy.
 ---
