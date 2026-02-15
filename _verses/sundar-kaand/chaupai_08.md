@@ -7,6 +7,7 @@ title_hi: हनुमान की अविच्युत यात्रा
 verse_number: 11
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_07
+next_verse: /sundar-kaand/chaupai_09
 image: /images/sundar-kaand/modern-minimalist/chaupai-08.png
 devanagari: जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना॥
 transliteration: jimi amogha raghupati kara bānā. ehi bhānti chaleu hanumānā.
