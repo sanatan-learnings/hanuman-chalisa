@@ -681,6 +681,24 @@ main {
     color: #ff6b35;
 }
 
+/* Verse Sections */
+.verse-section {
+    margin: 3rem 0;
+}
+
+.verse-section:first-of-type {
+    margin-top: 2rem;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    color: #ff6b35;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #ffe5dc;
+    font-weight: 600;
+}
+
 /* Verse Grid Cards */
 .verse-grid {
     display: grid;
