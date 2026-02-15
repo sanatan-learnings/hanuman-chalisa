@@ -47,8 +47,8 @@ collection_key: hanuman-chalisa
 <section class="verse-navigation">
     <h3>🪷 <span data-lang="en">{{ t_en.home.opening_dohas }}</span><span data-lang="hi">{{ t_hi.home.opening_dohas }}</span></h3>
     <div class="verse-grid">
-        {% assign doha_01 = site.verses | where: "collection_key", "hanuman-chalisa" | where_exp: "item", "item.url contains 'doha_01'" | first %}
-        {% assign doha_02 = site.verses | where: "collection_key", "hanuman-chalisa" | where_exp: "item", "item.url contains 'doha_02'" | first %}
+        {% assign doha_01 = site.verses | where: "collection_key", "hanuman-chalisa" | where_exp: "item", "item.url contains 'doha-01'" | first %}
+        {% assign doha_02 = site.verses | where: "collection_key", "hanuman-chalisa" | where_exp: "item", "item.url contains 'doha-02'" | first %}
 
         <a href="{{ doha_01.url | relative_url }}" class="verse-card{% if doha_01.puranic_context %} has-puranic-context{% endif %}">
             {% if doha_01.image %}
@@ -132,7 +132,7 @@ collection_key: hanuman-chalisa
 
     <h3>🙏 <span data-lang="en">{{ t_en.home.closing_doha }}</span><span data-lang="hi">{{ t_hi.home.closing_doha }}</span></h3>
     <div class="verse-grid">
-        {% assign doha_closing = site.verses | where: "collection_key", "hanuman-chalisa" | where_exp: "item", "item.url contains 'doha_closing'" | first %}
+        {% assign doha_closing = site.verses | where: "collection_key", "hanuman-chalisa" | where_exp: "item", "item.url contains 'doha-closing'" | first %}
         <a href="{{ doha_closing.url | relative_url }}" class="verse-card{% if doha_closing.puranic_context %} has-puranic-context{% endif %}">
             {% if doha_closing.image %}
             <div class="card-image">

@@ -82,8 +82,8 @@ layout: default
         {% if collection == "hanuman-chalisa" or collection == "sundar-kaand" or collection == "sankat-mochan-hanumanashtak" %}
         <h2><span data-lang="en">{{ t_en.sections.pronunciation }}</span><span data-lang="hi">{{ t_hi.sections.pronunciation }}</span></h2>
         {% assign audio_base = page.path | split: "/" | last | split: "." | first %}
-        {% assign audio_full = "/audio/" | append: collection | append: "/" | append: audio_base | append: "_full.mp3" %}
-        {% assign audio_slow = "/audio/" | append: collection | append: "/" | append: audio_base | append: "_slow.mp3" %}
+        {% assign audio_full = "/audio/" | append: collection | append: "/" | append: audio_base | append: "-full.mp3" %}
+        {% assign audio_slow = "/audio/" | append: collection | append: "/" | append: audio_base | append: "-slow.mp3" %}
 
         <div class="audio-player-container">
             <p><strong><span data-lang="en">{{ t_en.labels.audio_recitation }}</span><span data-lang="hi">{{ t_hi.labels.audio_recitation }}</span>:</strong></p>
