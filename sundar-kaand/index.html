@@ -28,8 +28,8 @@ title: Sundar Kaand
     {% if shlokas.size > 0 %}
     <div class="verse-section">
         <h4 class="section-header">
-            <span data-lang="en">📿 Shlokas (Invocations)</span>
-            <span data-lang="hi">📿 श्लोक (प्रार्थनाएं)</span>
+            <span data-lang="en">📿 Invocatory Shlokas ({{ shlokas.size }} Verses)</span>
+            <span data-lang="hi">📿 आरंभिक श्लोक ({{ shlokas.size }} पद)</span>
         </h4>
         <div class="verse-grid">
             {% for verse in shlokas %}
@@ -59,8 +59,8 @@ title: Sundar Kaand
     {% if chaupais.size > 0 %}
     <div class="verse-section">
         <h4 class="section-header">
-            <span data-lang="en">🎵 Chaupais (Narrative Verses)</span>
-            <span data-lang="hi">🎵 चौपाई (कथा के पद)</span>
+            <span data-lang="en">🎵 Narrative Chaupais ({{ chaupais.size }} Verses)</span>
+            <span data-lang="hi">🎵 कथा चौपाई ({{ chaupais.size }} पद)</span>
         </h4>
         <div class="verse-grid">
             {% for verse in chaupais %}
@@ -91,8 +91,8 @@ title: Sundar Kaand
     {% if dohas.size > 0 %}
     <div class="verse-section">
         <h4 class="section-header">
-            <span data-lang="en">💫 Dohas (Couplets)</span>
-            <span data-lang="hi">💫 दोहा (दो पंक्ति के पद)</span>
+            <span data-lang="en">💫 Transitional Dohas ({{ dohas.size }} {% if dohas.size == 1 %}Verse{% else %}Verses{% endif %})</span>
+            <span data-lang="hi">💫 संक्रमण दोहा ({{ dohas.size }} पद)</span>
         </h4>
         <div class="verse-grid">
             {% for verse in dohas %}
