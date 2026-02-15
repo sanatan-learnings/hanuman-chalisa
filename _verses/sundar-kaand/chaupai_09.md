@@ -7,7 +7,7 @@ title_hi: रघुपति के दूत का समुद्र पर �
 verse_number: 12
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_08
-image: /images/sundar-kaand/modern-minimalist/chaupai_09.png
+image: /images/sundar-kaand/modern-minimalist/chaupai-09.png
 devanagari: जलनिधि रघुपति दूत बिचारी। तैं मैनाक होहि श्रमहारी॥
 transliteration: jalanidhi raghupati dūta bicārī। taiṁ maināka hohi śramahārī॥
 phonetic_notes:
