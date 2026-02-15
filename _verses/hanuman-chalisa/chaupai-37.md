@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-37/
+permalink: /chalisa/chaupai-37/
 title_en: 'Verse 37: Prayer for Guru-Like Grace'
 title_hi: 'चौपाई 37: गुरु जैसी कृपा की प्रार्थना'
 verse_number: 37
-previous_verse: /chalisa/verse-36
-next_verse: /chalisa/verse-38
-image: /images/hanuman-chalisa/modern-minimalist/verse-37.png
+previous_verse: /chalisa/chaupai-36
+next_verse: /chalisa/chaupai-38
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-37.png
 devanagari: 'जै जै जै हनुमान गोसाईं।
 
   कृपा करहु गुरुदेव की नाईं।।

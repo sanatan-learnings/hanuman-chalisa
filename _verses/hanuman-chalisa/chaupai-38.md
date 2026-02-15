@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-38/
+permalink: /chalisa/chaupai-38/
 title_en: 'Verse 38: Power of Hundred Recitations'
 title_hi: 'चौपाई 38: सौ बार पाठ की शक्ति'
 verse_number: 38
-previous_verse: /chalisa/verse-37
-next_verse: /chalisa/verse-39
-image: /images/hanuman-chalisa/modern-minimalist/verse-38.png
+previous_verse: /chalisa/chaupai-37
+next_verse: /chalisa/chaupai-39
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-38.png
 devanagari: 'जो सत बार पाठ कर कोई।
 
   छूटहि बंदि महा सुख होई।।

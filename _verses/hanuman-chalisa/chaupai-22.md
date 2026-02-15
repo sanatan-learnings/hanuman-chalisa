@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-22/
+permalink: /chalisa/chaupai-22/
 title_en: 'Verse 22: Refuge and Protection'
 title_hi: 'चौपाई 22: शरण और सुरक्षा'
 verse_number: 22
-previous_verse: /chalisa/verse-21
-next_verse: /chalisa/verse-23
-image: /images/hanuman-chalisa/modern-minimalist/verse-22.png
+previous_verse: /chalisa/chaupai-21
+next_verse: /chalisa/chaupai-23
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-22.png
 devanagari: 'सब सुख लहै तुम्हारी सरना।
 
   तुम रक्षक काहू को डर ना।।

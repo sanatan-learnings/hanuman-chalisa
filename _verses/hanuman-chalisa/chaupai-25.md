@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-25/
+permalink: /chalisa/chaupai-25/
 title_en: 'Verse 25: Healer of All Suffering'
 title_hi: 'चौपाई 25: सभी कष्टों के निवारक'
 verse_number: 25
-previous_verse: /chalisa/verse-24
-next_verse: /chalisa/verse-26
-image: /images/hanuman-chalisa/modern-minimalist/verse-25.png
+previous_verse: /chalisa/chaupai-24
+next_verse: /chalisa/chaupai-26
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-25.png
 devanagari: 'नासै रोग हरै सब पीरा।
 
   जपत निरंतर हनुमत बीरा।।

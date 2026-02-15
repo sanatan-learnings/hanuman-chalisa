@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-31/
+permalink: /chalisa/chaupai-31/
 title_en: 'Verse 31: Giver of Eight Siddhis and Nine Treasures'
 title_hi: 'चौपाई 31: अष्ट सिद्धि और नव निधि के दाता'
 verse_number: 31
-previous_verse: /chalisa/verse-30
-next_verse: /chalisa/verse-32
-image: /images/hanuman-chalisa/modern-minimalist/verse-31.png
+previous_verse: /chalisa/chaupai-30
+next_verse: /chalisa/chaupai-32
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-31.png
 devanagari: 'अष्ट सिद्धि नौ निधि के दाता।
 
   अस बर दीन जानकी माता।।

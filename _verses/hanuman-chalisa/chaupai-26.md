@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-26/
+permalink: /chalisa/chaupai-26/
 title_en: 'Verse 26: Liberation from Crisis'
 title_hi: 'चौपाई 26: संकट से मुक्ति'
 verse_number: 26
-previous_verse: /chalisa/verse-25
-next_verse: /chalisa/verse-27
-image: /images/hanuman-chalisa/modern-minimalist/verse-26.png
+previous_verse: /chalisa/chaupai-25
+next_verse: /chalisa/chaupai-27
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-26.png
 devanagari: 'संकट तें हनुमान छुड़ावै।
 
   मन क्रम बचन ध्यान जो लावै।।

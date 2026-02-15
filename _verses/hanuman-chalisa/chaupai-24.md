@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-24/
+permalink: /chalisa/chaupai-24/
 title_en: 'Verse 24: Protection from Evil Spirits'
 title_hi: 'चौपाई 24: दुष्ट आत्माओं से सुरक्षा'
 verse_number: 24
-previous_verse: /chalisa/verse-23
-next_verse: /chalisa/verse-25
-image: /images/hanuman-chalisa/modern-minimalist/verse-24.png
+previous_verse: /chalisa/chaupai-23
+next_verse: /chalisa/chaupai-25
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-24.png
 devanagari: 'भूत पिसाच निकट नहिं आवै।
 
   महाबीर जब नाम सुनावै।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-08/
+permalink: /chalisa/chaupai-08/
 title_en: 'Verse 8: Passionate Listener with Rama in Heart'
 title_hi: 'चौपाई 8: हृदय में राम के साथ उत्साही श्रोता'
 verse_number: 8
-previous_verse: /chalisa/verse-07
-next_verse: /chalisa/verse-09
-image: /images/hanuman-chalisa/modern-minimalist/verse-08.png
+previous_verse: /chalisa/chaupai-07
+next_verse: /chalisa/chaupai-09
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-08.png
 devanagari: 'प्रभु चरित्र सुनिबे को रसिया।
 
   राम लखन सीता मन बसिया।।

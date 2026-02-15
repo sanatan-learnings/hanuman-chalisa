@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-10/
+permalink: /chalisa/chaupai-10/
 title_en: 'Verse 10: Destroyer of Demons, Accomplisher of Rama'
 title_hi: 'चौपाई 10: राक्षसों का विनाशक, राम के कार्यों को सिद्ध करने वाले'
 verse_number: 10
-previous_verse: /chalisa/verse-09
-next_verse: /chalisa/verse-11
-image: /images/hanuman-chalisa/modern-minimalist/verse-10.png
+previous_verse: /chalisa/chaupai-09
+next_verse: /chalisa/chaupai-11
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-10.png
 devanagari: 'भीम रूप धरि असुर संहारे।
 
   रामचंद्र के काज संवारे।।

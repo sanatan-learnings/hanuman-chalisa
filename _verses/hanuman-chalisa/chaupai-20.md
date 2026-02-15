@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-20/
+permalink: /chalisa/chaupai-20/
 title_en: 'Verse 20: Making the Difficult Easy'
 title_hi: 'चौपाई 20: कठिन को आसान बनाना'
 verse_number: 20
-previous_verse: /chalisa/verse-19
-next_verse: /chalisa/verse-21
-image: /images/hanuman-chalisa/modern-minimalist/verse-20.png
+previous_verse: /chalisa/chaupai-19
+next_verse: /chalisa/chaupai-21
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-20.png
 devanagari: 'दुर्गम काज जगत के जेते।
 
   सुगम अनुग्रह तुम्हरे तेते।।

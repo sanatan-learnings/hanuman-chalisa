@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-21/
+permalink: /chalisa/chaupai-21/
 title_en: 'Verse 21: Guardian at Rama'
 title_hi: 'चौपाई 21: राम के द्वारपाल'
 verse_number: 21
-previous_verse: /chalisa/verse-20
-next_verse: /chalisa/verse-22
-image: /images/hanuman-chalisa/modern-minimalist/verse-21.png
+previous_verse: /chalisa/chaupai-20
+next_verse: /chalisa/chaupai-22
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-21.png
 devanagari: 'राम दुआरे तुम रखवारे।
 
   होत न आज्ञा बिनु पैसारे।।

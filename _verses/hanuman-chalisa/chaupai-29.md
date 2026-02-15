@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-29/
+permalink: /chalisa/chaupai-29/
 title_en: 'Verse 29: Glory Across All Ages'
 title_hi: 'चौपाई 29: सभी युगों में महिमा'
 verse_number: 29
-previous_verse: /chalisa/verse-28
-next_verse: /chalisa/verse-30
-image: /images/hanuman-chalisa/modern-minimalist/verse-29.png
+previous_verse: /chalisa/chaupai-28
+next_verse: /chalisa/chaupai-30
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-29.png
 devanagari: 'चारों जुग परताप तुम्हारा।
 
   है परसिद्ध जगत उजियारा।।

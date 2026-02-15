@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-39/
+permalink: /chalisa/chaupai-39/
 title_en: 'Verse 39: Attainment of Siddhi'
 title_hi: 'चौपाई 39: सिद्धि की प्राप्ति'
 verse_number: 39
-previous_verse: /chalisa/verse-38
-next_verse: /chalisa/verse-40
-image: /images/hanuman-chalisa/modern-minimalist/verse-39.png
+previous_verse: /chalisa/chaupai-38
+next_verse: /chalisa/chaupai-40
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-39.png
 devanagari: 'जो यह पढ़ै हनुमान चालीसा।
 
   होय सिद्धि साखी गौरीसा।।

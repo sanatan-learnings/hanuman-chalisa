@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-04/
+permalink: /chalisa/chaupai-04/
 title_en: 'Verse 4: Golden Complexion and Beautiful Form'
 title_hi: 'चौपाई 4: सुनहरे वर्ण और सुंदर रूप'
 verse_number: 4
-previous_verse: /chalisa/verse-03
-next_verse: /chalisa/verse-05
-image: /images/hanuman-chalisa/modern-minimalist/verse-04.png
+previous_verse: /chalisa/chaupai-03
+next_verse: /chalisa/chaupai-05
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-04.png
 devanagari: 'कंचन बरन बिराज सुबेसा।
 
   कानन कुंडल कुंचित केसा।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-07/
+permalink: /chalisa/chaupai-07/
 title_en: 'Verse 7: Learned, Virtuous, and Eager to Serve'
 title_hi: 'चौपाई 7: विद्वान, गुणवान और सेवा के लिए उत्सुक'
 verse_number: 7
-previous_verse: /chalisa/verse-06
-next_verse: /chalisa/verse-08
-image: /images/hanuman-chalisa/modern-minimalist/verse-07.png
+previous_verse: /chalisa/chaupai-06
+next_verse: /chalisa/chaupai-08
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-07.png
 devanagari: 'विद्यावान गुणी अति चातुर।
 
   राम काज करिबे को आतुर।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-18/
+permalink: /chalisa/chaupai-18/
 title_en: 'Verse 18: Childhood Leap to the Sun'
 title_hi: 'चौपाई 18: बचपन में सूर्य की ओर छलांग'
 verse_number: 18
-previous_verse: /chalisa/verse-17
-next_verse: /chalisa/verse-19
-image: /images/hanuman-chalisa/modern-minimalist/verse-18.png
+previous_verse: /chalisa/chaupai-17
+next_verse: /chalisa/chaupai-19
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-18.png
 devanagari: 'जुग सहस्र जोजन पर भानू।
 
   लील्यो ताहि मधुर फल जानू।।

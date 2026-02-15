@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-34/
+permalink: /chalisa/chaupai-34/
 title_en: 'Verse 34: Auspicious Death and Rebirth'
 title_hi: 'चौपाई 34: शुभ मृत्यु और पुनर्जन्म'
 verse_number: 34
-previous_verse: /chalisa/verse-33
-next_verse: /chalisa/verse-35
-image: /images/hanuman-chalisa/modern-minimalist/verse-34.png
+previous_verse: /chalisa/chaupai-33
+next_verse: /chalisa/chaupai-35
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-34.png
 devanagari: 'अंत काल रघुबर पुर जाई।
 
   जहां जन्म हरिभक्त कहाई।।

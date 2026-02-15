@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-30/
+permalink: /chalisa/chaupai-30/
 title_en: 'Verse 30: Protector of Saints, Destroyer of Demons'
 title_hi: 'चौपाई 30: संतों के रक्षक, राक्षसों के विनाशक'
 verse_number: 30
-previous_verse: /chalisa/verse-29
-next_verse: /chalisa/verse-31
-image: /images/hanuman-chalisa/modern-minimalist/verse-30.png
+previous_verse: /chalisa/chaupai-29
+next_verse: /chalisa/chaupai-31
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-30.png
 devanagari: 'साधु संत के तुम रखवारे।
 
   असुर निकंदन राम दुलारे।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-05/
+permalink: /chalisa/chaupai-05/
 title_en: 'Verse 5: Bearer of Mace and Sacred Thread'
 title_hi: 'चौपाई 5: गदा और जनेऊ धारण करने वाले'
 verse_number: 5
-previous_verse: /chalisa/verse-04
-next_verse: /chalisa/verse-06
-image: /images/hanuman-chalisa/modern-minimalist/verse-05.png
+previous_verse: /chalisa/chaupai-04
+next_verse: /chalisa/chaupai-06
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-05.png
 devanagari: 'हाथ बज्र औ ध्वजा बिराजै।
 
   कांधे मूंज जनेऊ साजै।।

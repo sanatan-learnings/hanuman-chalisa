@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-15/
+permalink: /chalisa/chaupai-15/
 title_en: 'Verse 15: Beyond Description'
 title_hi: 'चौपाई 15: वर्णन से परे'
 verse_number: 15
-previous_verse: /chalisa/verse-14
-next_verse: /chalisa/verse-16
-image: /images/hanuman-chalisa/modern-minimalist/verse-15.png
+previous_verse: /chalisa/chaupai-14
+next_verse: /chalisa/chaupai-16
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-15.png
 devanagari: 'जम कुबेर दिगपाल जहां ते।
 
   कबि कोबिद कहि सके कहां ते।।

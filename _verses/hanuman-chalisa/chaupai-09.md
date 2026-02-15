@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-09/
+permalink: /chalisa/chaupai-09/
 title_en: 'Verse 9: Master of Form - Tiny and Gigantic'
 title_hi: 'चौपाई 9: रूप के स्वामी - सूक्ष्म और विशाल'
 verse_number: 9
-previous_verse: /chalisa/verse-08
-next_verse: /chalisa/verse-10
-image: /images/hanuman-chalisa/modern-minimalist/verse-09.png
+previous_verse: /chalisa/chaupai-08
+next_verse: /chalisa/chaupai-10
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-09.png
 devanagari: 'सूक्ष्म रूप धरि सियहिं दिखावा।
 
   बिकट रूप धरि लंक जरावा।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-06/
+permalink: /chalisa/chaupai-06/
 title_en: 'Verse 6: Avatar of Shiva, Son of Kesari'
 title_hi: 'चौपाई 6: शिव के अवतार, केसरी के पुत्र'
 verse_number: 6
-previous_verse: /chalisa/verse-05
-next_verse: /chalisa/verse-07
-image: /images/hanuman-chalisa/modern-minimalist/verse-06.png
+previous_verse: /chalisa/chaupai-05
+next_verse: /chalisa/chaupai-07
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-06.png
 devanagari: 'शंकर सुवन केसरी नंदन।
 
   तेज प्रताप महा जग बंदन।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-03/
+permalink: /chalisa/chaupai-03/
 title_en: 'Verse 3: Great Hero with Body Like Thunderbolt'
 title_hi: 'चौपाई 3: वज्र के समान शरीर वाले महावीर'
 verse_number: 3
-previous_verse: /chalisa/verse-02
-next_verse: /chalisa/verse-04
-image: /images/hanuman-chalisa/modern-minimalist/verse-03.png
+previous_verse: /chalisa/chaupai-02
+next_verse: /chalisa/chaupai-04
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-03.png
 devanagari: 'महाबीर
 
   बिक्रम बजरंगी।

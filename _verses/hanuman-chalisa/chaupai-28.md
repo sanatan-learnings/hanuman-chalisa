@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-28/
+permalink: /chalisa/chaupai-28/
 title_en: 'Verse 28: Fulfiller of Desires'
 title_hi: 'चौपाई 28: इच्छाओं को पूर्ण करने वाले'
 verse_number: 28
-previous_verse: /chalisa/verse-27
-next_verse: /chalisa/verse-29
-image: /images/hanuman-chalisa/modern-minimalist/verse-28.png
+previous_verse: /chalisa/chaupai-27
+next_verse: /chalisa/chaupai-29
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-28.png
 devanagari: 'और मनोरथ जो कोई लावै।
 
   सोई अमित जीवन फल पावै।।

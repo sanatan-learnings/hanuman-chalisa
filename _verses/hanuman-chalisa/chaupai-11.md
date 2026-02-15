@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-11/
+permalink: /chalisa/chaupai-11/
 title_en: 'Verse 11: Bringing the Sanjeevani Herb'
 title_hi: 'चौपाई 11: संजीवनी बूटी लाना'
 verse_number: 11
-previous_verse: /chalisa/verse-10
-next_verse: /chalisa/verse-12
-image: /images/hanuman-chalisa/modern-minimalist/verse-11.png
+previous_verse: /chalisa/chaupai-10
+next_verse: /chalisa/chaupai-12
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-11.png
 devanagari: 'लाय सजीवन लखन जियाये।
 
   श्री रघुबीर हरषि उर लाये।।

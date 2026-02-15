@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-27/
+permalink: /chalisa/chaupai-27/
 title_en: 'Verse 27: Accomplisher of Rama'
 title_hi: 'चौपाई 27: राम के कार्य सिद्ध करने वाले'
 verse_number: 27
-previous_verse: /chalisa/verse-26
-next_verse: /chalisa/verse-28
-image: /images/hanuman-chalisa/modern-minimalist/verse-27.png
+previous_verse: /chalisa/chaupai-26
+next_verse: /chalisa/chaupai-28
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-27.png
 devanagari: 'सब पर राम तपस्वी राजा।
 
   तिन के काज सकल तुम साजा।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-32/
+permalink: /chalisa/chaupai-32/
 title_en: 'Verse 32: Possessor of Rama'
 title_hi: 'चौपाई 32: राम के धारक'
 verse_number: 32
-previous_verse: /chalisa/verse-31
-next_verse: /chalisa/verse-33
-image: /images/hanuman-chalisa/modern-minimalist/verse-32.png
+previous_verse: /chalisa/chaupai-31
+next_verse: /chalisa/chaupai-33
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-32.png
 devanagari: 'राम रसायन तुम्हरे पासा।
 
   सदा रहो रघुपति के दासा।।

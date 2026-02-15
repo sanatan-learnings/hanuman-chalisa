@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-13/
+permalink: /chalisa/chaupai-13/
 title_en: 'Verse 13: Praised by Shesha'
 title_hi: 'चौपाई 13: शेषनाग द्वारा स्तुति'
 verse_number: 13
-previous_verse: /chalisa/verse-12
-next_verse: /chalisa/verse-14
-image: /images/hanuman-chalisa/modern-minimalist/verse-13.png
+previous_verse: /chalisa/chaupai-12
+next_verse: /chalisa/chaupai-14
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-13.png
 devanagari: 'सहस बदन तुम्हरो जस गावैं।
 
   अस कहि श्रीपति कंठ लगावैं।।

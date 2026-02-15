@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-36/
+permalink: /chalisa/chaupai-36/
 title_en: 'Verse 36: Remover of Crises and Pain'
 title_hi: 'चौपाई 36: संकट और पीड़ा के निवारक'
 verse_number: 36
-previous_verse: /chalisa/verse-35
-next_verse: /chalisa/verse-37
-image: /images/hanuman-chalisa/modern-minimalist/verse-36.png
+previous_verse: /chalisa/chaupai-35
+next_verse: /chalisa/chaupai-37
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-36.png
 devanagari: 'संकट कटै मिटै सब पीरा।
 
   जो सुमिरै हनुमत बलबीरा।।

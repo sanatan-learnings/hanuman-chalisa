@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-01/
+permalink: /chalisa/chaupai-01/
 title_en: 'Verse 1: Ocean of Knowledge and Virtues'
 title_hi: 'चौपाई 1: ज्ञान और गुणों के सागर'
 verse_number: 1
 previous_verse: /chalisa/doha-02
-next_verse: /chalisa/verse-02
-image: /images/hanuman-chalisa/modern-minimalist/verse-01.png
+next_verse: /chalisa/chaupai-02
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-01.png
 devanagari: 'जय हनुमान
 
   ज्ञान गुन सागर।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-12/
+permalink: /chalisa/chaupai-12/
 title_en: 'Verse 12: Dear as Bharata'
 title_hi: 'चौपाई 12: भरत के समान प्रिय'
 verse_number: 12
-previous_verse: /chalisa/verse-11
-next_verse: /chalisa/verse-13
-image: /images/hanuman-chalisa/modern-minimalist/verse-12.png
+previous_verse: /chalisa/chaupai-11
+next_verse: /chalisa/chaupai-13
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-12.png
 devanagari: 'रघुपति कीन्ही बहुत बड़ाई।
 
   तुम मम प्रिय भरतहि सम भाई।।

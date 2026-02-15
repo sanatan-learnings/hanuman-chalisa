@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-17/
+permalink: /chalisa/chaupai-17/
 title_en: 'Verse 17: Counselor to Vibhishana'
 title_hi: 'चौपाई 17: विभीषण के परामर्शदाता'
 verse_number: 17
-previous_verse: /chalisa/verse-16
-next_verse: /chalisa/verse-18
-image: /images/hanuman-chalisa/modern-minimalist/verse-17.png
+previous_verse: /chalisa/chaupai-16
+next_verse: /chalisa/chaupai-18
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-17.png
 devanagari: 'तुम्हरो मंत्र बिभीषन माना।
 
   लंकेश्वर भए सब जग जाना।।

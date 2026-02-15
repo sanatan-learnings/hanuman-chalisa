@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-02/
+permalink: /chalisa/chaupai-02/
 title_en: 'Verse 2: Rama''s Messenger'
 title_hi: 'चौपाई 2: राम के दूत'
 verse_number: 2
-previous_verse: /chalisa/verse-01
-next_verse: /chalisa/verse-03
-image: /images/hanuman-chalisa/modern-minimalist/verse-02.png
+previous_verse: /chalisa/chaupai-01
+next_verse: /chalisa/chaupai-03
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-02.png
 devanagari: 'राम दूत
 
   अतुलित बल धामा।

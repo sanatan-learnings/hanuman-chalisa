@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-19/
+permalink: /chalisa/chaupai-19/
 title_en: 'Verse 19: Crossing the Ocean with Rama''s Ring'
 title_hi: 'चौपाई 19: राम की अंगूठी के साथ समुद्र पार करना'
 verse_number: 19
-previous_verse: /chalisa/verse-18
-next_verse: /chalisa/verse-20
-image: /images/hanuman-chalisa/modern-minimalist/verse-19.png
+previous_verse: /chalisa/chaupai-18
+next_verse: /chalisa/chaupai-20
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-19.png
 devanagari: 'प्रभु मुद्रिका मेलि मुख माहीं।
 
   जलधि लांघि गये अचरज नाहीं।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-35/
+permalink: /chalisa/chaupai-35/
 title_en: 'Verse 35: Sufficient Devotion to Hanuman'
 title_hi: 'चौपाई 35: हनुमान की पर्याप्त भक्ति'
 verse_number: 35
-previous_verse: /chalisa/verse-34
-next_verse: /chalisa/verse-36
-image: /images/hanuman-chalisa/modern-minimalist/verse-35.png
+previous_verse: /chalisa/chaupai-34
+next_verse: /chalisa/chaupai-36
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-35.png
 devanagari: 'और देवता चित्त न धरई।
 
   हनुमत सेइ सर्व सुख करई।।

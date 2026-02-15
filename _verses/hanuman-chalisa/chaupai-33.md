@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-33/
+permalink: /chalisa/chaupai-33/
 title_en: 'Verse 33: Path to Rama'
 title_hi: 'चौपाई 33: राम का मार्ग'
 verse_number: 33
-previous_verse: /chalisa/verse-32
-next_verse: /chalisa/verse-34
-image: /images/hanuman-chalisa/modern-minimalist/verse-33.png
+previous_verse: /chalisa/chaupai-32
+next_verse: /chalisa/chaupai-34
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-33.png
 devanagari: 'तुम्हरे भजन राम को पावै।
 
   जनम जनम के दुख बिसरावै।।

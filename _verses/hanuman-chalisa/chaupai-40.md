@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-40/
+permalink: /chalisa/chaupai-40/
 title_en: 'Verse 40: Tulsidas'
 title_hi: 'चौपाई 40: तुलसीदास'
 verse_number: 40
-previous_verse: /chalisa/verse-39
+previous_verse: /chalisa/chaupai-39
 next_verse: /chalisa/doha-closing
-image: /images/hanuman-chalisa/modern-minimalist/verse-40.png
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-40.png
 devanagari: 'तुलसीदास सदा हरि चेरा।
 
   कीजै नाथ हृदय महं डेरा।।

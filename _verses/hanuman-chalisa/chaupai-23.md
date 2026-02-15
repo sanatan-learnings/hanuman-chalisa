@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-23/
+permalink: /chalisa/chaupai-23/
 title_en: 'Verse 23: Self-Controlled Power'
 title_hi: 'चौपाई 23: आत्म-नियंत्रित शक्ति'
 verse_number: 23
-previous_verse: /chalisa/verse-22
-next_verse: /chalisa/verse-24
-image: /images/hanuman-chalisa/modern-minimalist/verse-23.png
+previous_verse: /chalisa/chaupai-22
+next_verse: /chalisa/chaupai-24
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-23.png
 devanagari: 'आपन तेज सम्हारो आपै।
 
   तीनों लोक हांक तें कांपै।।

@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-14/
+permalink: /chalisa/chaupai-14/
 title_en: 'Verse 14: Praised by Gods and Sages'
 title_hi: 'चौपाई 14: देवताओं और ऋषियों द्वारा प्रशंसित'
 verse_number: 14
-previous_verse: /chalisa/verse-13
-next_verse: /chalisa/verse-15
-image: /images/hanuman-chalisa/modern-minimalist/verse-14.png
+previous_verse: /chalisa/chaupai-13
+next_verse: /chalisa/chaupai-15
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-14.png
 devanagari: 'सनकादिक ब्रह्मादि मुनीसा।
 
   नारद सारद सहित अहीसा।।

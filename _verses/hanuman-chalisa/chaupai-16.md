@@ -1,13 +1,13 @@
 ---
 layout: verse
 collection_key: hanuman-chalisa
-permalink: /chalisa/verse-16/
+permalink: /chalisa/chaupai-16/
 title_en: 'Verse 16: Helper of Sugriva'
 title_hi: 'चौपाई 16: सुग्रीव के सहायक'
 verse_number: 16
-previous_verse: /chalisa/verse-15
-next_verse: /chalisa/verse-17
-image: /images/hanuman-chalisa/modern-minimalist/verse-16.png
+previous_verse: /chalisa/chaupai-15
+next_verse: /chalisa/chaupai-17
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-16.png
 devanagari: 'तुम उपकार सुग्रीवहिं कीन्हा।
 
   राम मिलाय राज पद दीन्हा।।
