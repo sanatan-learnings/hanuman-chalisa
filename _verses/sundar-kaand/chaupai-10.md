@@ -7,6 +7,7 @@ title_hi: हनुमान की असाधारण शक्ति और
 verse_number: 14
 verse_type: chaupai
 previous_verse: /sundar-kaand/doha-01
+next_verse: /sundar-kaand/chaupai-11
 image: /images/sundar-kaand/modern-minimalist/chaupai-10.png
 devanagari: जात पवनसुत देवन्ह देखा। जानैं कहुँ बल बुद्धि बिसेषा॥
 transliteration: Jāta pavanasuta devanha dekhā. Jānaiṁ kahuṁ bala buddhi biseṣā.

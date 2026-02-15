@@ -113,3 +113,17 @@ High above the vast sapphire ocean, the mighty Hanuman soars with tremendous spe
 
 ---
 
+
+### Chaupai 11 (chaupai_11): Surasa's Challenge
+
+**Scene Description**:
+In the endless expanse of the deep blue ocean sky, the mighty Hanuman flies forward with determination when suddenly, the majestic Surasa appears before him, blocking his path. Surasa, the primordial mother of all serpents (nagas), manifests as a powerful divine feminine figure with regal bearing - her lower body transforming into massive serpentine coils covered in iridescent scales that shimmer with jewel-like colors (emerald, sapphire, ruby). Her upper form is beautiful yet formidable, adorned with elaborate serpent-themed jewelry and a crown of cobra hoods. Her eyes hold ancient wisdom and divine authority. In the background, faint ethereal forms of the Devas can be seen in the clouds above, having sent her to test Hanuman - Indra and other gods watching from their celestial realm. Hanuman hovers mid-flight, his orange-red form radiating with alert energy, his expression showing surprise but not fear, hands in a respectful namaste gesture as Surasa speaks to him. The ocean below churns with mysterious energy. Sacred serpent symbols (nagamandala) and divine geometric patterns swirl in the space between them. The lighting is dramatic with divine rays breaking through clouds, casting both figures in supernatural glow. The composition captures the pivotal moment of divine testing - a cosmic checkpoint on Hanuman's sacred journey, where his intelligence and devotion will soon be put to the test. Epic scale with mystical atmosphere emphasizing the supernatural nature of this encounter.
+
+---
+### Chaupai 15 (chaupai_11): Surasa, the Mother of Serpents
+
+**Scene Description**:
+In a serene, ethereal atmosphere, the celestial serpent mother Surasa, with her radiant golden scales and gentle eyes, is seen emerging powerfully from a roiling teal-blue ocean under an azure sky streaked with hues of sunset. She is engaging in a profound dialogue with a small, resolute figure, Hanuman, depicted with a monkey face, human body, and a golden gada (mace), who stands firm on a nearby rocky outcrop amid the vast ocean. The scene is bathed in soft, warm light from the setting sun, casting long, dramatic shadows and illuminating Surasa and Hanuman, making them the primary focus. The air around them shimmers with an aura of spiritual intensity, hinting at their divine conversation and the symbolic exchange of wisdom.
+
+---
+
