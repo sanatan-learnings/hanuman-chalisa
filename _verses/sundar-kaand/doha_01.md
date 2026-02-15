@@ -7,6 +7,7 @@ title_hi: हनुमान की राम के कार्य के प�
 verse_number: 13
 verse_type: doha
 previous_verse: /sundar-kaand/chaupai_09
+next_verse: /sundar-kaand/chaupai_10
 image: /images/sundar-kaand/modern-minimalist/doha-01.png
 devanagari: 'हनूमान तेहि परसा कर पुनि कीन्ह प्रनाम।
 

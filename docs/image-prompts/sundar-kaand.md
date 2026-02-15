@@ -106,3 +106,10 @@ The mighty Hanuman, suspended in mid-air with his powerful orange-red form glowi
 
 ---
 
+### Chaupai 10 (chaupai_10): The Gods Observe Hanuman
+
+**Scene Description**:
+High above the vast sapphire ocean, the mighty Hanuman soars with tremendous speed and grace, his powerful orange-red form blazing with divine energy as he continues his epic journey toward Lanka. His muscular silhouette cuts through the sky with unwavering determination. Above him, in the ethereal celestial realm (Devaloka), the Devas - gods of the Hindu pantheon - observe from their luminous cloud platforms bathed in soft golden-white divine light. Indra, Brahma, Vayu, and other radiant celestial beings are gathered, their forms glowing with divine auras in colors of gold, silver, and celestial blue. They watch intently with expressions of wonder, curiosity, and assessment, some pointing, others in discussion, observing Hanuman's extraordinary flight with keen interest. Their faces show a mixture of admiration and careful evaluation - they seek to understand the extent of his bal (strength) and buddhi (intelligence). Sacred cosmic symbols, celestial mandalas, and divine geometric patterns shimmer in the heavenly realm. Rays of divine light beam down from the gods toward Hanuman, as if scanning and assessing his capabilities. The composition is split between the earthly realm (Hanuman over ocean) and celestial realm (gods above in clouds), connected by streams of divine energy. The atmosphere is one of divine testing and cosmic significance, with both power and wisdom being measured. Epic scale showing the majesty of both mortal devotion and divine observation.
+
+---
+
