@@ -135,11 +135,26 @@ In the vast expanse of the ocean sky, the mighty Hanuman soars forward with rene
 
 ---
 
-### Chaupai 19 (chaupai-15): Hanuman's Fearless Determination
+### Chaupai 14 (chaupai-14): Hanuman's Brilliant Solution
+
+**Scene Description**:
+In the vast expanse of the ocean sky, Hanuman hovers before the majestic Surasa with his hands folded in respectful namaste gesture, addressing her with reverence as "Mother" (Māī). His orange-red form radiates both humility and intelligent confidence, his expression showing deep respect mixed with clever determination. Surasa, the serpent mother with her massive divine form adorned with iridescent scales and regal bearing, listens intently to Hanuman's words. The atmosphere is charged with spiritual significance - this is the pivotal moment where Hanuman speaks his truth, declaring his intention to fulfill her divine test by entering her mouth, demonstrating his wit and adherence to dharma. His posture shows perfect balance between devotion (bowing respectfully) and determination (eyes steady and resolute). Sacred symbols and divine light surround both figures. In the background, the sapphire ocean stretches below and celestial devas watch from ethereal clouds above. The lighting is dramatic yet respectful - golden-white divine radiance illuminating Hanuman as he speaks his truth, emerald-silver light emanating from Surasa. The composition emphasizes the moment of verbal exchange and mutual respect - Hanuman addressing the divine feminine power with truthfulness and reverence, while demonstrating his brilliant problem-solving wisdom. The scene captures the essence of passing divine tests through intelligence, truth, and proper respect for the sacred feminine. Mystical atmosphere with spiritual energy flowing between the two beings in waves of understanding and divine acknowledgment.
+
+---
+
+### Chaupai 15 (chaupai-15): Hanuman's Fearless Determination
 
 **Scene Description**:
 In the mystical glow of a twilight sky, the mighty Hanuman stands resiliently on the edge of a rocky cliff, his muscular form silhouetted against the horizon. His eyes gleam with determination and wisdom, looking upwards towards the heavens as if in silent communication with the divine. The air around him shimmers with spiritual energy, casting a warm glow on the myriad of undulating clouds beneath him. The focus is on Hanuman's confident stance, symbolizing his unwavering faith and courage, amidst the serene and ethereal atmosphere.
 
+---
+
+### Chaupai 16 (chaupai-16): Hanuman's Magnificent Transformation
+
+**Scene Description**:
+A colossal figure with a body expanded to cover tens of miles, representing Lord Hanuman, is set against a deep indigo sky punctuated by twinkling stars. The monkey god's body, twice as large as his original size, radiates a warm, golden hue, illuminating the scene with a soft divine glow. The mood is one of awe and reverence, heightened by the serene, tranquil wilderness below, bathed in moonlight. The focus is on Hanuman's monumental form, symbolizing his steadfast devotion and immense power, with a wide-angle perspective that conveys the vastness of his divine transformation.
+
+---
 ---
 ---
 ---

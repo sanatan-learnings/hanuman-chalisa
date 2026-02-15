@@ -2,96 +2,103 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-12/
-title_en: Hanuman Receives Divine Nourishment
-title_hi: हनुमान को दिव्य पोषण मिला
+title_en: Hanuman's Humble Request for Food
+title_hi: हनुमान की विनम्र भोजन की अनुरोध
 verse_number: 16
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-11
 next_verse: /sundar-kaand/chaupai-13
 image: /images/sundar-kaand/modern-minimalist/chaupai-12.png
 devanagari: आजु सुरन्ह मोहि दीन्ह अहारा। सुनत बचन कह पवनकुमारा॥
-transliteration: āju suranha mohi dīnha ahārā. sunata bacana kaha pavanakumārā.
+transliteration: Āju suranha mohi dīnha ahārā. Sunata bacana kaha pavanakumārā.
 phonetic_notes:
+- word: आजु
+  phonetic: Ā-ju
+  emphasis: first syllable
 - word: सुरन्ह
-  phonetic: su-ran-ha
+  phonetic: su-ra-nha
   emphasis: first syllable
 - word: पवनकुमारा
-  phonetic: pa-va-na-ku-ma-ra
+  phonetic: pa-va-na-ku-mā-rā
   emphasis: third syllable
 word_meanings:
 - word: आजु
-  roman: āju
+  roman: Āju
   meaning:
-    en: today
+    en: Today
     hi: आज
 - word: सुरन्ह
-  roman: suranha
+  roman: Suranha
   meaning:
-    en: gods
-    hi: देवताओं
+    en: Gods
+    hi: देवता
 - word: मोहि
-  roman: mohi
+  roman: Mohi
   meaning:
-    en: me
+    en: Me
     hi: मुझे
 - word: दीन्ह
-  roman: dīnha
+  roman: Dīnha
   meaning:
-    en: given
+    en: Given
     hi: दिया
 - word: अहारा
-  roman: ahārā
+  roman: Ahārā
   meaning:
-    en: food
+    en: Food
     hi: भोजन
 - word: सुनत
-  roman: sunata
+  roman: Sunata
   meaning:
-    en: hearing
-    hi: सुनते
+    en: Hearing
+    hi: सुन
 - word: बचन
-  roman: bacana
+  roman: Bacana
   meaning:
-    en: words
-    hi: बचन
+    en: Words
+    hi: शब्द
 - word: कह
-  roman: kaha
+  roman: Kaha
   meaning:
-    en: said
+    en: Said
     hi: कहा
 - word: पवनकुमारा
-  roman: pavanakumārā
+  roman: Pavanakumārā
   meaning:
-    en: son of the wind god (Hanuman)
-    hi: पवनपुत्र (हनुमान)
+    en: Son of the Wind (Hanuman)
+    hi: पवन का पुत्र (हनुमान)
 literal_translation:
-  en: '"Today, the gods have given me food," said Hanuman upon hearing these words.'
-  hi: '"आज देवताओं ने मुझे भोजन दिया है," सुनते ही हनुमान ने कहा।'
+  en: Today, the gods have given me food. Hearing these words, said the Son of the
+    Wind.
+  hi: आज, देवताओं ने मुझे भोजन दिया है। इन शब्दों को सुनकर, पवन के पुत्र ने कहा।
 interpretive_meaning:
-  en: This verse symbolizes divine grace and sustenance, provided to Hanuman by the
-    gods, which he acknowledges with humility and gratitude.
-  hi: यह छंद दिव्य कृपा और पोषण का प्रतीक है, जिसे हनुमान को देवताओं द्वारा प्रदान
-    किया गया है, और जिसे उन्होंने विनम्रता और कृतज्ञता के साथ स्वीकार किया।
+  en: This verse signifies Hanuman's humility and gratitude towards the gods for providing
+    him with sustenance. It also reflects his devotion and obedience to the divine
+    will.
+  hi: यह श्लोक हनुमान की विनम्रता और देवताओं के प्रति भोजन के लिए कृतज्ञता को दर्शाता
+    है। यह उनकी भक्ति और दैवीच्छा के प्रति आत्मसमर्पण को भी दर्शाता है।
 story:
-  en: This verse is from the Sundar Kand of the Ramayana, where Hanuman is on a mission
-    to find Sita. The gods provide him with sustenance, symbolizing divine support
-    and guidance. Hanuman's acknowledgement shows his humility and gratitude towards
-    the gods, reinforcing his character as a devoted servant of Lord Rama.
-  hi: यह छंद रामायण के सुंदरकाण्ड से है, जहां हनुमान सीता की खोज में हैं। देवता उन्हें
-    पोषण प्रदान करते हैं, जो दिव्य सहयोग और मार्गदर्शन का प्रतीक है। हनुमान की मान्यता
-    उनकी विनम्रता और देवताओं के प्रति कृतज्ञता को दर्शाती है, जो उनके चरित्र को भगवान
-    राम के समर्पित सेवक के रूप में मजबूत करती है।
+  en: This verse is from the Sundar Kanda of the Ramayana, where Hanuman is on a mission
+    to find Sita. The gods, pleased with his devotion and determination, provide him
+    with food. Upon receiving it, Hanuman expresses his gratitude and continues his
+    quest.
+  hi: यह श्लोक रामायण के सुंदरकाण्ड से है, जहां हनुमान सीता की खोज में हैं। उनकी भक्ति
+    और संकल्प से प्रसन्न होकर, देवताओं ने उन्हें भोजन प्रदान किया। इसे प्राप्त करके,
+    हनुमान अपनी कृतज्ञता व्यक्त करते हैं और अपने क्वेस्ट को जारी रखते हैं।
 practical_application:
   teaching:
-    en: Acknowledge and be grateful for divine grace and sustenance in our lives.
-    hi: हमारे जीवन में दिव्य कृपा और पोषण को मान्यता दें और उसके लिए कृतज्ञ हों।
+    en: The verse teaches us to be humble and grateful for the blessings we receive,
+      and to remain devoted in our pursuits.
+    hi: यह श्लोक हमें विनम्र और आशीर्वाद के लिए कृतज्ञ होने, और अपने प्रयासों में
+      समर्पित रहने की शिक्षा देता है।
   when_to_use:
-    en: Recite this verse to cultivate humility and gratitude, especially during times
-      of divine blessings or support.
-    hi: विनम्रता और कृतज्ञता को उत्पन्न करने के लिए, विशेषकर दिव्य आशीर्वाद या सहयोग
-      के समय, इस छंद का पाठ करें।
-meaning: The verse is saying, "Today, the gods have given me food. Hearing these words,
-  the son of the wind god (Hanuman) said."
+    en: This verse can be recited when seeking blessings for a task or expressing
+      gratitude for received blessings.
+    hi: जब किसी कार्य के लिए आशीर्वाद की खोज में या प्राप्त आशीर्वाद के लिए कृतज्ञता
+      व्यक्त करते समय, इस श्लोक का उच्चारण किया जा सकता है।
+meaning: Today (Āju), the gods (Suranha) have given (Dīnha) me (Mohi) food (Ahārā).
+  Hearing (Sunata) these words (Bacana), said (Kaha) the Son of the Wind (Pavanakumārā).
 translation:
-  en: '"Today, the gods have given me food," said Hanuman upon hearing these words.'
+  en: Today, the gods have given me food. Hearing these words, said the Son of the
+    Wind.
 ---
