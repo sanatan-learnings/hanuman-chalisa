@@ -64,16 +64,28 @@ title: Sundar Kaand
             <div class="card-content">
                 <div class="verse-number">
                     {% if verse.verse_type == 'shloka' %}
-                        <span data-lang="en">Shloka {{ verse.verse_number }}</span>
-                        <span data-lang="hi">श्लोक {{ verse.verse_number }}</span>
+                        {% comment %} Extract number from shloka-01 -> 01 {% endcomment %}
+                        {% assign parts = verse.path | split: '/' | last | split: '.' | first | split: '-' %}
+                        {% assign shloka_num = parts[1] | plus: 0 %}
+                        <span data-lang="en">Shloka {{ shloka_num }}</span>
+                        <span data-lang="hi">श्लोक {{ shloka_num }}</span>
                     {% elsif verse.verse_type == 'chaupai' %}
-                        {% assign chaupai_num = verse.verse_number | minus: 3 %}
+                        {% comment %} Extract number from chaupai-10 -> 10 {% endcomment %}
+                        {% assign parts = verse.path | split: '/' | last | split: '.' | first | split: '-' %}
+                        {% assign chaupai_num = parts[1] | plus: 0 %}
                         <span data-lang="en">Chaupai {{ chaupai_num }}</span>
                         <span data-lang="hi">चौपाई {{ chaupai_num }}</span>
                     {% elsif verse.verse_type == 'doha' %}
-                        {% assign doha_num = verse.verse_number | minus: 12 %}
-                        <span data-lang="en">Doha {{ doha_num }}</span>
-                        <span data-lang="hi">दोहा {{ doha_num }}</span>
+                        {% comment %} Extract number from doha-01 -> 01, handle doha-closing {% endcomment %}
+                        {% assign parts = verse.path | split: '/' | last | split: '.' | first | split: '-' %}
+                        {% if parts[1] == 'closing' %}
+                            <span data-lang="en">Closing Doha</span>
+                            <span data-lang="hi">समापन दोहा</span>
+                        {% else %}
+                            {% assign doha_num = parts[1] | plus: 0 %}
+                            <span data-lang="en">Doha {{ doha_num }}</span>
+                            <span data-lang="hi">दोहा {{ doha_num }}</span>
+                        {% endif %}
                     {% endif %}
                 </div>
                 <div class="verse-title">
