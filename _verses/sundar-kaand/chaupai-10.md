@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-10/
-title_en: 'Chaupai 10: Recognizing Hanuman''s Exceptional Strength and Wisdom'
-title_hi: 'चौपाई १०: हनुमान की असाधारण शक्ति और बुद्धि की पहचान'
+title_en: Recognizing Hanuman's Exceptional Strength and Wisdom
+title_hi: हनुमान की असाधारण शक्ति और बुद्धि की पहचान
 verse_number: 14
 verse_type: chaupai
 previous_verse: /sundar-kaand/doha-01

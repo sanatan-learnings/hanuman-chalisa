@@ -72,6 +72,7 @@ mv images/sundar-kaand/modern-minimalist/chaupai_12.png chaupai-12.png
 - Previous verse: Update `next_verse` field
 - New verse: Fix permalink, verse_type, navigation, image path
 - Scene descriptions: Add before generation
+- **Important**: Don't include verse number in titles (e.g., "Hanuman's Resolve" not "Chaupai 13: Hanuman's Resolve") - UI displays numbers separately
 
 **Collection index pages:**
 - `sundar-kaand/index.html`: Displays verses in canonical sequence with section headers

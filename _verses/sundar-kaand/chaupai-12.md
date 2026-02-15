@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-12/
-title_en: 'Chaupai 12: Hanuman Receives Divine Nourishment'
-title_hi: 'चौपाई १२: हनुमान को दिव्य पोषण मिला'
+title_en: Hanuman Receives Divine Nourishment
+title_hi: हनुमान को दिव्य पोषण मिला
 verse_number: 16
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-11
