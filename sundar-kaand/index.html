@@ -13,105 +13,44 @@ title: Sundar Kaand
 </div>
 
 <section class="verse-navigation">
-    <h3>🏹 <span data-lang="en">Sundar Kaand Verses</span><span data-lang="hi">सुंदर कांड के पद</span></h3>
+    <h3>🏹 <span data-lang="en">Sundar Kaand</span><span data-lang="hi">सुंदर कांड</span></h3>
+
+    <p class="collection-description">
+        <span data-lang="en">Verses in canonical sequence</span>
+        <span data-lang="hi">प्रामाणिक अनुक्रम में पद</span>
+    </p>
 
     {% assign verses = site.verses | where: "collection_key", "sundar-kaand" | sort: "verse_number" %}
-    {% assign shlokas = verses | where: "verse_type", "shloka" %}
-    {% assign chaupais = verses | where: "verse_type", "chaupai" %}
-    {% assign dohas = verses | where: "verse_type", "doha" %}
 
-    <!-- Shlokas Section -->
-    {% if shlokas.size > 0 %}
-    <div class="verse-section">
-        <h4 class="section-header">
-            <span data-lang="en">📿 Invocatory Shlokas ({{ shlokas.size }} Verses)</span>
-            <span data-lang="hi">📿 आरंभिक श्लोक ({{ shlokas.size }} पद)</span>
-        </h4>
-        <div class="verse-grid">
-            {% for verse in shlokas %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
-                {% if verse.image %}
-                <div class="card-image">
-                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
-                </div>
-                {% endif %}
-                <div class="card-content">
-                    <div class="verse-number">
-                        <span data-lang="en">Shloka {{ verse.verse_number }}</span>
-                        <span data-lang="hi">श्लोक {{ verse.verse_number }}</span>
-                    </div>
-                    <div class="verse-title">
-                        <span data-lang="en">{{ verse.title_en }}</span>
-                        <span data-lang="hi">{{ verse.title_hi }}</span>
-                    </div>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-    {% endif %}
-
-    <!-- Chaupais Section -->
-    {% if chaupais.size > 0 %}
-    <div class="verse-section">
-        <h4 class="section-header">
-            <span data-lang="en">🎵 Narrative Chaupais ({{ chaupais.size }} Verses)</span>
-            <span data-lang="hi">🎵 कथा चौपाई ({{ chaupais.size }} पद)</span>
-        </h4>
-        <div class="verse-grid">
-            {% for verse in chaupais %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
-                {% if verse.image %}
-                <div class="card-image">
-                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
-                </div>
-                {% endif %}
-                <div class="card-content">
-                    <div class="verse-number">
+    <div class="verse-grid">
+        {% for verse in verses %}
+        <a href="{{ verse.url | relative_url }}" class="verse-card">
+            {% if verse.image %}
+            <div class="card-image">
+                <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">
+                    {% if verse.verse_type == 'shloka' %}
+                        <span data-lang="en">📿 Shloka {{ verse.verse_number }}</span>
+                        <span data-lang="hi">📿 श्लोक {{ verse.verse_number }}</span>
+                    {% elsif verse.verse_type == 'chaupai' %}
                         {% assign chaupai_num = verse.verse_number | minus: 3 %}
-                        <span data-lang="en">Chaupai {{ chaupai_num }}</span>
-                        <span data-lang="hi">चौपाई {{ chaupai_num }}</span>
-                    </div>
-                    <div class="verse-title">
-                        <span data-lang="en">{{ verse.title_en }}</span>
-                        <span data-lang="hi">{{ verse.title_hi }}</span>
-                    </div>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-    {% endif %}
-
-    <!-- Dohas Section -->
-    {% if dohas.size > 0 %}
-    <div class="verse-section">
-        <h4 class="section-header">
-            <span data-lang="en">💫 Transitional Dohas ({{ dohas.size }} {% if dohas.size == 1 %}Verse{% else %}Verses{% endif %})</span>
-            <span data-lang="hi">💫 संक्रमण दोहा ({{ dohas.size }} पद)</span>
-        </h4>
-        <div class="verse-grid">
-            {% for verse in dohas %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
-                {% if verse.image %}
-                <div class="card-image">
-                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
-                </div>
-                {% endif %}
-                <div class="card-content">
-                    <div class="verse-number">
+                        <span data-lang="en">🎵 Chaupai {{ chaupai_num }}</span>
+                        <span data-lang="hi">🎵 चौपाई {{ chaupai_num }}</span>
+                    {% elsif verse.verse_type == 'doha' %}
                         {% assign doha_num = verse.verse_number | minus: 12 %}
-                        <span data-lang="en">Doha {{ doha_num }}</span>
-                        <span data-lang="hi">दोहा {{ doha_num }}</span>
-                    </div>
-                    <div class="verse-title">
-                        <span data-lang="en">{{ verse.title_en }}</span>
-                        <span data-lang="hi">{{ verse.title_hi }}</span>
-                    </div>
+                        <span data-lang="en">💫 Doha {{ doha_num }}</span>
+                        <span data-lang="hi">💫 दोहा {{ doha_num }}</span>
+                    {% endif %}
                 </div>
-            </a>
-            {% endfor %}
-        </div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ verse.title_en }}</span>
+                    <span data-lang="hi">{{ verse.title_hi }}</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
     </div>
-    {% endif %}
 </section>
