@@ -29,8 +29,17 @@ title: Sundar Kaand
             {% endif %}
             <div class="card-content">
                 <div class="verse-number">
-                    <span data-lang="en">Chaupai {{ verse.verse_number }}</span>
-                    <span data-lang="hi">चौपाई {{ verse.verse_number }}</span>
+                    {% if verse.verse_type == 'shloka' %}
+                        <span data-lang="en">Shloka {{ verse.verse_number }}</span>
+                        <span data-lang="hi">श्लोक {{ verse.verse_number }}</span>
+                    {% elsif verse.verse_type == 'chaupai' %}
+                        {% assign chaupai_num = verse.verse_number | minus: 3 %}
+                        <span data-lang="en">Chaupai {{ chaupai_num }}</span>
+                        <span data-lang="hi">चौपाई {{ chaupai_num }}</span>
+                    {% else %}
+                        <span data-lang="en">Verse {{ verse.verse_number }}</span>
+                        <span data-lang="hi">चौपाई {{ verse.verse_number }}</span>
+                    {% endif %}
                 </div>
                 <div class="verse-title">
                     <span data-lang="en">{{ verse.title_en }}</span>
