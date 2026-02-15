@@ -1,0 +1,69 @@
+# Collection Name - Canonical Verse Texts
+# Source: [Author/Origin]
+# Structure: [Brief description of verse types and counts]
+
+_meta:
+  collection: collection-name  # Must match directory name in _verses/
+  source: Original source attribution (e.g., "Traditional text by Author Name")
+  description: Brief description of this collection
+  note: Optional notes about discrepancies, variations, or special considerations
+  sequence:
+  - verse-type-01  # e.g., shloka-01, doha-01, chaupai-01
+  - verse-type-02
+  - verse-type-03
+  # ... complete ordered sequence of all verses
+
+# Group verses by type with comments for organization
+# Use verse IDs with hyphens (e.g., chaupai-01, doha-01, shloka-01)
+
+# Opening Verses (if applicable)
+verse-type-01:
+  devanagari: [Devanagari text here - single line, use । for line breaks within verse]
+
+verse-type-02:
+  devanagari: [Devanagari text here]
+
+# Main Verses
+verse-type-03:
+  devanagari: [Devanagari text here]
+
+verse-type-04:
+  devanagari: [Devanagari text here]
+
+# Closing Verses (if applicable)
+verse-type-closing:
+  devanagari: [Devanagari text here]
+
+# IMPORTANT GUIDELINES:
+#
+# 1. Verse ID Format:
+#    - Always use hyphens, never underscores (chaupai-01, NOT chaupai_01)
+#    - Use consistent naming: <type>-<number> (e.g., shloka-01, doha-01, chaupai-01)
+#    - For closing verses: <type>-closing (e.g., doha-closing)
+#
+# 2. _meta.sequence:
+#    - Must list ALL verses in exact reading order
+#    - Order matters - this is used for navigation and verse numbering
+#    - Verse IDs in sequence must match the keys below
+#
+# 3. Devanagari Text:
+#    - Single line format (SDK will handle formatting)
+#    - Include full verse with all lines
+#    - Use ।। for verse endings if traditional
+#    - Preserve original spelling and diacritics
+#
+# 4. Structure:
+#    - Use direct key-value format (verse-id: {devanagari: text})
+#    - NOT array format (- verse_id: ..., devanagari: ...)
+#    - Group related verses with comments for readability
+#
+# 5. Consistency:
+#    - All collections should follow this exact format
+#    - Makes SDK parsing reliable and predictable
+#    - Enables verse-generate to auto-infer verse IDs from sequence
+#
+# Example from real collections:
+#
+# hanuman-chalisa: 2 opening dohas + 40 chaupais + 1 closing doha
+# sundar-kaand: 3 opening shlokas + ~500 chaupais/dohas alternating
+# sankat-mochan-hanumanashtak: 8 verses numbered verse-01 to verse-08
