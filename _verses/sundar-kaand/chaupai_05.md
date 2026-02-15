@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_05/
 title_en: Leaping onto a Beautiful Mountain
 title_hi: सुंदर पर्वत पर कूदना
 verse_number: 8
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_04
 next_verse: /sundar-kaand/chaupai_06
 image: /images/sundar-kaand/modern-minimalist/chaupai-05.png

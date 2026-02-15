@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_01/
 title_en: Hanuman's Heartfelt Joy
 title_hi: हनुमान की हृदय स्पर्शी खुशी
 verse_number: 4
+verse_type: chaupai
 next_verse: /sundar-kaand/chaupai_02
 image: /images/sundar-kaand/modern-minimalist/chaupai-01.png
 devanagari: जामवंत के बचन सुहाए। सुनि हनुमंत हृदय अति भाए॥

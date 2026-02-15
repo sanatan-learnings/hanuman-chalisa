@@ -1,5 +1,6 @@
 ---
 verse_number: 3
+verse_type: shloka
 devanagari: 'अतुलितबलधामं हेमशैलाभदेहं
 
   दनुजवनकृशानुं ज्ञानिनामग्रगण्यम्।

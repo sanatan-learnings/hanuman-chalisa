@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_08/
 title_en: Hanuman's Unerring Journey
 title_hi: हनुमान की अचूक यात्रा
 verse_number: 11
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_07
 image: /images/sundar-kaand/modern-minimalist/chaupai-08.png
 devanagari: जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना॥

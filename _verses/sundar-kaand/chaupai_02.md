@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_02/
 title_en: Enduring Suffering for a Higher Purpose
 title_hi: उच्च उद्देश्य के लिए दुःख सहन करना
 verse_number: 5
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_01
 next_verse: /sundar-kaand/chaupai_03
 image: /images/sundar-kaand/modern-minimalist/chaupai-02.png

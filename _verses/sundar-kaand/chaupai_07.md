@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_07/
 title_en: Hanuman's Leap to Patala
 title_hi: हनुमान की पाताल की ओर कूद
 verse_number: 10
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_06
 next_verse: /sundar-kaand/chaupai_08
 image: /images/sundar-kaand/modern-minimalist/chaupai-07.png

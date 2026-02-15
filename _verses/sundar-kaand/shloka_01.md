@@ -5,6 +5,7 @@ permalink: /sundar-kaand/shloka_01/
 title_en: Praise of Lord Rama
 title_hi: भगवान राम की स्तुति
 verse_number: 1
+verse_type: shloka
 next_verse: /sundar-kaand/shloka_02
 image: /images/sundar-kaand/modern-minimalist/verse-01.png
 devanagari: 'शान्तं शाश्वतमप्रमेयमनघं निर्वाणशान्तिप्रदं

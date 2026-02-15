@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_04/
 title_en: Raghunatha's Joyful Departure
 title_hi: रघुनाथ की आनंदमय प्रस्थान
 verse_number: 7
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_03
 next_verse: /sundar-kaand/chaupai_05
 image: /images/sundar-kaand/modern-minimalist/chaupai-04.png

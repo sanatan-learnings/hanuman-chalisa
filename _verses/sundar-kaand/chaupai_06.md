@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_06/
 title_en: Repeated Remembrance of the Valiant Raghubeer
 title_hi: रघुबीर की बार-बार स्मरण
 verse_number: 9
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_05
 next_verse: /sundar-kaand/chaupai_07
 image: /images/sundar-kaand/modern-minimalist/chaupai-06.png

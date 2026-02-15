@@ -5,6 +5,7 @@ permalink: /sundar-kaand/chaupai_03/
 title_en: Anticipation of Seeing Sita
 title_hi: सीता को देखने की उत्कण्ठा
 verse_number: 6
+verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai_02
 next_verse: /sundar-kaand/chaupai_04
 image: /images/sundar-kaand/modern-minimalist/chaupai-03.png
