@@ -16,9 +16,6 @@ title: Sundar Kaand
     <h3>🏹 <span data-lang="en">Sundar Kaand</span><span data-lang="hi">सुंदर कांड</span></h3>
 
     {% assign verses = site.verses | where: "collection_key", "sundar-kaand" | sort: "verse_number" %}
-    {% assign shlokas = verses | where: "verse_type", "shloka" %}
-    {% assign chaupais = verses | where: "verse_type", "chaupai" %}
-    {% assign dohas = verses | where: "verse_type", "doha" %}
     {% assign prev_type = "" %}
 
     {% for verse in verses %}
@@ -28,17 +25,30 @@ title: Sundar Kaand
                 </div></div> {% comment %} Close previous section {% endcomment %}
             {% endif %}
 
+            {% comment %} Count consecutive verses of this type for section count {% endcomment %}
+            {% assign section_count = 0 %}
+            {% assign counting = true %}
+            {% for v in verses %}
+                {% if counting and v.verse_number >= verse.verse_number %}
+                    {% if v.verse_type == verse.verse_type %}
+                        {% assign section_count = section_count | plus: 1 %}
+                    {% else %}
+                        {% assign counting = false %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+
             <div class="verse-section">
                 <h4 class="section-header">
                     {% if verse.verse_type == 'shloka' %}
-                        <span data-lang="en">📿 Invocatory Shlokas ({{ shlokas.size }} Verses)</span>
-                        <span data-lang="hi">📿 आरंभिक श्लोक ({{ shlokas.size }} पद)</span>
+                        <span data-lang="en">📿 Invocatory Shlokas ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                        <span data-lang="hi">📿 आरंभिक श्लोक ({{ section_count }} पद)</span>
                     {% elsif verse.verse_type == 'chaupai' %}
-                        <span data-lang="en">🎵 Narrative Chaupais ({{ chaupais.size }} Verses)</span>
-                        <span data-lang="hi">🎵 कथा चौपाई ({{ chaupais.size }} पद)</span>
+                        <span data-lang="en">🎵 Narrative Chaupais ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                        <span data-lang="hi">🎵 कथा चौपाई ({{ section_count }} पद)</span>
                     {% elsif verse.verse_type == 'doha' %}
-                        <span data-lang="en">💫 Transitional Dohas ({{ dohas.size }} {% if dohas.size == 1 %}Verse{% else %}Verses{% endif %})</span>
-                        <span data-lang="hi">💫 संक्रमण दोहा ({{ dohas.size }} पद)</span>
+                        <span data-lang="en">💫 Transitional Dohas ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                        <span data-lang="hi">💫 संक्रमण दोहा ({{ section_count }} पद)</span>
                     {% endif %}
                 </h4>
                 <div class="verse-grid">
