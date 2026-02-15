@@ -21,25 +21,37 @@ Generates complete verse content including:
 
 ## Usage
 
-Invoke this skill to create a new verse:
+**🚀 Quick Start - Generate Next Verse (Recommended):**
 
 ```
-/verse-generator Create chaupai_05 for sundar-kaand
+/verse-generator Generate next verse for sundar-kaand
 ```
 
-With verse text:
+```
+/verse-generator Generate next verse for hanuman-chalisa
+```
 
 ```
-/verse-generator Create chaupai_05 for sundar-kaand with text: "सगर तीर एक भूधर सुंदर। कौतुक कूदि चढ़ेउ ता ऊपर।।"
+/verse-generator Generate next verse for sankat-mochan-hanumanashtak
+```
+
+The `--next` flag auto-detects the last generated verse and creates the next one in sequence. Perfect for continuing work on any collection!
+
+**Other Usage Patterns:**
+
+Create a specific verse:
+
+```
+/verse-generator Create chaupai-05 for sundar-kaand
 ```
 
 Generate multimedia for existing verse:
 
 ```
-/verse-generator Generate multimedia for chaupai_06 in sundar-kaand
+/verse-generator Generate multimedia for chaupai-06 in sundar-kaand
 ```
 
-**Batch Processing (SDK 0.11.0+):**
+**Batch Processing (SDK 0.16.0+):**
 
 Regenerate multiple verses at once:
 
@@ -57,7 +69,7 @@ Or specific range:
 
 Before using this skill, verify:
 - ✅ Working in hanuman-gpt project directory
-- ✅ **sanatan-sdk 0.11.0+** installed in venv (`./venv/bin/pip install --upgrade sanatan-sdk`)
+- ✅ **sanatan-sdk 0.16.0+** installed in venv (`./venv/bin/pip install --upgrade sanatan-sdk`)
 - ✅ verse-* commands available: `./venv/bin/verse-generate`, `./venv/bin/verse-embeddings`, etc.
 - ✅ `.env` file exists with API keys: `OPENAI_API_KEY` and `ELEVENLABS_API_KEY`
 - ✅ Collection is enabled in `_data/collections.yml`
@@ -65,7 +77,7 @@ Before using this skill, verify:
 
 ## Complete Workflow
 
-**IMPORTANT**: SDK 0.11.0+ can automatically generate ALL content from canonical YAML sources. Use `--regenerate-content` flag!
+**IMPORTANT**: SDK 0.16.0+ can automatically generate ALL content from canonical YAML sources. Use `--regenerate-content` flag!
 
 **NEW in SDK 0.11.0**: Batch processing support! Use `--verse M-N` syntax to regenerate multiple verses at once (e.g., `--verse 1-10`, `--verse 5-20`).
 
@@ -87,26 +99,40 @@ If canonical source exists (e.g., `data/verses/sundar-kaand.yml`), the SDK will:
 
 **No manual content creation needed!** The SDK uses AI to generate everything from the canonical Devanagari text.
 
-### Step 2: Generate Complete Verse with SDK (SDK 0.11.0+)
+### Step 2: Generate Complete Verse with SDK (SDK 0.16.0+)
 
-Use `verse-generate` with `--regenerate-content` to auto-generate everything:
+**🚀 Recommended: Use `--next` to auto-generate the next verse:**
 
-**Single Verse:**
 ```bash
 set -a && source .env && set +a && \
 ./venv/bin/verse-generate \
   --collection <collection> \
-  --verse <verse_number> \
-  --verse-id <verse_id> \
+  --next \
   --regenerate-content \
   --all
 
-# Example: Generate chaupai_03 for sundar-kaand
+# Example: Generate next verse for sundar-kaand
 set -a && source .env && set +a && \
 ./venv/bin/verse-generate \
   --collection sundar-kaand \
-  --verse 3 \
-  --verse-id chaupai_03 \
+  --next \
+  --regenerate-content \
+  --all
+```
+
+The `--next` flag automatically:
+- ✅ Detects the last generated verse in the collection
+- ✅ Finds the next verse ID in the sequence from canonical YAML
+- ✅ Creates proper hyphenated filenames (chaupai-16, pada-09, etc.)
+- ✅ No need to specify verse numbers or IDs manually!
+
+**Alternative: Generate a specific verse:**
+
+```bash
+set -a && source .env && set +a && \
+./venv/bin/verse-generate \
+  --collection sundar-kaand \
+  --verse chaupai-15 \
   --regenerate-content \
   --all
 ```
@@ -192,7 +218,7 @@ Ask if user wants to commit. If yes:
 4. Commit with Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 5. Optionally push to remote
 
-## Cost Per Verse (SDK 0.11.0+)
+## Cost Per Verse (SDK 0.16.0+)
 
 - **AI Content Generation**: ~$0.01-0.02 (GPT-4 for transliteration, meanings, translations, story, practical applications)
 - **Image (standard)**: ~$0.04 (DALL-E 3)
@@ -244,18 +270,19 @@ Ask if user wants to commit. If yes:
 
 ## Important Notes
 
-1. **Use SDK 0.11.0+ only** - Earlier versions lack batch processing support
-2. **Canonical YAML required** - Verse must exist in `data/verses/<collection>.yml` before using --regenerate-content
-3. **Cultural sensitivity** - These are sacred texts; maintain authenticity and respect in AI-generated content
-4. **Never manually create content** - Always use SDK `--regenerate-content` to generate from canonical source
-5. **Preserve existing content** - Don't modify other verses accidentally
-6. **Follow naming conventions** - Check existing files for patterns
-7. **Test before committing** - Always suggest local testing first
-8. **API costs** - Inform user of costs before generating multimedia (~$0.05-0.06 per verse, more for batch)
-9. **Batch processing** - Use `--verse M-N` syntax without `--verse-id` for batch operations
-10. **Rate limits** - Be mindful of OpenAI/ElevenLabs rate limits when processing large batches
+1. **🚀 Prefer `--next` flag** - Auto-detects next verse to generate, no manual verse IDs needed! Simplest workflow for continuing any collection.
+2. **Use SDK 0.16.0+ only** - Earlier versions lack `--next` flag and batch processing support
+3. **Canonical YAML required** - Verse must exist in `data/verses/<collection>.yml` before using --regenerate-content
+4. **Cultural sensitivity** - These are sacred texts; maintain authenticity and respect in AI-generated content
+5. **Never manually create content** - Always use SDK `--regenerate-content` to generate from canonical source
+6. **Preserve existing content** - Don't modify other verses accidentally
+7. **Follow naming conventions** - Use hyphens (chaupai-01, pada-01, doha-01, shloka-01), never underscores
+8. **Test before committing** - Always suggest local testing first
+9. **API costs** - Inform user of costs before generating multimedia (~$0.05-0.06 per verse, more for batch)
+10. **Batch processing** - Use `--verse M-N` syntax for ranges, or `--next` for sequential generation
+11. **Rate limits** - Be mindful of OpenAI/ElevenLabs rate limits when processing large batches
 
-## Success Criteria (SDK 0.11.0+)
+## Success Criteria (SDK 0.16.0+)
 
 ✅ Canonical verse text exists in `data/verses/<collection>.yml`
 ✅ SDK successfully generated AI content with `--regenerate-content`
