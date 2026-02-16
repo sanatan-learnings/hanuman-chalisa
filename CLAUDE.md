@@ -33,8 +33,6 @@ data/
 
 **Use the `verse-generate` command with SDK 0.21.0+**
 
-**Note**: The `/verse-generator` skill has been deprecated and removed. The SDK now handles all functionality directly.
-
 The SDK automates the complete workflow:
 - Auto-detects next verse to generate (`--next` flag)
 - Auto-generates scene descriptions (`--auto-generate-scene` flag)

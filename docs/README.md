@@ -82,8 +82,6 @@ verse-audio --collection hanuman-chalisa
 - `verse-audio` - Generate audio using ElevenLabs
 - `verse-deploy` - Deploy Cloudflare Worker
 
-**Claude Skill**: Use `/verse-generator` for automated verse creation workflow.
-
 See [sanatan-sdk](https://github.com/sanatan-learnings/sanatan-sdk) for full SDK documentation.
 
 ## Guides

@@ -98,17 +98,6 @@ verse-embeddings
 deactivate
 ```
 
-### 7. Enable verse-generator Claude Skill (Optional)
-
-For automated verse creation workflow, enable the Claude Code skill:
-
-```bash
-mkdir -p ~/.claude/skills
-ln -s "$(pwd)/.claude/skills/verse-generator" ~/.claude/skills/verse-generator
-```
-
-Use with `/verse-generator` command in Claude Code. See [Content Generation Guide](content-generation.md#automated-verse-creation-with-claude-skill) for details.
-
 ## Running the Local Server
 
 ### Start Jekyll Server
