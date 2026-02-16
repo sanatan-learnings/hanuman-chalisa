@@ -7,25 +7,23 @@ Documentation for the Hanuman GPT website (multi-collection sacred texts).
 **One command** to create image + audio + embeddings for any verse:
 
 ```bash
-# Install sanatan-sdk
+# Install sanatan-sdk 0.20.4+
 pip install sanatan-sdk
 
-# Generate everything for a verse (verse ID auto-detected)
+# Auto-detect and generate next verse
 verse-generate \
   --collection sundar-kaand \
-  --verse 5 \
-  --all \
-  --theme modern-minimalist
+  --next \
+  --regenerate-content \
+  --auto-generate-scene \
+  --all
 
 # Output:
-#   ✓ Image: images/sundar-kaand/modern-minimalist/chaupai-05.png
-#   ✓ Audio: audio/sundar-kaand/chaupai_05_full.mp3 + chaupai_05_slow.mp3
+#   ✓ Verse: _verses/sundar-kaand/chaupai-20.md
+#   ✓ Image: images/sundar-kaand/modern-minimalist/chaupai-20.png
+#   ✓ Audio: audio/sundar-kaand/chaupai-20-full.mp3 + chaupai-20-slow.mp3
+#   ✓ Scene: data/scenes/sundar-kaand.yml (auto-generated)
 #   ✓ Embeddings: Updated automatically
-```
-
-**Or use the Claude Skill** for fully automated workflow:
-```
-/verse-generator Create chaupai_05 for sundar-kaand
 ```
 
 See [Content Generation Guide](guides/content-generation.md) for complete documentation.
