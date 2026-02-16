@@ -151,7 +151,7 @@ def load_scene_description(collection, verse_id):
 
 Allow users to configure scene description location:
 
-**In `docs/themes/{collection}/modern-minimalist.yml`:**
+**In `data/themes/{collection}/modern-minimalist.yml`:**
 ```yaml
 scene_descriptions:
   source: data/scenes  # or "docs/image-prompts" for legacy

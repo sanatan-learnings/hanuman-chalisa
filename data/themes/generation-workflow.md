@@ -18,7 +18,7 @@ verse-images --theme-name traditional
 
 ## How It Works
 
-Theme YAML files in `docs/themes/<collection-key>/` include generation settings:
+Theme YAML files in `data/themes/<collection-key>/` include generation settings:
 
 ```yaml
 theme:
@@ -59,7 +59,7 @@ verse-images --theme-name my-theme --style "custom style"
 
 1. **Copy theme template:**
    ```bash
-   cp docs/themes/hanuman-chalisa/modern-minimalist.yml docs/themes/hanuman-chalisa/my-theme.yml
+   cp data/themes/hanuman-chalisa/modern-minimalist.yml data/themes/hanuman-chalisa/my-theme.yml
    ```
 
 2. **Edit `generation.style_modifier`** with your style description
@@ -82,7 +82,7 @@ verse-images --theme-name my-theme --style "custom style"
 5. **Test and commit:**
    ```bash
    bundle exec jekyll serve
-   git add docs/themes/hanuman-chalisa/my-theme.yml images/hanuman-chalisa/my-theme/ _data/themes.yml
+   git add data/themes/hanuman-chalisa/my-theme.yml images/hanuman-chalisa/my-theme/ _data/themes.yml
    git commit -m "Add my-theme"
    ```
 

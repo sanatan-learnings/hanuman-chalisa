@@ -266,7 +266,7 @@ The SDK includes automatic retry with exponential backoff. For free tier account
 ## 💡 Tips
 
 1. **Test First**: Use `--only` to generate one file first to verify setup
-2. **Use Theme YAML**: Store style settings in `docs/themes/<theme>.yml`
+2. **Use Theme YAML**: Store style settings in `data/themes/<theme>.yml`
 3. **Resume on Failure**: Use `--start-from` to continue interrupted generations
 4. **Check Costs**: Review API pricing before generating large batches
 5. **Regenerate Selectively**: Use `--regenerate` for specific files instead of `--force`

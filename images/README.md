@@ -263,7 +263,7 @@ images/sundar-kaand/modern-minimalist/
 
 - **Sundar Kaand prompts**: [docs/image-prompts.md](../docs/image-prompts.md)
 - **Hanuman Chalisa prompts**: [docs/image-prompts.md](../docs/image-prompts.md)
-- **Theme specs**: [docs/themes/](../docs/themes/)
+- **Theme specs**: [data/themes/](../data/themes/)
 - **Generation scripts**: [scripts/generate_images.sh](../scripts/generate_images.sh)
 - **sanatan-sdk**: [PyPI](https://pypi.org/project/sanatan-sdk/)
 - **Developer guide**: [docs/developer-guide.md](../docs/developer-guide.md)

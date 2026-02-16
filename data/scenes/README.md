@@ -36,7 +36,7 @@ scenes:
 
 ## How It Works
 
-**Scene descriptions** (this directory) + **Theme specifications** (`docs/themes/{collection}/*.yml`) = **Complete DALL-E 3 prompts**
+**Scene descriptions** (this directory) + **Theme specifications** (`data/themes/{collection}/*.yml`) = **Complete DALL-E 3 prompts**
 
 - Scene descriptions are **content-focused** (what happens, who, where, why)
 - Theme specifications are **style-focused** (colors, artistic style, composition)
@@ -54,7 +54,7 @@ verse-generate --collection hanuman-chalisa --verse 1 --image
 
 The SDK:
 1. Reads scene from `data/scenes/hanuman-chalisa.yml` → `scenes.verse-01`
-2. Reads theme from `docs/themes/hanuman-chalisa/modern-minimalist.yml`
+2. Reads theme from `data/themes/hanuman-chalisa/modern-minimalist.yml`
 3. Combines them into a complete DALL-E 3 prompt
 4. Generates the image
 
@@ -108,6 +108,6 @@ Converted using `scripts/convert_scenes_to_yaml.py`
 ## Related
 
 - Canonical verse text: `data/verses/{collection}.yml`
-- Visual themes: `docs/themes/{collection}/*.yml`
+- Visual themes: `data/themes/{collection}/*.yml`
 - Generated images: `images/{collection}/{theme}/`
 - Collection metadata: `_data/collections.yml`
