@@ -15,7 +15,7 @@ A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Han
 **Currently featured:**
 - **Hanuman Chalisa** ✅ Complete - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
 - **Sankat Mochan Hanumanashtak** ✅ Complete - 8 verses for removing obstacles
-- **Sundar Kaand** 🚧 In Progress - 6 verses from Ramcharitmanas describing Hanuman's journey to Lanka
+- **Sundar Kaand** 🚧 In Progress - 20 verses from Ramcharitmanas describing Hanuman's journey to Lanka
 
 **Coming soon:**
 - Hanuman Stuti - Devotional hymns
@@ -73,7 +73,7 @@ Create personalized printable books:
 
 Want to contribute or generate custom themes?
 
-**→ See the [Developer Guide](docs/guides/content-generation.md)** for:
+**→ See the [Documentation](docs/README.md)** for:
 - Local development setup
 - Generating custom image themes with DALL-E 3 (~$1.72 for 43 images)
 - Generating audio files with Eleven Labs (~$0.0002 for 86 files)
@@ -83,42 +83,29 @@ Want to contribute or generate custom themes?
 
 **→ See [CONTRIBUTING.md](CONTRIBUTING.md)** for contribution guidelines
 
-### 🤖 Automated Verse Creation with Claude Code
-
-For developers using [Claude Code](https://claude.ai/claude-code), use the `/verse-generator` slash command to automate the complete verse creation workflow:
-
-```
-/verse-generator Create chaupai_07 for sundar-kaand
-```
-
-**What it does:**
-- Creates verse markdown file with complete content
-- Generates AI image using DALL-E 3
-- Generates audio (full + slow speed) using ElevenLabs
-- Updates embeddings for search functionality
-- Updates navigation links between verses
-- Prepares git commit
-
-**Time savings:** 30-45 minutes per verse → 5-10 minutes
-
-See [Content Generation Guide](docs/guides/content-generation.md#automated-verse-creation-with-claude-skill) for details.
-
 ### Quick Start: Generate Verse Content
 
 ```bash
-# Install sanatan-sdk
+# Install sanatan-sdk 0.21.0+
 pip install sanatan-sdk
 
-# Generate complete content for a single verse (image + audio + embeddings)
-verse-generate --collection sundar-kaand --verse 5 --all --theme modern-minimalist --update-embeddings
+# Auto-detect and generate next verse (image + audio + embeddings)
+verse-generate \
+  --collection sundar-kaand \
+  --next \
+  --regenerate-content \
+  --auto-generate-scene \
+  --all
 ```
 
 **What it generates:**
-- Image: `images/sundar-kaand/modern-minimalist/chaupai-05.png`
-- Audio: `audio/sundar-kaand/chaupai_05_full.mp3` + `chaupai_05_slow.mp3`
+- Verse: `_verses/sundar-kaand/chaupai-20.md` (AI-generated content from canonical YAML)
+- Image: `images/sundar-kaand/modern-minimalist/chaupai-20.png`
+- Audio: `audio/sundar-kaand/chaupai-20-full.mp3` + `chaupai-20-slow.mp3`
+- Scene: `data/scenes/sundar-kaand.yml` (auto-generated if needed)
 - Embeddings: Updated automatically
 
-**Cost:** ~$0.04 per verse (DALL-E 3 + ElevenLabs + embeddings)
+**Cost:** ~$0.05-0.06 per verse (DALL-E 3 + ElevenLabs + AI content generation)
 
 **Bulk regenerate embeddings** (only if you've manually edited multiple verses):
 ```bash
