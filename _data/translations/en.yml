@@ -10,7 +10,7 @@ nav:
   search: "Search"
 
 sections:
-  devanagari: "1. Original Hindi Text (Devanagari Script)"
+  devanagari: "1. Original Text (Devanagari Script)"
   transliteration: "2. Simplified Transliteration"
   pronunciation: "3. Pronunciation Guide"
   word_meanings: "4. Word-by-Word Meaning"
