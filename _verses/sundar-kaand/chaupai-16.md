@@ -7,7 +7,7 @@ title_hi: हनुमान का विशाल रूपांतरण
 verse_number: 20
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-15
-next_verse: /sundar-kaand/chaupai-17
+next_verse: /sundar-kaand/chaupai-17/
 image: /images/sundar-kaand/modern-minimalist/chaupai-16.png
 devanagari: जोजन भरि तेहिं बदनु पसारा। कपि तनु कीन्ह दुगुन बिस्तारा॥
 transliteration: jojana bhari tehiṁ badanu pasārā। kapi tanu kīnha duguna bistārā॥

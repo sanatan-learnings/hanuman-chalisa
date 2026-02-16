@@ -35,6 +35,7 @@ exclude:
   - .venv/
   - scripts/
   - workers/
+  - "**/*.temp.*"
 
 # Plugins
 plugins:
