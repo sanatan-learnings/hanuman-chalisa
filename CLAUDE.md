@@ -30,48 +30,51 @@ data/
 
 ## Generating New Verses
 
-**ALWAYS use the `/verse-generator` skill for new verse generation.**
+**Use the `verse-generate` command with SDK 0.20.4+**
 
-This automates the complete workflow:
-- Scene description verification
-- SDK verse generation with --regenerate-content
-- Verse metadata validation
-- Navigation link updates
-- Git commits
+The SDK automates the complete workflow:
+- Auto-detects next verse to generate (`--next` flag)
+- Auto-generates scene descriptions (`--auto-generate-scene` flag)
+- Generates AI content from canonical source (`--regenerate-content` flag)
+- Creates verse file, image, audio, and embeddings (`--all` flag)
+- Updates navigation links automatically
+- Uses correct hyphenated filenames
 
-Example usage:
-```
-/verse-generator Generate chaupai-15 for sundar-kaand
-```
-
-The skill uses verse IDs from `data/verses/{collection}.yml` `_meta.sequence` to ensure correct hyphenated filenames.
-
-### Manual Generation (Only if /verse-generator unavailable)
+**Recommended usage (auto-detect next verse):**
 ```bash
-# 1. Add scene description to docs/image-prompts/{collection}.md
+set -a && source .env && set +a
+./venv/bin/verse-generate \
+  --collection sundar-kaand \
+  --next \
+  --regenerate-content \
+  --auto-generate-scene \
+  --all
+```
 
-# 2. Check YAML for verse ID in _meta.sequence
-# Example: chaupai-15 (not chaupai_15)
-
-# 3. Generate verse using the YAML verse ID directly
+**Generate specific verse:**
+```bash
 set -a && source .env && set +a
 ./venv/bin/verse-generate \
   --collection sundar-kaand \
   --verse chaupai-15 \
   --regenerate-content \
+  --auto-generate-scene \
   --all
+```
 
-# IMPORTANT: Do NOT use --verse-id parameter
-# SDK auto-infers correct hyphenated filenames from YAML sequence
+**Verify generated files use hyphens:**
+- `_verses/sundar-kaand/chaupai-15.md`
+- `audio/sundar-kaand/chaupai-15-full.mp3`
+- `audio/sundar-kaand/chaupai-15-slow.mp3`
+- `images/sundar-kaand/modern-minimalist/chaupai-15.png`
 
-# 4. Verify generated files use hyphens:
-#    - _verses/sundar-kaand/chaupai-15.md
-#    - audio/sundar-kaand/chaupai-15-full.mp3
-#    - audio/sundar-kaand/chaupai-15-slow.mp3
-#    - images/sundar-kaand/modern-minimalist/chaupai-15.png
+**Then commit and push:**
+```bash
+git add _verses/ audio/ images/ data/
+git commit -m "Generate chaupai-15 for Sundar Kaand
 
-# 5. Update previous verse next_verse field
-# 6. Commit
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
+git push origin main
 ```
 
 ## Key Files to Update
@@ -102,7 +105,7 @@ set -a && source .env && set +a
 4. **Embeddings not updating**: Run verse-generate with --all flag
 
 ## SDK Version
-Currently using sanatan-sdk 0.16.1 - upgrade regularly for fixes.
+Currently using sanatan-sdk 0.20.4 - upgrade regularly for new features and fixes.
 
 ## Python Commands
 **ALWAYS run Python commands in the virtual environment:**
