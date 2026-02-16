@@ -14,12 +14,13 @@ Jekyll-based website for sacred Hindu texts with multimedia content (images, aud
 
 ## Project Structure
 ```
-_verses/{collection}/          # Verse markdown files (generated)
-audio/{collection}/            # Audio pronunciations (generated: full + slow)
-images/{collection}/{theme}/   # Generated images
+_verses/{collection}/            # Verse markdown files (generated)
+audio/{collection}/              # Audio pronunciations (generated: full + slow)
+images/{collection}/{theme}/     # Generated images
 data/
-  ├── verses/{collection}.yml  # Source: Canonical verse text (Devanagari)
-  └── scenes/{collection}.yml  # Source: Scene descriptions for image generation
+  ├── verses/{collection}.yml    # Source: Canonical verse text (Devanagari)
+  ├── scenes/{collection}.yml    # Source: Scene descriptions for image generation
+  └── themes/{collection}/*.yml  # Config: Image generation settings
 ```
 
 ## Verse Types & Numbering
@@ -30,7 +31,9 @@ data/
 
 ## Generating New Verses
 
-**Use the `verse-generate` command with SDK 0.20.4+**
+**Use the `verse-generate` command with SDK 0.21.0+**
+
+**Note**: The `/verse-generator` skill has been deprecated and removed. The SDK now handles all functionality directly.
 
 The SDK automates the complete workflow:
 - Auto-detects next verse to generate (`--next` flag)
@@ -105,7 +108,13 @@ git push origin main
 4. **Embeddings not updating**: Run verse-generate with --all flag
 
 ## SDK Version
-Currently using sanatan-sdk 0.20.4 - upgrade regularly for new features and fixes.
+Currently using sanatan-sdk 0.21.0 - upgrade regularly for new features and fixes.
+
+**Recent updates:**
+- 0.21.0: Supports `data/themes/` location (Issue #5)
+- 0.20.3: Supports `_data/collections.yml` (Issue #4), audio hyphen naming
+- 0.20.2: Fixed validation bug (Issue #3)
+- 0.20.0: Scene descriptions from `data/scenes/*.yml` (Issue #2)
 
 ## Python Commands
 **ALWAYS run Python commands in the virtual environment:**
