@@ -14,11 +14,12 @@ Jekyll-based website for sacred Hindu texts with multimedia content (images, aud
 
 ## Project Structure
 ```
-_verses/{collection}/          # Verse markdown files
-audio/{collection}/            # Audio pronunciations (full + slow)
+_verses/{collection}/          # Verse markdown files (generated)
+audio/{collection}/            # Audio pronunciations (generated: full + slow)
 images/{collection}/{theme}/   # Generated images
-data/verses/{collection}.yml   # Canonical verse text (source of truth)
-docs/image-prompts/{collection}.md  # Scene descriptions for image generation
+data/
+  ├── verses/{collection}.yml  # Source: Canonical verse text (Devanagari)
+  └── scenes/{collection}.yml  # Source: Scene descriptions for image generation
 ```
 
 ## Verse Types & Numbering
