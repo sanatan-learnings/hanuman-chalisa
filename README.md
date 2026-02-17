@@ -50,7 +50,6 @@ This guide provides deep understanding of each verse with translations, meanings
 - **GPT-4 powered** - Thoughtful, context-aware responses
 - **Bilingual** - Works in English and Hindi
 - **Conversation history** - Maintains context for follow-up questions
-- Requires your OpenAI API key
 
 [Try Spiritual Guidance →](https://sanatan-learnings.github.io/hanuman-gpt/guidance)
 
