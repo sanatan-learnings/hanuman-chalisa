@@ -115,9 +115,7 @@ set -a && source .env && set +a
 # Auto-detect and generate next verse (image + audio + embeddings)
 ./venv/bin/verse-generate \
   --collection sundar-kaand \
-  --next \
-  --regenerate-content \
-  --auto-generate-scene
+  --next
 
 # Cost: ~$0.05-0.06 per verse (DALL-E 3 + ElevenLabs + AI content)
 ```
