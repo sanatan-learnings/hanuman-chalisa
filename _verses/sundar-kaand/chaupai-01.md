@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-01/
-title_en: Hanuman's Heartfelt Joy
-title_hi: हनुमान की हृदय स्पर्शी आनंद
+title_en: 'Chaupai 1: Hanumans Heartfelt Joy'
+title_hi: 'चौपाई 1: हनुमान की हृदय स्पर्शी आनंद'
 verse_number: 4
 verse_type: chaupai
 next_verse: /sundar-kaand/chaupai-02

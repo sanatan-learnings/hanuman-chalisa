@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-19/
-title_en: Hanuman's Transformation for the Leap
-title_hi: हनुमान का रूप परिवर्तन और कूद
+title_en: 'Chaupai 19: Hanumans Transformation for the Leap'
+title_hi: 'चौपाई 19: हनुमान का रूप परिवर्तन और कूद'
 verse_number: 23
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-18/

@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-20/
-title_en: Hanuman's Humble Request
-title_hi: हनुमान की विनम्र अनुरोध
+title_en: 'Chaupai 20: Hanumans Humble Request'
+title_hi: 'चौपाई 20: हनुमान की विनम्र अनुरोध'
 verse_number: 24
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-19/

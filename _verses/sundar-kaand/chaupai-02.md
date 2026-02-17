@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-02/
-title_en: Endurance in Testing Times
-title_hi: कठिन समय में सहनशीलता
+title_en: 'Chaupai 2: Endurance in Testing Times'
+title_hi: 'चौपाई 2: कठिन समय में सहनशीलता'
 verse_number: 5
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-01

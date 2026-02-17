@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-15/
-title_en: Hanuman's Fearless Determination
-title_hi: हनुमान की निडर संकल्पना
+title_en: 'Chaupai 15: Hanumans Fearless Determination'
+title_hi: 'चौपाई 15: हनुमान की निडर संकल्पना'
 verse_number: 19
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-14

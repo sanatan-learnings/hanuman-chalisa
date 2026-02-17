@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-14/
-title_en: Hanuman's Brilliant Solution
-title_hi: हनुमान का शानदार समाधान
+title_en: 'Chaupai 14: Hanumans Brilliant Solution'
+title_hi: 'चौपाई 14: हनुमान का शानदार समाधान'
 verse_number: 18
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-13

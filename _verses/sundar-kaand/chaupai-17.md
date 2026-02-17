@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-17/
-title_en: Hanuman's Swift Transformation
-title_hi: हनुमान का त्वरित परिवर्तन
+title_en: 'Chaupai 17: Hanumans Swift Transformation'
+title_hi: 'चौपाई 17: हनुमान का त्वरित परिवर्तन'
 verse_number: 21
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-16/

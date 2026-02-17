@@ -22,8 +22,8 @@ translation:
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/shloka-03/
-title_en: Salutation to Lord Hanuman
-title_hi: भगवान हनुमान की प्रार्थना
+title_en: 'Shloka 3: Salutation to Lord Hanuman'
+title_hi: 'श्लोक 3: भगवान हनुमान की प्रार्थना'
 previous_verse: /sundar-kaand/shloka-02/
 next_verse: /sundar-kaand/chaupai-01/
 image: /images/sundar-kaand/modern-minimalist/shloka-03.png

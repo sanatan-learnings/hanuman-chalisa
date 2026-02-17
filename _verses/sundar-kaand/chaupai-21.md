@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-21/
-title_en: Seeking Divine Wisdom and Strength
-title_hi: दैवी ज्ञान और शक्ति की खोज
+title_en: 'Chaupai 21: Seeking Divine Wisdom and Strength'
+title_hi: 'चौपाई 21: दैवी ज्ञान और शक्ति की खोज'
 verse_number: 25
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-20/

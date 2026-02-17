@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-07/
-title_en: Hanuman's Leap to the Underworld
-title_hi: हनुमान की पाताल लोक की यात्रा
+title_en: 'Chaupai 7: Hanumans Leap to the Underworld'
+title_hi: 'चौपाई 7: हनुमान की पाताल लोक की यात्रा'
 verse_number: 10
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-06

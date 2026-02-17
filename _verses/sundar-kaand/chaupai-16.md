@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-16/
-title_en: Hanuman's Magnificent Transformation
-title_hi: हनुमान का विशाल रूपांतरण
+title_en: 'Chaupai 16: Hanumans Magnificent Transformation'
+title_hi: 'चौपाई 16: हनुमान का विशाल रूपांतरण'
 verse_number: 20
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-15

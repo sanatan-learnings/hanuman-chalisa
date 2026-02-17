@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-09/
-title_en: Rama's Emissary Considers the Ocean
-title_hi: रघुपति के दूत का समुद्र पर विचार
+title_en: 'Chaupai 9: Ramas Emissary Considers the Ocean'
+title_hi: 'चौपाई 9: रघुपति के दूत का समुद्र पर विचार'
 verse_number: 12
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-08
