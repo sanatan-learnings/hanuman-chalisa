@@ -26,60 +26,18 @@ This guide provides deep understanding of each verse with translations, meanings
 
 ## Features
 
-### 📖 Read & Study
-- **3 Collections** - Hanuman Chalisa (43 verses, complete), Sankat Mochan Hanumanashtak (8 verses, complete), Sundar Kaand (25 verses, in progress)
-- **Original Devanagari text** and transliteration
-- **Word-by-word meanings** and literal translations
-- **Interpretive meanings** explaining spiritual depth
-- **Stories from Ramayana and Puranic texts** providing context
-- **Search functionality** across all collections
-- **Bilingual support** - Switch between English and Hindi instantly
-- **Beautiful AI-generated images** for each verse
-
-### 🎵 Audio Pronunciation
-- **Two speeds** - Regular and slow speed for every verse
-- **Regular speed** - Natural recitation pace for experienced practitioners
-- **Slow speed** - 25% slower for learning pronunciation
-- **AI-generated** - Clear, natural Hindi/Sanskrit pronunciation via Eleven Labs
-- **Embedded players** - Listen directly on each verse page
-- Perfect for learning correct pronunciation and recitation practice
-
-### 💬 Spiritual Guidance (AI-Powered)
-- **Ask questions** and receive spiritual guidance based on relevant verses
-- **Multi-collection RAG system** - Searches across all collections
-- **GPT-4 powered** - Thoughtful, context-aware responses
-- **Bilingual** - Works in English and Hindi
-- **Conversation history** - Maintains context for follow-up questions
-
-[Try Spiritual Guidance →](https://sanatan-learnings.github.io/hanuman-gpt/guidance)
-
-### 📕 Generate Custom Books (Hanuman Chalisa)
-Create personalized printable books for Hanuman Chalisa:
-- **Multiple sizes**: 6"×4" pocket, 8"×6" medium, A5, A4
-- **Customizable content**: Choose what to include
-- **Custom headers/footers**: Personalize with your own text
-- **Print or PDF**: Ready for home or professional printing
-
-[Visit Book Generator →](https://sanatan-learnings.github.io/hanuman-gpt/chalisa/book)
-
-### 🎨 Multiple Themes
-- Switch between different artistic styles
-- Current: Modern Minimalist theme
-- Generate your own themes using DALL-E 3 (see below)
+- **📖 3 Collections** - Hanuman Chalisa (43 verses, complete), Sankat Mochan Hanumanashtak (8 verses, complete), Sundar Kaand (25 verses, in progress)
+- **🔤 Bilingual** - Full content in English and हिन्दी (Hindi) with word-by-word meanings, transliteration, and interpretive explanations
+- **🎵 Audio Pronunciation** - Regular and slow speed for every verse (AI-generated via Eleven Labs)
+- **🖼️ AI-Generated Images** - Beautiful artwork for each verse (DALL-E 3)
+- **💬 Spiritual Guidance** - Ask questions and receive GPT-4 powered guidance based on relevant verses → [Try it](https://sanatan-learnings.github.io/hanuman-gpt/guidance) | [Learn more](docs/reference/spiritual-guidance.md)
+- **📕 Custom Books** - Generate printable books (Hanuman Chalisa only) → [Book Generator](https://sanatan-learnings.github.io/hanuman-gpt/chalisa/book) | [Documentation](docs/reference/book-generation.md)
+- **🔍 Search** - Find verses across all collections
+- **📖 Context** - Stories from Ramayana and Puranic texts for deeper understanding
 
 ## For Developers
 
-Want to contribute or generate custom themes?
-
-**→ See the [Documentation](docs/README.md)** for:
-- Local development setup
-- Generating custom image themes with DALL-E 3 (~$1.72 for 43 images)
-- Generating audio files with Eleven Labs (~$0.0002 for 86 files)
-- **Regenerating embeddings** for the RAG system (FREE, runs locally)
-- Project structure and architecture
-- Testing and deployment
-
-**→ See [CONTRIBUTING.md](CONTRIBUTING.md)** for contribution guidelines
+Want to contribute or run this locally?
 
 ### Quick Start: Run Locally
 
@@ -108,31 +66,25 @@ bundle exec jekyll serve --force_polling
 
 ### Generate New Verse Content
 
-```bash
-# Set up environment variables
-set -a && source .env && set +a
+Use `verse-generate` to create new verses with AI-generated content, images, audio, and embeddings.
 
-# Auto-detect and generate next verse (image + audio + embeddings)
-./venv/bin/verse-generate \
-  --collection sundar-kaand \
-  --next
-
-# Cost: ~$0.05-0.06 per verse (DALL-E 3 + ElevenLabs + AI content)
-```
+**→ See [Content Generation Guide](docs/guides/content-generation.md)** for complete instructions.
 
 ## Documentation
 
-**User Guides:**
-- [User Guide](docs/user-guide.md) - How to use the website
-- [Background](docs/background.md) - History of the Hanuman Chalisa
-- [Book Generation](docs/book-generation.md) - Create printable books
+**Guides:**
+- [Local Development](docs/guides/local-development.md) - Setup and run locally
+- [Content Generation](docs/guides/content-generation.md) - Generate verses with AI
+- [Cloudflare Worker Setup](docs/guides/cloudflare-worker-setup.md) - Deploy API proxy
 
-**Technical Docs:**
-- [Developer Guide](docs/developer-guide.md) - Setup, architecture, and development
-- [Verse Structure](docs/verse-structure.md) - How verses are organized
-- [Tech Stack](docs/tech-stack.md) - Technologies used
-- [Adding Themes](docs/adding-themes.md) - Create new image themes
-- [Image Prompts](docs/image-prompts.md) - DALL-E 3 prompts used
+**Reference:**
+- [Background](docs/reference/background.md) - About the sacred texts
+- [Book Generation](docs/reference/book-generation.md) - Create printable books
+- [Spiritual Guidance](docs/reference/spiritual-guidance.md) - RAG system details
+- [Tech Stack](docs/reference/tech-stack.md) - Architecture and technologies
+- [Multilingual](docs/reference/multilingual.md) - Internationalization
+
+**→ See [docs/README.md](docs/README.md)** for complete documentation index.
 
 ## Contributing
 
