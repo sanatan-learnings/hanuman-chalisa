@@ -9,103 +9,115 @@ devanagari: 'अतुलितबलधामं हेमशैलाभदे
 
   रघुपतिप्रियभक्तं वातजातं नमामि'
 transliteration: raghupatipriyabhaktaṁ vātajātaṁ namāmi
-meaning: The verse is a salutation to Lord Hanuman, who is described as having unmatched
-  strength, a golden mountain-like body, and the destroyer of demons. He is the foremost
-  among the knowledgeable, the abode of all virtues, the lord of the monkeys, and
-  a devoted follower of Lord Rama. Being the son of the wind, he is saluted in this
-  verse.
+meaning: This verse is a salutation to Lord Hanuman, who is described as having incomparable
+  strength, a body that shines like a golden mountain, and as the destroyer of evil
+  forces. He is the foremost among the wise, the abode of all virtues, the lord of
+  the monkeys, a dear devotee of Lord Rama, and the son of the wind. The verse ends
+  with a salutation to Lord Hanuman.
 translation:
-  en: I bow to the one with unmatched strength, a body like a golden mountain, the
-    destroyer of demons, foremost among the knowledgeable, the abode of all virtues,
-    the lord of the monkeys, the beloved devotee of Lord Rama, and the son of the
-    wind.
+  en: I bow to the one with incomparable strength, whose body shines like a golden
+    mountain, who destroys evil forces, is foremost among the wise, the abode of all
+    virtues, the lord of the monkeys, a dear devotee of Lord Rama, and the son of
+    the wind.
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/shloka-03/
 title_en: Salutation to Lord Hanuman
-title_hi: हनुमान जी की प्रणामी
-previous_verse: /sundar-kaand/shloka-02
-next_verse: /sundar-kaand/shloka-04
+title_hi: भगवान हनुमान की प्रार्थना
+previous_verse: /sundar-kaand/shloka-02/
+next_verse: /sundar-kaand/chaupai-01/
 image: /images/sundar-kaand/modern-minimalist/shloka-03.png
 word_meanings:
 - word: अतुलितबलधामं
   roman: Atulitabaladhāmaṁ
   meaning:
-    en: Unmatched strength
-    hi: अतुलित शक्ति
+    en: One with incomparable strength
+    hi: अतुल्य बलवाले
 - word: हेमशैलाभदेहं
-  roman: Hemaśailābha dehaṁ
+  roman: hemaśailābha-dehaṁ
   meaning:
-    en: Golden mountain-like body
-    hi: स्वर्णिम पर्वत समान शरीर
+    en: One whose body shines like a golden mountain
+    hi: स्वर्ण पर्वत के समान चमकदार शरीर वाले
 - word: दनुजवनकृशानुं
-  roman: Danujavanakṛśānuṁ
+  roman: danujavanakṛśānuṁ
   meaning:
-    en: Destroyer of demons
-    hi: दानवों का नाश करने वाला
+    en: Destroyer of evil forces
+    hi: दुष्टों का नाश करने वाले
 - word: ज्ञानिनामग्रगण्यम्
-  roman: Jñānināmagragaṇyam
+  roman: jñānināmagragaṇyam
   meaning:
-    en: Foremost among knowledgeable
+    en: Foremost among the wise
     hi: ज्ञानियों में अग्रणी
 - word: सकलगुणनिधानं
-  roman: Sakalaguṇanidhānaṁ
+  roman: sakalaguṇanidhānaṁ
   meaning:
     en: Abode of all virtues
     hi: सभी गुणों का निधान
 - word: वानराणामधीशं
-  roman: Vānarāṇāmadhīśaṁ
+  roman: vānarāṇāmadhīśaṁ
   meaning:
     en: Lord of the monkeys
-    hi: वानरों का अधिपति
+    hi: वानरों के राजा
 - word: रघुपतिप्रियभक्तं
-  roman: Raghupatipriyabhaktaṁ
+  roman: raghupatipriyabhaktaṁ
   meaning:
-    en: Devotee of Lord Rama
-    hi: राम भक्त
+    en: Dear devotee of Lord Rama
+    hi: भगवान राम के प्रिय भक्त
 - word: वातजातं
-  roman: Vātajātaṁ
+  roman: vātajātaṁ
   meaning:
     en: Son of the wind
     hi: पवन पुत्र
 - word: नमामि
-  roman: Namāmi
+  roman: namāmi
   meaning:
     en: I bow to
     hi: मैं नमन करता हूँ
 literal_translation:
-  en: I bow to the one with unmatched strength, a body like a golden mountain, the
-    destroyer of demons, foremost among the knowledgeable, the abode of all virtues,
-    the lord of the monkeys, the beloved devotee of Lord Rama, and the son of the
-    wind.
-  hi: मैं उसे नमन करता हूँ जिसमें अतुलित शक्ति है, जिसका शरीर स्वर्णिम पर्वत के समान
-    है, जो दानवों का नाश करने वाला है, जो ज्ञानियों में अग्रणी है, जो सभी गुणों का
-    निधान है, जो वानरों का अधिपति है, जो राम का प्रिय भक्त है, और जो पवन पुत्र है।
+  en: I bow to the one with incomparable strength, whose body shines like a golden
+    mountain, who destroys evil forces, is foremost among the wise, the abode of all
+    virtues, the lord of the monkeys, a dear devotee of Lord Rama, and the son of
+    the wind.
+  hi: मैं उसे नमन करता हूँ जिसकी अतुल्य शक्ति है, जिसका शरीर स्वर्ण पर्वत की तरह चमकता
+    है, जो दुष्टों का नाश करता है, जो ज्ञानियों में अग्रणी है, सभी गुणों का निधान
+    है, वानरों के राजा है, भगवान राम के प्रिय भक्त है, और पवन पुत्र है।
 interpretive_meaning:
-  en: This verse is a devotional tribute to Lord Hanuman, highlighting his divine
-    attributes such as immense strength, wisdom, virtue, and devotion to Lord Rama.
-    It emphasizes his role as a protector and a guide in overcoming obstacles.
-  hi: यह श्लोक हनुमान जी की भक्ति को समर्पित है, जिसमें उनके दिव्य गुणों को उजागर
-    किया गया है जैसे कि अत्यधिक शक्ति, ज्ञान, सद्गुण, और राम भक्ति। इसमें उनकी संरक्षक
-    और मार्गदर्शक भूमिका को बल दिया गया है जो बाधाओं को पार करने में मदद करती है।
+  en: This verse is a profound salutation to Lord Hanuman, acknowledging his divine
+    attributes and his role as a protector, a wise leader, and a devoted servant of
+    Lord Rama. It is a reminder of the power of devotion, wisdom, and righteousness.
+  hi: यह पद भगवान हनुमान की गहरी प्रार्थना है, जो उनके दैवी गुणों और उनकी भगवान राम
+    के एक समर्पित सेवक, एक सुरक्षाकर्ता, एक बुद्धिमान नेता के रूप में भूमिका की पहचान
+    करती है। यह भक्ति, ज्ञान और धर्म की शक्ति की याद दिलाता है।
 story:
-  en: This verse is from the Sundar Kand of the Ramayana, a section dedicated to the
-    exploits of Lord Hanuman. It is often recited by devotees seeking strength, wisdom,
-    and protection. The verse encapsulates the essence of Hanuman's character and
-    his devotion to Lord Rama, making it a powerful mantra for invoking his blessings.
-  hi: यह श्लोक रामायण के सुंदरकाण्ड से है, जो हनुमान जी के कार्यों को समर्पित है।
-    इसे शक्ति, ज्ञान, और सुरक्षा की कामना करने वाले भक्तों द्वारा अक्सर पढ़ा जाता
-    है। यह श्लोक हनुमान के चरित्र और उनकी राम भक्ति का सार संक्षेपित करता है, जिससे
-    यह उनकी कृपा प्राप्त करने के लिए एक शक्तिशाली मंत्र बन जाता है।
+  en: This verse is from the Sundar Kanda of the Ramayana, a section dedicated to
+    the adventures of Lord Hanuman. Hanuman is a central character in the Ramayana,
+    known for his unwavering devotion to Lord Rama, his strength, and his wisdom.
+    This verse is often recited as a prayer to invoke the blessings of Lord Hanuman,
+    seeking protection, wisdom, and strength.
+  hi: यह पद रामायण के सुंदर कांड से है, जो भगवान हनुमान के साहसिक कार्यों को समर्पित
+    है। हनुमान रामायण के एक केंद्रीय पात्र हैं, जिन्हें भगवान राम की अटल भक्ति, उनकी
+    शक्ति और उनकी बुद्धि के लिए जाना जाता है। यह पद अक्सर भगवान हनुमान के आशीर्वाद
+    को आह्वान करने के लिए एक प्रार्थना के रूप में पढ़ा जाता है, सुरक्षा, ज्ञान और
+    शक्ति की खोज में।
 practical_application:
   teaching:
-    en: This verse teaches us to seek strength, wisdom, and virtue, and to be devoted
-      in our pursuits, just like Lord Hanuman.
-    hi: यह श्लोक हमें शक्ति, ज्ञान, और सद्गुण की कामना करने, और हनुमान जी की तरह अपने
-      लक्ष्यों में समर्पित रहने की शिक्षा देता है।
+    en: This verse teaches us the importance of devotion, wisdom, and righteousness,
+      embodied by Lord Hanuman.
+    hi: यह पद हमें भक्ति, ज्ञान और धर्म के महत्व को सिखाता है, जिसे भगवान हनुमान द्वारा
+      प्रदर्शित किया गया है।
   when_to_use:
-    en: Recite this verse when seeking strength, wisdom, protection, and guidance
-      in overcoming obstacles.
-    hi: जब शक्ति, ज्ञान, सुरक्षा, और बाधाओं को पार करने में मार्गदर्शन की तलाश हो,
-      तब इस श्लोक का पाठ करें।
+    en: This verse can be recited as a prayer during times of difficulty or when seeking
+      wisdom, strength, and protection.
+    hi: यह पद कठिनाई के समय या जब ज्ञान, शक्ति और सुरक्षा की खोज में हो, तब एक प्रार्थना
+      के रूप में पढ़ा जा सकता है।
+phonetic_notes:
+- word: अतुलितबलधामं
+  phonetic: a-tu-li-ta-ba-la-dhā-maṁ
+  emphasis: third syllable
+- word: दनुजवनकृशानुं
+  phonetic: da-nu-ja-va-na-kṛ-śā-nuṁ
+  emphasis: fifth syllable
+- word: वानराणामधीशं
+  phonetic: vā-na-rā-ṇā-ma-dhī-śaṁ
+  emphasis: fourth syllable
 ---
