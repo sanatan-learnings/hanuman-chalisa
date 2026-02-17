@@ -6,7 +6,7 @@ title_en: 'Doha 2: Prayer to Hanuman'
 title_hi: 'दोहा 2: हनुमान की प्रार्थना'
 verse_number: Doha 2
 previous_verse: /chalisa/doha-01
-next_verse: /chalisa/verse-01
+next_verse: /chalisa/chaupai-01
 image: /images/hanuman-chalisa/modern-minimalist/opening-doha-02.png
 devanagari: 'बुद्धिहीन तनु जानिके,
 
