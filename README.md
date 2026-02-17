@@ -14,8 +14,8 @@ A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Han
 
 **Currently featured:**
 - **Hanuman Chalisa** ✅ Complete - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
-- **Sankat Mochan Hanumanashtak** ✅ Complete - 8 verses for removing obstacles
-- **Sundar Kaand** 🚧 In Progress - 20 verses from Ramcharitmanas describing Hanuman's journey to Lanka
+- **Sankat Mochan Hanumanashtak** ✅ Complete - 9 verses for removing obstacles
+- **Sundar Kaand** 🚧 In Progress - 25 verses from Ramcharitmanas describing Hanuman's journey to Lanka
 
 **Coming soon:**
 - Hanuman Stuti - Devotional hymns
@@ -27,11 +27,11 @@ This guide provides deep understanding of each verse with translations, meanings
 ## Features
 
 ### 📖 Read & Study
-- **3 Collections** - Hanuman Chalisa (complete), Sankat Mochan Hanumanashtak & Sundar Kaand (in progress)
+- **3 Collections** - Hanuman Chalisa (43 verses, complete), Sankat Mochan Hanumanashtak (9 verses, complete), Sundar Kaand (25 verses, in progress)
 - **Original Devanagari text** and transliteration
 - **Word-by-word meanings** and literal translations
 - **Interpretive meanings** explaining spiritual depth
-- **Stories from Ramayana** providing context
+- **Stories from Ramayana and Puranic texts** providing context
 - **Search functionality** across all collections
 - **Bilingual support** - Switch between English and Hindi instantly
 - **Beautiful AI-generated images** for each verse
@@ -50,13 +50,12 @@ This guide provides deep understanding of each verse with translations, meanings
 - **GPT-4 powered** - Thoughtful, context-aware responses
 - **Bilingual** - Works in English and Hindi
 - **Conversation history** - Maintains context for follow-up questions
-- Requires your OpenAI API key (~$0.01 per query)
+- Requires your OpenAI API key
 
 [Try Spiritual Guidance →](https://sanatan-learnings.github.io/hanuman-gpt/guidance)
 
-### 📕 Generate Custom Books
-Create personalized printable books:
-- **Multiple collections**: Choose from available collections
+### 📕 Generate Custom Books (Hanuman Chalisa)
+Create personalized printable books for Hanuman Chalisa:
 - **Multiple sizes**: 6"×4" pocket, 8"×6" medium, A5, A4
 - **Customizable content**: Choose what to include
 - **Custom headers/footers**: Personalize with your own text
