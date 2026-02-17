@@ -151,7 +151,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
 ### Traditional Sources
 Content draws upon:
-- Valmiki Ramayana
+- **Sundar Kaand**: [Hindi Wikipedia - Sundar Kaand](https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%A3%E0%A5%8D%E0%A4%A1)
 - Tulsidas's Shri Ramcharitmanas
 - Traditional commentaries by various acharyas
 - Living oral traditions of Hanuman Chalisa recitation
