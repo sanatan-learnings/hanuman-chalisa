@@ -66,7 +66,7 @@ hanuman-gpt/
 │   └── embeddings.json       # Multi-collection embeddings (4.6MB)
 ├── scripts/
 │   ├── README.md             # SDK command documentation
-│   └── requirements.txt      # Python dependencies (sanatan-sdk)
+│   └── requirements.txt      # Python dependencies (sanatan-verse-sdk)
 ├── chalisa/                  # Chalisa-specific pages
 │   ├── index.html            # Chalisa landing page
 │   ├── full-chalisa.html     # Complete chalisa view
@@ -135,16 +135,16 @@ bundle exec jekyll serve --port 4001
 - Check `.github/workflows/` for CI configuration
 - Verify GitHub Pages compatible plugins
 
-## Content Generation with sanatan-sdk
+## Content Generation with sanatan-verse-sdk
 
-All multimedia content is generated using the [sanatan-sdk](https://github.com/sanatan-learnings/sanatan-sdk):
+All multimedia content is generated using the [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk):
 
 - **verse-images** - Generate AI images with DALL-E 3
 - **verse-audio** - Generate audio pronunciations with ElevenLabs
 - **verse-embeddings** - Generate vector embeddings
 - **verse-deploy** - Deploy Cloudflare Workers
 
-Install once: `python3 -m venv venv && source venv/bin/activate && pip install sanatan-sdk`
+Install once: `python3 -m venv venv && source venv/bin/activate && pip install sanatan-verse-sdk`
 
 See [scripts/README.md](../scripts/README.md) for complete documentation.
 
@@ -160,7 +160,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-sdk
+pip install sanatan-verse-sdk
 
 # Get API key from https://platform.openai.com/api-keys
 export OPENAI_API_KEY='your-key-here'
@@ -242,7 +242,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-sdk
+pip install sanatan-verse-sdk
 
 # Get API key from https://elevenlabs.io/app/settings/api-keys
 export ELEVENLABS_API_KEY='your-key-here'
@@ -319,7 +319,7 @@ See [audio/README.md](../audio/README.md) for detailed instructions.
 ### Development Tools
 
 - **Python 3.8+** - Content generation SDK
-- **sanatan-sdk** - Content generation toolkit (images, audio, embeddings)
+- **sanatan-verse-sdk** - Content generation toolkit (images, audio, embeddings)
 - **OpenAI API** - DALL-E 3 integration for images
 - **Eleven Labs API** - Text-to-speech for audio
 - **ffmpeg** - Audio post-processing (speed control)
@@ -330,7 +330,7 @@ See [audio/README.md](../audio/README.md) for detailed instructions.
 
 - `jekyll-seo-tag` - SEO optimization
 - `jekyll-sitemap` - Sitemap generation
-- `sanatan-sdk` - Content generation SDK (includes openai, elevenlabs, requests, pillow)
+- `sanatan-verse-sdk` - Content generation SDK (includes openai, elevenlabs, requests, pillow)
 
 ## File Formats
 
@@ -448,7 +448,7 @@ All images should be:
 
 ### DALL-E 3 Configuration
 
-The sanatan-sdk handles all API configuration. Default settings:
+The sanatan-verse-sdk handles all API configuration. Default settings:
 
 ```python
 # sanatan_sdk/images/generator.py

@@ -86,8 +86,8 @@ Want to contribute or generate custom themes?
 ### Quick Start: Generate Verse Content
 
 ```bash
-# Install sanatan-sdk 0.21.0+
-pip install sanatan-sdk
+# Install sanatan-verse-sdk 0.25.2+
+pip install sanatan-verse-sdk
 
 # Auto-detect and generate next verse (image + audio + embeddings)
 verse-generate \
@@ -160,7 +160,7 @@ Content draws upon:
 - Living oral traditions of Hanuman Chalisa recitation
 
 ### Technology
-Built with Jekyll, GitHub Pages, DALL-E 3, ElevenLabs, GPT-4, and sanatan-sdk.
+Built with Jekyll, GitHub Pages, DALL-E 3, ElevenLabs, GPT-4, and sanatan-verse-sdk.
 
 → See [Tech Stack](docs/reference/tech-stack.md) for complete architecture and technology details
 

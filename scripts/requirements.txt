@@ -1,5 +1,5 @@
 # Requirements for verse content generation scripts
-# Now using the unified verse-sdk
+# Now using sanatan-verse-sdk
 #
 # Usage:
 #   python3 -m venv venv
@@ -7,8 +7,7 @@
 #   pip install -r scripts/requirements.txt
 
 # Verse Content SDK - provides all tools for embeddings, audio, images, and deployment
-# Install from GitHub:
-git+https://github.com/sanatan-learnings/verse-sdk.git
+sanatan-verse-sdk
 
 # Note: The SDK includes all necessary dependencies:
 # - openai (for DALL-E 3, embeddings, GPT)

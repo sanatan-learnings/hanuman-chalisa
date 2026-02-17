@@ -55,7 +55,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-sdk
+pip install sanatan-verse-sdk
 
 # Deploy
 verse-deploy

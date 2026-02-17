@@ -106,9 +106,10 @@ git push origin main
 4. **Embeddings not updating**: Run verse-generate with --all flag
 
 ## SDK Version
-Currently using sanatan-sdk 0.21.0 - upgrade regularly for new features and fixes.
+Currently using sanatan-verse-sdk 0.25.2 - upgrade regularly for new features and fixes.
 
 **Recent updates:**
+- 0.25.2: Package renamed from sanatan-sdk to sanatan-verse-sdk
 - 0.21.0: Supports `data/themes/` location (Issue #5)
 - 0.20.3: Supports `_data/collections.yml` (Issue #4), audio hyphen naming
 - 0.20.2: Fixed validation bug (Issue #3)
@@ -119,11 +120,11 @@ Currently using sanatan-sdk 0.21.0 - upgrade regularly for new features and fixe
 ```bash
 # Correct - uses venv
 ./venv/bin/verse-generate --collection sundar-kaand --verse 18 ...
-./venv/bin/pip install --upgrade sanatan-sdk
+./venv/bin/pip install --upgrade sanatan-verse-sdk
 
 # Wrong - uses system Python
 verse-generate --collection sundar-kaand --verse 18 ...
-pip install --upgrade sanatan-sdk
+pip install --upgrade sanatan-verse-sdk
 ```
 
 ## Cost Per Verse
