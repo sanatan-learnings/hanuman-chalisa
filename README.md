@@ -159,10 +159,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 - **Claude Code** (Anthropic) - AI-assisted content generation and development
 - **Human review** - All content validated for accuracy and devotional authenticity
 
-### Traditional Sources
-Content draws upon:
+### Content Sources
 - **Sundar Kaand**: [Hindi Wikipedia - Sundar Kaand](https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%A3%E0%A5%8D%E0%A4%A1)
-- Tulsidas's Shri Ramcharitmanas
+- **Hanuman Chalisa**: AI-generated content (OpenAI)
+- **Hanuman Ashtak**: AI-generated content (OpenAI)
 
 ### Technology
 Built with Jekyll, GitHub Pages, DALL-E 3, ElevenLabs, GPT-4, and sanatan-verse-sdk.
