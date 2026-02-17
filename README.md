@@ -81,35 +81,45 @@ Want to contribute or generate custom themes?
 
 **→ See [CONTRIBUTING.md](CONTRIBUTING.md)** for contribution guidelines
 
-### Quick Start: Generate Verse Content
+### Quick Start: Run Locally
 
 ```bash
-# Install sanatan-verse-sdk 0.27.0+
-pip install sanatan-verse-sdk
+# 1. Clone the repository
+git clone https://github.com/sanatan-learnings/hanuman-gpt.git
+cd hanuman-gpt
+
+# 2. Set up Python virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install Python dependencies
+pip install -r scripts/requirements.txt
+
+# 4. Install Ruby dependencies
+bundle install
+
+# 5. Run Jekyll locally
+bundle exec jekyll serve --force_polling
+
+# Visit http://localhost:4000/hanuman-gpt/
+```
+
+**→ See [Local Development Guide](docs/guides/local-development.md)** for detailed setup instructions and troubleshooting.
+
+### Generate New Verse Content
+
+```bash
+# Set up environment variables
+set -a && source .env && set +a
 
 # Auto-detect and generate next verse (image + audio + embeddings)
-verse-generate \
+./venv/bin/verse-generate \
   --collection sundar-kaand \
   --next \
   --regenerate-content \
   --auto-generate-scene
-```
 
-**What it generates:**
-- Verse: `_verses/sundar-kaand/chaupai-20.md` (AI-generated content from canonical YAML)
-- Image: `images/sundar-kaand/modern-minimalist/chaupai-20.png`
-- Audio: `audio/sundar-kaand/chaupai-20-full.mp3` + `chaupai-20-slow.mp3`
-- Scene: `data/scenes/sundar-kaand.yml` (auto-generated if needed)
-- Embeddings: Updated automatically
-
-**Cost:** ~$0.05-0.06 per verse (DALL-E 3 + ElevenLabs + AI content generation)
-
-**Bulk regenerate embeddings** (only if you've manually edited multiple verses):
-```bash
-verse-embeddings --multi-collection \
-  --collections-file _data/collections.yml \
-  --verses-dir _verses \
-  --output data/embeddings.json
+# Cost: ~$0.05-0.06 per verse (DALL-E 3 + ElevenLabs + AI content)
 ```
 
 ## Documentation
