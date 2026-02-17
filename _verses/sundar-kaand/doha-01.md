@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/doha-01/
-title_en: 'Doha 1: Hanuman's Devotion to Rama's Task'
-title_hi: 'दोहा 1: हनुमान की राम के कार्य के प्रति भक्ति'
+title_en: "Doha 1: Hanuman's Devotion to Rama's Task"
+title_hi: "दोहा 1: हनुमान की राम के कार्य के प्रति भक्ति"
 verse_number: 13
 verse_type: doha
 previous_verse: /sundar-kaand/chaupai-09

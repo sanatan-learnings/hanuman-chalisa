@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-12/
-title_en: 'Chaupai 12: Hanumans Humble Request for Food'
-title_hi: 'चौपाई 12: हनुमान की विनम्र भोजन की अनुरोध'
+title_en: "Chaupai 12: Hanumans Humble Request for Food"
+title_hi: "चौपाई 12: हनुमान की विनम्र भोजन की अनुरोध"
 verse_number: 16
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-11

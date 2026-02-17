@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-11/
-title_en: 'Chaupai 11: Surasa, the Mother of Serpents'
-title_hi: 'चौपाई 11: सुरसा, सर्पों की माता'
+title_en: "Chaupai 11: Surasa, the Mother of Serpents"
+title_hi: "चौपाई 11: सुरसा, सर्पों की माता"
 verse_number: 15
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-10

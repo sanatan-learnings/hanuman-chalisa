@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-03/
-title_en: 'Chaupai 3: Anticipation of Seeing Sita'
-title_hi: 'चौपाई 3: सीता को देखने की उत्कंठा'
+title_en: "Chaupai 3: Anticipation of Seeing Sita"
+title_hi: "चौपाई 3: सीता को देखने की उत्कंठा"
 verse_number: 6
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-02

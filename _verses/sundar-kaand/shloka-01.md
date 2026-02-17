@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/shloka-01/
-title_en: 'Shloka 1: Praise of the Divine Rama'
-title_hi: 'श्लोक 1: दिव्य राम की स्तुति'
+title_en: "Shloka 1: Praise of the Divine Rama"
+title_hi: "श्लोक 1: दिव्य राम की स्तुति"
 verse_number: 1
 verse_type: shloka
 next_verse: /sundar-kaand/shloka-02/

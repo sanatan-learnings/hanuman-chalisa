@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-08/
-title_en: 'Chaupai 8: Hanumans Unfailing Journey'
-title_hi: 'चौपाई 8: हनुमान की अविच्युत यात्रा'
+title_en: "Chaupai 8: Hanumans Unfailing Journey"
+title_hi: "चौपाई 8: हनुमान की अविच्युत यात्रा"
 verse_number: 11
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-07

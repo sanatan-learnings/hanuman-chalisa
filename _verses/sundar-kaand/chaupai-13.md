@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-13/
-title_en: 'Chaupai 13: Hanumans Unwavering Resolve'
-title_hi: 'चौपाई 13: हनुमान का अटल संकल्प'
+title_en: "Chaupai 13: Hanumans Unwavering Resolve"
+title_hi: "चौपाई 13: हनुमान का अटल संकल्प"
 verse_number: 17
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-12

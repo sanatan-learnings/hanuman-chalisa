@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-06/
-title_en: 'Chaupai 6: Repeated Remembrance of Raghuvir'
-title_hi: 'चौपाई 6: बार बार रघुवीर की स्मरण'
+title_en: "Chaupai 6: Repeated Remembrance of Raghuvir"
+title_hi: "चौपाई 6: बार बार रघुवीर की स्मरण"
 verse_number: 9
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-05

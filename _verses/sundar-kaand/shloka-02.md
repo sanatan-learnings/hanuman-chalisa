@@ -21,8 +21,8 @@ translation:
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/shloka-02/
-title_en: 'Shloka 2: Devotion and Purity of Heart'
-title_hi: 'श्लोक 2: भक्ति और हृदय की शुद्धता'
+title_en: "Shloka 2: Devotion and Purity of Heart"
+title_hi: "श्लोक 2: भक्ति और हृदय की शुद्धता"
 previous_verse: /sundar-kaand/shloka-01/
 next_verse: /sundar-kaand/shloka-03/
 image: /images/sundar-kaand/modern-minimalist/shloka-02.png

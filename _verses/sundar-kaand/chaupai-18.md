@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-18/
-title_en: 'Chaupai 18: Hanumans Changing Form'
-title_hi: 'चौपाई 18: हनुमान का रूप परिवर्तन'
+title_en: "Chaupai 18: Hanumans Changing Form"
+title_hi: "चौपाई 18: हनुमान का रूप परिवर्तन"
 verse_number: 22
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-17/

@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-05/
-title_en: 'Chaupai 5: Leaping onto the Beautiful Mountain'
-title_hi: 'चौपाई 5: सुंदर पर्वत पर कूदना'
+title_en: "Chaupai 5: Leaping onto the Beautiful Mountain"
+title_hi: "चौपाई 5: सुंदर पर्वत पर कूदना"
 verse_number: 8
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-04
