@@ -36,9 +36,9 @@ This guide provides deep understanding of each verse with translations, meanings
 - **Bilingual support** - Switch between English and Hindi instantly
 - **Beautiful AI-generated images** for each verse
 
-### 🎵 Audio Pronunciation (Hanuman Chalisa)
-- **86 audio files** - Every Chalisa verse in two speeds (full and slow)
-- **Full speed** - Natural recitation pace for experienced practitioners
+### 🎵 Audio Pronunciation
+- **Two speeds** - Regular and slow speed for every verse
+- **Regular speed** - Natural recitation pace for experienced practitioners
 - **Slow speed** - 25% slower for learning pronunciation
 - **AI-generated** - Clear, natural Hindi/Sanskrit pronunciation via Eleven Labs
 - **Embedded players** - Listen directly on each verse page
