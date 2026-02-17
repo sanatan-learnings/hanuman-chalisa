@@ -7,7 +7,7 @@ Documentation for the Hanuman GPT website (multi-collection sacred texts).
 **One command** to create image + audio + embeddings for any verse:
 
 ```bash
-# Install sanatan-verse-sdk 0.20.4+
+# Install sanatan-verse-sdk 0.27.0+
 pip install sanatan-verse-sdk
 
 # Auto-detect and generate next verse
@@ -15,8 +15,7 @@ verse-generate \
   --collection sundar-kaand \
   --next \
   --regenerate-content \
-  --auto-generate-scene \
-  --all
+  --auto-generate-scene
 
 # Output:
 #   ✓ Verse: _verses/sundar-kaand/chaupai-20.md
@@ -54,7 +53,7 @@ docs/
 
 ```bash
 # Generate complete content for one verse (verse ID auto-detected from existing files)
-verse-generate --collection sundar-kaand --verse 5 --all --theme modern-minimalist
+verse-generate --collection sundar-kaand --verse 5 --theme modern-minimalist
 ```
 
 ### Batch Operations

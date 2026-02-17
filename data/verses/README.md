@@ -105,8 +105,7 @@ The `verse-generate` command automatically reads from these files:
 ./venv/bin/verse-generate \
   --collection hanuman-chalisa \
   --verse doha-01 \
-  --regenerate-content \
-  --all
+  --regenerate-content
 ```
 
 The SDK uses:

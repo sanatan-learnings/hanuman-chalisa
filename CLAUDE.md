@@ -31,13 +31,13 @@ data/
 
 ## Generating New Verses
 
-**Use the `verse-generate` command with SDK 0.21.0+**
+**Use the `verse-generate` command with SDK 0.27.0+**
 
 The SDK automates the complete workflow:
 - Auto-detects next verse to generate (`--next` flag)
 - Auto-generates scene descriptions (`--auto-generate-scene` flag)
 - Generates AI content from canonical source (`--regenerate-content` flag)
-- Creates verse file, image, audio, and embeddings (`--all` flag)
+- Creates verse file, image, audio, and embeddings automatically
 - Updates navigation links automatically
 - Uses correct hyphenated filenames
 
@@ -48,8 +48,7 @@ set -a && source .env && set +a
   --collection sundar-kaand \
   --next \
   --regenerate-content \
-  --auto-generate-scene \
-  --all
+  --auto-generate-scene
 ```
 
 **Generate specific verse:**
@@ -59,8 +58,7 @@ set -a && source .env && set +a
   --collection sundar-kaand \
   --verse chaupai-15 \
   --regenerate-content \
-  --auto-generate-scene \
-  --all
+  --auto-generate-scene
 ```
 
 **Verify generated files use hyphens:**
@@ -103,12 +101,13 @@ git push origin main
 1. **404 on images/audio**: Check file names use hyphens not underscores
 2. **Verses not displaying**: Check collection_key, verse_type, permalink format
 3. **Section counts wrong**: Verify verse_type field is set correctly (chaupai/doha/shloka)
-4. **Embeddings not updating**: Run verse-generate with --all flag
+4. **Embeddings not updating**: Re-run verse-generate command
 
 ## SDK Version
-Currently using sanatan-verse-sdk 0.25.2 - upgrade regularly for new features and fixes.
+Currently using sanatan-verse-sdk 0.27.0 - upgrade regularly for new features and fixes.
 
 **Recent updates:**
+- 0.27.0: `--all` flag no longer needed (verse-generate creates everything by default)
 - 0.25.2: Package renamed from sanatan-sdk to sanatan-verse-sdk
 - 0.21.0: Supports `data/themes/` location (Issue #5)
 - 0.20.3: Supports `_data/collections.yml` (Issue #4), audio hyphen naming

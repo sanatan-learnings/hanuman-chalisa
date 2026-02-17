@@ -86,7 +86,7 @@ Want to contribute or generate custom themes?
 ### Quick Start: Generate Verse Content
 
 ```bash
-# Install sanatan-verse-sdk 0.25.2+
+# Install sanatan-verse-sdk 0.27.0+
 pip install sanatan-verse-sdk
 
 # Auto-detect and generate next verse (image + audio + embeddings)
@@ -94,8 +94,7 @@ verse-generate \
   --collection sundar-kaand \
   --next \
   --regenerate-content \
-  --auto-generate-scene \
-  --all
+  --auto-generate-scene
 ```
 
 **What it generates:**
