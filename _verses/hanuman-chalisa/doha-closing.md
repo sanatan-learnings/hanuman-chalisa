@@ -6,7 +6,7 @@ title_en: 'Closing Doha: Final Prayer'
 title_hi: 'समापन दोहा: अंतिम प्रार्थना'
 verse_number: Doha Closing
 previous_verse: /chalisa/chaupai-40
-next_verse: ''
+next_verse: /chalisa/
 image: /images/hanuman-chalisa/modern-minimalist/closing-doha.png
 devanagari: 'पवनतनय संकट हरन,
 

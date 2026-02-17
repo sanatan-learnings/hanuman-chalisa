@@ -7,7 +7,7 @@ title_hi: दैवी ज्ञान और शक्ति की खोज
 verse_number: 25
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-20/
-next_verse: ''
+next_verse: /sundar-kaand/
 image: /images/sundar-kaand/modern-minimalist/chaupai-21.png
 devanagari: मोहि सुरन्ह जेहि लागि पठावा। बुधि बल मरमु तोर मै पावा॥
 transliteration: mohi suranha jehi laagi paṭhāvā. budhi bal maramu tora mai pāvā.
