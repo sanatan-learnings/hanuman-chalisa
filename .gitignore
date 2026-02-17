@@ -23,7 +23,6 @@ _site/
 # Ruby/Bundler
 .bundle/
 vendor/bundle/
-Gemfile.lock
 
 # Logs
 *.log
