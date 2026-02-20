@@ -1,9 +1,12 @@
 # Canonical verse text for Bajrang Baan
 # Source: https://hanuman-chalisa-bhajan.blogspot.com/2019/08/bajrang-baan-lyrics.html
+# WARNING: This source appears INCOMPLETE (35 chaupai lines vs. 44-47 in Gita Press edition).
+# TODO: Replace with Gita Press edition for the complete canonical text.
 
 _meta:
   collection: bajrang-baan
   source: "https://hanuman-chalisa-bhajan.blogspot.com/2019/08/bajrang-baan-lyrics.html"
+  source_status: "INCOMPLETE - 35 chaupai lines found; authoritative Gita Press version has 44-47"
   description: "Bajrang Baan - Protective hymn to Lord Hanuman by Goswami Tulsidas"
   sequence:
     - doha-opening
