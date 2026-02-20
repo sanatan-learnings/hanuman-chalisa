@@ -7,56 +7,85 @@ title: Bajrang Baan
 {% assign coll = site.data.collections.bajrang-baan %}
 
 <div class="hero-section">
-    <div class="collection-banner">
-        <span class="collection-icon-large">{{ coll.icon }}</span>
-        <h1>
-            <span data-lang="en">{{ coll.name_en }}</span>
-            <span data-lang="hi">{{ coll.name_hi }}</span>
-        </h1>
-        <p class="collection-author-large">
-            <span data-lang="en">by {{ coll.author_en }}</span>
-            <span data-lang="hi">{{ coll.author_hi }} द्वारा</span>
-        </p>
-        <p class="collection-description-large">
-            <span data-lang="en">{{ coll.description_en }}</span>
-            <span data-lang="hi">{{ coll.description_hi }}</span>
-        </p>
+    <div class="title-image-container">
+        <img src="{{ '/images/bajrang-baan/modern-minimalist/title-page.png' | relative_url }}" alt="Bajrang Baan Title Page" class="title-page-image">
     </div>
-
     <div class="quick-actions">
         <a href="{{ '/chalisa/book' | relative_url }}?collection=bajrang-baan" class="btn-primary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
     </div>
 </div>
 
 <section class="verse-navigation">
-    <h3>🛡️ <span data-lang="en">Bajrang Baan Verses</span><span data-lang="hi">बजरंग बाण पद</span></h3>
+    <h3>🛡️ <span data-lang="en">Bajrang Baan</span><span data-lang="hi">बजरंग बाण</span></h3>
+
+    <h3>🪷 <span data-lang="en">Opening Doha (1 Verse)</span><span data-lang="hi">प्रारंभिक दोहा (1 पद)</span></h3>
     <div class="verse-grid">
-        {% assign verses = site.verses | where: "collection_key", "bajrang-baan" | sort: "verse_number" %}
-        {% if verses.size > 0 %}
-            {% for verse in verses %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
-                {% if verse.image %}
-                <div class="card-image">
-                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
-                </div>
-                {% endif %}
-                <div class="card-content">
-                    <div class="verse-number">
-                        <span data-lang="en">Verse {{ verse.verse_number }}</span>
-                        <span data-lang="hi">पद {{ verse.verse_number }}</span>
-                    </div>
-                    <div class="verse-title">
-                        <span data-lang="en">{{ verse.title_en }}</span>
-                        <span data-lang="hi">{{ verse.title_hi }}</span>
-                    </div>
-                </div>
-            </a>
-            {% endfor %}
-        {% else %}
-            <div class="placeholder-message">
-                <p data-lang="en">📝 Verses coming soon...</p>
-                <p data-lang="hi">📝 शीघ्र ही उपलब्ध होगा...</p>
+        {% assign doha_opening = site.verses | where: "collection_key", "bajrang-baan" | where_exp: "item", "item.url contains 'doha-opening'" | first %}
+        <a href="{{ doha_opening.url | relative_url }}" class="verse-card">
+            {% if doha_opening.image %}
+            <div class="card-image">
+                <img src="{{ doha_opening.image | relative_url }}" alt="{{ doha_opening.title_en }}" loading="lazy">
             </div>
-        {% endif %}
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">
+                    <span data-lang="en">Opening Doha</span>
+                    <span data-lang="hi">प्रारंभिक दोहा</span>
+                </div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ doha_opening.title_en }}</span>
+                    <span data-lang="hi">{{ doha_opening.title_hi }}</span>
+                </div>
+            </div>
+        </a>
     </div>
+
+    {% assign chaupais = site.verses | where: "collection_key", "bajrang-baan" | where: "verse_type", "chaupai" | sort: "verse_number" %}
+    {% assign chaupai_count = chaupais | size %}
+    <h3>📿 <span data-lang="en">Chaupais ({{ chaupai_count }} Verses)</span><span data-lang="hi">चौपाई ({{ chaupai_count }} पद)</span></h3>
+    <div class="verse-grid">
+        {% for verse in chaupais %}
+        <a href="{{ verse.url | relative_url }}" class="verse-card">
+            {% if verse.image %}
+            <div class="card-image">
+                <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">
+                    {% assign chaupai_num = verse.verse_number | minus: 1 %}
+                    <span data-lang="en">Chaupai {{ chaupai_num }}</span>
+                    <span data-lang="hi">चौपाई {{ chaupai_num }}</span>
+                </div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ verse.title_en }}</span>
+                    <span data-lang="hi">{{ verse.title_hi }}</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+    <h3>🙏 <span data-lang="en">Closing Doha (1 Verse)</span><span data-lang="hi">समापन दोहा (1 पद)</span></h3>
+    <div class="verse-grid">
+        {% assign doha_closing = site.verses | where: "collection_key", "bajrang-baan" | where_exp: "item", "item.url contains 'doha-closing'" | first %}
+        <a href="{{ doha_closing.url | relative_url }}" class="verse-card">
+            {% if doha_closing.image %}
+            <div class="card-image">
+                <img src="{{ doha_closing.image | relative_url }}" alt="{{ doha_closing.title_en }}" loading="lazy">
+            </div>
+            {% endif %}
+            <div class="card-content">
+                <div class="verse-number">
+                    <span data-lang="en">Closing Doha</span>
+                    <span data-lang="hi">समापन दोहा</span>
+                </div>
+                <div class="verse-title">
+                    <span data-lang="en">{{ doha_closing.title_en }}</span>
+                    <span data-lang="hi">{{ doha_closing.title_hi }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
 </section>

@@ -2,12 +2,12 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-21/
-title_en: "Chaupai 21: Seeking Divine Wisdom and Strength"
-title_hi: "चौपाई 21: दैवी ज्ञान और शक्ति की खोज"
+title_en: 'Chaupai 21: Seeking Divine Wisdom and Strength'
+title_hi: 'चौपाई 21: दैवी ज्ञान और शक्ति की खोज'
 verse_number: 25
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-20/
-next_verse: /sundar-kaand/
+next_verse: /sundar-kaand/doha-02/
 image: /images/sundar-kaand/modern-minimalist/chaupai-21.png
 devanagari: मोहि सुरन्ह जेहि लागि पठावा। बुधि बल मरमु तोर मै पावा॥
 transliteration: mohi suranha jehi laagi paṭhāvā. budhi bal maramu tora mai pāvā.

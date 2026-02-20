@@ -35,7 +35,7 @@ bajrang-baan:
   permalink_base: "/bajrang-baan/"
   icon: "🛡️"
   subdirectory: "bajrang-baan"
-  enabled: false
+  enabled: true
 
 hanuman-bahuk:
   key: "hanuman-bahuk"
