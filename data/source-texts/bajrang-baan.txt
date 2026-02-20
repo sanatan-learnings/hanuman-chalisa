@@ -1,11 +1,11 @@
-Bajrang Baan text from https://hanuman-chalisa-bhajan.blogspot.com/2019/08/bajrang-baan-lyrics.html
+Bajrang Baan text from https://vedpuran.net/wp-content/uploads/2021/05/bajrang-baan.pdf
 
 NOTE: This source appears INCOMPLETE. It contains only 35 chaupai lines (18 two-line groups),
 while authoritative versions (e.g., Gita Press) have 44-47 chaupai lines.
 TODO: Replace with the Gita Press edition for the complete canonical text.
 
-॥दोहा॥
 
+॥दोहा॥
 निश्चय प्रेम प्रतीति ते, बिनय करै सनमान।
 तेहि के कारज सकल शुभ, सिद्ध करै हनुमान॥
 
