@@ -96,7 +96,7 @@ book:
 
 guidance:
   title: "Spiritual Guidance"
-  subtitle: "Ask questions and receive wisdom from sacred Hindu texts"
+  subtitle: "Ask questions and receive wisdom from sacred texts devoted to Lord Hanuman"
   api_key_prompt: "Enter your OpenAI API key to begin"
   api_key_placeholder: "sk-..."
   api_key_save: "Save API Key"

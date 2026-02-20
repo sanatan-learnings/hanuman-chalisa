@@ -96,7 +96,7 @@ book:
 
 guidance:
   title: "आध्यात्मिक मार्गदर्शन"
-  subtitle: "प्रश्न पूछें और पवित्र हिंदू ग्रंथों से ज्ञान प्राप्त करें"
+  subtitle: "प्रश्न पूछें और भगवान हनुमान को समर्पित पवित्र ग्रंथों से ज्ञान प्राप्त करें"
   api_key_prompt: "शुरू करने के लिए अपनी OpenAI API key दर्ज करें"
   api_key_placeholder: "sk-..."
   api_key_save: "API Key सहेजें"
