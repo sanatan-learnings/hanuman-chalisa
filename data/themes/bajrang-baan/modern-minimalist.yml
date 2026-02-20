@@ -1,0 +1,16 @@
+name: Modern Minimalist
+description: Clean, minimal design with spiritual focus
+
+theme:
+  generation:
+    style_modifier: |
+      Style: Modern minimalist Indian devotional art. Clean composition with balanced negative space.
+      Soft, warm color palette featuring deep saffron, spiritual blue, gentle gold accents, and cream tones.
+      Simplified forms with spiritual elegance. Subtle divine glow and ethereal lighting.
+      Contemporary interpretation of traditional Indian spiritual art.
+      Portrait orientation (1024x1792), will be cropped to 1024x1536 for final display.
+
+# Image generation settings
+size: "1024x1792"        # Portrait format (recommended)
+quality: "standard"      # Options: standard ($0.04), hd ($0.08)
+style: "natural"         # Options: natural, vivid

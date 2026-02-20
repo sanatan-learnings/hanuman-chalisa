@@ -1,0 +1,14 @@
+# Scene descriptions for Bajrang Baan
+#
+# Format: verse ID as key, scene description as value
+# Be specific and concrete - describe what should be visible in the image
+# Include: setting, characters, poses, lighting, mood, and visual elements
+
+verse-01: |
+  [Add detailed scene description here]
+
+verse-02: |
+  [Add scene description for verse 2]
+
+verse-03: |
+  [Add scene description for verse 3]

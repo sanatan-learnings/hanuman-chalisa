@@ -1,0 +1,27 @@
+# Canonical verse text for bajrang-baan
+# This is the authoritative source for Devanagari text
+
+_meta:
+  collection: bajrang-baan
+  source: "[Add source URL here]"
+  description: "Bajrang Baan"
+
+  # Optional: Define reading sequence for ordered playback
+  sequence:
+    - verse-01
+    - verse-02
+    - verse-03
+
+# Add your verses here with canonical Devanagari text
+# Format 1: Dict with devanagari field (recommended for extensibility)
+verse-01:
+  devanagari: "[Add canonical Devanagari text here]"
+
+verse-02:
+  devanagari: "[Add canonical Devanagari text here]"
+
+verse-03:
+  devanagari: "[Add canonical Devanagari text here]"
+
+# Format 2: Simple string (more concise)
+# verse-01: "Devanagari text here"

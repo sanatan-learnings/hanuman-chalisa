@@ -36,8 +36,8 @@ data/
 The SDK automates the complete workflow:
 - Auto-detects next verse to generate (`--next` flag)
 - Auto-generates scene descriptions (`--auto-generate-scene` flag)
-- Generates AI content from canonical source (`--regenerate-content` flag)
-- Creates verse file, image, audio, and embeddings automatically
+- Creates verse file, image, audio, and embeddings automatically by default
+- `--regenerate-content` only regenerates text — it suppresses image/audio unless combined with `--image --audio`
 - Updates navigation links automatically
 - Uses correct hyphenated filenames
 
@@ -47,7 +47,6 @@ set -a && source .env && set +a
 ./venv/bin/verse-generate \
   --collection sundar-kaand \
   --next \
-  --regenerate-content \
   --auto-generate-scene
 ```
 
@@ -57,7 +56,6 @@ set -a && source .env && set +a
 ./venv/bin/verse-generate \
   --collection sundar-kaand \
   --verse chaupai-15 \
-  --regenerate-content \
   --auto-generate-scene
 ```
 
