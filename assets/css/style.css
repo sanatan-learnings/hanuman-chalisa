@@ -206,28 +206,12 @@ main {
     color: #666;
 }
 
-.site-tagline {
-    margin: 0.5rem auto 0.4rem;
-    font-size: 1.1em;
-    color: #444;
-    font-weight: 500;
-}
-
-.feature-pills {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 0.4rem 0 0.5rem;
-}
-
-.feature-pill {
-    background: #fff7f0;
-    border: 1px solid #f0c090;
-    border-radius: 20px;
-    padding: 4px 14px;
-    font-size: 0.88em;
-    color: #b05010;
+.site-description {
+    margin: 0.75rem auto 0.75rem;
+    max-width: 640px;
+    font-size: 0.97em;
+    color: #555;
+    line-height: 1.6;
 }
 
 .title-image-container {
