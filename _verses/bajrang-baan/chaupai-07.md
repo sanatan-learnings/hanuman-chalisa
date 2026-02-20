@@ -103,4 +103,5 @@ meaning: Akshay Kumar (Indestructible Son) was killed and destroyed. Enveloping 
 translation:
   en: Killed the indestructible son, destroyed. Wrapped in his tail, set Lanka on
     fire.
+next_verse: /bajrang-baan/chaupai-08/
 ---
