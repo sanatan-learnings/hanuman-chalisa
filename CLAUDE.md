@@ -102,9 +102,10 @@ git push origin main
 4. **Embeddings not updating**: Re-run verse-generate command
 
 ## SDK Version
-Currently using sanatan-verse-sdk 0.27.2 - upgrade regularly for new features and fixes.
+Currently using sanatan-verse-sdk 0.27.3 - upgrade regularly for new features and fixes.
 
 **Recent updates:**
+- 0.27.3: Minor fixes
 - 0.27.2: Minor fixes
 - 0.27.1: Minor fixes
 - 0.27.0: `--all` flag no longer needed (verse-generate creates everything by default)
