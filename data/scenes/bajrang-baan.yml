@@ -4,9 +4,72 @@ _meta:
 scenes:
   title-page:
     title: Bajrang Baan Title Page
-    description: Close-up portrait of Lord Hanuman's face and chest filling the lower two-thirds
-      of the frame. His crowned head, serene yet fierce face, and broad chest with jewelled
-      necklace are the focal point, centered vertically in the image. The upper third of the
-      image is an expansive radiant sky with golden divine light and sacred mandalas. His
-      expression radiates strength and compassion. Saffron, gold and spiritual blue tones.
-      No full body — just face, crown and upper chest prominently visible at center frame.
+    description: Close-up portrait of Lord Hanuman's face and chest filling the lower two-thirds of the frame. His crowned
+      head, serene yet fierce face, and broad chest with jewelled necklace are the focal point, centered vertically in the
+      image. The upper third of the image is an expansive radiant sky with golden divine light and sacred mandalas. His expression
+      radiates strength and compassion. Saffron, gold and spiritual blue tones. No full body — just face, crown and upper
+      chest prominently visible at center frame.
+  doha-opening:
+    title: 'Doha 1: Assurance of Devotion and Respect [AI-Generated - Review Recommended]'
+    description: In the foreground, a humble devotee is shown offering prayers with a deep sense of love (prem) and trust
+      (prateeti), his eyes closed in devotion, hands folded in reverence (vinay). In the celestial background, the divine
+      Hanuman, bathed in a gentle, warm glow, is actively engaged in fulfilling the devotee's virtuous deeds (kaaraj). The
+      atmosphere is serene, imbued with spiritual energy and the setting is a tranquil temple courtyard at dusk, under a sky
+      painted with hues of orange and purple. Symbolic elements like the devotee's traditional attire, a garland of Rudraksha
+      beads, and an opened Sanskrit scripture on a wooden stand add depth to the narrative.
+  chaupai-01:
+    title: 'Chaupai 1: Praise to Hanuman, the Benefactor of Saints [AI-Generated - Review Recommended]'
+    description: In the soft, ethereal light of dawn, the divine figure of Hanuman, the revered monkey god, stands tall against
+      a backdrop of majestic, ancient temples and lush, verdant forests. His muscular, ochre body radiates a gentle glow,
+      his face serene yet powerful, eyes closed in deep meditation as he listens intently to the earnest prayers of the devout.
+      The mood is one of profound tranquility and reverence, the atmosphere thick with spiritual energy, enhanced by the symbolic
+      presence of the sun just peeping over the horizon and the gently glowing diyas lighting the foreground. The focus is
+      on Hanuman, a beacon of hope and strength, his form occupying the central space, with the surrounding temples serving
+      as a testament to his spirituality.
+  chaupai-02:
+    title: 'Chaupai 2: Swift Assistance in Distress [AI-Generated - Review Recommended]'
+    description: A serene, tranquil setting of a lush forest at the edge of a calm river under a radiant, early morning sky.
+      At the center, a benevolent deity, bathed in soft, golden light, stands tall, extending an open hand towards a distressed
+      devotee kneeling humbly in prayer. The deity's other hand gently showers a cascade of glowing, ethereal blessings, symbolizing
+      Maha Sukh (great joy), onto the devotee, illuminating the surroundings and casting a warm, comforting glow. In the background,
+      the forest teems with life, highlighting the interconnectedness of all beings, while the river, symbolizing life's flow,
+      moves unhindered, embodying 'Jan ke Kaaj Vilamb Na Keejai' (don't delay in the tasks of your followers).
+  chaupai-03:
+    title: 'Chaupai 3: Crossing the Ocean, Expanding Form [AI-Generated - Review Recommended]'
+    description: An ethereal scene at the twilight hour, where Lord Hanuman is depicted leaping over the ocean, stretching
+      his colossal, muscular body to its full extent, with the dusky orange sun setting in the backdrop. The massive form
+      of Surasa, the sea serpent, rises from the turbulent sea, her scaly body glistening wet, and mouth wide open in an attempt
+      to devour him. The scene is infused with a sense of divine drama and tension, highlighted by the dramatic play of shadows
+      and the radiant glow from the setting sun. The focus is on the fearless expression on Hanuman's face, the intimidating
+      jaws of Surasa, and the vast expanse of the ocean beneath them, symbolizing the immense challenges one has to overcome
+      in the path of duty and devotion.
+  chaupai-04:
+    title: 'Chaupai 4: Hanuman Reaches Lanka [AI-Generated - Review Recommended]'
+    description: Hanuman standing triumphant at the golden gates of Lanka, his divine form radiating saffron light against
+      a deep twilight sky. His posture is calm and powerful, one hand raised in a gesture of fearlessness. The ancient city
+      of Lanka glows in the background with golden spires. The atmosphere is one of divine mission accomplished — serene
+      determination and spiritual strength. Celestial light emanates from Hanuman's form, illuminating the gateway. Saffron,
+      gold, and deep blue tones convey the sacred nature of his arrival.
+  chaupai-05:
+    title: 'Chaupai 5: Bestowing Bliss on Vibhishan [AI-Generated - Review Recommended]'
+    description: In a celestial landscape at twilight, the benevolent Lord Hanuman, bathed in a soft divine glow, is bestowing
+      blessings upon a grateful Vibhishan, who kneels with folded hands. In the background, Sita, emanating a serene luminescence,
+      is absorbed in deep meditation, ascending towards a radiant, ethereal lotus symbolizing the ultimate spiritual state.
+      The atmosphere is imbued with tranquility and reverence, the sky filled with pastel hues of sunset, while strategically
+      placed divine artifacts add a symbolic depth to the composition. Every element is rendered with a dream-like softness
+      emphasizing the spiritual and surreal nature of the scene.
+  chaupai-06:
+    title: 'Chaupai 6: Destroyer of Gardens, Terrifier of Yama [AI-Generated - Review Recommended]'
+    description: In the heart of a vast, barren orchard stripped of its lush greenery, a turbulent ocean roars, its dark waters
+      reflecting the dim, ominous twilight sky. The god of death, Yama, stands nervously on the shoreline, his usually imposing
+      figure dwarfed by the intimidating waves, his face contorted with anxiety under the eerie glow of the moon. In the foreground,
+      a pair of shattered shackles lies discarded, symbolizing a powerful force set free, the focus is on Yama and the shackles,
+      highlighting the tension and fear prevalent in the scene. The overall atmosphere is a mix of dread and liberation, underscored
+      by a palette of dark blues, grays, and muted greens.
+  chaupai-07:
+    title: 'Chaupai 7: Divine Victory of Hanuman [AI-Generated - Review Recommended]'
+    description: Hanuman standing tall on a hilltop, arms raised in victory, his form radiating a powerful golden divine aura
+      against a twilight sky. His tail curls majestically behind him. The distant horizon glows with warm amber light symbolizing
+      the triumph of dharma. Above, celestial beings appear in glowing clouds rejoicing. The scene conveys unstoppable divine
+      power and the fulfillment of sacred duty. Deep saffron, gold, and spiritual blue tones. No violence — pure divine majesty
+      and the radiant joy of a sacred mission fulfilled.
