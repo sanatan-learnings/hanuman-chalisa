@@ -13,25 +13,27 @@
 ┌──────────────────────────────────────────────┐
 │            CONTENT (YAML + Markdown)          │
 ├──────────────────────────────────────────────┤
-│  • _verses/*.md (43 files with YAML)         │
-│  • _layouts/*.html (Liquid templates)        │
-│  • Devanagari, transliteration, meanings    │
+│  • _verses/{collection}/*.md (verse files)   │
+│  • data/verses/{collection}.yml (source)     │
+│  • data/sources/*.txt (Puranic source texts) │
+│  • data/puranic-index/*.yml (episode index)  │
 └──────────────────┬───────────────────────────┘
                    │
                    ▼
 ┌──────────────────────────────────────────────┐
 │           AI-GENERATED MEDIA ASSETS           │
 ├──────────────────────────────────────────────┤
-│  • images/ (43 PNG per theme) - verse-images│
-│  • audio/ (86 MP3 files) - verse-audio      │
-│  • embeddings/ - verse-embeddings           │
+│  • images/{collection}/{theme}/*.png         │
+│  • audio/{collection}/*.mp3                  │
+│  • data/embeddings/{collection}.json         │
+│  • data/embeddings/{source-key}.json         │
 └──────────────────┬───────────────────────────┘
                    │
                    ▼
 ┌──────────────────────────────────────────────┐
 │       VERSION CONTROL & DEPLOYMENT           │
 ├──────────────────────────────────────────────┤
-│  Git → GitHub → Jekyll Build → Live Site    │
+│  Git → GitHub → Jekyll Build → hanumanji.ai │
 └──────────────────────────────────────────────┘
 ```
 
@@ -39,18 +41,19 @@
 
 ### Static Site Generation
 - **Jekyll** (v4.x) - Ruby-based static site generator
-- **GitHub Pages** - Free hosting with automatic Jekyll builds
+- **GitHub Pages** - Hosting with automatic Jekyll builds
+- **Custom domain** - hanumanji.ai
 - **Liquid Templates** - Template engine for dynamic HTML generation
 
 ### Frontend
 - **HTML5** - Semantic markup
 - **Custom CSS** - Responsive design with orange/saffron theme
-- **Vanilla JavaScript** - Arrow key navigation, no frameworks needed
+- **Vanilla JavaScript** - Arrow key navigation, language switching, no frameworks
 
 ### Content Structure
 - **YAML Front Matter** - All verse content structured as data
 - **Markdown Files** - Each verse is a `.md` file with YAML front matter
-- **Jekyll Collections** - `_verses/` directory with 43 verse files
+- **Jekyll Collections** - `_verses/{collection}/` directories
 - **Multi-Language Support** - English + Hindi with extensible architecture
 
 ## Development Tools
@@ -59,354 +62,225 @@
 - Code editing and project management
 - Visual git diff and merge tools
 - Markdown preview with Devanagari support
-- Structure view for navigation
 - Embedded terminal for Claude Code
 
 ### Claude Code
-- AI-assisted content generation
-- Project scaffolding (Jekyll setup, templates)
-- Bulk file operations (43 verse conversions)
+- AI-assisted content generation via sanatan-verse-sdk
+- Verse generation, puranic context, images, audio, embeddings
 - Git workflow automation
-- Documentation generation
 
 ### System Dependencies
-- **Python 3.8+** - For sanatan-verse-sdk
+- **Python 3.8+** with **venv** - For sanatan-verse-sdk (v0.31.2)
 - **ffmpeg** - Audio post-processing (`brew install ffmpeg`)
 - **Ruby 3.3+** - For Jekyll local development
-- **Node.js** (optional) - For Cloudflare Worker deployment
-
-**Collaboration Pattern:**
-1. Claude Code generates structure and content
-2. PyCharm shows visual diff of changes
-3. Human reviews in PyCharm UI
-4. Changes committed and pushed
-5. GitHub Pages builds automatically
 
 ## Project Structure
 
 ```
-hanuman-chalisa/
+hanuman-gpt/
 ├── _config.yml              # Jekyll configuration
-├── _layouts/
-│   ├── default.html         # Base layout (header, footer)
-│   └── verse.html           # Verse rendering template
-├── _verses/                 # Jekyll collection (43 files)
-│   ├── doha_01.md          # YAML front matter only
-│   ├── doha_02.md
-│   ├── verse_01.md through verse_40.md
-│   └── doha_closing.md
 ├── _data/
-│   └── translations/        # UI translations
-│       ├── en.yml          # English (includes guidance strings)
-│       └── hi.yml          # Hindi
+│   ├── collections.yml      # Collection metadata (subject, subject_type)
+│   └── translations/        # UI strings
+│       ├── en.yml
+│       └── hi.yml
+├── _includes/
+│   └── puranic-context-box.html  # Puranic context component
+├── _layouts/
+│   ├── default.html         # Base layout
+│   └── verse.html           # Verse rendering template
+├── _verses/                 # Jekyll collection
+│   ├── hanuman-chalisa/     # 43 verse files (doha-01, chaupai-01..40, doha-closing)
+│   ├── sundar-kaand/        # 583 verse files (shloka-01..03, chaupai-01..522, doha-01..58)
+│   ├── bajrang-baan/
+│   ├── sankat-mochan-hanumanashtak/
+│   └── ...
+├── data/
+│   ├── verses/              # Canonical Devanagari verse text (YAML)
+│   │   ├── hanuman-chalisa.yml
+│   │   └── sundar-kaand.yml
+│   ├── scenes/              # Scene descriptions for image generation (YAML)
+│   ├── themes/              # Image generation settings (YAML)
+│   ├── sources/             # Raw Puranic source texts (TXT)
+│   │   ├── shiv-puran-part1.txt
+│   │   └── ananda-ramayan.txt
+│   ├── puranic-index/       # Indexed Puranic episodes (YAML)
+│   │   └── shiv-puran-part1.yml
+│   └── embeddings/          # Embedding vectors (JSON)
+│       ├── hanuman-chalisa.json
+│       └── shiv-puran-part1.json
+├── images/                  # Verse images
+│   ├── hanuman-chalisa/modern-minimalist/   # 43 PNG files
+│   └── sundar-kaand/modern-minimalist/
+├── audio/                   # Audio recitations (full + slow per verse)
+│   ├── hanuman-chalisa/
+│   ├── sundar-kaand/
+│   └── bajrang-baan/
 ├── assets/
-│   ├── css/style.css       # Custom styling
-│   ├── js/navigation.js    # Arrow key navigation
-│   ├── js/language.js      # Language switching
-│   ├── js/theme.js         # Image theme switching
-│   └── js/guidance.js      # RAG system
-├── scripts/                 # Content generation configuration
-│   ├── embedding_config.yaml       # Config for verse-embeddings
-│   ├── requirements.txt            # sanatan-verse-sdk installation
-│   └── legacy/                     # Old Python/bash scripts (deprecated)
-├── images/                  # Verse images (organized by theme)
-│   └── modern-minimalist/  # 47 PNG files per theme
-├── audio/                   # Audio recitations (86 MP3 files)
+│   ├── css/style.css
+│   └── js/
 ├── docs/                    # Documentation
-├── data/embeddings.json     # Pre-computed embeddings (1.1MB)
-├── guidance.html            # Spiritual guidance chat interface
-└── index.html              # Home page with navigation
+└── scripts/
 ```
+
+**Naming convention**: Always hyphens, never underscores — `chaupai-01.md`, `chaupai-01.png`, `chaupai-01-full.mp3`
 
 ## Content Architecture
 
-### YAML Front Matter Structure
+### Verse File Structure
 
-Each verse file (`_verses/*.md`) contains only YAML front matter:
+Each verse file (`_verses/{collection}/{verse-id}.md`) contains YAML front matter:
 
 ```yaml
 ---
 layout: verse
-title: "Verse 1: Ocean of Knowledge and Virtues"
-verse_number: 1
-previous_verse: "/verses/doha_02"
-next_verse: "/verses/verse_02"
-
+collection_key: hanuman-chalisa
+permalink: /chalisa/chaupai-01/
+verse_number: 3
 devanagari: |
   जय हनुमान ज्ञान गुन सागर।
-  जय कपीस तिहुं लोक उजागर।।
-
 transliteration: |
   Jai Hanuman Gyaan gun saagar
-  Jai Kapis Tihun lok ujagar
-
-phonetic_notes:
-  - word: "हनुमान"
-    phonetic: "ha-nu-maan"
-    emphasis: "last syllable"
-
 word_meanings:
-  - word: "जय"
-    roman: "Jai"
-    meaning: "victory/hail"
-
-literal_translation: "Hail Hanuman, ocean of knowledge..."
-interpretive_meaning: "Hanuman is described as an ocean..."
-story: "Hanuman was blessed by various gods..."
-
-practical_application:
-  teaching: "True greatness combines knowledge..."
-  when_to_use: "Recite when seeking wisdom..."
+- word: जय
+  roman: Jai
+  meaning:
+    en: Victory/Hail
+    hi: विजय
+literal_translation:
+  en: "Hail Hanuman, ocean of knowledge..."
+  hi: "हनुमान की जय हो..."
+puranic_context:
+- id: hanuman-shiva-avatar
+  type: concept
+  title:
+    en: Hanuman as an Avatar of Shiva
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudrasamhita, Kumarakhanda
 ---
 ```
 
 ### Template Rendering
 
-The `_layouts/verse.html` template renders all content from YAML data:
-- `{% raw %}{{ page.devanagari }}{% endraw %}` - Devanagari text
-- `{% raw %}{{ page.transliteration }}{% endraw %}` - Phonetic transliteration
-- `{% raw %}{% for item in page.word_meanings %}{% endraw %}` - Word meanings loop
-- All formatting and structure defined once in template
+`_layouts/verse.html` renders all content from YAML — change the template once, affects all verses.
 
-**Benefits:**
-- Change template once, affects all 43 verses
-- Clean separation of data and presentation
-- Easy to maintain and update
+## SDK Workflow
+
+All content generation uses **sanatan-verse-sdk** (v0.31.2) via Python venv:
+
+```bash
+# Always use venv
+./venv/bin/verse-generate --collection hanuman-chalisa --verse chaupai-01 --auto-generate-scene
+./venv/bin/verse-generate --collection sundar-kaand --next --auto-generate-scene
+
+# Puranic context (two-stage)
+./venv/bin/verse-index-sources --file data/sources/shiv-puran-part1.txt --project-dir .
+./venv/bin/verse-puranic-context --collection hanuman-chalisa --all --subject Hanuman
+```
+
+See [puranic-context.md](puranic-context.md) for the full two-stage workflow.
 
 ## Internationalization (i18n)
 
-### Multi-Language Architecture
-
-The site supports multiple languages with extensible architecture:
-
-**Current Languages:**
-- English (default)
-- Hindi (हिन्दी)
-
-**Translation System:**
-```
-_data/
-  translations/
-    en.yml    # English UI strings
-    hi.yml    # Hindi UI strings
-```
-
-**UI Translations:** ~70 strings per language
-- Navigation labels (Previous, Next, Home)
-- Section headings (Devanagari, Transliteration, etc.)
-- Common labels (Coming Soon, Audio Recitation)
-- Home page content, footer text
-
-**Content Translations:** Multi-language verse content
-```yaml
-literal_translation:
-  en: "Hail Hanuman, ocean of knowledge..."
-  hi: "हनुमान की जय हो, ज्ञान और गुणों के सागर..."
-
-interpretive_meaning:
-  en: "Hanuman is described as an ocean..."
-  hi: "हनुमान को एक सागर के रूप में वर्णित किया गया है..."
-```
-
-**Language Switching:**
-- Dropdown selector in header
-- URL parameter support (`?lang=hi`)
-- localStorage for preference persistence
-- Preserved across navigation
-
-**Fallback System:**
-- If Hindi translation missing → show English
-- Graceful degradation
-- No broken content
-
-### Adding New Languages
-
-See [Adding New Languages](../features/multilingual.md#adding-new-languages) in the multilingual implementation guide for step-by-step instructions.
+- English (default) + Hindi (हिन्दी)
+- UI strings in `_data/translations/{en,hi}.yml`
+- Content translated inline: `literal_translation.en` / `literal_translation.hi`
+- Language switching via `?lang=hi` URL param, persisted in localStorage
+- Fallback: missing Hindi → show English
 
 ## Key Features
 
-### 1. Single-Page View (`/full-chalisa`)
-- All 43 verses on one page
-- Toggle sections (transliteration, translation, word meanings)
-- Print-friendly button
-- Automatic generation from `site.verses` collection
-- Jekyll template loops through all verses dynamically
-
-### 2. Search Functionality (`/search`)
-- Client-side search across all content
-- Search in: Devanagari, transliteration, translations, meanings
-- Real-time filtering with debouncing
-- Highlight matching text
-- Result snippets with context
-- Generated JSON index (`data/search.json`)
-
-### 3. Spiritual Guidance (RAG System) (`/guidance`)
-
-**Technology**: GPT-4o + verse-embeddings + Cloudflare Worker
-
-**Features**:
-- AI-powered Q&A on Hanuman Chalisa verses
+### Spiritual Guidance (RAG System) (`/guidance`)
+- GPT-4o + verse-embeddings + Cloudflare Worker proxy
 - Keyword-based retrieval with verse citations
-- Bilingual support (English/Hindi)
-- Serverless proxy (no user API keys needed)
+- Bilingual support
 
-**Commands**:
-```bash
-# Generate embeddings
-verse-embeddings --provider huggingface  # Free, local
-verse-embeddings --provider openai       # Fast, ~$0.01
+**Files**: `data/embeddings/hanuman-chalisa.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
 
-# Deploy worker
-verse-deploy
-```
+### Puranic Context
+- Per-verse grounded references from indexed sacred texts
+- Two-stage: index source → generate context per verse
+- Sources: Shiv Puran Part1 (1009 episodes), Ananda Ramayana (indexing)
+- Displayed inline on each verse page, always expanded
 
-**Files**:
-- `data/embeddings.json` - Pre-computed vectors (1.1MB, 384-dim)
-- `guidance.html` - Chat interface
-- `assets/js/guidance.js` - RAG logic
-- `workers/cloudflare-worker.js` - API proxy
+### Image Theme System
+- Multiple artistic styles per verse
+- Instant theme switching via JavaScript
+- Themes configured in `data/themes/{collection}/*.yml`
 
-**Deployment**: `https://hanuman-chalisa-api.arungupta.workers.dev`
-
-See [deployment guide](deployment.md) for details.
-
-### 4. Navigation
+### Navigation
 - Arrow keys (← →) between verses
-- Previous/Next buttons on each verse
-- Home button (☰ All Verses)
-- Language preserved in navigation
-- Keyboard shortcuts help
-
-### 5. Print Support
-- Dedicated print.css for printer-friendly output
-- Hide navigation and non-essential elements
-- Optimized typography for paper
-- A4 page configuration
-- Print button on full chalisa view
-
-### 6. Image Theme System
-- Theme selector in header (🎨 icon)
-- Multiple artistic styles for verse images
-- Instant switching via JavaScript (no page reload)
-- localStorage persistence across pages
-- Extensible architecture via `_data/themes.yml`
-- Current themes: Modern Minimalist (more coming soon)
-- All 47 images organized by theme in `/images/{theme}/`
-
-## Development Workflow
-
-1. **Edit** - PyCharm or Claude Code edits YAML in `_verses/*.md`
-2. **Review** - PyCharm's diff view for visual code review
-3. **Commit** - Git with descriptive messages
-4. **Push** - GitHub receives changes
-5. **Build** - GitHub Pages automatically builds Jekyll site (1-2 min)
-6. **Deploy** - Live at https://sanatan-learnings.github.io/hanuman-gpt/
+- Previous/Next buttons, language preserved in navigation
 
 ## Media Generation
 
 ### Images
-
 **Technology**: DALL-E 3 via sanatan-verse-sdk
 
-**Commands**:
 ```bash
-verse-images --theme-name modern-minimalist
-verse-images --theme-name watercolor --style "soft watercolor painting"
-verse-images --theme-name my-theme --quality hd
-verse-images --theme-name my-theme --regenerate verse-10.png,verse-25.png
-verse-images --theme-name my-theme --force
+verse-images --collection hanuman-chalisa --theme-name modern-minimalist
+verse-images --collection hanuman-chalisa --theme-name modern-minimalist --regenerate chaupai-10.png
 ```
 
-**Output**: 47 PNG files per theme in `images/{theme}/`
-- Format: 1024×1536 PNG (2:3 ratio)
-- Cost: $1.88 standard / $3.76 HD per theme
+**Output**: 1024×1536 PNG in `images/{collection}/{theme}/`
+**Cost**: ~$0.04 per image
 
-**Theme Configuration**: Define in `_data/themes.yml`
-
-See [scripts/README.md](../scripts/README.md) for details.
-
-### Audio Recitations
-
+### Audio
 **Technology**: Eleven Labs TTS via sanatan-verse-sdk
 
-**Commands**:
 ```bash
-verse-audio
-verse-audio --only doha_01_full.mp3
-verse-audio --regenerate verse_10_full.mp3,verse_10_slow.mp3
-verse-audio --start-from verse_15_full.mp3
-verse-audio --force
+verse-audio --collection hanuman-chalisa
+verse-audio --collection hanuman-chalisa --only chaupai-01-full.mp3
 ```
 
-**Output**: 86 MP3 files (43 verses × 2 speeds) in `audio/`
-- Full speed: Natural pace
-- Slow speed: 75% speed via ffmpeg
-- Cost: Free tier (10,000 chars/month)
-
-See [scripts/README.md](../scripts/README.md) for details.
+**Output**: 2 MP3 per verse (`chaupai-01-full.mp3`, `chaupai-01-slow.mp3`) in `audio/{collection}/`
+**Cost**: Free tier (10,000 chars/month)
 
 ### Embeddings
+**Technology**: OpenAI text-embedding-3-small via sanatan-verse-sdk
 
-**Technology**: OpenAI / HuggingFace via sanatan-verse-sdk
-
-**Commands**:
 ```bash
-verse-embeddings                        # OpenAI (fast, ~$0.01)
-verse-embeddings --provider huggingface # Local (free, slower first run)
-verse-embeddings --verses-dir _verses --output data/embeddings.json
+verse-embeddings --collection hanuman-chalisa
 ```
 
-**Output**: `data/embeddings.json` (1.1MB, 384 dimensions)
+**Output**: `data/embeddings/{collection}.json`
 
-**Process**: Extracts YAML from 43 verse files, generates semantic vectors
+## Development Workflow
 
-See [scripts/README.md](../scripts/README.md) for details.
+1. **Edit** - Claude Code or PyCharm edits files
+2. **Review** - PyCharm diff view
+3. **Commit** - Git with co-author tag
+4. **Push** - GitHub receives changes
+5. **Build** - GitHub Pages auto-builds Jekyll (1-2 min)
+6. **Deploy** - Live at https://hanumanji.ai
 
-## URLs and Navigation
+## Cost Per Verse
+~$0.05-0.06 (AI content + image + audio + embeddings)
 
-Each verse has its own URL:
-- `/verses/doha_01/`
-- `/verses/verse_01/`
-- `/verses/verse_02/`
-- etc.
-
-Navigation:
-- Arrow keys (← →) between verses
-- Home (☰) button to main page
-- Previous/Next buttons on each verse
+- **Hosting**: Free (GitHub Pages + custom domain ~$10-15/year)
+- **Images**: ~$0.04 per image (DALL-E 3)
+- **Audio**: Free (Eleven Labs free tier)
+- **Embeddings**: ~$0.001 (OpenAI text-embedding-3-small)
+- **Puranic Context**: ~$0.02 per verse (GPT-4o RAG)
 
 ## Browser Compatibility
 
 - Chrome/Edge, Firefox, Safari (latest 2 versions)
 - Mobile browsers (iOS Safari, Chrome Mobile)
-- CSS Grid, Flexbox, HTML5 Audio
 - No polyfills needed
 
 ## Performance
 
 - Static HTML (no server processing)
-- System fonts (no downloads)
 - CDN via GitHub Pages
-- Load time: < 1 second (text)
-- Full load: 2-3 seconds (with images)
+- Load time: < 1 second (text), 2-3 seconds (with images)
 
 ## Security
 
 - Static site (no database, no server-side code)
 - HTTPS enforced by GitHub Pages
 - No user input or tracking
-- Minimal attack surface
-
-## Cost
-
-- **Hosting**: Free (GitHub Pages)
-- **Domain** (optional): $10-15/year
-- **Images**: $1.72 per theme (43 images × $0.040) via verse-images
-- **Audio**: FREE (Eleven Labs free tier) via verse-audio
-- **Embeddings**: FREE (local HuggingFace) or $0.01 (OpenAI) via verse-embeddings
-- **Spiritual Guidance**: ~$0.01 per query (Cloudflare Worker proxy)
-
-**Total**: ~$1.88 per image theme (one-time)
 
 ## Resources
 
@@ -416,5 +290,6 @@ Navigation:
 
 ## Internal Documentation
 
+- [puranic-context.md](puranic-context.md) - Puranic context two-stage workflow
 - [background.md](background.md) - Hanuman Chalisa history
 - [cloudflare-worker-setup.md](../guides/cloudflare-worker-setup.md) - Deployment setup
