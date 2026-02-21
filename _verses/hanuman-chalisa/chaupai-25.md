@@ -130,4 +130,38 @@ practical_application:
       भावनात्मक या आध्यात्मिक पीड़ा से जूझ रहे हों।
 
       '
+puranic_context:
+- id: angiras-revives-devas
+  type: story
+  priority: medium
+  title:
+    en: Angiras Revives the Devas
+    hi: अंगिरा ने देवताओं को पुनर्जीवित किया
+  icon: 🌿
+  story_summary:
+    en: Angiras, also known as Brihaspati, repeatedly brings divine herbs from Mount
+      Drona to revive the Devas during the battle. This act of reviving the Devas
+      adds to the intensity of the ongoing conflict.
+    hi: अंगिरा, जिन्हें बृहस्पति के नाम से भी जाना जाता है, युद्ध के दौरान देवताओं
+      को पुनर्जीवित करने के लिए बार-बार माउंट द्रोण से दिव्य जड़ी-बूटियाँ लाते हैं।
+      देवताओं को पुनर्जीवित करने का यह कार्य चल रहे संघर्ष की तीव्रता को बढ़ाता है।
+  theological_significance:
+    en: The story of Angiras reviving the Devas highlights the divine intervention
+      in healing and restoration. It parallels Hanuman's role as a healer, emphasizing
+      the power of divine aid in overcoming physical and spiritual ailments.
+    hi: देवताओं को पुनर्जीवित करने वाले अंगिरा की कहानी उपचार और पुनर्स्थापन में दिव्य
+      हस्तक्षेप को उजागर करती है। यह हनुमान की एक चिकित्सक के रूप में भूमिका के समानांतर
+      है, जो शारीरिक और आध्यात्मिक रोगों को दूर करने में दिव्य सहायता की शक्ति पर
+      जोर देती है।
+  practical_application:
+    en: Devotees can draw inspiration from the story of Angiras by seeking divine
+      help in times of illness or distress. Chanting Hanuman's name, much like invoking
+      divine herbs, can be a spiritual practice for healing and protection.
+    hi: भक्त अंगिरा की कहानी से प्रेरणा लेकर बीमारी या संकट के समय में दिव्य सहायता
+      प्राप्त कर सकते हैं। हनुमान का नाम जपना, दिव्य जड़ी-बूटियों का आह्वान करने की
+      तरह, उपचार और सुरक्षा के लिए एक आध्यात्मिक अभ्यास हो सकता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not specified
+  related_verses: []
 ---

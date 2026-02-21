@@ -100,4 +100,63 @@ practical_application:
       transcend sectarian boundaries and earn universal respect.
     hi: इस चौपाई का पाठ करें जब आपको याद रखने की आवश्यकता हो कि वास्तविक भक्ति और
       सद्गुण सांप्रदायिक सीमाओं को पार करते हैं और सार्वभौमिक सम्मान अर्जित करते हैं।
+puranic_context:
+- id: sanaka-kumaras
+  type: character
+  priority: high
+  title:
+    en: Sanaka Kumaras
+    hi: सनक कुमार
+  icon: 👦
+  story_summary:
+    en: The Sanaka Kumaras are the mind-born sons of Brahma, known for their eternal
+      youth and wisdom. They chose a life of celibacy and devotion, focusing on meditation
+      and spiritual knowledge rather than worldly creation.
+    hi: सनक कुमार ब्रह्मा के मानस पुत्र हैं, जो अपनी शाश्वत युवावस्था और ज्ञान के
+      लिए प्रसिद्ध हैं। उन्होंने ब्रह्मचर्य और भक्ति का जीवन चुना, और सांसारिक सृजन
+      के बजाय ध्यान और आध्यात्मिक ज्ञान पर ध्यान केंद्रित किया।
+  theological_significance:
+    en: The Sanaka Kumaras symbolize the pursuit of spiritual wisdom and the renunciation
+      of worldly desires. Their praise of Hanuman underscores his embodiment of wisdom
+      and devotion.
+    hi: सनक कुमार आध्यात्मिक ज्ञान की खोज और सांसारिक इच्छाओं के त्याग का प्रतीक हैं।
+      उनका हनुमान की प्रशंसा करना उनके ज्ञान और भक्ति के प्रतीक होने को दर्शाता है।
+  practical_application:
+    en: Emulating the Sanaka Kumaras, one can focus on spiritual growth and wisdom,
+      seeking to transcend material attachments and desires.
+    hi: सनक कुमारों का अनुकरण करते हुए, कोई भी आध्यात्मिक विकास और ज्ञान पर ध्यान
+      केंद्रित कर सकता है, भौतिक आसक्तियों और इच्छाओं से ऊपर उठने का प्रयास कर सकता
+      है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Srishti Khanda
+  related_verses: []
+- id: narada-vishnu-disguise
+  type: story
+  priority: medium
+  title:
+    en: Narada's Disguise by Vishnu
+    hi: नारद का विष्णु द्वारा वेश बदलना
+  icon: 🎭
+  story_summary:
+    en: Narada Muni, captivated by a princess's beauty, sought Vishnu's form to win
+      her hand. Vishnu humorously gave Narada a monkey's face, leading to an unexpected
+      outcome at the swayamvara.
+    hi: नारद मुनि, एक राजकुमारी की सुंदरता से मोहित होकर, उसका हाथ जीतने के लिए विष्णु
+      का रूप चाहते थे। विष्णु ने मजाक में नारद को बंदर का चेहरा दिया, जिससे स्वयंवर
+      में अप्रत्याशित परिणाम हुआ।
+  theological_significance:
+    en: This story highlights the theme of divine play and the importance of humility.
+      Narada's experience teaches that true beauty and worth lie beyond physical appearance.
+    hi: यह कहानी दिव्य लीला और विनम्रता के महत्व को दर्शाती है। नारद का अनुभव सिखाता
+      है कि सच्ची सुंदरता और मूल्य भौतिक रूप से परे होते हैं।
+  practical_application:
+    en: The tale encourages humility and the understanding that external appearances
+      can be deceptive. It reminds us to seek inner beauty and truth.
+    hi: यह कहानी विनम्रता और इस समझ को प्रोत्साहित करती है कि बाहरी रूप धोखा दे सकते
+      हैं। यह हमें आंतरिक सुंदरता और सत्य की खोज करने की याद दिलाती है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Srishti Khanda
+  related_verses: []
 ---

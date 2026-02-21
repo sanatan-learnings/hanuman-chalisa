@@ -125,4 +125,36 @@ practical_application:
       धर्मपूर्ण लक्ष्य की ओर काम करते हुए विरोध का सामना कर रहे हों।
 
       '
+puranic_context:
+- id: rama-avatar-tataka-vadha
+  type: story
+  priority: high
+  title:
+    en: 'Rama Avatar: Tataka''s Slaying'
+    hi: 'राम अवतार: ताड़का वध'
+  icon: 🏹
+  story_summary:
+    en: In the Ramavatar, Lord Rama killed the demoness Tataka as part of his divine
+      mission to rid the world of evil. This act demonstrated Rama's commitment to
+      dharma and his role as a protector of righteousness.
+    hi: राम अवतार में, भगवान राम ने ताड़का राक्षसी का वध किया। यह कार्य उनके धर्म
+      के प्रति समर्पण और धर्म की रक्षा करने वाले के रूप में उनकी भूमिका को दर्शाता
+      है।
+  theological_significance:
+    en: This story illustrates the principle of dharma, where divine forces act to
+      restore balance by eliminating evil. It highlights the importance of righteous
+      action and the role of divine incarnations in maintaining cosmic order.
+    hi: यह कहानी धर्म के सिद्धांत को दर्शाती है, जहाँ दिव्य शक्तियाँ बुराई को समाप्त
+      करके संतुलन बहाल करती हैं। यह धर्ममय कर्म और ब्रह्मांडीय व्यवस्था बनाए रखने
+      में दिव्य अवतारों की भूमिका के महत्व को उजागर करती है।
+  practical_application:
+    en: In daily life, this story encourages individuals to stand up against wrongdoing
+      and to act with courage and righteousness, even when faced with formidable challenges.
+    hi: दैनिक जीवन में, यह कहानी व्यक्तियों को अन्याय के खिलाफ खड़े होने और साहस और
+      धर्म के साथ कार्य करने के लिए प्रेरित करती है, भले ही उन्हें कठिन चुनौतियों
+      का सामना करना पड़े।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudrasamhita, Kumarakhanda
+  related_verses: []
 ---

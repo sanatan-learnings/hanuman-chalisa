@@ -103,4 +103,37 @@ practical_application:
       to focus your mind and develop devotional connection.
     hi: ध्यान के दौरान इस चौपाई का पाठ करें ताकि हनुमान के दिव्य रूप की कल्पना कर
       सकें, जो आपके मन को केंद्रित करने और भक्ति संबंध विकसित करने में मदद करता है।
+puranic_context:
+- id: parvati-appearance-description
+  type: character
+  priority: medium
+  title:
+    en: Parvati's Appearance Description
+    hi: पार्वती का स्वरूप वर्णन
+  icon: 🌺
+  story_summary:
+    en: Parvati is described with a complexion like dark collyrium, adorned with beautiful
+      ornaments, and having three eyes. Her charming smile and captivating appearance
+      leave everyone in awe.
+    hi: पार्वती का वर्णन काजल के समान रंग, सुंदर आभूषणों से सजी, और तीन नेत्रों के
+      साथ किया गया है। उनकी मोहक मुस्कान और आकर्षक स्वरूप सभी को मंत्रमुग्ध कर देता
+      है।
+  theological_significance:
+    en: Parvati's divine beauty symbolizes the allure of spiritual wisdom and the
+      enchanting power of devotion. Her appearance is a metaphor for the inner beauty
+      that arises from spiritual practice.
+    hi: पार्वती की दिव्य सुंदरता आध्यात्मिक ज्ञान के आकर्षण और भक्ति की मोहक शक्ति
+      का प्रतीक है। उनका स्वरूप आध्यात्मिक साधना से उत्पन्न आंतरिक सुंदरता का रूपक
+      है।
+  practical_application:
+    en: Devotees can meditate on Parvati's beauty to cultivate inner grace and spiritual
+      wisdom. Her form inspires the pursuit of inner transformation and the realization
+      of divine qualities.
+    hi: भक्त पार्वती की सुंदरता पर ध्यान करके आंतरिक कृपा और आध्यात्मिक ज्ञान को विकसित
+      कर सकते हैं। उनका स्वरूप आंतरिक परिवर्तन और दिव्य गुणों की प्राप्ति के लिए प्रेरित
+      करता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Parvati Khanda
+  related_verses: []
 ---

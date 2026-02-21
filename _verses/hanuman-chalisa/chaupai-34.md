@@ -121,4 +121,38 @@ practical_application:
       कि आपके आध्यात्मिक प्रयास इस जीवन से परे स्थायी लाभ उत्पन्न करते हैं।
 
       '
+puranic_context:
+- id: uma-sati-rebirth-story
+  type: story
+  priority: high
+  title:
+    en: Uma and Sati's Rebirth Story
+    hi: उमा और सती की पुनर्जन्म कथा
+  icon: 🔄
+  story_summary:
+    en: The story of Uma, who was born as Sati, highlights the concept of rebirth
+      and divine purpose. Disrespected by her father Daksha, Sati left her body and
+      was reborn as Uma, symbolizing the continuation of her divine mission.
+    hi: उमा की कथा, जो सती के रूप में जन्मी, पुनर्जन्म और दिव्य उद्देश्य की अवधारणा
+      को दर्शाती है। अपने पिता दक्ष द्वारा अपमानित होने पर, सती ने अपना शरीर त्याग
+      दिया और उमा के रूप में पुनर्जन्म लिया, जो उनके दिव्य मिशन की निरंतरता का प्रतीक
+      है।
+  theological_significance:
+    en: This story underscores the belief in rebirth and the continuation of one's
+      spiritual journey across lifetimes. It reflects the assurance that devotion
+      and divine purpose transcend a single lifetime.
+    hi: यह कथा पुनर्जन्म और जीवनकालों के पार आध्यात्मिक यात्रा की निरंतरता में विश्वास
+      को रेखांकित करती है। यह इस बात की पुष्टि करती है कि भक्ति और दिव्य उद्देश्य
+      एक जीवनकाल से परे होते हैं।
+  practical_application:
+    en: Devotees can find solace in the idea that their spiritual efforts are never
+      wasted. Even if liberation isn't achieved in one life, the journey continues,
+      and one is reborn with a divine purpose.
+    hi: भक्त इस विचार में सांत्वना पा सकते हैं कि उनके आध्यात्मिक प्रयास कभी व्यर्थ
+      नहीं जाते। यदि एक जीवन में मुक्ति प्राप्त नहीं होती है, तो यात्रा जारी रहती
+      है और व्यक्ति दिव्य उद्देश्य के साथ पुनर्जन्म लेता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Parvati Khanda
+  related_verses: []
 ---

@@ -126,4 +126,39 @@ practical_application:
       दिव्य का परिवार बनाती है, सभी सांसारिक संबंधों को पार करते हुए।
 
       '
+puranic_context:
+- id: bharata-devotion-to-rama
+  type: story
+  priority: high
+  title:
+    en: Bharata's Devotion to Rama
+    hi: भरत की राम के प्रति भक्ति
+  icon: 🙏
+  story_summary:
+    en: Bharata, the younger brother of Rama, exemplified ideal devotion by refusing
+      to take the throne of Ayodhya in Rama's absence. Instead, he placed Rama's sandals
+      on the throne and ruled as his regent, signifying his unwavering loyalty and
+      respect for his elder brother.
+    hi: भरत, राम के छोटे भाई, ने आदर्श भक्ति का उदाहरण प्रस्तुत किया जब उन्होंने राम
+      की अनुपस्थिति में अयोध्या का सिंहासन लेने से इनकार कर दिया। इसके बजाय, उन्होंने
+      राम की खड़ाऊं को सिंहासन पर रखा और उनके प्रतिनिधि के रूप में शासन किया, जो उनके
+      बड़े भाई के प्रति उनकी अटूट निष्ठा और सम्मान को दर्शाता है।
+  theological_significance:
+    en: Bharata's actions symbolize the ultimate form of devotion where the devotee
+      places the beloved above all personal ambitions. This selflessness is a key
+      tenet in bhakti, illustrating that true devotion transcends personal desires.
+    hi: भरत के कार्य भक्ति के सर्वोच्च रूप का प्रतीक हैं, जहाँ भक्त अपने प्रिय को
+      सभी व्यक्तिगत महत्वाकांक्षाओं से ऊपर रखता है। यह निःस्वार्थता भक्ति का एक प्रमुख
+      सिद्धांत है, जो दर्शाता है कि सच्ची भक्ति व्यक्तिगत इच्छाओं से परे होती है।
+  practical_application:
+    en: In daily life, Bharata's example teaches us the importance of loyalty and
+      selflessness. By prioritizing the well-being and honor of others, we can cultivate
+      deeper relationships and a sense of peace within ourselves.
+    hi: दैनिक जीवन में, भरत का उदाहरण हमें निष्ठा और निःस्वार्थता के महत्व को सिखाता
+      है। दूसरों की भलाई और सम्मान को प्राथमिकता देकर, हम गहरे संबंध और अपने भीतर
+      शांति की भावना विकसित कर सकते हैं।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not applicable
+  related_verses: []
 ---

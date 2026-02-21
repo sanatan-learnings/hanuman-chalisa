@@ -121,4 +121,37 @@ practical_application:
       कालातीत और सदा उपलब्ध हैं, चाहे युग या परिस्थितियां कुछ भी हों।
 
       '
+puranic_context:
+- id: hanuman-eternal-glory
+  type: concept
+  priority: high
+  title:
+    en: Hanuman's Eternal Glory
+    hi: हनुमान की शाश्वत महिमा
+  icon: 🌟
+  story_summary:
+    en: Hanuman's glory is celebrated across all four yugas, symbolizing his eternal
+      presence and relevance. As a 'chiranjeevi', he is believed to be present in
+      every age, offering guidance and protection.
+    hi: हनुमान की महिमा चारों युगों में विख्यात है, जो उनकी शाश्वत उपस्थिति और महत्व
+      को दर्शाती है। 'चिरंजीवी' के रूप में, वे हर युग में उपस्थित माने जाते हैं, मार्गदर्शन
+      और सुरक्षा प्रदान करते हैं।
+  theological_significance:
+    en: Hanuman's eternal presence signifies the timeless nature of divine assistance
+      and protection. His role as a guide and protector is not confined to a single
+      era, making him a universal figure of devotion.
+    hi: हनुमान की शाश्वत उपस्थिति दिव्य सहायता और सुरक्षा की कालातीत प्रकृति को दर्शाती
+      है। एक मार्गदर्शक और रक्षक के रूप में उनकी भूमिका किसी एक युग तक सीमित नहीं
+      है, जिससे वे भक्ति के एक सार्वभौमिक प्रतीक बन जाते हैं।
+  practical_application:
+    en: Devotees can invoke Hanuman's blessings and protection in any age by chanting
+      his name or reciting the Ramayana. His eternal presence assures devotees of
+      his support in overcoming challenges.
+    hi: भक्त किसी भी युग में हनुमान के आशीर्वाद और सुरक्षा का आह्वान उनके नाम का जाप
+      या रामायण का पाठ करके कर सकते हैं। उनकी शाश्वत उपस्थिति भक्तों को चुनौतियों
+      को पार करने में उनके समर्थन का आश्वासन देती है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not explicitly mentioned
+  related_verses: []
 ---

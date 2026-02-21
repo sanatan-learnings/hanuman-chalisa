@@ -110,4 +110,37 @@ practical_application:
       when you need protection from harmful influences.
     hi: इस चौपाई का पाठ करें जब अंधेरे का डर हो, नकारात्मक ऊर्जाएं महसूस हों, या जब
       हानिकारक प्रभावों से सुरक्षा की आवश्यकता हो।
+puranic_context:
+- id: pisacha-redemption-by-tumburu
+  type: story
+  priority: high
+  title:
+    en: Pisacha Redemption by Tumburu
+    hi: तुम्बुरु द्वारा पिशाच का उद्धार
+  icon: 👹
+  story_summary:
+    en: Tumburu, a devotee of Lord Shiva, encounters a terrifying pisacha and binds
+      it with a noose. He narrates the Shiv Puran to the pisacha, leading to its redemption.
+      The pisacha sheds its demonic form and becomes a devotee of Lord Shiva.
+    hi: भगवान शिव के भक्त तुम्बुरु एक भयानक पिशाच से मिलते हैं और उसे फंदे से बांध
+      देते हैं। वह पिशाच को शिव पुराण सुनाते हैं, जिससे उसका उद्धार होता है। पिशाच
+      अपनी दानवीय रूप को त्यागकर भगवान शिव का भक्त बन जाता है।
+  theological_significance:
+    en: The story highlights the transformative power of divine narratives and the
+      name of the Lord. Just as Hanuman's name protects from evil, the Shiv Puran
+      redeems the pisacha, showing that divine recitations can purify and protect.
+    hi: यह कहानी दिव्य कथाओं और भगवान के नाम की परिवर्तनकारी शक्ति को दर्शाती है।
+      जैसे हनुमान का नाम बुराई से बचाता है, शिव पुराण पिशाच का उद्धार करता है, यह
+      दर्शाता है कि दिव्य पाठ शुद्ध और संरक्षित कर सकते हैं।
+  practical_application:
+    en: Reciting sacred texts or names is a practice believed to ward off negative
+      energies and transform one's environment. This aligns with the verse's message
+      that chanting Hanuman's name offers protection.
+    hi: पवित्र ग्रंथों या नामों का पाठ करना एक प्रथा है जो नकारात्मक ऊर्जाओं को दूर
+      करने और वातावरण को बदलने में सक्षम माना जाता है। यह श्लोक के संदेश के साथ मेल
+      खाता है कि हनुमान का नाम जपने से सुरक्षा मिलती है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Pisacha Redemption by Tumburu
+  related_verses: []
 ---

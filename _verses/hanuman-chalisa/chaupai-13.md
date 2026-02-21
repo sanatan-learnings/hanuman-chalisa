@@ -136,4 +136,39 @@ practical_application:
       अर्जित करती है।
 
       '
+puranic_context:
+- id: shesha-naga-praises
+  type: character
+  priority: high
+  title:
+    en: Shesha Naga Praises
+    hi: शेष नाग की प्रशंसा
+  icon: 🐍
+  story_summary:
+    en: Shesha Naga, the cosmic serpent with a thousand heads, is known for eternally
+      singing the glories of Lord Vishnu. In this context, Shesha's act of praising
+      Hanuman signifies the universal acknowledgment of Hanuman's devotion and virtues.
+    hi: शेष नाग, जो सहस्र सिरों वाले हैं, भगवान विष्णु की महिमा का अनंतकाल तक गायन
+      करते हैं। इस संदर्भ में, शेष का हनुमान की प्रशंसा करना हनुमान की भक्ति और गुणों
+      की सार्वभौमिक स्वीकृति को दर्शाता है।
+  theological_significance:
+    en: The mention of Shesha Naga singing Hanuman's praises highlights the cosmic
+      scale of Hanuman's devotion. It suggests that Hanuman's virtues are recognized
+      not only on earth but also in the divine realms, emphasizing the boundless nature
+      of true devotion.
+    hi: शेष नाग द्वारा हनुमान की प्रशंसा का उल्लेख हनुमान की भक्ति के ब्रह्मांडीय
+      पैमाने को दर्शाता है। यह सुझाव देता है कि हनुमान के गुण न केवल पृथ्वी पर बल्कि
+      दिव्य लोकों में भी मान्यता प्राप्त हैं, जो सच्ची भक्ति की असीम प्रकृति को रेखांकित
+      करता है।
+  practical_application:
+    en: This verse inspires devotees to cultivate a devotion so profound that it resonates
+      across all realms. It encourages individuals to aspire for a level of dedication
+      that is universally acknowledged and celebrated.
+    hi: यह श्लोक भक्तों को इतनी गहरी भक्ति विकसित करने के लिए प्रेरित करता है जो सभी
+      लोकों में गूंजती है। यह व्यक्तियों को एक ऐसे समर्पण के स्तर की आकांक्षा करने
+      के लिए प्रेरित करता है जो सार्वभौमिक रूप से मान्यता प्राप्त और प्रशंसित हो।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not applicable
+  related_verses: []
 ---

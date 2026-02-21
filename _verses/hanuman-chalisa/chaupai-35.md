@@ -138,4 +138,39 @@ practical_application:
       है।
 
       '
+puranic_context:
+- id: shiva-devotion-concept
+  type: concept
+  priority: high
+  title:
+    en: Shiva Devotion Concept
+    hi: शिव भक्ति की अवधारणा
+  icon: 🕉️
+  story_summary:
+    en: The passage emphasizes the importance of unwavering devotion to Lord Shiva,
+      stating that all sins and sufferings can be eradicated through his worship.
+      True liberation is attainable through sincere and exclusive devotion.
+    hi: यह पाठ भगवान शिव के प्रति अटूट भक्ति के महत्व को रेखांकित करता है, यह कहते
+      हुए कि उनकी पूजा के माध्यम से सभी पाप और कष्ट मिट सकते हैं। सच्ची मुक्ति ईमानदार
+      और विशेष भक्ति के माध्यम से प्राप्त की जा सकती है।
+  theological_significance:
+    en: The verse aligns with the concept of single-pointed devotion found in the
+      Bhakti tradition. Just as exclusive devotion to Shiva leads to liberation, devotion
+      to Hanuman simplifies spiritual practice by focusing on one divine form, which
+      is sufficient for attaining happiness.
+    hi: यह श्लोक भक्ति परंपरा में पाए जाने वाले एकल-निष्ठ भक्ति की अवधारणा के साथ
+      मेल खाता है। जैसे शिव के प्रति विशेष भक्ति से मुक्ति मिलती है, वैसे ही हनुमान
+      की भक्ति एक दिव्य रूप पर ध्यान केंद्रित करके आध्यात्मिक अभ्यास को सरल बनाती
+      है, जो सुख प्राप्त करने के लिए पर्याप्त है।
+  practical_application:
+    en: Devotees can focus their spiritual practices on Hanuman without the anxiety
+      of needing to appease multiple deities. This focused devotion can lead to a
+      deeper connection with the divine and a more fulfilling spiritual life.
+    hi: भक्त बिना कई देवताओं को प्रसन्न करने की चिंता के हनुमान पर अपने आध्यात्मिक
+      अभ्यासों को केंद्रित कर सकते हैं। यह केंद्रित भक्ति दिव्य के साथ गहरे संबंध
+      और अधिक पूर्ण आध्यात्मिक जीवन की ओर ले जा सकती है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudrasamhita, Srishtikhanda
+  related_verses: []
 ---

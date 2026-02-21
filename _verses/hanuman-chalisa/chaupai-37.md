@@ -118,4 +118,39 @@ practical_application:
       आवश्यकता हो - केवल भौतिक सहायता नहीं बल्कि गहरी आंतरिक वृद्धि।
 
       '
+puranic_context:
+- id: worship-methods-for-deities
+  type: practice
+  priority: medium
+  title:
+    en: Worship Methods for Deities
+    hi: देवताओं की पूजा के तरीके
+  icon: 🙏
+  story_summary:
+    en: 'The passage outlines five methods of worship to please the deities: chanting
+      mantras, performing homa, giving donations, practicing penance, and conducting
+      rituals with sixteen offerings. These practices are intended to gain the favor
+      of the gods.'
+    hi: 'यह अंश देवताओं को प्रसन्न करने के लिए पूजा के पाँच तरीकों का वर्णन करता है:
+      मंत्रों का जाप, होम करना, दान देना, तपस्या करना और सोलह अर्पणों के साथ अनुष्ठान
+      करना। ये प्रथाएँ देवताओं की कृपा प्राप्त करने के लिए की जाती हैं।'
+  theological_significance:
+    en: The verse's request for grace 'like a guru' aligns with the practice of seeking
+      divine favor through dedicated worship. Just as a guru imparts wisdom and guidance,
+      these worship methods aim to establish a deeper connection with the divine.
+    hi: गुरु की तरह कृपा की प्रार्थना समर्पित पूजा के माध्यम से दिव्य कृपा प्राप्त
+      करने की प्रथा के साथ मेल खाती है। जैसे गुरु ज्ञान और मार्गदर्शन प्रदान करते
+      हैं, वैसे ही ये पूजा विधियाँ दिव्य के साथ गहरा संबंध स्थापित करने का उद्देश्य
+      रखती हैं।
+  practical_application:
+    en: Engaging in these worship methods can help devotees cultivate discipline and
+      focus, much like the guidance of a guru. By incorporating these practices, one
+      can seek not only material benefits but also spiritual growth.
+    hi: इन पूजा विधियों में संलग्न होना भक्तों को अनुशासन और ध्यान केंद्रित करने में
+      मदद कर सकता है, ठीक वैसे ही जैसे गुरु का मार्गदर्शन करता है। इन प्रथाओं को अपनाकर,
+      कोई न केवल भौतिक लाभ बल्कि आध्यात्मिक विकास भी प्राप्त कर सकता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: '71'
+  related_verses: []
 ---

@@ -132,4 +132,39 @@ practical_application:
       का सच्चा स्मरण व्यापक राहत लाता है।
 
       '
+puranic_context:
+- id: shiva-devotion-and-salvation
+  type: concept
+  priority: high
+  title:
+    en: Shiva Devotion and Salvation
+    hi: शिव भक्ति और मोक्ष
+  icon: 🕉️
+  story_summary:
+    en: The passage emphasizes the importance of devotion to Lord Shiva as a means
+      to attain salvation. It suggests that even those who have committed great sins
+      can be absolved through sincere worship of Shiva.
+    hi: यह भाग शिव की भक्ति के माध्यम से मोक्ष प्राप्ति के महत्व को दर्शाता है। यह
+      सुझाव देता है कि जो लोग बड़े पाप कर चुके हैं, वे भी शिव की सच्ची भक्ति के माध्यम
+      से मुक्त हो सकते हैं।
+  theological_significance:
+    en: The concept of salvation through devotion is central in Hinduism. Hanuman,
+      as a devotee of Shiva, embodies this principle. His remembrance, akin to Shiva's
+      worship, offers liberation from crises and suffering, highlighting the power
+      of sincere devotion.
+    hi: भक्ति के माध्यम से मुक्ति की अवधारणा हिंदू धर्म में केंद्रीय है। शिव के भक्त
+      के रूप में हनुमान इस सिद्धांत को मूर्त रूप देते हैं। उनकी स्मृति, शिव की पूजा
+      के समान, संकट और पीड़ा से मुक्ति प्रदान करती है, सच्ची भक्ति की शक्ति को उजागर
+      करती है।
+  practical_application:
+    en: Devotees can find solace in the practice of remembering Hanuman during times
+      of crisis. This practice is accessible to all, requiring only sincere devotion
+      and faith, rather than elaborate rituals.
+    hi: भक्त संकट के समय में हनुमान की स्मृति के अभ्यास में सांत्वना पा सकते हैं।
+      यह अभ्यास सभी के लिए सुलभ है, इसके लिए केवल सच्ची भक्ति और विश्वास की आवश्यकता
+      होती है, जटिल अनुष्ठानों की नहीं।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Srishti Khand
+  related_verses: []
 ---

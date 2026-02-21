@@ -136,4 +136,37 @@ practical_application:
       कर्म और शब्द सभी भक्ति और धर्म के साथ संरेखण को दर्शाते हैं।
 
       '
+puranic_context:
+- id: shiva-devotion-concept
+  type: concept
+  priority: high
+  title:
+    en: Shiva Devotion Concept
+    hi: शिव भक्ति का सिद्धांत
+  icon: 🕉️
+  story_summary:
+    en: The passage emphasizes the importance of unwavering devotion to Lord Shiva.
+      It states that all sins and sufferings rooted in worldly existence can be eradicated
+      through the worship of Shiva.
+    hi: यह अंश भगवान शिव के प्रति अटल भक्ति के महत्व को रेखांकित करता है। यह बताता
+      है कि शिव की पूजा के माध्यम से सांसारिक अस्तित्व में निहित सभी पाप और कष्ट मिटाए
+      जा सकते हैं।
+  theological_significance:
+    en: True liberation is attainable only through sincere and exclusive devotion
+      to Shiva. This aligns with the verse's emphasis on holistic devotion—mind, action,
+      and speech must be in harmony to achieve divine grace.
+    hi: सच्ची मुक्ति केवल शिव के प्रति ईमानदार और विशेष भक्ति के माध्यम से ही प्राप्त
+      की जा सकती है। यह श्लोक के समग्र भक्ति पर जोर देने के साथ मेल खाता है—दिव्य
+      अनुग्रह प्राप्त करने के लिए मन, कर्म और वचन में सामंजस्य होना चाहिए।
+  practical_application:
+    en: Devotees are encouraged to integrate their thoughts, actions, and words in
+      their spiritual practices. This holistic approach ensures that their devotion
+      is sincere and effective in overcoming life's crises.
+    hi: भक्तों को अपनी आध्यात्मिक प्रथाओं में अपने विचारों, कार्यों और शब्दों को एकीकृत
+      करने के लिए प्रोत्साहित किया जाता है। यह समग्र दृष्टिकोण सुनिश्चित करता है कि
+      उनकी भक्ति जीवन के संकटों को दूर करने में ईमानदार और प्रभावी है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudrasamhita, Srishtikhanda
+  related_verses: []
 ---

@@ -132,4 +132,40 @@ practical_application:
       करते हुए।
 
       '
+puranic_context:
+- id: nandi-pleads-to-shiva
+  type: story
+  priority: high
+  title:
+    en: Nandi Pleads to Shiva
+    hi: नंदी शिव से विनती करते हैं
+  icon: 🙏
+  story_summary:
+    en: Nandi, filled with compassion, pleads to Lord Shiva on behalf of the devas
+      who are being tormented by the demon Tarakasura. He requests Shiva to protect
+      the sages and gods, emphasizing Shiva's role as the compassionate protector
+      of the distressed.
+    hi: नंदी, करुणा से भरे हुए, ताड़कासुर द्वारा पीड़ित देवताओं की ओर से भगवान शिव
+      से विनती करते हैं। वह शिव से ऋषियों और देवताओं की रक्षा करने का अनुरोध करते
+      हैं, शिव की करुणामय रक्षक की भूमिका पर जोर देते हैं।
+  theological_significance:
+    en: This story highlights the divine duty of protecting the righteous and the
+      oppressed, a role that Hanuman also embodies as the protector of saints and
+      destroyer of demons. It underscores the importance of divine intervention in
+      maintaining cosmic balance.
+    hi: यह कहानी धर्मात्माओं और पीड़ितों की रक्षा के दिव्य कर्तव्य को उजागर करती है,
+      जो हनुमान भी साधु संतों के रक्षक और असुरों के संहारक के रूप में निभाते हैं।
+      यह ब्रह्मांडीय संतुलन बनाए रखने में दिव्य हस्तक्षेप के महत्व को रेखांकित करती
+      है।
+  practical_application:
+    en: In daily life, this teaches us to stand up for justice and protect those who
+      are vulnerable. It encourages us to embody both compassion and strength, ensuring
+      that we support the good and oppose the wicked.
+    hi: दैनिक जीवन में, यह हमें न्याय के लिए खड़े होने और कमजोरों की रक्षा करने की
+      शिक्षा देता है। यह हमें करुणा और शक्ति दोनों को अपनाने के लिए प्रेरित करता है,
+      यह सुनिश्चित करते हुए कि हम अच्छे का समर्थन करें और दुष्टों का विरोध करें।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Shiv Puran
+  related_verses: []
 ---

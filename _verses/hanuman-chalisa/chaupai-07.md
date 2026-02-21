@@ -120,4 +120,40 @@ practical_application:
       जरूरत हो।
 
       '
+puranic_context:
+- id: hanuman-learning-from-sun-god
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Education by the Sun God
+    hi: हनुमान की शिक्षा सूर्य देव से
+  icon: 🌞
+  story_summary:
+    en: Hanuman, known for his immense strength and devotion, was also a great scholar.
+      He learned the Vedas and other scriptures from the Sun God, Surya, who became
+      his teacher. Despite the Sun's constant movement, Hanuman mastered his lessons
+      while keeping pace with him.
+    hi: हनुमान, जो अपनी अपार शक्ति और भक्ति के लिए जाने जाते हैं, एक महान विद्वान
+      भी थे। उन्होंने वेद और अन्य शास्त्रों की शिक्षा सूर्य देव से प्राप्त की, जो
+      उनके गुरु बने। सूर्य के निरंतर गति में होने के बावजूद, हनुमान ने उनके साथ चलते
+      हुए अपनी शिक्षा पूरी की।
+  theological_significance:
+    en: Hanuman's education signifies the importance of knowledge in the path of devotion.
+      His ability to learn from the Sun God, who is always in motion, symbolizes the
+      pursuit of wisdom amidst life's constant changes.
+    hi: हनुमान की शिक्षा भक्ति के मार्ग में ज्ञान के महत्व को दर्शाती है। सूर्य देव
+      से शिक्षा प्राप्त करने की उनकी क्षमता, जो हमेशा गति में रहते हैं, जीवन की निरंतर
+      परिवर्तनों के बीच ज्ञान की खोज का प्रतीक है।
+  practical_application:
+    en: This story inspires devotees to pursue knowledge with dedication and adaptability.
+      It teaches that true learning is not just for personal gain but to serve a higher
+      purpose, as Hanuman did for Lord Rama.
+    hi: यह कहानी भक्तों को समर्पण और अनुकूलता के साथ ज्ञान प्राप्त करने के लिए प्रेरित
+      करती है। यह सिखाती है कि सच्चा ज्ञान केवल व्यक्तिगत लाभ के लिए नहीं, बल्कि एक
+      उच्च उद्देश्य की सेवा के लिए होना चाहिए, जैसा कि हनुमान ने भगवान राम के लिए
+      किया।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not specified
+  related_verses: []
 ---

@@ -108,4 +108,43 @@ practical_application:
     hi: इस चौपाई का पाठ करें जब परस्पर लाभ के लिए लोगों को एक साथ लाने के लिए ज्ञान
       की आवश्यकता हो, या जब किसी को उनका खोया हुआ पुनः प्राप्त करने में मदद करने का
       अवसर हो।
+puranic_context:
+- id: sugriva-hanuman-connection
+  type: story
+  priority: high
+  title:
+    en: Sugriva and Hanuman's Connection
+    hi: सुग्रीव और हनुमान का संबंध
+  icon: 🤝
+  story_summary:
+    en: Sugriva, exiled by his brother Vali, was living in fear on Rishyamukh mountain.
+      Hanuman, recognizing the divine nature of Rama and Lakshmana, brought them to
+      Sugriva. Rama helped Sugriva regain his kingdom by defeating Vali, and in gratitude,
+      Sugriva pledged his army to aid Rama in rescuing Sita.
+    hi: सुग्रीव, अपने भाई बाली द्वारा निर्वासित होकर ऋष्यमूक पर्वत पर भय में रह रहे
+      थे। हनुमान ने राम और लक्ष्मण की दिव्य प्रकृति को पहचानकर उन्हें सुग्रीव के पास
+      लाया। राम ने बाली को पराजित कर सुग्रीव को उसका राज्य वापस दिलाया, और कृतज्ञता
+      में सुग्रीव ने अपनी सेना को सीता की खोज में राम की सहायता के लिए समर्पित कर
+      दिया।
+  theological_significance:
+    en: This story highlights the importance of recognizing divine opportunities and
+      acting upon them. Hanuman's role as a facilitator demonstrates the power of
+      service and the impact of creating alliances for a greater cause. It also underscores
+      the theme of dharma, as Sugriva's rightful rule is restored.
+    hi: यह कहानी दिव्य अवसरों को पहचानने और उन पर कार्य करने के महत्व को दर्शाती है।
+      हनुमान की भूमिका एक सहायक के रूप में सेवा की शक्ति और एक महान उद्देश्य के लिए
+      गठबंधन बनाने के प्रभाव को दिखाती है। यह धर्म के विषय को भी रेखांकित करती है,
+      क्योंकि सुग्रीव का उचित शासन बहाल होता है।
+  practical_application:
+    en: In our lives, we can learn from Hanuman's example by being proactive in helping
+      others connect with opportunities that can lead to mutual benefit. Building
+      bridges and fostering cooperation can lead to success and fulfillment for all
+      involved.
+    hi: हम अपने जीवन में हनुमान के उदाहरण से सीख सकते हैं कि दूसरों को उन अवसरों से
+      जोड़ने में सक्रिय रहें जो पारस्परिक लाभ की ओर ले जा सकते हैं। पुल बनाना और सहयोग
+      को बढ़ावा देना सभी के लिए सफलता और संतोष की ओर ले जा सकता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not directly mentioned
+  related_verses: []
 ---

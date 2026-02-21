@@ -104,4 +104,41 @@ practical_application:
       anger, or abilities, ensuring they serve dharma.
     hi: इस छंद का पाठ तब करें जब आपको अपनी शक्ति, क्रोध या क्षमताओं पर आत्म-नियंत्रण
       विकसित करने की आवश्यकता हो, यह सुनिश्चित करते हुए कि वे धर्म की सेवा करें।
+puranic_context:
+- id: shiva-grants-powers
+  type: concept
+  priority: high
+  title:
+    en: Shiva Grants Powers
+    hi: शिव द्वारा शक्तियों का अनुदान
+  icon: 🔱
+  story_summary:
+    en: Shiva is described as granting three eternal powers to those who worship him
+      with devotion. These include the powers of action, will, and knowledge, leading
+      to the devotees' liberation from fear and death.
+    hi: शिव को अपने भक्तों को तीन शाश्वत शक्तियाँ प्रदान करने वाला बताया गया है। इनमें
+      क्रिया, इच्छा और ज्ञान की शक्तियाँ शामिल हैं, जो भक्तों को भय और मृत्यु से मुक्ति
+      दिलाती हैं।
+  theological_significance:
+    en: The concept of self-controlled power in Hanuman is akin to the powers granted
+      by Shiva, emphasizing that true strength lies in the ability to control and
+      channel one's energy for righteous purposes. This reflects the divine qualities
+      of restraint and purposeful action.
+    hi: हनुमान में आत्म-नियंत्रित शक्ति की अवधारणा शिव द्वारा दी गई शक्तियों के समान
+      है, जो इस बात पर जोर देती है कि सच्ची शक्ति अपने ऊर्जा को धर्मपूर्ण उद्देश्यों
+      के लिए नियंत्रित और संचालित करने की क्षमता में निहित है। यह संयम और उद्देश्यपूर्ण
+      क्रिया के दिव्य गुणों को दर्शाता है।
+  practical_application:
+    en: In daily life, this teaches us the importance of self-restraint and using
+      our abilities for constructive and ethical purposes. Just as Hanuman uses his
+      power wisely, individuals are encouraged to harness their strengths for positive
+      impact.
+    hi: दैनिक जीवन में, यह हमें आत्म-संयम और अपनी क्षमताओं का रचनात्मक और नैतिक उद्देश्यों
+      के लिए उपयोग करने के महत्व को सिखाता है। जैसे हनुमान अपनी शक्ति का विवेकपूर्ण
+      उपयोग करते हैं, वैसे ही व्यक्तियों को अपने बल को सकारात्मक प्रभाव के लिए उपयोग
+      करने के लिए प्रेरित किया जाता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Parvati Khanda
+  related_verses: []
 ---

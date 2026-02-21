@@ -128,4 +128,37 @@ practical_application:
       है।
 
       '
+puranic_context:
+- id: shiva-hanuman-connection
+  type: cross_reference
+  priority: high
+  title:
+    en: Shiva and Hanuman Connection
+    hi: शिव और हनुमान का संबंध
+  icon: 🔗
+  story_summary:
+    en: Hanuman is considered an incarnation of Lord Shiva, taken to serve Lord Rama.
+      This connection is significant as it highlights the divine purpose and authority
+      behind Hanuman's actions.
+    hi: हनुमान को भगवान शिव का अवतार माना जाता है, जो भगवान राम की सेवा के लिए आए
+      थे। यह संबंध महत्वपूर्ण है क्योंकि यह हनुमान के कार्यों के पीछे के दिव्य उद्देश्य
+      और अधिकार को दर्शाता है।
+  theological_significance:
+    en: The invocation of Shiva as a witness in the Hanuman Chalisa signifies the
+      divine endorsement of the text's spiritual power. It connects Hanuman's devotion
+      to the universal principles upheld by Shiva, the ultimate truth-knower.
+    hi: हनुमान चालीसा में शिव को साक्षी के रूप में बुलाना इस पाठ की आध्यात्मिक शक्ति
+      की दिव्य स्वीकृति को दर्शाता है। यह हनुमान की भक्ति को शिव द्वारा समर्थित सार्वभौमिक
+      सिद्धांतों से जोड़ता है।
+  practical_application:
+    en: Reciting the Hanuman Chalisa with the understanding of Shiva's endorsement
+      can deepen one's faith and enhance spiritual practice, knowing it is supported
+      by a higher divine authority.
+    hi: शिव की स्वीकृति के साथ हनुमान चालीसा का पाठ करने से व्यक्ति की आस्था गहरी
+      हो सकती है और यह जानकर आध्यात्मिक अभ्यास को बढ़ावा मिल सकता है कि इसे एक उच्च
+      दिव्य अधिकार का समर्थन प्राप्त है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Parvati Khanda
+  related_verses: []
 ---

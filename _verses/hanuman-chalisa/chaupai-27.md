@@ -129,4 +129,39 @@ practical_application:
       तरह समर्पित होने की आवश्यकता हो, कर्म को आध्यात्मिक अनुशासन के साथ जोड़ते हुए।
 
       '
+puranic_context:
+- id: rama-exile-episode
+  type: story
+  priority: high
+  title:
+    en: Rama's Exile Episode
+    hi: राम का वनवास प्रकरण
+  icon: 🌳
+  story_summary:
+    en: Lord Rama narrates his story to Sati, explaining that he is in exile in the
+      forest with Sita and Lakshmana due to his father's command. He expresses his
+      sorrow over Sita's abduction by a demon and his ongoing search for her.
+    hi: भगवान राम सती को अपनी कहानी सुनाते हैं, यह बताते हुए कि वह अपने पिता के आदेश
+      के कारण सीता और लक्ष्मण के साथ वन में वनवास में हैं। वह एक राक्षस द्वारा सीता
+      के अपहरण के बारे में अपनी पीड़ा व्यक्त करते हैं और उसकी खोज जारी रखते हैं।
+  theological_significance:
+    en: Rama's acceptance of exile is a profound example of dharma and obedience to
+      parental command. It highlights the virtues of sacrifice and duty, which are
+      central to Hindu teachings. Hanuman's role in aiding Rama during this period
+      underscores the importance of devotion and service.
+    hi: राम का वनवास स्वीकार करना धर्म और माता-पिता के आदेश के प्रति आज्ञाकारिता का
+      गहरा उदाहरण है। यह बलिदान और कर्तव्य के गुणों को उजागर करता है, जो हिंदू शिक्षाओं
+      के केंद्र में हैं। इस अवधि के दौरान राम की सहायता में हनुमान की भूमिका भक्ति
+      और सेवा के महत्व को रेखांकित करती है।
+  practical_application:
+    en: The story encourages individuals to uphold their duties and commitments, even
+      in challenging circumstances. It also inspires devotion and selfless service,
+      as exemplified by Hanuman's unwavering support for Rama.
+    hi: यह कहानी व्यक्तियों को चुनौतीपूर्ण परिस्थितियों में भी अपने कर्तव्यों और प्रतिबद्धताओं
+      को बनाए रखने के लिए प्रेरित करती है। यह भक्ति और निःस्वार्थ सेवा को भी प्रेरित
+      करती है, जैसा कि हनुमान के राम के प्रति अटूट समर्थन से उदाहरण मिलता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, Sati Khanda
+  related_verses: []
 ---

@@ -101,4 +101,36 @@ practical_application:
       or when you recognize the limitations of words and intellect.
     hi: इस चौपाई का पाठ करें जब दिव्य रहस्य के सामने विनम्रता विकसित करने की आवश्यकता
       हो, या जब शब्दों और बुद्धि की सीमाओं को पहचानें।
+puranic_context:
+- id: kubera-shiva-friendship
+  type: character
+  priority: medium
+  title:
+    en: Kubera's Friendship with Shiva
+    hi: कुबेर और शिव की मित्रता
+  icon: 🏔️
+  story_summary:
+    en: Kubera, the god of wealth, becomes a friend of Lord Shiva. His city, Alakapuri,
+      is near Mount Kailasa, which becomes Shiva's abode. This friendship highlights
+      the connection between divine wealth and spiritual richness.
+    hi: धन के देवता कुबेर भगवान शिव के मित्र बन जाते हैं। उनका नगर अलकापुरी कैलास
+      पर्वत के निकट है, जो शिव का निवास स्थान बनता है। यह मित्रता दिव्य धन और आध्यात्मिक
+      समृद्धि के संबंध को दर्शाती है।
+  theological_significance:
+    en: Kubera's relationship with Shiva signifies the union of material wealth and
+      spiritual wisdom. It teaches that true prosperity comes from balancing worldly
+      and divine pursuits.
+    hi: कुबेर और शिव का संबंध भौतिक धन और आध्यात्मिक ज्ञान के मिलन का प्रतीक है। यह
+      सिखाता है कि सच्ची समृद्धि सांसारिक और दिव्य प्रयासों के संतुलन से आती है।
+  practical_application:
+    en: In daily life, this story encourages individuals to seek a balance between
+      material success and spiritual growth, recognizing that both are essential for
+      a fulfilling life.
+    hi: दैनिक जीवन में, यह कहानी व्यक्तियों को भौतिक सफलता और आध्यात्मिक विकास के
+      बीच संतुलन खोजने के लिए प्रेरित करती है, यह मानते हुए कि दोनों ही एक संतोषजनक
+      जीवन के लिए आवश्यक हैं।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudra Samhita, First Khand, Chapter 19
+  related_verses: []
 ---
