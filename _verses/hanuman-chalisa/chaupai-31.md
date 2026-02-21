@@ -117,39 +117,4 @@ practical_application:
       remembering that Hanuman can bless you with comprehensive success.
     hi: इस चौपाई का पाठ करें जब आध्यात्मिक विकास और भौतिक कल्याण दोनों की तलाश कर
       रहे हों, यह याद रखते हुए कि हनुमान आपको व्यापक सफलता से आशीर्वादित कर सकते हैं।
-puranic_context:
-- id: dasa-kalavati-devotion
-  type: story
-  priority: medium
-  title:
-    en: Dasa and Kalavati's Devotion
-    hi: दासा और कलावती की भक्ति
-  icon: 🙏
-  story_summary:
-    en: In ancient times, a devotee named Dasa and his wife Kalavati attained spiritual
-      success through their devotion to Lord Shiva. Their unwavering faith and dedication
-      led them to achieve siddhi, a state of spiritual accomplishment.
-    hi: प्राचीन काल में, दासा नामक एक भक्त और उनकी पत्नी कलावती ने भगवान शिव की भक्ति
-      के माध्यम से आध्यात्मिक सफलता प्राप्त की। उनकी अटूट श्रद्धा और समर्पण ने उन्हें
-      सिद्धि, एक आध्यात्मिक उपलब्धि की स्थिति, प्राप्त करने में सक्षम बनाया।
-  theological_significance:
-    en: The story of Dasa and Kalavati illustrates the power of devotion in attaining
-      spiritual powers or siddhis. It aligns with the verse's theme of Hanuman being
-      a bestower of siddhis, emphasizing that sincere devotion can lead to divine
-      blessings and spiritual accomplishments.
-    hi: दासा और कलावती की कहानी भक्ति की शक्ति को दर्शाती है जो आध्यात्मिक शक्तियों
-      या सिद्धियों को प्राप्त करने में सहायक होती है। यह हनुमान के सिद्धियों के दाता
-      होने के विषय के साथ मेल खाती है, यह दर्शाती है कि सच्ची भक्ति से दिव्य आशीर्वाद
-      और आध्यात्मिक उपलब्धियाँ प्राप्त हो सकती हैं।
-  practical_application:
-    en: Devotees can draw inspiration from Dasa and Kalavati's unwavering devotion
-      to cultivate their own spiritual practices. By focusing on sincere devotion,
-      one may receive divine blessings and potentially attain spiritual powers.
-    hi: भक्त दासा और कलावती की अटूट भक्ति से प्रेरणा लेकर अपनी आध्यात्मिक प्रथाओं
-      को विकसित कर सकते हैं। सच्ची भक्ति पर ध्यान केंद्रित करके, कोई दिव्य आशीर्वाद
-      प्राप्त कर सकता है और संभवतः आध्यात्मिक शक्तियाँ प्राप्त कर सकता है।
-  source_texts:
-  - text: Shiv Puran Part1
-    section: Shiv Puran
-  related_verses: []
 ---
