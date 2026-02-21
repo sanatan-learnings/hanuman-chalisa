@@ -108,4 +108,37 @@ practical_application:
     hi: इस चौपाई का पाठ करें जब तत्काल चुनौतियों का सामना करना हो जहां अनिश्चितता
       के बावजूद कार्य करना आवश्यक हो, या जब पारंपरिक समाधानों से परे जाने का साहस
       चाहिए।
+puranic_context:
+- id: hanuman-fetches-sanjeevani
+  type: story
+  priority: high
+  title:
+    en: Hanuman Fetches the Sanjeevani Herb
+    hi: हनुमान लाते हैं संजीवनी बूटी
+  icon: 🌿
+  story_summary:
+    en: Rama instructs Hanuman to bring the Sanjeevani herb to revive the unconscious
+      Lakshman. Hanuman sets off to fulfill this task, ultimately bringing back the
+      entire mountain when he cannot identify the herb.
+    hi: राम ने हनुमान को मूर्छित लक्ष्मण को जीवित करने के लिए संजीवनी बूटी लाने का
+      निर्देश दिया। हनुमान इस कार्य को पूरा करने के लिए निकल पड़े और बूटी की पहचान
+      न कर पाने पर पूरा पर्वत ही उठा लाए।
+  theological_significance:
+    en: This episode highlights Hanuman's unwavering devotion and resourcefulness.
+      It symbolizes the idea that sincere effort and dedication are valued by the
+      divine, even if the execution is not perfect.
+    hi: यह प्रसंग हनुमान की अटूट भक्ति और संसाधनशीलता को दर्शाता है। यह इस विचार का
+      प्रतीक है कि ईश्वर के लिए सच्चे प्रयास और समर्पण का मूल्य है, भले ही कार्यान्वयन
+      में त्रुटि हो।
+  practical_application:
+    en: In life, when faced with challenges, one should focus on sincere effort and
+      dedication. Hanuman's story teaches us that even if we don't have all the answers,
+      our commitment can lead to success.
+    hi: जीवन में चुनौतियों का सामना करते समय, व्यक्ति को सच्चे प्रयास और समर्पण पर
+      ध्यान केंद्रित करना चाहिए। हनुमान की कहानी हमें सिखाती है कि भले ही हमारे पास
+      सभी उत्तर न हों, हमारा समर्पण सफलता की ओर ले जा सकता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Sarga 11
+  related_verses: []
 ---

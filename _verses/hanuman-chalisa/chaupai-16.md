@@ -108,4 +108,37 @@ practical_application:
     hi: इस चौपाई का पाठ करें जब परस्पर लाभ के लिए लोगों को एक साथ लाने के लिए ज्ञान
       की आवश्यकता हो, या जब किसी को उनका खोया हुआ पुनः प्राप्त करने में मदद करने का
       अवसर हो।
+puranic_context:
+- id: sugreeva-rama-friendship
+  type: story
+  priority: high
+  title:
+    en: Sugriva and Rama's Friendship
+    hi: सुग्रीव और राम की मित्रता
+  icon: 🤝
+  story_summary:
+    en: Sugriva, after hearing from Hanuman about Rama and Lakshmana, lights a fire
+      and makes a pact of friendship with Rama, witnessed by the fire. They embrace
+      each other, and Sugriva provides a resting place for Rama and Lakshmana.
+    hi: हनुमान से राम और लक्ष्मण के बारे में सुनकर, सुग्रीव अग्नि प्रज्वलित कर राम
+      के साथ मित्रता का संकल्प लेते हैं। वे एक-दूसरे को गले लगाते हैं और सुग्रीव राम
+      और लक्ष्मण के लिए विश्राम का स्थान प्रदान करते हैं।
+  theological_significance:
+    en: This episode highlights the importance of friendship and alliances in overcoming
+      adversity. Hanuman's role as a mediator underscores the power of devotion and
+      service in building meaningful relationships.
+    hi: यह प्रसंग विपत्तियों को दूर करने में मित्रता और गठबंधनों के महत्व को दर्शाता
+      है। हनुमान की मध्यस्थता की भूमिका भक्ति और सेवा की शक्ति को सार्थक संबंध बनाने
+      में रेखांकित करती है।
+  practical_application:
+    en: In our lives, acting as a bridge-builder like Hanuman can lead to mutually
+      beneficial relationships. Helping others connect can create a network of support
+      and collaboration.
+    hi: हमारे जीवन में, हनुमान की तरह सेतु-निर्माता की भूमिका निभाना पारस्परिक लाभकारी
+      संबंधों की ओर ले जा सकता है। दूसरों को जोड़ने में मदद करना समर्थन और सहयोग का
+      नेटवर्क बना सकता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Sarga 8
+  related_verses: []
 ---

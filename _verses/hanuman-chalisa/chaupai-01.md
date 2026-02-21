@@ -116,4 +116,37 @@ practical_application:
       to remember that learning and virtuous qualities are limitless like the ocean.
     hi: इस चौपाई का पाठ करें जब ज्ञान और प्रकाश की खोज कर रहे हों, या जब आपको याद
       रखने की आवश्यकता हो कि शिक्षा और सद्गुण सागर के समान असीमित हैं।
+puranic_context:
+- id: hanuman-ocean-of-knowledge
+  type: concept
+  priority: high
+  title:
+    en: Hanuman as the Ocean of Knowledge
+    hi: ज्ञान के सागर हनुमान
+  icon: 🌊
+  story_summary:
+    en: Hanuman is revered as an embodiment of immense knowledge and virtues. His
+      wisdom is as vast and deep as an ocean, symbolizing his mastery over scriptures
+      and spiritual insights.
+    hi: हनुमान को असीम ज्ञान और गुणों के प्रतीक के रूप में पूजा जाता है। उनका ज्ञान
+      समुद्र की तरह विशाल और गहरा है, जो उनके शास्त्रों और आध्यात्मिक अंतर्दृष्टियों
+      पर महारत का प्रतीक है।
+  theological_significance:
+    en: Hanuman's depiction as an ocean of knowledge signifies his role as a divine
+      guide and protector. His wisdom is not just intellectual but also spiritual,
+      offering guidance to devotees on the path of righteousness.
+    hi: ज्ञान के सागर के रूप में हनुमान का चित्रण उन्हें एक दिव्य मार्गदर्शक और रक्षक
+      के रूप में प्रस्तुत करता है। उनका ज्ञान केवल बौद्धिक नहीं बल्कि आध्यात्मिक भी
+      है, जो भक्तों को धर्म के मार्ग पर मार्गदर्शन प्रदान करता है।
+  practical_application:
+    en: Devotees seek Hanuman's blessings to gain wisdom and strength in overcoming
+      life's challenges. His example inspires individuals to pursue knowledge and
+      virtues in their own lives.
+    hi: भक्त हनुमान का आशीर्वाद प्राप्त करने के लिए ज्ञान और जीवन की चुनौतियों को
+      पार करने की शक्ति प्राप्त करते हैं। उनका उदाहरण व्यक्तियों को अपने जीवन में
+      ज्ञान और गुणों का अनुसरण करने के लिए प्रेरित करता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: सारकाण्डम्
+  related_verses: []
 ---

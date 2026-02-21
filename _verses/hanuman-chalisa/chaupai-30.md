@@ -132,4 +132,63 @@ practical_application:
       करते हुए।
 
       '
+puranic_context:
+- id: hanuman-protector-of-saints
+  type: story
+  priority: high
+  title:
+    en: Hanuman as Protector of Saints
+    hi: साधुओं के रक्षक हनुमान
+  icon: 🛡️
+  story_summary:
+    en: Hanuman is renowned for protecting sages and saints from the threats posed
+      by demons. His presence is a source of comfort and safety for those devoted
+      to righteousness.
+    hi: हनुमान साधुओं और संतों को राक्षसों के खतरों से बचाने के लिए प्रसिद्ध हैं।
+      उनकी उपस्थिति धर्म के प्रति समर्पित लोगों के लिए सुरक्षा और आराम का स्रोत है।
+  theological_significance:
+    en: Hanuman's role as a protector underscores his divine mission to uphold dharma.
+      His actions are driven by his devotion to Rama and his commitment to righteousness.
+    hi: रक्षक के रूप में हनुमान की भूमिका उनके धर्म को बनाए रखने के दिव्य मिशन को
+      रेखांकित करती है। उनके कार्य राम के प्रति उनकी भक्ति और धर्म के प्रति उनकी प्रतिबद्धता
+      से प्रेरित हैं।
+  practical_application:
+    en: Devotees can invoke Hanuman's protection in times of spiritual or physical
+      danger, trusting in his ability to safeguard those who live righteously.
+    hi: भक्त आध्यात्मिक या शारीरिक खतरे के समय हनुमान की सुरक्षा का आह्वान कर सकते
+      हैं, यह विश्वास रखते हुए कि वह धर्मपूर्वक जीवन जीने वालों की रक्षा करने में
+      सक्षम हैं।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Ninth Sarga
+  related_verses: []
+- id: hanuman-destroyer-of-demons
+  type: story
+  priority: high
+  title:
+    en: Hanuman as Destroyer of Demons
+    hi: राक्षसों के संहारक हनुमान
+  icon: ⚔️
+  story_summary:
+    en: Hanuman is celebrated for his prowess in defeating demons, especially during
+      his adventures in Lanka where he battled Ravana's forces. His strength and valor
+      are unmatched.
+    hi: हनुमान राक्षसों को पराजित करने की अपनी क्षमता के लिए प्रसिद्ध हैं, विशेष रूप
+      से लंका में अपने कारनामों के दौरान जहां उन्होंने रावण की सेनाओं से युद्ध किया।
+      उनकी शक्ति और वीरता अतुलनीय हैं।
+  theological_significance:
+    en: Hanuman's destruction of demons symbolizes the triumph of good over evil.
+      It reflects the divine justice that protects the virtuous and punishes the wicked.
+    hi: हनुमान द्वारा राक्षसों का संहार अच्छाई की बुराई पर विजय का प्रतीक है। यह उस
+      दिव्य न्याय को दर्शाता है जो धर्मात्माओं की रक्षा करता है और दुष्टों को दंडित
+      करता है।
+  practical_application:
+    en: In facing personal challenges or adversities, devotees can draw inspiration
+      from Hanuman's courage and strength, trusting in the ultimate victory of righteousness.
+    hi: व्यक्तिगत चुनौतियों या विपत्तियों का सामना करते समय, भक्त हनुमान की साहस और
+      शक्ति से प्रेरणा ले सकते हैं, धर्म की अंतिम विजय पर विश्वास रखते हुए।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Mohanakanda
+  related_verses: []
 ---

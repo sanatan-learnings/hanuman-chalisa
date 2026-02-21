@@ -51,7 +51,7 @@ verse-puranic-context --collection hanuman-chalisa --verse chaupai-06
 | Key | File | Episodes |
 |---|---|---|
 | shiv-puran-part1 | data/sources/shiv-puran-part1.txt | 1009 |
-| ananda-ramayan | data/sources/ananda-ramayan.txt | indexing in progress |
+| ananda-ramayan | data/sources/ananda-ramayan.txt | 504 |
 
 Priority sources to add: Brahmanda Purana (Adhyatma Ramayana), Mahabharata Vana Parva, Parasara Samhita — see [GitHub issues](https://github.com/sanatan-learnings/hanuman-gpt/issues).
 

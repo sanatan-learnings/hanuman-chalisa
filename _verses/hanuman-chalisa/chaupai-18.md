@@ -140,4 +140,36 @@ practical_application:
       हो।
 
       '
+puranic_context:
+- id: hanuman-leaps-to-sun
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Leap to the Sun
+    hi: हनुमान का सूर्य की ओर छलांग
+  icon: 🌞
+  story_summary:
+    en: As a child, Hanuman mistook the sun for a ripe fruit and leaped towards it.
+      His immense leap caused concern among the gods, leading Indra to strike him
+      with a thunderbolt. This incident resulted in Hanuman's jaw being injured, which
+      is how he got his name.
+    hi: बालक हनुमान ने सूर्य को पका हुआ फल समझकर उसकी ओर छलांग लगाई। उनकी विशाल छलांग
+      से देवताओं में चिंता फैल गई, जिससे इंद्र ने उन पर वज्र से प्रहार किया। इस घटना
+      से हनुमान की ठुड्डी घायल हो गई, जिससे उनका नाम पड़ा।
+  theological_significance:
+    en: The story symbolizes the boundless potential and fearlessness of a pure soul.
+      Hanuman's leap represents the soul's journey towards enlightenment, overcoming
+      obstacles with divine grace.
+    hi: यह कहानी एक शुद्ध आत्मा की असीम संभावनाओं और निर्भीकता का प्रतीक है। हनुमान
+      की छलांग आत्मा की ज्ञान की ओर यात्रा का प्रतिनिधित्व करती है, जो दिव्य कृपा
+      से बाधाओं को पार करती है।
+  practical_application:
+    en: Hanuman's story inspires us to pursue our goals with innocence and determination,
+      trusting in divine protection and guidance even when faced with challenges.
+    hi: हनुमान की कहानी हमें अपने लक्ष्यों को मासूमियत और दृढ़ संकल्प के साथ पूरा
+      करने के लिए प्रेरित करती है, चुनौतियों का सामना करते समय भी दिव्य सुरक्षा और
+      मार्गदर्शन पर विश्वास करते हुए।
+  source_texts:
+  - text: Ananda Ramayan
+    section: सारकाण्डम्
 ---
