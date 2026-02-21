@@ -176,7 +176,7 @@ All content generation uses **sanatan-verse-sdk** (v0.31.2) via Python venv:
 
 # Puranic context (two-stage)
 ./venv/bin/verse-index-sources --file data/sources/shiv-puran-part1.txt --project-dir .
-./venv/bin/verse-puranic-context --collection hanuman-chalisa --all --subject Hanuman
+./venv/bin/verse-puranic-context --collection hanuman-chalisa --all
 ```
 
 See [puranic-context.md](puranic-context.md) for the full two-stage workflow.

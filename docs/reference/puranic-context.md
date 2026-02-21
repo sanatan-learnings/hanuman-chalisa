@@ -28,24 +28,23 @@ Run once per source. Use `--update-meta` to refresh `_meta` without re-indexing.
 set -a && source .env && set +a
 ./venv/bin/verse-puranic-context \
   --collection hanuman-chalisa \
-  --all \
-  --subject Hanuman
+  --all
 ```
 
 For each verse: embeds the verse → cosine similarity search across all indexed sources → GPT-4 generates structured context citing the exact source section → writes `puranic_context:` block into the verse `.md` file.
 
+Subject is resolved automatically: collection-level `subject` in `_data/collections.yml` → project-level `defaults.subject` in `_data/verse-config.yml`.
+
 ```bash
 # Skip verses that already have context (default)
-verse-puranic-context --collection hanuman-chalisa --all --subject Hanuman
+verse-puranic-context --collection hanuman-chalisa --all
 
 # Regenerate all
-verse-puranic-context --collection hanuman-chalisa --all --subject Hanuman --regenerate
+verse-puranic-context --collection hanuman-chalisa --all --regenerate
 
 # Single verse
-verse-puranic-context --collection hanuman-chalisa --verse chaupai-06 --subject Hanuman
+verse-puranic-context --collection hanuman-chalisa --verse chaupai-06
 ```
-
-> **Note**: `--subject` will be read from `_data/collections.yml` automatically in a future SDK release (Issue #23).
 
 ## Indexed Sources
 
