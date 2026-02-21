@@ -24,7 +24,7 @@
     {% comment %} Box Content - Type Specific Rendering {% endcomment %}
     <div class="context-content">
 
-        {% if context.type == "story" or context.type == "character" %}
+        {% if context.type == "story" or context.type == "character" or context.type == "concept" and context.story_summary %}
             {% comment %} Story Box {% endcomment %}
             <div class="context-section">
                 <div class="context-section-label">
@@ -174,6 +174,7 @@
 
         {% elsif context.type == "concept" %}
             {% comment %} Concept Box {% endcomment %}
+            {% if context.concept_explanation.en or context.concept_explanation.hi %}
             <div class="context-section">
                 <div class="context-section-label">
                     <span class="section-icon">💭</span>
@@ -189,6 +190,7 @@
                     {% endif %}
                 </div>
             </div>
+            {% endif %}
 
             {% if context.scriptural_basis %}
             <div class="context-section">
@@ -337,12 +339,12 @@
                 <span data-lang="en">Sources:</span>
                 <span data-lang="hi">स्रोत:</span>
                 {% for source in context.source_texts %}
-                {{ source.text }}{% if source.section %} ({{ source.section }}){% endif %}{% unless forloop.last %}, {% endunless %}
+                {{ source.text }}{% if source.section and source.section != "N/A" and source.section != "" %} ({{ source.section }}){% endif %}{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
             </div>
             {% endif %}
 
-            {% if context.related_verses %}
+            {% if context.related_verses and context.related_verses.size > 0 %}
             <div class="meta-item">
                 <span class="meta-icon">🔗</span>
                 <span data-lang="en">Related Verses:</span>
