@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-10/
-title_en: "Chaupai 10: Recognizing Hanumans Exceptional Strength and Wisdom"
-title_hi: "चौपाई 10: हनुमान की असाधारण शक्ति और बुद्धि की पहचान"
+title_en: 'Chaupai 10: Recognizing Hanumans Exceptional Strength and Wisdom'
+title_hi: 'चौपाई 10: हनुमान की असाधारण शक्ति और बुद्धि की पहचान'
 verse_number: 14
 verse_type: chaupai
 previous_verse: /sundar-kaand/doha-01
@@ -99,4 +99,40 @@ meaning: The verse describes the moment when the gods see Hanuman, the son of th
 translation:
   en: The gods saw Hanuman, the son of the wind, and recognized his exceptional strength
     and wisdom.
+puranic_context:
+- id: hanuman-boons-from-gods
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Boons from the Gods
+    hi: हनुमान को देवताओं से वरदान
+  icon: 🕉️
+  story_summary:
+    en: After Hanuman was struck by Indra's thunderbolt, the gods granted him several
+      boons. He was blessed with immortality, immense strength, and the ability to
+      assist Lord Vishnu. These boons were given to appease Vayu, Hanuman's father,
+      who had stopped the wind in anger.
+    hi: इन्द्र के वज्र से हनुमान के घायल होने के बाद, देवताओं ने उन्हें कई वरदान दिए।
+      उन्हें अमरत्व, अपार शक्ति और भगवान विष्णु की सहायता करने की क्षमता प्रदान की
+      गई। ये वरदान वायु को शांत करने के लिए दिए गए थे, जिन्होंने क्रोध में आकर वायु
+      को रोक दिया था।
+  theological_significance:
+    en: The boons from the gods highlight Hanuman's divine nature and his destined
+      role in aiding Lord Vishnu. His strength and wisdom are not just personal attributes
+      but divine gifts meant to fulfill a greater cosmic purpose.
+    hi: देवताओं से प्राप्त वरदान हनुमान की दिव्य प्रकृति और भगवान विष्णु की सहायता
+      में उनकी नियत भूमिका को दर्शाते हैं। उनकी शक्ति और बुद्धि केवल व्यक्तिगत गुण
+      नहीं हैं, बल्कि एक महान ब्रह्मांडीय उद्देश्य को पूरा करने के लिए दिए गए दिव्य
+      उपहार हैं।
+  practical_application:
+    en: Recognizing one's strengths and using them for a higher purpose can lead to
+      fulfillment and divine grace. Hanuman's example teaches us to harness our abilities
+      for the greater good.
+    hi: अपनी शक्तियों को पहचानना और उन्हें उच्च उद्देश्य के लिए उपयोग करना संतोष और
+      दिव्य अनुग्रह की ओर ले जा सकता है। हनुमान का उदाहरण हमें अपनी क्षमताओं को महान
+      कल्याण के लिए उपयोग करने की शिक्षा देता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: सारकाण्डम्
+  related_verses: []
 ---

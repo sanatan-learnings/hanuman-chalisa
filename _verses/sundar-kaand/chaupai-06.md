@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-06/
-title_en: "Chaupai 6: Repeated Remembrance of Raghuvir"
-title_hi: "चौपाई 6: बार बार रघुवीर की स्मरण"
+title_en: 'Chaupai 6: Repeated Remembrance of Raghuvir'
+title_hi: 'चौपाई 6: बार बार रघुवीर की स्मरण'
 verse_number: 9
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-05
@@ -91,4 +91,38 @@ meaning: The verse speaks about the repeated remembrance of Lord Rama (Raghuvir)
 translation:
   en: Again and again, remembering Raghuvir, the son of wind (Hanuman) with immense
     strength, crossed over.
+puranic_context:
+- id: hanuman-flight-to-lanka
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Flight to Lanka
+    hi: हनुमान की लंका यात्रा
+  icon: 🐒
+  story_summary:
+    en: Hanuman, after being encouraged by Jambavan, prepares to leap across the ocean
+      to reach Lanka. He recalls his divine powers and takes a giant leap, overcoming
+      various obstacles on his way to fulfill Lord Rama's mission.
+    hi: जाम्बवान द्वारा प्रोत्साहित होने के बाद, हनुमान लंका पहुँचने के लिए समुद्र
+      को पार करने की तैयारी करते हैं। वह अपनी दिव्य शक्तियों को याद करते हैं और भगवान
+      राम के मिशन को पूरा करने के लिए एक विशाल छलांग लगाते हैं।
+  theological_significance:
+    en: This episode highlights the power of devotion and remembrance of the divine.
+      Hanuman's repeated remembrance of Lord Rama (Raghuvir) empowers him to perform
+      seemingly impossible feats, symbolizing the strength that comes from divine
+      connection.
+    hi: यह प्रकरण भक्ति और दिव्य स्मरण की शक्ति को उजागर करता है। भगवान राम (रघुवीर)
+      का बार-बार स्मरण हनुमान को असंभव प्रतीत होने वाले कार्यों को करने की शक्ति देता
+      है, जो दिव्य संबंध से मिलने वाली शक्ति का प्रतीक है।
+  practical_application:
+    en: In daily life, this teaches the importance of focusing on the divine or a
+      higher purpose to overcome personal challenges. Repeatedly remembering one's
+      goals or divine inspiration can provide the strength needed to succeed.
+    hi: दैनिक जीवन में, यह व्यक्तिगत चुनौतियों को पार करने के लिए दिव्य या उच्च उद्देश्य
+      पर ध्यान केंद्रित करने के महत्व को सिखाता है। अपने लक्ष्यों या दिव्य प्रेरणा
+      को बार-बार याद करना सफलता के लिए आवश्यक शक्ति प्रदान कर सकता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: '8'
+  related_verses: []
 ---

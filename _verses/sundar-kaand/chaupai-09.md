@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-09/
-title_en: "Chaupai 9: Ramas Emissary Considers the Ocean"
-title_hi: "चौपाई 9: रघुपति के दूत का समुद्र पर विचार"
+title_en: 'Chaupai 9: Ramas Emissary Considers the Ocean'
+title_hi: 'चौपाई 9: रघुपति के दूत का समुद्र पर विचार'
 verse_number: 12
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-08
@@ -100,4 +100,38 @@ meaning: The emissary (Doot) of Lord Rama (Raghupati) considers (Bichari) the oc
 translation:
   en: The emissary of Lord Rama considers the ocean. Then, the mountain Mainak becomes
     a reliever of fatigue.
+puranic_context:
+- id: hanuman-and-mainaka
+  type: story
+  priority: high
+  title:
+    en: Hanuman and Mainaka
+    hi: हनुमान और मैनाक
+  icon: 🌊
+  story_summary:
+    en: During his flight to Lanka, Hanuman is offered rest by the mountain Mainaka,
+      who rises from the ocean to provide him a place to rest. However, Hanuman politely
+      declines, stating that he cannot rest until he completes Lord Rama's task.
+    hi: लंका की ओर उड़ान भरते समय, हनुमान को मैनाक पर्वत द्वारा विश्राम का प्रस्ताव
+      दिया जाता है, जो समुद्र से उठकर उन्हें विश्राम का स्थान प्रदान करता है। हालांकि,
+      हनुमान विनम्रता से मना कर देते हैं, यह कहते हुए कि वह भगवान राम का कार्य पूरा
+      किए बिना विश्राम नहीं कर सकते।
+  theological_significance:
+    en: This episode highlights the importance of unwavering dedication and focus
+      on one's spiritual duties. Hanuman's refusal to rest symbolizes the commitment
+      required to overcome obstacles in the spiritual journey.
+    hi: यह प्रसंग अपने आध्यात्मिक कर्तव्यों के प्रति अटूट समर्पण और ध्यान के महत्व
+      को दर्शाता है। हनुमान का विश्राम करने से इनकार करना आध्यात्मिक यात्रा में बाधाओं
+      को पार करने के लिए आवश्यक प्रतिबद्धता का प्रतीक है।
+  practical_application:
+    en: In life, we often face challenges that seem insurmountable. Like Hanuman,
+      we must remain focused and dedicated to our goals, trusting that divine assistance
+      will come when needed.
+    hi: जीवन में, हम अक्सर चुनौतियों का सामना करते हैं जो अपार लगती हैं। हनुमान की
+      तरह, हमें अपने लक्ष्यों पर ध्यान केंद्रित और समर्पित रहना चाहिए, यह विश्वास
+      करते हुए कि जब आवश्यकता होगी तब दिव्य सहायता आएगी।
+  source_texts:
+  - text: Ananda Ramayan
+    section: '9'
+  related_verses: []
 ---

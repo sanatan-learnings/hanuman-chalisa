@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-05/
-title_en: "Chaupai 5: Leaping onto the Beautiful Mountain"
-title_hi: "चौपाई 5: सुंदर पर्वत पर कूदना"
+title_en: 'Chaupai 5: Leaping onto the Beautiful Mountain'
+title_hi: 'चौपाई 5: सुंदर पर्वत पर कूदना'
 verse_number: 8
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-04
@@ -109,4 +109,39 @@ meaning: On the shore of the ocean, there was a beautiful mountain. With joy, (H
 translation:
   en: On the ocean's shore, a beautiful mountain. With joy, (he) leapt and ascended
     onto it.
+puranic_context:
+- id: hanuman-and-mainaka
+  type: story
+  priority: high
+  title:
+    en: Hanuman and Mainaka
+    hi: हनुमान और मैनाक
+  icon: 🌄
+  story_summary:
+    en: As Hanuman flies over the ocean, Mainaka Mountain rises to offer him rest
+      and fruits. Mainaka, who was saved by King Dasharatha in the past, wishes to
+      repay the favor by aiding Hanuman in his mission for Lord Rama. Hanuman politely
+      declines, stating that he cannot rest until his task is complete.
+    hi: जब हनुमान समुद्र के ऊपर उड़ते हैं, तो मैनाक पर्वत उन्हें विश्राम और फल देने
+      के लिए उठता है। मैनाक, जिसे राजा दशरथ ने पहले बचाया था, हनुमान की मदद करके यह
+      उपकार चुकाना चाहता है। हनुमान विनम्रता से मना कर देते हैं, कहते हैं कि जब तक
+      उनका कार्य पूरा नहीं होता, वे विश्राम नहीं कर सकते।
+  theological_significance:
+    en: This episode highlights Hanuman's unwavering dedication and sense of duty.
+      Despite the offer of rest, Hanuman remains focused on his mission to find Sita,
+      symbolizing the importance of perseverance and commitment in the path of righteousness.
+    hi: यह प्रसंग हनुमान की अटल निष्ठा और कर्तव्य भावना को दर्शाता है। विश्राम के
+      प्रस्ताव के बावजूद, हनुमान सीता को खोजने के अपने मिशन पर केंद्रित रहते हैं,
+      जो धर्म के मार्ग में दृढ़ता और प्रतिबद्धता के महत्व को दर्शाता है।
+  practical_application:
+    en: In our own lives, we can draw inspiration from Hanuman's determination to
+      overcome obstacles with joy and dedication. By staying focused on our goals
+      and responsibilities, we can achieve success even in the face of challenges.
+    hi: हम अपने जीवन में हनुमान की दृढ़ता से प्रेरणा ले सकते हैं, जो उत्साह और समर्पण
+      के साथ बाधाओं को पार करते हैं। अपने लक्ष्यों और जिम्मेदारियों पर ध्यान केंद्रित
+      करके, हम चुनौतियों के बावजूद सफलता प्राप्त कर सकते हैं।
+  source_texts:
+  - text: Ananda Ramayan
+    section: '9'
+  related_verses: []
 ---

@@ -95,4 +95,37 @@ translation:
   en: The brave son of the wind god (Hanuman), having killed him, wisely went across
     the ocean.
 next_verse: /sundar-kaand/chaupai-27/
+puranic_context:
+- id: hanuman-courageous-leap
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Courageous Leap to Lanka
+    hi: हनुमान की लंका के लिए साहसी छलांग
+  icon: 🌊
+  story_summary:
+    en: In his mission to find Sita, Hanuman takes a courageous leap across the ocean
+      to Lanka. Overcoming various obstacles, he demonstrates his strength and determination,
+      fulfilling Lord Rama's mission.
+    hi: सीता की खोज में, हनुमान लंका के लिए समुद्र के पार एक साहसी छलांग लगाते हैं।
+      विभिन्न बाधाओं को पार करते हुए, वे अपनी शक्ति और दृढ़ संकल्प का प्रदर्शन करते
+      हैं, भगवान राम के मिशन को पूरा करते हैं।
+  theological_significance:
+    en: Hanuman's leap symbolizes the triumph of devotion and courage over insurmountable
+      challenges. His unwavering faith in Lord Rama empowers him to achieve the impossible,
+      serving as an inspiration for devotees.
+    hi: हनुमान की छलांग भक्ति और साहस की विजय का प्रतीक है जो असंभव चुनौतियों पर विजय
+      प्राप्त करती है। भगवान राम में उनकी अटूट आस्था उन्हें असंभव को प्राप्त करने
+      के लिए सशक्त बनाती है, जो भक्तों के लिए प्रेरणा का स्रोत है।
+  practical_application:
+    en: This story encourages individuals to face their challenges with courage and
+      faith. By trusting in a higher power and one's own abilities, one can overcome
+      obstacles and achieve their goals.
+    hi: यह कहानी व्यक्तियों को साहस और विश्वास के साथ अपनी चुनौतियों का सामना करने
+      के लिए प्रेरित करती है। एक उच्च शक्ति और अपनी क्षमताओं पर विश्वास करके, कोई
+      भी बाधाओं को पार कर सकता है और अपने लक्ष्यों को प्राप्त कर सकता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: '8'
+  related_verses: []
 ---

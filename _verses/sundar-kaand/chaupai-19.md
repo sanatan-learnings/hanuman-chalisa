@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-19/
-title_en: "Chaupai 19: Hanumans Transformation for the Leap"
-title_hi: "चौपाई 19: हनुमान का रूप परिवर्तन और कूद"
+title_en: 'Chaupai 19: Hanumans Transformation for the Leap'
+title_hi: 'चौपाई 19: हनुमान का रूप परिवर्तन और कूद'
 verse_number: 23
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-18/
@@ -93,4 +93,38 @@ meaning: Hanuman (Pavana-suta) made his face (ānana) the size of a hundred (sat
   yojanas (yojana) and took a very (ati) small (laghu) form (rūpa).
 translation:
   en: Hanuman made his face a hundred yojanas wide and assumed a very small form.
+puranic_context:
+- id: hanuman-flight-to-lanka
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Flight to Lanka
+    hi: हनुमान की लंका के लिए उड़ान
+  icon: 🌊
+  story_summary:
+    en: Hanuman, after being encouraged by Jambavan, prepares to leap across the ocean
+      to reach Lanka. He recalls his divine powers and takes a giant leap, overcoming
+      various obstacles on his way to fulfill Lord Rama's mission.
+    hi: जाम्बवान द्वारा प्रोत्साहित होने के बाद, हनुमान लंका पहुंचने के लिए समुद्र
+      के पार छलांग लगाने की तैयारी करते हैं। वह अपनी दिव्य शक्तियों को याद करते हैं
+      और भगवान राम के मिशन को पूरा करने के लिए विभिन्न बाधाओं को पार करते हुए एक विशाल
+      छलांग लगाते हैं।
+  theological_significance:
+    en: This episode highlights Hanuman's devotion and unwavering dedication to Lord
+      Rama. His ability to transform and adapt signifies the power of faith and determination
+      in overcoming challenges.
+    hi: यह घटना हनुमान की भगवान राम के प्रति भक्ति और अटल समर्पण को दर्शाती है। उनका
+      रूपांतरित और अनुकूलित करने की क्षमता विश्वास और दृढ़ संकल्प की शक्ति को चुनौतियों
+      को पार करने में दर्शाती है।
+  practical_application:
+    en: Hanuman's transformation teaches us the importance of adaptability and humility
+      in achieving our goals. By being flexible and humble, we can overcome obstacles
+      and fulfill our duties.
+    hi: हनुमान का रूपांतरण हमें अपने लक्ष्यों को प्राप्त करने में अनुकूलनशीलता और
+      विनम्रता के महत्व को सिखाता है। लचीला और विनम्र होकर, हम बाधाओं को पार कर सकते
+      हैं और अपने कर्तव्यों को पूरा कर सकते हैं।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Ananda Ramayan, 8
+  related_verses: []
 ---

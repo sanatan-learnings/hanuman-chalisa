@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/doha-01/
-title_en: "Doha 1: Hanuman's Devotion to Rama's Task"
-title_hi: "दोहा 1: हनुमान की राम के कार्य के प्रति भक्ति"
+title_en: 'Doha 1: Hanuman''s Devotion to Rama''s Task'
+title_hi: 'दोहा 1: हनुमान की राम के कार्य के प्रति भक्ति'
 verse_number: 13
 verse_type: doha
 previous_verse: /sundar-kaand/chaupai-09
@@ -87,4 +87,35 @@ meaning: Hanuman, after touching (the mountain), salutes again. Without doing Ra
 translation:
   en: Hanuman, after touching it, salutes again. Without doing Rama's task, where
     is my rest?
+puranic_context:
+- id: hanuman-and-mainaka
+  type: story
+  priority: high
+  title:
+    en: Hanuman and Mainaka
+    hi: हनुमान और मैनाक
+  icon: 🌊
+  story_summary:
+    en: During his flight to Lanka, Hanuman is offered rest by the mountain Mainaka,
+      who rises from the ocean to provide him a place to rest. However, Hanuman politely
+      declines, stating that he cannot rest until he completes Lord Rama's task.
+    hi: लंका की ओर उड़ान भरते समय, समुद्र से मैनाक पर्वत उठकर हनुमान को विश्राम के
+      लिए स्थान प्रदान करता है। हनुमान विनम्रता से मना कर देते हैं, यह कहते हुए कि
+      जब तक वह भगवान राम का कार्य पूरा नहीं कर लेते, तब तक वह विश्राम नहीं कर सकते।
+  theological_significance:
+    en: This story highlights Hanuman's unwavering devotion and commitment to Lord
+      Rama's mission. It symbolizes the ideal of selfless service and dedication to
+      one's duty.
+    hi: यह कहानी हनुमान की भगवान राम के मिशन के प्रति अटूट भक्ति और प्रतिबद्धता को
+      दर्शाती है। यह निःस्वार्थ सेवा और कर्तव्य के प्रति समर्पण के आदर्श का प्रतीक
+      है।
+  practical_application:
+    en: Hanuman's refusal to rest until completing his task teaches us the importance
+      of dedication and perseverance in our own duties and responsibilities.
+    hi: हनुमान का अपने कार्य को पूरा करने से पहले विश्राम न करने का निर्णय हमें अपने
+      कर्तव्यों और जिम्मेदारियों में समर्पण और दृढ़ता के महत्व को सिखाता है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: '9'
+  related_verses: []
 ---

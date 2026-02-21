@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-13/
-title_en: "Chaupai 13: Hanumans Unwavering Resolve"
-title_hi: "चौपाई 13: हनुमान का अटल संकल्प"
+title_en: 'Chaupai 13: Hanumans Unwavering Resolve'
+title_hi: 'चौपाई 13: हनुमान का अटल संकल्प'
 verse_number: 17
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-12
@@ -106,4 +106,33 @@ meaning: Hanuman is saying that after completing the task given by Lord Ram, he 
 translation:
   en: After performing Ram's task, I will return. I will inform the Lord about Sita's
     condition.
+puranic_context:
+- id: hanuman-returns-to-rama
+  type: story
+  priority: high
+  title:
+    en: Hanuman Returns to Rama
+    hi: हनुमान राम के पास लौटते हैं
+  icon: 🐒
+  story_summary:
+    en: After discovering Sita in Lanka, Hanuman returns to Rama to convey the news.
+      He performs a circumambulation around Rama and informs him of Sita's safety.
+    hi: लंका में सीता को खोजने के बाद, हनुमान राम के पास खबर देने के लिए लौटते हैं।
+      वह राम की परिक्रमा करते हैं और उन्हें सीता की सुरक्षा के बारे में बताते हैं।
+  theological_significance:
+    en: Hanuman's return to Rama signifies his unwavering devotion and duty towards
+      his lord. It highlights the importance of completing one's mission and reporting
+      back to the divine source.
+    hi: हनुमान का राम के पास लौटना उनके अटूट भक्ति और अपने प्रभु के प्रति कर्तव्य
+      को दर्शाता है। यह अपने मिशन को पूरा करने और दिव्य स्रोत को रिपोर्ट करने के महत्व
+      को उजागर करता है।
+  practical_application:
+    en: This story encourages devotees to remain steadfast in their duties and to
+      communicate effectively with their spiritual guides or mentors.
+    hi: यह कहानी भक्तों को अपने कर्तव्यों में अडिग रहने और अपने आध्यात्मिक मार्गदर्शकों
+      या गुरुओं के साथ प्रभावी ढंग से संवाद करने के लिए प्रेरित करती है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: hanuman-returns-to-rama
+  related_verses: []
 ---

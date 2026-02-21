@@ -2,8 +2,8 @@
 layout: verse
 collection_key: sundar-kaand
 permalink: /sundar-kaand/chaupai-15/
-title_en: "Chaupai 15: Hanumans Fearless Determination"
-title_hi: "चौपाई 15: हनुमान की निडर संकल्पना"
+title_en: 'Chaupai 15: Hanumans Fearless Determination'
+title_hi: 'चौपाई 15: हनुमान की निडर संकल्पना'
 verse_number: 19
 verse_type: chaupai
 previous_verse: /sundar-kaand/chaupai-14
@@ -103,4 +103,38 @@ meaning: Hanuman declares that he does not know of any effort that can prevent h
 translation:
   en: '"At any time, I do not know of any effort that can prevent me from being swallowed,"
     says Hanuman.'
+puranic_context:
+- id: hanuman-and-simhika-episode
+  type: story
+  priority: high
+  title:
+    en: Hanuman and Simhika Episode
+    hi: हनुमान और सिम्हिका प्रकरण
+  icon: 🦸‍♂️
+  story_summary:
+    en: While flying to Lanka, Hanuman encounters Simhika, a demoness who captures
+      shadows of flying beings. Hanuman, realizing the obstruction in his mission,
+      enters her mouth, tears her intestines, and kills her, continuing his journey.
+    hi: लंका की ओर उड़ते समय, हनुमान सिम्हिका नामक राक्षसी से मिलते हैं, जो उड़ने
+      वाले जीवों की छायाओं को पकड़ लेती है। हनुमान, अपने मिशन में बाधा को समझते हुए,
+      उसके मुंह में प्रवेश करते हैं, उसकी आंतों को फाड़ देते हैं और उसे मार देते हैं,
+      और अपनी यात्रा जारी रखते हैं।
+  theological_significance:
+    en: This episode highlights Hanuman's fearless determination and his ability to
+      overcome any obstacle with his strength and devotion to Lord Rama. It symbolizes
+      the triumph of good over evil.
+    hi: यह प्रकरण हनुमान की निर्भीक दृढ़ता और भगवान राम के प्रति उनकी भक्ति और शक्ति
+      के साथ किसी भी बाधा को पार करने की क्षमता को दर्शाता है। यह बुराई पर अच्छाई
+      की विजय का प्रतीक है।
+  practical_application:
+    en: In life, one can draw inspiration from Hanuman's courage and determination
+      to face challenges head-on, trusting in a higher power to guide and protect
+      them.
+    hi: जीवन में, हनुमान के साहस और दृढ़ता से प्रेरणा ली जा सकती है कि चुनौतियों का
+      सामना सीधे करें और एक उच्च शक्ति पर विश्वास करें जो मार्गदर्शन और सुरक्षा प्रदान
+      करती है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Ananda Ramayan, 9
+  related_verses: []
 ---
