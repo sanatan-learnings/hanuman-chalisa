@@ -180,6 +180,28 @@ layout: default
                 <span data-lang="hi">📖 पौराणिक संदर्भ और कहानियां</span>
             </h2>
 
+            {% comment %} Source legend - collect unique sources across all context entries {% endcomment %}
+            {% assign all_sources = "" %}
+            {% for context in page.puranic_context %}
+                {% for source in context.source_texts %}
+                    {% unless all_sources contains source.text %}
+                        {% assign all_sources = all_sources | append: source.text | append: "|" %}
+                    {% endunless %}
+                {% endfor %}
+            {% endfor %}
+            {% assign unique_sources = all_sources | split: "|" | uniq %}
+            {% if unique_sources.size > 0 %}
+            <div class="puranic-sources-legend">
+                <span class="legend-label" data-lang="en">Sources:</span>
+                <span class="legend-label" data-lang="hi">स्रोत:</span>
+                {% for source in unique_sources %}
+                    {% if source != "" %}
+                    <span class="legend-badge">📜 {{ source }}</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+
             {% comment %} Separate contexts by priority {% endcomment %}
             {% assign high_priority = page.puranic_context | where: "priority", "high" %}
             {% assign medium_priority = page.puranic_context | where: "priority", "medium" %}
