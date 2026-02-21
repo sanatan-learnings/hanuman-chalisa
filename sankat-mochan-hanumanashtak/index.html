@@ -14,6 +14,9 @@ title: Sankat Mochan Hanumanashtak
     <div class="quick-actions">
         <a href="{{ '/chalisa/book' | relative_url }}?collection=sankat-mochan-hanumanashtak" class="btn-primary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
     </div>
+    <div class="collection-meta">
+        <span class="puranic-legend-compact">📚 <span data-lang="en">Some verses have Puranic stories</span><span data-lang="hi">कुछ पदों में पौराणिक कथाएं हैं</span></span>
+    </div>
 </div>
 
 <section class="verse-navigation">
@@ -22,7 +25,7 @@ title: Sankat Mochan Hanumanashtak
         {% assign verses = site.verses | where: "collection_key", "sankat-mochan-hanumanashtak" | sort: "verse_number" %}
         {% if verses.size > 0 %}
             {% for verse in verses %}
-            <a href="{{ verse.url | relative_url }}" class="verse-card">
+            <a href="{{ verse.url | relative_url }}" class="verse-card{% if verse.puranic_context %} has-puranic-context{% endif %}">
                 {% if verse.image %}
                 <div class="card-image">
                     <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
@@ -37,6 +40,11 @@ title: Sankat Mochan Hanumanashtak
                         <span data-lang="en">{{ verse.title_en }}</span>
                         <span data-lang="hi">{{ verse.title_hi }}</span>
                     </div>
+                    {% if verse.puranic_context %}
+                    <div class="puranic-badge">
+                        <span class="badge-icon">📚</span>
+                    </div>
+                    {% endif %}
                 </div>
             </a>
             {% endfor %}

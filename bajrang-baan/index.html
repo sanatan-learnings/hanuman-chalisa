@@ -13,6 +13,9 @@ title: Bajrang Baan
     <div class="quick-actions">
         <a href="{{ '/chalisa/book' | relative_url }}?collection=bajrang-baan" class="btn-primary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
     </div>
+    <div class="collection-meta">
+        <span class="puranic-legend-compact">📚 <span data-lang="en">Some verses have Puranic stories</span><span data-lang="hi">कुछ पदों में पौराणिक कथाएं हैं</span></span>
+    </div>
 </div>
 
 <section class="verse-navigation">
@@ -21,7 +24,7 @@ title: Bajrang Baan
     <h3>🪷 <span data-lang="en">Opening Doha (1 Verse)</span><span data-lang="hi">प्रारंभिक दोहा (1 पद)</span></h3>
     <div class="verse-grid">
         {% assign doha_opening = site.verses | where: "collection_key", "bajrang-baan" | where_exp: "item", "item.url contains 'doha-opening'" | first %}
-        <a href="{{ doha_opening.url | relative_url }}" class="verse-card">
+        <a href="{{ doha_opening.url | relative_url }}" class="verse-card{% if doha_opening.puranic_context %} has-puranic-context{% endif %}">
             {% if doha_opening.image %}
             <div class="card-image">
                 <img src="{{ doha_opening.image | relative_url }}" alt="{{ doha_opening.title_en }}" loading="lazy">
@@ -36,6 +39,11 @@ title: Bajrang Baan
                     <span data-lang="en">{{ doha_opening.title_en }}</span>
                     <span data-lang="hi">{{ doha_opening.title_hi }}</span>
                 </div>
+                {% if doha_opening.puranic_context %}
+                <div class="puranic-badge">
+                    <span class="badge-icon">📚</span>
+                </div>
+                {% endif %}
             </div>
         </a>
     </div>
@@ -45,7 +53,7 @@ title: Bajrang Baan
     <h3>📿 <span data-lang="en">Chaupais ({{ chaupai_count }} Verses)</span><span data-lang="hi">चौपाई ({{ chaupai_count }} पद)</span></h3>
     <div class="verse-grid">
         {% for verse in chaupais %}
-        <a href="{{ verse.url | relative_url }}" class="verse-card">
+        <a href="{{ verse.url | relative_url }}" class="verse-card{% if verse.puranic_context %} has-puranic-context{% endif %}">
             {% if verse.image %}
             <div class="card-image">
                 <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
@@ -61,6 +69,11 @@ title: Bajrang Baan
                     <span data-lang="en">{{ verse.title_en }}</span>
                     <span data-lang="hi">{{ verse.title_hi }}</span>
                 </div>
+                {% if verse.puranic_context %}
+                <div class="puranic-badge">
+                    <span class="badge-icon">📚</span>
+                </div>
+                {% endif %}
             </div>
         </a>
         {% endfor %}
@@ -69,7 +82,7 @@ title: Bajrang Baan
     <h3>🙏 <span data-lang="en">Closing Doha (1 Verse)</span><span data-lang="hi">समापन दोहा (1 पद)</span></h3>
     <div class="verse-grid">
         {% assign doha_closing = site.verses | where: "collection_key", "bajrang-baan" | where_exp: "item", "item.url contains 'doha-closing'" | first %}
-        <a href="{{ doha_closing.url | relative_url }}" class="verse-card">
+        <a href="{{ doha_closing.url | relative_url }}" class="verse-card{% if doha_closing.puranic_context %} has-puranic-context{% endif %}">
             {% if doha_closing.image %}
             <div class="card-image">
                 <img src="{{ doha_closing.image | relative_url }}" alt="{{ doha_closing.title_en }}" loading="lazy">
@@ -84,6 +97,11 @@ title: Bajrang Baan
                     <span data-lang="en">{{ doha_closing.title_en }}</span>
                     <span data-lang="hi">{{ doha_closing.title_hi }}</span>
                 </div>
+                {% if doha_closing.puranic_context %}
+                <div class="puranic-badge">
+                    <span class="badge-icon">📚</span>
+                </div>
+                {% endif %}
             </div>
         </a>
     </div>

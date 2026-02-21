@@ -10,6 +10,9 @@ title: Sundar Kaand
     <div class="title-image-container">
         <img src="{{ '/images/sundar-kaand/modern-minimalist/title-page.png' | relative_url }}" alt="Sundar Kaand Title Page" class="title-page-image">
     </div>
+    <div class="collection-meta">
+        <span class="puranic-legend-compact">📚 <span data-lang="en">Some verses have Puranic stories</span><span data-lang="hi">कुछ पदों में पौराणिक कथाएं हैं</span></span>
+    </div>
 </div>
 
 <section class="verse-navigation">
@@ -55,7 +58,7 @@ title: Sundar Kaand
         {% endif %}
 
         {% comment %} Output verse card {% endcomment %}
-        <a href="{{ verse.url | relative_url }}" class="verse-card">
+        <a href="{{ verse.url | relative_url }}" class="verse-card{% if verse.puranic_context %} has-puranic-context{% endif %}">
             {% if verse.image %}
             <div class="card-image">
                 <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en }}" loading="lazy">
@@ -92,6 +95,11 @@ title: Sundar Kaand
                     <span data-lang="en">{{ verse.title_en }}</span>
                     <span data-lang="hi">{{ verse.title_hi }}</span>
                 </div>
+                {% if verse.puranic_context %}
+                <div class="puranic-badge">
+                    <span class="badge-icon">📚</span>
+                </div>
+                {% endif %}
             </div>
         </a>
 

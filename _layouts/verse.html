@@ -180,7 +180,7 @@ layout: default
                 <span data-lang="hi">📖 पौराणिक संदर्भ और कहानियां</span>
             </h2>
 
-            {% comment %} Source legend - collect unique source names, look up _meta.legend from puranic-index {% endcomment %}
+            {% comment %} Source legend - collect unique source names, look up legend from _data/puranic-sources.yml {% endcomment %}
             {% assign all_sources = "" %}
             {% for context in page.puranic_context %}
                 {% for source in context.source_texts %}
@@ -197,9 +197,9 @@ layout: default
                 {% for source_name in unique_sources %}
                     {% if source_name != "" %}
                         {% assign legend_text = "" %}
-                        {% for index_entry in site.data["puranic-index"] %}
-                            {% if index_entry[1]._meta.source_name == source_name %}
-                                {% assign legend_text = index_entry[1]._meta.legend %}
+                        {% for src_entry in site.data["puranic-sources"] %}
+                            {% if src_entry[1].source_name == source_name %}
+                                {% assign legend_text = src_entry[1].legend %}
                             {% endif %}
                         {% endfor %}
                         {% if legend_text != "" %}
