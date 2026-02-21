@@ -21,7 +21,7 @@ User Browser → Cloudflare Worker → OpenAI API → Response
 **Configuration:**
 ```javascript
 // assets/js/guidance.js
-const WORKER_URL = 'https://hanuman-chalisa-api.arungupta.workers.dev';
+const WORKER_URL = 'https://hanumanji-api.arungupta.workers.dev';
 ```
 
 ## How It Works

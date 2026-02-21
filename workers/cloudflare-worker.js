@@ -9,7 +9,7 @@
  *   2. Workers & Pages > Create Application > Create Worker
  *   3. Paste this code
  *   4. Settings > Variables > Add secret: OPENAI_API_KEY
- *   5. Copy worker URL (e.g., https://hanuman-chalisa-api.your-subdomain.workers.dev)
+ *   5. Copy worker URL (e.g., https://hanumanji-api.your-subdomain.workers.dev)
  *   6. Update WORKER_URL in assets/js/guidance.js
  */
 

@@ -87,7 +87,7 @@ The SDK handles authentication, deployment, and secret management automatically.
 
 3. **Get Worker URL:**
    - Find at https://dash.cloudflare.com/ → Workers & Pages
-   - Format: `https://hanuman-chalisa-api.your-subdomain.workers.dev`
+   - Format: `https://hanumanji-api.your-subdomain.workers.dev`
 
 4. **Update Frontend:**
    Edit `assets/js/guidance.js`:
