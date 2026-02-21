@@ -24,7 +24,7 @@
     {% comment %} Box Content - Type Specific Rendering {% endcomment %}
     <div class="context-content">
 
-        {% if context.type == "story" %}
+        {% if context.type == "story" or context.type == "character" %}
             {% comment %} Story Box {% endcomment %}
             <div class="context-section">
                 <div class="context-section-label">
