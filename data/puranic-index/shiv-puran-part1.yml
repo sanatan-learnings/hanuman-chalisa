@@ -1,3 +1,14 @@
+_meta:
+  source_file: shiv-puran-part1.txt
+  source_name: Shiv Puran Part1
+  legend: 📜 Shiv Puran Part1
+  generated_at: '2026-02-20T21:31:01.236904'
+  sdk_version: 0.30.6
+  embedding_provider: openai
+  embedding_model: text-embedding-3-small
+  chunk_size: 4000
+  episode_count: 1009
+episodes:
 - id: veerabhadra-destruction-of-daksha-yajna
   type: event
   keywords:
