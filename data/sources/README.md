@@ -1,4 +1,4 @@
-# Source Texts
+# Sources
 
 This directory contains authoritative source texts for sacred verse collections in their original format, used as input for parsing into structured verse files.
 
@@ -50,7 +50,7 @@ python scripts/parse-sundar-kaand.py
 ```
 
 The parser will:
-1. Read from `data/source-texts/<collection>.txt`
+1. Read from `data/sources/<collection>.txt`
 2. Parse verses according to the collection's structure
 3. Generate `data/verses/<collection>.yml`
 
