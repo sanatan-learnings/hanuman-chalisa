@@ -106,38 +106,4 @@ practical_application:
       obstacles, or when you need courage and clarity of mind.
     hi: इस चौपाई का पाठ करें जब नकारात्मक विचारों, संदेह, या मानसिक बाधाओं से जूझ
       रहे हों, या जब साहस और मानसिक स्पष्टता की आवश्यकता हो।
-puranic_context:
-- id: hanuman-indra-blessing
-  type: story
-  priority: high
-  title:
-    en: Hanuman's Blessing from Indra
-    hi: हनुमान को इन्द्र का वरदान
-  icon: ⚡
-  story_summary:
-    en: As a child, Hanuman attempted to swallow the sun, mistaking it for a fruit.
-      Indra struck him with a thunderbolt, disfiguring his jaw. Pleased with Hanuman's
-      resilience, Indra blessed him with a body as strong as a thunderbolt, making
-      him invincible.
-    hi: बालक हनुमान ने सूर्य को फल समझकर निगलने का प्रयास किया। इन्द्र ने उन पर वज्र
-      से प्रहार किया, जिससे उनका जबड़ा विकृत हो गया। इन्द्र ने हनुमान की सहनशीलता
-      से प्रसन्न होकर उन्हें वज्र के समान अजेय शरीर का वरदान दिया।
-  theological_significance:
-    en: This story signifies that divine intervention can transform obstacles into
-      blessings. Hanuman's invincibility symbolizes the spiritual strength that devotees
-      can attain through divine grace.
-    hi: यह कथा दर्शाती है कि दिव्य हस्तक्षेप बाधाओं को वरदान में बदल सकता है। हनुमान
-      की अजेयता उस आध्यात्मिक शक्ति का प्रतीक है जो भक्त दिव्य कृपा से प्राप्त कर
-      सकते हैं।
-  practical_application:
-    en: Devotees can draw inspiration from Hanuman's story to face challenges with
-      resilience, trusting that difficulties can lead to greater spiritual strength
-      and blessings.
-    hi: भक्त हनुमान की कथा से प्रेरणा लेकर चुनौतियों का सामना धैर्यपूर्वक कर सकते
-      हैं, यह विश्वास रखते हुए कि कठिनाइयाँ अधिक आध्यात्मिक शक्ति और आशीर्वाद ला सकती
-      हैं।
-  source_texts:
-  - text: Shiv Puran Part1
-    section: Not specifically mentioned
-  related_verses: []
 ---

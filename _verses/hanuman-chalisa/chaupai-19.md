@@ -136,38 +136,4 @@ practical_application:
       करना हो, याद रखने के लिए कि दिव्य कृपा चमत्कारों को स्वाभाविक बनाती है।
 
       '
-puranic_context:
-- id: hanuman-crosses-ocean
-  type: story
-  priority: high
-  title:
-    en: Hanuman Crosses the Ocean
-    hi: हनुमान का समुद्र पार करना
-  icon: 🌊
-  story_summary:
-    en: Before Hanuman leaped to Lanka to find Sita, Lord Rama gave him his ring as
-      a token of identity. Hanuman kept it in his mouth while crossing the ocean in
-      a single leap. The ring represented Rama's presence and blessing.
-    hi: लंका जाने से पहले, भगवान राम ने हनुमान को अपनी अंगूठी दी ताकि सीता उन पर विश्वास
-      कर सकें। हनुमान ने इसे अपने मुख में रखकर समुद्र को एक छलांग में पार किया। यह
-      अंगूठी राम की उपस्थिति और आशीर्वाद का प्रतीक थी।
-  theological_significance:
-    en: The ring symbolizes divine grace and identity. It signifies that with the
-      Lord's blessing, even the most daunting tasks can be accomplished. Hanuman's
-      leap is a testament to the power of faith and devotion.
-    hi: अंगूठी दिव्य अनुग्रह और पहचान का प्रतीक है। यह दर्शाता है कि भगवान के आशीर्वाद
-      से, सबसे कठिन कार्य भी पूरे किए जा सकते हैं। हनुमान की छलांग विश्वास और भक्ति
-      की शक्ति का प्रमाण है।
-  practical_application:
-    en: This story teaches that when we undertake tasks with divine purpose and grace,
-      obstacles become surmountable. Carrying the Lord's blessing, like Hanuman, we
-      can achieve the seemingly impossible.
-    hi: यह कहानी सिखाती है कि जब हम दिव्य उद्देश्य और अनुग्रह के साथ कार्य करते हैं,
-      तो बाधाएं पार हो जाती हैं। भगवान के आशीर्वाद के साथ, जैसे हनुमान ने किया, हम
-      असंभव को भी संभव बना सकते हैं।
-  source_texts:
-  - text: Shiv Puran Part1
-    section: Not directly mentioned, but aligns with themes of divine grace and overcoming
-      obstacles.
-  related_verses: []
 ---
