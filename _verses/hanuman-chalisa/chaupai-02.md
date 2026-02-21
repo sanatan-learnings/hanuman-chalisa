@@ -109,4 +109,68 @@ practical_application:
     hi: इस चौपाई का पाठ करें जब आपको दूसरों या उच्च उद्देश्य की सेवा में अपने उद्देश्य
       को याद रखने की आवश्यकता हो, या जब किसी महत्वपूर्ण कर्तव्य को पूरा करने के लिए
       अतुलनीय शक्ति की आवश्यकता हो।
+puranic_context:
+- id: hanuman-birth-and-parentage
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Birth and Parentage
+    hi: हनुमान का जन्म और माता-पिता
+  icon: 🐒
+  story_summary:
+    en: Hanuman was born to Anjana, a celestial nymph cursed to live as a monkey,
+      and Vayu, the wind god, who played a role in his miraculous birth. This dual
+      parentage endowed him with both earthly and divine attributes.
+    hi: हनुमान का जन्म अंजना, एक अप्सरा जो बंदरिया के रूप में शापित थी, और वायु, पवन
+      देवता, जिन्होंने उनके चमत्कारिक जन्म में भूमिका निभाई, से हुआ। इस दोहरी वंशावली
+      ने उन्हें सांसारिक और दिव्य गुण प्रदान किए।
+  theological_significance:
+    en: Hanuman's birth signifies the union of divine and earthly elements, symbolizing
+      the potential within every being to transcend their limitations and serve a
+      higher purpose.
+    hi: हनुमान का जन्म दिव्य और सांसारिक तत्वों के मिलन का प्रतीक है, जो हर प्राणी
+      में अपनी सीमाओं को पार कर एक उच्च उद्देश्य की सेवा करने की क्षमता का प्रतीक
+      है।
+  practical_application:
+    en: The story of Hanuman's birth inspires individuals to recognize their divine
+      potential and use their strengths for the service of others and the greater
+      good.
+    hi: हनुमान के जन्म की कहानी व्यक्तियों को उनकी दिव्य क्षमता को पहचानने और अपनी
+      शक्तियों का उपयोग दूसरों की सेवा और महान भलाई के लिए करने के लिए प्रेरित करती
+      है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not specified
+  related_verses: []
+- id: hanuman-as-rama-messenger
+  type: concept
+  priority: high
+  title:
+    en: Hanuman as Rama's Messenger
+    hi: राम के दूत के रूप में हनुमान
+  icon: 📜
+  story_summary:
+    en: Hanuman's identity as 'Rama's messenger' is central to his character. His
+      devotion to Rama is unparalleled, and his role as a messenger is a testament
+      to his loyalty and service.
+    hi: हनुमान की 'राम के दूत' के रूप में पहचान उनके चरित्र का केंद्रीय हिस्सा है।
+      उनकी राम के प्रति भक्ति अतुलनीय है, और दूत के रूप में उनकी भूमिका उनकी निष्ठा
+      और सेवा का प्रमाण है।
+  theological_significance:
+    en: Being a messenger of Rama, Hanuman represents the ideal devotee who dedicates
+      his life to the service of the divine, embodying humility, strength, and unwavering
+      faith.
+    hi: राम के दूत के रूप में, हनुमान आदर्श भक्त का प्रतिनिधित्व करते हैं जो अपनी
+      जीवन को दिव्य सेवा के लिए समर्पित करता है, विनम्रता, शक्ति और अटल विश्वास का
+      प्रतीक है।
+  practical_application:
+    en: Hanuman's role as a messenger encourages individuals to act as instruments
+      of positive change, serving others selflessly and with dedication.
+    hi: दूत के रूप में हनुमान की भूमिका व्यक्तियों को सकारात्मक परिवर्तन के साधन के
+      रूप में कार्य करने, निःस्वार्थ और समर्पण के साथ दूसरों की सेवा करने के लिए प्रेरित
+      करती है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Not specified
+  related_verses: []
 ---
