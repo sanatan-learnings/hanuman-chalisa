@@ -180,4 +180,37 @@ practical_application:
       हस्तक्षेप की आवश्यकता हो जो मानव क्षमता से परे हों।
 
       '
+puranic_context:
+- id: hanuman-swallows-sun
+  type: story
+  priority: high
+  title:
+    en: Hanuman Swallows the Sun
+    hi: हनुमान ने सूर्य को निगला
+  icon: 🌞
+  story_summary:
+    en: As a child, Hanuman mistook the sun for a fruit and swallowed it, causing
+      darkness in the three worlds. The gods pleaded with him to release the sun,
+      which he did, restoring light and earning the name 'Sankat Mochan'.
+    hi: बालक हनुमान ने सूर्य को फल समझकर निगल लिया, जिससे तीनों लोकों में अंधकार छा
+      गया। देवताओं ने उनसे सूर्य को छोड़ने की प्रार्थना की, जिसे उन्होंने स्वीकार
+      किया और प्रकाश पुनः स्थापित किया, जिससे उन्हें 'संकट मोचन' नाम मिला।
+  theological_significance:
+    en: This story illustrates Hanuman's immense power and his role as a remover of
+      obstacles. It shows that even as a child, his actions had cosmic significance,
+      and his compassion led him to rectify the crisis he inadvertently caused.
+    hi: यह कथा हनुमान की अपार शक्ति और संकटों को दूर करने की उनकी भूमिका को दर्शाती
+      है। यह दिखाती है कि बाल्यकाल में भी उनके कार्यों का ब्रह्मांडीय महत्व था, और
+      उनकी करुणा ने उन्हें अनजाने में उत्पन्न संकट को सुधारने के लिए प्रेरित किया।
+  practical_application:
+    en: Devotees can learn from this episode that sincere prayers to Hanuman can help
+      overcome seemingly insurmountable difficulties. His nature as 'Sankat Mochan'
+      assures devotees of his support in times of crisis.
+    hi: भक्त इस प्रकरण से सीख सकते हैं कि हनुमान की सच्चे मन से की गई प्रार्थना से
+      असंभव प्रतीत होने वाली कठिनाइयों को दूर किया जा सकता है। 'संकट मोचन' के रूप
+      में उनकी प्रकृति संकट के समय में भक्तों को उनके समर्थन का आश्वासन देती है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: सारकाण्डम्
+  related_verses: []
 ---
