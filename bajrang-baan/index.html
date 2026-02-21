@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bajrang Baan
+collection_key: bajrang-baan
 ---
 {% assign t_en = site.data.translations.en %}
 {% assign t_hi = site.data.translations.hi %}
@@ -10,17 +11,24 @@ title: Bajrang Baan
     <div class="title-image-container">
         <img src="{{ '/images/bajrang-baan/modern-minimalist/title-page.png' | relative_url }}" alt="Bajrang Baan Title Page" class="title-page-image">
     </div>
+
     <div class="quick-actions">
-        <a href="{{ '/chalisa/book' | relative_url }}?collection=bajrang-baan" class="btn-primary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
+        <a href="{{ '/bajrang-baan/full-text' | relative_url }}" class="btn-primary">📖 <span data-lang="en">Read Complete Bajrang Baan</span><span data-lang="hi">संपूर्ण बजरंग बाण पढ़ें</span></a>
+        <a href="{{ '/chalisa/book' | relative_url }}?collection=bajrang-baan" class="btn-secondary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
     </div>
+
     <div class="collection-meta">
+        <details class="about-section-compact">
+            <summary>▶ <span data-lang="en">About</span><span data-lang="hi">परिचय</span></summary>
+            <p><span data-lang="en">The Bajrang Baan is a powerful devotional hymn composed by the 16th-century poet-saint Goswami Tulsidas. The word 'Baan' means arrow — this text is a divine missile invoking Lord Hanuman's fierce protective power against obstacles, enemies, and negative forces.</span><span data-lang="hi">बजरंग बाण 16वीं सदी के कवि-संत गोस्वामी तुलसीदास द्वारा रचित एक शक्तिशाली भक्ति स्तोत्र है। 'बाण' का अर्थ है तीर — यह ग्रंथ भगवान हनुमान की उग्र सुरक्षात्मक शक्ति का आह्वान करने वाला एक दिव्य अस्त्र है।</span></p>
+            <p><span data-lang="en">The hymn contains 43 chaupais (quatrains) framed by an opening and closing doha. Each verse builds intensity, calling upon Hanuman's various victories — from defeating Lankini at Lanka's gates to burning the demon city itself.</span><span data-lang="hi">इस स्तोत्र में 43 चौपाइयाँ हैं जो एक प्रारंभिक और समापन दोहे से घिरी हुई हैं। प्रत्येक पद की तीव्रता बढ़ती जाती है, जो हनुमान के विभिन्न रूपों और विजयों का आह्वान करती है।</span></p>
+            <p><span data-lang="en">The Bajrang Baan is traditionally recited on Tuesdays and Saturdays, or whenever protection and courage are needed. Navigate through all verses using the links below or use arrow keys (← →) when viewing individual verses.</span><span data-lang="hi">बजरंग बाण का पाठ परंपरागत रूप से मंगलवार और शनिवार को किया जाता है। नीचे दिए गए लिंक से सभी पदों को देखें, या अलग-अलग पद देखते समय तीर कुंजियों (← →) का उपयोग करें।</span></p>
+        </details>
         <span class="puranic-legend-compact">📚 <span data-lang="en">Some verses have Puranic stories</span><span data-lang="hi">कुछ पदों में पौराणिक कथाएं हैं</span></span>
     </div>
 </div>
 
 <section class="verse-navigation">
-    <h3>🛡️ <span data-lang="en">Bajrang Baan</span><span data-lang="hi">बजरंग बाण</span></h3>
-
     <h3>🪷 <span data-lang="en">Opening Doha (1 Verse)</span><span data-lang="hi">प्रारंभिक दोहा (1 पद)</span></h3>
     <div class="verse-grid">
         {% assign doha_opening = site.verses | where: "collection_key", "bajrang-baan" | where_exp: "item", "item.url contains 'doha-opening'" | first %}
@@ -40,9 +48,7 @@ title: Bajrang Baan
                     <span data-lang="hi">{{ doha_opening.title_hi }}</span>
                 </div>
                 {% if doha_opening.puranic_context %}
-                <div class="puranic-badge">
-                    <span class="badge-icon">📚</span>
-                </div>
+                <div class="puranic-badge"><span class="badge-icon">📚</span></div>
                 {% endif %}
             </div>
         </a>
@@ -70,9 +76,7 @@ title: Bajrang Baan
                     <span data-lang="hi">{{ verse.title_hi }}</span>
                 </div>
                 {% if verse.puranic_context %}
-                <div class="puranic-badge">
-                    <span class="badge-icon">📚</span>
-                </div>
+                <div class="puranic-badge"><span class="badge-icon">📚</span></div>
                 {% endif %}
             </div>
         </a>
@@ -98,12 +102,9 @@ title: Bajrang Baan
                     <span data-lang="hi">{{ doha_closing.title_hi }}</span>
                 </div>
                 {% if doha_closing.puranic_context %}
-                <div class="puranic-badge">
-                    <span class="badge-icon">📚</span>
-                </div>
+                <div class="puranic-badge"><span class="badge-icon">📚</span></div>
                 {% endif %}
             </div>
         </a>
     </div>
-
 </section>

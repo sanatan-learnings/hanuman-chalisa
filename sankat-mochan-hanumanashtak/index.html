@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sankat Mochan Hanumanashtak
+collection_key: sankat-mochan-hanumanashtak
 ---
 {% assign t_en = site.data.translations.en %}
 {% assign t_hi = site.data.translations.hi %}
@@ -12,9 +13,17 @@ title: Sankat Mochan Hanumanashtak
     </div>
 
     <div class="quick-actions">
-        <a href="{{ '/chalisa/book' | relative_url }}?collection=sankat-mochan-hanumanashtak" class="btn-primary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
+        <a href="{{ '/sankat-mochan-hanumanashtak/full-text' | relative_url }}" class="btn-primary">📖 <span data-lang="en">Read Complete Hanumanashtak</span><span data-lang="hi">संपूर्ण हनुमानाष्टक पढ़ें</span></a>
+        <a href="{{ '/chalisa/book' | relative_url }}?collection=sankat-mochan-hanumanashtak" class="btn-secondary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
     </div>
+
     <div class="collection-meta">
+        <details class="about-section-compact">
+            <summary>▶ <span data-lang="en">About</span><span data-lang="hi">परिचय</span></summary>
+            <p><span data-lang="en">The Sankat Mochan Hanumanashtak is a set of eight devotional verses (ashtakam) composed by Goswami Tulsidas. 'Sankat Mochan' means 'Remover of Difficulties' — each pada celebrates a specific episode from Hanuman's life that demonstrates his power to rescue devotees from impossible situations.</span><span data-lang="hi">संकट मोचन हनुमानाष्टक गोस्वामी तुलसीदास द्वारा रचित आठ भक्ति पदों का संग्रह है। 'संकट मोचन' का अर्थ है 'कठिनाइयों को दूर करने वाले' — प्रत्येक पद हनुमान जी के जीवन के एक विशिष्ट प्रसंग का उत्सव मनाता है।</span></p>
+            <p><span data-lang="en">Every verse ends with the same refrain: "ko nahi jaanat hai jag mein kapi sankat mochan naam tihaaro" — "Who in this world does not know, O monkey, your name is Sankat Mochan." This refrain anchors the devotee's awareness of Hanuman's divine identity across all eight episodes.</span><span data-lang="hi">प्रत्येक पद इस ध्रुवपद के साथ समाप्त होता है: 'को नहिं जानत है जग में कपि संकट मोचन नाम तिहारो' — यह ध्रुवपद भक्त को हनुमान जी की दिव्य पहचान का बोध कराता है।</span></p>
+            <p><span data-lang="en">Reciting this ashtakam invokes Hanuman's grace in times of distress, danger, or difficulty. Navigate through all eight padas using the links below or use arrow keys (← →) when viewing individual verses.</span><span data-lang="hi">इस अष्टक का पाठ संकट, भय या कठिनाई के समय हनुमान जी की कृपा का आह्वान करता है। नीचे दिए गए लिंक से सभी पदों को देखें, या अलग-अलग पद देखते समय तीर कुंजियों (← →) का उपयोग करें।</span></p>
+        </details>
         <span class="puranic-legend-compact">📚 <span data-lang="en">Some verses have Puranic stories</span><span data-lang="hi">कुछ पदों में पौराणिक कथाएं हैं</span></span>
     </div>
 </div>
@@ -41,9 +50,7 @@ title: Sankat Mochan Hanumanashtak
                         <span data-lang="hi">{{ verse.title_hi }}</span>
                     </div>
                     {% if verse.puranic_context %}
-                    <div class="puranic-badge">
-                        <span class="badge-icon">📚</span>
-                    </div>
+                    <div class="puranic-badge"><span class="badge-icon">📚</span></div>
                     {% endif %}
                 </div>
             </a>

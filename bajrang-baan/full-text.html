@@ -1,0 +1,429 @@
+---
+layout: default
+title: "Complete Bajrang Baan - Full Text"
+description: "Read the complete Bajrang Baan with all verses on a single page with Devanagari text, transliteration, and translations"
+---
+{% assign t_en = site.data.translations.en %}
+{% assign t_hi = site.data.translations.hi %}
+
+<div class="full-chalisa-container">
+    <div class="full-chalisa-header">
+        <h1><span data-lang="en">Complete Bajrang Baan</span><span data-lang="hi">संपूर्ण बजरंग बाण</span></h1>
+        <p class="subtitle"><span data-lang="en">All verses on one page — Devanagari, transliteration, and translation</span><span data-lang="hi">सभी पद एक पृष्ठ पर — देवनागरी, लिप्यंतरण और अनुवाद</span></p>
+
+        <div class="view-options">
+            <label><input type="checkbox" id="toggle-transliteration" checked> <span data-lang="en">{{ t_en.full_chalisa.show_transliteration }}</span></label>
+            <label><input type="checkbox" id="toggle-translation" checked> <span data-lang="en">{{ t_en.full_chalisa.show_translation }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_translation }}</span></label>
+            <label><input type="checkbox" id="toggle-meanings"> <span data-lang="en">{{ t_en.full_chalisa.show_meanings }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_meanings }}</span></label>
+            <button onclick="window.print()" class="print-all-button">🖨️ <span data-lang="en">{{ t_en.full_chalisa.print_all }}</span><span data-lang="hi">{{ t_hi.full_chalisa.print_all }}</span></button>
+        </div>
+    </div>
+
+    <div class="verses-content">
+        {% assign verses = site.verses | where: "collection_key", "bajrang-baan" | sort: "verse_number" %}
+        {% for verse in verses %}
+        <article class="verse-item" id="{{ verse.url | split: '/' | last }}">
+            <div class="verse-compact-layout">
+                {% if verse.image %}
+                <div class="verse-thumbnail">
+                    <img src="{{ verse.image | relative_url }}" alt="{{ verse.title_en | default: verse.title }}" loading="lazy">
+                </div>
+                {% endif %}
+
+                <div class="verse-content">
+                    <div class="verse-title-row">
+                        <h2><span data-lang="en">{{ verse.title_en | default: verse.title }}</span><span data-lang="hi">{{ verse.title_hi | default: verse.title }}</span></h2>
+                        <a href="{{ verse.url | relative_url }}" class="verse-link-icon" title="View details">→</a>
+                    </div>
+
+                    <div class="verse-text-grid">
+                        <div class="text-column devanagari-section">
+                            <pre class="devanagari-text">{{ verse.devanagari }}</pre>
+                        </div>
+
+                        <div class="text-column transliteration-section" data-lang="en">
+                            <pre class="transliteration-text">{{ verse.transliteration }}</pre>
+                        </div>
+
+                        <div class="text-column-wide translation-section">
+                            {% if verse.literal_translation.en %}
+                            <p class="literal-translation" data-lang="en">{{ verse.literal_translation.en }}</p>
+                            {% endif %}
+                            {% if verse.literal_translation.hi %}
+                            <p class="literal-translation" data-lang="hi">{{ verse.literal_translation.hi }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="meanings-section" style="display: none;">
+                        <details class="meanings-details">
+                            <summary><span data-lang="en">{{ t_en.full_chalisa.word_meaning }}</span><span data-lang="hi">{{ t_hi.full_chalisa.word_meaning }}</span></summary>
+                            <ul class="word-meanings">
+                            {% for item in verse.word_meanings %}
+                                <li><strong>{{ item.word }}</strong> ({{ item.roman }}) - {% if item.meaning.en %}<span data-lang="en">{{ item.meaning.en }}</span><span data-lang="hi">{{ item.meaning.hi }}</span>{% else %}{{ item.meaning }}{% endif %}</li>
+                            {% endfor %}
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    <div class="full-chalisa-footer">
+        <p><a href="{{ '/bajrang-baan' | relative_url }}">← <span data-lang="en">{{ t_en.labels.back_to_list }}</span><span data-lang="hi">{{ t_hi.labels.back_to_list }}</span></a></p>
+        <p><em><span data-lang="en">{{ t_en.footer.blessing }}</span><span data-lang="hi">{{ t_hi.footer.blessing }}</span></em></p>
+    </div>
+</div>
+
+<style>
+.full-chalisa-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.full-chalisa-header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #ff6b35;
+}
+
+.full-chalisa-header h1 {
+    color: #ff6b35;
+    margin-bottom: 8px;
+    font-size: 1.8em;
+}
+
+.full-chalisa-header .subtitle {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+
+.view-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.view-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.view-options input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.print-all-button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.print-all-button:hover {
+    background: #e55a2b;
+}
+
+.verses-content {
+    margin: 0;
+}
+
+.verse-item {
+    margin-bottom: 24px;
+    scroll-margin-top: 100px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+}
+
+.verse-item:hover {
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.1);
+}
+
+.verse-compact-layout {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    padding: 12px;
+}
+
+.verse-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.verse-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.verse-content {
+    min-width: 0;
+}
+
+.verse-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ff6b35;
+}
+
+.verse-title-row h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.verse-link-icon {
+    color: #ff6b35;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.verse-link-icon:hover {
+    background: #fff5f0;
+}
+
+.verse-text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.text-column {
+    min-width: 0;
+}
+
+.text-column-wide {
+    grid-column: 1 / -1;
+}
+
+.devanagari-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    background: #fffaf5;
+    padding: 8px;
+    border-left: 3px solid #ff6b35;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.transliteration-text {
+    font-size: 1em;
+    font-style: italic;
+    background: #f5f9ff;
+    padding: 8px;
+    border-left: 3px solid #4a90e2;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.literal-translation {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #333;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 3px;
+    margin: 0;
+}
+
+.meanings-section {
+    margin-top: 8px;
+}
+
+.meanings-details {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.meanings-details summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    user-select: none;
+    list-style: none;
+}
+
+.meanings-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.meanings-details summary::before {
+    content: "▶ ";
+    margin-right: 5px;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.meanings-details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.meanings-details summary:hover {
+    color: #ff6b35;
+}
+
+.word-meanings {
+    list-style: none;
+    padding: 8px 0 0 0;
+    margin: 0;
+}
+
+.word-meanings li {
+    padding: 4px 0;
+    font-size: 0.9em;
+    border-bottom: 1px solid #eee;
+}
+
+.word-meanings li:last-child {
+    border-bottom: none;
+}
+
+.full-chalisa-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 3px solid #ff6b35;
+}
+
+.full-chalisa-footer p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .verse-compact-layout {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .verse-thumbnail {
+        width: 100%;
+        height: 150px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .verse-text-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .verse-title-row h2 {
+        font-size: 1em;
+    }
+
+    .view-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .devanagari-text {
+        font-size: 1.1em;
+    }
+
+    .transliteration-text {
+        font-size: 0.95em;
+    }
+
+    .literal-translation {
+        font-size: 0.9em;
+    }
+}
+
+@media print {
+    .view-options,
+    .verse-link-icon,
+    .print-all-button,
+    .verse-thumbnail {
+        display: none !important;
+    }
+
+    .verse-item {
+        page-break-inside: avoid;
+        border: 1px solid #000;
+        margin-bottom: 15px;
+        box-shadow: none;
+    }
+
+    .verse-compact-layout {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .verse-text-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .devanagari-text,
+    .transliteration-text,
+    .literal-translation {
+        background: none !important;
+        border-left: 2px solid #000 !important;
+    }
+}
+</style>
+
+<script>
+document.getElementById('toggle-transliteration').addEventListener('change', function(e) {
+    const sections = document.querySelectorAll('.transliteration-section');
+    sections.forEach(section => {
+        section.style.display = e.target.checked ? 'block' : 'none';
+    });
+});
+
+document.getElementById('toggle-translation').addEventListener('change', function(e) {
+    const sections = document.querySelectorAll('.translation-section');
+    sections.forEach(section => {
+        section.style.display = e.target.checked ? 'block' : 'none';
+    });
+});
+
+document.getElementById('toggle-meanings').addEventListener('change', function(e) {
+    const sections = document.querySelectorAll('.meanings-section');
+    sections.forEach(section => {
+        section.style.display = e.target.checked ? 'block' : 'none';
+    });
+});
+</script>

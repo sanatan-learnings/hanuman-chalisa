@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sundar Kaand
+collection_key: sundar-kaand
 ---
 {% assign t_en = site.data.translations.en %}
 {% assign t_hi = site.data.translations.hi %}
@@ -10,7 +11,19 @@ title: Sundar Kaand
     <div class="title-image-container">
         <img src="{{ '/images/sundar-kaand/modern-minimalist/title-page.png' | relative_url }}" alt="Sundar Kaand Title Page" class="title-page-image">
     </div>
+
+    <div class="quick-actions">
+        <a href="{{ '/sundar-kaand/full-text' | relative_url }}" class="btn-primary">📖 <span data-lang="en">Read Complete Sundar Kaand</span><span data-lang="hi">संपूर्ण सुंदर कांड पढ़ें</span></a>
+        <a href="{{ '/chalisa/book' | relative_url }}?collection=sundar-kaand" class="btn-secondary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
+    </div>
+
     <div class="collection-meta">
+        <details class="about-section-compact">
+            <summary>▶ <span data-lang="en">About</span><span data-lang="hi">परिचय</span></summary>
+            <p><span data-lang="en">Sundar Kaand is the fifth chapter of Goswami Tulsidas's Ramcharitmanas, itself a retelling of the ancient Valmiki Ramayana. It narrates Hanuman's journey across the ocean to Lanka in search of Sita — his encounter with demons, his meeting with Sita in the Ashoka garden, and the burning of Lanka.</span><span data-lang="hi">सुंदर कांड गोस्वामी तुलसीदास की रामचरितमानस का पाँचवाँ खंड है। इसमें हनुमान जी की समुद्र पार लंका की यात्रा, सीता माता से भेंट और लंका दहन का वर्णन है।</span></p>
+            <p><span data-lang="en">The word 'Sundar' means beautiful — the chapter is named for Hanuman's visit to the beautiful Ashoka grove where Sita was held captive. Comprising 522 chaupais, 58 dohas, and 3 shlokas, it is the longest chapter dedicated almost entirely to Hanuman's exploits.</span><span data-lang="hi">'सुंदर' शब्द का अर्थ है सुंदर — यह अध्याय उस सुंदर अशोक वाटिका के नाम पर है जहाँ सीता माता बंदी थीं। इसमें 522 चौपाइयाँ, 58 दोहे और 3 श्लोक हैं।</span></p>
+            <p><span data-lang="en">The Sundar Kaand holds special significance and is often recited as a complete spiritual practice in its own right. Navigate through all verses using the section links below or use arrow keys (← →) when viewing individual verses.</span><span data-lang="hi">सुंदर कांड का पाठ स्वयं में एक पूर्ण आध्यात्मिक अभ्यास है। नीचे दिए गए अनुभाग लिंक से सभी पदों को देखें, या अलग-अलग पद देखते समय तीर कुंजियों (← →) का उपयोग करें।</span></p>
+        </details>
         <span class="puranic-legend-compact">📚 <span data-lang="en">Some verses have Puranic stories</span><span data-lang="hi">कुछ पदों में पौराणिक कथाएं हैं</span></span>
     </div>
 </div>
@@ -67,19 +80,16 @@ title: Sundar Kaand
             <div class="card-content">
                 <div class="verse-number">
                     {% if verse.verse_type == 'shloka' %}
-                        {% comment %} Extract number from shloka-01 -> 01 {% endcomment %}
                         {% assign parts = verse.path | split: '/' | last | split: '.' | first | split: '-' %}
                         {% assign shloka_num = parts[1] | plus: 0 %}
                         <span data-lang="en">Shloka {{ shloka_num }}</span>
                         <span data-lang="hi">श्लोक {{ shloka_num }}</span>
                     {% elsif verse.verse_type == 'chaupai' %}
-                        {% comment %} Extract number from chaupai-10 -> 10 {% endcomment %}
                         {% assign parts = verse.path | split: '/' | last | split: '.' | first | split: '-' %}
                         {% assign chaupai_num = parts[1] | plus: 0 %}
                         <span data-lang="en">Chaupai {{ chaupai_num }}</span>
                         <span data-lang="hi">चौपाई {{ chaupai_num }}</span>
                     {% elsif verse.verse_type == 'doha' %}
-                        {% comment %} Extract number from doha-01 -> 01, handle doha-closing {% endcomment %}
                         {% assign parts = verse.path | split: '/' | last | split: '.' | first | split: '-' %}
                         {% if parts[1] == 'closing' %}
                             <span data-lang="en">Closing Doha</span>
