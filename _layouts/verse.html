@@ -212,57 +212,23 @@ layout: default
             </div>
             {% endif %}
 
-            {% comment %} Separate contexts by priority {% endcomment %}
-            {% assign high_priority = page.puranic_context | where: "priority", "high" %}
-            {% assign medium_priority = page.puranic_context | where: "priority", "medium" %}
-            {% assign low_priority = page.puranic_context | where: "priority", "low" %}
-
-            {% comment %} High Priority Contexts - Always Visible {% endcomment %}
-            {% if high_priority.size > 0 %}
-            <div class="puranic-context-grid">
-                {% for context in high_priority %}
-                    {% include puranic-context-box.html context=context priority="high" %}
-                {% endfor %}
-            </div>
-            {% endif %}
-
-            {% comment %} Medium Priority Contexts - Expandable {% endcomment %}
-            {% if medium_priority.size > 0 %}
+            {% comment %} Single toggle wrapping all context boxes {% endcomment %}
             <div class="puranic-context-expandable">
                 <button class="puranic-expand-toggle"
                         onclick="togglePuranicContexts(this)"
                         aria-expanded="false"
-                        aria-controls="medium-priority-contexts">
+                        aria-controls="all-puranic-contexts">
                     <span class="expand-icon">▶</span>
-                    <span data-lang="en">Show {{ medium_priority.size }} More Context{% if medium_priority.size > 1 %}s{% endif %}</span>
-                    <span data-lang="hi">{{ medium_priority.size }} और संदर्भ दिखाएं</span>
+                    <span data-lang="en">Show Puranic Context{% if page.puranic_context.size > 1 %}s ({{ page.puranic_context.size }}){% endif %}</span>
+                    <span data-lang="hi">पौराणिक संदर्भ दिखाएं{% if page.puranic_context.size > 1 %} ({{ page.puranic_context.size }}){% endif %}</span>
                 </button>
-                <div id="medium-priority-contexts" class="puranic-context-grid context-collapsed">
-                    {% for context in medium_priority %}
-                        {% include puranic-context-box.html context=context priority="medium" %}
+                <div id="all-puranic-contexts" class="puranic-context-grid context-collapsed">
+                    {% for context in page.puranic_context %}
+                        {% include puranic-context-box.html context=context %}
                     {% endfor %}
                 </div>
             </div>
-            {% endif %}
 
-            {% comment %} Low Priority Contexts - Expandable {% endcomment %}
-            {% if low_priority.size > 0 %}
-            <div class="puranic-context-expandable">
-                <button class="puranic-expand-toggle"
-                        onclick="togglePuranicContexts(this)"
-                        aria-expanded="false"
-                        aria-controls="low-priority-contexts">
-                    <span class="expand-icon">▶</span>
-                    <span data-lang="en">Learn More ({{ low_priority.size }} Additional Context{% if low_priority.size > 1 %}s{% endif %})</span>
-                    <span data-lang="hi">और जानें ({{ low_priority.size }} अतिरिक्त संदर्भ)</span>
-                </button>
-                <div id="low-priority-contexts" class="puranic-context-grid context-collapsed">
-                    {% for context in low_priority %}
-                        {% include puranic-context-box.html context=context priority="low" %}
-                    {% endfor %}
-                </div>
-            </div>
-            {% endif %}
         </section>
         {% endif %}
 

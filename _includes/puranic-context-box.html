@@ -4,9 +4,8 @@
 {% endcomment %}
 
 {% assign context = include.context %}
-{% assign priority = include.priority | default: "medium" %}
 
-<div class="puranic-context-box context-{{ priority }} context-type-{{ context.type }}"
+<div class="puranic-context-box context-type-{{ context.type }}"
      role="complementary"
      aria-label="Puranic context: {{ context.title.en }}">
 
