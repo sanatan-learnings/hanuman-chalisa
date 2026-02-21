@@ -104,4 +104,67 @@ translation:
   en: Killed the indestructible son, destroyed. Wrapped in his tail, set Lanka on
     fire.
 next_verse: /bajrang-baan/chaupai-08/
+puranic_context:
+- id: hanuman-defeats-akshay-kumar
+  type: story
+  priority: high
+  title:
+    en: Hanuman Defeats Akshay Kumar
+    hi: हनुमान ने अक्षय कुमार को पराजित किया
+  icon: ⚔️
+  story_summary:
+    en: In his quest to find Sita, Hanuman encounters Akshay Kumar, the son of Ravana.
+      Despite Akshay Kumar's formidable strength, Hanuman defeats and kills him, showcasing
+      his own immense power.
+    hi: सीता की खोज में, हनुमान की मुलाकात रावण के पुत्र अक्षय कुमार से होती है। अक्षय
+      कुमार की प्रबल शक्ति के बावजूद, हनुमान उसे पराजित कर मार देते हैं, अपनी अपार
+      शक्ति का प्रदर्शन करते हुए।
+  theological_significance:
+    en: This episode highlights Hanuman's role as a divine protector and warrior,
+      embodying the triumph of dharma over adharma. It reinforces the belief in Hanuman's
+      invincibility and his dedication to Lord Rama's mission.
+    hi: यह प्रकरण हनुमान की भूमिका को एक दिव्य रक्षक और योद्धा के रूप में उजागर करता
+      है, जो धर्म की अधर्म पर विजय का प्रतीक है। यह हनुमान की अजेयता और भगवान राम
+      के मिशन के प्रति उनकी निष्ठा को सुदृढ़ करता है।
+  practical_application:
+    en: Devotees can draw inspiration from Hanuman's courage and strength, applying
+      these qualities in their own lives to overcome obstacles and challenges with
+      determination and faith.
+    hi: भक्त हनुमान के साहस और शक्ति से प्रेरणा ले सकते हैं, इन गुणों को अपने जीवन
+      में लागू कर दृढ़ संकल्प और विश्वास के साथ बाधाओं और चुनौतियों को पार कर सकते
+      हैं।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Ananda Ramayan, 9
+- id: hanuman-burns-lanka
+  type: story
+  priority: high
+  title:
+    en: Hanuman Burns Lanka
+    hi: हनुमान ने लंका को जलाया
+  icon: 🔥
+  story_summary:
+    en: After defeating Akshay Kumar, Hanuman wraps his tail with cloth, sets it on
+      fire, and leaps across Lanka, setting the city ablaze. This act is a demonstration
+      of his power and a warning to Ravana.
+    hi: अक्षय कुमार को पराजित करने के बाद, हनुमान अपनी पूंछ को कपड़े से लपेटते हैं,
+      उसे आग लगाते हैं और लंका में कूदकर शहर को जलाते हैं। यह उनकी शक्ति का प्रदर्शन
+      और रावण के लिए चेतावनी है।
+  theological_significance:
+    en: The burning of Lanka symbolizes the destruction of evil and the cleansing
+      power of divine justice. It serves as a reminder of the consequences of adharma
+      and the protection offered by divine forces.
+    hi: लंका का जलना बुराई के विनाश और दिव्य न्याय की शुद्धिकरण शक्ति का प्रतीक है।
+      यह अधर्म के परिणामों और दिव्य शक्तियों द्वारा प्रदान की गई सुरक्षा की याद दिलाता
+      है।
+  practical_application:
+    en: This story encourages individuals to stand against injustice and wrongdoing,
+      trusting in the power of righteousness to prevail. It inspires faith in divine
+      intervention during times of moral crisis.
+    hi: यह कहानी व्यक्तियों को अन्याय और गलत कार्यों के खिलाफ खड़े होने के लिए प्रेरित
+      करती है, यह विश्वास करते हुए कि धर्म की शक्ति विजयी होगी। यह नैतिक संकट के समय
+      में दिव्य हस्तक्षेप में विश्वास को प्रेरित करती है।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Ananda Ramayan, Mohanakanda
 ---

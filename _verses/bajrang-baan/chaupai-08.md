@@ -114,4 +114,37 @@ translation:
   en: Lanka, similar to a flame, was burned and is now gone. The sound of victory
     resounds in the city of the gods.
 next_verse: /bajrang-baan/chaupai-09/
+puranic_context:
+- id: hanuman-lanka-burning
+  type: story
+  priority: high
+  title:
+    en: Hanuman Burns Lanka
+    hi: हनुमान ने लंका जलाई
+  icon: 🔥
+  story_summary:
+    en: Hanuman, after being captured by Ravana's forces, uses his divine powers to
+      escape and sets Lanka ablaze with his burning tail. This act symbolizes the
+      destruction of evil and is a pivotal moment in the Ramayana.
+    hi: हनुमान, रावण की सेना द्वारा पकड़े जाने के बाद, अपनी दिव्य शक्तियों का उपयोग
+      करके बच निकलते हैं और अपनी जलती हुई पूंछ से लंका को जला देते हैं। यह घटना बुराई
+      के विनाश का प्रतीक है और रामायण में एक महत्वपूर्ण क्षण है।
+  theological_significance:
+    en: The burning of Lanka by Hanuman signifies the triumph of righteousness over
+      evil. It represents the divine intervention necessary to restore dharma and
+      the power of devotion in overcoming insurmountable challenges.
+    hi: हनुमान द्वारा लंका का जलाना धर्म पर अधर्म की विजय का प्रतीक है। यह धर्म की
+      पुनः स्थापना के लिए आवश्यक दिव्य हस्तक्षेप और अजेय चुनौतियों को पार करने में
+      भक्ति की शक्ति का प्रतिनिधित्व करता है।
+  practical_application:
+    en: This story inspires devotees to believe in the power of righteousness and
+      devotion. It teaches that with unwavering faith and courage, one can overcome
+      any obstacle, no matter how formidable it may seem.
+    hi: यह कहानी भक्तों को धर्म और भक्ति की शक्ति में विश्वास रखने के लिए प्रेरित
+      करती है। यह सिखाती है कि अडिग विश्वास और साहस के साथ, कोई भी बाधा पार की जा
+      सकती है, चाहे वह कितनी भी कठिन क्यों न हो।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Hanuman Captures and Escapes
+  related_verses: []
 ---

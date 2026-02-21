@@ -103,4 +103,37 @@ translation:
   en: There is no one in the world as strong as you. I see this after considering
     various methods.
 next_verse: /bajrang-baan/chaupai-44/
+puranic_context:
+- id: hanuman-tale-of-strength
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Tale of Strength
+    hi: हनुमान की शक्ति की कथा
+  icon: 💪
+  story_summary:
+    en: In the Ananda Ramayan, Hanuman demonstrates his immense strength and resilience
+      when Ravana's orders to cut off his tail fail as the weapons shatter upon contact.
+      This astonishes Ravana and his followers.
+    hi: आनंद रामायण में, हनुमान अपनी अपार शक्ति और सहनशीलता का प्रदर्शन करते हैं जब
+      रावण के आदेश पर उनकी पूंछ काटने के प्रयास में हथियार टूट जाते हैं। यह रावण और
+      उसके अनुयायियों को चकित कर देता है।
+  theological_significance:
+    en: This episode highlights the divine protection and invincibility that Hanuman
+      possesses, symbolizing the ultimate triumph of good over evil. It reinforces
+      the belief in Hanuman's role as a protector and an invincible force.
+    hi: यह प्रकरण हनुमान की दिव्य सुरक्षा और अजेयता को दर्शाता है, जो बुराई पर अच्छाई
+      की अंतिम विजय का प्रतीक है। यह हनुमान की भूमिका को एक रक्षक और अजेय शक्ति के
+      रूप में मजबूत करता है।
+  practical_application:
+    en: Devotees can draw inspiration from Hanuman's strength and resilience to overcome
+      their own challenges. By invoking Hanuman's name, they seek his divine intervention
+      in difficult situations.
+    hi: भक्त हनुमान की शक्ति और सहनशीलता से प्रेरणा लेकर अपनी चुनौतियों को पार कर
+      सकते हैं। हनुमान के नाम का आह्वान करके, वे कठिन परिस्थितियों में उनकी दिव्य
+      सहायता की कामना करते हैं।
+  source_texts:
+  - text: Ananda Ramayan
+    section: '9'
+  related_verses: []
 ---

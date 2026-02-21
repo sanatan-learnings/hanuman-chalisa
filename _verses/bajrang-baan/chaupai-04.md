@@ -101,4 +101,39 @@ translation:
   en: Going ahead, Lankini stops (him). Striking a kick, (she) goes to the world of
     gods.
 next_verse: /bajrang-baan/chaupai-05/
+puranic_context:
+- id: hanuman-and-lankini
+  type: story
+  priority: high
+  title:
+    en: Hanuman's Encounter with Lankini
+    hi: हनुमान और लंकिनी का सामना
+  icon: 🦸‍♂️
+  story_summary:
+    en: As Hanuman reaches the entrance of Lanka, he is stopped by Lankini, the demoness
+      guarding the city. Hanuman, with his divine strength, strikes her with a powerful
+      kick, sending her to the celestial realms, thus clearing his path to enter Lanka.
+    hi: जब हनुमान लंका के द्वार पर पहुँचते हैं, तो उन्हें लंका की रक्षक राक्षसी लंकिनी
+      रोकती है। हनुमान अपनी दिव्य शक्ति से उसे एक शक्तिशाली लात मारते हैं, जिससे वह
+      स्वर्ग लोक चली जाती है और हनुमान का मार्ग साफ हो जाता है।
+  theological_significance:
+    en: This episode highlights the triumph of divine will and righteousness over
+      evil. Hanuman's encounter with Lankini symbolizes the power of devotion and
+      divine mission overcoming obstacles, reinforcing the belief that faith and righteousness
+      can conquer any hindrance.
+    hi: यह घटना दैवी इच्छा और धर्म की बुराई पर विजय को दर्शाती है। हनुमान का लंकिनी
+      से सामना भक्ति और दैवीय मिशन की शक्ति को दर्शाता है, जो बाधाओं को पार करता है,
+      और यह विश्वास को मजबूत करता है कि आस्था और धर्म किसी भी बाधा को जीत सकते हैं।
+  practical_application:
+    en: In daily life, this story inspires individuals to face challenges with courage
+      and faith. It encourages the belief that with devotion and righteousness, one
+      can overcome any obstacle, no matter how formidable it may seem.
+    hi: दैनिक जीवन में, यह कहानी व्यक्तियों को साहस और विश्वास के साथ चुनौतियों का
+      सामना करने के लिए प्रेरित करती है। यह विश्वास को प्रोत्साहित करती है कि भक्ति
+      और धर्म के साथ, कोई भी बाधा पार की जा सकती है, चाहे वह कितनी भी कठिन क्यों न
+      लगे।
+  source_texts:
+  - text: Ananda Ramayan
+    section: Ananda Ramayan, 9
+  related_verses: []
 ---
