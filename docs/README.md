@@ -101,6 +101,6 @@ See [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk) 
 
 ## Quick Links
 
-- 🌐 [Live Website](https://sanatan-learnings.github.io/hanuman-gpt/)
+- 🌐 [Live Website](https://hanumanji.ai/)
 - 📦 [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk)
 - 🐙 [GitHub Repository](https://github.com/sanatan-learnings/hanuman-gpt)

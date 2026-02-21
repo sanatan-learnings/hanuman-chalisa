@@ -136,5 +136,5 @@ pip install --upgrade sanatan-verse-sdk
 ## Testing
 ```bash
 bundle exec jekyll serve --force_polling
-# Visit: http://localhost:4000/hanuman-gpt/
+# Visit: http://localhost:4000/
 ```

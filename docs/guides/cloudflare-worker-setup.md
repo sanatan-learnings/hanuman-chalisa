@@ -4,7 +4,7 @@ This guide covers deploying the Hanuman Chalisa website and its services.
 
 ## GitHub Pages (Static Site)
 
-**Live Site:** [https://sanatan-learnings.github.io/hanuman-gpt/](https://sanatan-learnings.github.io/hanuman-gpt/)
+**Live Site:** [https://hanumanji.ai/](https://hanumanji.ai/)
 
 ### How It Works
 
@@ -30,7 +30,7 @@ Key files:
 
 ```bash
 bundle exec jekyll serve
-# View at http://localhost:4000/hanuman-gpt/
+# View at http://localhost:4000/
 ```
 
 See [setup guide](setup.md) for detailed local development instructions.

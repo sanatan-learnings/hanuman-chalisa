@@ -2,7 +2,7 @@
 
 🚩 **Jai Hanuman 🏹 Jai Shri Ram**
 
-**🌐 [View the live interactive website →](https://sanatan-learnings.github.io/hanuman-gpt/)**
+**🌐 [View the live interactive website →](https://hanumanji.ai/)**
 
 _May Lord Hanuman's blessings be with all who study and recite these sacred verses._
 
@@ -30,8 +30,8 @@ This guide provides deep understanding of each verse with translations, meanings
 - **🔤 Bilingual** - Full content in English and हिन्दी (Hindi) with word-by-word meanings, transliteration, and interpretive explanations
 - **🎵 Audio Pronunciation** - Regular and slow speed for every verse (AI-generated via Eleven Labs)
 - **🖼️ AI-Generated Images** - Beautiful artwork for each verse (DALL-E 3)
-- **💬 Spiritual Guidance** - Ask questions and receive GPT-4 powered guidance based on relevant verses → [Try it](https://sanatan-learnings.github.io/hanuman-gpt/guidance) | [Learn more](docs/reference/spiritual-guidance.md)
-- **📕 Custom Books** - Generate printable books (Hanuman Chalisa only) → [Book Generator](https://sanatan-learnings.github.io/hanuman-gpt/chalisa/book) | [Documentation](docs/reference/book-generation.md)
+- **💬 Spiritual Guidance** - Ask questions and receive GPT-4 powered guidance based on relevant verses → [Try it](https://hanumanji.ai/guidance) | [Learn more](docs/reference/spiritual-guidance.md)
+- **📕 Custom Books** - Generate printable books (Hanuman Chalisa only) → [Book Generator](https://hanumanji.ai/chalisa/book) | [Documentation](docs/reference/book-generation.md)
 - **🔍 Search** - Find verses across all collections
 - **📖 Context** - Stories from Ramayana and Puranic texts for deeper understanding
 
@@ -59,7 +59,7 @@ bundle install
 # 5. Run Jekyll locally
 bundle exec jekyll serve --force_polling
 
-# Visit http://localhost:4000/hanuman-gpt/
+# Visit http://localhost:4000/
 ```
 
 **→ See [Local Development Guide](docs/guides/local-development.md)** for detailed setup instructions and troubleshooting.
