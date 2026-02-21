@@ -123,37 +123,4 @@ practical_application:
       कि हनुमान की सुरक्षा पूर्ण और सर्वव्यापी है।
 
       '
-puranic_context:
-- id: shiva-saves-rahu
-  type: story
-  priority: high
-  title:
-    en: Shiva Saves Rahu
-    hi: शिव ने राहु को बचाया
-  icon: 🛡️
-  story_summary:
-    en: When Rahu is threatened by a fierce being emerging from Shiva's brow, he seeks
-      refuge with Lord Shiva. Shiva, known for his compassion, instructs the being
-      to release Rahu, emphasizing the protection of those who seek refuge.
-    hi: जब राहु शिव के भ्रू से निकले एक भयंकर प्राणी से धमकाया जाता है, तो वह भगवान
-      शिव की शरण में जाता है। शिव, अपनी करुणा के लिए जाने जाते हैं, उस प्राणी को राहु
-      को छोड़ने का आदेश देते हैं, शरण में आए लोगों की रक्षा पर जोर देते हुए।
-  theological_significance:
-    en: This story illustrates the power of seeking refuge in a divine protector.
-      Just as Rahu found safety with Shiva, devotees are assured of protection when
-      they sincerely surrender to a higher power, such as Hanuman.
-    hi: यह कहानी एक दिव्य रक्षक की शरण लेने की शक्ति को दर्शाती है। जैसे राहु को शिव
-      के साथ सुरक्षा मिली, वैसे ही भक्तों को एक उच्च शक्ति, जैसे हनुमान, के प्रति
-      सच्ची समर्पण के माध्यम से सुरक्षा का आश्वासन मिलता है।
-  practical_application:
-    en: In times of fear or danger, remembering stories like Shiva saving Rahu can
-      inspire faith and courage. Reciting this verse can reinforce the belief in divine
-      protection and help alleviate anxiety.
-    hi: भय या खतरे के समय में, राहु को बचाने वाली शिव की कहानियों को याद करना विश्वास
-      और साहस को प्रेरित कर सकता है। इस श्लोक का पाठ करना दिव्य सुरक्षा में विश्वास
-      को मजबूत कर सकता है और चिंता को कम करने में मदद कर सकता है।
-  source_texts:
-  - text: Shiv Puran Part1
-    section: Rudra Samhita, Yuddha Khanda
-  related_verses: []
 ---
