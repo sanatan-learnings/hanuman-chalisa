@@ -180,7 +180,7 @@ layout: default
                 <span data-lang="hi">📖 पौराणिक संदर्भ और कहानियां</span>
             </h2>
 
-            {% comment %} Source legend - collect unique sources across all context entries {% endcomment %}
+            {% comment %} Source legend - collect unique source names, look up _meta.legend from puranic-index {% endcomment %}
             {% assign all_sources = "" %}
             {% for context in page.puranic_context %}
                 {% for source in context.source_texts %}
@@ -194,9 +194,19 @@ layout: default
             <div class="puranic-sources-legend">
                 <span class="legend-label" data-lang="en">Sources:</span>
                 <span class="legend-label" data-lang="hi">स्रोत:</span>
-                {% for source in unique_sources %}
-                    {% if source != "" %}
-                    <span class="legend-badge">📜 {{ source }}</span>
+                {% for source_name in unique_sources %}
+                    {% if source_name != "" %}
+                        {% assign legend_text = "" %}
+                        {% for index_entry in site.data["puranic-index"] %}
+                            {% if index_entry[1]._meta.source_name == source_name %}
+                                {% assign legend_text = index_entry[1]._meta.legend %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if legend_text != "" %}
+                        <span class="legend-badge">{{ legend_text }}</span>
+                        {% else %}
+                        <span class="legend-badge">📜 {{ source_name }}</span>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
             </div>
