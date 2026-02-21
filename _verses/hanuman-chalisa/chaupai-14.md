@@ -101,60 +101,65 @@ practical_application:
     hi: इस चौपाई का पाठ करें जब आपको याद रखने की आवश्यकता हो कि वास्तविक भक्ति और
       सद्गुण सांप्रदायिक सीमाओं को पार करते हैं और सार्वभौमिक सम्मान अर्जित करते हैं।
 puranic_context:
-- id: sanaka-kumaras
+- id: sanaka-kumaras-and-hanuman
   type: character
   priority: high
   title:
-    en: Sanaka Kumaras
-    hi: सनक कुमार
-  icon: 👦
+    en: Sanaka Kumaras and Hanuman
+    hi: सनक कुमार और हनुमान
+  icon: 🧘‍♂️
   story_summary:
-    en: The Sanaka Kumaras are the mind-born sons of Brahma, known for their eternal
-      youth and wisdom. They chose a life of celibacy and devotion, focusing on meditation
-      and spiritual knowledge rather than worldly creation.
-    hi: सनक कुमार ब्रह्मा के मानस पुत्र हैं, जो अपनी शाश्वत युवावस्था और ज्ञान के
-      लिए प्रसिद्ध हैं। उन्होंने ब्रह्मचर्य और भक्ति का जीवन चुना, और सांसारिक सृजन
-      के बजाय ध्यान और आध्यात्मिक ज्ञान पर ध्यान केंद्रित किया।
+    en: The Sanaka Kumaras, mind-born sons of Brahma, are known for their wisdom and
+      dispassion. They are among the celestial beings who praise Hanuman, acknowledging
+      his embodiment of wisdom, devotion, and service.
+    hi: सनक कुमार, ब्रह्मा के मानस पुत्र, अपनी बुद्धिमत्ता और वैराग्य के लिए जाने
+      जाते हैं। वे उन दिव्य प्राणियों में से हैं जो हनुमान की प्रशंसा करते हैं, उनकी
+      बुद्धिमत्ता, भक्ति और सेवा के प्रतीक के रूप में।
   theological_significance:
-    en: The Sanaka Kumaras symbolize the pursuit of spiritual wisdom and the renunciation
-      of worldly desires. Their praise of Hanuman underscores his embodiment of wisdom
-      and devotion.
-    hi: सनक कुमार आध्यात्मिक ज्ञान की खोज और सांसारिक इच्छाओं के त्याग का प्रतीक हैं।
-      उनका हनुमान की प्रशंसा करना उनके ज्ञान और भक्ति के प्रतीक होने को दर्शाता है।
+    en: The praise from the Sanaka Kumaras highlights Hanuman's alignment with the
+      highest spiritual virtues—wisdom and detachment. Their acknowledgment signifies
+      Hanuman's transcendence beyond mere physical prowess to embodying spiritual
+      ideals.
+    hi: सनक कुमारों की प्रशंसा हनुमान के उच्चतम आध्यात्मिक गुणों—बुद्धिमत्ता और वैराग्य—के
+      साथ संरेखण को दर्शाती है। उनकी स्वीकृति हनुमान की शारीरिक शक्ति से परे आध्यात्मिक
+      आदर्शों के अवतार के रूप में उनकी महत्ता को दर्शाती है।
   practical_application:
-    en: Emulating the Sanaka Kumaras, one can focus on spiritual growth and wisdom,
-      seeking to transcend material attachments and desires.
-    hi: सनक कुमारों का अनुकरण करते हुए, कोई भी आध्यात्मिक विकास और ज्ञान पर ध्यान
-      केंद्रित कर सकता है, भौतिक आसक्तियों और इच्छाओं से ऊपर उठने का प्रयास कर सकता
-      है।
+    en: Devotees can look to Hanuman as a model for balancing wisdom and devotion
+      in their spiritual practice, striving to cultivate both knowledge and humility.
+    hi: भक्त हनुमान को अपनी आध्यात्मिक साधना में बुद्धिमत्ता और भक्ति के संतुलन के
+      आदर्श के रूप में देख सकते हैं, ज्ञान और विनम्रता दोनों को विकसित करने का प्रयास
+      कर सकते हैं।
   source_texts:
   - text: Shiv Puran Part1
     section: Rudra Samhita, Srishti Khanda
   related_verses: []
-- id: narada-vishnu-disguise
-  type: story
+- id: narada-and-hanuman
+  type: character
   priority: medium
   title:
-    en: Narada's Disguise by Vishnu
-    hi: नारद का विष्णु द्वारा वेश बदलना
-  icon: 🎭
+    en: Narada and Hanuman
+    hi: नारद और हनुमान
+  icon: 🎶
   story_summary:
-    en: Narada Muni, captivated by a princess's beauty, sought Vishnu's form to win
-      her hand. Vishnu humorously gave Narada a monkey's face, leading to an unexpected
-      outcome at the swayamvara.
-    hi: नारद मुनि, एक राजकुमारी की सुंदरता से मोहित होकर, उसका हाथ जीतने के लिए विष्णु
-      का रूप चाहते थे। विष्णु ने मजाक में नारद को बंदर का चेहरा दिया, जिससे स्वयंवर
-      में अप्रत्याशित परिणाम हुआ।
+    en: Narada, the celestial sage known for his devotion and musical prowess, praises
+      Hanuman. This signifies Hanuman's esteemed position among devotees and his role
+      as an exemplar of devotion.
+    hi: नारद, जो अपनी भक्ति और संगीत कौशल के लिए जाने जाते हैं, हनुमान की प्रशंसा
+      करते हैं। यह हनुमान की भक्तों में प्रतिष्ठित स्थिति और भक्ति के आदर्श के रूप
+      में उनकी भूमिका को दर्शाता है।
   theological_significance:
-    en: This story highlights the theme of divine play and the importance of humility.
-      Narada's experience teaches that true beauty and worth lie beyond physical appearance.
-    hi: यह कहानी दिव्य लीला और विनम्रता के महत्व को दर्शाती है। नारद का अनुभव सिखाता
-      है कि सच्ची सुंदरता और मूल्य भौतिक रूप से परे होते हैं।
+    en: Narada's praise underscores Hanuman's role as the ultimate devotee, embodying
+      perfect devotion and service to the divine. It highlights the ideal of bhakti
+      as a path to spiritual fulfillment.
+    hi: नारद की प्रशंसा हनुमान की भूमिका को परम भक्त के रूप में रेखांकित करती है,
+      जो दिव्य के प्रति पूर्ण भक्ति और सेवा का प्रतीक है। यह भक्ति को आध्यात्मिक पूर्णता
+      के मार्ग के रूप में उजागर करता है।
   practical_application:
-    en: The tale encourages humility and the understanding that external appearances
-      can be deceptive. It reminds us to seek inner beauty and truth.
-    hi: यह कहानी विनम्रता और इस समझ को प्रोत्साहित करती है कि बाहरी रूप धोखा दे सकते
-      हैं। यह हमें आंतरिक सुंदरता और सत्य की खोज करने की याद दिलाती है।
+    en: Followers can emulate Hanuman's devotion and service, using Narada's acknowledgment
+      as inspiration to deepen their own spiritual practices through music and devotion.
+    hi: अनुयायी हनुमान की भक्ति और सेवा का अनुकरण कर सकते हैं, नारद की स्वीकृति का
+      उपयोग अपने संगीत और भक्ति के माध्यम से अपनी आध्यात्मिक साधना को गहरा करने के
+      लिए प्रेरणा के रूप में कर सकते हैं।
   source_texts:
   - text: Shiv Puran Part1
     section: Rudra Samhita, Srishti Khanda

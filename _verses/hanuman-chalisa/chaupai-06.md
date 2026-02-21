@@ -129,166 +129,60 @@ practical_application:
 
       '
 puranic_context:
-- id: shiva-hanuman-connection
-  type: character
-  priority: high
-  title:
-    en: Shiva-Hanuman Divine Connection
-    hi: शिव-हनुमान दिव्य संबंध
-  icon: 🔱
-  character_introduction:
-    en: 'Lord Shiva, the destroyer and transformer in the Hindu trinity, took birth
-      as Hanuman to serve Lord Rama (an avatar of Vishnu). This is one of the most
-      profound examples of divine collaboration - Shiva incarnating to serve Vishnu
-      demonstrates that all divine forms are ultimately one. Shiva, who is normally
-      beyond form and worldly attachment, willingly took a limited form to participate
-      in Rama''s cosmic drama.
-
-      '
-    hi: 'भगवान शिव, हिंदू त्रिमूर्ति में संहारक और परिवर्तनकर्ता, भगवान राम (विष्णु
-      के अवतार) की सेवा करने के लिए हनुमान के रूप में जन्म लिए। यह दिव्य सहयोग का
-      सबसे गहन उदाहरणों में से एक है - शिव का विष्णु की सेवा के लिए अवतार लेना यह
-      प्रदर्शित करता है कि सभी दिव्य रूप अंततः एक हैं। शिव, जो सामान्यतः रूप और सांसारिक
-      आसक्ति से परे हैं, राम की ब्रह्मांडीय लीला में भाग लेने के लिए स्वेच्छा से एक
-      सीमित रूप धारण किया।
-
-      '
-  relationship_to_hanuman:
-    en: 'Hanuman is considered Rudra avatar - an incarnation of Shiva in his Rudra
-      form. Several Puranas narrate how Shiva, moved by Rama''s mission to establish
-      dharma on earth, chose to be born as Hanuman. This explains Hanuman''s extraordinary
-      powers, his celibacy (Shiva is the eternal yogi), and his ability to exist across
-      multiple yugas as a Chiranjeevi (immortal).
-
-      '
-    hi: 'हनुमान को रुद्र अवतार माना जाता है - शिव के रुद्र रूप में अवतार। कई पुराण
-      वर्णन करते हैं कि कैसे शिव, पृथ्वी पर धर्म स्थापित करने के राम के मिशन से प्रभावित
-      होकर, हनुमान के रूप में जन्म लेना चुना। यह हनुमान की असाधारण शक्तियों, उनके
-      ब्रह्मचर्य (शिव शाश्वत योगी हैं), और एक चिरंजीवी (अमर) के रूप में कई युगों में
-      मौजूद रहने की उनकी क्षमता की व्याख्या करता है।
-
-      '
-  key_attributes:
-  - attribute:
-      en: Divine Incarnation
-      hi: दिव्य अवतार
-    description:
-      en: Shiva took limited form as Hanuman
-      hi: शिव ने हनुमान के रूप में सीमित रूप धारण किया
-  - attribute:
-      en: Eternal Yogi
-      hi: शाश्वत योगी
-    description:
-      en: Celibate and self-controlled like Shiva
-      hi: शिव की तरह ब्रह्मचारी और आत्म-नियंत्रित
-  - attribute:
-      en: Bridge Between Traditions
-      hi: परंपराओं के बीच सेतु
-    description:
-      en: Shaivite and Vaishnavite unity through devotion
-      hi: भक्ति के माध्यम से शैव और वैष्णव एकता
-  - attribute:
-      en: Chiranjeevi Status
-      hi: चिरंजीवी स्थिति
-    description:
-      en: Immortal like Shiva, present across ages
-      hi: शिव की तरह अमर, युगों में उपस्थित
-  famous_episodes:
-  - episode:
-      en: Shiva's Decision to Incarnate
-      hi: शिव का अवतार लेने का निर्णय
-    verse_reference: 6
-  theological_significance:
-    en: 'The Shiva-Hanuman connection teaches the fundamental unity of all divine
-      manifestations. When the Supreme takes different forms, those forms collaborate
-      rather than compete. It also shows that even the highest divinity (Shiva) willingly
-      serves dharma by taking a subordinate role, teaching the ultimate lesson of
-      humility in service.
-
-      '
-    hi: 'शिव-हनुमान संबंध सभी दिव्य अभिव्यक्तियों की मौलिक एकता सिखाता है। जब परम
-      विभिन्न रूप लेता है, तो वे रूप प्रतिस्पर्धा करने के बजाय सहयोग करते हैं। यह
-      यह भी दिखाता है कि उच्चतम दिव्यता (शिव) भी स्वेच्छा से एक अधीनस्थ भूमिका लेकर
-      धर्म की सेवा करती है, जो सेवा में विनम्रता का परम पाठ सिखाती है।
-
-      '
-- id: divine-incarnation-purpose
+- id: hanuman-shiva-avatar
   type: concept
   priority: high
   title:
-    en: Purpose of Divine Incarnation
-    hi: दिव्य अवतार का उद्देश्य
-  icon: ✨
-  concept_explanation:
-    en: 'When the Bhagavad Gita says "Whenever there is decline of dharma, I manifest
-      myself" (4.7), it applies not just to Vishnu''s avatars but to all divine incarnations.
-      Shiva''s incarnation as Hanuman serves a specific purpose: to demonstrate perfect
-      devotion and selfless service. While Rama came to establish dharma as king,
-      Hanuman came to show how to serve dharma as a devotee. Together they provide
-      the complete picture of divine-human relationship.
-
-      '
-    hi: 'जब भगवद गीता कहती है "जब-जब धर्म की हानि होती है, मैं स्वयं प्रकट होता हूं"
-      (4.7), यह केवल विष्णु के अवतारों पर ही नहीं बल्कि सभी दिव्य अवतारों पर लागू
-      होता है। हनुमान के रूप में शिव का अवतार एक विशिष्ट उद्देश्य की पूर्ति करता है:
-      पूर्ण भक्ति और निःस्वार्थ सेवा का प्रदर्शन करना। जबकि राम राजा के रूप में धर्म
-      स्थापित करने आए, हनुमान एक भक्त के रूप में धर्म की सेवा करने का तरीका दिखाने
-      आए। साथ में वे दिव्य-मानव संबंध की संपूर्ण तस्वीर प्रदान करते हैं।
-
-      '
-  scriptural_basis:
-    en: 'The Shiva Purana describes how Shiva, witnessing Vishnu''s plan to incarnate
-      as Rama, decided to incarnate as well to participate in the cosmic play. The
-      Skanda Purana mentions that Hanuman is Shiva''s eleventh Rudra incarnation.
-      These texts establish that divine incarnations are purposeful and coordinated,
-      not random events.
-
-      '
-    hi: 'शिव पुराण वर्णन करता है कि कैसे शिव ने विष्णु की राम के रूप में अवतार लेने
-      की योजना को देखकर, ब्रह्मांडीय लीला में भाग लेने के लिए स्वयं भी अवतार लेने
-      का निर्णय लिया। स्कंद पुराण में उल्लेख है कि हनुमान शिव के ग्यारहवें रुद्र अवतार
-      हैं। ये ग्रंथ स्थापित करते हैं कि दिव्य अवतार उद्देश्यपूर्ण और समन्वित हैं,
-      यादृच्छिक घटनाएं नहीं।
-
-      '
+    en: Hanuman as an Avatar of Shiva
+    hi: हनुमान शिव के अवतार के रूप में
+  icon: 🔱
+  story_summary:
+    en: Hanuman is considered an incarnation of Lord Shiva, born to serve Lord Rama,
+      an incarnation of Vishnu. This connection highlights the unity and cooperation
+      among divine entities in Hindu mythology.
+    hi: हनुमान को भगवान शिव का अवतार माना जाता है, जो भगवान राम की सेवा के लिए जन्मे
+      थे, जो स्वयं भगवान विष्णु के अवतार हैं। यह संबंध हिंदू पौराणिक कथाओं में दिव्य
+      शक्तियों के बीच एकता और सहयोग को दर्शाता है।
+  theological_significance:
+    en: The portrayal of Hanuman as an avatar of Shiva underscores the interconnectedness
+      of divine forms and the concept of divine service. It reflects the idea that
+      all deities work together for the cosmic order.
+    hi: हनुमान को शिव के अवतार के रूप में प्रस्तुत करना दिव्य रूपों की आपसी संबंधता
+      और दिव्य सेवा के सिद्धांत को रेखांकित करता है। यह दर्शाता है कि सभी देवता ब्रह्मांडीय
+      व्यवस्था के लिए मिलकर काम करते हैं।
   practical_application:
-    en: 'Understand that everyone has a unique purpose or dharma. Just as Shiva took
-      limited form to serve a higher purpose, we too must sometimes accept roles that
-      seem beneath our capabilities to serve the greater good. Hanuman teaches that
-      greatness lies not in asserting our power but in channeling it for righteous
-      service.
-
-      '
-    hi: 'समझें कि हर किसी का एक अनूठा उद्देश्य या धर्म है। जैसे शिव ने एक उच्च उद्देश्य
-      की सेवा के लिए सीमित रूप लिया, वैसे ही हमें भी कभी-कभी ऐसी भूमिकाएं स्वीकार
-      करनी चाहिए जो हमारी क्षमताओं से कम लगती हैं लेकिन अधिक भलाई की सेवा करती हैं।
-      हनुमान सिखाते हैं कि महानता अपनी शक्ति का दावा करने में नहीं बल्कि इसे धार्मिक
-      सेवा के लिए प्रवाहित करने में निहित है।
-
-      '
-  key_terms:
-  - term: शंकर सुवन
-    roman: Shankar Suvan
-    meaning:
-      en: Like Shiva / Shiva's manifestation
-      hi: शिव के समान / शिव की अभिव्यक्ति
-  - term: अवतार
-    roman: Avatar
-    meaning:
-      en: Divine descent / incarnation
-      hi: दिव्य अवतरण
-  - term: रुद्र
-    roman: Rudra
-    meaning:
-      en: Fierce form of Shiva
-      hi: शिव का उग्र रूप
-  related_concepts:
-  - concept: Unity of Divine Forms (Shaivism-Vaishnavism)
-    verses:
-    - 15
-    - 40
-  - concept: Purpose of Avatars
-    verses:
-    - 27
-    - 29
+    en: Devotees can draw inspiration from Hanuman's humility and dedication to service,
+      understanding that true strength lies in serving a higher purpose.
+    hi: भक्त हनुमान की विनम्रता और सेवा के प्रति समर्पण से प्रेरणा ले सकते हैं, यह
+      समझते हुए कि सच्ची शक्ति एक उच्च उद्देश्य की सेवा में निहित है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudrasamhita, Kumarakhanda
+  related_verses: []
+- id: kesari-hanuman-father
+  type: character
+  priority: medium
+  title:
+    en: 'Kesari: Father of Hanuman'
+    hi: 'केसरी: हनुमान के पिता'
+  icon: 🦁
+  story_summary:
+    en: Kesari, a brave monkey king, is the earthly father of Hanuman. His name, meaning
+      'lion', symbolizes courage and strength, traits passed on to his son, Hanuman.
+    hi: केसरी, एक साहसी वानर राजा, हनुमान के पिता हैं। उनका नाम, जिसका अर्थ 'सिंह'
+      है, साहस और शक्ति का प्रतीक है, जो उनके पुत्र हनुमान को विरासत में मिला।
+  theological_significance:
+    en: Kesari's role as Hanuman's father emphasizes the importance of lineage and
+      the transmission of virtues like courage and strength in Hindu mythology.
+    hi: केसरी की भूमिका हनुमान के पिता के रूप में वंश और साहस और शक्ति जैसे गुणों
+      के हस्तांतरण के महत्व को दर्शाती है।
+  practical_application:
+    en: Understanding Kesari's influence on Hanuman can inspire individuals to recognize
+      the impact of familial virtues and values in shaping one's character.
+    hi: केसरी के हनुमान पर प्रभाव को समझना व्यक्तियों को पारिवारिक गुणों और मूल्यों
+      के प्रभाव को पहचानने के लिए प्रेरित कर सकता है।
+  source_texts:
+  - text: Shiv Puran Part1
+    section: Rudrasamhita, Kumarakhanda
+  related_verses: []
 ---

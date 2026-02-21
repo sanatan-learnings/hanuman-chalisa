@@ -139,36 +139,37 @@ practical_application:
 
       '
 puranic_context:
-- id: shiva-devotion-concept
+- id: hanuman-bhakti-sufficiency
   type: concept
   priority: high
   title:
-    en: Shiva Devotion Concept
-    hi: शिव भक्ति की अवधारणा
-  icon: 🕉️
+    en: Sufficiency of Devotion to Hanuman
+    hi: हनुमान भक्ति की पर्याप्तता
+  icon: 🙏
   story_summary:
-    en: The passage emphasizes the importance of unwavering devotion to Lord Shiva,
-      stating that all sins and sufferings can be eradicated through his worship.
-      True liberation is attainable through sincere and exclusive devotion.
-    hi: यह पाठ भगवान शिव के प्रति अटूट भक्ति के महत्व को रेखांकित करता है, यह कहते
-      हुए कि उनकी पूजा के माध्यम से सभी पाप और कष्ट मिट सकते हैं। सच्ची मुक्ति ईमानदार
-      और विशेष भक्ति के माध्यम से प्राप्त की जा सकती है।
+    en: This concept emphasizes that devotion to Hanuman is sufficient for attaining
+      all happiness. It reflects the Bhakti tradition where single-pointed devotion
+      to one form of the divine is considered complete, simplifying spiritual practice
+      and deepening focus.
+    hi: यह अवधारणा इस बात पर जोर देती है कि हनुमान की भक्ति सभी सुखों को प्राप्त करने
+      के लिए पर्याप्त है। यह भक्ति परंपरा को दर्शाता है जहाँ एक ही रूप में भक्ति को
+      पूर्ण माना जाता है, जिससे आध्यात्मिक अभ्यास सरल और ध्यान केंद्रित होता है।
   theological_significance:
-    en: The verse aligns with the concept of single-pointed devotion found in the
-      Bhakti tradition. Just as exclusive devotion to Shiva leads to liberation, devotion
-      to Hanuman simplifies spiritual practice by focusing on one divine form, which
-      is sufficient for attaining happiness.
-    hi: यह श्लोक भक्ति परंपरा में पाए जाने वाले एकल-निष्ठ भक्ति की अवधारणा के साथ
-      मेल खाता है। जैसे शिव के प्रति विशेष भक्ति से मुक्ति मिलती है, वैसे ही हनुमान
-      की भक्ति एक दिव्य रूप पर ध्यान केंद्रित करके आध्यात्मिक अभ्यास को सरल बनाती
-      है, जो सुख प्राप्त करने के लिए पर्याप्त है।
+    en: In the Bhakti tradition, focusing on one deity like Hanuman is seen as a path
+      to divine grace. Hanuman's devotion to Rama exemplifies this, as worshiping
+      Hanuman connects devotees to Rama and the divine hierarchy, ensuring spiritual
+      fulfillment.
+    hi: भक्ति परंपरा में, हनुमान जैसे एक देवता पर ध्यान केंद्रित करना दिव्य कृपा प्राप्त
+      करने का मार्ग माना जाता है। हनुमान की राम के प्रति भक्ति इसका उदाहरण है, क्योंकि
+      हनुमान की पूजा भक्तों को राम और दिव्य अनुक्रम से जोड़ती है, जिससे आध्यात्मिक
+      पूर्ति सुनिश्चित होती है।
   practical_application:
-    en: Devotees can focus their spiritual practices on Hanuman without the anxiety
-      of needing to appease multiple deities. This focused devotion can lead to a
-      deeper connection with the divine and a more fulfilling spiritual life.
-    hi: भक्त बिना कई देवताओं को प्रसन्न करने की चिंता के हनुमान पर अपने आध्यात्मिक
-      अभ्यासों को केंद्रित कर सकते हैं। यह केंद्रित भक्ति दिव्य के साथ गहरे संबंध
-      और अधिक पूर्ण आध्यात्मिक जीवन की ओर ले जा सकती है।
+    en: Devotees can focus their worship solely on Hanuman, relieving themselves from
+      the anxiety of appeasing multiple deities. This single-pointed devotion simplifies
+      their spiritual practice and helps deepen their connection with the divine.
+    hi: भक्त केवल हनुमान की पूजा पर ध्यान केंद्रित कर सकते हैं, जिससे उन्हें कई देवताओं
+      को प्रसन्न करने की चिंता से मुक्ति मिलती है। यह एकल-निष्ठ भक्ति उनके आध्यात्मिक
+      अभ्यास को सरल बनाती है और उन्हें दिव्य से गहरा संबंध बनाने में मदद करती है।
   source_texts:
   - text: Shiv Puran Part1
     section: Rudrasamhita, Srishtikhanda

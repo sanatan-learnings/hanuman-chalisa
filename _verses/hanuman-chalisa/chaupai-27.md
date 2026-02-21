@@ -130,36 +130,36 @@ practical_application:
 
       '
 puranic_context:
-- id: rama-exile-episode
+- id: hanuman-accomplishes-rama-tasks
   type: story
   priority: high
   title:
-    en: Rama's Exile Episode
-    hi: राम का वनवास प्रकरण
-  icon: 🌳
+    en: Hanuman Accomplishes Rama's Tasks
+    hi: हनुमान ने राम के कार्य पूरे किए
+  icon: 🐒
   story_summary:
-    en: Lord Rama narrates his story to Sati, explaining that he is in exile in the
-      forest with Sita and Lakshmana due to his father's command. He expresses his
-      sorrow over Sita's abduction by a demon and his ongoing search for her.
-    hi: भगवान राम सती को अपनी कहानी सुनाते हैं, यह बताते हुए कि वह अपने पिता के आदेश
-      के कारण सीता और लक्ष्मण के साथ वन में वनवास में हैं। वह एक राक्षस द्वारा सीता
-      के अपहरण के बारे में अपनी पीड़ा व्यक्त करते हैं और उसकी खोज जारी रखते हैं।
+    en: Hanuman, the devoted servant of Lord Rama, played a crucial role in accomplishing
+      the tasks set by Rama during his exile and the battle against Ravana. His unwavering
+      devotion and strength enabled him to overcome obstacles and fulfill Rama's mission.
+    hi: हनुमान, भगवान राम के समर्पित सेवक, ने राम के वनवास और रावण के खिलाफ युद्ध
+      के दौरान निर्धारित कार्यों को पूरा करने में महत्वपूर्ण भूमिका निभाई। उनकी अटूट
+      भक्ति और शक्ति ने उन्हें बाधाओं को पार करने और राम के मिशन को पूरा करने में
+      सक्षम बनाया।
   theological_significance:
-    en: Rama's acceptance of exile is a profound example of dharma and obedience to
-      parental command. It highlights the virtues of sacrifice and duty, which are
-      central to Hindu teachings. Hanuman's role in aiding Rama during this period
-      underscores the importance of devotion and service.
-    hi: राम का वनवास स्वीकार करना धर्म और माता-पिता के आदेश के प्रति आज्ञाकारिता का
-      गहरा उदाहरण है। यह बलिदान और कर्तव्य के गुणों को उजागर करता है, जो हिंदू शिक्षाओं
-      के केंद्र में हैं। इस अवधि के दौरान राम की सहायता में हनुमान की भूमिका भक्ति
-      और सेवा के महत्व को रेखांकित करती है।
+    en: Hanuman's service to Rama exemplifies the ideal of bhakti, where the devotee
+      seeks to serve the divine without any desire for personal gain. This selfless
+      service is seen as the highest form of devotion, leading to spiritual liberation.
+    hi: हनुमान की राम के प्रति सेवा भक्ति का आदर्श प्रस्तुत करती है, जहां भक्त बिना
+      किसी व्यक्तिगत लाभ की इच्छा के दिव्य की सेवा करना चाहता है। यह निःस्वार्थ सेवा
+      भक्ति का सर्वोच्च रूप मानी जाती है, जो आध्यात्मिक मुक्ति की ओर ले जाती है।
   practical_application:
-    en: The story encourages individuals to uphold their duties and commitments, even
-      in challenging circumstances. It also inspires devotion and selfless service,
-      as exemplified by Hanuman's unwavering support for Rama.
-    hi: यह कहानी व्यक्तियों को चुनौतीपूर्ण परिस्थितियों में भी अपने कर्तव्यों और प्रतिबद्धताओं
-      को बनाए रखने के लिए प्रेरित करती है। यह भक्ति और निःस्वार्थ सेवा को भी प्रेरित
-      करती है, जैसा कि हनुमान के राम के प्रति अटूट समर्थन से उदाहरण मिलता है।
+    en: In daily life, emulating Hanuman's dedication can inspire individuals to perform
+      their duties selflessly and with devotion, leading to personal growth and fulfillment.
+      It teaches the value of serving a higher purpose beyond personal desires.
+    hi: दैनिक जीवन में, हनुमान की समर्पण की नकल करना व्यक्तियों को निःस्वार्थ और भक्ति
+      के साथ अपने कर्तव्यों का पालन करने के लिए प्रेरित कर सकता है, जिससे व्यक्तिगत
+      विकास और संतोष प्राप्त होता है। यह व्यक्तिगत इच्छाओं से परे एक उच्च उद्देश्य
+      की सेवा के मूल्य को सिखाता है।
   source_texts:
   - text: Shiv Puran Part1
     section: Rudra Samhita, Sati Khanda

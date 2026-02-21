@@ -203,7 +203,7 @@ def parse_sundar_kaand(input_file: str, output_file: str):
 
 
 if __name__ == "__main__":
-    input_file = "data/source-texts/sundar-kaand-wikipedia.txt"
+    input_file = "data/sources/sundar-kaand-wikipedia.txt"
     output_file = "data/verses/sundar-kaand.yml"
 
     print(f"📖 Parsing Sundar Kaand from {input_file}...\n")

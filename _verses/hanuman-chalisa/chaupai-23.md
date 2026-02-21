@@ -105,38 +105,36 @@ practical_application:
     hi: इस छंद का पाठ तब करें जब आपको अपनी शक्ति, क्रोध या क्षमताओं पर आत्म-नियंत्रण
       विकसित करने की आवश्यकता हो, यह सुनिश्चित करते हुए कि वे धर्म की सेवा करें।
 puranic_context:
-- id: shiva-grants-powers
+- id: hanuman-power-and-restraint
   type: concept
   priority: high
   title:
-    en: Shiva Grants Powers
-    hi: शिव द्वारा शक्तियों का अनुदान
-  icon: 🔱
+    en: Hanuman's Power and Restraint
+    hi: हनुमान की शक्ति और संयम
+  icon: 💪
   story_summary:
-    en: Shiva is described as granting three eternal powers to those who worship him
-      with devotion. These include the powers of action, will, and knowledge, leading
-      to the devotees' liberation from fear and death.
-    hi: शिव को अपने भक्तों को तीन शाश्वत शक्तियाँ प्रदान करने वाला बताया गया है। इनमें
-      क्रिया, इच्छा और ज्ञान की शक्तियाँ शामिल हैं, जो भक्तों को भय और मृत्यु से मुक्ति
-      दिलाती हैं।
+    en: Hanuman is known for his immense power and strength, which he can control
+      at will. His roar can cause the three worlds to tremble, yet he exercises self-restraint,
+      using his power only for righteous purposes.
+    hi: हनुमान अपनी अपार शक्ति और बल के लिए जाने जाते हैं, जिसे वे अपनी इच्छा से नियंत्रित
+      कर सकते हैं। उनकी गर्जना से तीनों लोक कांप उठते हैं, फिर भी वे संयम बरतते हैं
+      और अपनी शक्ति का उपयोग केवल धर्म के लिए करते हैं।
   theological_significance:
-    en: The concept of self-controlled power in Hanuman is akin to the powers granted
-      by Shiva, emphasizing that true strength lies in the ability to control and
-      channel one's energy for righteous purposes. This reflects the divine qualities
-      of restraint and purposeful action.
-    hi: हनुमान में आत्म-नियंत्रित शक्ति की अवधारणा शिव द्वारा दी गई शक्तियों के समान
-      है, जो इस बात पर जोर देती है कि सच्ची शक्ति अपने ऊर्जा को धर्मपूर्ण उद्देश्यों
-      के लिए नियंत्रित और संचालित करने की क्षमता में निहित है। यह संयम और उद्देश्यपूर्ण
-      क्रिया के दिव्य गुणों को दर्शाता है।
+    en: Hanuman's ability to control his own power symbolizes the ideal of self-restraint
+      in Hindu philosophy. It teaches that true strength lies not just in power, but
+      in the ability to control and direct it towards righteous ends.
+    hi: हनुमान की अपनी शक्ति को नियंत्रित करने की क्षमता हिंदू दर्शन में आत्म-संयम
+      के आदर्श का प्रतीक है। यह सिखाता है कि सच्ची शक्ति केवल बल में नहीं है, बल्कि
+      इसे नियंत्रित करने और धर्म के उद्देश्यों की ओर निर्देशित करने की क्षमता में
+      है।
   practical_application:
-    en: In daily life, this teaches us the importance of self-restraint and using
-      our abilities for constructive and ethical purposes. Just as Hanuman uses his
-      power wisely, individuals are encouraged to harness their strengths for positive
-      impact.
-    hi: दैनिक जीवन में, यह हमें आत्म-संयम और अपनी क्षमताओं का रचनात्मक और नैतिक उद्देश्यों
-      के लिए उपयोग करने के महत्व को सिखाता है। जैसे हनुमान अपनी शक्ति का विवेकपूर्ण
-      उपयोग करते हैं, वैसे ही व्यक्तियों को अपने बल को सकारात्मक प्रभाव के लिए उपयोग
-      करने के लिए प्रेरित किया जाता है।
+    en: In daily life, Hanuman's example encourages individuals to cultivate self-control
+      and use their abilities for positive and ethical purposes. It reminds us that
+      power without control can lead to chaos and destruction.
+    hi: दैनिक जीवन में, हनुमान का उदाहरण व्यक्तियों को आत्म-संयम विकसित करने और अपनी
+      क्षमताओं का सकारात्मक और नैतिक उद्देश्यों के लिए उपयोग करने के लिए प्रेरित करता
+      है। यह हमें याद दिलाता है कि नियंत्रण के बिना शक्ति अराजकता और विनाश की ओर ले
+      जा सकती है।
   source_texts:
   - text: Shiv Puran Part1
     section: Rudra Samhita, Parvati Khanda
