@@ -9,6 +9,8 @@ hanuman-chalisa:
   permalink_base: "/chalisa/"
   icon: "📿"
   subdirectory: "hanuman-chalisa"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: true
 
 sundar-kaand:
@@ -22,6 +24,8 @@ sundar-kaand:
   permalink_base: "/sundar-kaand/"
   icon: "🏹"
   subdirectory: "sundar-kaand"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: true
 
 bajrang-baan:
@@ -35,6 +39,8 @@ bajrang-baan:
   permalink_base: "/bajrang-baan/"
   icon: "🛡️"
   subdirectory: "bajrang-baan"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: true
 
 hanuman-bahuk:
@@ -48,6 +54,8 @@ hanuman-bahuk:
   permalink_base: "/hanuman-bahuk/"
   icon: "🙏"
   subdirectory: "hanuman-bahuk"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: false
 
 sankat-mochan-hanumanashtak:
@@ -61,6 +69,8 @@ sankat-mochan-hanumanashtak:
   permalink_base: "/sankat-mochan-hanumanashtak/"
   icon: "🕉️"
   subdirectory: "sankat-mochan-hanumanashtak"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: true
 
 hanuman-kavacham:
@@ -74,6 +84,8 @@ hanuman-kavacham:
   permalink_base: "/hanuman-kavacham/"
   icon: "⚔️"
   subdirectory: "hanuman-kavacham"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: false
 
 hanuman-stuti:
@@ -87,4 +99,6 @@ hanuman-stuti:
   permalink_base: "/hanuman-stuti/"
   icon: "✨"
   subdirectory: "hanuman-stuti"
+  subject: "Hanuman"
+  subject_type: "deity"
   enabled: false
