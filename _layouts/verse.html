@@ -212,21 +212,10 @@ layout: default
             </div>
             {% endif %}
 
-            {% comment %} Single toggle wrapping all context boxes {% endcomment %}
-            <div class="puranic-context-expandable">
-                <button class="puranic-expand-toggle"
-                        onclick="togglePuranicContexts(this)"
-                        aria-expanded="false"
-                        aria-controls="all-puranic-contexts">
-                    <span class="expand-icon">▶</span>
-                    <span data-lang="en">Show Puranic Context{% if page.puranic_context.size > 1 %}s ({{ page.puranic_context.size }}){% endif %}</span>
-                    <span data-lang="hi">पौराणिक संदर्भ दिखाएं{% if page.puranic_context.size > 1 %} ({{ page.puranic_context.size }}){% endif %}</span>
-                </button>
-                <div id="all-puranic-contexts" class="puranic-context-grid context-collapsed">
-                    {% for context in page.puranic_context %}
-                        {% include puranic-context-box.html context=context %}
-                    {% endfor %}
-                </div>
+            <div class="puranic-context-grid">
+                {% for context in page.puranic_context %}
+                    {% include puranic-context-box.html context=context %}
+                {% endfor %}
             </div>
 
         </section>
