@@ -102,9 +102,12 @@ git push origin main
 4. **Embeddings not updating**: Re-run verse-generate command
 
 ## SDK Version
-Currently using sanatan-verse-sdk 0.27.3 - upgrade regularly for new features and fixes.
+Currently using sanatan-verse-sdk 0.30.1 - upgrade regularly for new features and fixes.
 
 **Recent updates:**
+- 0.30.1: `verse-index-sources` default provider changed to `openai`; default chunk size increased to 4000 chars; added `--chunk-size` flag
+- 0.30.0: Added `verse-index-sources` command for indexing Puranic source texts (PDF/TXT/MD) into episodes and embeddings; added PDF parsing support (pdfplumber)
+- 0.29.0: Added boto3/S3 integration
 - 0.27.3: Minor fixes
 - 0.27.2: Minor fixes
 - 0.27.1: Minor fixes
