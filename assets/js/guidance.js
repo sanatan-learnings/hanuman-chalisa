@@ -17,7 +17,7 @@ let conversationHistory = [];
 let isProcessing = false;
 
 // Configuration
-const BASE_URL = '/hanuman-gpt'; // GitHub Pages baseurl
+const BASE_URL = ''; // Custom domain (hanumanji.ai) - no baseurl needed
 const EMBEDDING_MODEL = 'sentence-transformers/all-MiniLM-L6-v2';
 const HF_API_URL = `https://router.huggingface.co/pipeline/feature-extraction/${EMBEDDING_MODEL}`;
 const GPT_MODEL = 'gpt-4o'; // Can change to 'gpt-4o-mini' for lower cost
