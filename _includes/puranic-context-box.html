@@ -333,17 +333,6 @@
 
         {% comment %} Meta Information - Common to All Types {% endcomment %}
         <div class="context-meta">
-            {% if context.source_texts %}
-            <div class="meta-item">
-                <span class="meta-icon">📚</span>
-                <span data-lang="en">Sources:</span>
-                <span data-lang="hi">स्रोत:</span>
-                {% for source in context.source_texts %}
-                {{ source.text }}{% if source.section and source.section != "N/A" and source.section != "" %} ({{ source.section }}){% endif %}{% unless forloop.last %}, {% endunless %}
-                {% endfor %}
-            </div>
-            {% endif %}
-
             {% if context.related_verses and context.related_verses.size > 0 %}
             <div class="meta-item">
                 <span class="meta-icon">🔗</span>
