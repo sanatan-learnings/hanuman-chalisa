@@ -32,12 +32,12 @@
                     <span data-lang="en">THE STORY</span>
                     <span data-lang="hi">कहानी</span>
                 </div>
-                <div class="context-section-content context-bilingual">
+                <div class="context-section-content">
                     {% if context.story_summary.en %}
-                    <div data-lang="en"><p>{{ context.story_summary.en | strip | strip_newlines }}</p></div>
+                    <p data-lang="en">{{ context.story_summary.en | strip | strip_newlines }}</p>
                     {% endif %}
                     {% if context.story_summary.hi %}
-                    <div data-lang="hi"><p>{{ context.story_summary.hi | strip | strip_newlines }}</p></div>
+                    <p data-lang="hi">{{ context.story_summary.hi | strip | strip_newlines }}</p>
                     {% endif %}
                 </div>
             </div>
