@@ -1,0 +1,1247 @@
+---
+layout: default
+title: "Hanuman Quiz"
+description: "Test your knowledge of Lord Hanuman, Ramayana episodes, and sacred stotras."
+---
+
+<section class="quiz-shell">
+    <div class="quiz-header">
+        <h1>🧠 <span data-lang="en">Hanuman Quiz</span><span data-lang="hi">हनुमान प्रश्नोत्तरी</span></h1>
+        <p>
+            <span data-lang="en">Test your knowledge of Hanuman ji, Ramayana stories, and devotional traditions.</span>
+            <span data-lang="hi">हनुमान जी, रामायण कथाओं और भक्ति परंपरा पर अपना ज्ञान जांचें।</span>
+        </p>
+    </div>
+
+    <div class="quiz-card">
+        <div class="quiz-top-row">
+            <p id="quizProgress" class="quiz-progress"></p>
+            <p id="quizScoreHint" class="quiz-score-hint">
+                <span data-lang="en">+1 for each correct answer</span>
+                <span data-lang="hi">हर सही उत्तर पर +1</span>
+            </p>
+        </div>
+
+        <h2 id="quizQuestion" class="quiz-question"></h2>
+        <p id="quizInstruction" class="quiz-instruction"></p>
+
+        <div id="quizOptions" class="quiz-options"></div>
+
+        <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+
+        <div class="quiz-actions">
+            <button id="submitButton" class="btn-secondary" disabled>
+                <span data-lang="en">Submit Answer</span>
+                <span data-lang="hi">उत्तर जमा करें</span>
+            </button>
+            <button id="nextButton" class="btn-primary" disabled>
+                <span data-lang="en">Next Question</span>
+                <span data-lang="hi">अगला प्रश्न</span>
+            </button>
+            <button id="restartButton" class="btn-secondary" style="display: none;">
+                <span data-lang="en">Restart Quiz</span>
+                <span data-lang="hi">फिर से शुरू करें</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+const questionBank = [
+  {
+    question: {
+      en: "Who is Hanuman ji's father?",
+      hi: "हनुमान जी के पिता कौन माने जाते हैं?"
+    },
+    options: [
+      { en: "Dasharatha", hi: "दशरथ" },
+      { en: "Kesari", hi: "केसरी" },
+      { en: "Janaka", hi: "जनक" },
+      { en: "Sugriva", hi: "सुग्रीव" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Kesari is regarded as Hanuman ji's earthly father; Hanuman ji is also revered as Vayuputra.",
+      hi: "केसरी को हनुमान जी के लौकिक पिता माना जाता है; हनुमान जी वायुपुत्र के रूप में भी पूजित हैं।"
+    }
+  },
+  {
+    question: {
+      en: "What is Hanuman ji also known as?",
+      hi: "हनुमान जी को और किस नाम से जाना जाता है?"
+    },
+    options: [
+      { en: "Anjaneya", hi: "अंजनेय" },
+      { en: "Narada", hi: "नारद" },
+      { en: "Agastya", hi: "अगस्त्य" },
+      { en: "Parashurama", hi: "परशुराम" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Hanuman ji is lovingly known by many names, including Anjaneya and Bajrangbali.",
+      hi: "हनुमान जी को अंजनेय और बजरंगबली जैसे कई नामों से आदरपूर्वक पुकारा जाता है।"
+    }
+  },
+  {
+    question: {
+      en: "What animal form is Hanuman ji associated with?",
+      hi: "हनुमान जी किस रूप से जुड़े माने जाते हैं?"
+    },
+    options: [
+      { en: "Lion", hi: "सिंह" },
+      { en: "Elephant", hi: "हाथी" },
+      { en: "Monkey/Vanara", hi: "वानर" },
+      { en: "Horse", hi: "घोड़ा" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Hanuman ji is worshipped in vanara form, symbolizing strength, devotion, and agility.",
+      hi: "हनुमान जी वानर रूप में पूजित हैं, जो शक्ति, भक्ति और चपलता का प्रतीक है।"
+    }
+  },
+  {
+    question: {
+      en: "Which day of the week is widely dedicated to Hanuman ji worship?",
+      hi: "सप्ताह का कौन सा दिन हनुमान जी की पूजा के लिए व्यापक रूप से माना जाता है?"
+    },
+    options: [
+      { en: "Monday", hi: "सोमवार" },
+      { en: "Tuesday", hi: "मंगलवार" },
+      { en: "Thursday", hi: "गुरुवार" },
+      { en: "Sunday", hi: "रविवार" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Tuesday is widely observed for Hanuman ji worship (Saturday is also common in many places).",
+      hi: "हनुमान जी की पूजा के लिए मंगलवार व्यापक रूप से माना जाता है (कई स्थानों पर शनिवार भी प्रचलित है)।"
+    }
+  },
+  {
+    question: {
+      en: "Why did Hanuman ji forget his powers as a child?",
+      hi: "बाल्यकाल में हनुमान जी अपने बल को क्यों भूल गए?"
+    },
+    options: [
+      { en: "Because of a boon from Shiva", hi: "शिव के वरदान के कारण" },
+      { en: "Because sages cursed him to forget until reminded", hi: "ऋषियों के शाप से, जब तक कोई स्मरण न कराए" },
+      { en: "Because he lost a battle", hi: "युद्ध हारने के कारण" },
+      { en: "Because Surya withdrew his light", hi: "सूर्य के प्रकाश वापस लेने से" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Traditions say sages cursed child Hanuman ji to forget his powers until someone reminded him.",
+      hi: "परंपराओं के अनुसार, ऋषियों ने बाल हनुमान को शाप दिया था कि स्मरण कराने पर ही वे अपने बल को याद करेंगे।"
+    }
+  },
+  {
+    question: {
+      en: "Who reminded Hanuman ji of his powers before crossing the ocean?",
+      hi: "समुद्र लांघने से पहले हनुमान जी को उनका बल किसने याद दिलाया?"
+    },
+    options: [
+      { en: "Angada", hi: "अंगद" },
+      { en: "Jambavan", hi: "जाम्बवान" },
+      { en: "Vibhishana", hi: "विभीषण" },
+      { en: "Sugriva", hi: "सुग्रीव" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Jambavan reminded Hanuman ji of his immense power in Sundar Kaand.",
+      hi: "सुंदरकांड में जाम्बवान ने हनुमान जी को उनकी अपार शक्ति का स्मरण कराया।"
+    }
+  },
+  {
+    question: {
+      en: "Why did Hanuman ji burn Lanka?",
+      hi: "हनुमान जी ने लंका क्यों जलाई?"
+    },
+    options: [
+      { en: "To illuminate Lanka for Rama's army", hi: "राम की सेना के लिए लंका को प्रकाशित करने हेतु" },
+      { en: "As retaliation and warning after his tail was set on fire", hi: "पूंछ में आग लगाए जाने के बाद प्रतिकार और चेतावनी देने हेतु" },
+      { en: "To become king of Lanka", hi: "लंका का राजा बनने के लिए" },
+      { en: "By order of Vibhishana", hi: "विभीषण के आदेश से" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "After being insulted and punished, Hanuman ji used the burning tail to warn Ravana and assert Rama's power.",
+      hi: "अपमान और दंड के बाद हनुमान जी ने जलती पूंछ से रावण को चेतावनी दी और श्रीराम की शक्ति का संकेत दिया।"
+    }
+  },
+  {
+    question: {
+      en: "What is Hanuman ji's traditional weapon?",
+      hi: "हनुमान जी का पारंपरिक आयुध क्या है?"
+    },
+    options: [
+      { en: "Trident", hi: "त्रिशूल" },
+      { en: "Bow", hi: "धनुष" },
+      { en: "Mace (Gada)", hi: "गदा" },
+      { en: "Spear", hi: "भाला" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "The gada is most strongly associated with Hanuman ji's iconography.",
+      hi: "गदा हनुमान जी की मूर्तियों और चित्रण में सबसे प्रमुख रूप से दिखाई देती है।"
+    }
+  },
+  {
+    question: {
+      en: "What is Hanuman ji's vehicle (vahana) in most traditions?",
+      hi: "अधिकांश परंपराओं में हनुमान जी का वाहन क्या माना जाता है?"
+    },
+    options: [
+      { en: "Peacock", hi: "मोर" },
+      { en: "Tiger", hi: "बाघ" },
+      { en: "No fixed vahana", hi: "कोई निश्चित वाहन नहीं" },
+      { en: "Mouse", hi: "मूषक" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Unlike many deities, Hanuman ji is usually not represented with a fixed vahana.",
+      hi: "अनेक देवताओं की तरह हनुमान जी का सामान्यतः कोई एक निश्चित वाहन नहीं दर्शाया जाता।"
+    }
+  },
+  {
+    question: {
+      en: "What is the name of Hanuman ji's kingdom association in Ramayana tradition?",
+      hi: "रामायण परंपरा में हनुमान जी का संबंध किस राज्य से माना जाता है?"
+    },
+    options: [
+      { en: "Ayodhya", hi: "अयोध्या" },
+      { en: "Mithila", hi: "मिथिला" },
+      { en: "Kishkindha", hi: "किष्किन्धा" },
+      { en: "Dwaraka", hi: "द्वारका" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Hanuman ji serves Sugriva in Kishkindha in the Ramayana narrative.",
+      hi: "रामायण कथा में हनुमान जी का मुख्य कार्यक्षेत्र सुग्रीव का राज्य किष्किन्धा है।"
+    }
+  },
+  {
+    question: {
+      en: "What does the sindoor story associated with Hanuman ji signify?",
+      hi: "हनुमान जी से जुड़ी सिंदूर कथा का मुख्य संदेश क्या है?"
+    },
+    options: [
+      { en: "Material wealth", hi: "भौतिक समृद्धि" },
+      { en: "Supreme devotion to Shri Ram and Sita", hi: "श्रीराम और सीता के प्रति परम भक्ति" },
+      { en: "Victory in gambling", hi: "जुए में विजय" },
+      { en: "Mastery of politics", hi: "राजनीति में निपुणता" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "The sindoor story highlights Hanuman ji's total selfless devotion.",
+      hi: "सिंदूर कथा हनुमान जी की पूर्ण निस्वार्थ भक्ति को दर्शाती है।"
+    }
+  },
+  {
+    question: {
+      en: "What role does Hanuman ji play in the Mahabharata? (Select 2)",
+      hi: "महाभारत में हनुमान जी की क्या भूमिका है? (2 चुनें)"
+    },
+    options: [
+      { en: "He appears on Arjuna's flag (Kapidhvaja)", hi: "वे अर्जुन के ध्वज (कपिध्वज) पर विराजमान होते हैं" },
+      { en: "He humbles and blesses Bhima", hi: "वे भीम का गर्व हरते हैं और आशीर्वाद देते हैं" },
+      { en: "He becomes king of Hastinapura", hi: "वे हस्तिनापुर के राजा बनते हैं" },
+      { en: "He serves as Duryodhana's charioteer", hi: "वे दुर्योधन के सारथी बनते हैं" }
+    ],
+    correct: [0, 1],
+    maxSelections: 2,
+    explanation: {
+      en: "In the Mahabharata tradition, Hanuman ji blesses Bhima and is present on Arjuna's banner.",
+      hi: "महाभारत परंपरा में हनुमान जी भीम को आशीर्वाद देते हैं और अर्जुन के ध्वज पर स्थित रहते हैं।"
+    }
+  },
+  {
+    question: {
+      en: "What boon did Lord Brahma give Hanuman ji?",
+      hi: "भगवान ब्रह्मा ने हनुमान जी को कौन सा वरदान दिया?"
+    },
+    options: [
+      { en: "He would never need food", hi: "उन्हें कभी भोजन की आवश्यकता नहीं होगी" },
+      { en: "He would not be defeated by ordinary weapons", hi: "सामान्य अस्त्र-शस्त्र उन्हें पराजित नहीं कर सकेंगे" },
+      { en: "He would rule all three worlds", hi: "वे तीनों लोकों पर राज करेंगे" },
+      { en: "He would never speak", hi: "वे कभी बोलेंगे नहीं" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Puranic accounts describe major protections and boons from Brahma and other devas to Hanuman ji.",
+      hi: "पुराणों में वर्णित है कि ब्रह्मा सहित अनेक देवताओं ने हनुमान जी को विशेष शक्तियां और संरक्षण दिए।"
+    }
+  },
+  {
+    question: {
+      en: "What is the traditional name of Hanuman ji's son in some legends?",
+      hi: "कुछ परंपराओं में हनुमान जी के पुत्र का नाम क्या बताया जाता है?"
+    },
+    options: [
+      { en: "Lava", hi: "लव" },
+      { en: "Makardhwaja", hi: "मकरध्वज" },
+      { en: "Angada", hi: "अंगद" },
+      { en: "Shatrughna", hi: "शत्रुघ्न" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Makardhwaja is named in later traditions as Hanuman ji's son.",
+      hi: "कुछ उत्तर परंपराओं में मकरध्वज को हनुमान जी का पुत्र बताया गया है।"
+    }
+  },
+  {
+    question: {
+      en: "Who taught Hanuman ji in his childhood?",
+      hi: "बाल्यकाल में हनुमान जी के गुरु कौन थे?"
+    },
+    options: [
+      { en: "Shukracharya", hi: "शुक्राचार्य" },
+      { en: "Surya Deva", hi: "सूर्यदेव" },
+      { en: "Vashistha", hi: "वशिष्ठ" },
+      { en: "Parashurama", hi: "परशुराम" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Surya Deva is traditionally revered as Hanuman ji's teacher.",
+      hi: "सूर्यदेव को पारंपरिक रूप से हनुमान जी का गुरु माना जाता है।"
+    }
+  },
+  {
+    question: {
+      en: "Who is Hanuman ji's mother?",
+      hi: "हनुमान जी की माता कौन हैं?"
+    },
+    options: [
+      { en: "Kausalya", hi: "कौशल्या" },
+      { en: "Anjana", hi: "अंजना" },
+      { en: "Kaikeyi", hi: "कैकेयी" },
+      { en: "Sumitra", hi: "सुमित्रा" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Hanuman ji is also known as Anjaneya, meaning son of Anjana.",
+      hi: "हनुमान जी को अंजनेय भी कहा जाता है, जिसका अर्थ है अंजना के पुत्र।"
+    }
+  },
+  {
+    question: {
+      en: "What did Hanuman ji leap across to reach Lanka?",
+      hi: "हनुमान जी लंका पहुंचने के लिए किसे लांघकर गए?"
+    },
+    options: [
+      { en: "River Ganga", hi: "गंगा नदी" },
+      { en: "Dandaka forest", hi: "दंडकारण्य" },
+      { en: "The ocean", hi: "समुद्र" },
+      { en: "Himalayas", hi: "हिमालय" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "In Sundar Kaand, Hanuman ji performs the great ocean leap to reach Lanka.",
+      hi: "सुंदरकांड में हनुमान जी लंका पहुंचने के लिए विशाल समुद्र लांघते हैं।"
+    }
+  },
+  {
+    question: {
+      en: "Which mountain did Hanuman ji carry for Sanjeevani?",
+      hi: "संजीवनी के लिए हनुमान जी कौन सा पर्वत उठाकर लाए?"
+    },
+    options: [
+      { en: "Govardhan", hi: "गोवर्धन" },
+      { en: "Kailash", hi: "कैलाश" },
+      { en: "Dronagiri", hi: "द्रोणागिरि" },
+      { en: "Vindhya", hi: "विंध्य" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Unable to identify the herb quickly, Hanuman ji brought the Dronagiri mountain itself.",
+      hi: "औषधि तुरंत पहचान न पाने पर हनुमान जी पूरा द्रोणागिरि पर्वत ही उठा लाए।"
+    }
+  },
+  {
+    question: {
+      en: "Hanuman ji is the greatest devotee of which deity?",
+      hi: "हनुमान जी किस देवता के परम भक्त माने जाते हैं?"
+    },
+    options: [
+      { en: "Shri Ram", hi: "श्री राम" },
+      { en: "Shri Krishna", hi: "श्री कृष्ण" },
+      { en: "Shiva", hi: "शिव" },
+      { en: "Surya", hi: "सूर्य" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Hanuman ji is celebrated as the ideal bhakta of Shri Ram.",
+      hi: "हनुमान जी को श्री राम के आदर्श भक्त के रूप में पूजा जाता है।"
+    }
+  },
+  {
+    question: {
+      en: "Who composed the Hanuman Chalisa?",
+      hi: "हनुमान चालीसा की रचना किसने की?"
+    },
+    options: [
+      { en: "Valmiki", hi: "वाल्मीकि" },
+      { en: "Tulsidas", hi: "तुलसीदास" },
+      { en: "Kalidasa", hi: "कालिदास" },
+      { en: "Veda Vyasa", hi: "वेद व्यास" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Goswami Tulsidas composed the Hanuman Chalisa in Awadhi.",
+      hi: "गोस्वामी तुलसीदास ने अवधी भाषा में हनुमान चालीसा की रचना की।"
+    }
+  },
+  {
+    question: {
+      en: "What was Hanuman ji's childhood attempt toward the sun?",
+      hi: "बाल्यकाल में हनुमान जी ने सूर्य के साथ क्या किया था?"
+    },
+    options: [
+      { en: "Worshipped it", hi: "उसकी पूजा की" },
+      { en: "Tried to swallow it", hi: "उसे फल समझकर निगलने चले" },
+      { en: "Built a temple to it", hi: "उसका मंदिर बनाया" },
+      { en: "Hid from it", hi: "उससे छिप गए" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "As a child, Hanuman ji mistook the sun for a ripe fruit and leapt toward it.",
+      hi: "बाल्यावस्था में हनुमान जी ने सूर्य को पका फल समझकर उसकी ओर छलांग लगाई।"
+    }
+  },
+  {
+    question: {
+      en: "Which quality is most strongly associated with Hanuman ji?",
+      hi: "हनुमान जी से सबसे अधिक कौन सा गुण जुड़ा है?"
+    },
+    options: [
+      { en: "Greed", hi: "लोभ" },
+      { en: "Ego", hi: "अहंकार" },
+      { en: "Devotion and service", hi: "भक्ति और सेवा" },
+      { en: "Indifference", hi: "उदासीनता" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Hanuman ji embodies selfless devotion, strength, humility, and service.",
+      hi: "हनुमान जी निस्वार्थ भक्ति, बल, विनम्रता और सेवा के प्रतीक हैं।"
+    }
+  },
+  {
+    question: {
+      en: "In many traditions, Hanuman ji is considered an avatar of whom?",
+      hi: "कई परंपराओं में हनुमान जी को किसका अवतार माना जाता है?"
+    },
+    options: [
+      { en: "Agni", hi: "अग्नि" },
+      { en: "Varuna", hi: "वरुण" },
+      { en: "Vayu", hi: "वायु" },
+      { en: "Indra", hi: "इंद्र" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Hanuman ji is often revered as Vayuputra, the son or manifestation of Vayu.",
+      hi: "हनुमान जी को वायुपुत्र कहा जाता है, अर्थात वायु देव से संबंध रखने वाले।"
+    }
+  },
+  {
+    question: {
+      en: "What did Hanuman ji give Sita ji in Ashok Vatika as proof from Shri Ram?",
+      hi: "अशोक वाटिका में हनुमान जी ने सीता जी को श्री राम की ओर से क्या दिया?"
+    },
+    options: [
+      { en: "A garland", hi: "माला" },
+      { en: "A ring", hi: "अंगूठी" },
+      { en: "A bow", hi: "धनुष" },
+      { en: "A crown", hi: "मुकुट" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Hanuman ji presented Shri Ram's ring as a token of authenticity and hope.",
+      hi: "हनुमान जी ने प्रमाण और आश्वासन के रूप में श्री राम की अंगूठी सीता जी को दी।"
+    }
+  },
+  {
+    question: {
+      en: "What message did Hanuman ji deliver to Shri Ram after meeting Sita ji?",
+      hi: "सीता जी से मिलने के बाद हनुमान जी ने श्रीराम को क्या संदेश दिया?"
+    },
+    options: [
+      { en: "Sita ji is safe in Ashok Vatika and awaits rescue", hi: "सीता जी अशोक वाटिका में सुरक्षित हैं और उद्धार की प्रतीक्षा कर रही हैं" },
+      { en: "Sita ji returned to Ayodhya", hi: "सीता जी अयोध्या लौट आईं" },
+      { en: "Ravana surrendered", hi: "रावण ने आत्मसमर्पण कर दिया" },
+      { en: "Lanka was empty", hi: "लंका खाली थी" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Hanuman ji confirmed Sita ji's location and condition, giving Shri Ram certainty and hope.",
+      hi: "हनुमान जी ने सीता जी का स्थान और स्थिति बताकर श्रीराम को निश्चित समाचार दिया।"
+    }
+  },
+  {
+    question: {
+      en: "Who captured Hanuman ji in Lanka?",
+      hi: "लंका में हनुमान जी को किसने पकड़ा?"
+    },
+    options: [
+      { en: "Indrajit (Meghnad)", hi: "इंद्रजीत (मेघनाद)" },
+      { en: "Kumbhakarna", hi: "कुंभकर्ण" },
+      { en: "Vibhishana", hi: "विभीषण" },
+      { en: "Akampana", hi: "अकंपन" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Indrajit restrained Hanuman ji with a divine weapon and took him to Ravana's court.",
+      hi: "इंद्रजीत ने दिव्य अस्त्र से हनुमान जी को बांधकर रावण की सभा में ले जाया।"
+    }
+  },
+  {
+    question: {
+      en: "What punishment did Ravana order for Hanuman ji?",
+      hi: "रावण ने हनुमान जी के लिए कौन सा दंड दिया?"
+    },
+    options: [
+      { en: "Exile from Lanka", hi: "लंका से निर्वासन" },
+      { en: "Tail to be set on fire", hi: "पूंछ में आग लगाने का आदेश" },
+      { en: "Imprisonment for a year", hi: "एक वर्ष का कारावास" },
+      { en: "Loss of gada", hi: "गदा छीन लेने का आदेश" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Ravana ordered Hanuman ji's tail to be wrapped and set on fire.",
+      hi: "रावण ने हनुमान जी की पूंछ में कपड़ा बांधकर आग लगाने का आदेश दिया।"
+    }
+  },
+  {
+    question: {
+      en: "Who set fire to Hanuman ji's tail?",
+      hi: "हनुमान जी की पूंछ में आग किसने लगाई?"
+    },
+    options: [
+      { en: "Rakshasas on Ravana's order", hi: "रावण के आदेश पर राक्षसों ने" },
+      { en: "Vibhishana", hi: "विभीषण" },
+      { en: "Mandodari", hi: "मंदोदरी" },
+      { en: "Indra", hi: "इंद्र" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Lankan rakshasas carried out Ravana's order and lit Hanuman ji's tail.",
+      hi: "लंका के राक्षसों ने रावण का आदेश मानकर हनुमान जी की पूंछ में आग लगाई।"
+    }
+  },
+  {
+    question: {
+      en: "Who tried to stop Hanuman ji while he was flying to Lanka?",
+      hi: "लंका जाते समय हनुमान जी को किसने रोकने की कोशिश की?"
+    },
+    options: [
+      { en: "Surasa", hi: "सुरसा" },
+      { en: "Bharata", hi: "भरत" },
+      { en: "Lakshmana", hi: "लक्ष्मण" },
+      { en: "Jatayu", hi: "जटायु" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Surasa tested Hanuman ji on the journey; Simhika also obstructed him.",
+      hi: "यात्रा के दौरान सुरसा ने हनुमान जी की परीक्षा ली; सिंहिका ने भी बाधा डाली।"
+    }
+  },
+  {
+    question: {
+      en: "What form did Hanuman ji take to enter Lanka secretly?",
+      hi: "लंका में गुप्त रूप से प्रवेश करने के लिए हनुमान जी ने कौन सा रूप लिया?"
+    },
+    options: [
+      { en: "Giant form", hi: "विशाल रूप" },
+      { en: "Tiny form", hi: "सूक्ष्म रूप" },
+      { en: "Bird form", hi: "पक्षी रूप" },
+      { en: "Human king form", hi: "मानव राजरूप" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Hanuman ji reduced his size to move undetected through Lanka.",
+      hi: "हनुमान जी ने लंका में बिना पहचाने घूमने के लिए सूक्ष्म रूप धारण किया।"
+    }
+  },
+  {
+    question: {
+      en: "Who blessed Hanuman ji after he found Sita ji?",
+      hi: "सीता जी को खोजने के बाद हनुमान जी को किसका आशीर्वाद मिला?"
+    },
+    options: [
+      { en: "Sita ji", hi: "सीता जी" },
+      { en: "Ravana", hi: "रावण" },
+      { en: "Meghnad", hi: "मेघनाद" },
+      { en: "Trijata", hi: "त्रिजटा" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Sita ji blessed Hanuman ji for his devotion and service.",
+      hi: "सीता जी ने हनुमान जी की भक्ति और सेवा से प्रसन्न होकर आशीर्वाद दिया।"
+    }
+  },
+  {
+    question: {
+      en: "What did Hanuman ji eat in Ashok Vatika before being captured?",
+      hi: "पकड़े जाने से पहले हनुमान जी ने अशोक वाटिका में क्या खाया?"
+    },
+    options: [
+      { en: "Fruits", hi: "फल" },
+      { en: "Rice", hi: "चावल" },
+      { en: "Milk sweets", hi: "मिठाइयां" },
+      { en: "Nothing", hi: "कुछ नहीं" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Hanuman ji ate fruits in Ashok Vatika before confronting the guards.",
+      hi: "रक्षकों से भिड़ने से पहले हनुमान जी ने अशोक वाटिका के फल खाए।"
+    }
+  },
+  {
+    question: {
+      en: "What does the name 'Hanuman' literally point to?",
+      hi: "'हनुमान' नाम का शाब्दिक संकेत किस ओर है?"
+    },
+    options: [
+      { en: "The one with a prominent jaw", hi: "उन्नत/विशेष जबड़े वाला" },
+      { en: "The one with golden crown", hi: "स्वर्ण मुकुट वाला" },
+      { en: "The one born in ocean", hi: "समुद्र से उत्पन्न" },
+      { en: "The one who never speaks", hi: "जो कभी न बोले" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "The name is commonly linked to 'hanu' (jaw), referring to a distinctive jaw.",
+      hi: "यह नाम 'हनु' (जबड़ा) से जुड़ा माना जाता है, अर्थात विशिष्ट जबड़े वाला।"
+    }
+  },
+  {
+    question: {
+      en: "Which element is Hanuman ji associated with through his father?",
+      hi: "अपने पिता के माध्यम से हनुमान जी किस तत्व से जुड़े हैं?"
+    },
+    options: [
+      { en: "Fire", hi: "अग्नि" },
+      { en: "Water", hi: "जल" },
+      { en: "Air/Wind", hi: "वायु" },
+      { en: "Earth", hi: "पृथ्वी" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "As Vayuputra, Hanuman ji is associated with the element of air/wind.",
+      hi: "वायुपुत्र होने के कारण हनुमान जी वायु तत्व से जुड़े हैं।"
+    }
+  },
+  {
+    question: {
+      en: "What is Hanuman ji's connection in astrology?",
+      hi: "ज्योतिष में हनुमान जी का क्या संबंध माना जाता है?"
+    },
+    options: [
+      { en: "Worshipped for relief from Shani and Mangal afflictions", hi: "शनि और मंगल संबंधी कष्टों की शांति हेतु पूजा" },
+      { en: "Only linked to Moon sign", hi: "केवल चंद्र राशि से जुड़ाव" },
+      { en: "No traditional astrological role", hi: "कोई पारंपरिक ज्योतिषीय भूमिका नहीं" },
+      { en: "Only linked to Jupiter transit", hi: "केवल गुरु गोचर से संबंध" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "In many traditions, Hanuman ji worship is advised for courage and relief in Shani/Mangal-related difficulties.",
+      hi: "कई परंपराओं में शनि/मंगल संबंधी कष्टों में साहस और शांति हेतु हनुमान उपासना की जाती है।"
+    }
+  },
+  {
+    question: {
+      en: "Why is Hanuman ji called 'Bajrangbali'?",
+      hi: "हनुमान जी को 'बजरंगबली' क्यों कहा जाता है?"
+    },
+    options: [
+      { en: "Because he ruled Bajrang kingdom", hi: "क्योंकि वे बजरंग राज्य के राजा थे" },
+      { en: "Because of his thunderbolt-strong body and immense strength", hi: "वज्र समान शरीर और अपार बल के कारण" },
+      { en: "Because he carried a bow", hi: "धनुष धारण करने के कारण" },
+      { en: "Because he was a poet", hi: "कवि होने के कारण" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "'Bajrang' refers to vajra-like body; 'bali' denotes immense strength.",
+      hi: "'बजरंग' वज्र जैसे शरीर का संकेत है और 'बली' अपार शक्ति को दर्शाता है।"
+    }
+  },
+  {
+    question: {
+      en: "Which color is most associated with Hanuman ji devotion?",
+      hi: "हनुमान भक्ति में कौन सा रंग सबसे अधिक जुड़ा माना जाता है?"
+    },
+    options: [
+      { en: "Orange/Saffron", hi: "नारंगी/केसरिया" },
+      { en: "Blue", hi: "नीला" },
+      { en: "White", hi: "सफेद" },
+      { en: "Green", hi: "हरा" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Orange or saffron is widely associated with Hanuman ji worship and offerings.",
+      hi: "हनुमान जी की पूजा और अर्पण में नारंगी/केसरिया रंग व्यापक रूप से जुड़ा है।"
+    }
+  },
+  {
+    question: {
+      en: "On which warrior's flag did Hanuman ji appear in the Mahabharata?",
+      hi: "महाभारत में हनुमान जी किस योद्धा के ध्वज पर विराजमान थे?"
+    },
+    options: [
+      { en: "Karna", hi: "कर्ण" },
+      { en: "Bhishma", hi: "भीष्म" },
+      { en: "Arjuna", hi: "अर्जुन" },
+      { en: "Drona", hi: "द्रोण" }
+    ],
+    correct: 2,
+    explanation: {
+      en: "Hanuman ji appears on Arjuna's banner as Kapidhvaja.",
+      hi: "हनुमान जी अर्जुन के कपिध्वज पर विराजमान बताए जाते हैं।"
+    }
+  },
+  {
+    question: {
+      en: "What lesson did Hanuman ji teach Bhima when they met?",
+      hi: "हनुमान जी से भेंट में भीम को कौन सा पाठ मिला?"
+    },
+    options: [
+      { en: "Humility over pride", hi: "अहंकार पर विनम्रता" },
+      { en: "How to use a bow", hi: "धनुष चलाना" },
+      { en: "How to become king", hi: "राजा बनना" },
+      { en: "How to hide in battle", hi: "युद्ध में छिपना" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Bhima's encounter with Hanuman ji emphasizes humility despite great strength.",
+      hi: "हनुमान जी से भीम की भेंट महान बल के साथ विनम्रता का महत्व सिखाती है।"
+    }
+  },
+  {
+    question: {
+      en: "Why is Hanuman ji called Bhima's brother?",
+      hi: "हनुमान जी को भीम का भाई क्यों कहा जाता है?"
+    },
+    options: [
+      { en: "Both are sons of Vayu", hi: "दोनों वायु के पुत्र माने जाते हैं" },
+      { en: "Both were born in Ayodhya", hi: "दोनों का जन्म अयोध्या में हुआ" },
+      { en: "Both married the same princess", hi: "दोनों ने एक ही राजकुमारी से विवाह किया" },
+      { en: "Both ruled Hastinapura", hi: "दोनों ने हस्तिनापुर पर शासन किया" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Hanuman ji and Bhima are both linked to Vayu, hence considered brothers in tradition.",
+      hi: "हनुमान जी और भीम दोनों का संबंध वायु से होने के कारण उन्हें परंपरा में भाई माना जाता है।"
+    }
+  },
+  {
+    question: {
+      en: "What promise did Hanuman ji make to Shri Ram at the end of the Ramayana tradition?",
+      hi: "रामायण परंपरा के अंत में हनुमान जी ने श्रीराम से कौन सा प्रण किया?"
+    },
+    options: [
+      { en: "To remain in service wherever Ram Naam is remembered", hi: "जहां राम नाम हो, वहां सेवा में उपस्थित रहने का" },
+      { en: "To become king of Ayodhya", hi: "अयोध्या का राजा बनने का" },
+      { en: "To retire in silence forever", hi: "सदा मौन रहने का" },
+      { en: "To leave Earth immediately", hi: "तुरंत पृथ्वी छोड़ने का" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Traditions revere Hanuman ji as eternally present in the service of Shri Ram.",
+      hi: "परंपराओं में हनुमान जी को श्रीराम की सेवा में सदा उपस्थित माना जाता है।"
+    }
+  },
+  {
+    question: {
+      en: "Which prasad is widely offered to Hanuman ji?",
+      hi: "हनुमान जी को व्यापक रूप से कौन सा प्रसाद चढ़ाया जाता है?"
+    },
+    options: [
+      { en: "Boondi laddoo", hi: "बूंदी लड्डू" },
+      { en: "Kheer only", hi: "केवल खीर" },
+      { en: "Pongal only", hi: "केवल पोंगल" },
+      { en: "Grapes only", hi: "केवल अंगूर" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Boondi laddoo is among the most common offerings to Hanuman ji in many temples.",
+      hi: "कई मंदिरों में हनुमान जी को बूंदी लड्डू प्रमुख प्रसाद के रूप में चढ़ाया जाता है।"
+    }
+  },
+  {
+    question: {
+      en: "In many protective temple traditions, which direction is Hanuman ji often shown facing?",
+      hi: "कई रक्षात्मक मंदिर परंपराओं में हनुमान जी को प्रायः किस दिशा में दर्शाया जाता है?"
+    },
+    options: [
+      { en: "South", hi: "दक्षिण" },
+      { en: "North", hi: "उत्तर" },
+      { en: "West", hi: "पश्चिम" },
+      { en: "No direction ever used", hi: "कभी कोई दिशा नहीं" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "South-facing Hanuman forms are common in many protective traditions, though practices vary.",
+      hi: "रक्षात्मक उपासना में दक्षिणमुखी हनुमान रूप कई परंपराओं में मिलते हैं, हालांकि प्रथाएं भिन्न हो सकती हैं।"
+    }
+  },
+  {
+    question: {
+      en: "Which mantra is most commonly associated with Hanuman ji?",
+      hi: "हनुमान जी से सबसे सामान्य रूप से कौन सा मंत्र जुड़ा है?"
+    },
+    options: [
+      { en: "Om Namah Shivaya", hi: "ॐ नमः शिवाय" },
+      { en: "Om Hanumate Namah", hi: "ॐ हनुमते नमः" },
+      { en: "Om Namo Narayanaya", hi: "ॐ नमो नारायणाय" },
+      { en: "Gayatri Mantra", hi: "गायत्री मंत्र" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Om Hanumate Namah is one of the most widely recited Hanuman mantras.",
+      hi: "ॐ हनुमते नमः हनुमान उपासना में व्यापक रूप से जपा जाने वाला मंत्र है।"
+    }
+  },
+  {
+    question: {
+      en: "What quality makes Hanuman ji the symbol of ideal service?",
+      hi: "कौन सा गुण हनुमान जी को आदर्श सेवा का प्रतीक बनाता है?"
+    },
+    options: [
+      { en: "Selfless devotion", hi: "निस्वार्थ भक्ति" },
+      { en: "Desire for fame", hi: "यश की इच्छा" },
+      { en: "Political strategy", hi: "राजनीतिक चातुर्य" },
+      { en: "Attachment to power", hi: "सत्ता से आसक्ति" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Hanuman ji serves without ego or personal gain, making him the ideal sevak.",
+      hi: "हनुमान जी बिना अहंकार और स्वार्थ के सेवा करते हैं, इसलिए वे आदर्श सेवक हैं।"
+    }
+  },
+  {
+    question: {
+      en: "What is Hanuman ji's role in ending fear and negative energies?",
+      hi: "भय और नकारात्मक शक्तियों को दूर करने में हनुमान जी की क्या भूमिका मानी जाती है?"
+    },
+    options: [
+      { en: "Remover of fear, obstacles, and harmful influences", hi: "भय, बाधा और अनिष्ट प्रभावों के निवारक" },
+      { en: "Cause of planetary fear", hi: "ग्रह भय का कारण" },
+      { en: "Only a war deity", hi: "केवल युद्ध देवता" },
+      { en: "No such role in devotion", hi: "भक्ति में ऐसी कोई भूमिका नहीं" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Devotees invoke Hanuman ji for courage, protection, and relief from fear and negativity.",
+      hi: "भक्त हनुमान जी का स्मरण साहस, संरक्षण और भय-नकारात्मकता से मुक्ति के लिए करते हैं।"
+    }
+  },
+  {
+    question: {
+      en: "What is the meaning of the name 'Anjaneya'?",
+      hi: "'अंजनेय' नाम का अर्थ क्या है?"
+    },
+    options: [
+      { en: "Son of Anjana", hi: "अंजना के पुत्र" },
+      { en: "Protector of Lanka", hi: "लंका के रक्षक" },
+      { en: "King of Kishkindha", hi: "किष्किन्धा के राजा" },
+      { en: "Friend of Ravana", hi: "रावण के मित्र" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Anjaneya means 'son of Anjana,' one of Hanuman ji's most beloved names.",
+      hi: "अंजनेय का अर्थ 'अंजना के पुत्र' है, जो हनुमान जी का अत्यंत प्रिय नाम है।"
+    }
+  },
+  {
+    question: {
+      en: "Who were the Vanara king and queen under whom Hanuman ji served?",
+      hi: "हनुमान जी ने किन वानर राजा और रानी के अधीन सेवा की?"
+    },
+    options: [
+      { en: "Sugriva and Tara", hi: "सुग्रीव और तारा" },
+      { en: "Vali and Mandodari", hi: "वाली और मंदोदरी" },
+      { en: "Angada and Urmila", hi: "अंगद और उर्मिला" },
+      { en: "Rama and Sita", hi: "राम और सीता" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "In Kishkindha, Hanuman ji served under King Sugriva; Tara is the principal queen in that court tradition.",
+      hi: "किष्किन्धा में हनुमान जी ने राजा सुग्रीव के अधीन सेवा की; तारा उस राजपरंपरा की प्रमुख रानी मानी जाती हैं।"
+    }
+  },
+  {
+    question: {
+      en: "Which demon did Hanuman ji defeat in the Ahiravana story?",
+      hi: "अहिरावण कथा में हनुमान जी ने किस दैत्य का वध किया?"
+    },
+    options: [
+      { en: "Ahiravana", hi: "अहिरावण" },
+      { en: "Kumbhakarna", hi: "कुंभकर्ण" },
+      { en: "Tataka", hi: "ताड़का" },
+      { en: "Maricha", hi: "मारीच" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "In later Ramayana traditions, Hanuman ji defeats Ahiravana to rescue Rama and Lakshmana.",
+      hi: "उत्तर रामायण परंपराओं में हनुमान जी राम और लक्ष्मण की रक्षा हेतु अहिरावण का वध करते हैं।"
+    }
+  },
+  {
+    question: {
+      en: "In which Yuga is Hanuman ji traditionally believed to be born?",
+      hi: "परंपरागत मान्यता के अनुसार हनुमान जी का जन्म किस युग में हुआ?"
+    },
+    options: [
+      { en: "Satya Yuga", hi: "सत्य युग" },
+      { en: "Treta Yuga", hi: "त्रेता युग" },
+      { en: "Dvapara Yuga", hi: "द्वापर युग" },
+      { en: "Kali Yuga", hi: "कलि युग" }
+    ],
+    correct: 1,
+    explanation: {
+      en: "Hanuman ji's birth and Ramayana leelas are placed in Treta Yuga in mainstream tradition.",
+      hi: "मुख्य परंपरा में हनुमान जी का जन्म और रामायण लीला त्रेता युग में मानी जाती है।"
+    }
+  },
+  {
+    question: {
+      en: "What is the significance of Panchamukhi Hanuman, and which pair below includes two of the five faces?",
+      hi: "पंचमुखी हनुमान का क्या महत्व है, और नीचे दिए गए किस युग्म में पांच मुखों में से दो नाम हैं?"
+    },
+    options: [
+      { en: "Protection in all directions; Hanuman and Narasimha", hi: "सभी दिशाओं में संरक्षण; हनुमान और नरसिंह" },
+      { en: "Rainfall control; Indra and Varuna", hi: "वर्षा नियंत्रण; इंद्र और वरुण" },
+      { en: "Agriculture blessing; Balarama and Parashurama", hi: "कृषि आशीर्वाद; बलराम और परशुराम" },
+      { en: "Navagraha worship only; Surya and Chandra", hi: "केवल नवग्रह पूजा; सूर्य और चंद्र" }
+    ],
+    correct: 0,
+    explanation: {
+      en: "Panchamukhi Hanuman symbolizes multidirectional protection; the five faces include Hanuman, Narasimha, Garuda, Varaha, and Hayagriva.",
+      hi: "पंचमुखी हनुमान बहुदिशात्मक रक्षा का प्रतीक है; पांच मुखों में हनुमान, नरसिंह, गरुड़, वराह और हयग्रीव शामिल माने जाते हैं।"
+    }
+  }
+];
+
+const QUIZ_SIZE = 10;
+let quizQuestions = [];
+let currentIndex = 0;
+let score = 0;
+let selectedOptions = [];
+let answerSubmitted = false;
+
+const progressEl = document.getElementById("quizProgress");
+const questionEl = document.getElementById("quizQuestion");
+const instructionEl = document.getElementById("quizInstruction");
+const optionsEl = document.getElementById("quizOptions");
+const feedbackEl = document.getElementById("quizFeedback");
+const submitButton = document.getElementById("submitButton");
+const nextButton = document.getElementById("nextButton");
+const restartButton = document.getElementById("restartButton");
+
+function getLang() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("lang") === "hi" ? "hi" : "en";
+}
+
+function shuffleArray(items) {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildQuiz() {
+  const seen = new Set();
+  const uniqueBank = questionBank.filter((item) => {
+    const key = item.question.en.trim().toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  const size = Math.min(QUIZ_SIZE, uniqueBank.length);
+  quizQuestions = shuffleArray(uniqueBank).slice(0, size);
+}
+
+function renderQuestion() {
+  const lang = getLang();
+  const item = quizQuestions[currentIndex];
+  selectedOptions = [];
+  answerSubmitted = false;
+
+  progressEl.textContent = lang === "hi"
+    ? `प्रश्न ${currentIndex + 1} / ${quizQuestions.length}`
+    : `Question ${currentIndex + 1} / ${quizQuestions.length}`;
+  questionEl.textContent = item.question[lang];
+  instructionEl.textContent = item.maxSelections
+    ? (lang === "hi" ? `निर्देश: ${item.maxSelections} विकल्प चुनें` : `Instruction: Select ${item.maxSelections} options`)
+    : (lang === "hi" ? "निर्देश: एक विकल्प चुनें" : "Instruction: Select one option");
+  feedbackEl.textContent = "";
+  feedbackEl.className = "quiz-feedback";
+  submitButton.style.display = "inline-block";
+  submitButton.disabled = true;
+  nextButton.disabled = true;
+
+  optionsEl.innerHTML = "";
+  item.options.forEach((option, optionIndex) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "quiz-option";
+    btn.textContent = option[lang];
+    btn.addEventListener("click", () => toggleOption(optionIndex, btn));
+    optionsEl.appendChild(btn);
+  });
+}
+
+function toggleOption(optionIndex, buttonEl) {
+  if (answerSubmitted) return;
+  const item = quizQuestions[currentIndex];
+  const maxSelections = item.maxSelections || 1;
+
+  if (maxSelections === 1) {
+    selectedOptions = [optionIndex];
+    document.querySelectorAll(".quiz-option").forEach(btn => btn.classList.remove("selected"));
+    buttonEl.classList.add("selected");
+    submitButton.disabled = false;
+    return;
+  }
+
+  if (selectedOptions.includes(optionIndex)) {
+    selectedOptions = selectedOptions.filter(index => index !== optionIndex);
+    buttonEl.classList.remove("selected");
+  } else if (selectedOptions.length < maxSelections) {
+    selectedOptions.push(optionIndex);
+    buttonEl.classList.add("selected");
+  }
+
+  submitButton.disabled = selectedOptions.length !== maxSelections;
+}
+
+function isSelectionCorrect(item) {
+  if (Array.isArray(item.correct)) {
+    const sortedUser = [...selectedOptions].sort((a, b) => a - b);
+    const sortedCorrect = [...item.correct].sort((a, b) => a - b);
+    return sortedUser.length === sortedCorrect.length &&
+      sortedUser.every((value, index) => value === sortedCorrect[index]);
+  }
+  return selectedOptions.length === 1 && selectedOptions[0] === item.correct;
+}
+
+function submitAnswer() {
+  if (answerSubmitted) return;
+
+  answerSubmitted = true;
+  const lang = getLang();
+  const item = quizQuestions[currentIndex];
+  const isCorrect = isSelectionCorrect(item);
+
+  document.querySelectorAll(".quiz-option").forEach(btn => {
+    btn.disabled = true;
+  });
+  submitButton.disabled = true;
+
+  if (isCorrect) {
+    score += 1;
+    selectedOptions.forEach(index => {
+      const btn = optionsEl.children[index];
+      if (btn) btn.classList.add("correct");
+    });
+    feedbackEl.textContent = lang === "hi"
+      ? `सही! ${item.explanation.hi}`
+      : `Correct! ${item.explanation.en}`;
+    feedbackEl.className = "quiz-feedback correct";
+  } else {
+    selectedOptions.forEach(index => {
+      const btn = optionsEl.children[index];
+      if (btn) btn.classList.add("wrong");
+    });
+    if (Array.isArray(item.correct)) {
+      item.correct.forEach(index => {
+        const btn = optionsEl.children[index];
+        if (btn) btn.classList.add("correct");
+      });
+    } else {
+      const correctBtn = optionsEl.children[item.correct];
+      if (correctBtn) correctBtn.classList.add("correct");
+    }
+    feedbackEl.textContent = lang === "hi"
+      ? `गलत। ${item.explanation.hi}`
+      : `Not quite. ${item.explanation.en}`;
+    feedbackEl.className = "quiz-feedback wrong";
+  }
+
+  nextButton.disabled = false;
+}
+
+function finishQuiz() {
+  const lang = getLang();
+  const total = quizQuestions.length;
+  const percentage = Math.round((score / total) * 100);
+
+  progressEl.textContent = lang === "hi" ? "परिणाम" : "Results";
+  questionEl.textContent = lang === "hi"
+    ? `आपका स्कोर: ${score} / ${total} (${percentage}%)`
+    : `Your score: ${score} / ${total} (${percentage}%)`;
+
+  let summaryEn = "Keep practicing Hanuman Chalisa and Sundar Kaand for deeper understanding.";
+  let summaryHi = "गहन समझ के लिए हनुमान चालीसा और सुंदरकांड का नियमित अभ्यास करें।";
+  if (percentage >= 80) {
+    summaryEn = "Excellent. Your Hanuman ji knowledge is strong.";
+    summaryHi = "उत्कृष्ट। हनुमान जी के विषय में आपका ज्ञान बहुत अच्छा है।";
+  } else if (percentage >= 50) {
+    summaryEn = "Good effort. A little more study will make it even stronger.";
+    summaryHi = "अच्छा प्रयास। थोड़ा और अध्ययन इसे और मजबूत बनाएगा।";
+  }
+
+  feedbackEl.textContent = lang === "hi" ? summaryHi : summaryEn;
+  feedbackEl.className = "quiz-feedback";
+  instructionEl.textContent = "";
+  optionsEl.innerHTML = "";
+  submitButton.style.display = "none";
+  nextButton.style.display = "none";
+  restartButton.style.display = "inline-block";
+}
+
+submitButton.addEventListener("click", submitAnswer);
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < quizQuestions.length - 1) {
+    currentIndex += 1;
+    renderQuestion();
+  } else {
+    finishQuiz();
+  }
+});
+
+restartButton.addEventListener("click", () => {
+  buildQuiz();
+  currentIndex = 0;
+  score = 0;
+  submitButton.style.display = "inline-block";
+  nextButton.style.display = "inline-block";
+  restartButton.style.display = "none";
+  renderQuestion();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  buildQuiz();
+  renderQuestion();
+});
+</script>
+
+<style>
+.quiz-shell {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.quiz-header h1 {
+    color: #ff6b35;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-header p {
+    color: #666;
+}
+
+.quiz-card {
+    border: 2px solid #f0d3c6;
+    border-radius: 12px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.quiz-top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+}
+
+.quiz-progress {
+    font-weight: 600;
+    color: #444;
+}
+
+.quiz-score-hint {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.quiz-question {
+    color: #222;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+}
+
+.quiz-instruction {
+    color: #7b5b4d;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.quiz-option {
+    text-align: left;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 1rem;
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: #ff6b35;
+    background: #fff7f2;
+}
+
+.quiz-option.selected {
+    border-color: #ff6b35;
+}
+
+.quiz-option.correct {
+    background: #e9f8ee;
+    border-color: #2f9e57;
+}
+
+.quiz-option.wrong {
+    background: #fff0f0;
+    border-color: #cc4545;
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+}
+
+.quiz-feedback {
+    min-height: 1.5rem;
+    margin-top: 0.85rem;
+    color: #444;
+}
+
+.quiz-feedback.correct {
+    color: #207a42;
+}
+
+.quiz-feedback.wrong {
+    color: #a13333;
+}
+
+.quiz-actions {
+    margin-top: 0.9rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+</style>
