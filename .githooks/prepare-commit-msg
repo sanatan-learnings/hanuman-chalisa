@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+
+msg_file="$1"
+source_type="${2:-}"
+
+# Skip merge commits.
+if [ "$source_type" = "merge" ]; then
+  exit 0
+fi
+
+git interpret-trailers \
+  --in-place \
+  --if-exists doNothing \
+  --trailer "AI-assisted-by: OpenAI Codex" \
+  "$msg_file"

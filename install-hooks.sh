@@ -1,32 +1,28 @@
 #!/bin/bash
 #
-# Install Git hooks for Hanuman Chalisa project
+# Install repository-managed Git hooks.
 #
 
-echo "Installing Git hooks..."
+set -euo pipefail
 
-# Copy pre-commit hook
-if [ -f ".git/hooks/pre-commit" ]; then
-    echo "✓ Pre-commit hook already exists"
-else
-    echo "✗ Pre-commit hook not found!"
-    echo "  Hook should be at: .git/hooks/pre-commit"
-    exit 1
+HOOKS_DIR=".githooks"
+
+echo "Installing Git hooks from ${HOOKS_DIR}..."
+
+if [ ! -d "${HOOKS_DIR}" ]; then
+  echo "✗ ${HOOKS_DIR} directory not found."
+  exit 1
 fi
 
-# Make executable
-chmod +x .git/hooks/pre-commit
-echo "✓ Pre-commit hook is executable"
+chmod +x "${HOOKS_DIR}/"*
+git config core.hooksPath "${HOOKS_DIR}"
 
+echo "✓ Enabled hooks via core.hooksPath=${HOOKS_DIR}"
+echo "✓ Hooks are executable"
 echo ""
-echo "🎉 Git hooks installed successfully!"
+echo "Enabled hooks:"
+echo "  • commit-msg: Conventional Commits validation"
+echo "  • prepare-commit-msg: Adds AI-assisted-by: OpenAI Codex trailer"
 echo ""
-echo "The pre-commit hook will now:"
-echo "  • Validate YAML syntax in all verse files"
-echo "  • Run Jekyll build to catch errors"
-echo "  • Check for common issues"
-echo "  • Prevent commits if validation fails"
-echo ""
-echo "To skip the hook (not recommended):"
+echo "To bypass local hooks for one commit (not recommended):"
 echo "  git commit --no-verify"
-echo ""

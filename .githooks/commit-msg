@@ -1,0 +1,26 @@
+#!/bin/sh
+set -eu
+
+msg_file="$1"
+subject="$(sed -n '1p' "$msg_file" | tr -d '\r')"
+
+# Allow common auto-generated commit subjects.
+case "$subject" in
+  Merge*|Revert*|"fixup! "*|"squash! "*)
+    exit 0
+    ;;
+esac
+
+pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9._/-]+\))?(!)?: .+'
+
+if printf '%s' "$subject" | grep -Eq "$pattern"; then
+  exit 0
+fi
+
+cat >&2 <<'EOF'
+✗ Commit message does not follow Conventional Commits.
+  Expected: <type>(optional-scope): <description>
+  Example:  feat(search): add verse transliteration filter
+  Allowed types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+EOF
+exit 1
