@@ -2,7 +2,7 @@
  * Hanuman Chalisa Spiritual Guidance - RAG System
  *
  * This script implements a client-side RAG (Retrieval Augmented Generation) pipeline:
- * 1. Loads pre-generated embeddings for all 43 verses
+ * 1. Loads pre-generated embeddings across enabled collections
  * 2. Uses HuggingFace (free) for embeddings, OpenAI for chat
  * 3. Detects query language (English/Hindi)
  * 4. Performs semantic search using cosine similarity
@@ -70,16 +70,88 @@ function initGuidanceSystem() {
 }
 
 /**
- * Load embeddings.json file
+ * Infer collection key from URL path for backward compatibility.
+ */
+function inferCollectionFromUrl(url = '') {
+    const segment = url.replace(/^\/+/, '').split('/')[0];
+    const mapping = {
+        'chalisa': 'hanuman-chalisa',
+        'sundar-kaand': 'sundar-kaand',
+        'sankat-mochan-hanumanashtak': 'sankat-mochan-hanumanashtak',
+        'bajrang-baan': 'bajrang-baan'
+    };
+    return mapping[segment] || null;
+}
+
+/**
+ * Normalize verse records so collection metadata is always available.
+ */
+function normalizeVerse(verse, fallbackCollection = null) {
+    return {
+        ...verse,
+        collection: verse.collection || fallbackCollection || inferCollectionFromUrl(verse.url)
+    };
+}
+
+/**
+ * Merge a single embeddings payload into aggregated structure.
+ */
+function mergeEmbeddingsPayload(target, payload, fallbackCollection = null) {
+    if (!payload?.verses) return;
+    ['en', 'hi'].forEach(lang => {
+        const verses = payload.verses[lang] || [];
+        verses.forEach(verse => {
+            target.verses[lang].push(normalizeVerse(verse, fallbackCollection));
+        });
+    });
+}
+
+/**
+ * Load embeddings from per-collection manifest and files.
+ */
+async function loadEmbeddingsFromManifest() {
+    const manifestResponse = await fetch(`${BASE_URL}/data/embeddings/collections/index.json`);
+    if (!manifestResponse.ok) {
+        throw new Error(`Manifest HTTP ${manifestResponse.status}`);
+    }
+
+    const manifest = await manifestResponse.json();
+    if (!manifest?.files?.length) {
+        throw new Error('Embeddings manifest has no files');
+    }
+
+    const files = manifest.files;
+    const payloads = await Promise.all(files.map(async (entry) => {
+        const response = await fetch(`${BASE_URL}${entry.path}`);
+        if (!response.ok) {
+            throw new Error(`Embeddings file HTTP ${response.status}: ${entry.path}`);
+        }
+        const data = await response.json();
+        return { entry, data };
+    }));
+
+    const merged = {
+        model: payloads[0].data.model,
+        dimensions: payloads[0].data.dimensions,
+        provider: payloads[0].data.provider,
+        generated_at: payloads[0].data.generated_at,
+        verses: { en: [], hi: [] }
+    };
+
+    payloads.forEach(({ entry, data }) => {
+        mergeEmbeddingsPayload(merged, data, entry.collection || data.collection || null);
+    });
+
+    return merged;
+}
+
+/**
+ * Load embeddings data from per-collection manifest/files.
  */
 async function loadEmbeddings() {
     try {
-        const response = await fetch(`${BASE_URL}/data/embeddings.json`);
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
-        }
-        embeddingsData = await response.json();
-        console.log(`Loaded embeddings: ${embeddingsData.verses.en.length} English + ${embeddingsData.verses.hi.length} Hindi verses`);
+        embeddingsData = await loadEmbeddingsFromManifest();
+        console.log(`Loaded per-collection embeddings: ${embeddingsData.verses.en.length} English + ${embeddingsData.verses.hi.length} Hindi verses`);
     } catch (error) {
         console.error('Error loading embeddings:', error);
         showError('Failed to load verse embeddings. Please refresh the page.');
@@ -293,14 +365,46 @@ function findRelevantVersesByKeywords(query, lang, k = TOP_K) {
     // Sort by score and take top-K
     scored.sort((a, b) => b.similarity - a.similarity);
 
-    // If no matches, return first K verses as default
-    const topScored = scored.slice(0, k);
-    if (topScored[0].similarity === 0) {
-        console.log('No keyword matches found, using first verses as default');
-        return verses.slice(0, k);
+    // Diversify results across collections to avoid over-clustering on one text.
+    const topScored = diversifyByCollection(scored, k);
+
+    // If no matches, keep diversified default selection.
+    if (topScored[0] && topScored[0].similarity === 0) {
+        console.log('No keyword matches found, using diversified verses as default');
     }
 
     return topScored;
+}
+
+/**
+ * Diversify top results so multiple collections are represented.
+ * Keeps per-collection rank order while selecting in round-robin.
+ */
+function diversifyByCollection(scoredVerses, k) {
+    const grouped = new Map();
+
+    scoredVerses.forEach(verse => {
+        const collection = verse.collection || inferCollectionFromUrl(verse.url) || 'unknown';
+        if (!grouped.has(collection)) {
+            grouped.set(collection, []);
+        }
+        grouped.get(collection).push(verse);
+    });
+
+    const result = [];
+    let addedInPass = true;
+
+    while (result.length < k && addedInPass) {
+        addedInPass = false;
+        for (const bucket of grouped.values()) {
+            if (bucket.length > 0 && result.length < k) {
+                result.push(bucket.shift());
+                addedInPass = true;
+            }
+        }
+    }
+
+    return result;
 }
 
 /**
@@ -320,10 +424,9 @@ function findRelevantVerses(queryEmbedding, lang, k = TOP_K) {
         similarity: cosineSimilarity(queryEmbedding, verse.embedding)
     }));
 
-    // Sort by similarity (highest first) and take top-K
+    // Sort by similarity (highest first) and diversify by collection.
     scored.sort((a, b) => b.similarity - a.similarity);
-
-    return scored.slice(0, k);
+    return diversifyByCollection(scored, k);
 }
 
 /**
