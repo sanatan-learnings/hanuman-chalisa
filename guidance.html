@@ -6,8 +6,11 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 {% assign t_en = site.data.translations.en %}
 {% assign t_hi = site.data.translations.hi %}
 {% assign emb = site.data.embeddings %}
+{% assign chat = site.data.chat %}
 {% assign active_provider_key = emb.active_provider | default: 'openai' %}
 {% assign active_provider = emb.providers[active_provider_key] %}
+{% assign active_chat_provider_key = chat.active_provider | default: 'openai' %}
+{% assign active_chat_provider = chat.providers[active_chat_provider_key] %}
 
 <div class="guidance-container">
     <div class="guidance-header">
@@ -100,6 +103,13 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
         <span class="badge-separator">|</span>
         <code id="runtimeModelLabel">{{ active_provider.model }}</code>
     </div>
+    <div class="embeddings-provider-badge">
+        <span data-lang="en">Runtime chat:</span>
+        <span data-lang="hi">रनटाइम चैट:</span>
+        <strong id="runtimeChatProviderLabel">{{ active_chat_provider_key }}</strong>
+        <span class="badge-separator">|</span>
+        <code id="runtimeChatModelLabel">{{ active_chat_provider.model }}</code>
+    </div>
 
     <div class="runtime-config-panel">
         <button id="toggleRuntimeConfig" class="btn-secondary-small" type="button">
@@ -119,6 +129,21 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
                 {% endfor %}
             </select>
             <button id="applyRuntimeProvider" class="btn-primary" type="button">
+                <span data-lang="en">Apply</span>
+                <span data-lang="hi">लागू करें</span>
+            </button>
+            <label for="runtimeChatProviderSelect">
+                <span data-lang="en">Chat provider:</span>
+                <span data-lang="hi">चैट प्रदाता:</span>
+            </label>
+            <select id="runtimeChatProviderSelect">
+                {% for provider_hash in chat.providers %}
+                {% assign provider_key = provider_hash[0] %}
+                {% assign provider_value = provider_hash[1] %}
+                <option value="{{ provider_key }}">{{ provider_key }} ({{ provider_value.model }})</option>
+                {% endfor %}
+            </select>
+            <button id="applyRuntimeChatProvider" class="btn-primary" type="button">
                 <span data-lang="en">Apply</span>
                 <span data-lang="hi">लागू करें</span>
             </button>
@@ -545,6 +570,11 @@ window.EMBEDDINGS_CONFIG = {
     model: "{{ active_provider.model | default: 'text-embedding-3-small' }}",
     indexPath: "{{ active_provider.index_path | default: '/data/embeddings/providers/openai/collections/index.json' }}",
     providers: {{ emb.providers | jsonify }}
+};
+window.CHAT_CONFIG = {
+    provider: "{{ active_chat_provider_key }}",
+    model: "{{ active_chat_provider.model | default: 'gpt-4o' }}",
+    providers: {{ chat.providers | jsonify }}
 };
 </script>
 <script src="{{ '/assets/js/guidance.js' | relative_url }}"></script>

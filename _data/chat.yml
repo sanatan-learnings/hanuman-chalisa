@@ -1,0 +1,5 @@
+active_provider: openai
+
+providers:
+  openai:
+    model: gpt-4o

@@ -18,7 +18,6 @@ let isProcessing = false;
 
 // Configuration
 const BASE_URL = ''; // Custom domain (hanumanji.ai) - no baseurl needed
-const GPT_MODEL = 'gpt-4o'; // Can change to 'gpt-4o-mini' for lower cost
 const TOP_K = 3; // Number of relevant verses to retrieve
 const MAX_TOKENS = 300;
 const TEMPERATURE = 0.7;
@@ -26,10 +25,16 @@ const DEFAULT_EMBEDDINGS_INDEX_PATH = '/data/embeddings/providers/openai/collect
 const EMBEDDINGS_CONFIG = (typeof window !== 'undefined' && window.EMBEDDINGS_CONFIG)
     ? window.EMBEDDINGS_CONFIG
     : {};
+const CHAT_CONFIG = (typeof window !== 'undefined' && window.CHAT_CONFIG)
+    ? window.CHAT_CONFIG
+    : {};
 const HF_API_TOKEN_STORAGE_KEY = 'hc_hf_token';
 const EMBEDDINGS_OVERRIDE_STORAGE_KEY = 'hc_embeddings_provider_override';
+const CHAT_OVERRIDE_STORAGE_KEY = 'hc_chat_provider_override';
 const PROVIDER_CONFIG_MAP = EMBEDDINGS_CONFIG.providers || {};
+const CHAT_PROVIDER_CONFIG_MAP = CHAT_CONFIG.providers || {};
 let runtimeEmbeddingsConfig = resolveRuntimeEmbeddingsConfig();
+let runtimeChatConfig = resolveRuntimeChatConfig();
 
 // Cloudflare Worker URL (set this after deploying your worker)
 // If set, the worker will be used and API key won't be required from users
@@ -60,6 +65,25 @@ function updateRuntimeBadge() {
     if (modelEl) modelEl.textContent = runtimeEmbeddingsConfig.model;
 }
 
+function updateRuntimeChatBadge() {
+    const providerEl = document.getElementById('runtimeChatProviderLabel');
+    const modelEl = document.getElementById('runtimeChatModelLabel');
+    if (providerEl) providerEl.textContent = runtimeChatConfig.provider;
+    if (modelEl) modelEl.textContent = runtimeChatConfig.model;
+}
+
+function resolveRuntimeChatConfig() {
+    const baseProvider = CHAT_CONFIG.provider || 'openai';
+    const overrideProvider = localStorage.getItem(CHAT_OVERRIDE_STORAGE_KEY);
+    const provider = (overrideProvider && CHAT_PROVIDER_CONFIG_MAP[overrideProvider]) ? overrideProvider : baseProvider;
+    const providerConfig = CHAT_PROVIDER_CONFIG_MAP[provider] || {};
+
+    return {
+        provider,
+        model: providerConfig.model || CHAT_CONFIG.model || 'gpt-4o'
+    };
+}
+
 function showRuntimeConfigStatus(message, isError = false) {
     const statusEl = document.getElementById('runtimeConfigStatus');
     if (!statusEl) return;
@@ -69,10 +93,16 @@ function showRuntimeConfigStatus(message, isError = false) {
 
 function initRuntimeConfigPanel() {
     const selectEl = document.getElementById('runtimeProviderSelect');
-    if (!selectEl) return;
+    if (selectEl) {
+        selectEl.value = runtimeEmbeddingsConfig.provider;
+    }
 
-    selectEl.value = runtimeEmbeddingsConfig.provider;
+    const chatSelectEl = document.getElementById('runtimeChatProviderSelect');
+    if (chatSelectEl) {
+        chatSelectEl.value = runtimeChatConfig.provider;
+    }
     updateRuntimeBadge();
+    updateRuntimeChatBadge();
 }
 
 async function applyRuntimeProviderSelection() {
@@ -96,6 +126,27 @@ async function applyRuntimeProviderSelection() {
     updateRuntimeBadge();
     showRuntimeConfigStatus('Reloading embeddings...');
     await loadEmbeddings();
+}
+
+function applyRuntimeChatProviderSelection() {
+    const selectEl = document.getElementById('runtimeChatProviderSelect');
+    if (!selectEl) return;
+
+    const nextProvider = selectEl.value;
+    const nextConfig = CHAT_PROVIDER_CONFIG_MAP[nextProvider];
+    if (!nextConfig) {
+        showRuntimeConfigStatus(`Unknown chat provider: ${nextProvider}`, true);
+        return;
+    }
+
+    runtimeChatConfig = {
+        provider: nextProvider,
+        model: nextConfig.model || 'gpt-4o'
+    };
+
+    localStorage.setItem(CHAT_OVERRIDE_STORAGE_KEY, nextProvider);
+    updateRuntimeChatBadge();
+    showRuntimeConfigStatus('Chat provider updated');
 }
 
 /**
@@ -345,6 +396,14 @@ function setupEventListeners() {
 
     document.getElementById('runtimeProviderSelect')?.addEventListener('change', async () => {
         await applyRuntimeProviderSelection();
+    });
+
+    document.getElementById('applyRuntimeChatProvider')?.addEventListener('click', () => {
+        applyRuntimeChatProviderSelection();
+    });
+
+    document.getElementById('runtimeChatProviderSelect')?.addEventListener('change', () => {
+        applyRuntimeChatProviderSelection();
     });
 }
 
@@ -763,10 +822,11 @@ async function getGuidance(query, verses, lang) {
         ];
 
         const requestBody = {
-            model: GPT_MODEL,
+            model: runtimeChatConfig.model,
             messages: messages,
             temperature: TEMPERATURE,
-            max_tokens: MAX_TOKENS
+            max_tokens: MAX_TOKENS,
+            type: runtimeChatConfig.provider === 'openai' ? 'chat_openai' : `chat_${runtimeChatConfig.provider}`
         };
 
         let response;
@@ -782,15 +842,19 @@ async function getGuidance(query, verses, lang) {
                 body: JSON.stringify(requestBody)
             });
         } else {
+            if (runtimeChatConfig.provider !== 'openai') {
+                throw new Error(`Direct mode supports only OpenAI chat provider, got: ${runtimeChatConfig.provider}`);
+            }
             // Use direct OpenAI API (requires user's API key)
             console.log('Calling OpenAI API directly');
+            const { type, ...openAIRequestBody } = requestBody;
             response = await fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${apiKey}`,
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(requestBody)
+                body: JSON.stringify(openAIRequestBody)
             });
         }
 

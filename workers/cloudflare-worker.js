@@ -387,7 +387,7 @@ async function handleRequest(request, env) {
           'Content-Type': 'application/json',
         },
       });
-    } else {
+    } else if (!body.type || body.type === 'chat_openai') {
       console.log('route=chat provider=openai model=', body.model || 'gpt-4o');
       if (!env.OPENAI_API_KEY) {
         console.error('OPENAI_API_KEY not set in worker secrets');
@@ -434,6 +434,19 @@ async function handleRequest(request, env) {
           temperature: body.temperature || 0.7,
           max_tokens: body.max_tokens || 1000,
         }),
+      });
+    } else {
+      return new Response(JSON.stringify({
+        error: {
+          message: `Unsupported request type: ${body.type}`,
+          type: 'invalid_request_error',
+        }
+      }), {
+        status: 400,
+        headers: {
+          ...CORS_HEADERS,
+          'Content-Type': 'application/json',
+        },
       });
     }
 
