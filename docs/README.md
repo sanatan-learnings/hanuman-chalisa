@@ -73,6 +73,13 @@ verse-embeddings --multi-collection \
   --collections-file _data/collections.yml \
   --output-dir data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections
 
+# Generate Hugging Face multilingual embeddings for all collections
+verse-embeddings --multi-collection \
+  --provider huggingface \
+  --model sentence-transformers/paraphrase-multilingual-mpnet-base-v2 \
+  --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/huggingface-paraphrase-multilingual-mpnet-base-v2/collections
+
 # Generate all images for a collection/theme
 verse-images --collection hanuman-chalisa --theme modern-minimalist
 
@@ -103,7 +110,7 @@ See [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk) 
 - **[Local Development](guides/local-development.md)** - Setup and run locally
 - **[Content Generation](guides/content-generation.md)** - Create verses and media
 - **[Cloudflare Worker](guides/cloudflare-worker-setup.md)** - Deploy API proxy
-- **[Embedding Provider Switching](guides/embedding-provider-switching.md)** - OpenAI/Bedrock setup and runtime switching
+- **[Embedding Provider Switching](guides/embedding-provider-switching.md)** - OpenAI/Bedrock/Hugging Face setup and runtime switching
 
 ## Reference
 

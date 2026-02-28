@@ -63,7 +63,7 @@ hanuman-gpt/
 │   └── sundar-kaand/
 │       └── modern-minimalist/
 ├── data/
-│   └── embeddings.json       # Multi-collection embeddings (4.6MB)
+│   └── embeddings/           # Provider-scoped embeddings manifests + files
 ├── scripts/
 │   ├── README.md             # SDK command documentation
 │   └── requirements.txt      # Python dependencies (sanatan-verse-sdk)

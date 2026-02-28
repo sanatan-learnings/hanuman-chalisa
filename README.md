@@ -74,7 +74,7 @@ Use `verse-generate` to create new verses with AI-generated content, images, aud
 
 ### Embedding Provider Switching
 
-Provider switching (OpenAI ↔ Bedrock Cohere), generation commands, and runtime config are documented in:
+Provider switching (OpenAI ↔ Bedrock Cohere ↔ Hugging Face), generation commands, and runtime config are documented in:
 
 - [Embedding Provider Switching Guide](docs/guides/embedding-provider-switching.md)
 
@@ -113,7 +113,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 - **Eleven Labs** - AI text-to-speech for audio recitations (eleven_multilingual_v2)
 - **ffmpeg** - Audio post-processing for speed control
 - **GPT-4** (OpenAI) - Spiritual guidance generation
-- **OpenAI + AWS Bedrock Cohere** - Configurable embeddings providers for semantic search
+- **OpenAI + AWS Bedrock Cohere + Hugging Face** - Configurable embeddings providers for semantic search
 - **Claude Code** (Anthropic) - AI-assisted content generation and development
 - **Human review** - All content validated for accuracy and devotional authenticity
 

@@ -109,7 +109,8 @@ hanuman-gpt/
 │   └── embeddings/          # Embedding vectors (JSON)
 │       ├── providers/
 │       │   ├── openai/collections/
-│       │   └── bedrock-cohere-embed-multilingual-v3/collections/
+│       │   ├── bedrock-cohere-embed-multilingual-v3/collections/
+│       │   └── huggingface-paraphrase-multilingual-mpnet-base-v2/collections/
 │       └── puranic/
 │           └── shiv-puran-part1.json
 ├── images/                  # Verse images
@@ -196,8 +197,8 @@ See [puranic-context.md](puranic-context.md) for the full two-stage workflow.
 
 ### Spiritual Guidance (RAG System) (`/guidance`)
 - GPT-4o + verse-embeddings + Cloudflare Worker proxy
-- Keyword-based retrieval with verse citations
-- Runtime provider switching via `_data/embeddings.yml` (OpenAI ↔ Bedrock Cohere)
+- Semantic retrieval with provider-aware query embeddings where available
+- Runtime provider switching via `_data/embeddings.yml` (OpenAI ↔ Bedrock Cohere ↔ Hugging Face)
 - Bilingual support
 
 **Files**: `_data/embeddings.yml`, `data/embeddings/providers/*/collections/index.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
@@ -245,6 +246,7 @@ verse-audio --collection hanuman-chalisa --only chaupai-01-full.mp3
 **Technology**: Configurable via sanatan-verse-sdk
 - OpenAI (`text-embedding-3-small`)
 - Bedrock Cohere (`cohere.embed-multilingual-v3`)
+- Hugging Face (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`)
 
 ```bash
 verse-embeddings --provider openai --multi-collection --collections-file _data/collections.yml \
@@ -252,6 +254,12 @@ verse-embeddings --provider openai --multi-collection --collections-file _data/c
 
 verse-embeddings --provider bedrock-cohere --multi-collection --collections-file _data/collections.yml \
   --output-dir data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections
+
+verse-embeddings --multi-collection \
+  --provider huggingface \
+  --model sentence-transformers/paraphrase-multilingual-mpnet-base-v2 \
+  --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/huggingface-paraphrase-multilingual-mpnet-base-v2/collections
 ```
 
 **Output**:

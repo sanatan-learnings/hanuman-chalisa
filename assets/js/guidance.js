@@ -3,7 +3,7 @@
  *
  * This script implements a client-side RAG (Retrieval Augmented Generation) pipeline:
  * 1. Loads pre-generated embeddings across enabled collections
- * 2. Uses HuggingFace (free) for embeddings, OpenAI for chat
+ * 2. Uses provider-aware query embeddings (OpenAI/Hugging Face) + OpenAI chat
  * 3. Detects query language (English/Hindi)
  * 4. Performs semantic search using cosine similarity
  * 5. Sends relevant verses + query to GPT-4 for spiritual guidance
@@ -18,16 +18,18 @@ let isProcessing = false;
 
 // Configuration
 const BASE_URL = ''; // Custom domain (hanumanji.ai) - no baseurl needed
-const EMBEDDING_MODEL = 'sentence-transformers/all-MiniLM-L6-v2';
-const HF_API_URL = `https://router.huggingface.co/pipeline/feature-extraction/${EMBEDDING_MODEL}`;
 const GPT_MODEL = 'gpt-4o'; // Can change to 'gpt-4o-mini' for lower cost
 const TOP_K = 3; // Number of relevant verses to retrieve
 const MAX_TOKENS = 300;
 const TEMPERATURE = 0.7;
-const DEFAULT_EMBEDDINGS_INDEX_PATH = '/data/embeddings/collections/index.json';
+const DEFAULT_EMBEDDINGS_INDEX_PATH = '/data/embeddings/providers/openai/collections/index.json';
 const EMBEDDINGS_CONFIG = (typeof window !== 'undefined' && window.EMBEDDINGS_CONFIG)
     ? window.EMBEDDINGS_CONFIG
     : {};
+const ACTIVE_EMBEDDINGS_PROVIDER = EMBEDDINGS_CONFIG.provider || 'openai';
+const ACTIVE_EMBEDDINGS_MODEL = EMBEDDINGS_CONFIG.model || 'text-embedding-3-small';
+const HF_API_URL = `https://router.huggingface.co/pipeline/feature-extraction/${encodeURIComponent(ACTIVE_EMBEDDINGS_MODEL)}`;
+const HF_API_TOKEN_STORAGE_KEY = 'hc_hf_token';
 
 // Cloudflare Worker URL (set this after deploying your worker)
 // If set, the worker will be used and API key won't be required from users
@@ -361,15 +363,147 @@ function cosineSimilarity(vecA, vecB) {
 }
 
 /**
- * Get embedding for user query from OpenAI API
- * Note: Uses text-embedding-3-small which has 1536 dimensions,
- * but our pre-computed embeddings use sentence-transformers (384 dimensions).
- * We'll use a simple keyword-based fallback for retrieval.
+ * Mean-pool token vectors from Hugging Face feature extraction output.
+ */
+function meanPoolVectors(vectors) {
+    if (!Array.isArray(vectors) || vectors.length === 0) {
+        return [];
+    }
+
+    if (!Array.isArray(vectors[0])) {
+        return vectors;
+    }
+
+    const dims = vectors[0].length;
+    const pooled = new Array(dims).fill(0);
+    vectors.forEach((tokenVector) => {
+        for (let i = 0; i < dims; i++) {
+            pooled[i] += tokenVector[i];
+        }
+    });
+    return pooled.map((value) => value / vectors.length);
+}
+
+/**
+ * Get embedding for user query from OpenAI embeddings endpoint.
+ */
+async function getOpenAIQueryEmbedding(query) {
+    const requestBody = {
+        model: ACTIVE_EMBEDDINGS_MODEL,
+        input: query
+    };
+
+    let response;
+    if (WORKER_URL) {
+        response = await fetch(WORKER_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                type: 'embeddings',
+                ...requestBody
+            })
+        });
+    } else {
+        if (!apiKey) {
+            throw new Error('OpenAI API key required for query embeddings');
+        }
+        response = await fetch('https://api.openai.com/v1/embeddings', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${apiKey}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+        });
+    }
+
+    if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error?.message || `OpenAI embedding HTTP ${response.status}`);
+    }
+    const data = await response.json();
+    return data?.data?.[0]?.embedding || null;
+}
+
+/**
+ * Get embedding for user query from Hugging Face inference endpoint.
+ */
+async function getHuggingFaceQueryEmbedding(query) {
+    if (WORKER_URL) {
+        const response = await fetch(WORKER_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                type: 'hf_embeddings',
+                model: ACTIVE_EMBEDDINGS_MODEL,
+                input: query
+            })
+        });
+
+        if (!response.ok) {
+            let message = `HuggingFace embedding HTTP ${response.status}`;
+            try {
+                const error = await response.json();
+                message = error?.error?.message || message;
+            } catch (_) {
+                // keep generic status fallback
+            }
+            throw new Error(message);
+        }
+
+        const payload = await response.json();
+        if (!Array.isArray(payload)) {
+            throw new Error('HuggingFace embedding response is not an array');
+        }
+        return meanPoolVectors(payload);
+    }
+
+    const headers = {
+        'Content-Type': 'application/json'
+    };
+    const token = localStorage.getItem(HF_API_TOKEN_STORAGE_KEY);
+    if (token) {
+        headers.Authorization = `Bearer ${token}`;
+    }
+
+    const response = await fetch(HF_API_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+            inputs: query,
+            options: { wait_for_model: true }
+        })
+    });
+
+    if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`HuggingFace embedding HTTP ${response.status}: ${errorText}`);
+    }
+
+    const payload = await response.json();
+    if (!Array.isArray(payload)) {
+        throw new Error('HuggingFace embedding response is not an array');
+    }
+    return meanPoolVectors(payload);
+}
+
+/**
+ * Get query embedding based on active runtime embeddings provider.
  */
 async function getQueryEmbedding(query) {
-    // For now, we'll use keyword-based search as a fallback
-    // since mixing different embedding dimensions doesn't work well
-    return null; // Signal to use keyword search instead
+    if (ACTIVE_EMBEDDINGS_PROVIDER === 'openai') {
+        return getOpenAIQueryEmbedding(query);
+    }
+    if (ACTIVE_EMBEDDINGS_PROVIDER === 'huggingface') {
+        return getHuggingFaceQueryEmbedding(query);
+    }
+
+    // Bedrock query embeddings are not available directly in browser runtime.
+    return null;
 }
 
 /**
@@ -616,12 +750,27 @@ async function handleSendQuery() {
         const queryLang = detectLanguage(query);
         console.log(`Query language: ${queryLang}`);
 
-        // Step 2: Store query for keyword search
+        // Step 2: Store query for fallback search
         embeddingsData.lastQuery = query;
 
-        // Step 3: Find relevant verses using keyword-based search
-        console.log('Finding relevant verses using keyword search...');
-        const relevantVerses = findRelevantVersesByKeywords(query, queryLang, TOP_K);
+        // Step 3: Generate query embedding and run retrieval
+        console.log(`Generating query embedding via ${ACTIVE_EMBEDDINGS_PROVIDER}/${ACTIVE_EMBEDDINGS_MODEL}...`);
+        let queryEmbedding = null;
+        try {
+            queryEmbedding = await getQueryEmbedding(query);
+        } catch (embeddingError) {
+            // Keep guidance available even if live query embedding lookup fails.
+            console.warn('Query embedding failed, falling back to keyword retrieval:', embeddingError);
+            queryEmbedding = null;
+        }
+        let relevantVerses;
+        if (queryEmbedding) {
+            console.log('Finding relevant verses using semantic similarity...');
+            relevantVerses = findRelevantVerses(queryEmbedding, queryLang, TOP_K);
+        } else {
+            console.log('No query embedding available for active provider; using keyword fallback.');
+            relevantVerses = findRelevantVersesByKeywords(query, queryLang, TOP_K);
+        }
         console.log(`Found ${relevantVerses.length} relevant verses:`, relevantVerses.map(v => v.title));
 
         // Step 4: Get GPT guidance

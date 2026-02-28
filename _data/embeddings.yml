@@ -1,3 +1,15 @@
-active_provider: bedrock-cohere
-active_model: cohere.embed-multilingual-v3
-index_path: /data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections/index.json
+#active_provider: bedrock-cohere
+active_provider: huggingface
+
+providers:
+  openai:
+    model: text-embedding-3-small
+    index_path: /data/embeddings/providers/openai/collections/index.json
+
+  bedrock-cohere:
+    model: cohere.embed-multilingual-v3
+    index_path: /data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections/index.json
+
+  huggingface:
+    model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+    index_path: /data/embeddings/providers/huggingface-paraphrase-multilingual-mpnet-base-v2/collections/index.json

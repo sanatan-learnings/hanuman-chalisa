@@ -1,0 +1,56 @@
+{
+  "collections": [
+    {
+      "checksum": "79cafef24236def34734d3b610928da2e3937a6fb6099c6321deefe508bd64a1",
+      "collection": "bajrang-baan",
+      "counts": {
+        "en": 59,
+        "hi": 59,
+        "total": 59
+      },
+      "dimensions": 384,
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "path": "bajrang-baan.json",
+      "provider": "huggingface"
+    },
+    {
+      "checksum": "cff5181b85a73da15c793986fa3e25c4d8f1b4ac68b58665f41081d9affc54e2",
+      "collection": "hanuman-chalisa",
+      "counts": {
+        "en": 43,
+        "hi": 43,
+        "total": 43
+      },
+      "dimensions": 384,
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "path": "hanuman-chalisa.json",
+      "provider": "huggingface"
+    },
+    {
+      "checksum": "17051212eda72edb467e78a0c68bac593df8c89094ddd2412757ddf3e919a27f",
+      "collection": "sankat-mochan-hanumanashtak",
+      "counts": {
+        "en": 8,
+        "hi": 8,
+        "total": 8
+      },
+      "dimensions": 384,
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "path": "sankat-mochan-hanumanashtak.json",
+      "provider": "huggingface"
+    },
+    {
+      "checksum": "b6f426548948d793786318309ea4e948424c8f4635456984b68eb53f83da4fda",
+      "collection": "sundar-kaand",
+      "counts": {
+        "en": 35,
+        "hi": 35,
+        "total": 35
+      },
+      "dimensions": 384,
+      "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "path": "sundar-kaand.json",
+      "provider": "huggingface"
+    }
+  ]
+}

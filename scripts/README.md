@@ -125,13 +125,17 @@ verse-audio --force
 # Using OpenAI (default)
 verse-embeddings
 
-# Using local models (free, no API key needed)
-verse-embeddings --provider huggingface
+# Using multilingual Hugging Face model (recommended for Hindi + English)
+verse-embeddings --multi-collection \
+  --provider huggingface \
+  --model sentence-transformers/paraphrase-multilingual-mpnet-base-v2 \
+  --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/huggingface-paraphrase-multilingual-mpnet-base-v2/collections
 
 # With custom paths
 verse-embeddings --verses-dir _verses --output /tmp/embeddings.json
 # Then split to canonical files:
-# data/embeddings/collections/{collection}.json + data/embeddings/collections/index.json
+# data/embeddings/providers/{provider}/collections/{collection}.json + index.json
 ```
 
 **Providers:**
@@ -142,7 +146,7 @@ verse-embeddings --verses-dir _verses --output /tmp/embeddings.json
 ```
 --provider {openai,bedrock-cohere,huggingface}  Embedding provider (default: openai)
 --verses-dir TEXT                Verse files directory (default: _verses)
---output TEXT                    Temporary combined output path (post-process into data/embeddings/collections/)
+--output TEXT                    Temporary combined output path (legacy mode; prefer --output-dir provider-scoped path)
 ```
 
 ## 🚀 Deploy Cloudflare Worker
@@ -210,8 +214,12 @@ verse-audio --force --voice-id NEW_VOICE_ID
 # Regenerate embeddings (fast with OpenAI)
 verse-embeddings
 
-# Or use local models (free)
-verse-embeddings --provider huggingface
+# Or use multilingual Hugging Face embeddings (free)
+verse-embeddings --multi-collection \
+  --provider huggingface \
+  --model sentence-transformers/paraphrase-multilingual-mpnet-base-v2 \
+  --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/huggingface-paraphrase-multilingual-mpnet-base-v2/collections
 ```
 
 ## 📚 Documentation

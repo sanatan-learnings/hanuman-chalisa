@@ -152,7 +152,7 @@ import sys
 from collections import defaultdict
 
 src = sys.argv[1]
-out_dir = "data/embeddings/collections"
+out_dir = "data/embeddings/providers/openai/collections"
 os.makedirs(out_dir, exist_ok=True)
 
 with open(src, "r", encoding="utf-8") as f:
@@ -195,7 +195,7 @@ for coll in sorted(bucket.keys()):
     files.append(
         {
             "collection": coll,
-            "path": f"/data/embeddings/collections/{filename}",
+            "path": f"/data/embeddings/providers/openai/collections/{filename}",
             "counts": {lang: len(verses[lang]) for lang in ("en", "hi")},
         }
     )
@@ -206,7 +206,7 @@ with open(os.path.join(out_dir, "index.json"), "w", encoding="utf-8") as f:
 PY
 rm -f "${TMP_EMBEDDINGS}"
 
-echo -e "${GREEN}✓ Embeddings updated in data/embeddings/collections/${NC}"
+echo -e "${GREEN}✓ Embeddings updated in data/embeddings/providers/openai/collections/${NC}"
 
 echo -e "${YELLOW}Step 6: Verifying generated files...${NC}"
 echo ""
@@ -236,7 +236,7 @@ else
     echo -e "Audio (slow): ${RED}✗${NC} Not found"
 fi
 
-echo -e "Embeddings: ${GREEN}✓${NC} data/embeddings/collections/index.json"
+echo -e "Embeddings: ${GREEN}✓${NC} data/embeddings/providers/openai/collections/index.json"
 echo ""
 
 echo -e "${YELLOW}Step 7: Update navigation links...${NC}"
@@ -256,7 +256,7 @@ echo -e "  ${BLUE}bundle exec jekyll serve${NC}"
 echo -e "  http://localhost:4000/${COLLECTION}/${VERSE_ID}/"
 echo ""
 echo -e "To commit:"
-echo -e "  ${BLUE}git add _verses/${COLLECTION}/${VERSE_ID}.md images/${COLLECTION}/ audio/${COLLECTION}/ docs/image-prompts/${COLLECTION}.md data/embeddings/collections/${NC}"
+echo -e "  ${BLUE}git add _verses/${COLLECTION}/${VERSE_ID}.md images/${COLLECTION}/ audio/${COLLECTION}/ docs/image-prompts/${COLLECTION}.md data/embeddings/providers/openai/collections/${NC}"
 echo -e "  ${BLUE}git commit -m \"Add ${VERSE_ID} to ${COLLECTION} with multimedia\"${NC}"
 echo -e "  ${BLUE}git push${NC}"
 echo ""

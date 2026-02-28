@@ -6,6 +6,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 {% assign t_en = site.data.translations.en %}
 {% assign t_hi = site.data.translations.hi %}
 {% assign emb = site.data.embeddings %}
+{% assign active_provider_key = emb.active_provider | default: 'openai' %}
+{% assign active_provider = emb.providers[active_provider_key] %}
 
 <div class="guidance-container">
     <div class="guidance-header">
@@ -89,6 +91,14 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
             <span data-lang="en">{{ t_en.guidance.clear_chat }}</span>
             <span data-lang="hi">{{ t_hi.guidance.clear_chat }}</span>
         </button>
+    </div>
+
+    <div class="embeddings-provider-badge">
+        <span data-lang="en">Runtime embeddings:</span>
+        <span data-lang="hi">रनटाइम एम्बेडिंग:</span>
+        <strong>{{ active_provider_key }}</strong>
+        <span class="badge-separator">|</span>
+        <code>{{ active_provider.model }}</code>
     </div>
 </div>
 
@@ -422,6 +432,27 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     background: #5a6268;
 }
 
+.embeddings-provider-badge {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background: #fafafa;
+    color: #444;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.embeddings-provider-badge strong {
+    margin-left: 4px;
+    text-transform: lowercase;
+}
+
+.badge-separator {
+    margin: 0 8px;
+    color: #999;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
     .guidance-container {
@@ -449,9 +480,9 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 
 <script>
 window.EMBEDDINGS_CONFIG = {
-    provider: "{{ emb.active_provider | default: 'openai' }}",
-    model: "{{ emb.active_model | default: 'text-embedding-3-small' }}",
-    indexPath: "{{ emb.index_path | default: '/data/embeddings/collections/index.json' }}"
+    provider: "{{ active_provider_key }}",
+    model: "{{ active_provider.model | default: 'text-embedding-3-small' }}",
+    indexPath: "{{ active_provider.index_path | default: '/data/embeddings/providers/openai/collections/index.json' }}"
 };
 </script>
 <script src="{{ '/assets/js/guidance.js' | relative_url }}"></script>
