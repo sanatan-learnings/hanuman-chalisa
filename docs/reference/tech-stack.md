@@ -25,7 +25,7 @@
 ├──────────────────────────────────────────────┤
 │  • images/{collection}/{theme}/*.png         │
 │  • audio/{collection}/*.mp3                  │
-│  • data/embeddings/collections/{collection}.json │
+│  • data/embeddings/providers/{provider}/collections/*.json │
 │  • data/embeddings/puranic/{source-key}.json │
 └──────────────────┬───────────────────────────┘
                    │
@@ -70,7 +70,7 @@
 - Git workflow automation
 
 ### System Dependencies
-- **Python 3.8+** with **venv** - For sanatan-verse-sdk (v0.31.2)
+- **Python 3.8+** with **venv** - For sanatan-verse-sdk (v0.42.0+)
 - **ffmpeg** - Audio post-processing (`brew install ffmpeg`)
 - **Ruby 3.3+** - For Jekyll local development
 
@@ -91,7 +91,7 @@ hanuman-gpt/
 │   └── verse.html           # Verse rendering template
 ├── _verses/                 # Jekyll collection
 │   ├── hanuman-chalisa/     # 43 verse files (doha-01, chaupai-01..40, doha-closing)
-│   ├── sundar-kaand/        # 583 verse files (shloka-01..03, chaupai-01..522, doha-01..58)
+│   ├── sundar-kaand/        # 35 verse files
 │   ├── bajrang-baan/
 │   ├── sankat-mochan-hanumanashtak/
 │   └── ...
@@ -107,8 +107,9 @@ hanuman-gpt/
 │   ├── puranic-index/       # Indexed Puranic episodes (YAML)
 │   │   └── shiv-puran-part1.yml
 │   └── embeddings/          # Embedding vectors (JSON)
-│       ├── collections/
-│       │   └── hanuman-chalisa.json
+│       ├── providers/
+│       │   ├── openai/collections/
+│       │   └── bedrock-cohere-embed-multilingual-v3/collections/
 │       └── puranic/
 │           └── shiv-puran-part1.json
 ├── images/                  # Verse images
@@ -196,9 +197,10 @@ See [puranic-context.md](puranic-context.md) for the full two-stage workflow.
 ### Spiritual Guidance (RAG System) (`/guidance`)
 - GPT-4o + verse-embeddings + Cloudflare Worker proxy
 - Keyword-based retrieval with verse citations
+- Runtime provider switching via `_data/embeddings.yml` (OpenAI ↔ Bedrock Cohere)
 - Bilingual support
 
-**Files**: `data/embeddings/collections/*.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
+**Files**: `_data/embeddings.yml`, `data/embeddings/providers/*/collections/index.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
 
 ### Puranic Context
 - Per-verse grounded references from indexed sacred texts
@@ -240,13 +242,22 @@ verse-audio --collection hanuman-chalisa --only chaupai-01-full.mp3
 **Cost**: Free tier (10,000 chars/month)
 
 ### Embeddings
-**Technology**: OpenAI text-embedding-3-small via sanatan-verse-sdk
+**Technology**: Configurable via sanatan-verse-sdk
+- OpenAI (`text-embedding-3-small`)
+- Bedrock Cohere (`cohere.embed-multilingual-v3`)
 
 ```bash
-verse-embeddings --collection hanuman-chalisa
+verse-embeddings --provider openai --multi-collection --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/openai/collections
+
+verse-embeddings --provider bedrock-cohere --multi-collection --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections
 ```
 
-**Output**: `data/embeddings/collections/{collection}.json` (verse embeddings), `data/embeddings/puranic/{source-key}.json` (source embeddings)
+**Output**:
+- Verse embeddings: `data/embeddings/providers/{provider}/collections/{collection}.json`
+- Verse index: `data/embeddings/providers/{provider}/collections/index.json`
+- Puranic source embeddings: `data/embeddings/puranic/{source-key}.json`
 
 ## Development Workflow
 
@@ -263,7 +274,9 @@ verse-embeddings --collection hanuman-chalisa
 - **Hosting**: Free (GitHub Pages + custom domain ~$10-15/year)
 - **Images**: ~$0.04 per image (DALL-E 3)
 - **Audio**: Free (Eleven Labs free tier)
-- **Embeddings**: ~$0.001 (OpenAI text-embedding-3-small)
+- **Embeddings**:
+  - OpenAI: ~$0.001 per verse (text-embedding-3-small)
+  - Bedrock Cohere: provider- and token-dependent
 - **Puranic Context**: ~$0.02 per verse (GPT-4o RAG)
 
 ## Browser Compatibility

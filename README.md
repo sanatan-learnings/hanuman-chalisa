@@ -14,8 +14,9 @@ A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Han
 
 **Currently featured:**
 - **Hanuman Chalisa** ✅ Complete - 43 verses by Goswami Tulsidas glorifying Lord Hanuman
-- **Sankat Mochan Hanumanashtak** ✅ Complete - 8 verses for removing obstacles
-- **Sundar Kaand** 🚧 In Progress - 25 verses from Ramcharitmanas describing Hanuman's journey to Lanka
+- **Sankat Mochan Hanumanashtak** ✅ Complete - 9 verses for removing obstacles
+- **Sundar Kaand** 🚧 In Progress - 35 verses from Ramcharitmanas describing Hanuman's journey to Lanka
+- **Bajrang Baan** ✅ Complete - 59 verses of protective Hanuman stuti by Goswami Tulsidas
 
 **Coming soon:**
 - Hanuman Stuti - Devotional hymns
@@ -26,13 +27,14 @@ This guide provides deep understanding of each verse with translations, meanings
 
 ## Features
 
-- **📖 3 Collections** - Hanuman Chalisa (43 verses, complete), Sankat Mochan Hanumanashtak (8 verses, complete), Sundar Kaand (25 verses, in progress)
+- **📖 4 Collections** - Hanuman Chalisa (43), Sankat Mochan Hanumanashtak (9), Sundar Kaand (35), Bajrang Baan (59)
 - **🔤 Bilingual** - Full content in English and हिन्दी (Hindi) with word-by-word meanings, transliteration, and interpretive explanations
 - **🎵 Audio Pronunciation** - Regular and slow speed for every verse (AI-generated via Eleven Labs)
 - **🖼️ AI-Generated Images** - Beautiful artwork for each verse (DALL-E 3)
 - **💬 Spiritual Guidance** - Ask questions and receive GPT-4 powered guidance based on relevant verses → [Try it](https://hanumanji.ai/guidance) | [Learn more](docs/reference/spiritual-guidance.md)
 - **📕 Custom Books** - Generate printable books (Hanuman Chalisa only) → [Book Generator](https://hanumanji.ai/chalisa/book) | [Documentation](docs/reference/book-generation.md)
 - **🔍 Search** - Find verses across all collections
+- **🧠 Hanuman Quiz** - Interactive bilingual quiz with randomized question bank
 - **📖 Context** - Stories from Ramayana and Puranic texts for deeper understanding
 
 ## For Developers
@@ -111,7 +113,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 - **Eleven Labs** - AI text-to-speech for audio recitations (eleven_multilingual_v2)
 - **ffmpeg** - Audio post-processing for speed control
 - **GPT-4** (OpenAI) - Spiritual guidance generation
-- **sentence-transformers** (Hugging Face) - Local embeddings for semantic search
+- **OpenAI + AWS Bedrock Cohere** - Configurable embeddings providers for semantic search
 - **Claude Code** (Anthropic) - AI-assisted content generation and development
 - **Human review** - All content validated for accuracy and devotional authenticity
 
