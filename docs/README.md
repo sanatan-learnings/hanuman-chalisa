@@ -59,13 +59,19 @@ verse-generate --collection sundar-kaand --verse 5 --theme modern-minimalist
 ### Batch Operations
 
 ```bash
-# Generate embeddings for all collections
+# Generate OpenAI embeddings for all collections
 verse-embeddings --multi-collection \
+  --provider openai \
   --collections-file _data/collections.yml \
-  --verses-dir _verses \
-  --output /tmp/embeddings.json
-# Then split into canonical:
-# data/embeddings/collections/{collection}.json + data/embeddings/collections/index.json
+  --output-dir data/embeddings/providers/openai/collections
+
+# Generate Bedrock Cohere embeddings for all collections
+unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_DEFAULT_PROFILE AWS_DEFAULT_REGION
+export AWS_PROFILE=default AWS_REGION=us-east-1
+verse-embeddings --multi-collection \
+  --provider bedrock-cohere \
+  --collections-file _data/collections.yml \
+  --output-dir data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections
 
 # Generate all images for a collection/theme
 verse-images --collection hanuman-chalisa --theme modern-minimalist
@@ -73,6 +79,13 @@ verse-images --collection hanuman-chalisa --theme modern-minimalist
 # Generate all audio for a collection
 verse-audio --collection hanuman-chalisa
 ```
+
+### Runtime Provider Switch
+
+See [Embedding Provider Switching](guides/embedding-provider-switching.md) for:
+- provider-specific generation commands
+- `_data/embeddings.yml` runtime config values
+- validation checklist
 
 ### Commands
 
@@ -90,6 +103,7 @@ See [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk) 
 - **[Local Development](guides/local-development.md)** - Setup and run locally
 - **[Content Generation](guides/content-generation.md)** - Create verses and media
 - **[Cloudflare Worker](guides/cloudflare-worker-setup.md)** - Deploy API proxy
+- **[Embedding Provider Switching](guides/embedding-provider-switching.md)** - OpenAI/Bedrock setup and runtime switching
 
 ## Reference
 

@@ -1,15 +1,56 @@
 {
-  "version": 1,
-  "provider": "bedrock-cohere",
-  "model": "cohere.embed-multilingual-v3",
-  "files": [
+  "collections": [
     {
+      "checksum": "a6ee14ddd4f443cafff2f542c8f68567ed064e8bbf640ff411d0e5c712ae94c9",
+      "collection": "bajrang-baan",
+      "counts": {
+        "en": 59,
+        "hi": 59,
+        "total": 59
+      },
+      "dimensions": 1024,
+      "model": "cohere.embed-multilingual-v3",
+      "path": "bajrang-baan.json",
+      "provider": "bedrock-cohere"
+    },
+    {
+      "checksum": "4730ee0a1c1f07e3a35e40a7b84e372d08abd58e20fd8791434eb95791a69988",
+      "collection": "hanuman-chalisa",
+      "counts": {
+        "en": 43,
+        "hi": 43,
+        "total": 43
+      },
+      "dimensions": 1024,
+      "model": "cohere.embed-multilingual-v3",
+      "path": "hanuman-chalisa.json",
+      "provider": "bedrock-cohere"
+    },
+    {
+      "checksum": "4623a97f176dc98a2c45bd10259388a04978bed622a7c15e8acdc62335d3c0b7",
       "collection": "sankat-mochan-hanumanashtak",
-      "path": "/data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections/sankat-mochan-hanumanashtak.json",
       "counts": {
         "en": 8,
-        "hi": 8
-      }
+        "hi": 8,
+        "total": 8
+      },
+      "dimensions": 1024,
+      "model": "cohere.embed-multilingual-v3",
+      "path": "sankat-mochan-hanumanashtak.json",
+      "provider": "bedrock-cohere"
+    },
+    {
+      "checksum": "f4528e833d24e8605f6139f96960e3cbac6888255f582fea45c24e8c83cea7ce",
+      "collection": "sundar-kaand",
+      "counts": {
+        "en": 35,
+        "hi": 35,
+        "total": 35
+      },
+      "dimensions": 1024,
+      "model": "cohere.embed-multilingual-v3",
+      "path": "sundar-kaand.json",
+      "provider": "bedrock-cohere"
     }
   ]
 }

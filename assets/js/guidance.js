@@ -145,12 +145,26 @@ async function loadEmbeddingsFromManifest(indexPath) {
     }
 
     const manifest = await manifestResponse.json();
-    if (!manifest?.files?.length) {
+    const files = Array.isArray(manifest?.files) ? manifest.files : [];
+    const collections = Array.isArray(manifest?.collections) ? manifest.collections : [];
+    if (files.length === 0 && collections.length === 0) {
         throw new Error('Embeddings manifest has no files');
     }
 
-    const files = manifest.files;
-    const payloads = await Promise.all(files.map(async (entry) => {
+    const manifestBasePath = manifestUrl.substring(0, manifestUrl.lastIndexOf('/') + 1);
+    const entries = files.length > 0
+        ? files
+        : collections.map(entry => ({
+            collection: entry.collection,
+            provider: entry.provider,
+            model: entry.model,
+            dimensions: entry.dimensions,
+            path: entry.path?.startsWith('/')
+                ? entry.path
+                : `${manifestBasePath}${entry.path || ''}`
+        }));
+
+    const payloads = await Promise.all(entries.map(async (entry) => {
         const response = await fetch(resolveAssetPath(entry.path));
         if (!response.ok) {
             throw new Error(`Embeddings file HTTP ${response.status}: ${entry.path}`);

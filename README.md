@@ -70,6 +70,12 @@ Use `verse-generate` to create new verses with AI-generated content, images, aud
 
 **→ See [Content Generation Guide](docs/guides/content-generation.md)** for complete instructions.
 
+### Embedding Provider Switching
+
+Provider switching (OpenAI ↔ Bedrock Cohere), generation commands, and runtime config are documented in:
+
+- [Embedding Provider Switching Guide](docs/guides/embedding-provider-switching.md)
+
 ## Documentation
 
 **Guides:**
@@ -127,4 +133,3 @@ May it serve the spiritual upliftment of all beings.
 ---
 
 🚩 **Jai Hanuman 🏹 Jai Shri Ram**
-
