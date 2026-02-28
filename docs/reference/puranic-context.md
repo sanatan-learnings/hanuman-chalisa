@@ -18,7 +18,7 @@ set -a && source .env && set +a
 
 Outputs:
 - `data/puranic-index/{key}.yml` — episode index with `_meta` (legend, provider, chunk size)
-- `data/embeddings/{key}.json` — OpenAI embedding vectors
+- `data/embeddings/puranic/{key}.json` — OpenAI embedding vectors
 
 Run once per source. Use `--update-meta` to refresh `_meta` without re-indexing.
 

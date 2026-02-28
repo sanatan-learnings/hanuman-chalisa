@@ -25,8 +25,8 @@
 ├──────────────────────────────────────────────┤
 │  • images/{collection}/{theme}/*.png         │
 │  • audio/{collection}/*.mp3                  │
-│  • data/embeddings/{collection}.json         │
-│  • data/embeddings/{source-key}.json         │
+│  • data/embeddings/collections/{collection}.json │
+│  • data/embeddings/puranic/{source-key}.json │
 └──────────────────┬───────────────────────────┘
                    │
                    ▼
@@ -107,8 +107,10 @@ hanuman-gpt/
 │   ├── puranic-index/       # Indexed Puranic episodes (YAML)
 │   │   └── shiv-puran-part1.yml
 │   └── embeddings/          # Embedding vectors (JSON)
-│       ├── hanuman-chalisa.json
-│       └── shiv-puran-part1.json
+│       ├── collections/
+│       │   └── hanuman-chalisa.json
+│       └── puranic/
+│           └── shiv-puran-part1.json
 ├── images/                  # Verse images
 │   ├── hanuman-chalisa/modern-minimalist/   # 43 PNG files
 │   └── sundar-kaand/modern-minimalist/
@@ -196,7 +198,7 @@ See [puranic-context.md](puranic-context.md) for the full two-stage workflow.
 - Keyword-based retrieval with verse citations
 - Bilingual support
 
-**Files**: `data/embeddings/hanuman-chalisa.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
+**Files**: `data/embeddings/collections/*.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
 
 ### Puranic Context
 - Per-verse grounded references from indexed sacred texts
@@ -244,7 +246,7 @@ verse-audio --collection hanuman-chalisa --only chaupai-01-full.mp3
 verse-embeddings --collection hanuman-chalisa
 ```
 
-**Output**: `data/embeddings/{collection}.json`
+**Output**: `data/embeddings/collections/{collection}.json` (verse embeddings), `data/embeddings/puranic/{source-key}.json` (source embeddings)
 
 ## Development Workflow
 

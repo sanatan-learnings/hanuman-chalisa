@@ -63,7 +63,9 @@ verse-generate --collection sundar-kaand --verse 5 --theme modern-minimalist
 verse-embeddings --multi-collection \
   --collections-file _data/collections.yml \
   --verses-dir _verses \
-  --output data/embeddings.json
+  --output /tmp/embeddings.json
+# Then split into canonical:
+# data/embeddings/collections/{collection}.json + data/embeddings/collections/index.json
 
 # Generate all images for a collection/theme
 verse-images --collection hanuman-chalisa --theme modern-minimalist

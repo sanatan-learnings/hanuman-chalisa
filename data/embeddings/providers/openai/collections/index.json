@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "provider": "openai",
+  "model": "text-embedding-3-small",
+  "files": [
+    {
+      "collection": "bajrang-baan",
+      "path": "/data/embeddings/providers/openai/collections/bajrang-baan.json",
+      "counts": {
+        "en": 59,
+        "hi": 59
+      }
+    },
+    {
+      "collection": "hanuman-chalisa",
+      "path": "/data/embeddings/providers/openai/collections/hanuman-chalisa.json",
+      "counts": {
+        "en": 43,
+        "hi": 43
+      }
+    },
+    {
+      "collection": "sankat-mochan-hanumanashtak",
+      "path": "/data/embeddings/providers/openai/collections/sankat-mochan-hanumanashtak.json",
+      "counts": {
+        "en": 8,
+        "hi": 8
+      }
+    },
+    {
+      "collection": "sundar-kaand",
+      "path": "/data/embeddings/providers/openai/collections/sundar-kaand.json",
+      "counts": {
+        "en": 35,
+        "hi": 35
+      }
+    }
+  ]
+}

@@ -24,6 +24,10 @@ const GPT_MODEL = 'gpt-4o'; // Can change to 'gpt-4o-mini' for lower cost
 const TOP_K = 3; // Number of relevant verses to retrieve
 const MAX_TOKENS = 300;
 const TEMPERATURE = 0.7;
+const DEFAULT_EMBEDDINGS_INDEX_PATH = '/data/embeddings/collections/index.json';
+const EMBEDDINGS_CONFIG = (typeof window !== 'undefined' && window.EMBEDDINGS_CONFIG)
+    ? window.EMBEDDINGS_CONFIG
+    : {};
 
 // Cloudflare Worker URL (set this after deploying your worker)
 // If set, the worker will be used and API key won't be required from users
@@ -107,10 +111,35 @@ function mergeEmbeddingsPayload(target, payload, fallbackCollection = null) {
 }
 
 /**
+ * Build absolute fetch path from configured index path.
+ */
+function resolveAssetPath(path) {
+    if (!path) return `${BASE_URL}${DEFAULT_EMBEDDINGS_INDEX_PATH}`;
+    if (path.startsWith('http://') || path.startsWith('https://')) return path;
+    return `${BASE_URL}${path}`;
+}
+
+/**
+ * Validate loaded embeddings against active runtime config.
+ */
+function validateEmbeddingsCompatibility(payload) {
+    const expectedProvider = EMBEDDINGS_CONFIG.provider;
+    const expectedModel = EMBEDDINGS_CONFIG.model;
+
+    if (expectedProvider && payload.provider && payload.provider !== expectedProvider) {
+        throw new Error(`Embeddings provider mismatch: expected ${expectedProvider}, got ${payload.provider}`);
+    }
+    if (expectedModel && payload.model && payload.model !== expectedModel) {
+        throw new Error(`Embeddings model mismatch: expected ${expectedModel}, got ${payload.model}`);
+    }
+}
+
+/**
  * Load embeddings from per-collection manifest and files.
  */
-async function loadEmbeddingsFromManifest() {
-    const manifestResponse = await fetch(`${BASE_URL}/data/embeddings/collections/index.json`);
+async function loadEmbeddingsFromManifest(indexPath) {
+    const manifestUrl = resolveAssetPath(indexPath);
+    const manifestResponse = await fetch(manifestUrl);
     if (!manifestResponse.ok) {
         throw new Error(`Manifest HTTP ${manifestResponse.status}`);
     }
@@ -122,7 +151,7 @@ async function loadEmbeddingsFromManifest() {
 
     const files = manifest.files;
     const payloads = await Promise.all(files.map(async (entry) => {
-        const response = await fetch(`${BASE_URL}${entry.path}`);
+        const response = await fetch(resolveAssetPath(entry.path));
         if (!response.ok) {
             throw new Error(`Embeddings file HTTP ${response.status}: ${entry.path}`);
         }
@@ -141,6 +170,7 @@ async function loadEmbeddingsFromManifest() {
     payloads.forEach(({ entry, data }) => {
         mergeEmbeddingsPayload(merged, data, entry.collection || data.collection || null);
     });
+    validateEmbeddingsCompatibility(merged);
 
     return merged;
 }
@@ -150,7 +180,7 @@ async function loadEmbeddingsFromManifest() {
  */
 async function loadEmbeddings() {
     try {
-        embeddingsData = await loadEmbeddingsFromManifest();
+        embeddingsData = await loadEmbeddingsFromManifest(EMBEDDINGS_CONFIG.indexPath);
         console.log(`Loaded per-collection embeddings: ${embeddingsData.verses.en.length} English + ${embeddingsData.verses.hi.length} Hindi verses`);
     } catch (error) {
         console.error('Error loading embeddings:', error);

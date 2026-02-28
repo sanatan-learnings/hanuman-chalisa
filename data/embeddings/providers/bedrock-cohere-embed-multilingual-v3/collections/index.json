@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "provider": "bedrock-cohere",
+  "model": "cohere.embed-multilingual-v3",
+  "files": [
+    {
+      "collection": "sankat-mochan-hanumanashtak",
+      "path": "/data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections/sankat-mochan-hanumanashtak.json",
+      "counts": {
+        "en": 8,
+        "hi": 8
+      }
+    }
+  ]
+}

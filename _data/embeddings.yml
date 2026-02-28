@@ -1,0 +1,3 @@
+active_provider: openai
+active_model: text-embedding-3-small
+index_path: /data/embeddings/providers/openai/collections/index.json

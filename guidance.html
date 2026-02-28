@@ -5,6 +5,7 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 ---
 {% assign t_en = site.data.translations.en %}
 {% assign t_hi = site.data.translations.hi %}
+{% assign emb = site.data.embeddings %}
 
 <div class="guidance-container">
     <div class="guidance-header">
@@ -446,4 +447,11 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 }
 </style>
 
+<script>
+window.EMBEDDINGS_CONFIG = {
+    provider: "{{ emb.active_provider | default: 'openai' }}",
+    model: "{{ emb.active_model | default: 'text-embedding-3-small' }}",
+    indexPath: "{{ emb.index_path | default: '/data/embeddings/collections/index.json' }}"
+};
+</script>
 <script src="{{ '/assets/js/guidance.js' | relative_url }}"></script>

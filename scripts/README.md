@@ -129,7 +129,9 @@ verse-embeddings
 verse-embeddings --provider huggingface
 
 # With custom paths
-verse-embeddings --verses-dir _verses --output data/embeddings.json
+verse-embeddings --verses-dir _verses --output /tmp/embeddings.json
+# Then split to canonical files:
+# data/embeddings/collections/{collection}.json + data/embeddings/collections/index.json
 ```
 
 **Providers:**
@@ -138,9 +140,9 @@ verse-embeddings --verses-dir _verses --output data/embeddings.json
 
 **All Options:**
 ```
---provider {openai,huggingface}  Embedding provider (default: openai)
+--provider {openai,bedrock-cohere,huggingface}  Embedding provider (default: openai)
 --verses-dir TEXT                Verse files directory (default: _verses)
---output TEXT                    Output file (default: data/embeddings.json)
+--output TEXT                    Temporary combined output path (post-process into data/embeddings/collections/)
 ```
 
 ## 🚀 Deploy Cloudflare Worker
