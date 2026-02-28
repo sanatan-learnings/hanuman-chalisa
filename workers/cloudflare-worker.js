@@ -205,6 +205,7 @@ async function handleRequest(request, env) {
 
     let upstreamResponse;
     if (body.type === 'embeddings') {
+      console.log('route=embeddings provider=openai model=', body.model || 'text-embedding-3-small');
       if (!env.OPENAI_API_KEY) {
         console.error('OPENAI_API_KEY not set in worker secrets');
         return new Response(JSON.stringify({
@@ -248,6 +249,7 @@ async function handleRequest(request, env) {
         }),
       });
     } else if (body.type === 'hf_embeddings') {
+      console.log('route=hf_embeddings provider=huggingface model=', body.model || 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2');
       if (!env.HF_TOKEN) {
         console.error('HF_TOKEN not set in worker secrets');
         return new Response(JSON.stringify({
@@ -294,6 +296,8 @@ async function handleRequest(request, env) {
         }),
       });
     } else if (body.type === 'bedrock_embeddings') {
+      const modelId = body.model || env.BEDROCK_EMBEDDING_MODEL || 'cohere.embed-multilingual-v3';
+      console.log('route=bedrock_embeddings provider=bedrock-cohere model=', modelId);
       if (!env.AWS_ACCESS_KEY_ID || !env.AWS_SECRET_ACCESS_KEY) {
         console.error('AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY not set in worker secrets');
         return new Response(JSON.stringify({
@@ -325,7 +329,6 @@ async function handleRequest(request, env) {
         });
       }
 
-      const modelId = body.model || env.BEDROCK_EMBEDDING_MODEL || 'cohere.embed-multilingual-v3';
       const bedrockResponse = await invokeBedrockEmbeddings(env, modelId, body.input);
       const bedrockText = await bedrockResponse.text();
 
@@ -385,6 +388,7 @@ async function handleRequest(request, env) {
         },
       });
     } else {
+      console.log('route=chat provider=openai model=', body.model || 'gpt-4o');
       if (!env.OPENAI_API_KEY) {
         console.error('OPENAI_API_KEY not set in worker secrets');
         return new Response(JSON.stringify({
