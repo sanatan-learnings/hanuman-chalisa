@@ -6,7 +6,7 @@
 ┌─────────────────────────────────────────────┐
 │         DEVELOPMENT ENVIRONMENT              │
 ├─────────────────────────────────────────────┤
-│  Claude Code (AI)  │  PyCharm (Human Review) │
+│  OpenAI Codex / Claude Code (AI) │ PyCharm (Human Review) │
 └──────────┬──────────┴──────────┬────────────┘
            │                     │
            ▼                     ▼
@@ -62,9 +62,9 @@
 - Code editing and project management
 - Visual git diff and merge tools
 - Markdown preview with Devanagari support
-- Embedded terminal for Claude Code
+- Embedded terminal for OpenAI Codex / Claude Code
 
-### Claude Code
+### OpenAI Codex / Claude Code
 - AI-assisted content generation via sanatan-verse-sdk
 - Verse generation, puranic context, images, audio, embeddings
 - Git workflow automation
@@ -195,6 +195,15 @@ See [puranic-context.md](puranic-context.md) for the full two-stage workflow.
 
 ## Key Features
 
+### Pluggable Embeddings Providers
+- Provider-scoped storage: `data/embeddings/providers/{provider}/collections/`
+- Runtime selection from `_data/embeddings.yml` via `active_provider`
+- Build-time generation via `verse-embeddings` with provider/model switches
+- Current providers:
+  - OpenAI (`text-embedding-3-small`)
+  - Bedrock Cohere (`cohere.embed-multilingual-v3`)
+  - Hugging Face (`sentence-transformers/paraphrase-multilingual-mpnet-base-v2`)
+
 ### Spiritual Guidance (RAG System) (`/guidance`)
 - GPT-4o + verse-embeddings + Cloudflare Worker proxy
 - Semantic retrieval with provider-aware query embeddings where available
@@ -269,7 +278,7 @@ verse-embeddings --multi-collection \
 
 ## Development Workflow
 
-1. **Edit** - Claude Code or PyCharm edits files
+1. **Edit** - OpenAI Codex / Claude Code or PyCharm edits files
 2. **Review** - PyCharm diff view
 3. **Commit** - Git with co-author tag
 4. **Push** - GitHub receives changes
