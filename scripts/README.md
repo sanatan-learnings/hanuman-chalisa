@@ -27,7 +27,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-verse-sdk
+pip install --upgrade sanatan-verse-sdk
 ```
 
 Or use the provided requirements.txt:
@@ -155,12 +155,30 @@ verse-embeddings --verses-dir _verses --output /tmp/embeddings.json
 verse-deploy
 ```
 
-The deployment script will:
+Useful modes:
+
+```bash
+verse-deploy --help
+verse-deploy --status
+verse-deploy --dry-run
+```
+
+The deployment flow will:
 1. Check for Node.js and Wrangler CLI
 2. Authenticate with Cloudflare
 3. Deploy the worker
-4. Set the OPENAI_API_KEY secret
+4. Check or set the `OPENAI_API_KEY` secret
 5. Test the deployment
+
+For Bedrock/Hugging Face runtime, set additional secrets explicitly:
+
+```bash
+wrangler secret put HF_TOKEN
+wrangler secret put AWS_ACCESS_KEY_ID
+wrangler secret put AWS_SECRET_ACCESS_KEY
+# Optional for temporary AWS credentials
+wrangler secret put AWS_SESSION_TOKEN
+```
 
 ## 📂 Directory Structure
 
@@ -240,7 +258,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-verse-sdk
+pip install --upgrade sanatan-verse-sdk
 
 # Verify installation
 verse-audio --help

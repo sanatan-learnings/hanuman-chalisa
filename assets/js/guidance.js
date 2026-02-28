@@ -3,7 +3,7 @@
  *
  * This script implements a client-side RAG (Retrieval Augmented Generation) pipeline:
  * 1. Loads pre-generated embeddings across enabled collections
- * 2. Uses provider-aware query embeddings (OpenAI/Hugging Face) + OpenAI chat
+ * 2. Uses provider-aware query embeddings (OpenAI/Bedrock/Hugging Face) + OpenAI chat
  * 3. Detects query language (English/Hindi)
  * 4. Performs semantic search using cosine similarity
  * 5. Sends relevant verses + query to GPT-4 for spiritual guidance
@@ -26,15 +26,77 @@ const DEFAULT_EMBEDDINGS_INDEX_PATH = '/data/embeddings/providers/openai/collect
 const EMBEDDINGS_CONFIG = (typeof window !== 'undefined' && window.EMBEDDINGS_CONFIG)
     ? window.EMBEDDINGS_CONFIG
     : {};
-const ACTIVE_EMBEDDINGS_PROVIDER = EMBEDDINGS_CONFIG.provider || 'openai';
-const ACTIVE_EMBEDDINGS_MODEL = EMBEDDINGS_CONFIG.model || 'text-embedding-3-small';
-const HF_API_URL = `https://router.huggingface.co/pipeline/feature-extraction/${encodeURIComponent(ACTIVE_EMBEDDINGS_MODEL)}`;
 const HF_API_TOKEN_STORAGE_KEY = 'hc_hf_token';
+const EMBEDDINGS_OVERRIDE_STORAGE_KEY = 'hc_embeddings_provider_override';
+const PROVIDER_CONFIG_MAP = EMBEDDINGS_CONFIG.providers || {};
+let runtimeEmbeddingsConfig = resolveRuntimeEmbeddingsConfig();
 
 // Cloudflare Worker URL (set this after deploying your worker)
 // If set, the worker will be used and API key won't be required from users
 // Example: 'https://hanumanji-api.your-subdomain.workers.dev'
 const WORKER_URL = 'https://hanumanji-api.arungupta.workers.dev'; // Leave empty to use user-provided API key mode
+
+function resolveRuntimeEmbeddingsConfig() {
+    const baseProvider = EMBEDDINGS_CONFIG.provider || 'openai';
+    const overrideProvider = localStorage.getItem(EMBEDDINGS_OVERRIDE_STORAGE_KEY);
+    const provider = (overrideProvider && PROVIDER_CONFIG_MAP[overrideProvider]) ? overrideProvider : baseProvider;
+    const providerConfig = PROVIDER_CONFIG_MAP[provider] || {};
+
+    return {
+        provider,
+        model: providerConfig.model || EMBEDDINGS_CONFIG.model || 'text-embedding-3-small',
+        indexPath: providerConfig.index_path || EMBEDDINGS_CONFIG.indexPath || DEFAULT_EMBEDDINGS_INDEX_PATH
+    };
+}
+
+function getHuggingFaceApiUrl() {
+    return `https://router.huggingface.co/pipeline/feature-extraction/${encodeURIComponent(runtimeEmbeddingsConfig.model)}`;
+}
+
+function updateRuntimeBadge() {
+    const providerEl = document.getElementById('runtimeProviderLabel');
+    const modelEl = document.getElementById('runtimeModelLabel');
+    if (providerEl) providerEl.textContent = runtimeEmbeddingsConfig.provider;
+    if (modelEl) modelEl.textContent = runtimeEmbeddingsConfig.model;
+}
+
+function showRuntimeConfigStatus(message, isError = false) {
+    const statusEl = document.getElementById('runtimeConfigStatus');
+    if (!statusEl) return;
+    statusEl.textContent = message;
+    statusEl.style.color = isError ? '#b42318' : '#666';
+}
+
+function initRuntimeConfigPanel() {
+    const selectEl = document.getElementById('runtimeProviderSelect');
+    if (!selectEl) return;
+
+    selectEl.value = runtimeEmbeddingsConfig.provider;
+    updateRuntimeBadge();
+}
+
+async function applyRuntimeProviderSelection() {
+    const selectEl = document.getElementById('runtimeProviderSelect');
+    if (!selectEl) return;
+
+    const nextProvider = selectEl.value;
+    const nextConfig = PROVIDER_CONFIG_MAP[nextProvider];
+    if (!nextConfig) {
+        showRuntimeConfigStatus(`Unknown provider: ${nextProvider}`, true);
+        return;
+    }
+
+    runtimeEmbeddingsConfig = {
+        provider: nextProvider,
+        model: nextConfig.model,
+        indexPath: nextConfig.index_path || DEFAULT_EMBEDDINGS_INDEX_PATH
+    };
+
+    localStorage.setItem(EMBEDDINGS_OVERRIDE_STORAGE_KEY, nextProvider);
+    updateRuntimeBadge();
+    showRuntimeConfigStatus('Reloading embeddings...');
+    await loadEmbeddings();
+}
 
 /**
  * Initialize the guidance system on page load
@@ -61,6 +123,7 @@ function initGuidanceSystem() {
 
     // Set up event listeners
     setupEventListeners();
+    initRuntimeConfigPanel();
 
     // Update placeholders based on language
     updatePlaceholders();
@@ -125,8 +188,8 @@ function resolveAssetPath(path) {
  * Validate loaded embeddings against active runtime config.
  */
 function validateEmbeddingsCompatibility(payload) {
-    const expectedProvider = EMBEDDINGS_CONFIG.provider;
-    const expectedModel = EMBEDDINGS_CONFIG.model;
+    const expectedProvider = runtimeEmbeddingsConfig.provider;
+    const expectedModel = runtimeEmbeddingsConfig.model;
 
     if (expectedProvider && payload.provider && payload.provider !== expectedProvider) {
         throw new Error(`Embeddings provider mismatch: expected ${expectedProvider}, got ${payload.provider}`);
@@ -196,10 +259,13 @@ async function loadEmbeddingsFromManifest(indexPath) {
  */
 async function loadEmbeddings() {
     try {
-        embeddingsData = await loadEmbeddingsFromManifest(EMBEDDINGS_CONFIG.indexPath);
+        embeddingsData = await loadEmbeddingsFromManifest(runtimeEmbeddingsConfig.indexPath);
         console.log(`Loaded per-collection embeddings: ${embeddingsData.verses.en.length} English + ${embeddingsData.verses.hi.length} Hindi verses`);
+        showRuntimeConfigStatus('Embeddings loaded');
     } catch (error) {
         console.error('Error loading embeddings:', error);
+        embeddingsData = null;
+        showRuntimeConfigStatus('Failed to load embeddings', true);
         showError('Failed to load verse embeddings. Please refresh the page.');
     }
 }
@@ -265,6 +331,20 @@ function setupEventListeners() {
             e.preventDefault();
             saveApiKey();
         }
+    });
+
+    document.getElementById('toggleRuntimeConfig')?.addEventListener('click', () => {
+        const body = document.getElementById('runtimeConfigBody');
+        if (!body) return;
+        body.style.display = body.style.display === 'none' ? 'flex' : 'none';
+    });
+
+    document.getElementById('applyRuntimeProvider')?.addEventListener('click', async () => {
+        await applyRuntimeProviderSelection();
+    });
+
+    document.getElementById('runtimeProviderSelect')?.addEventListener('change', async () => {
+        await applyRuntimeProviderSelection();
     });
 }
 
@@ -389,7 +469,7 @@ function meanPoolVectors(vectors) {
  */
 async function getOpenAIQueryEmbedding(query) {
     const requestBody = {
-        model: ACTIVE_EMBEDDINGS_MODEL,
+        model: runtimeEmbeddingsConfig.model,
         input: query
     };
 
@@ -439,7 +519,7 @@ async function getHuggingFaceQueryEmbedding(query) {
             },
             body: JSON.stringify({
                 type: 'hf_embeddings',
-                model: ACTIVE_EMBEDDINGS_MODEL,
+                model: runtimeEmbeddingsConfig.model,
                 input: query
             })
         });
@@ -470,7 +550,7 @@ async function getHuggingFaceQueryEmbedding(query) {
         headers.Authorization = `Bearer ${token}`;
     }
 
-    const response = await fetch(HF_API_URL, {
+    const response = await fetch(getHuggingFaceApiUrl(), {
         method: 'POST',
         headers,
         body: JSON.stringify({
@@ -495,15 +575,56 @@ async function getHuggingFaceQueryEmbedding(query) {
  * Get query embedding based on active runtime embeddings provider.
  */
 async function getQueryEmbedding(query) {
-    if (ACTIVE_EMBEDDINGS_PROVIDER === 'openai') {
+    if (runtimeEmbeddingsConfig.provider === 'openai') {
         return getOpenAIQueryEmbedding(query);
     }
-    if (ACTIVE_EMBEDDINGS_PROVIDER === 'huggingface') {
+    if (runtimeEmbeddingsConfig.provider === 'bedrock-cohere') {
+        return getBedrockQueryEmbedding(query);
+    }
+    if (runtimeEmbeddingsConfig.provider === 'huggingface') {
         return getHuggingFaceQueryEmbedding(query);
     }
 
-    // Bedrock query embeddings are not available directly in browser runtime.
     return null;
+}
+
+/**
+ * Get embedding for user query from Bedrock (via worker only).
+ */
+async function getBedrockQueryEmbedding(query) {
+    if (!WORKER_URL) {
+        throw new Error('Bedrock embeddings require WORKER_URL runtime proxy');
+    }
+
+    const response = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            type: 'bedrock_embeddings',
+            model: runtimeEmbeddingsConfig.model,
+            input: query
+        })
+    });
+
+    if (!response.ok) {
+        let message = `Bedrock embedding HTTP ${response.status}`;
+        try {
+            const error = await response.json();
+            message = error?.error?.message || message;
+        } catch (_) {
+            // keep status-based fallback
+        }
+        throw new Error(message);
+    }
+
+    const payload = await response.json();
+    const embedding = payload?.embedding;
+    if (!Array.isArray(embedding)) {
+        throw new Error('Bedrock embedding response missing embedding array');
+    }
+    return embedding;
 }
 
 /**
@@ -754,20 +875,26 @@ async function handleSendQuery() {
         embeddingsData.lastQuery = query;
 
         // Step 3: Generate query embedding and run retrieval
-        console.log(`Generating query embedding via ${ACTIVE_EMBEDDINGS_PROVIDER}/${ACTIVE_EMBEDDINGS_MODEL}...`);
+        console.log(`Generating query embedding via ${runtimeEmbeddingsConfig.provider}/${runtimeEmbeddingsConfig.model}...`);
         let queryEmbedding = null;
         try {
             queryEmbedding = await getQueryEmbedding(query);
         } catch (embeddingError) {
-            // Keep guidance available even if live query embedding lookup fails.
+            const mustUseEmbeddings = runtimeEmbeddingsConfig.provider === 'bedrock-cohere';
+            if (mustUseEmbeddings) {
+                throw new Error(`Bedrock embeddings unavailable: ${embeddingError.message}`);
+            }
+            // Keep guidance available for non-Bedrock providers if live embedding lookup fails.
             console.warn('Query embedding failed, falling back to keyword retrieval:', embeddingError);
-            queryEmbedding = null;
         }
         let relevantVerses;
         if (queryEmbedding) {
             console.log('Finding relevant verses using semantic similarity...');
             relevantVerses = findRelevantVerses(queryEmbedding, queryLang, TOP_K);
         } else {
+            if (runtimeEmbeddingsConfig.provider === 'bedrock-cohere') {
+                throw new Error('Bedrock embeddings unavailable: query embedding is empty');
+            }
             console.log('No query embedding available for active provider; using keyword fallback.');
             relevantVerses = findRelevantVersesByKeywords(query, queryLang, TOP_K);
         }

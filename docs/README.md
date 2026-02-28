@@ -8,7 +8,7 @@ Documentation for the Hanuman GPT website (multi-collection sacred texts).
 
 ```bash
 # Install sanatan-verse-sdk 0.27.0+
-pip install sanatan-verse-sdk
+pip install --upgrade sanatan-verse-sdk
 
 # Auto-detect and generate next verse
 verse-generate \

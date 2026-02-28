@@ -96,9 +96,34 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     <div class="embeddings-provider-badge">
         <span data-lang="en">Runtime embeddings:</span>
         <span data-lang="hi">रनटाइम एम्बेडिंग:</span>
-        <strong>{{ active_provider_key }}</strong>
+        <strong id="runtimeProviderLabel">{{ active_provider_key }}</strong>
         <span class="badge-separator">|</span>
-        <code>{{ active_provider.model }}</code>
+        <code id="runtimeModelLabel">{{ active_provider.model }}</code>
+    </div>
+
+    <div class="runtime-config-panel">
+        <button id="toggleRuntimeConfig" class="btn-secondary-small" type="button">
+            <span data-lang="en">Config</span>
+            <span data-lang="hi">कॉन्फ़िग</span>
+        </button>
+        <div id="runtimeConfigBody" class="runtime-config-body" style="display: none;">
+            <label for="runtimeProviderSelect">
+                <span data-lang="en">Embeddings provider:</span>
+                <span data-lang="hi">एम्बेडिंग प्रदाता:</span>
+            </label>
+            <select id="runtimeProviderSelect">
+                {% for provider_hash in emb.providers %}
+                {% assign provider_key = provider_hash[0] %}
+                {% assign provider_value = provider_hash[1] %}
+                <option value="{{ provider_key }}">{{ provider_key }} ({{ provider_value.model }})</option>
+                {% endfor %}
+            </select>
+            <button id="applyRuntimeProvider" class="btn-primary" type="button">
+                <span data-lang="en">Apply</span>
+                <span data-lang="hi">लागू करें</span>
+            </button>
+            <div id="runtimeConfigStatus" class="runtime-config-status"></div>
+        </div>
     </div>
 </div>
 
@@ -453,6 +478,38 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     color: #999;
 }
 
+.runtime-config-panel {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.runtime-config-body {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.runtime-config-body label {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.runtime-config-body select {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+.runtime-config-status {
+    width: 100%;
+    font-size: 0.85em;
+    color: #666;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
     .guidance-container {
@@ -475,6 +532,10 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     .input-wrapper {
         flex-direction: column;
     }
+
+    .runtime-config-body {
+        flex-direction: column;
+    }
 }
 </style>
 
@@ -482,7 +543,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 window.EMBEDDINGS_CONFIG = {
     provider: "{{ active_provider_key }}",
     model: "{{ active_provider.model | default: 'text-embedding-3-small' }}",
-    indexPath: "{{ active_provider.index_path | default: '/data/embeddings/providers/openai/collections/index.json' }}"
+    indexPath: "{{ active_provider.index_path | default: '/data/embeddings/providers/openai/collections/index.json' }}",
+    providers: {{ emb.providers | jsonify }}
 };
 </script>
 <script src="{{ '/assets/js/guidance.js' | relative_url }}"></script>

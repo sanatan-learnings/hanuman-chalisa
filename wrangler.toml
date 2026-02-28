@@ -9,8 +9,17 @@ compatibility_date = "2026-01-29"
 # Workers configuration
 workers_dev = true
 
-# Environment variables (set these in Cloudflare dashboard)
-# OPENAI_API_KEY = "your-key-here" (set via dashboard, not here!)
+# Non-secret runtime variables
+[vars]
+AWS_REGION = "us-east-1"
+BEDROCK_EMBEDDING_MODEL = "cohere.embed-multilingual-v3"
+
+# Secrets (set via `wrangler secret put`, not in this file):
+# OPENAI_API_KEY      -> OpenAI chat + OpenAI embeddings
+# HF_TOKEN            -> Hugging Face embeddings
+# AWS_ACCESS_KEY_ID   -> Bedrock embeddings
+# AWS_SECRET_ACCESS_KEY -> Bedrock embeddings
+# AWS_SESSION_TOKEN   -> Optional for temporary IAM credentials
 
 # Account ID (optional - wrangler will prompt if not set)
 # Get this from: https://dash.cloudflare.com/ > Workers & Pages > Overview

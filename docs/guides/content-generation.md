@@ -144,7 +144,7 @@ All multimedia content is generated using the [sanatan-verse-sdk](https://github
 - **verse-embeddings** - Generate vector embeddings
 - **verse-deploy** - Deploy Cloudflare Workers
 
-Install once: `python3 -m venv venv && source venv/bin/activate && pip install sanatan-verse-sdk`
+Install once: `python3 -m venv venv && source venv/bin/activate && pip install --upgrade sanatan-verse-sdk`
 
 See [scripts/README.md](../scripts/README.md) for complete documentation.
 
@@ -160,7 +160,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-verse-sdk
+pip install --upgrade sanatan-verse-sdk
 
 # Get API key from https://platform.openai.com/api-keys
 export OPENAI_API_KEY='your-key-here'
@@ -242,7 +242,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-verse-sdk
+pip install --upgrade sanatan-verse-sdk
 
 # Get API key from https://elevenlabs.io/app/settings/api-keys
 export ELEVENLABS_API_KEY='your-key-here'

@@ -37,7 +37,7 @@ See [setup guide](setup.md) for detailed local development instructions.
 
 ## Cloudflare Worker (API Proxy)
 
-Deploy a serverless proxy for OpenAI API requests, allowing spiritual guidance to work without users providing API keys.
+Deploy a serverless proxy for OpenAI chat and pluggable embeddings providers (OpenAI, Bedrock Cohere, Hugging Face) so users never need to provide keys.
 
 ### Benefits
 
@@ -55,19 +55,32 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Install SDK
-pip install sanatan-verse-sdk
+pip install --upgrade sanatan-verse-sdk
+
+# Inspect planned actions (no changes)
+verse-deploy --dry-run
+
+# Check currently deployed worker status
+verse-deploy --status
 
 # Deploy
 verse-deploy
 ```
 
-The SDK handles authentication, deployment, and secret management automatically.
+`verse-deploy` now supports:
+- `--help` - Show usage
+- `--status` - Show deployed worker URL/version/bindings
+- `--dry-run` - Validate prerequisites and planned actions without deploying
+
+Use `wrangler secret put ...` for multi-provider secrets (`HF_TOKEN`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, optional `AWS_SESSION_TOKEN`). The deploy flow validates/deploys and checks `OPENAI_API_KEY`.
 
 ### Manual Deployment
 
 **Prerequisites:**
 - Cloudflare account: https://dash.cloudflare.com/sign-up
-- OpenAI API key
+- OpenAI API key (required for chat)
+- AWS IAM credentials with Bedrock model access (required if runtime provider is Bedrock)
+- Hugging Face token (required if runtime provider is Hugging Face)
 - Node.js and Wrangler CLI
 
 **Steps:**
@@ -79,35 +92,63 @@ The SDK handles authentication, deployment, and secret management automatically.
    wrangler deploy
    ```
 
-2. **Add API Key Secret:**
+2. **Add Worker Secrets:**
    ```bash
    wrangler secret put OPENAI_API_KEY
-   # Paste your OpenAI API key when prompted
+   wrangler secret put HF_TOKEN
+   wrangler secret put AWS_ACCESS_KEY_ID
+   wrangler secret put AWS_SECRET_ACCESS_KEY
+   # Optional if using temporary credentials:
+   wrangler secret put AWS_SESSION_TOKEN
    ```
 
-3. **Get Worker URL:**
+3. **Set runtime vars (non-secret):**
+   `wrangler.toml` already includes defaults:
+   - `AWS_REGION = "us-east-1"`
+   - `BEDROCK_EMBEDDING_MODEL = "cohere.embed-multilingual-v3"`
+
+4. **Get Worker URL:**
    - Find at https://dash.cloudflare.com/ → Workers & Pages
    - Format: `https://hanumanji-api.your-subdomain.workers.dev`
 
-4. **Update Frontend:**
+5. **Update Frontend:**
    Edit `assets/js/guidance.js`:
    ```javascript
    const WORKER_URL = 'https://your-worker-url.workers.dev';
    ```
 
-5. **Test:**
+6. **Test Chat Path:**
    ```bash
    curl -X POST "https://your-worker-url.workers.dev" \
      -H "Content-Type: application/json" \
      -d '{"model":"gpt-4o","messages":[{"role":"user","content":"Hello"}]}'
    ```
 
-6. **Deploy to GitHub:**
+7. **Test Embeddings Path (Bedrock):**
+   ```bash
+   curl -X POST "https://your-worker-url.workers.dev" \
+     -H "Content-Type: application/json" \
+     -d '{"type":"bedrock_embeddings","model":"cohere.embed-multilingual-v3","input":"How do I overcome fear?"}'
+   ```
+
+8. **Deploy to GitHub:**
    ```bash
    git add assets/js/guidance.js
    git commit -m "Enable Cloudflare Worker for spiritual guidance"
    git push
    ```
+
+### Enabling Bedrock In Production Runtime
+
+1. Ensure Bedrock collection embeddings are generated under:
+   - `data/embeddings/providers/bedrock-cohere-embed-multilingual-v3/collections/`
+2. Set `_data/embeddings.yml`:
+   - `active_provider: bedrock-cohere`
+3. Deploy site + worker.
+4. Validate `/guidance`:
+   - Provider badge shows `bedrock-cohere`
+   - Query succeeds without keyword-only fallback behavior
+   - Worker returns 200 for `type: bedrock_embeddings` requests
 
 ### Worker Configuration
 
@@ -143,6 +184,10 @@ Check build status:
 2. Verify secret is set: `wrangler secret list`
 3. Check logs: `wrangler tail`
 4. Validate CORS settings in worker code
+5. For Bedrock mode, confirm:
+   - `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` are set
+   - `AWS_REGION` matches enabled Bedrock region
+   - IAM user/role has `bedrock:InvokeModel` permission for chosen model
 
 ### Changes Not Appearing
 

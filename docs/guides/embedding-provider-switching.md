@@ -62,10 +62,13 @@ verse-embeddings --multi-collection \
 
 1. OpenAI: semantic retrieval works in-browser using OpenAI query embeddings.
 2. Hugging Face: semantic retrieval works in-browser using Hugging Face inference API.
-3. Bedrock Cohere: runtime falls back to keyword retrieval because browser-side Bedrock query embeddings are not configured.
+3. Bedrock Cohere: semantic retrieval works via Cloudflare Worker Bedrock proxy.
+4. Bedrock requires worker secrets: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, optional `AWS_SESSION_TOKEN`, plus `AWS_REGION`.
+5. Bedrock runtime now fails closed if query embedding cannot be generated (no silent keyword fallback).
 
 ## Validation Checklist
 
 1. `bundle exec jekyll build` succeeds.
 2. `/guidance` loads without embeddings errors.
 3. Results for a few test queries look reasonable in both English and Hindi.
+4. For Bedrock active provider, a direct worker test with `type: bedrock_embeddings` returns an embedding vector.
