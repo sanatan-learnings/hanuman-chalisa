@@ -16,7 +16,13 @@ title: Home
     </p>
 
     <div class="quick-actions">
-        <a href="{{ '/guidance' | relative_url }}" class="btn-primary">💬 <span data-lang="en">{{ t_en.guidance.title }}</span><span data-lang="hi">{{ t_hi.guidance.title }}</span></a>
+        <div class="primary-cta">
+            <a href="{{ '/guidance' | relative_url }}" class="btn-primary">💬 <span data-lang="en">{{ t_en.guidance.title }}</span><span data-lang="hi">{{ t_hi.guidance.title }}</span></a>
+            <p class="cta-support">
+                <span data-lang="en">{{ t_en.guidance.cta_support }}</span>
+                <span data-lang="hi">{{ t_hi.guidance.cta_support }}</span>
+            </p>
+        </div>
         <a href="{{ '/search' | relative_url }}" class="btn-secondary">🔍 <span data-lang="en">{{ t_en.home.search_verses }}</span><span data-lang="hi">{{ t_hi.home.search_verses }}</span></a>
         <a href="{{ '/quiz' | relative_url }}" class="btn-secondary">🧠 <span data-lang="en">Hanuman Quiz</span><span data-lang="hi">हनुमान प्रश्नोत्तरी</span></a>
     </div>

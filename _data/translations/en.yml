@@ -95,7 +95,8 @@ book:
   generate_book: "Generate Book"
 
 guidance:
-  title: "Spiritual Guidance"
+  title: "Ask Hanuman"
+  cta_support: "Receive spiritual guidance from the Hanuman Chalisa"
   subtitle: "Ask questions and receive wisdom from sacred texts devoted to Lord Hanuman"
   api_key_prompt: "Enter your OpenAI API key to begin"
   api_key_placeholder: "sk-..."
