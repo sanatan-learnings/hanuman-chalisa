@@ -89,6 +89,12 @@ function showRuntimeConfigStatus(message, isError = false) {
     if (!statusEl) return;
     statusEl.textContent = message;
     statusEl.style.color = isError ? '#b42318' : '#666';
+    if (statusEl._clearTimer) {
+        clearTimeout(statusEl._clearTimer);
+    }
+    statusEl._clearTimer = setTimeout(() => {
+        statusEl.textContent = '';
+    }, isError ? 6000 : 2500);
 }
 
 function initRuntimeConfigPanel() {

@@ -96,19 +96,19 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
         </button>
     </div>
 
-    <div class="embeddings-provider-badge">
-        <span data-lang="en">Runtime embeddings:</span>
-        <span data-lang="hi">रनटाइम एम्बेडिंग:</span>
-        <strong id="runtimeProviderLabel">{{ active_provider_key }}</strong>
-        <span class="badge-separator">|</span>
-        <code id="runtimeModelLabel">{{ active_provider.model }}</code>
-    </div>
-    <div class="embeddings-provider-badge">
-        <span data-lang="en">Runtime chat:</span>
-        <span data-lang="hi">रनटाइम चैट:</span>
-        <strong id="runtimeChatProviderLabel">{{ active_chat_provider_key }}</strong>
-        <span class="badge-separator">|</span>
-        <code id="runtimeChatModelLabel">{{ active_chat_provider.model }}</code>
+    <div class="runtime-summary">
+        <div class="runtime-summary-item">
+            <span data-lang="en">Embeddings:</span>
+            <span data-lang="hi">एम्बेडिंग:</span>
+            <strong id="runtimeProviderLabel">{{ active_provider_key }}</strong>
+            <code id="runtimeModelLabel">{{ active_provider.model }}</code>
+        </div>
+        <div class="runtime-summary-item">
+            <span data-lang="en">Chat:</span>
+            <span data-lang="hi">चैट:</span>
+            <strong id="runtimeChatProviderLabel">{{ active_chat_provider_key }}</strong>
+            <code id="runtimeChatModelLabel">{{ active_chat_provider.model }}</code>
+        </div>
     </div>
 
     <div class="runtime-config-panel">
@@ -117,36 +117,30 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
             <span data-lang="hi">कॉन्फ़िग</span>
         </button>
         <div id="runtimeConfigBody" class="runtime-config-body" style="display: none;">
-            <label for="runtimeProviderSelect">
-                <span data-lang="en">Embeddings provider:</span>
-                <span data-lang="hi">एम्बेडिंग प्रदाता:</span>
-            </label>
-            <select id="runtimeProviderSelect">
-                {% for provider_hash in emb.providers %}
-                {% assign provider_key = provider_hash[0] %}
-                {% assign provider_value = provider_hash[1] %}
-                <option value="{{ provider_key }}">{{ provider_key }} ({{ provider_value.model }})</option>
-                {% endfor %}
-            </select>
-            <button id="applyRuntimeProvider" class="btn-primary" type="button">
-                <span data-lang="en">Apply</span>
-                <span data-lang="hi">लागू करें</span>
-            </button>
-            <label for="runtimeChatProviderSelect">
-                <span data-lang="en">Chat provider:</span>
-                <span data-lang="hi">चैट प्रदाता:</span>
-            </label>
-            <select id="runtimeChatProviderSelect">
-                {% for provider_hash in chat.providers %}
-                {% assign provider_key = provider_hash[0] %}
-                {% assign provider_value = provider_hash[1] %}
-                <option value="{{ provider_key }}">{{ provider_key }} ({{ provider_value.model }})</option>
-                {% endfor %}
-            </select>
-            <button id="applyRuntimeChatProvider" class="btn-primary" type="button">
-                <span data-lang="en">Apply</span>
-                <span data-lang="hi">लागू करें</span>
-            </button>
+            <div class="runtime-config-grid">
+                <label for="runtimeProviderSelect">
+                    <span data-lang="en">Embeddings provider</span>
+                    <span data-lang="hi">एम्बेडिंग प्रदाता</span>
+                </label>
+                <select id="runtimeProviderSelect">
+                    {% for provider_hash in emb.providers %}
+                    {% assign provider_key = provider_hash[0] %}
+                    {% assign provider_value = provider_hash[1] %}
+                    <option value="{{ provider_key }}">{{ provider_key }} ({{ provider_value.model }})</option>
+                    {% endfor %}
+                </select>
+                <label for="runtimeChatProviderSelect">
+                    <span data-lang="en">Chat provider</span>
+                    <span data-lang="hi">चैट प्रदाता</span>
+                </label>
+                <select id="runtimeChatProviderSelect">
+                    {% for provider_hash in chat.providers %}
+                    {% assign provider_key = provider_hash[0] %}
+                    {% assign provider_value = provider_hash[1] %}
+                    <option value="{{ provider_key }}">{{ provider_key }} ({{ provider_value.model }})</option>
+                    {% endfor %}
+                </select>
+            </div>
             <div id="runtimeConfigStatus" class="runtime-config-status"></div>
         </div>
     </div>
@@ -482,7 +476,7 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     background: #5a6268;
 }
 
-.embeddings-provider-badge {
+.runtime-summary {
     margin-top: 12px;
     padding: 10px 12px;
     border: 1px solid #e6e6e6;
@@ -490,36 +484,51 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     background: #fafafa;
     color: #444;
     font-size: 0.9em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.embeddings-provider-badge strong {
-    margin-left: 4px;
+.runtime-summary-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.runtime-summary-item strong {
     text-transform: lowercase;
 }
 
-.badge-separator {
-    margin: 0 8px;
-    color: #999;
+.runtime-summary-item code {
+    font-size: 0.95em;
 }
 
 .runtime-config-panel {
-    margin-top: 10px;
+    margin-top: 8px;
     text-align: center;
 }
 
 .runtime-config-body {
     margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+    display: block;
+    padding: 8px 10px;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    background: #fcfcfc;
+}
+
+.runtime-config-grid {
+    display: grid;
+    grid-template-columns: 220px minmax(260px, 1fr);
+    gap: 8px 12px;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .runtime-config-body label {
     color: #555;
     font-size: 0.9em;
+    text-align: right;
 }
 
 .runtime-config-body select {
@@ -533,6 +542,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     width: 100%;
     font-size: 0.85em;
     color: #666;
+    margin-top: 8px;
+    text-align: center;
 }
 
 /* Mobile responsive */
@@ -559,7 +570,15 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     }
 
     .runtime-config-body {
-        flex-direction: column;
+        padding: 10px;
+    }
+
+    .runtime-config-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .runtime-config-body label {
+        text-align: left;
     }
 }
 </style>
