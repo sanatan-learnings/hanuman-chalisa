@@ -3,51 +3,6 @@ _meta:
   source: Converted from docs/image-prompts/hanuman-chalisa.md
   description: Scene descriptions for hanuman-chalisa image generation
   format: theme-agnostic scene descriptions (narrative and spiritual meaning)
-  sequence:
-  - title-page
-  - doha-01
-  - doha-02
-  - chaupai-01
-  - chaupai-02
-  - chaupai-03
-  - chaupai-04
-  - chaupai-05
-  - chaupai-06
-  - chaupai-07
-  - chaupai-08
-  - chaupai-09
-  - chaupai-10
-  - chaupai-11
-  - chaupai-12
-  - chaupai-13
-  - chaupai-14
-  - chaupai-15
-  - chaupai-16
-  - chaupai-17
-  - chaupai-18
-  - chaupai-19
-  - chaupai-20
-  - chaupai-21
-  - chaupai-22
-  - chaupai-23
-  - chaupai-24
-  - chaupai-25
-  - chaupai-26
-  - chaupai-27
-  - chaupai-28
-  - chaupai-29
-  - chaupai-30
-  - chaupai-31
-  - chaupai-32
-  - chaupai-33
-  - chaupai-34
-  - chaupai-35
-  - chaupai-36
-  - chaupai-37
-  - chaupai-38
-  - chaupai-39
-  - chaupai-40
-  - doha-closing
 scenes:
   title-page:
     title: Title Page
