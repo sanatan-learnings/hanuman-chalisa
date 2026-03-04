@@ -342,7 +342,7 @@ layout: verse
 verse_number: 1
 title_en: "Ocean of Knowledge and Virtues"
 title_hi: "ज्ञान और गुणों का सागर"
-image: /images/modern-minimalist/verse-01.png
+image: /images/hanuman-chalisa/modern-minimalist/chaupai-01.png
 ---
 
 devanagari: |

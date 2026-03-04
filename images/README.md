@@ -252,7 +252,7 @@ images/sundar-kaand/modern-minimalist/
 - Ensure prompt file follows exact format (see example above)
 - Check `**Scene Description**:` heading spelling/format
 - Verify OpenAI API key is set correctly
-- Images generate to `images/modern-minimalist/` by default - move manually
+- Images should be organized directly under `images/{collection}/{theme}/`
 
 ### Slow Image Loading
 - Large DALL-E 3 images (2-3 MB) are normal

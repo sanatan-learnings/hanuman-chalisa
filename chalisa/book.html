@@ -750,24 +750,29 @@ function generateBook() {
         hi: 'हनुमान चालीसा'
     };
 
+    const selectedCollection = document.getElementById('bookCollection').value;
+    const selectedCollectionOption = document.querySelector(`#bookCollection option[value="${selectedCollection}"]`);
+    const selectedCollectionTitle = selectedCollectionOption
+        ? selectedCollectionOption.textContent.trim()
+        : selectedCollection;
+
     const bookContent = document.getElementById('bookContent');
     bookContent.innerHTML = '';
 
-    // Add title page as first page
+    // Add title page as first page using collection-aware path.
     const titlePage = document.createElement('div');
     titlePage.className = `book-page book-title-page size-${config.pageSize}`;
 
-    const titleImagePath = `/images/${config.theme}/title-page.png`;
+    const titleImagePath = `/images/${selectedCollection}/${config.theme}/title-page.png`;
     titlePage.innerHTML = `
         <img src="${BASE_URL}${titleImagePath}"
              class="title-page-image"
-             alt="Hanuman Chalisa Title Page"
+             alt="${escapeHtml(selectedCollectionTitle)} Title Page"
              onerror="console.error('Failed to load title page:', this.src)">
     `;
     bookContent.appendChild(titlePage);
 
     // Filter verses by selected collection
-    const selectedCollection = document.getElementById('bookCollection').value;
     const collectionVerses = versesData.filter(verse => verse.collection === selectedCollection);
 
     // Sort verses to ensure closing doha comes last
@@ -791,8 +796,11 @@ function generateBook() {
 
         // LEFT SIDE: Image
         if (config.includeImage && verse.image) {
-            // Replace the theme in the image path
-            const imagePath = verse.image.replace(/\/images\/[^\/]+\//, `/images/${config.theme}/`);
+            // Replace collection/theme while preserving image filename.
+            const imagePath = verse.image.replace(
+                /\/images\/[^\/]+\/[^\/]+\//,
+                `/images/${selectedCollection}/${config.theme}/`
+            );
             leftHtml += `<img src="${imagePath}" class="book-image" alt="Verse ${verse.verse_number}" onerror="console.error('Failed to load image:', this.src)">`;
         }
 
