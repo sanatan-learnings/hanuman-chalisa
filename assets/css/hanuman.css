@@ -1914,9 +1914,9 @@ footer .footer-links a:hover {
     justify-content: center;
     text-decoration: none;
     color: #888;
-    font-size: 0.62rem;
+    font-size: 0.58rem;
     gap: 2px;
-    padding: 6px 4px;
+    padding: 6px 2px;
     transition: color 0.2s;
     min-height: 44px;
     overflow: hidden;

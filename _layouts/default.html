@@ -93,6 +93,11 @@
             <span class="bottom-nav-label" data-lang="en">Sundar Kaand</span>
             <span class="bottom-nav-label" data-lang="hi">सुंदर काण्ड</span>
         </a>
+        <a href="{{ '/library/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/library' or page.url contains '/bajrang-baan' or page.url contains '/sankat-mochan' %} active{% endif %}">
+            <span class="bottom-nav-icon">📚</span>
+            <span class="bottom-nav-label" data-lang="en">Library</span>
+            <span class="bottom-nav-label" data-lang="hi">पुस्तकालय</span>
+        </a>
         <a href="{{ '/guidance/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/guidance' %} active{% endif %}">
             <span class="bottom-nav-icon">💬</span>
             <span class="bottom-nav-label" data-lang="en">Ask</span>
