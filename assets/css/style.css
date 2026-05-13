@@ -916,15 +916,15 @@ footer .footer-links a:hover {
 
 @media (max-width: 768px) {
     footer .footer-links {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 0;
+        justify-content: center;
     }
 
     footer .footer-links a {
-        min-height: 44px;
-        display: flex;
-        align-items: center;
-        padding: 0;
+        padding: 8px 10px;
+        min-height: auto;
     }
 
     footer .footer-links a + a::before {
