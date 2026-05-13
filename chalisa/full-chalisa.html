@@ -298,6 +298,14 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     box-sizing: border-box;
 }
 
+.flashcard-mode .verse-thumbnail {
+    display: none;
+}
+
+.flashcard-mode .verse-compact-layout {
+    grid-template-columns: 1fr;
+}
+
 .flashcard-mode .fc-nav-buttons {
     display: flex;
 }
@@ -395,6 +403,7 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
 
 .text-column-wide {
     grid-column: 1 / -1;
+    min-width: 0;
 }
 
 .devanagari-text {
@@ -406,6 +415,8 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     border-radius: 3px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -418,6 +429,8 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     border-radius: 3px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -429,6 +442,8 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     padding: 8px;
     border-radius: 3px;
     margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .meanings-section {
