@@ -20,7 +20,7 @@ window.FlashcardController = (() => {
         audioEl.pause();
         audioEl.currentTime = 0;
         if (audioBtn) {
-            audioBtn.textContent = '🔊';
+            audioBtn.innerHTML = '🔊 <span>Play</span>';
             audioBtn.classList.remove('playing');
         }
     }
@@ -42,7 +42,7 @@ window.FlashcardController = (() => {
         if (!audioEl) return;
         if (audioEl.paused) {
             audioEl.play().then(function() {
-                audioBtn.textContent = '⏸';
+                audioBtn.innerHTML = '⏸ <span>Pause</span>';
                 audioBtn.classList.add('playing');
             }).catch(function() {
                 audioBtn.style.display = 'none';
@@ -57,7 +57,7 @@ window.FlashcardController = (() => {
         audioEl.preload = 'none';
         audioEl.addEventListener('ended', function() {
             if (audioBtn) {
-                audioBtn.textContent = '🔊';
+                audioBtn.innerHTML = '🔊 <span>Play</span>';
                 audioBtn.classList.remove('playing');
             }
         });
@@ -68,14 +68,12 @@ window.FlashcardController = (() => {
         audioBtn = document.createElement('button');
         audioBtn.className = 'fc-audio-btn';
         audioBtn.setAttribute('aria-label', 'Play pronunciation');
-        audioBtn.textContent = '🔊';
+        audioBtn.innerHTML = '🔊 <span>Play</span>';
         audioBtn.addEventListener('click', toggleAudio);
 
-        // Insert between ← Prev and Next → buttons
-        const navButtons = document.querySelector('.fc-nav-buttons');
-        const nextBtn = navButtons && navButtons.querySelector('.fc-next');
-        if (nextBtn) navButtons.insertBefore(audioBtn, nextBtn);
-        else if (navButtons) navButtons.appendChild(audioBtn);
+        // Append as its own row inside flashcard-nav, below the progress bar
+        const flashcardNav = document.querySelector('.flashcard-nav');
+        if (flashcardNav) flashcardNav.appendChild(audioBtn);
     }
 
     function removeAudioControls() {

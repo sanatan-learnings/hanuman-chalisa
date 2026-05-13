@@ -2008,29 +2008,31 @@ footer .footer-links a:hover {
 }
 
 .fc-audio-btn {
-    background: white;
-    border: 2px solid #ff6b35;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
+    background: white;
+    border: 1px solid #ffd5c0;
+    border-radius: 20px;
+    padding: 6px 16px;
     cursor: pointer;
-    font-size: 1.2em;
-    flex-shrink: 0;
+    font-size: 0.9em;
+    color: #ff6b35;
+    font-weight: 500;
+    margin-top: 4px;
+    width: 100%;
     transition: background 0.2s, border-color 0.2s;
-    line-height: 1;
-    padding: 0;
 }
 
 .fc-audio-btn:hover {
     background: #fff0e8;
+    border-color: #ff6b35;
 }
 
 .fc-audio-btn.playing {
     background: #fff0e8;
-    border-color: #e55a2b;
+    border-color: #ff6b35;
 }
 
 .fc-progress-text {
