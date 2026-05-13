@@ -282,6 +282,8 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
 .flashcard-mode .verses-content {
     overflow: hidden;
     position: relative;
+    width: 100%;
+    max-width: 100%;
 }
 
 .flashcard-mode .fc-strip {
@@ -290,17 +292,35 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
     touch-action: pan-y;
-}
-
-.flashcard-mode .verses-content {
-    max-width: 100vw;
+    width: 100%;
 }
 
 .flashcard-mode .fc-strip .verse-item {
     min-width: 100%;
+    width: 100%;
     flex-shrink: 0;
     margin-bottom: 0;
     box-sizing: border-box;
+}
+
+/* Strip flashcard edge-to-edge: remove horizontal padding so card fills viewport */
+.full-chalisa-container.flashcard-mode {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+html.flashcard-active main.container,
+html.flashcard-active .full-chalisa-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+body.flashcard-active {
+    overflow-x: hidden;
+}
+
+html.flashcard-active {
+    overflow-x: hidden;
 }
 
 .flashcard-mode .verse-compact-layout {
@@ -855,7 +875,10 @@ const FlashcardController = (() => {
         versesContent.addEventListener('touchend', handleTouchEnd, { passive: true });
         window.addEventListener('resize', handleResize);
         window.addEventListener('popstate', handlePopState);
+        document.documentElement.style.overflowX = 'hidden';
         document.body.style.overflowX = 'hidden';
+        document.documentElement.classList.add('flashcard-active');
+        document.body.classList.add('flashcard-active');
         // Push a history entry so the browser back gesture fires popstate
         history.pushState(null, '', window.location.href);
 
@@ -881,7 +904,10 @@ const FlashcardController = (() => {
         versesContent.removeEventListener('touchend', handleTouchEnd);
         window.removeEventListener('resize', handleResize);
         window.removeEventListener('popstate', handlePopState);
+        document.documentElement.style.overflowX = '';
         document.body.style.overflowX = '';
+        document.documentElement.classList.remove('flashcard-active');
+        document.body.classList.remove('flashcard-active');
 
         // Clean URL
         history.replaceState(null, '', window.location.pathname);
