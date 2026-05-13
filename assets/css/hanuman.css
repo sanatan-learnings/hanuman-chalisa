@@ -2158,6 +2158,10 @@ html.flashcard-active {
     line-height: 1.6;
 }
 
+/* Hide translation and meanings by default on full-text pages; JS toggles visibility */
+.translation-section { display: none; }
+.meanings-section { display: none; }
+
 .flashcard-mode .meanings-section {
     display: none !important;
 }
