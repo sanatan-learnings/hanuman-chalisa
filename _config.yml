@@ -36,6 +36,7 @@ exclude:
   - .venv/
   - scripts/
   - workers/
+  - data/embeddings/puranic/
   - "**/*.temp.*"
 
 # Plugins
