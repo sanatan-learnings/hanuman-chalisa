@@ -15,12 +15,15 @@ window.FlashcardController = (() => {
         return 'fc-card-' + window.location.pathname.split('/').filter(Boolean).join('-');
     }
 
+    const ICON_PLAY  = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>';
+    const ICON_PAUSE = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>';
+
     function stopAudio() {
         if (!audioEl) return;
         audioEl.pause();
         audioEl.currentTime = 0;
         if (audioBtn) {
-            audioBtn.innerHTML = '🔊 <span>Play</span>';
+            audioBtn.innerHTML = ICON_PLAY + '<span>Play</span>';
             audioBtn.classList.remove('playing');
         }
     }
@@ -54,7 +57,7 @@ window.FlashcardController = (() => {
         if (!audioEl) return;
         if (audioEl.paused) {
             audioEl.play().then(function() {
-                audioBtn.innerHTML = '⏸ <span>Pause</span>';
+                audioBtn.innerHTML = ICON_PAUSE + '<span>Pause</span>';
                 audioBtn.classList.add('playing');
             }).catch(function() {
                 audioBtn.style.display = 'none';
@@ -69,7 +72,7 @@ window.FlashcardController = (() => {
         audioEl.preload = 'none';
         audioEl.addEventListener('ended', function() {
             if (audioBtn) {
-                audioBtn.innerHTML = '🔊 <span>Play</span>';
+                audioBtn.innerHTML = ICON_PLAY + '<span>Play</span>';
                 audioBtn.classList.remove('playing');
             }
         });
@@ -80,7 +83,7 @@ window.FlashcardController = (() => {
         audioBtn = document.createElement('button');
         audioBtn.className = 'fc-audio-btn';
         audioBtn.setAttribute('aria-label', 'Play pronunciation');
-        audioBtn.innerHTML = '🔊 <span>Play</span>';
+        audioBtn.innerHTML = ICON_PLAY + '<span>Play</span>';
         audioBtn.addEventListener('click', toggleAudio);
     }
 
