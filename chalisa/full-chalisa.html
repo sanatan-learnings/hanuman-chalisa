@@ -303,19 +303,29 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     box-sizing: border-box;
 }
 
+.flashcard-mode .verse-compact-layout {
+    display: block;
+    padding: 12px;
+}
+
 .flashcard-mode .verse-thumbnail {
-    width: 60px;
-    height: 60px;
+    float: left;
+    width: 56px;
+    height: 56px;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-    flex-shrink: 0;
+    margin-right: 10px;
+    margin-bottom: 6px;
 }
 
-.flashcard-mode .verse-compact-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+.flashcard-mode .verse-content {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.flashcard-mode .verse-text-grid {
+    clear: both;
 }
 
 .flashcard-mode .meanings-section {
