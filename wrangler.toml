@@ -9,10 +9,17 @@ compatibility_date = "2026-01-29"
 # Workers configuration
 workers_dev = true
 
+# R2 bucket binding for large embedding files (Puranic sources)
+# Public URL: https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev
+[[r2_buckets]]
+bucket_name = "hanuman-gpt-embeddings"
+binding = "EMBEDDINGS_BUCKET"
+
 # Non-secret runtime variables
 [vars]
 AWS_REGION = "us-east-1"
 BEDROCK_EMBEDDING_MODEL = "cohere.embed-multilingual-v3"
+PURANIC_EMBEDDINGS_BASE_URL = "https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev"
 
 # Secrets (set via `wrangler secret put`, not in this file):
 # OPENAI_API_KEY      -> OpenAI chat + OpenAI embeddings

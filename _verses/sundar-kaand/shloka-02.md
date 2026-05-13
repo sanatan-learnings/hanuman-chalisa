@@ -8,7 +8,10 @@ devanagari: 'नान्या स्पृहा रघुपते हृद�
   भक्तिं प्रयच्छ रघुपुङ्गव निर्भरां मे
 
   कामादिदोषरहितं कुरु मानसं च'
-transliteration: kāmādidōṣarahitaṁ kuru mānasaṁ ca
+transliteration: "nānyā spṛhā raghupate hṛdaye'smadīye\n\
+  satyaṁ vadāmi ca bhavānakhilāntarātmā\n\
+  bhaktiṁ prayaccha raghupuṅgava nirbharāṁ me\n\
+  kāmādidoṣarahitaṁ kuru mānasaṁ ca"
 meaning: The verse is a prayer to Lord Rama (Raghupate and Raghupungava), asking for
   devotion (Bhaktim) and a mind (Manasam) free from faults like desire (Kamadidosharahitam).
   The speaker declares truthfully (Satyam vadami) that there is no other desire (Nanya

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/hanuman.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
 
     <!-- Favicons -->
@@ -57,22 +57,18 @@
                     <span data-lang="en">{{ t_en.footer.view_github }}</span>
                     <span data-lang="hi">{{ t_hi.footer.view_github }}</span>
                 </a>
-                |
                 <a href="{{ '/docs/user-guide' | relative_url }}?lang={{ lang }}">
                     <span data-lang="en">{{ t_en.footer.usage_guide }}</span>
                     <span data-lang="hi">{{ t_hi.footer.usage_guide }}</span>
                 </a>
-                |
                 <a href="{{ '/guidance' | relative_url }}?lang={{ lang }}">
                     <span data-lang="en">{{ t_en.guidance.title }}</span>
                     <span data-lang="hi">{{ t_hi.guidance.title }}</span>
                 </a>
-                |
                 <a href="{{ '/quiz' | relative_url }}?lang={{ lang }}">
                     <span data-lang="en">Hanuman Quiz</span>
                     <span data-lang="hi">हनुमान प्रश्नोत्तरी</span>
                 </a>
-                |
                 <a href="https://github.com/sanatan-learnings/hanuman-chalisa/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">
                     <span data-lang="en">{{ t_en.footer.contribute }}</span>
                     <span data-lang="hi">{{ t_hi.footer.contribute }}</span>
@@ -81,8 +77,37 @@
         </div>
     </footer>
 
+    <nav class="mobile-bottom-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url == '/' %} active{% endif %}">
+            <span class="bottom-nav-icon">🏠</span>
+            <span class="bottom-nav-label" data-lang="en">Home</span>
+            <span class="bottom-nav-label" data-lang="hi">होम</span>
+        </a>
+        <a href="{{ '/chalisa/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/chalisa' %} active{% endif %}">
+            <span class="bottom-nav-icon">📜</span>
+            <span class="bottom-nav-label" data-lang="en">Chalisa</span>
+            <span class="bottom-nav-label" data-lang="hi">चालीसा</span>
+        </a>
+        <a href="{{ '/sundar-kaand/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/sundar-kaand' %} active{% endif %}">
+            <span class="bottom-nav-icon">🌿</span>
+            <span class="bottom-nav-label" data-lang="en">Sundar Kaand</span>
+            <span class="bottom-nav-label" data-lang="hi">सुंदर काण्ड</span>
+        </a>
+        <a href="{{ '/library/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/library' or page.url contains '/bajrang-baan' or page.url contains '/sankat-mochan' %} active{% endif %}">
+            <span class="bottom-nav-icon">📚</span>
+            <span class="bottom-nav-label" data-lang="en">Library</span>
+            <span class="bottom-nav-label" data-lang="hi">पुस्तकालय</span>
+        </a>
+        <a href="{{ '/guidance/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/guidance' %} active{% endif %}">
+            <span class="bottom-nav-icon">💬</span>
+            <span class="bottom-nav-label" data-lang="en">Ask</span>
+            <span class="bottom-nav-label" data-lang="hi">पूछें</span>
+        </a>
+    </nav>
+
     <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/flashcard.js' | relative_url }}"></script>
 </body>
 </html>

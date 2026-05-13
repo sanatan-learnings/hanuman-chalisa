@@ -1914,9 +1914,9 @@ footer .footer-links a:hover {
     justify-content: center;
     text-decoration: none;
     color: #888;
-    font-size: 0.62rem;
+    font-size: 0.58rem;
     gap: 2px;
-    padding: 6px 4px;
+    padding: 6px 2px;
     transition: color 0.2s;
     min-height: 44px;
     overflow: hidden;
@@ -2005,6 +2005,33 @@ footer .footer-links a:hover {
     font-weight: 600;
     color: #ff6b35;
     font-size: 1em;
+}
+
+.fc-audio-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: white;
+    border: 1px solid #ffd5c0;
+    border-radius: 20px;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #ff6b35;
+    font-weight: 500;
+    margin: 10px auto 0;
+    width: fit-content;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.fc-audio-btn:hover {
+    background: #fff0e8;
+    border-color: #ff6b35;
+}
+
+.fc-audio-btn.playing {
+    background: #fff0e8;
+    border-color: #ff6b35;
 }
 
 .fc-progress-text {
@@ -2157,6 +2184,10 @@ html.flashcard-active {
     padding: 6px 8px;
     line-height: 1.6;
 }
+
+/* Hide translation and meanings by default on full-text pages; JS toggles visibility */
+.translation-section { display: none; }
+.meanings-section { display: none; }
 
 .flashcard-mode .meanings-section {
     display: none !important;

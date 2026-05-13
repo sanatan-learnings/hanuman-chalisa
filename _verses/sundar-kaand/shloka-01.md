@@ -15,7 +15,10 @@ devanagari: 'शान्तं शाश्वतमप्रमेयमनघ
   रामाख्यं जगदीश्वरं सुरगुरुं मायामनुष्यं हरिं
 
   वन्देऽहं करुणाकरं रघुवरं भूपालचूड़ामणिम्'
-transliteration: vande'haṁ karuṇākaraṁ raghuvaraṁ bhūpālacūḍāmaṇim
+transliteration: "śāntaṁ śāśvatamaprameya-managhaṁ nirvāṇaśāntipradaṁ\n\
+  brahmāśambhu-phaṇīndra-sevyamaniśaṁ vedāntavedyaṁ vibhum\n\
+  rāmākhyaṁ jagadīśvaraṁ suraguruṁ māyāmanuṣyaṁ harim\n\
+  vande'haṁ karuṇākaraṁ raghuvaraṁ bhūpālacūḍāmaṇim"
 phonetic_notes:
 - word: शान्तं
   phonetic: sha-an-tam

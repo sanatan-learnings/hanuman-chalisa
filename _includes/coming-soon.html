@@ -1,0 +1,30 @@
+<section class="coming-soon-section">
+    <h2><span data-lang="en">Coming Soon</span><span data-lang="hi">शीघ्र आ रहा है</span></h2>
+    <p class="section-subtitle">
+        <span data-lang="en">More devotional texts in preparation</span>
+        <span data-lang="hi">और भक्ति ग्रंथ तैयारी में हैं</span>
+    </p>
+    <div class="coming-soon-grid">
+        {% for collection_data in site.data.collections %}
+            {% assign coll_key = collection_data[0] %}
+            {% assign coll = collection_data[1] %}
+            {% unless coll.enabled %}
+                <div class="coming-soon-card">
+                    <span class="collection-icon">{{ coll.icon }}</span>
+                    <h4>
+                        <span data-lang="en">{{ coll.name_en }}</span>
+                        <span data-lang="hi">{{ coll.name_hi }}</span>
+                    </h4>
+                    <p class="coming-soon-author">
+                        <span data-lang="en">{{ coll.author_en }}</span>
+                        <span data-lang="hi">{{ coll.author_hi }}</span>
+                    </p>
+                    <p class="coming-soon-description">
+                        <span data-lang="en">{{ coll.description_en }}</span>
+                        <span data-lang="hi">{{ coll.description_hi }}</span>
+                    </p>
+                </div>
+            {% endunless %}
+        {% endfor %}
+    </div>
+</section>

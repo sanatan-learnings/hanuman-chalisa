@@ -8,7 +8,10 @@ devanagari: 'अतुलितबलधामं हेमशैलाभदे
   सकलगुणनिधानं वानराणामधीशं
 
   रघुपतिप्रियभक्तं वातजातं नमामि'
-transliteration: raghupatipriyabhaktaṁ vātajātaṁ namāmi
+transliteration: "atulitabaladdhāmaṁ hemaśailābhadehaṁ\n\
+  danujavanaprakṛśānuṁ jñānināmagraṇyam\n\
+  sakalaguṇaniddhānaṁ vānarāṇāmadhīśaṁ\n\
+  raghupatipriyabhaktaṁ vātajātaṁ namāmi"
 meaning: This verse is a salutation to Lord Hanuman, who is described as having incomparable
   strength, a body that shines like a golden mountain, and as the destroyer of evil
   forces. He is the foremost among the wise, the abode of all virtues, the lord of

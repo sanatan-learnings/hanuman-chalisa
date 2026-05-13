@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Library"
+description: "Browse all sacred Hindu texts — Hanuman Chalisa, Sundar Kaand, Bajrang Baan, and Sankat Mochan Hanumanashtak"
+---
+
+<div class="library-page">
+    <h1 class="library-heading">
+        <span data-lang="en">Sacred Texts</span>
+        <span data-lang="hi">पवित्र ग्रंथ</span>
+    </h1>
+    <p class="library-subtitle">
+        <span data-lang="en">Browse all four collections</span>
+        <span data-lang="hi">चारों संग्रह देखें</span>
+    </p>
+
+    {% include collections-grid.html %}
+
+    {% include coming-soon.html %}
+</div>
+
+<style>
+.library-page {
+    padding: 16px 0;
+}
+.library-heading {
+    font-size: 1.4em;
+    color: #ff6b35;
+    margin-bottom: 4px;
+}
+.library-subtitle {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+</style>
