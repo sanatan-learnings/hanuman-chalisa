@@ -13,7 +13,7 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
 
         <div class="view-options">
             <label data-lang="en"><input type="checkbox" id="toggle-transliteration" checked> <span data-lang="en">{{ t_en.full_chalisa.show_transliteration }}</span></label>
-            <label><input type="checkbox" id="toggle-translation" checked> <span data-lang="en">{{ t_en.full_chalisa.show_translation }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_translation }}</span></label>
+            <label><input type="checkbox" id="toggle-translation"> <span data-lang="en">{{ t_en.full_chalisa.show_translation }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_translation }}</span></label>
             <label><input type="checkbox" id="toggle-meanings"> <span data-lang="en">{{ t_en.full_chalisa.show_meanings }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_meanings }}</span></label>
             <label class="fc-toggle-label" title="One verse at a time with swipe navigation">
                 <input type="checkbox" id="toggle-flashcard"> <span data-lang="en">Flashcard View</span>
@@ -416,6 +416,10 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     background: #fff5f0;
 }
 
+.flashcard-mode .verse-link-icon {
+    display: none;
+}
+
 .verse-text-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -430,6 +434,10 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
 .text-column-wide {
     grid-column: 1 / -1;
     min-width: 0;
+}
+
+.translation-section {
+    display: none;
 }
 
 .devanagari-text {
@@ -732,7 +740,7 @@ const FlashcardController = (() => {
         const dx = e.changedTouches[0].clientX - touchStartX;
         const dy = e.changedTouches[0].clientY - touchStartY;
         if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
-            if (dx < 0) goNext();
+            if (dx > 0) goNext();
             else goPrev();
         }
         touchStartX = null;
@@ -749,6 +757,13 @@ const FlashcardController = (() => {
     function handleResize() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(syncHeight, 150);
+    }
+
+    function handlePopState(e) {
+        if (!isActive) return;
+        // Intercept browser back gesture — navigate within cards instead of leaving
+        history.pushState(null, '', window.location.href);
+        if (currentIndex > 0) showCard(currentIndex - 1);
     }
 
     function activate() {
@@ -769,7 +784,10 @@ const FlashcardController = (() => {
         versesContent.addEventListener('touchmove', handleTouchMove, { passive: false });
         versesContent.addEventListener('touchend', handleTouchEnd, { passive: true });
         window.addEventListener('resize', handleResize);
+        window.addEventListener('popstate', handlePopState);
         document.body.style.overflowX = 'hidden';
+        // Push a history entry so the browser back gesture fires popstate
+        history.pushState(null, '', window.location.href);
 
         showCard(currentIndex);
     }
@@ -792,6 +810,7 @@ const FlashcardController = (() => {
         versesContent.removeEventListener('touchmove', handleTouchMove);
         versesContent.removeEventListener('touchend', handleTouchEnd);
         window.removeEventListener('resize', handleResize);
+        window.removeEventListener('popstate', handlePopState);
         document.body.style.overflowX = '';
 
         // Clean URL
@@ -809,7 +828,7 @@ const FlashcardController = (() => {
     function init() {
         const urlParams = new URLSearchParams(window.location.search);
         const cardParam = urlParams.get('card');
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
         // Determine starting card index before activating
         if (cardParam) {
