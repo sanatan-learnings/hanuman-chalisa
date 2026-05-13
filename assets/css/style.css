@@ -889,13 +889,25 @@ footer {
 footer .footer-links {
     margin-top: 1rem;
     font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
 }
 
 footer .footer-links a {
     color: #495057;
     text-decoration: none;
-    margin: 0 0.5rem;
+    padding: 0 0.5rem;
     transition: color 0.2s;
+}
+
+footer .footer-links a + a::before {
+    content: "|";
+    margin-right: 0.5rem;
+    color: #aaa;
+    pointer-events: none;
 }
 
 footer .footer-links a:hover {
@@ -904,21 +916,18 @@ footer .footer-links a:hover {
 
 @media (max-width: 768px) {
     footer .footer-links {
-        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
+        gap: 0;
     }
 
     footer .footer-links a {
-        margin: 0;
         min-height: 44px;
         display: flex;
         align-items: center;
+        padding: 0;
     }
 
-    /* Hide pipe separators on mobile */
-    footer .footer-links > *:not(a) {
+    footer .footer-links a + a::before {
         display: none;
     }
 }
