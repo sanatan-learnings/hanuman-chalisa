@@ -15,14 +15,36 @@ description: "Read the complete Sankat Mochan Hanumanashtak with all 8 padas on 
             <label><input type="checkbox" id="toggle-transliteration" checked> <span data-lang="en">{{ t_en.full_chalisa.show_transliteration }}</span></label>
             <label><input type="checkbox" id="toggle-translation" checked> <span data-lang="en">{{ t_en.full_chalisa.show_translation }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_translation }}</span></label>
             <label><input type="checkbox" id="toggle-meanings"> <span data-lang="en">{{ t_en.full_chalisa.show_meanings }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_meanings }}</span></label>
+            <label class="fc-toggle-label" title="One verse at a time with swipe navigation">
+                <input type="checkbox" id="toggle-flashcard"> <span data-lang="en">Flashcard View</span>
+            </label>
             <button onclick="window.print()" class="print-all-button">🖨️ <span data-lang="en">{{ t_en.full_chalisa.print_all }}</span><span data-lang="hi">{{ t_hi.full_chalisa.print_all }}</span></button>
+        </div>
+
+        <div class="flashcard-nav" aria-label="Flashcard navigation">
+            <div class="fc-header-row">
+                <span class="fc-verse-label"></span>
+                <span class="fc-progress-text"></span>
+            </div>
+            <div class="fc-progress-bar" role="progressbar" aria-valuemin="1">
+                <div class="fc-progress-fill"></div>
+            </div>
         </div>
     </div>
 
     <div class="verses-content">
         {% assign verses = site.verses | where: "collection_key", "sankat-mochan-hanumanashtak" | sort: "verse_number" %}
+        {% assign total_verses = verses | size %}
         {% for verse in verses %}
-        <article class="verse-item" id="{{ verse.url | split: '/' | last }}">
+        {% assign url_parts = verse.url | split: '/' %}
+        {% assign verse_id = url_parts[2] %}
+        {% assign verse_label = verse.title_en | default: verse.title %}
+        <article class="verse-item"
+                 id="{{ verse_id }}"
+                 data-verse-id="{{ verse_id }}"
+                 data-verse-label="{{ verse_label }}"
+                 data-verse-seq="{{ forloop.index }}"
+                 data-verse-total="{{ total_verses }}">
             <div class="verse-compact-layout">
                 {% if verse.image %}
                 <div class="verse-thumbnail">
@@ -69,6 +91,11 @@ description: "Read the complete Sankat Mochan Hanumanashtak with all 8 padas on 
             </div>
         </article>
         {% endfor %}
+    </div>
+
+    <div class="fc-nav-buttons" aria-label="Card navigation buttons">
+        <button class="fc-prev" onclick="FlashcardController.goPrev()" aria-label="Previous verse">← Previous</button>
+        <button class="fc-next" onclick="FlashcardController.goNext()" aria-label="Next verse">Next →</button>
     </div>
 
     <div class="full-chalisa-footer">
@@ -265,6 +292,8 @@ description: "Read the complete Sankat Mochan Hanumanashtak with all 8 padas on 
 }
 .full-chalisa-footer p { margin: 10px 0; }
 @media (max-width: 768px) {
+    .full-chalisa-container { padding: 10px; }
+    .full-chalisa-header h1 { font-size: 1.3em; word-break: break-word; }
     .verse-compact-layout { grid-template-columns: 1fr; gap: 8px; padding: 10px; }
     .verse-thumbnail { width: 100%; height: 150px; max-width: 250px; margin: 0 auto; }
     .verse-text-grid { grid-template-columns: 1fr; gap: 8px; }

@@ -15,14 +15,36 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
             <label><input type="checkbox" id="toggle-transliteration" checked> <span data-lang="en">{{ t_en.full_chalisa.show_transliteration }}</span></label>
             <label><input type="checkbox" id="toggle-translation" checked> <span data-lang="en">{{ t_en.full_chalisa.show_translation }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_translation }}</span></label>
             <label><input type="checkbox" id="toggle-meanings"> <span data-lang="en">{{ t_en.full_chalisa.show_meanings }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_meanings }}</span></label>
+            <label class="fc-toggle-label" title="One verse at a time with swipe navigation">
+                <input type="checkbox" id="toggle-flashcard"> <span data-lang="en">Flashcard View</span>
+            </label>
             <button onclick="window.print()" class="print-all-button">🖨️ <span data-lang="en">{{ t_en.full_chalisa.print_all }}</span><span data-lang="hi">{{ t_hi.full_chalisa.print_all }}</span></button>
+        </div>
+
+        <div class="flashcard-nav" aria-label="Flashcard navigation">
+            <div class="fc-header-row">
+                <span class="fc-verse-label"></span>
+                <span class="fc-progress-text"></span>
+            </div>
+            <div class="fc-progress-bar" role="progressbar" aria-valuemin="1">
+                <div class="fc-progress-fill"></div>
+            </div>
         </div>
     </div>
 
     <div class="verses-content">
         {% assign verses = site.verses | where: "collection_key", "bajrang-baan" | sort: "verse_number" %}
+        {% assign total_verses = verses | size %}
         {% for verse in verses %}
-        <article class="verse-item" id="{{ verse.url | split: '/' | last }}">
+        {% assign url_parts = verse.url | split: '/' %}
+        {% assign verse_id = url_parts[2] %}
+        {% assign verse_label = verse.title_en | default: verse.title %}
+        <article class="verse-item"
+                 id="{{ verse_id }}"
+                 data-verse-id="{{ verse_id }}"
+                 data-verse-label="{{ verse_label }}"
+                 data-verse-seq="{{ forloop.index }}"
+                 data-verse-total="{{ total_verses }}">
             <div class="verse-compact-layout">
                 {% if verse.image %}
                 <div class="verse-thumbnail">
@@ -71,6 +93,11 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
         {% endfor %}
     </div>
 
+    <div class="fc-nav-buttons" aria-label="Card navigation buttons">
+        <button class="fc-prev" onclick="FlashcardController.goPrev()" aria-label="Previous verse">← Previous</button>
+        <button class="fc-next" onclick="FlashcardController.goNext()" aria-label="Next verse">Next →</button>
+    </div>
+
     <div class="full-chalisa-footer">
         <p><a href="{{ '/bajrang-baan' | relative_url }}">← <span data-lang="en">{{ t_en.labels.back_to_list }}</span><span data-lang="hi">{{ t_hi.labels.back_to_list }}</span></a></p>
         <p><em><span data-lang="en">{{ t_en.footer.blessing }}</span><span data-lang="hi">{{ t_hi.footer.blessing }}</span></em></p>
@@ -83,26 +110,22 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     margin: 0 auto;
     padding: 20px;
 }
-
 .full-chalisa-header {
     text-align: center;
     margin-bottom: 24px;
     padding-bottom: 16px;
     border-bottom: 3px solid #ff6b35;
 }
-
 .full-chalisa-header h1 {
     color: #ff6b35;
     margin-bottom: 8px;
     font-size: 1.8em;
 }
-
 .full-chalisa-header .subtitle {
     color: #666;
     font-size: 1em;
     margin-bottom: 16px;
 }
-
 .view-options {
     display: flex;
     justify-content: center;
@@ -111,7 +134,6 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     flex-wrap: wrap;
     margin-top: 20px;
 }
-
 .view-options label {
     display: flex;
     align-items: center;
@@ -119,11 +141,7 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     cursor: pointer;
     user-select: none;
 }
-
-.view-options input[type="checkbox"] {
-    cursor: pointer;
-}
-
+.view-options input[type="checkbox"] { cursor: pointer; }
 .print-all-button {
     background: #ff6b35;
     color: white;
@@ -133,15 +151,8 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     cursor: pointer;
     font-size: 14px;
 }
-
-.print-all-button:hover {
-    background: #e55a2b;
-}
-
-.verses-content {
-    margin: 0;
-}
-
+.print-all-button:hover { background: #e55a2b; }
+.verses-content { margin: 0; }
 .verse-item {
     margin-bottom: 24px;
     scroll-margin-top: 100px;
@@ -152,18 +163,13 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     transition: box-shadow 0.2s;
 }
-
-.verse-item:hover {
-    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.1);
-}
-
+.verse-item:hover { box-shadow: 0 2px 8px rgba(255, 107, 53, 0.1); }
 .verse-compact-layout {
     display: grid;
     grid-template-columns: 80px 1fr;
     gap: 12px;
     padding: 12px;
 }
-
 .verse-thumbnail {
     width: 80px;
     height: 80px;
@@ -171,18 +177,13 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
-
 .verse-thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center top;
 }
-
-.verse-content {
-    min-width: 0;
-}
-
+.verse-content { min-width: 0; }
 .verse-title-row {
     display: flex;
     justify-content: space-between;
@@ -191,14 +192,12 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     padding-bottom: 8px;
     border-bottom: 2px solid #ff6b35;
 }
-
 .verse-title-row h2 {
     margin: 0;
     color: #333;
     font-size: 1.1em;
     font-weight: 600;
 }
-
 .verse-link-icon {
     color: #ff6b35;
     text-decoration: none;
@@ -208,26 +207,15 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     border-radius: 4px;
     transition: background 0.2s;
 }
-
-.verse-link-icon:hover {
-    background: #fff5f0;
-}
-
+.verse-link-icon:hover { background: #fff5f0; }
 .verse-text-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 8px;
 }
-
-.text-column {
-    min-width: 0;
-}
-
-.text-column-wide {
-    grid-column: 1 / -1;
-}
-
+.text-column { min-width: 0; }
+.text-column-wide { grid-column: 1 / -1; }
 .devanagari-text {
     font-size: 1.2em;
     font-weight: 500;
@@ -239,7 +227,6 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     word-wrap: break-word;
     margin: 0;
 }
-
 .transliteration-text {
     font-size: 1em;
     font-style: italic;
@@ -251,7 +238,6 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     word-wrap: break-word;
     margin: 0;
 }
-
 .literal-translation {
     font-size: 0.95em;
     line-height: 1.5;
@@ -261,18 +247,13 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     border-radius: 3px;
     margin: 0;
 }
-
-.meanings-section {
-    margin-top: 8px;
-}
-
+.meanings-section { margin-top: 8px; }
 .meanings-details {
     background: #fafafa;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     padding: 8px;
 }
-
 .meanings-details summary {
     cursor: pointer;
     font-weight: 600;
@@ -283,147 +264,62 @@ description: "Read the complete Bajrang Baan with all verses on a single page wi
     user-select: none;
     list-style: none;
 }
-
-.meanings-details summary::-webkit-details-marker {
-    display: none;
-}
-
+.meanings-details summary::-webkit-details-marker { display: none; }
 .meanings-details summary::before {
     content: "▶ ";
     margin-right: 5px;
     transition: transform 0.2s;
     display: inline-block;
 }
-
-.meanings-details[open] summary::before {
-    transform: rotate(90deg);
-}
-
-.meanings-details summary:hover {
-    color: #ff6b35;
-}
-
+.meanings-details[open] summary::before { transform: rotate(90deg); }
+.meanings-details summary:hover { color: #ff6b35; }
 .word-meanings {
     list-style: none;
     padding: 8px 0 0 0;
     margin: 0;
 }
-
 .word-meanings li {
     padding: 4px 0;
     font-size: 0.9em;
     border-bottom: 1px solid #eee;
 }
-
-.word-meanings li:last-child {
-    border-bottom: none;
-}
-
+.word-meanings li:last-child { border-bottom: none; }
 .full-chalisa-footer {
     text-align: center;
     margin-top: 60px;
     padding-top: 30px;
     border-top: 3px solid #ff6b35;
 }
-
-.full-chalisa-footer p {
-    margin: 10px 0;
-}
-
+.full-chalisa-footer p { margin: 10px 0; }
 @media (max-width: 768px) {
-    .verse-compact-layout {
-        grid-template-columns: 1fr;
-        gap: 8px;
-        padding: 10px;
-    }
-
-    .verse-thumbnail {
-        width: 100%;
-        height: 150px;
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
-    .verse-text-grid {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .verse-title-row h2 {
-        font-size: 1em;
-    }
-
-    .view-options {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .devanagari-text {
-        font-size: 1.1em;
-    }
-
-    .transliteration-text {
-        font-size: 0.95em;
-    }
-
-    .literal-translation {
-        font-size: 0.9em;
-    }
+    .full-chalisa-container { padding: 10px; }
+    .full-chalisa-header h1 { font-size: 1.3em; word-break: break-word; }
+    .verse-compact-layout { grid-template-columns: 1fr; gap: 8px; padding: 10px; }
+    .verse-thumbnail { width: 100%; height: 150px; max-width: 250px; margin: 0 auto; }
+    .verse-text-grid { grid-template-columns: 1fr; gap: 8px; }
+    .verse-title-row h2 { font-size: 1em; }
+    .view-options { flex-direction: column; gap: 10px; }
+    .devanagari-text { font-size: 1.1em; }
+    .transliteration-text { font-size: 0.95em; }
+    .literal-translation { font-size: 0.9em; }
 }
-
 @media print {
-    .view-options,
-    .verse-link-icon,
-    .print-all-button,
-    .verse-thumbnail {
-        display: none !important;
-    }
-
-    .verse-item {
-        page-break-inside: avoid;
-        border: 1px solid #000;
-        margin-bottom: 15px;
-        box-shadow: none;
-    }
-
-    .verse-compact-layout {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .verse-text-grid {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
-    .devanagari-text,
-    .transliteration-text,
-    .literal-translation {
-        background: none !important;
-        border-left: 2px solid #000 !important;
-    }
+    .view-options, .verse-link-icon, .print-all-button, .verse-thumbnail { display: none !important; }
+    .verse-item { page-break-inside: avoid; border: 1px solid #000; margin-bottom: 15px; box-shadow: none; }
+    .verse-compact-layout { grid-template-columns: 1fr; padding: 10px; }
+    .verse-text-grid { grid-template-columns: 1fr; gap: 5px; }
+    .devanagari-text, .transliteration-text, .literal-translation { background: none !important; border-left: 2px solid #000 !important; }
 }
 </style>
 
 <script>
 document.getElementById('toggle-transliteration').addEventListener('change', function(e) {
-    const sections = document.querySelectorAll('.transliteration-section');
-    sections.forEach(section => {
-        section.style.display = e.target.checked ? 'block' : 'none';
-    });
+    document.querySelectorAll('.transliteration-section').forEach(s => s.style.display = e.target.checked ? 'block' : 'none');
 });
-
 document.getElementById('toggle-translation').addEventListener('change', function(e) {
-    const sections = document.querySelectorAll('.translation-section');
-    sections.forEach(section => {
-        section.style.display = e.target.checked ? 'block' : 'none';
-    });
+    document.querySelectorAll('.translation-section').forEach(s => s.style.display = e.target.checked ? 'block' : 'none');
 });
-
 document.getElementById('toggle-meanings').addEventListener('change', function(e) {
-    const sections = document.querySelectorAll('.meanings-section');
-    sections.forEach(section => {
-        section.style.display = e.target.checked ? 'block' : 'none';
-    });
+    document.querySelectorAll('.meanings-section').forEach(s => s.style.display = e.target.checked ? 'block' : 'none');
 });
 </script>

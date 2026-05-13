@@ -26,7 +26,7 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
                 <span class="fc-verse-label"></span>
                 <span class="fc-progress-text"></span>
             </div>
-            <div class="fc-progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="43">
+            <div class="fc-progress-bar" role="progressbar" aria-valuemin="1">
                 <div class="fc-progress-fill"></div>
             </div>
         </div>
@@ -62,7 +62,7 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
         {% assign verse_seq = verse_seq | plus: 1 %}
         {% assign url_parts = verse.url | split: '/' %}
         {% assign verse_id = url_parts[2] %}
-        {% assign verse_label = verse.title_en | default: verse.title | split: ':' | first %}
+        {% assign verse_label = verse.title_en | default: verse.title %}
         <article class="verse-item"
                  id="{{ verse_id }}"
                  data-verse-id="{{ verse_id }}"
@@ -175,14 +175,6 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     cursor: pointer;
 }
 
-.fc-toggle-label {
-    border: 1px solid #ff6b35;
-    border-radius: 4px;
-    padding: 4px 10px;
-    color: #ff6b35;
-    font-weight: 500;
-}
-
 .print-all-button {
     background: #ff6b35;
     color: white;
@@ -197,220 +189,6 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     background: #e55a2b;
 }
 
-/* Flashcard navigation bar (hidden in scroll mode) */
-.flashcard-nav {
-    display: none;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 16px;
-    padding: 12px 16px;
-    background: #fff8f5;
-    border: 1px solid #ffd5c0;
-    border-radius: 8px;
-}
-
-.fc-header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fc-verse-label {
-    font-weight: 600;
-    color: #ff6b35;
-    font-size: 1em;
-}
-
-.fc-progress-text {
-    color: #888;
-    font-size: 0.9em;
-    font-weight: 500;
-}
-
-.fc-progress-bar {
-    height: 4px;
-    background: #f0e0d8;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.fc-progress-fill {
-    height: 100%;
-    background: #ff6b35;
-    border-radius: 2px;
-    transition: width 0.3s ease;
-    width: 0%;
-}
-
-/* Prev/Next nav buttons (hidden in scroll mode) */
-.fc-nav-buttons {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 16px;
-    gap: 12px;
-}
-
-.fc-prev,
-.fc-next {
-    background: #ff6b35;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-    transition: background 0.2s, opacity 0.2s;
-    flex: 1;
-    max-width: 160px;
-}
-
-.fc-prev:hover,
-.fc-next:hover {
-    background: #e55a2b;
-}
-
-.fc-prev:disabled,
-.fc-next:disabled {
-    opacity: 0.35;
-    cursor: default;
-    background: #ff6b35;
-}
-
-/* ── Flashcard mode layout ── */
-.flashcard-mode .verses-content {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-}
-
-.flashcard-mode .fc-strip {
-    display: flex;
-    align-items: flex-start;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
-    touch-action: pan-y;
-    width: 100%;
-}
-
-.flashcard-mode .fc-strip .verse-item {
-    min-width: 100%;
-    width: 100%;
-    flex-shrink: 0;
-    margin-bottom: 0;
-    box-sizing: border-box;
-}
-
-/* Strip flashcard edge-to-edge: remove horizontal padding so card fills viewport */
-.full-chalisa-container.flashcard-mode {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-html.flashcard-active main.container,
-html.flashcard-active .full-chalisa-container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-body.flashcard-active {
-    overflow-x: hidden;
-}
-
-html.flashcard-active {
-    overflow-x: hidden;
-}
-
-.flashcard-mode .verse-compact-layout {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 8px;
-}
-
-.flashcard-mode .verse-thumbnail {
-    float: none;
-    width: 72px;
-    height: 72px;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-    margin: 0 auto;
-    flex-shrink: 0;
-}
-
-.flashcard-mode .verse-content {
-    min-width: 0;
-    width: 100%;
-}
-
-.flashcard-mode .verse-title-row {
-    margin-bottom: 6px;
-    padding-bottom: 6px;
-}
-
-.flashcard-mode .verse-title-row h2 {
-    font-size: 1em;
-    white-space: normal;
-    overflow: visible;
-}
-
-.flashcard-mode .verse-text-grid {
-    clear: none;
-    grid-template-columns: 1fr;
-    gap: 6px;
-}
-
-.flashcard-mode .devanagari-text {
-    font-size: 1.05em;
-    padding: 6px 8px;
-    line-height: 1.7;
-}
-
-.flashcard-mode .transliteration-text {
-    font-size: 0.9em;
-    padding: 6px 8px;
-    line-height: 1.6;
-}
-
-.flashcard-mode .meanings-section {
-    display: none !important;
-}
-
-/* In flashcard mode, collapse the header to just the progress nav */
-.flashcard-mode .full-chalisa-header {
-    margin-bottom: 8px;
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-.flashcard-mode .full-chalisa-header h1,
-.flashcard-mode .full-chalisa-header .subtitle {
-    display: none;
-}
-
-.flashcard-mode .view-options {
-    margin-top: 0;
-    gap: 8px;
-    justify-content: flex-end;
-}
-
-/* Hide everything in view-options except the flashcard toggle */
-.flashcard-mode .view-options > *:not(.fc-toggle-label) {
-    display: none;
-}
-
-.flashcard-mode .fc-nav-buttons {
-    display: flex;
-}
-
-.flashcard-mode .flashcard-nav {
-    display: flex;
-}
-
-/* ── Existing scroll-view styles ── */
 .verses-content {
     margin: 0;
 }
@@ -484,10 +262,6 @@ html.flashcard-active {
 
 .verse-link-icon:hover {
     background: #fff5f0;
-}
-
-.flashcard-mode .verse-link-icon {
-    display: none;
 }
 
 .verse-text-grid {
@@ -618,7 +392,6 @@ html.flashcard-active {
     margin: 10px 0;
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
     .full-chalisa-container {
         padding: 10px;
@@ -644,13 +417,6 @@ html.flashcard-active {
         height: 150px;
         max-width: 250px;
         margin: 0 auto;
-    }
-
-    /* Keep flashcard thumbnail compact in mobile media query */
-    .flashcard-mode .verse-thumbnail {
-        width: 72px;
-        height: 72px;
-        max-width: 72px;
     }
 
     .verse-text-grid {
@@ -680,30 +446,12 @@ html.flashcard-active {
     }
 }
 
-/* Print styles */
 @media print {
     .view-options,
     .verse-link-icon,
     .print-all-button,
-    .verse-thumbnail,
-    .fc-nav-buttons,
-    .flashcard-nav {
+    .verse-thumbnail {
         display: none !important;
-    }
-
-    /* Disable flashcard layout for print so all verses render */
-    .flashcard-mode .fc-strip {
-        display: block !important;
-        transform: none !important;
-    }
-
-    .flashcard-mode .fc-strip .verse-item {
-        min-width: auto !important;
-        display: block !important;
-    }
-
-    .flashcard-mode .verses-content {
-        overflow: visible !important;
     }
 
     .verse-item {
@@ -733,7 +481,6 @@ html.flashcard-active {
 </style>
 
 <script>
-// Toggle sections visibility
 document.getElementById('toggle-transliteration').addEventListener('change', function(e) {
     const sections = document.querySelectorAll('.transliteration-section');
     sections.forEach(section => {
@@ -754,204 +501,4 @@ document.getElementById('toggle-meanings').addEventListener('change', function(e
         section.style.display = e.target.checked ? 'block' : 'none';
     });
 });
-
-// Flashcard controller
-const FlashcardController = (() => {
-    let cards = [];
-    let currentIndex = 0;
-    let isActive = false;
-    let versesContent = null;
-    let strip = null;
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let resizeTimer = null;
-
-    function updateUI() {
-        const total = cards.length;
-        const pos = currentIndex + 1;
-
-        const labelEl = document.querySelector('.fc-verse-label');
-        const progressText = document.querySelector('.fc-progress-text');
-        const progressFill = document.querySelector('.fc-progress-fill');
-        const progressBar = document.querySelector('.fc-progress-bar');
-        const prevBtn = document.querySelector('.fc-prev');
-        const nextBtn = document.querySelector('.fc-next');
-
-        if (labelEl) labelEl.textContent = cards[currentIndex].dataset.verseLabel || '';
-        if (progressText) progressText.textContent = pos + ' / ' + total;
-        if (progressFill) progressFill.style.width = ((pos / total) * 100) + '%';
-        if (progressBar) {
-            progressBar.setAttribute('aria-valuenow', pos);
-            progressBar.setAttribute('aria-valuetext', pos + ' of ' + total);
-        }
-        if (prevBtn) prevBtn.disabled = currentIndex === 0;
-        if (nextBtn) nextBtn.disabled = currentIndex === cards.length - 1;
-
-        // Update URL and session
-        const verseId = cards[currentIndex].dataset.verseId;
-        if (verseId) {
-            history.replaceState(null, '', '?card=' + verseId);
-        }
-        try { sessionStorage.setItem('chalisa-card-index', currentIndex); } catch (e) {}
-    }
-
-    function syncHeight() {
-        if (!strip || !versesContent) return;
-        // Let the strip set natural height; container clips width only
-        versesContent.style.height = strip.scrollHeight + 'px';
-    }
-
-    function showCard(index) {
-        currentIndex = Math.max(0, Math.min(index, cards.length - 1));
-        if (strip) {
-            strip.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-        }
-        // Defer height sync until after transition (350ms)
-        requestAnimationFrame(() => {
-            syncHeight();
-        });
-        updateUI();
-    }
-
-    function handleTouchStart(e) {
-        touchStartX = e.touches[0].clientX;
-        touchStartY = e.touches[0].clientY;
-    }
-
-    function handleTouchMove(e) {
-        if (touchStartX === null) return;
-        const dx = e.touches[0].clientX - touchStartX;
-        const dy = e.touches[0].clientY - touchStartY;
-        // Prevent horizontal page scroll while swiping sideways
-        if (Math.abs(dx) > Math.abs(dy)) e.preventDefault();
-    }
-
-    function handleTouchEnd(e) {
-        const dx = e.changedTouches[0].clientX - touchStartX;
-        const dy = e.changedTouches[0].clientY - touchStartY;
-        if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
-            if (dx > 0) goNext();
-            else goPrev();
-        }
-        touchStartX = null;
-        touchStartY = null;
-    }
-
-    function handleKey(e) {
-        if (!isActive) return;
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); goNext(); }
-        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goPrev(); }
-    }
-
-    function handleResize() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(syncHeight, 150);
-    }
-
-    function handlePopState(e) {
-        if (!isActive) return;
-        // Intercept browser back gesture — navigate within cards instead of leaving
-        history.pushState(null, '', window.location.href);
-        if (currentIndex > 0) showCard(currentIndex - 1);
-    }
-
-    function activate() {
-        isActive = true;
-        versesContent = document.querySelector('.verses-content');
-        cards = Array.from(versesContent.querySelectorAll('.verse-item'));
-
-        // Wrap cards in a flex strip for sliding
-        strip = document.createElement('div');
-        strip.className = 'fc-strip';
-        versesContent.appendChild(strip);
-        cards.forEach(function(card) { strip.appendChild(card); });
-
-        document.querySelector('.full-chalisa-container').classList.add('flashcard-mode');
-        document.getElementById('toggle-flashcard').checked = true;
-
-        versesContent.addEventListener('touchstart', handleTouchStart, { passive: true });
-        versesContent.addEventListener('touchmove', handleTouchMove, { passive: false });
-        versesContent.addEventListener('touchend', handleTouchEnd, { passive: true });
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('popstate', handlePopState);
-        document.documentElement.style.overflowX = 'hidden';
-        document.body.style.overflowX = 'hidden';
-        document.documentElement.classList.add('flashcard-active');
-        document.body.classList.add('flashcard-active');
-        // Push a history entry so the browser back gesture fires popstate
-        history.pushState(null, '', window.location.href);
-
-        showCard(currentIndex);
-    }
-
-    function deactivate() {
-        isActive = false;
-
-        if (strip) {
-            // Restore cards to their original parent before removing strip
-            cards.forEach(function(card) { versesContent.insertBefore(card, strip); });
-            strip.remove();
-            strip = null;
-        }
-
-        versesContent.style.height = '';
-        document.querySelector('.full-chalisa-container').classList.remove('flashcard-mode');
-        document.getElementById('toggle-flashcard').checked = false;
-
-        versesContent.removeEventListener('touchstart', handleTouchStart);
-        versesContent.removeEventListener('touchmove', handleTouchMove);
-        versesContent.removeEventListener('touchend', handleTouchEnd);
-        window.removeEventListener('resize', handleResize);
-        window.removeEventListener('popstate', handlePopState);
-        document.documentElement.style.overflowX = '';
-        document.body.style.overflowX = '';
-        document.documentElement.classList.remove('flashcard-active');
-        document.body.classList.remove('flashcard-active');
-
-        // Clean URL
-        history.replaceState(null, '', window.location.pathname);
-    }
-
-    function goNext() {
-        if (currentIndex < cards.length - 1) showCard(currentIndex + 1);
-    }
-
-    function goPrev() {
-        if (currentIndex > 0) showCard(currentIndex - 1);
-    }
-
-    function init() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const cardParam = urlParams.get('card');
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-        // Determine starting card index before activating
-        if (cardParam) {
-            const tempCards = Array.from(document.querySelectorAll('.verse-item'));
-            const idx = tempCards.findIndex(function(c) { return c.dataset.verseId === cardParam; });
-            if (idx !== -1) currentIndex = idx;
-        } else if (isMobile) {
-            try {
-                const saved = sessionStorage.getItem('chalisa-card-index');
-                if (saved !== null) currentIndex = parseInt(saved, 10) || 0;
-            } catch (e) {}
-        }
-
-        if (isMobile || cardParam) {
-            activate();
-        }
-
-        document.getElementById('toggle-flashcard').addEventListener('change', function(e) {
-            if (e.target.checked) activate();
-            else deactivate();
-        });
-
-        document.addEventListener('keydown', handleKey);
-    }
-
-    return { init: init, goNext: goNext, goPrev: goPrev, activate: activate, deactivate: deactivate };
-})();
-
-document.addEventListener('DOMContentLoaded', FlashcardController.init);
 </script>
