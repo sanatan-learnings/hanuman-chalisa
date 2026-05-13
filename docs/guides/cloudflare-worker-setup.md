@@ -169,6 +169,51 @@ wrangler tail
 
 Or visit: https://dash.cloudflare.com/ → Workers & Pages → Your Worker → Metrics
 
+## Cloudflare R2 (Puranic Embeddings)
+
+Large Puranic embedding files exceed Cloudflare Pages' 25 MiB per-file limit and are stored in R2 instead.
+
+**Bucket:** `hanuman-gpt-embeddings`
+**Public URL:** `https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev`
+
+### Initial Setup (already done)
+
+```bash
+npx wrangler r2 bucket create hanuman-gpt-embeddings
+npx wrangler r2 bucket dev-url enable hanuman-gpt-embeddings --force
+```
+
+### Uploading / Re-uploading Puranic Embeddings
+
+After running `verse-index-sources` locally, upload the generated files to R2:
+
+```bash
+npx wrangler r2 object put hanuman-gpt-embeddings/puranic/shiv-puran-part1.json \
+  --file data/embeddings/puranic/shiv-puran-part1.json \
+  --content-type application/json \
+  --remote
+
+npx wrangler r2 object put hanuman-gpt-embeddings/puranic/ananda-ramayan.json \
+  --file data/embeddings/puranic/ananda-ramayan.json \
+  --content-type application/json \
+  --remote
+```
+
+### How the Frontend Accesses R2
+
+The URLs are injected at build time in `guidance.html`:
+
+```javascript
+window.EMBEDDINGS_CONFIG.puranicSources = {
+  "shiv-puran": "https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev/puranic/shiv-puran-part1.json",
+  "ananda-ramayan": "https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev/puranic/ananda-ramayan.json"
+}
+```
+
+The Worker can also access the bucket directly via the `EMBEDDINGS_BUCKET` R2 binding defined in `wrangler.toml`.
+
+> **Note:** `data/embeddings/puranic/` is excluded from the Jekyll build in `_config.yml` to prevent build failures. Only `data/embeddings/providers/` (small verse-level embeddings) is included.
+
 ## Troubleshooting
 
 ### GitHub Pages Build Failures
