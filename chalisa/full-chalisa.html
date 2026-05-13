@@ -15,7 +15,20 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
             <label data-lang="en"><input type="checkbox" id="toggle-transliteration" checked> <span data-lang="en">{{ t_en.full_chalisa.show_transliteration }}</span></label>
             <label><input type="checkbox" id="toggle-translation" checked> <span data-lang="en">{{ t_en.full_chalisa.show_translation }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_translation }}</span></label>
             <label><input type="checkbox" id="toggle-meanings"> <span data-lang="en">{{ t_en.full_chalisa.show_meanings }}</span><span data-lang="hi">{{ t_hi.full_chalisa.show_meanings }}</span></label>
+            <label class="fc-toggle-label" title="One verse at a time with swipe navigation">
+                <input type="checkbox" id="toggle-flashcard"> <span data-lang="en">Flashcard View</span>
+            </label>
             <button onclick="window.print()" class="print-all-button">🖨️ <span data-lang="en">{{ t_en.full_chalisa.print_all }}</span><span data-lang="hi">{{ t_hi.full_chalisa.print_all }}</span></button>
+        </div>
+
+        <div class="flashcard-nav" aria-label="Flashcard navigation">
+            <div class="fc-header-row">
+                <span class="fc-verse-label"></span>
+                <span class="fc-progress-text"></span>
+            </div>
+            <div class="fc-progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="43">
+                <div class="fc-progress-fill"></div>
+            </div>
         </div>
     </div>
 
@@ -43,8 +56,19 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
             {% endif %}
         {% endfor %}
 
+        {% assign total_verses = ordered_verses | size %}
+        {% assign verse_seq = 0 %}
         {% for verse in ordered_verses %}
-        <article class="verse-item" id="{{ verse.url | split: '/' | last }}">
+        {% assign verse_seq = verse_seq | plus: 1 %}
+        {% assign url_parts = verse.url | split: '/' %}
+        {% assign verse_id = url_parts[2] %}
+        {% assign verse_label = verse.title_en | default: verse.title | split: ':' | first %}
+        <article class="verse-item"
+                 id="{{ verse_id }}"
+                 data-verse-id="{{ verse_id }}"
+                 data-verse-label="{{ verse_label }}"
+                 data-verse-seq="{{ verse_seq }}"
+                 data-verse-total="{{ total_verses }}">
             <div class="verse-compact-layout">
                 {% if verse.image %}
                 <div class="verse-thumbnail">
@@ -91,6 +115,11 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
             </div>
         </article>
         {% endfor %}
+    </div>
+
+    <div class="fc-nav-buttons" aria-label="Card navigation buttons">
+        <button class="fc-prev" onclick="FlashcardController.goPrev()" aria-label="Previous verse">← Previous</button>
+        <button class="fc-next" onclick="FlashcardController.goNext()" aria-label="Next verse">Next →</button>
     </div>
 
     <div class="full-chalisa-footer">
@@ -146,6 +175,14 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     cursor: pointer;
 }
 
+.fc-toggle-label {
+    border: 1px solid #ff6b35;
+    border-radius: 4px;
+    padding: 4px 10px;
+    color: #ff6b35;
+    font-weight: 500;
+}
+
 .print-all-button {
     background: #ff6b35;
     color: white;
@@ -160,6 +197,116 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     background: #e55a2b;
 }
 
+/* Flashcard navigation bar (hidden in scroll mode) */
+.flashcard-nav {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #fff8f5;
+    border: 1px solid #ffd5c0;
+    border-radius: 8px;
+}
+
+.fc-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fc-verse-label {
+    font-weight: 600;
+    color: #ff6b35;
+    font-size: 1em;
+}
+
+.fc-progress-text {
+    color: #888;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.fc-progress-bar {
+    height: 4px;
+    background: #f0e0d8;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.fc-progress-fill {
+    height: 100%;
+    background: #ff6b35;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+/* Prev/Next nav buttons (hidden in scroll mode) */
+.fc-nav-buttons {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    gap: 12px;
+}
+
+.fc-prev,
+.fc-next {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background 0.2s, opacity 0.2s;
+    flex: 1;
+    max-width: 160px;
+}
+
+.fc-prev:hover,
+.fc-next:hover {
+    background: #e55a2b;
+}
+
+.fc-prev:disabled,
+.fc-next:disabled {
+    opacity: 0.35;
+    cursor: default;
+    background: #ff6b35;
+}
+
+/* ── Flashcard mode layout ── */
+.flashcard-mode .verses-content {
+    overflow: hidden;
+    position: relative;
+}
+
+.flashcard-mode .fc-strip {
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.flashcard-mode .fc-strip .verse-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+.flashcard-mode .fc-nav-buttons {
+    display: flex;
+}
+
+.flashcard-mode .flashcard-nav {
+    display: flex;
+}
+
+/* ── Existing scroll-view styles ── */
 .verses-content {
     margin: 0;
 }
@@ -399,8 +546,25 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     .view-options,
     .verse-link-icon,
     .print-all-button,
-    .verse-thumbnail {
+    .verse-thumbnail,
+    .fc-nav-buttons,
+    .flashcard-nav {
         display: none !important;
+    }
+
+    /* Disable flashcard layout for print so all verses render */
+    .flashcard-mode .fc-strip {
+        display: block !important;
+        transform: none !important;
+    }
+
+    .flashcard-mode .fc-strip .verse-item {
+        min-width: auto !important;
+        display: block !important;
+    }
+
+    .flashcard-mode .verses-content {
+        overflow: visible !important;
     }
 
     .verse-item {
@@ -451,4 +615,174 @@ document.getElementById('toggle-meanings').addEventListener('change', function(e
         section.style.display = e.target.checked ? 'block' : 'none';
     });
 });
+
+// Flashcard controller
+const FlashcardController = (() => {
+    let cards = [];
+    let currentIndex = 0;
+    let isActive = false;
+    let versesContent = null;
+    let strip = null;
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let resizeTimer = null;
+
+    function updateUI() {
+        const total = cards.length;
+        const pos = currentIndex + 1;
+
+        const labelEl = document.querySelector('.fc-verse-label');
+        const progressText = document.querySelector('.fc-progress-text');
+        const progressFill = document.querySelector('.fc-progress-fill');
+        const progressBar = document.querySelector('.fc-progress-bar');
+        const prevBtn = document.querySelector('.fc-prev');
+        const nextBtn = document.querySelector('.fc-next');
+
+        if (labelEl) labelEl.textContent = cards[currentIndex].dataset.verseLabel || '';
+        if (progressText) progressText.textContent = pos + ' / ' + total;
+        if (progressFill) progressFill.style.width = ((pos / total) * 100) + '%';
+        if (progressBar) {
+            progressBar.setAttribute('aria-valuenow', pos);
+            progressBar.setAttribute('aria-valuetext', pos + ' of ' + total);
+        }
+        if (prevBtn) prevBtn.disabled = currentIndex === 0;
+        if (nextBtn) nextBtn.disabled = currentIndex === cards.length - 1;
+
+        // Update URL and session
+        const verseId = cards[currentIndex].dataset.verseId;
+        if (verseId) {
+            history.replaceState(null, '', '?card=' + verseId);
+        }
+        try { sessionStorage.setItem('chalisa-card-index', currentIndex); } catch (e) {}
+    }
+
+    function syncHeight() {
+        if (!strip || !versesContent) return;
+        // Let the strip set natural height; container clips width only
+        versesContent.style.height = strip.scrollHeight + 'px';
+    }
+
+    function showCard(index) {
+        currentIndex = Math.max(0, Math.min(index, cards.length - 1));
+        if (strip) {
+            strip.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+        }
+        // Defer height sync until after transition (350ms)
+        requestAnimationFrame(() => {
+            syncHeight();
+        });
+        updateUI();
+    }
+
+    function handleTouchStart(e) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+    }
+
+    function handleTouchEnd(e) {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        // Only count as swipe if horizontal delta exceeds vertical and a 50px threshold
+        if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+            if (dx < 0) goNext();
+            else goPrev();
+        }
+    }
+
+    function handleKey(e) {
+        if (!isActive) return;
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); goNext(); }
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goPrev(); }
+    }
+
+    function handleResize() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(syncHeight, 150);
+    }
+
+    function activate() {
+        isActive = true;
+        versesContent = document.querySelector('.verses-content');
+        cards = Array.from(versesContent.querySelectorAll('.verse-item'));
+
+        // Wrap cards in a flex strip for sliding
+        strip = document.createElement('div');
+        strip.className = 'fc-strip';
+        versesContent.appendChild(strip);
+        cards.forEach(function(card) { strip.appendChild(card); });
+
+        document.querySelector('.full-chalisa-container').classList.add('flashcard-mode');
+        document.getElementById('toggle-flashcard').checked = true;
+
+        versesContent.addEventListener('touchstart', handleTouchStart, { passive: true });
+        versesContent.addEventListener('touchend', handleTouchEnd, { passive: true });
+        window.addEventListener('resize', handleResize);
+
+        showCard(currentIndex);
+    }
+
+    function deactivate() {
+        isActive = false;
+
+        if (strip) {
+            // Restore cards to their original parent before removing strip
+            cards.forEach(function(card) { versesContent.insertBefore(card, strip); });
+            strip.remove();
+            strip = null;
+        }
+
+        versesContent.style.height = '';
+        document.querySelector('.full-chalisa-container').classList.remove('flashcard-mode');
+        document.getElementById('toggle-flashcard').checked = false;
+
+        versesContent.removeEventListener('touchstart', handleTouchStart);
+        versesContent.removeEventListener('touchend', handleTouchEnd);
+        window.removeEventListener('resize', handleResize);
+
+        // Clean URL
+        history.replaceState(null, '', window.location.pathname);
+    }
+
+    function goNext() {
+        if (currentIndex < cards.length - 1) showCard(currentIndex + 1);
+    }
+
+    function goPrev() {
+        if (currentIndex > 0) showCard(currentIndex - 1);
+    }
+
+    function init() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const cardParam = urlParams.get('card');
+        const isMobile = window.innerWidth <= 768;
+
+        // Determine starting card index before activating
+        if (cardParam) {
+            const tempCards = Array.from(document.querySelectorAll('.verse-item'));
+            const idx = tempCards.findIndex(function(c) { return c.dataset.verseId === cardParam; });
+            if (idx !== -1) currentIndex = idx;
+        } else if (isMobile) {
+            try {
+                const saved = sessionStorage.getItem('chalisa-card-index');
+                if (saved !== null) currentIndex = parseInt(saved, 10) || 0;
+            } catch (e) {}
+        }
+
+        if (isMobile || cardParam) {
+            activate();
+        }
+
+        document.getElementById('toggle-flashcard').addEventListener('change', function(e) {
+            if (e.target.checked) activate();
+            else deactivate();
+        });
+
+        document.addEventListener('keydown', handleKey);
+    }
+
+    return { init: init, goNext: goNext, goPrev: goPrev, activate: activate, deactivate: deactivate };
+})();
+
+document.addEventListener('DOMContentLoaded', FlashcardController.init);
 </script>
