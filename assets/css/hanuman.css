@@ -2008,9 +2008,8 @@ footer .footer-links a:hover {
 }
 
 .fc-audio-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 6px;
     background: white;
     border: 1px solid #ffd5c0;
@@ -2020,8 +2019,7 @@ footer .footer-links a:hover {
     font-size: 0.9em;
     color: #ff6b35;
     font-weight: 500;
-    margin-top: 4px;
-    width: 100%;
+    margin-top: 10px;
     transition: background 0.2s, border-color 0.2s;
 }
 

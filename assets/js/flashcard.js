@@ -28,11 +28,23 @@ window.FlashcardController = (() => {
     function updateAudio() {
         if (!audioEl || !audioBtn) return;
         stopAudio();
-        const src = cards[currentIndex] && cards[currentIndex].dataset.audio;
+        const card = cards[currentIndex];
+        const src = card && card.dataset.audio;
+
+        // Move button into current card, after the verse-text-grid
+        const textGrid = card && card.querySelector('.verse-text-grid');
+        const meaningsSection = card && card.querySelector('.meanings-section');
+        if (textGrid) {
+            if (meaningsSection) {
+                textGrid.parentNode.insertBefore(audioBtn, meaningsSection);
+            } else {
+                textGrid.parentNode.appendChild(audioBtn);
+            }
+        }
+
         if (src) {
             audioEl.src = src;
             audioBtn.style.display = '';
-            audioBtn.style.opacity = '';
         } else {
             audioBtn.style.display = 'none';
         }
@@ -70,10 +82,6 @@ window.FlashcardController = (() => {
         audioBtn.setAttribute('aria-label', 'Play pronunciation');
         audioBtn.innerHTML = '🔊 <span>Play</span>';
         audioBtn.addEventListener('click', toggleAudio);
-
-        // Append as its own row inside flashcard-nav, below the progress bar
-        const flashcardNav = document.querySelector('.flashcard-nav');
-        if (flashcardNav) flashcardNav.appendChild(audioBtn);
     }
 
     function removeAudioControls() {
