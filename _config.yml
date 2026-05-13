@@ -27,6 +27,7 @@ exclude:
   - CONTRIBUTING.md
   - docs/local-development.md
   - docs/tech-stack.md
+  - vendor/
   - docs/verse-structure.md
   - docs/multilingual-implementation.md
   - docs/github-pages-setup.md
