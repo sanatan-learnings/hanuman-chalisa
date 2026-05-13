@@ -47,8 +47,8 @@
 
 ### Frontend
 - **HTML5** - Semantic markup
-- **Custom CSS** - Responsive design with orange/saffron theme
-- **Vanilla JavaScript** - Arrow key navigation, language switching, no frameworks
+- **Custom CSS** (`assets/css/hanuman.css`) - Responsive design with orange/saffron theme. Named `hanuman.css` (not `style.css`) to avoid being overwritten by the `jekyll-theme-primer` gem, which compiles its own `style.scss` → `style.css` at build time.
+- **Vanilla JavaScript** - Arrow key navigation, language switching, flashcard view, audio playback; no frameworks
 
 ### Content Structure
 - **YAML Front Matter** - All verse content structured as data
@@ -85,7 +85,9 @@ hanuman-gpt/
 │       ├── en.yml
 │       └── hi.yml
 ├── _includes/
-│   └── puranic-context-box.html  # Puranic context component
+│   ├── puranic-context-box.html  # Puranic context component
+│   ├── collections-grid.html     # Shared: collection card grid (home + library)
+│   └── coming-soon.html          # Shared: coming-soon section (home + library)
 ├── _layouts/
 │   ├── default.html         # Base layout
 │   └── verse.html           # Verse rendering template
@@ -120,9 +122,16 @@ hanuman-gpt/
 │   ├── hanuman-chalisa/
 │   ├── sundar-kaand/
 │   └── bajrang-baan/
+├── library/
+│   └── index.html               # Library page (all collections + coming soon)
 ├── assets/
-│   ├── css/style.css
+│   ├── css/
+│   │   ├── hanuman.css          # Main stylesheet (see note above re: naming)
+│   │   └── print.css
 │   └── js/
+│       ├── flashcard.js         # Shared flashcard controller (all full-text pages)
+│       ├── guidance.js
+│       └── ...
 ├── docs/                    # Documentation
 └── scripts/
 ```
@@ -209,8 +218,38 @@ See [puranic-context.md](puranic-context.md) for the full two-stage workflow.
 - Semantic retrieval with provider-aware query embeddings where available
 - Runtime provider switching via `_data/embeddings.yml` (OpenAI ↔ Bedrock Cohere ↔ Hugging Face)
 - Bilingual support
+- Puranic source embeddings fetched from Cloudflare R2 (URLs in `window.EMBEDDINGS_CONFIG.puranicSources`)
 
 **Files**: `_data/embeddings.yml`, `data/embeddings/providers/*/collections/index.json`, `assets/js/guidance.js`, `workers/cloudflare-worker.js`
+
+### Cloudflare R2 (`hanuman-gpt-embeddings` bucket)
+Large Puranic embedding files (> 25 MB) cannot be served from Cloudflare Pages. They are stored in R2 with public access:
+
+| File | R2 path |
+|------|---------|
+| `shiv-puran-part1.json` (45 MB) | `puranic/shiv-puran-part1.json` |
+| `ananda-ramayan.json` (22 MB) | `puranic/ananda-ramayan.json` |
+
+Public base URL: `https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev`
+
+After regenerating puranic embeddings locally, upload to R2:
+```bash
+npx wrangler r2 object put hanuman-gpt-embeddings/puranic/<filename>.json \
+  --file data/embeddings/puranic/<filename>.json \
+  --content-type application/json \
+  --remote
+```
+
+### Flashcard View
+All four full-text pages (`/chalisa/full-chalisa/`, `/sundar-kaand/full-text/`, `/bajrang-baan/full-text/`, `/sankat-mochan-hanumanashtak/full-text/`) share a single flashcard controller in `assets/js/flashcard.js`. Features:
+- Swipe navigation (mobile) and arrow keys (desktop)
+- Progress bar and verse counter
+- Audio pronunciation button (fetches `audio/{collection}/{verse-id}-full.mp3`)
+- Session storage saves last-viewed card per page
+- Auto-activates on mobile viewport
+
+### Mobile Bottom Navigation
+Five-item fixed bottom nav (mobile only): Home · Chalisa · Sundar Kaand · 📚 Library · Ask. The Library tab is active when browsing `/library/`, `/bajrang-baan/`, or `/sankat-mochan-hanumanashtak/`.
 
 ### Puranic Context
 - Per-verse grounded references from indexed sacred texts
@@ -274,7 +313,7 @@ verse-embeddings --multi-collection \
 **Output**:
 - Verse embeddings: `data/embeddings/providers/{provider}/collections/{collection}.json`
 - Verse index: `data/embeddings/providers/{provider}/collections/index.json`
-- Puranic source embeddings: `data/embeddings/puranic/{source-key}.json`
+- Puranic source embeddings: generated locally to `data/embeddings/puranic/{source-key}.json`, then uploaded to Cloudflare R2 (see below) — excluded from the Jekyll build due to file size
 
 ## Development Workflow
 
