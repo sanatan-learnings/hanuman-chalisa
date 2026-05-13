@@ -571,8 +571,11 @@ main {
 }
 
 .nav-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 1rem;
+    min-height: 44px;
     background: #ff6b35;
     color: white;
     text-decoration: none;
@@ -690,6 +693,10 @@ main {
     overflow-x: auto;
     font-size: 1.1rem;
     line-height: 1.8;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .verse-content ul {
@@ -895,6 +902,27 @@ footer .footer-links a:hover {
     color: #ff6b35;
 }
 
+@media (max-width: 768px) {
+    footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    footer .footer-links a {
+        margin: 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Hide pipe separators on mobile */
+    footer .footer-links > *:not(a) {
+        display: none;
+    }
+}
+
 /* Audio Player Styles */
 .audio-player-container {
     margin: 1.5rem 0;
@@ -925,7 +953,6 @@ footer .footer-links a:hover {
 
 .audio-player audio {
     width: 100%;
-    max-width: 500px;
     height: 40px;
     border-radius: 4px;
     outline: none;
@@ -1867,5 +1894,101 @@ footer .footer-links a:hover {
 
     .puranic-badge .badge-icon {
         font-size: 1rem;
+    }
+}
+
+/* ============================================================
+   MOBILE BOTTOM NAVIGATION
+   ============================================================ */
+
+.mobile-bottom-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: white;
+        border-top: 1px solid #e0e0e0;
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    body {
+        padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+    }
+}
+
+.bottom-nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 0.62rem;
+    gap: 2px;
+    padding: 6px 4px;
+    transition: color 0.2s;
+    min-height: 44px;
+    overflow: hidden;
+}
+
+.bottom-nav-item.active {
+    color: #ff6b35;
+}
+
+.bottom-nav-item:active {
+    color: #ff6b35;
+    background: rgba(255, 107, 53, 0.06);
+}
+
+.bottom-nav-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.bottom-nav-label {
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* ============================================================
+   MOBILE GLOBAL FIXES
+   ============================================================ */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .collection-banner h1 {
+        font-size: 1.6rem;
+    }
+
+    .verse-content pre {
+        font-size: 1rem;
+    }
+
+    .verse-content ul {
+        margin-left: 1rem;
     }
 }

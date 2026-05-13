@@ -81,6 +81,29 @@
         </div>
     </footer>
 
+    <nav class="mobile-bottom-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url == '/' %} active{% endif %}">
+            <span class="bottom-nav-icon">🏠</span>
+            <span class="bottom-nav-label" data-lang="en">Home</span>
+            <span class="bottom-nav-label" data-lang="hi">होम</span>
+        </a>
+        <a href="{{ '/chalisa/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/chalisa' %} active{% endif %}">
+            <span class="bottom-nav-icon">📜</span>
+            <span class="bottom-nav-label" data-lang="en">Chalisa</span>
+            <span class="bottom-nav-label" data-lang="hi">चालीसा</span>
+        </a>
+        <a href="{{ '/sundar-kaand/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/sundar-kaand' %} active{% endif %}">
+            <span class="bottom-nav-icon">🌿</span>
+            <span class="bottom-nav-label" data-lang="en">Sundar Kaand</span>
+            <span class="bottom-nav-label" data-lang="hi">सुंदर काण्ड</span>
+        </a>
+        <a href="{{ '/guidance/' | relative_url }}?lang={{ lang }}" class="bottom-nav-item{% if page.url contains '/guidance' %} active{% endif %}">
+            <span class="bottom-nav-icon">💬</span>
+            <span class="bottom-nav-label" data-lang="en">Ask</span>
+            <span class="bottom-nav-label" data-lang="hi">पूछें</span>
+        </a>
+    </nav>
+
     <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>

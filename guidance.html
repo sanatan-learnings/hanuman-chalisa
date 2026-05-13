@@ -153,7 +153,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     padding: 20px;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 200px);
+    height: calc(100dvh - 160px);
+    min-height: 400px;
 }
 
 .guidance-header {
@@ -306,6 +307,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     padding: 15px;
     border-radius: 12px;
     line-height: 1.6;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .message.user .message-content {
@@ -416,6 +419,12 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
     display: flex;
     gap: 10px;
     align-items: flex-end;
+    flex-shrink: 0;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding-top: 8px;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .input-wrapper {
@@ -549,7 +558,8 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 /* Mobile responsive */
 @media (max-width: 768px) {
     .guidance-container {
-        height: calc(100vh - 150px);
+        height: calc(100dvh - 120px);
+        padding: 12px;
     }
 
     .message-content {
@@ -579,6 +589,21 @@ description: "Ask questions and receive spiritual guidance based on Hanuman Chal
 
     .runtime-config-body label {
         text-align: left;
+    }
+
+    .runtime-summary {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+    }
+
+    .btn-send, .btn-clear {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    #queryInput {
+        font-size: 16px; /* prevent iOS zoom on focus */
     }
 }
 </style>
