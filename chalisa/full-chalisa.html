@@ -304,28 +304,55 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
 }
 
 .flashcard-mode .verse-compact-layout {
-    display: block;
-    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
 }
 
 .flashcard-mode .verse-thumbnail {
-    float: left;
-    width: 56px;
-    height: 56px;
+    float: none;
+    width: 72px;
+    height: 72px;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-    margin-right: 10px;
-    margin-bottom: 6px;
+    margin: 0 auto;
+    flex-shrink: 0;
 }
 
 .flashcard-mode .verse-content {
     min-width: 0;
-    overflow: hidden;
+    width: 100%;
+}
+
+.flashcard-mode .verse-title-row {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.flashcard-mode .verse-title-row h2 {
+    font-size: 1em;
+    white-space: normal;
+    overflow: visible;
 }
 
 .flashcard-mode .verse-text-grid {
-    clear: both;
+    clear: none;
+    grid-template-columns: 1fr;
+    gap: 6px;
+}
+
+.flashcard-mode .devanagari-text {
+    font-size: 1.05em;
+    padding: 6px 8px;
+    line-height: 1.7;
+}
+
+.flashcard-mode .transliteration-text {
+    font-size: 0.9em;
+    padding: 6px 8px;
+    line-height: 1.6;
 }
 
 .flashcard-mode .meanings-section {
@@ -561,6 +588,13 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
         height: 150px;
         max-width: 250px;
         margin: 0 auto;
+    }
+
+    /* Keep flashcard thumbnail compact in mobile media query */
+    .flashcard-mode .verse-thumbnail {
+        width: 72px;
+        height: 72px;
+        max-width: 72px;
     }
 
     .verse-text-grid {
