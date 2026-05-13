@@ -24,18 +24,21 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
         {% assign sorted_verses = collection_verses | sort: 'url' %}
         {% assign ordered_verses = "" | split: "" %}
 
-        {% comment %} Build ordered array: doha_01, doha_02, verse_01-40, doha_closing {% endcomment %}
+        {% comment %} Build ordered array: doha-01, doha-02, chaupai-01..40, doha-closing {% endcomment %}
         {% for verse in sorted_verses %}
-            {% assign verse_id = verse.url | split: '/' | last %}
-            {% unless verse_id == 'doha_closing' %}
+            {% if verse.url contains '/doha-01' or verse.url contains '/doha-02' %}
                 {% assign ordered_verses = ordered_verses | push: verse %}
-            {% endunless %}
+            {% endif %}
         {% endfor %}
 
-        {% comment %} Add closing doha at the end {% endcomment %}
         {% for verse in sorted_verses %}
-            {% assign verse_id = verse.url | split: '/' | last %}
-            {% if verse_id == 'doha_closing' %}
+            {% if verse.url contains '/chaupai-' %}
+                {% assign ordered_verses = ordered_verses | push: verse %}
+            {% endif %}
+        {% endfor %}
+
+        {% for verse in sorted_verses %}
+            {% if verse.url contains '/doha-closing' %}
                 {% assign ordered_verses = ordered_verses | push: verse %}
             {% endif %}
         {% endfor %}
