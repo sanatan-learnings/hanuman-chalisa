@@ -613,7 +613,12 @@ window.EMBEDDINGS_CONFIG = {
     provider: "{{ active_provider_key }}",
     model: "{{ active_provider.model | default: 'text-embedding-3-small' }}",
     indexPath: "{{ active_provider.index_path | default: '/data/embeddings/providers/openai/collections/index.json' }}",
-    providers: {{ emb.providers | jsonify }}
+    providers: {{ emb.providers | jsonify }},
+    puranicBaseUrl: "https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev",
+    puranicSources: {
+        "shiv-puran": "https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev/puranic/shiv-puran-part1.json",
+        "ananda-ramayan": "https://pub-7a286ab192d84d218d1bcca8bbd68361.r2.dev/puranic/ananda-ramayan.json"
+    }
 };
 window.CHAT_CONFIG = {
     provider: "{{ active_chat_provider_key }}",
