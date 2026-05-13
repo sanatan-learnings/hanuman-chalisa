@@ -71,8 +71,11 @@ window.FlashcardController = (() => {
         audioBtn.textContent = '🔊';
         audioBtn.addEventListener('click', toggleAudio);
 
-        const headerRow = document.querySelector('.fc-header-row');
-        if (headerRow) headerRow.appendChild(audioBtn);
+        // Insert between ← Prev and Next → buttons
+        const navButtons = document.querySelector('.fc-nav-buttons');
+        const nextBtn = navButtons && navButtons.querySelector('.fc-next');
+        if (nextBtn) navButtons.insertBefore(audioBtn, nextBtn);
+        else if (navButtons) navButtons.appendChild(audioBtn);
     }
 
     function removeAudioControls() {
