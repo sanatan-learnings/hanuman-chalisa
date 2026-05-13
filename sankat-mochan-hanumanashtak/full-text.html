@@ -44,7 +44,8 @@ description: "Read the complete Sankat Mochan Hanumanashtak with all 8 padas on 
                  data-verse-id="{{ verse_id }}"
                  data-verse-label="{{ verse_label }}"
                  data-verse-seq="{{ forloop.index }}"
-                 data-verse-total="{{ total_verses }}">
+                 data-verse-total="{{ total_verses }}"
+                 data-audio="{{ '/audio/sankat-mochan-hanumanashtak/' | append: verse_id | append: '-full.mp3' | relative_url }}">
             <div class="verse-compact-layout">
                 {% if verse.image %}
                 <div class="verse-thumbnail">

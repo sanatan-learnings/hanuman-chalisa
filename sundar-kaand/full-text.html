@@ -58,7 +58,8 @@ description: "Read the complete Sundar Kaand with all verses on a single page wi
                  data-verse-id="{{ verse_id }}"
                  data-verse-label="{{ verse_label }}"
                  data-verse-seq="{{ forloop.index }}"
-                 data-verse-total="{{ total_verses }}">
+                 data-verse-total="{{ total_verses }}"
+                 data-audio="{{ '/audio/sundar-kaand/' | append: verse_id | append: '-full.mp3' | relative_url }}">
             <div class="verse-compact-layout">
                 {% if verse.image %}
                 <div class="verse-thumbnail">

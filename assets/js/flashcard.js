@@ -8,9 +8,77 @@ window.FlashcardController = (() => {
     let touchStartX = null;
     let touchStartY = null;
     let resizeTimer = null;
+    let audioEl = null;
+    let audioBtn = null;
 
     function storageKey() {
         return 'fc-card-' + window.location.pathname.split('/').filter(Boolean).join('-');
+    }
+
+    function stopAudio() {
+        if (!audioEl) return;
+        audioEl.pause();
+        audioEl.currentTime = 0;
+        if (audioBtn) {
+            audioBtn.textContent = '🔊';
+            audioBtn.classList.remove('playing');
+        }
+    }
+
+    function updateAudio() {
+        if (!audioEl || !audioBtn) return;
+        stopAudio();
+        const src = cards[currentIndex] && cards[currentIndex].dataset.audio;
+        if (src) {
+            audioEl.src = src;
+            audioBtn.style.display = '';
+            audioBtn.style.opacity = '';
+        } else {
+            audioBtn.style.display = 'none';
+        }
+    }
+
+    function toggleAudio() {
+        if (!audioEl) return;
+        if (audioEl.paused) {
+            audioEl.play().then(function() {
+                audioBtn.textContent = '⏸';
+                audioBtn.classList.add('playing');
+            }).catch(function() {
+                audioBtn.style.display = 'none';
+            });
+        } else {
+            stopAudio();
+        }
+    }
+
+    function createAudioControls() {
+        audioEl = new Audio();
+        audioEl.preload = 'none';
+        audioEl.addEventListener('ended', function() {
+            if (audioBtn) {
+                audioBtn.textContent = '🔊';
+                audioBtn.classList.remove('playing');
+            }
+        });
+        audioEl.addEventListener('error', function() {
+            if (audioBtn) audioBtn.style.display = 'none';
+        });
+
+        audioBtn = document.createElement('button');
+        audioBtn.className = 'fc-audio-btn';
+        audioBtn.setAttribute('aria-label', 'Play pronunciation');
+        audioBtn.textContent = '🔊';
+        audioBtn.addEventListener('click', toggleAudio);
+
+        const headerRow = document.querySelector('.fc-header-row');
+        if (headerRow) headerRow.appendChild(audioBtn);
+    }
+
+    function removeAudioControls() {
+        stopAudio();
+        if (audioBtn) { audioBtn.remove(); audioBtn = null; }
+        if (audioEl) { audioEl.src = ''; audioEl = null; }
     }
 
     function updateUI() {
@@ -50,6 +118,7 @@ window.FlashcardController = (() => {
         if (strip) strip.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
         requestAnimationFrame(syncHeight);
         updateUI();
+        updateAudio();
     }
 
     function handleTouchStart(e) {
@@ -123,11 +192,13 @@ window.FlashcardController = (() => {
         document.body.classList.add('flashcard-active');
         history.pushState(null, '', window.location.href);
 
+        createAudioControls();
         showCard(currentIndex);
     }
 
     function deactivate() {
         isActive = false;
+        removeAudioControls();
 
         if (strip) {
             // Restore each card to its original parent/position

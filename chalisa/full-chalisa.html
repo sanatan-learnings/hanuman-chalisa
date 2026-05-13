@@ -68,7 +68,8 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
                  data-verse-id="{{ verse_id }}"
                  data-verse-label="{{ verse_label }}"
                  data-verse-seq="{{ verse_seq }}"
-                 data-verse-total="{{ total_verses }}">
+                 data-verse-total="{{ total_verses }}"
+                 data-audio="{{ '/audio/hanuman-chalisa/' | append: verse_id | append: '-full.mp3' | relative_url }}">
             <div class="verse-compact-layout">
                 {% if verse.image %}
                 <div class="verse-thumbnail">
