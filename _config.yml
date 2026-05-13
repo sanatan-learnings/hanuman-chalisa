@@ -28,6 +28,7 @@ exclude:
   - docs/local-development.md
   - docs/tech-stack.md
   - vendor/
+  - data/embeddings/
   - docs/verse-structure.md
   - docs/multilingual-implementation.md
   - docs/github-pages-setup.md
