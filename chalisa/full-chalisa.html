@@ -359,6 +359,29 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
     display: none !important;
 }
 
+/* In flashcard mode, collapse the header to just the progress nav */
+.flashcard-mode .full-chalisa-header {
+    margin-bottom: 8px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.flashcard-mode .full-chalisa-header h1,
+.flashcard-mode .full-chalisa-header .subtitle {
+    display: none;
+}
+
+.flashcard-mode .view-options {
+    margin-top: 0;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+/* Hide everything in view-options except the flashcard toggle */
+.flashcard-mode .view-options > *:not(.fc-toggle-label) {
+    display: none;
+}
+
 .flashcard-mode .fc-nav-buttons {
     display: flex;
 }
@@ -577,6 +600,19 @@ description: "Read the complete Hanuman Chalisa with all 43 verses on a single p
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+    .full-chalisa-container {
+        padding: 10px;
+    }
+
+    .full-chalisa-header {
+        margin-bottom: 12px;
+    }
+
+    .full-chalisa-header h1 {
+        font-size: 1.3em;
+        word-break: break-word;
+    }
+
     .verse-compact-layout {
         grid-template-columns: 1fr;
         gap: 8px;
