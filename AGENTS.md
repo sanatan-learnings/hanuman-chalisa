@@ -18,10 +18,24 @@ _verses/{collection}/            # Verse markdown files (generated)
 audio/{collection}/              # Audio pronunciations (generated: full + slow)
 images/{collection}/{theme}/     # Generated images
 data/
-  ├── verses/{collection}.yml    # Source: Canonical verse text (Devanagari)
+  ├── sources/{collection}.txt   # Input: Definitive raw text (authoritative source, hand-added)
+  ├── verses/{collection}.yml    # Source: Canonical verse text, parsed from data/sources/ (Devanagari)
   ├── scenes/{collection}.yml    # Source: Scene descriptions for image generation
   └── themes/{collection}/*.yml  # Config: Image generation settings
 ```
+
+## Content Pipeline (start here for a NEW collection)
+The definitive text is the *beginning* of the pipeline, not `data/verses/`:
+```
+data/sources/{collection}.txt   →   data/verses/{collection}.yml   →   _verses/ + audio/ + images/ + embeddings
+   (1) paste authoritative          (2) parse into structured           (3) verse-generate (SDK)
+       raw text + provenance            verses w/ _meta.sequence
+```
+1. **Add the definitive text** to `data/sources/{collection}.txt` with a provenance header (source URL, date, structure, editorial notes). See `data/sources/README.md`.
+2. **Parse into structured verses** at `data/verses/{collection}.yml` (`_meta.sequence` + per-verse `devanagari`). Use/extend a parser in `scripts/` or hand-structure for short texts.
+3. **Generate** with `verse-generate` (see below), then enable the collection in `_data/collections.yml` (`enabled: true`).
+
+Full walkthrough: [docs/guides/adding-a-collection.md](docs/guides/adding-a-collection.md).
 
 ## Verse Types & Numbering
 - **Hanuman Chalisa**: doha-01, doha-02, chaupai-01 to chaupai-40, doha-closing
@@ -30,49 +44,18 @@ data/
 - `verse_type`: shloka, chaupai, doha
 
 ## Generating New Verses
+`verse-generate` (SDK 0.27.0+) creates the verse file, image, audio, embeddings, and nav links in one step, with correct hyphenated names.
 
-**Use the `verse-generate` command with SDK 0.27.0+**
-
-The SDK automates the complete workflow:
-- Auto-detects next verse to generate (`--next` flag)
-- Auto-generates scene descriptions (`--auto-generate-scene` flag)
-- Creates verse file, image, audio, and embeddings automatically by default
-- `--regenerate-content` only regenerates text — it suppresses image/audio unless combined with `--image --audio`
-- Updates navigation links automatically
-- Uses correct hyphenated filenames
-
-**Recommended usage (auto-detect next verse):**
 ```bash
 set -a && source .env && set +a
-./venv/bin/verse-generate \
-  --collection sundar-kaand \
-  --next \
-  --auto-generate-scene
+./venv/bin/verse-generate --collection sundar-kaand --next --auto-generate-scene
 ```
+- `--next` auto-detects the next verse from `_meta.sequence`; or target one with `--verse chaupai-15`.
+- `--auto-generate-scene` writes the scene description before generating.
+- `--regenerate-content` regenerates text only (suppresses image/audio unless combined with `--image --audio`).
+- Cost ~$0.05–0.06/verse (content + image + audio + embeddings).
 
-**Generate specific verse:**
-```bash
-set -a && source .env && set +a
-./venv/bin/verse-generate \
-  --collection sundar-kaand \
-  --verse chaupai-15 \
-  --auto-generate-scene
-```
-
-**Verify generated files use hyphens:**
-- `_verses/sundar-kaand/chaupai-15.md`
-- `audio/sundar-kaand/chaupai-15-full.mp3`
-- `audio/sundar-kaand/chaupai-15-slow.mp3`
-- `images/sundar-kaand/modern-minimalist/chaupai-15.png`
-
-**Then commit and push:**
-```bash
-git add _verses/ audio/ images/ data/
-git commit -m "Generate chaupai-15 for Sundar Kaand
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
-git push origin main
-```
+Full options + the per-media commands (`verse-images`/`verse-audio`/`verse-embeddings`): [docs/guides/content-generation.md](docs/guides/content-generation.md).
 
 ## Key Files to Update
 **When adding verses:**
@@ -102,21 +85,7 @@ git push origin main
 4. **Embeddings not updating**: Re-run verse-generate command
 
 ## SDK Version
-Currently using sanatan-verse-sdk 0.30.1 - upgrade regularly for new features and fixes.
-
-**Recent updates:**
-- 0.30.1: `verse-index-sources` default provider changed to `openai`; default chunk size increased to 4000 chars; added `--chunk-size` flag
-- 0.30.0: Added `verse-index-sources` command for indexing Puranic source texts (PDF/TXT/MD) into episodes and embeddings; added PDF parsing support (pdfplumber)
-- 0.29.0: Added boto3/S3 integration
-- 0.27.3: Minor fixes
-- 0.27.2: Minor fixes
-- 0.27.1: Minor fixes
-- 0.27.0: `--all` flag no longer needed (verse-generate creates everything by default)
-- 0.25.2: Package renamed from sanatan-sdk to sanatan-verse-sdk
-- 0.21.0: Supports `data/themes/` location (Issue #5)
-- 0.20.3: Supports `_data/collections.yml` (Issue #4), audio hyphen naming
-- 0.20.2: Fixed validation bug (Issue #3)
-- 0.20.0: Scene descriptions from `data/scenes/*.yml` (Issue #2)
+Currently using sanatan-verse-sdk 0.30.1 — upgrade regularly: `./venv/bin/pip install --upgrade sanatan-verse-sdk`. Version history: [SDK releases](https://github.com/sanatan-learnings/sanatan-verse-sdk/releases).
 
 ## Python Commands
 **ALWAYS run Python commands in the virtual environment:**
@@ -129,9 +98,6 @@ Currently using sanatan-verse-sdk 0.30.1 - upgrade regularly for new features an
 verse-generate --collection sundar-kaand --verse 18 ...
 pip install --upgrade sanatan-verse-sdk
 ```
-
-## Cost Per Verse
-~$0.05-0.06 (AI content + image + audio + embeddings)
 
 ## Testing
 ```bash
