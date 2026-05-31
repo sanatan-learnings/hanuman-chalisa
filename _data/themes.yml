@@ -60,6 +60,17 @@ bajrang-baan:
       default: true
       status: "not-started"
 
+hanuman-bahuk:
+  available_themes:
+    modern-minimalist:
+      name_en: "Modern Minimalist"
+      name_hi: "आधुनिक न्यूनतम"
+      description_en: "Contemporary spiritual aesthetics with devotional imagery of Hanuman as healer and protector"
+      description_hi: "हनुमान के उपचारक और रक्षक रूप के भक्तिपूर्ण चित्रण के साथ समकालीन आध्यात्मिक सौंदर्यशास्त्र"
+      folder: "modern-minimalist"
+      default: true
+      status: "not-started"
+
 # Global theme settings (for theme-switcher functionality)
 # Only applies to collections with multiple complete themes
 theme_switcher_enabled:
