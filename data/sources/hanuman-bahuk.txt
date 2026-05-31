@@ -7,7 +7,7 @@ Structure: 44 verses across mixed meters:
   झूलना (Jhulna)      : 3
   घनाक्षरी (Ghanakshari): 4-15
   सवैया (Savaiya)     : 16-19
-  घनाक्षरी (Ghanakshari): 20-35  (no meter header in source)
+  घनाक्षरी (Ghanakshari): 20-35  (घनाक्षरी header added before verse 20 — absent in navbharattimes, confirmed present in shdvef.com)
   सवैया (Savaiya)     : 36
   घनाक्षरी (Ghanakshari): 37-44
 Editorial notes:
@@ -169,6 +169,7 @@ Editorial notes:
 राम-प्रताप-हुतासन, कच्छ, बिपच्छ, समीर समीर-दुलारो ।
 पाप-तें साप-तें ताप तिहूं-तें सदा तुलसी कहूं सो रखवारो ।।१९।।
 
+घनाक्षरी
 जानत जहान हनुमान को निवाज्यौ जन,
 मन अनुमानि बलि, बोल न बिसारिये ।
 सेवा-जोग तुलसी कबहुं कहा चूक परी,
