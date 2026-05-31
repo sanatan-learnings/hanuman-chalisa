@@ -24,6 +24,16 @@ This directory contains authoritative source texts for sacred verse collections 
   - Closing benediction
 - **⚠️ Known Issue**: Traditional count is 524 chaupais + 60 dohas. This source has 522 + 58. See [Issue #14](https://github.com/sanatan-learnings/hanuman-gpt/issues/14)
 
+### hanuman-bahuk.txt
+- **Source**: https://navbharattimes.indiatimes.com/astro/religion-rituals/arti-bhajan/hanuman-bahuk-path-lyrics-in-hindi/articleshow/120234026.cms
+- **Retrieved**: 2026-05-31
+- **Description**: Hanuman Bahuk by Goswami Tulsidas — devotional hymn composed during illness
+- **Format**: Plain text with Devanagari script; meter section headers (छप्पय / झूलना / घनाक्षरी / सवैया) kept inline
+- **Structure**: 44 verses across mixed meters — छप्पय (1-2), झूलना (3), घनाक्षरी (4-15), सवैया (16-19), घनाक्षरी (20-35), सवैया (36), घनाक्षरी (37-44)
+- **⚠️ Editorial notes**:
+  - 7 consecutive duplicate lines (paste artifacts) were removed before saving — verses 3, 6, 9, 12, 15, 39, 42.
+  - Verse-number OCR errors left as-is in the source and to be corrected during parsing: verse 15 shows `॥९५॥`, verse 21 shows `॥२२१॥`, verse 41 shows `॥४२१॥`.
+
 ## Adding New Source Texts
 
 When adding a new source text:
