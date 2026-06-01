@@ -30,10 +30,53 @@ title: Hanuman Bahuk
 
 <section class="verse-navigation">
     <h3>🙏 <span data-lang="en">Hanuman Bahuk Verses</span><span data-lang="hi">हनुमान बाहुक पद</span></h3>
-    <div class="verse-grid">
-        {% assign verses = site.verses | where: "collection_key", "hanuman-bahuk" | sort: "verse_number" %}
-        {% if verses.size > 0 %}
-            {% for verse in verses %}
+
+    {% assign verses = site.verses | where: "collection_key", "hanuman-bahuk" | sort: "verse_number" %}
+    {% if verses.size > 0 %}
+        {% assign prev_type = "" %}
+        {% for verse in verses %}
+            {% comment %} When the meter (verse_type) changes, start a new section. Bahuk's meters
+                          interleave, so ghanakshari/savaiya correctly appear as multiple blocks. {% endcomment %}
+            {% if verse.verse_type != prev_type %}
+                {% if prev_type != "" %}
+                    </div></div>
+                {% endif %}
+
+                {% comment %} Count consecutive verses of this meter for the section count {% endcomment %}
+                {% assign section_count = 0 %}
+                {% assign counting = true %}
+                {% for v in verses %}
+                    {% if counting and v.verse_number >= verse.verse_number %}
+                        {% if v.verse_type == verse.verse_type %}
+                            {% assign section_count = section_count | plus: 1 %}
+                        {% else %}
+                            {% assign counting = false %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                <div class="verse-section">
+                    <h4 class="section-header">
+                        {% if verse.verse_type == 'chhappay' %}
+                            <span data-lang="en">📜 Chhappay ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                            <span data-lang="hi">📜 छप्पय ({{ section_count }} पद)</span>
+                        {% elsif verse.verse_type == 'jhulna' %}
+                            <span data-lang="en">🎵 Jhulna ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                            <span data-lang="hi">🎵 झूलना ({{ section_count }} पद)</span>
+                        {% elsif verse.verse_type == 'ghanakshari' %}
+                            <span data-lang="en">⚡ Ghanakshari ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                            <span data-lang="hi">⚡ घनाक्षरी ({{ section_count }} पद)</span>
+                        {% elsif verse.verse_type == 'savaiya' %}
+                            <span data-lang="en">🌸 Savaiya ({{ section_count }} {% if section_count == 1 %}Verse{% else %}Verses{% endif %})</span>
+                            <span data-lang="hi">🌸 सवैया ({{ section_count }} पद)</span>
+                        {% else %}
+                            <span data-lang="en">{{ verse.verse_type | capitalize }} ({{ section_count }})</span>
+                            <span data-lang="hi">{{ verse.verse_type }} ({{ section_count }} पद)</span>
+                        {% endif %}
+                    </h4>
+                    <div class="verse-grid">
+            {% endif %}
+
             <a href="{{ verse.url | relative_url }}" class="verse-card">
                 {% if verse.image %}
                 <div class="card-image">
@@ -51,12 +94,20 @@ title: Hanuman Bahuk
                     </div>
                 </div>
             </a>
-            {% endfor %}
-        {% else %}
+
+            {% assign prev_type = verse.verse_type %}
+        {% endfor %}
+
+        {% comment %} Close the final section {% endcomment %}
+        {% if prev_type != "" %}
+            </div></div>
+        {% endif %}
+    {% else %}
+        <div class="verse-grid">
             <div class="placeholder-message">
                 <p data-lang="en">📝 Verses coming soon...</p>
                 <p data-lang="hi">📝 शीघ्र ही उपलब्ध होगा...</p>
             </div>
-        {% endif %}
-    </div>
+        </div>
+    {% endif %}
 </section>
