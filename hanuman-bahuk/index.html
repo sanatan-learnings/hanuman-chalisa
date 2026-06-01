@@ -25,6 +25,22 @@ title: Hanuman Bahuk
 
     <div class="quick-actions">
         <a href="{{ '/chalisa/book' | relative_url }}?collection=hanuman-bahuk" class="btn-primary">📕 <span data-lang="en">Generate Book</span><span data-lang="hi">पुस्तक बनाएं</span></a>
+
+        {% comment %} Theme switcher for Hanuman Bahuk (multiple complete themes) {% endcomment %}
+        {% assign collection_themes = site.data.themes.hanuman-bahuk.available_themes %}
+        <div class="theme-switcher-inline">
+            <label for="themeSelect">🎨</label>
+            <select id="themeSelect" onchange="switchTheme(this.value)">
+                {% for theme_data in collection_themes %}
+                    {% assign theme_key = theme_data[0] %}
+                    {% assign theme = theme_data[1] %}
+                    <option value="{{ theme_key }}"
+                            {% if theme.default %}selected{% endif %}>
+                        <span data-lang="en">{{ theme.name_en }}</span>
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
     </div>
 </div>
 
