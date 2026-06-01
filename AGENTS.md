@@ -1,7 +1,7 @@
 # Claude Code Guide - Hanuman GPT
 
 ## Project Overview
-Jekyll-based website for sacred Hindu texts with multimedia content (images, audio, embeddings). Currently contains Hanuman Chalisa and Sundar Kaand collections.
+Jekyll-based website for sacred Hindu texts with multimedia content (images, audio, embeddings). Currently contains Hanuman Chalisa, Sundar Kaand, Sankat Mochan Hanumanashtak, Bajrang Baan, and Hanuman Bahuk; Hanuman Stuti and Hanuman Kavacham are planned.
 
 ## Critical Naming Conventions
 **ALWAYS use hyphens, never underscores:**

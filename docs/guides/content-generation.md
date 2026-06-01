@@ -139,7 +139,7 @@ bundle exec jekyll serve --port 4001
 
 All multimedia content is generated using the [sanatan-verse-sdk](https://github.com/sanatan-learnings/sanatan-verse-sdk):
 
-- **verse-images** - Generate AI images with DALL-E 3
+- **verse-images** - Generate AI images with gpt-image-1
 - **verse-audio** - Generate audio pronunciations with ElevenLabs
 - **verse-embeddings** - Generate vector embeddings
 - **verse-deploy** - Deploy Cloudflare Workers
@@ -150,7 +150,7 @@ See [scripts/README.md](../scripts/README.md) for complete documentation.
 
 ## Generate Custom Image Themes
 
-Create new artistic themes using DALL-E 3.
+Create new artistic themes using gpt-image-1.
 
 ### Quick Start
 
@@ -320,7 +320,7 @@ See [audio/README.md](../audio/README.md) for detailed instructions.
 
 - **Python 3.8+** - Content generation SDK
 - **sanatan-verse-sdk** - Content generation toolkit (images, audio, embeddings)
-- **OpenAI API** - DALL-E 3 integration for images
+- **OpenAI API** - gpt-image-1 integration for images
 - **Eleven Labs API** - Text-to-speech for audio
 - **ffmpeg** - Audio post-processing (speed control)
 - **Ruby/Bundler** - Dependency management
@@ -446,7 +446,7 @@ All images should be:
 
 ## API Integration
 
-### DALL-E 3 Configuration
+### gpt-image-1 Configuration
 
 The sanatan-verse-sdk handles all API configuration. Default settings:
 
@@ -495,7 +495,7 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for:
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [Liquid Template Language](https://shopify.github.io/liquid/)
 - [GitHub Pages Docs](https://docs.github.com/en/pages)
-- [DALL-E 3 API](https://platform.openai.com/docs/guides/images)
+- [gpt-image-1 API](https://platform.openai.com/docs/guides/images)
 
 ## Getting Help
 
