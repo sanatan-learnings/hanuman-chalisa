@@ -69,7 +69,7 @@ Optionally pre-author `data/scenes/{collection}.yml` and `data/themes/{collectio
 
 1. **`_data/collections.yml`** — add (or flip) the entry to `enabled: true`. Required fields: `key`, `name_en`/`name_hi`, `author_en`/`author_hi`, `description_en`/`description_hi`, `permalink_base`, `icon`, `subdirectory`, `enabled`. Enabling moves it from the "Coming Soon" include into the active collections grid + Library.
 2. **`_data/themes.yml`** — add a `{collection}` block with at least the `modern-minimalist` theme.
-3. **`_layouts/verse.html`** — add `{collection}` to the audio-rendering `{% if %}` conditional, or audio players won't show.
+3. **`_layouts/verse.html`** — add `{collection}` to the audio-rendering `{% raw %}{% if %}{% endraw %}` conditional, or audio players won't show.
 4. **`{collection}/index.html`** — the landing page (most are pre-scaffolded; it auto-populates from `site.verses` filtered by `collection_key`).
 
 ## Step 5 — Test & ship
