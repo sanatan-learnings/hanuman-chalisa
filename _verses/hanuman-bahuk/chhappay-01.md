@@ -154,7 +154,7 @@ word_meanings:
   roman: karaala
   meaning:
     en: Fierce
-    hi: भयानक
+    hi: विकराल
 - word: कालहुको
   roman: kaalahuko
   meaning:
@@ -272,7 +272,7 @@ word_meanings:
     hi: सभी संकटों को दूर करने वाला
 literal_translation:
   en: The one who crossed the ocean, removed Sita's worries, and shines like the sun. His body is huge and fierce, known as the death of death. He fearlessly burnt the dense forest of Lanka and destroyed the pride of the powerful demons. He is the son of the wind god. Tulsidas says that Hanuman is easily accessible to his servants and always near to those who sing his virtues, bow to him, remember him, and chant his name. He is equal to the remover of all troubles.
-  hi: वह जो समुद्र को पार करने वाला, सीता की चिंताओं को दूर करने वाला, और सूर्य की तरह चमकने वाला है। उनका शरीर विशाल और भयानक है, जिसे मृत्यु का मृत्यु कहा जाता है। उन्होंने निडरतापूर्वक लंका के घने जंगल को जला दिया और शक्तिशाली दानवों के अभिमान को नष्ट कर दिया। वह पवन देवता के पुत्र हैं। तुलसीदास कहते हैं कि हनुमान अपने सेवकों के लिए आसानी से पहुंचने योग्य हैं और हमेशा उनके निकट रहते हैं जो उनके गुण गाते हैं, उनका स्मरण करते हैं, और उनका जप करते हैं। वह सभी संकटों को दूर करने वाले के समान हैं।
+  hi: वह जो समुद्र को पार करने वाला, सीता की चिंताओं को दूर करने वाला, और सूर्य की तरह चमकने वाला है। उनका शरीर विशाल और विकराल है, जिसे मृत्यु का मृत्यु कहा जाता है। उन्होंने निडरतापूर्वक लंका के घने जंगल को जला दिया और शक्तिशाली दानवों के अभिमान को नष्ट कर दिया। वह पवन देवता के पुत्र हैं। तुलसीदास कहते हैं कि हनुमान अपने सेवकों के लिए आसानी से पहुंचने योग्य हैं और हमेशा उनके निकट रहते हैं जो उनके गुण गाते हैं, उनका स्मरण करते हैं, और उनका जप करते हैं। वह सभी संकटों को दूर करने वाले के समान हैं।
 interpretive_meaning:
   en: The verse extols the virtues of Lord Hanuman, highlighting his strength, courage, and devotion. It emphasizes that Hanuman is always accessible to his devotees and aids in the removal of all troubles.
   hi: यह छंद भगवान हनुमान की स्तुति करता है, उनकी शक्ति, साहस, और भक्ति को उजागर करता है। यह बल देता है कि हनुमान हमेशा अपने भक्तों के लिए सुलभ हैं और सभी संकटों को दूर करने में सहायता करते हैं।
