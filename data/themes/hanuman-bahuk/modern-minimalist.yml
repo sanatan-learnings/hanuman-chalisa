@@ -195,10 +195,9 @@ theme:
       traditional Hindu devotional symbolism. Professional, reverent, and spiritually uplifting.
 
     dalle_params:
-      model: "dall-e-3"
-      size: "1024x1792"      # Portrait, cropped to 1024x1536
-      quality: "standard"     # Options: standard, hd
-      style: "natural"        # Options: natural, vivid
+      model: "gpt-image-1"   # dall-e-3 retired; gpt-image-1 is the current image model
+      size: "1024x1536"      # Portrait 2:3 (gpt-image-1 valid sizes: 1024x1024, 1024x1536, 1536x1024)
+      quality: "medium"       # gpt-image-1 quality: low, medium, high
       n: 1
 
     retry_count: 3
