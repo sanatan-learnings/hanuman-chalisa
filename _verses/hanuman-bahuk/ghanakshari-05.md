@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-04/
 next_verse: /hanuman-bahuk/ghanakshari-06/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-05.png
-devanagari: दूत रामराय को, सपूत पूत पौनको, तू अंजनी को नन्दन प्रताप भूरि भानु सो । सीय-सोच-समन, दुरित दोष दमन, सरन आये अवन, लखन प्रिय प्रान सो ।। दसमुख दुसह दरिद्र दरिबे को भयो, प्रकट तिलोक ओक तुलसी निधान सो । ज्ञान गुनवान बलवान सेवा सावधान, साहेब सुजान उर आनु हनुमान सो॥
-transliteration: Dūta rāmarāya ko, sapūta pūta paunako, tū aṅjanī ko nandana pratāpa bhūri bhānu so। Sīya-socha-samana, durita doṣa damana, saraṇa āye avana, lakhaṇa priya prāṇa so।। Dasamukha dusaha daridra daribe ko bhayo, prakaṭa tiloka oka tulasī nidhāna so। Jñāna gunavāna balavāna sevā sāvadhāna, sāheba sujāna ura ānu hanumāna so॥
+devanagari: |
+  दूत रामराय को, सपूत पूत पौनको, तू अंजनी को नन्दन प्रताप भूरि भानु सो ।
+  सीय-सोच-समन, दुरित दोष दमन, सरन आये अवन, लखन प्रिय प्रान सो ।।
+  दसमुख दुसह दरिद्र दरिबे को भयो, प्रकट तिलोक ओक तुलसी निधान सो ।
+  ज्ञान गुनवान बलवान सेवा सावधान, साहेब सुजान उर आनु हनुमान सो॥
+transliteration: |
+  Dūta rāmarāya ko, sapūta pūta paunako, tū aṅjanī ko nandana pratāpa bhūri bhānu so।
+  Sīya-socha-samana, durita doṣa damana, saraṇa āye avana, lakhaṇa priya prāṇa so।।
+  Dasamukha dusaha daridra daribe ko bhayo, prakaṭa tiloka oka tulasī nidhāna so।
+  Jñāna gunavāna balavāna sevā sāvadhāna, sāheba sujāna ura ānu hanumāna so॥
 phonetic_notes:
 - word: दूत
   phonetic: du-ta

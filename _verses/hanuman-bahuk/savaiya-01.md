@@ -10,8 +10,16 @@ verse_type: savaiya
 previous_verse: /hanuman-bahuk/ghanakshari-12/
 next_verse: /hanuman-bahuk/savaiya-02/
 image: /images/hanuman-bahuk/modern-minimalist/savaiya-01.png
-devanagari: जान सिरोमनि हौ हनुमान सदा जन के मन बास तिहार । कारो बिगारो मैं काको कहा केहि कारन खीझत हौं तो तिहार ॥। साहेब सेवक नाते तो हातो कियो सो तहां तुलसी को न चारो । दोष सुनाये ते आगेहूं को होशियार हैं हों मन तौ हिय हारो॥
-transliteration: jāna siromani hau hanumāna sadā jana ke mana bāsa tihāra । kāro bigāro maiṁ kāko kahā kehi kārana khījata hauṁ to tihāra ॥। sāheba sevaka nāte to hāto kiyō sō tahāṁ tulasī ko na cāro । doṣa sunāye te āgēhūṁ ko hośiyāra haiṁ hoṁ mana tau hiya hāro॥
+devanagari: |
+  जान सिरोमनि हौ हनुमान सदा जन के मन बास तिहार ।
+  कारो बिगारो मैं काको कहा केहि कारन खीझत हौं तो तिहार ॥।
+  साहेब सेवक नाते तो हातो कियो सो तहां तुलसी को न चारो ।
+  दोष सुनाये ते आगेहूं को होशियार हैं हों मन तौ हिय हारो॥
+transliteration: |
+  jāna siromani hau hanumāna sadā jana ke mana bāsa tihāra ।
+  kāro bigāro maiṁ kāko kahā kehi kārana khījata hauṁ to tihāra ॥।
+  sāheba sevaka nāte to hāto kiyō sō tahāṁ tulasī ko na cāro ।
+  doṣa sunāye te āgēhūṁ ko hośiyāra haiṁ hoṁ mana tau hiya hāro॥
 phonetic_notes:
 - word: जान
   phonetic: jā-na

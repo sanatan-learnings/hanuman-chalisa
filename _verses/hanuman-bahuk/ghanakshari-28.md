@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-27/
 next_verse: /hanuman-bahuk/savaiya-05/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-28.png
-devanagari: घेरि लियो रोगनि, कुजोगनि, कुलोगनि ज्यौ, बासर जलद घन घटा धुकि धाई है । बरसत बारि पीर जारिये जवासे जस, रोष बिनु दोष धूम-मूल मलिनाई है ।। करुनानिधान हनुमान महा बलवान, हेरि हंसि होकि फूंकि फौजैं ते उड़ाई है । खाये हुतो तुलसी कुरोग राढ़ राकसनि, केसरी किसोर राखे बीर बरिआई है॥
-transliteration: Gheri liyo rogaṇi, kujoṇi, kuloṇi jyau, bāsara jalada ghana ghaṭā dhuki dhāī hai। Barasata bāri pīra jāriye javāse jasa, roṣa binu doṣa dhūma-mūla malināī hai।। Karuṇānidhāna hanumāna mahā balavāna, heri haṃsi hoki phūṅki phaujaiṃ te uḍāī hai। Khāye huto tulasī kuroga rāḍha rākasaṇi, kesari kisora rākhe bīra bariāī hai॥
+devanagari: |
+  घेरि लियो रोगनि, कुजोगनि, कुलोगनि ज्यौ, बासर जलद घन घटा धुकि धाई है ।
+  बरसत बारि पीर जारिये जवासे जस, रोष बिनु दोष धूम-मूल मलिनाई है ।।
+  करुनानिधान हनुमान महा बलवान, हेरि हंसि होकि फूंकि फौजैं ते उड़ाई है ।
+  खाये हुतो तुलसी कुरोग राढ़ राकसनि, केसरी किसोर राखे बीर बरिआई है॥
+transliteration: |
+  Gheri liyo rogaṇi, kujoṇi, kuloṇi jyau, bāsara jalada ghana ghaṭā dhuki dhāī hai।
+  Barasata bāri pīra jāriye javāse jasa, roṣa binu doṣa dhūma-mūla malināī hai।।
+  Karuṇānidhāna hanumāna mahā balavāna, heri haṃsi hoki phūṅki phaujaiṃ te uḍāī hai।
+  Khāye huto tulasī kuroga rāḍha rākasaṇi, kesari kisora rākhe bīra bariāī hai॥
 phonetic_notes:
 - word: घेरि
   phonetic: ghe-ri

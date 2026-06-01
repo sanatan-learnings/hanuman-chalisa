@@ -10,8 +10,16 @@ verse_type: jhulna
 previous_verse: /hanuman-bahuk/chhappay-02/
 next_verse: /hanuman-bahuk/ghanakshari-01/
 image: /images/hanuman-bahuk/modern-minimalist/jhulna-01.png
-devanagari: पंचमुख-छमुख-भृगु मुख्य भट असुर सुर, सर्व-सरि-समर समरत्थ सूरो । बकुरो बीर बिरुदैत बिरुदावली, बेद बंदी बदत पैजपूरो ।। जासु गुनगाथ रघुनाथ कह, जासुबल, बिपुल-जल-भरित जग-जलधि झूरो । दुवन-दल-दमनको कौन तुलसीस है, पवन को पूत रजपूत रुरो॥
-transliteration: Pañcamukha-chamukha-bhṛgu mukhya bhaṭa asura sura, sarva-sari-samara samaraththa sūro। Bakuro bīra birudaita birudāvalī, beda bandī badata paijapūro।। Jāsu gunagātha raghunātha kaha, jāsubala, bipula-jala-bharita jaga-jaladhi jhūro। Duṣaṇa-dala-damanako kauna tulasīsa hai, pavana ko pūta rajapūta ruro॥
+devanagari: |
+  पंचमुख-छमुख-भृगु मुख्य भट असुर सुर, सर्व-सरि-समर समरत्थ सूरो ।
+  बकुरो बीर बिरुदैत बिरुदावली, बेद बंदी बदत पैजपूरो ।।
+  जासु गुनगाथ रघुनाथ कह, जासुबल, बिपुल-जल-भरित जग-जलधि झूरो ।
+  दुवन-दल-दमनको कौन तुलसीस है, पवन को पूत रजपूत रुरो॥
+transliteration: |
+  Pañcamukha-chamukha-bhṛgu mukhya bhaṭa asura sura, sarva-sari-samara samaraththa sūro।
+  Bakuro bīra birudaita birudāvalī, beda bandī badata paijapūro।।
+  Jāsu gunagātha raghunātha kaha, jāsubala, bipula-jala-bharita jaga-jaladhi jhūro।
+  Duṣaṇa-dala-damanako kauna tulasīsa hai, pavana ko pūta rajapūta ruro॥
 phonetic_notes:
 - word: पंचमुख
   phonetic: pan-cha-mukh

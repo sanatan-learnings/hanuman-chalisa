@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-20/
 next_verse: /hanuman-bahuk/ghanakshari-22/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-21.png
-devanagari: तेरो बालि केलि बीर सुनि सहमत धीर, भूलत सरीर सुधि सक्र-रबि-राहु की । तेरी बांह बसत बिसोक लोकपाल सब, तेरो नाम लेत रहै आरति न काहू की ॥ साम दान भेद बिधि बेदहू लबेद सिधि, हाथ कपिनाथ ही के चोटी चोर साहु की । आलस अनख परिहास कै सिखावन है, एते दिन रही पीर तुलसी के बाहु की॥
-transliteration: tero bāli keli bīra suni sahamata dhīra, bhūlata sarīra sudhi sakra-rabi-rāhu kī। terī bāṁha basata bisoka lokapāla saba, tero nāma leta rahai āratī na kāhū kī॥ sāma dāna bheda bidhi bedahū labeda sidhi, hātha kapi-nātha hī ke coṭī cora sāhu kī। ālasa anakha pari-hāsa kai sikhāvana hai, ete dina rahī pīra tulasī ke bāhu kī॥
+devanagari: |
+  तेरो बालि केलि बीर सुनि सहमत धीर, भूलत सरीर सुधि सक्र-रबि-राहु की ।
+  तेरी बांह बसत बिसोक लोकपाल सब, तेरो नाम लेत रहै आरति न काहू की ॥
+  साम दान भेद बिधि बेदहू लबेद सिधि, हाथ कपिनाथ ही के चोटी चोर साहु की ।
+  आलस अनख परिहास कै सिखावन है, एते दिन रही पीर तुलसी के बाहु की॥
+transliteration: |
+  tero bāli keli bīra suni sahamata dhīra, bhūlata sarīra sudhi sakra-rabi-rāhu kī।
+  terī bāṁha basata bisoka lokapāla saba, tero nāma leta rahai āratī na kāhū kī॥
+  sāma dāna bheda bidhi bedahū labeda sidhi, hātha kapi-nātha hī ke coṭī cora sāhu kī।
+  ālasa anakha pari-hāsa kai sikhāvana hai, ete dina rahī pīra tulasī ke bāhu kī॥
 phonetic_notes:
 - word: तेरो
   phonetic: te-ro

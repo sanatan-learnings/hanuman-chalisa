@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-17/
 next_verse: /hanuman-bahuk/ghanakshari-19/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-18.png
-devanagari: करम-कराल-कंस भूमिपाल के भरोसे, बकी बकभगिनी काहू ते कहा डरैगी । बड़ी बिकराल बाल घातिनी न जात कदि, बहुबल बालक छबीले छोटे छरैगी ।। आई है बनाइ बेष आप ही विचारि देख, पाप जाय सबको गुनी के पाले परैगी । पूतना पिसाचिनी ज्यौ कपिकान्ह तुलसी की, बोंहपीर महाबीर तेरे मारे मरगी॥
-transliteration: karama-karāla-kaṁsa bhūmipāla ke bharose, bakī bakabhaginī kāhū te kahā ḍaraigī । baḍī bikarāla bāla ghātinī na jāta kadi, bahubala bālaka chabīle choṭe chharaigī ।। āī hai banāi beṣa āpa hī vichāri dekha, pāpa jāya sabako gunī ke pāle paraigī । pūtanā pisāchinī jyau kapikānha tulasī kī, boṁhapīra mahābīra tere māre margī॥
+devanagari: |
+  करम-कराल-कंस भूमिपाल के भरोसे, बकी बकभगिनी काहू ते कहा डरैगी ।
+  बड़ी बिकराल बाल घातिनी न जात कदि, बहुबल बालक छबीले छोटे छरैगी ।।
+  आई है बनाइ बेष आप ही विचारि देख, पाप जाय सबको गुनी के पाले परैगी ।
+  पूतना पिसाचिनी ज्यौ कपिकान्ह तुलसी की, बोंहपीर महाबीर तेरे मारे मरगी॥
+transliteration: |
+  karama-karāla-kaṁsa bhūmipāla ke bharose, bakī bakabhaginī kāhū te kahā ḍaraigī ।
+  baḍī bikarāla bāla ghātinī na jāta kadi, bahubala bālaka chabīle choṭe chharaigī ।।
+  āī hai banāi beṣa āpa hī vichāri dekha, pāpa jāya sabako gunī ke pāle paraigī ।
+  pūtanā pisāchinī jyau kapikānha tulasī kī, boṁhapīra mahābīra tere māre margī॥
 phonetic_notes:
 - word: करम-कराल-कंस
   phonetic: ka-ram-ka-raal-kans

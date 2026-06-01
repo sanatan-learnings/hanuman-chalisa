@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-21/
 next_verse: /hanuman-bahuk/ghanakshari-23/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-22.png
-devanagari: टूकनि को घर-घर डोलत केगाल बोलि, बाल ज्यों कृपाल नतपाल पालि पोसो है । कीन्ही है संभार सार अंजनी कुमार बीर, आपनो बिसारि हैं न मेरेहू भरोसो है ॥। इतनो परेखो सब भोति समरथ आजु, कपिराज सांची कहौं को तिलोक तोसो है । सासति सहत दास कीजे पेखि परिहास, चीरी को मरन खेल बालकनि को सो है॥
-transliteration: Ṭūkani ko ghara-ghara ḍolata kegāla boli, bāla jyon kṛpāla natapāla pāli poso hai । kīnhī hai sambhāra sāra anjanī kumāra bīra, āpano bisāri hai na merehū bharoso hai ॥। itano parekho saba bhoti samaratha āju, kapirāja sānchī kahauṁ ko tiloka toso hai । sāsati sahata dāsa kīje pekhi parihāsa, chīrī ko marana khela bālakani ko so hai॥
+devanagari: |
+  टूकनि को घर-घर डोलत केगाल बोलि, बाल ज्यों कृपाल नतपाल पालि पोसो है ।
+  कीन्ही है संभार सार अंजनी कुमार बीर, आपनो बिसारि हैं न मेरेहू भरोसो है ॥।
+  इतनो परेखो सब भोति समरथ आजु, कपिराज सांची कहौं को तिलोक तोसो है ।
+  सासति सहत दास कीजे पेखि परिहास, चीरी को मरन खेल बालकनि को सो है॥
+transliteration: |
+  Ṭūkani ko ghara-ghara ḍolata kegāla boli, bāla jyon kṛpāla natapāla pāli poso hai ।
+  kīnhī hai sambhāra sāra anjanī kumāra bīra, āpano bisāri hai na merehū bharoso hai ॥।
+  itano parekho saba bhoti samaratha āju, kapirāja sānchī kahauṁ ko tiloka toso hai ।
+  sāsati sahata dāsa kīje pekhi parihāsa, chīrī ko marana khela bālakani ko so hai॥
 phonetic_notes:
 - word: टूकनि
   phonetic: ṭū-ka-ni

@@ -10,8 +10,14 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-32/
 next_verse: /hanuman-bahuk/ghanakshari-34/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-33.png
-devanagari: असन-बसन-हीन बिषम-बिषाद-लीन, देखि दीन दूबरो करै न हाय हाय को । तुलसी अनाथ सो सनाथ रघुनाथ कियो, दियो फल सील सिंधु आपने सुभाय को ॥। नीच यहि बीच पति पाइ भरु हाईगो, बिहाइ प्रभु भजन बचन मन काय को | ता तें तनु पेषियत घोर बरतोर मिस, फूटि फूटि निकसत लोन राम राय को॥
-transliteration: asan-basan-hīna biṣam-biṣād-līna, dekhi dīna dūbaro karai na hāya hāya ko । tulasi anātha so sanātha raghunātha kiyo, diyo phala sīla sindhu āpane subhāya ko ॥। nīca yahi bīca pati pāi bharu hāīgo, bihāi prabhu bhajana bacana mana kāya ko | tā teṁ tanu peṣiyata ghor baratora mis, phūṭi phūṭi nikasata lona rāma rāya ko॥
+devanagari: |
+  असन-बसन-हीन बिषम-बिषाद-लीन, देखि दीन दूबरो करै न हाय हाय को ।
+  तुलसी अनाथ सो सनाथ रघुनाथ कियो, दियो फल सील सिंधु आपने सुभाय को ॥।
+  नीच यहि बीच पति पाइ भरु हाईगो, बिहाइ प्रभु भजन बचन मन काय को | ता तें तनु पेषियत घोर बरतोर मिस, फूटि फूटि निकसत लोन राम राय को॥
+transliteration: |
+  asan-basan-hīna biṣam-biṣād-līna, dekhi dīna dūbaro karai na hāya hāya ko ।
+  tulasi anātha so sanātha raghunātha kiyo, diyo phala sīla sindhu āpane subhāya ko ॥।
+  nīca yahi bīca pati pāi bharu hāīgo, bihāi prabhu bhajana bacana mana kāya ko | tā teṁ tanu peṣiyata ghor baratora mis, phūṭi phūṭi nikasata lona rāma rāya ko॥
 phonetic_notes:
 - word: असन-बसन-हीन
   phonetic: a-san-ba-san-heen

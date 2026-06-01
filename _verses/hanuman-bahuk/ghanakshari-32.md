@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-31/
 next_verse: /hanuman-bahuk/ghanakshari-33/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-32.png
-devanagari: बालपने सूथे मन राम सनमुख भयो, राम नाम लेत मांगि खात टूकटाक हां । परयो लोक-रीति में पुनीत प्रीति राम राय, मोह बस बैठो तोरि तरकि तराक हौ ॥। खोटे-खोटे आचरन आचरत अपनायो, अंजनी कुमार सोध्यो रामपानि पाक हौ । तुलसी गुसांई भयो भोंडे दिन भूल गयो, ताको फल पावत निदान परिपाक हौं॥
-transliteration: Bālapanē sūthē mana rāma sanamukha bhayō, rāma nāma lēta māṅgi khāta ṭūkaṭāka hāṁ । Paryō lōka-rīti mēṁ punīta prīti rāma rāya, mōha basa baiṭhō tōri taraki tarāka hau ॥ Khoṭē-khoṭē ācharana ācharata apanāyō, aṅjanī kumāra sōdhyō rāmapāni pāka hau । Tulasī gusāṁī bhayō bhōṁdē dina bhūla gayō, tākō phala pāvata nidāna paripāka hauṁ॥
+devanagari: |
+  बालपने सूथे मन राम सनमुख भयो, राम नाम लेत मांगि खात टूकटाक हां ।
+  परयो लोक-रीति में पुनीत प्रीति राम राय, मोह बस बैठो तोरि तरकि तराक हौ ॥।
+  खोटे-खोटे आचरन आचरत अपनायो, अंजनी कुमार सोध्यो रामपानि पाक हौ ।
+  तुलसी गुसांई भयो भोंडे दिन भूल गयो, ताको फल पावत निदान परिपाक हौं॥
+transliteration: |
+  Bālapanē sūthē mana rāma sanamukha bhayō, rāma nāma lēta māṅgi khāta ṭūkaṭāka hāṁ ।
+  Paryō lōka-rīti mēṁ punīta prīti rāma rāya, mōha basa baiṭhō tōri taraki tarāka hau ॥
+  Khoṭē-khoṭē ācharana ācharata apanāyō, aṅjanī kumāra sōdhyō rāmapāni pāka hau ।
+  Tulasī gusāṁī bhayō bhōṁdē dina bhūla gayō, tākō phala pāvata nidāna paripāka hauṁ॥
 phonetic_notes:
 - word: बालपने
   phonetic: ba-la-pa-ne

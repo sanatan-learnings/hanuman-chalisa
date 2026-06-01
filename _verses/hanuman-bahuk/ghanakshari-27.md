@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-26/
 next_verse: /hanuman-bahuk/ghanakshari-28/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-27.png
-devanagari: पालो तेरे टूक को परेहू चूक मूकिये न, कूर कौड़ी दूको हौं आपनी ओर हरिये । भोरानाथ भोरे ही सरोष होत थोरे दोष, पोषि तोषि थापि आपनी न अवडेरिये ।। अबु तू हौ अंबुचर, अबु तू हों डिंभ सो न, बूझिये बिलंब अवलंब मेरे तेरिये । बालक बिकल जानि पाहि प्रेम पहिचानि, तुलसी की बांह पर लामी लूम फेरिये॥
-transliteration: pālo tere ṭūka ko parehū chūka mūkiye na, kūra kauḍī dūko hauṁ āpanī ora hariye । bhorānātha bhore hī saroṣa hota thore doṣa, poṣi toṣi thāpi āpanī na avaḍerīye ।। abu tū hau ambucara, abu tū hoṁ ḍiṁbha so na, būjiye bilaṁba avalaṁba mere terīye । bālaka bikala jāni pāhi prema pahicāni, tulasī kī bāṁha para lāmī lūma pherīye॥
+devanagari: |
+  पालो तेरे टूक को परेहू चूक मूकिये न, कूर कौड़ी दूको हौं आपनी ओर हरिये ।
+  भोरानाथ भोरे ही सरोष होत थोरे दोष, पोषि तोषि थापि आपनी न अवडेरिये ।।
+  अबु तू हौ अंबुचर, अबु तू हों डिंभ सो न, बूझिये बिलंब अवलंब मेरे तेरिये ।
+  बालक बिकल जानि पाहि प्रेम पहिचानि, तुलसी की बांह पर लामी लूम फेरिये॥
+transliteration: |
+  pālo tere ṭūka ko parehū chūka mūkiye na, kūra kauḍī dūko hauṁ āpanī ora hariye ।
+  bhorānātha bhore hī saroṣa hota thore doṣa, poṣi toṣi thāpi āpanī na avaḍerīye ।।
+  abu tū hau ambucara, abu tū hoṁ ḍiṁbha so na, būjiye bilaṁba avalaṁba mere terīye ।
+  bālaka bikala jāni pāhi prema pahicāni, tulasī kī bāṁha para lāmī lūma pherīye॥
 phonetic_notes:
 - word: पालो
   phonetic: pa-a-lo

@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-07/
 next_verse: /hanuman-bahuk/ghanakshari-09/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-08.png
-devanagari: रचिबे को बिधि जैसे, पालिबे को हरि, हर मीच मारिबे को, ज्याईबे को सुधापान भो । धरिबे को धरनि, तरनि तम दलिबे को, सोखिबे कृसानु, पोषिबे को हिम-भानु भो ।। खल~दुःख दोषिबे को, जन-परितोषिबे को, मांगिबो मलीनता को मोदक सुदान भो । आरत की आरति निवारिबे को तिहूं पुर, तुलसी को साहेब हठीलो हनुमान भो॥
-transliteration: rachibe ko bidhi jaise, pālibe ko hari, har mīca māribe ko, jyāibe ko sudhāpāna bho। dharibe ko dharni, tarani tam dalibe ko, sokhibe kṛsānu, poṣibe ko hima-bhānu bho।। khal~duḥkha doṣibe ko, jana-paritoṣibe ko, māṅgibo malīnatā ko modaka sudāna bho। ārata kī āratī nivāribe ko tihūṁ pur, tulasī ko sāheba haṭhīlo hanumāna bho॥
+devanagari: |
+  रचिबे को बिधि जैसे, पालिबे को हरि, हर मीच मारिबे को, ज्याईबे को सुधापान भो ।
+  धरिबे को धरनि, तरनि तम दलिबे को, सोखिबे कृसानु, पोषिबे को हिम-भानु भो ।।
+  खल~दुःख दोषिबे को, जन-परितोषिबे को, मांगिबो मलीनता को मोदक सुदान भो ।
+  आरत की आरति निवारिबे को तिहूं पुर, तुलसी को साहेब हठीलो हनुमान भो॥
+transliteration: |
+  rachibe ko bidhi jaise, pālibe ko hari, har mīca māribe ko, jyāibe ko sudhāpāna bho।
+  dharibe ko dharni, tarani tam dalibe ko, sokhibe kṛsānu, poṣibe ko hima-bhānu bho।।
+  khal~duḥkha doṣibe ko, jana-paritoṣibe ko, māṅgibo malīnatā ko modaka sudāna bho।
+  ārata kī āratī nivāribe ko tihūṁ pur, tulasī ko sāheba haṭhīlo hanumāna bho॥
 phonetic_notes:
 - word: रचिबे
   phonetic: ra-chi-be

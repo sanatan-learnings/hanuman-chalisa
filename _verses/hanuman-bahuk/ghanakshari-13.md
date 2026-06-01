@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/savaiya-04/
 next_verse: /hanuman-bahuk/ghanakshari-14/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-13.png
-devanagari: जानत जहान हनुमान को निवाज्यौ जन, मन अनुमानि बलि, बोल न बिसारिये । सेवा-जोग तुलसी कबहुं कहा चूक परी, साहेब सुभाव कपि साहिबी संभारिये ।। अपराधी जानि कीजै सासति सहस भांति, मोदक मरे जो ताहि माहुर न मारिये । साहसी समीर के दुलारे रघुबीर जू के, बांह पीर महाबीर बेगि ही निवारिये॥
-transliteration: jānata jahāna hanumāna ko nivājyau jana, mana anumāni bali, bola na bisāriye । sevā-joga tulasī kabahuṁ kahā cūka parī, sāheba subhāva kapi sāhibī sambhāriye ।। aparādhī jāni kījai sāsati sahasa bhānti, modaka mare jo tāhi māhura na māriye । sāhasī samīra ke dulāre raghubīra jū ke, bāṁha pīra mahābīra begi hī nivāriye॥
+devanagari: |
+  जानत जहान हनुमान को निवाज्यौ जन, मन अनुमानि बलि, बोल न बिसारिये ।
+  सेवा-जोग तुलसी कबहुं कहा चूक परी, साहेब सुभाव कपि साहिबी संभारिये ।।
+  अपराधी जानि कीजै सासति सहस भांति, मोदक मरे जो ताहि माहुर न मारिये ।
+  साहसी समीर के दुलारे रघुबीर जू के, बांह पीर महाबीर बेगि ही निवारिये॥
+transliteration: |
+  jānata jahāna hanumāna ko nivājyau jana, mana anumāni bali, bola na bisāriye ।
+  sevā-joga tulasī kabahuṁ kahā cūka parī, sāheba subhāva kapi sāhibī sambhāriye ।।
+  aparādhī jāni kījai sāsati sahasa bhānti, modaka mare jo tāhi māhura na māriye ।
+  sāhasī samīra ke dulāre raghubīra jū ke, bāṁha pīra mahābīra begi hī nivāriye॥
 phonetic_notes:
 - word: जानत
   phonetic: ja-na-ta

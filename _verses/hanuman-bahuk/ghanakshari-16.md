@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-15/
 next_verse: /hanuman-bahuk/ghanakshari-17/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-16.png
-devanagari: राम को सनेह, राम साहस लखन सिय, राम की भगति, सोच संकट निवारिये । मुद-मरकट रोग-बारिनिधि हेरि हारे, जीव-जामवंत को भरोसो तेरो भारिये ।। कूदिये कृपाल तुलसी सुप्रेम-पव्बयते, सुथल सुबेल भालू बैठि कैः बिचारिये । महाबीर बांकुरे बराक बांह-पीर क्यों न, लंकिनी ज्यों लात-घात ही मरोरि मारिये॥
-transliteration: Rāma ko saneha, rāma sāhasa lakhaṇa siya, rāma kī bhagati, socha saṅkaṭa nivāriye । muda-marakaṭa roga-bārinidhi heri hāre, jīva-jāmavaṁta ko bharoso tero bhāriye ।। kūḍiye kṛpāla tulasī suprema-pavbayate, suthala subela bhālū baiṭhi kaiḥ bicāriye । mahābīra bāṅkure barāka bāṅha-pīra kyoṁ na, laṅkinī jyoṁ lāta-ghāta hī marori māriye॥
+devanagari: |
+  राम को सनेह, राम साहस लखन सिय, राम की भगति, सोच संकट निवारिये ।
+  मुद-मरकट रोग-बारिनिधि हेरि हारे, जीव-जामवंत को भरोसो तेरो भारिये ।।
+  कूदिये कृपाल तुलसी सुप्रेम-पव्बयते, सुथल सुबेल भालू बैठि कैः बिचारिये ।
+  महाबीर बांकुरे बराक बांह-पीर क्यों न, लंकिनी ज्यों लात-घात ही मरोरि मारिये॥
+transliteration: |
+  Rāma ko saneha, rāma sāhasa lakhaṇa siya, rāma kī bhagati, socha saṅkaṭa nivāriye ।
+  muda-marakaṭa roga-bārinidhi heri hāre, jīva-jāmavaṁta ko bharoso tero bhāriye ।।
+  kūḍiye kṛpāla tulasī suprema-pavbayate, suthala subela bhālū baiṭhi kaiḥ bicāriye ।
+  mahābīra bāṅkure barāka bāṅha-pīra kyoṁ na, laṅkinī jyoṁ lāta-ghāta hī marori māriye॥
 phonetic_notes:
 - word: राम
   phonetic: ra-ama

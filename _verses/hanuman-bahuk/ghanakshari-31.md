@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-30/
 next_verse: /hanuman-bahuk/ghanakshari-32/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-31.png
-devanagari: बाहुक-सुबाहु नीच लीचर-मरीच मिलि, मुंहपीर केतुजा कुरोग जातुधान हैं । राम नाम जगजाप कियो चहों सानुराग, काल कैसे दूत भूत कहा मेरे मान हैं ।। सुमिरे सहाय राम लखन आखर दोऊ, जिनके समूह साके जागत जहान हैं । तुलसी संभारि ताडका संहारि भारि भट, बेधे बरगद से बनाइ बानवान हैं॥
-transliteration: Bāhuka-subāhu nīca līcara-marīca mili, muṁhapīra ketujā kuroga jātudhāna hai । Rāma nāma jagajāpa kiyō cahōṁ sānurāga, kāla kaisē dūta bhūta kahā mērē māna hai ।। Sumirē sahāya rāma lakhana ākhara dōu, jinakē samūha sākē jāgata jahāna hai । Tulasī saṁbhāri tāḍakā saṁhāri bhāri bhaṭa, bēdhē bargada sē banāi bānavāna hai॥
+devanagari: |
+  बाहुक-सुबाहु नीच लीचर-मरीच मिलि, मुंहपीर केतुजा कुरोग जातुधान हैं ।
+  राम नाम जगजाप कियो चहों सानुराग, काल कैसे दूत भूत कहा मेरे मान हैं ।।
+  सुमिरे सहाय राम लखन आखर दोऊ, जिनके समूह साके जागत जहान हैं ।
+  तुलसी संभारि ताडका संहारि भारि भट, बेधे बरगद से बनाइ बानवान हैं॥
+transliteration: |
+  Bāhuka-subāhu nīca līcara-marīca mili, muṁhapīra ketujā kuroga jātudhāna hai ।
+  Rāma nāma jagajāpa kiyō cahōṁ sānurāga, kāla kaisē dūta bhūta kahā mērē māna hai ।।
+  Sumirē sahāya rāma lakhana ākhara dōu, jinakē samūha sākē jāgata jahāna hai ।
+  Tulasī saṁbhāri tāḍakā saṁhāri bhāri bhaṭa, bēdhē bargada sē banāi bānavāna hai॥
 phonetic_notes:
 - word: बाहुक-सुबाहु
   phonetic: ba-hu-ka-su-ba-hu

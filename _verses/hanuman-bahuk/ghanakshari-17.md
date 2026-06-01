@@ -10,8 +10,14 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-16/
 next_verse: /hanuman-bahuk/ghanakshari-18/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-17.png
-devanagari: लोक-परलोकटूं तिलोक न बिलोकियत, तोसे समरथ चष चारिहूं निहारिये । कर्म, काल, लोकपाल, अग-जग जीवजाल, नाथ हाथ सब निज महिमा विचारिये ॥। खास दास रावरो, निवास तेरो तासु उर, तुलसी सो देव दुखी देखियत भारिये | बात तरुमूल बंहुसूल कपिकच्छरु-बेलि, उपजी सकेलि कपिकेलि ही उखारिये॥
-transliteration: lok-parlokṭūṁ tilok na bilokiyat, tose samarath chaṣ chārihūṁ nihāriye । karm, kāl, lokapāl, ag-jag jīvajāl, nāth hāth sab nij mahimā vichāriye ॥। khās dās rāvaro, nivās tero tāsu ur, tulasī so dev dukhī dekhiyat bhāriye | bāt tarumūl banhūsūl kapikachhru-beli, upajī sakeli kapikeli hī ukhāriye॥
+devanagari: |
+  लोक-परलोकटूं तिलोक न बिलोकियत, तोसे समरथ चष चारिहूं निहारिये ।
+  कर्म, काल, लोकपाल, अग-जग जीवजाल, नाथ हाथ सब निज महिमा विचारिये ॥।
+  खास दास रावरो, निवास तेरो तासु उर, तुलसी सो देव दुखी देखियत भारिये | बात तरुमूल बंहुसूल कपिकच्छरु-बेलि, उपजी सकेलि कपिकेलि ही उखारिये॥
+transliteration: |
+  lok-parlokṭūṁ tilok na bilokiyat, tose samarath chaṣ chārihūṁ nihāriye ।
+  karm, kāl, lokapāl, ag-jag jīvajāl, nāth hāth sab nij mahimā vichāriye ॥।
+  khās dās rāvaro, nivās tero tāsu ur, tulasī so dev dukhī dekhiyat bhāriye | bāt tarumūl banhūsūl kapikachhru-beli, upajī sakeli kapikeli hī ukhāriye॥
 phonetic_notes:
 - word: लोक-परलोकटूं
   phonetic: lok-parlokṭūṁ

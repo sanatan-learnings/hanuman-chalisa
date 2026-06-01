@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-08/
 next_verse: /hanuman-bahuk/ghanakshari-10/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-09.png
-devanagari: सेवक स्योकाई जानि जानकीस मानै कानि, सानुकरूल सूलपानि नवै नाथ नांक को । देवी देव दानव दयावने ह्वै जोर हाथ, बापुरे बराक कहा और राजा रांक को ।। जागत सोवत बैठे बागत बिनोद मोद, ताके जो अनर्थ सो समर्थ एक आंक को । सब दिन रुरो पर पूरो जहां-तहां ताहि, जाके है भरोसो हिये हनुमान हांक को॥
-transliteration: Sevaka syokāī jāni jānakīsa mānai kāni, sānukarūla sūlapāni navai nātha nāṃka ko। Devī deva dānava dayāvane hvai jora hātha, bāpure barāka kahā aura rājā rāṃka ko।। Jāgata sovata baithe bāgata binoda moda, tāke jo anartha so samartha eka āṃka ko। Saba dina ruro para pūro jahāṃ-tahāṃ tāhi, jāke hai bharoso hiye hanumāna hāṃka ko॥
+devanagari: |
+  सेवक स्योकाई जानि जानकीस मानै कानि, सानुकरूल सूलपानि नवै नाथ नांक को ।
+  देवी देव दानव दयावने ह्वै जोर हाथ, बापुरे बराक कहा और राजा रांक को ।।
+  जागत सोवत बैठे बागत बिनोद मोद, ताके जो अनर्थ सो समर्थ एक आंक को ।
+  सब दिन रुरो पर पूरो जहां-तहां ताहि, जाके है भरोसो हिये हनुमान हांक को॥
+transliteration: |
+  Sevaka syokāī jāni jānakīsa mānai kāni, sānukarūla sūlapāni navai nātha nāṃka ko।
+  Devī deva dānava dayāvane hvai jora hātha, bāpure barāka kahā aura rājā rāṃka ko।।
+  Jāgata sovata baithe bāgata binoda moda, tāke jo anartha so samartha eka āṃka ko।
+  Saba dina ruro para pūro jahāṃ-tahāṃ tāhi, jāke hai bharoso hiye hanumāna hāṃka ko॥
 phonetic_notes:
 - word: सेवक
   phonetic: se-va-ka

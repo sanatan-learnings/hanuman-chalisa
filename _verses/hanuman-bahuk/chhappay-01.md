@@ -9,8 +9,20 @@ section_verse_number: 1
 verse_type: chhappay
 next_verse: /hanuman-bahuk/chhappay-02/
 image: /images/hanuman-bahuk/modern-minimalist/chhappay-01.png
-devanagari: सिंधु-तरन, सिय-सोच-हरन, रबि-बाल-बरन तनु । भुज बिसाल, मूरति कराल कालहुको काल जनु ॥ गहन-दहन-निरदहन लंक निःसंक, बंक-भुव । जातुधान-बलवान-मान-मद-दवन पवनसुव ।। कह तुलसिदास सेवत सुलभ सेवक हित सन्तत निकट । गुन-गनत, नमत, सुमिरत, जपत समन सकल-संकट-विकट॥
-transliteration: siṁdhu-tarana, siya-socha-harana, rabi-bāla-barana tanu । bhuja bisāla, mūrati karāla kālahuko kāla janu ॥ gahana-dahana-niradahana laṅka niḥsaṅka, baṅka-bhuva । jātudhāna-balavāna-māna-mada-davana pavanasuva ।। kaha tulasīdāsa sevata sulabha sevaka hita santata nikāṭa । guna-gunata, namata, sumirata, japata samana sakala-saṅkaṭa-vikaṭa॥
+devanagari: |
+  सिंधु-तरन, सिय-सोच-हरन, रबि-बाल-बरन तनु ।
+  भुज बिसाल, मूरति कराल कालहुको काल जनु ॥
+  गहन-दहन-निरदहन लंक निःसंक, बंक-भुव ।
+  जातुधान-बलवान-मान-मद-दवन पवनसुव ।।
+  कह तुलसिदास सेवत सुलभ सेवक हित सन्तत निकट ।
+  गुन-गनत, नमत, सुमिरत, जपत समन सकल-संकट-विकट॥
+transliteration: |
+  siṁdhu-tarana, siya-socha-harana, rabi-bāla-barana tanu ।
+  bhuja bisāla, mūrati karāla kālahuko kāla janu ॥
+  gahana-dahana-niradahana laṅka niḥsaṅka, baṅka-bhuva ।
+  jātudhāna-balavāna-māna-mada-davana pavanasuva ।।
+  kaha tulasīdāsa sevata sulabha sevaka hita santata nikāṭa ।
+  guna-gunata, namata, sumirata, japata samana sakala-saṅkaṭa-vikaṭa॥
 phonetic_notes:
 - word: सिंधु-तरन
   phonetic: sin-dhu-ta-ran

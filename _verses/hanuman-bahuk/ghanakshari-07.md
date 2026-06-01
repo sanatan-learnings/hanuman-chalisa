@@ -10,8 +10,13 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-06/
 next_verse: /hanuman-bahuk/ghanakshari-08/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-07.png
-devanagari: महाबल-सीम महाभीम महाबान इत, महाबीर बिदित बरायो रघुबीर को । कुलिस-कठोर तनु जोरपरै रोर रन, करुना-कलित मन धारमिक धीर को ।। दुर्जन को कालसो कराल पाल सज्जन को, सुमिरे हरनहार तुलसी की पीर को । सीय-सुख-दायक दुलारो रघुनायक को, सेवक सहायक है साहसी समीर को॥
-transliteration: mahābala-sīma mahābhīma mahābāna iti, mahābīra bidita barāyo raghubīra ko | kulis-kaṭhora tanu joraparai rora rana, karuṇā-kalita mana dhāramika dhīra ko || durjana ko kālaso karāla pāla sajjana ko, sumire harnahāra tulasī kī pīra ko | sīya-sukha-dāyaka dulāro raghunāyaka ko, sevaka sahāyaka hai sāhasī samīra ko॥
+devanagari: |
+  महाबल-सीम महाभीम महाबान इत, महाबीर बिदित बरायो रघुबीर को ।
+  कुलिस-कठोर तनु जोरपरै रोर रन, करुना-कलित मन धारमिक धीर को ।।
+  दुर्जन को कालसो कराल पाल सज्जन को, सुमिरे हरनहार तुलसी की पीर को ।
+  सीय-सुख-दायक दुलारो रघुनायक को, सेवक सहायक है साहसी समीर को॥
+transliteration: |
+  mahābala-sīma mahābhīma mahābāna iti, mahābīra bidita barāyo raghubīra ko | kulis-kaṭhora tanu joraparai rora rana, karuṇā-kalita mana dhāramika dhīra ko || durjana ko kālaso karāla pāla sajjana ko, sumire harnahāra tulasī kī pīra ko | sīya-sukha-dāyaka dulāro raghunāyaka ko, sevaka sahāyaka hai sāhasī samīra ko॥
 phonetic_notes:
 - word: महाबल-सीम
   phonetic: ma-ha-ba-la-seem

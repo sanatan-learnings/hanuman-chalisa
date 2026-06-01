@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-01/
 next_verse: /hanuman-bahuk/ghanakshari-03/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-02.png
-devanagari: भारत में पारथ के रथ केथू कपिराज, गाज्यो सुनि कुरुराज दल हल बल भो । कल्यो द्रोन भीषम समीर सुत महाबीर, बीर-रस-बारि-निधि जाको बल जल भो ॥। बानर सुभाय बाल केलि भूमि भानु लागि, फलंग फलांग हते घाटि नभतल भो । नाई-नाई माथ जोरि-जोरि हाथ जोधा जोहैं, हनुमान देखे जगजीवन को फल भो॥
-transliteration: Bhārata mēṁ pāratha kē ratha kēthū kapirāja, gājyō suni kururāja dala hala bala bhō। kalyō drōna bhīṣama samīra suta mahābīra, bīra-rasa-bāri-nidhi jākō bala jala bhō ॥। bānara subhāya bāla kēli bhūmi bhānu lāgi, phalaṁga phalāṁga hatē ghāṭi nabhatala bhō। nāī-nāī mātha jōri-jōri hātha jōdha jōhaiṁ, hanumāna dēkhē jagajīvana kō phala bhō॥
+devanagari: |
+  भारत में पारथ के रथ केथू कपिराज, गाज्यो सुनि कुरुराज दल हल बल भो ।
+  कल्यो द्रोन भीषम समीर सुत महाबीर, बीर-रस-बारि-निधि जाको बल जल भो ॥।
+  बानर सुभाय बाल केलि भूमि भानु लागि, फलंग फलांग हते घाटि नभतल भो ।
+  नाई-नाई माथ जोरि-जोरि हाथ जोधा जोहैं, हनुमान देखे जगजीवन को फल भो॥
+transliteration: |
+  Bhārata mēṁ pāratha kē ratha kēthū kapirāja, gājyō suni kururāja dala hala bala bhō।
+  kalyō drōna bhīṣama samīra suta mahābīra, bīra-rasa-bāri-nidhi jākō bala jala bhō ॥।
+  bānara subhāya bāla kēli bhūmi bhānu lāgi, phalaṁga phalāṁga hatē ghāṭi nabhatala bhō।
+  nāī-nāī mātha jōri-jōri hātha jōdha jōhaiṁ, hanumāna dēkhē jagajīvana kō phala bhō॥
 phonetic_notes:
 - word: भारत
   phonetic: bhaa-ra-ta

@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-09/
 next_verse: /hanuman-bahuk/ghanakshari-11/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-10.png
-devanagari: सानुग सगौरि सानुकरूल सूलपानि ताहि, लोकपाल सकल लखन राम जानकी । लोक परलोक को बिसोक सो तिलोक ताहि, तुलसी तमाइ कहा काहू बीर आनकी ॥। केसरी किसोर बन्दीछोर के नेवाजे सब, कीरति बिमल कपि करुनानिधान की । बालक-ज्यों पालिहैं कृपालु मुनि सिद्ध ताको, जाके हिये हुलसति हांक हनुमान की॥
-transliteration: sānuga sagauri sānukarūla sūlapāni tāhi, lokapāla sakala lakhana rāma jānakī । loka paraloka ko bisoka so tiloka tāhi, tulasī tamāi kahā kāhū bīra ānakī ॥। kesari kisor bandīchhōra ke nevāje sab, kīrati bimala kapi karuṇānidhāna kī । bālaka-jyōṁ pālihaiṁ kṛpālu muni siddha tāko, jāke hiye hulasati hāṅka hanumāna kī॥
+devanagari: |
+  सानुग सगौरि सानुकरूल सूलपानि ताहि, लोकपाल सकल लखन राम जानकी ।
+  लोक परलोक को बिसोक सो तिलोक ताहि, तुलसी तमाइ कहा काहू बीर आनकी ॥।
+  केसरी किसोर बन्दीछोर के नेवाजे सब, कीरति बिमल कपि करुनानिधान की ।
+  बालक-ज्यों पालिहैं कृपालु मुनि सिद्ध ताको, जाके हिये हुलसति हांक हनुमान की॥
+transliteration: |
+  sānuga sagauri sānukarūla sūlapāni tāhi, lokapāla sakala lakhana rāma jānakī ।
+  loka paraloka ko bisoka so tiloka tāhi, tulasī tamāi kahā kāhū bīra ānakī ॥।
+  kesari kisor bandīchhōra ke nevāje sab, kīrati bimala kapi karuṇānidhāna kī ।
+  bālaka-jyōṁ pālihaiṁ kṛpālu muni siddha tāko, jāke hiye hulasati hāṅka hanumāna kī॥
 phonetic_notes:
 - word: सानुग
   phonetic: saa-nu-ga

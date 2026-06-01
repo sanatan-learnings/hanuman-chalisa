@@ -10,8 +10,14 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-22/
 next_verse: /hanuman-bahuk/ghanakshari-24/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-23.png
-devanagari: आपने ही पाप तें त्रिपात ते कि साप तें, बढ़ी है बाह बेदन कही न सहि जाति है । ओषध अनेक जन्त्र मन्त्र टोटकादि किये, बादि भये देवता मनाये अधिकाति है ।। करतार, भरतार, हरतार, कर्म काल, को है जगजाल जो न मानत इताति है | चेरो तेरो तुलसी तू मेरो कल्यो राम दूत, ढील तेरी बीर मोहि पीर तें पिराति है॥
-transliteration: Āpane hī pāpa teṁ tripāta te ki sāpa teṁ, baṛhī hai bāha bedana kahī na sahi jāti hai । Oṣadha aneka jantra mantra ṭoṭakādi kīye, bādi bhaye devatā manāye adhikāti hai ।। Kartāra, bharatāra, haratāra, karma kāla, ko hai jagajāla jo na mānata itāti hai | cero tero tulasī tū mero kalyo rāma dūta, ḍhīla terī bīra mohi pīra teṁ pirāti hai॥
+devanagari: |
+  आपने ही पाप तें त्रिपात ते कि साप तें, बढ़ी है बाह बेदन कही न सहि जाति है ।
+  ओषध अनेक जन्त्र मन्त्र टोटकादि किये, बादि भये देवता मनाये अधिकाति है ।।
+  करतार, भरतार, हरतार, कर्म काल, को है जगजाल जो न मानत इताति है | चेरो तेरो तुलसी तू मेरो कल्यो राम दूत, ढील तेरी बीर मोहि पीर तें पिराति है॥
+transliteration: |
+  Āpane hī pāpa teṁ tripāta te ki sāpa teṁ, baṛhī hai bāha bedana kahī na sahi jāti hai ।
+  Oṣadha aneka jantra mantra ṭoṭakādi kīye, bādi bhaye devatā manāye adhikāti hai ।।
+  Kartāra, bharatāra, haratāra, karma kāla, ko hai jagajāla jo na mānata itāti hai | cero tero tulasī tū mero kalyo rāma dūta, ḍhīla terī bīra mohi pīra teṁ pirāti hai॥
 phonetic_notes:
 - word: आपने
   phonetic: aa-pa-ne

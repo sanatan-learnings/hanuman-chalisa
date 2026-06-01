@@ -10,8 +10,16 @@ verse_type: savaiya
 previous_verse: /hanuman-bahuk/savaiya-02/
 next_verse: /hanuman-bahuk/savaiya-04/
 image: /images/hanuman-bahuk/modern-minimalist/savaiya-03.png
-devanagari: सिंधु तरे, बड़े बीर दले खल, जारे हैं लंक से बंक मवा से । तैं रनि-केहरि केहरि के बिदले अरि-कुजर छैल छवा से ॥। तोसों समत्थ सुसाहेब सेई सहै तुलसी दुख दोष दवा से । बानर बाज ! बढ़े खल-खेचर, लीजत क्यों न लपेटि लवा-से॥
-transliteration: sindhu tare, baṛe bīra dale khala, jāre haiṁ laṅka se baṅka mavā se। taiṁ rani-kehari kehari ke bidale ari-kuṭara chhaila chhavā se॥। tosoṁ samattha susāheba seī sahai tulasī dukha doṣa davā se। bānara bāja! baṛhe khala-khechara, lījata kyoṁ na lapeṭi lavā-se॥
+devanagari: |
+  सिंधु तरे, बड़े बीर दले खल, जारे हैं लंक से बंक मवा से ।
+  तैं रनि-केहरि केहरि के बिदले अरि-कुजर छैल छवा से ॥।
+  तोसों समत्थ सुसाहेब सेई सहै तुलसी दुख दोष दवा से ।
+  बानर बाज ! बढ़े खल-खेचर, लीजत क्यों न लपेटि लवा-से॥
+transliteration: |
+  sindhu tare, baṛe bīra dale khala, jāre haiṁ laṅka se baṅka mavā se।
+  taiṁ rani-kehari kehari ke bidale ari-kuṭara chhaila chhavā se॥।
+  tosoṁ samattha susāheba seī sahai tulasī dukha doṣa davā se।
+  bānara bāja! baṛhe khala-khechara, lījata kyoṁ na lapeṭi lavā-se॥
 phonetic_notes:
 - word: सिंधु
   phonetic: sin-dhu

@@ -10,8 +10,13 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-02/
 next_verse: /hanuman-bahuk/ghanakshari-04/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-03.png
-devanagari: गो-पद पयोधि करि होलिका ज्यों लाई लंक, निपट निसंक परपुर गलबल भो । द्रोन-सो पहार लियो ख्याल ही उखारि कर, कंदुक-ज्यों कपि खेल बेल कैसो फल भो ।। संकट समाज असमंजस भो रामराज, काज जुग पूगनि को करतल पल भो । साहसी समत्थ तुलसी को नाह जाकी बांह, लोकपाल पालन को फिर थिर थल भो॥
-transliteration: go-pada payodhi kari holīkā jyōṃ lāī lanka, nipaṭa nisaṃka parapura galabala bhō | droṇa-sō pahāra liyō khyāla hī ukhāri kara, kanduka-jyōṃ kapi khēla bēla kaisō phala bhō || saṃkaṭa samāja asamaṃjasa bhō rāmarāja, kāja juga pūgani kō karatala pala bhō | sāhasī samattha tulasī kō nāha jākī bāṃha, lōkapāla pālana kō phira thira thala bhō॥
+devanagari: |
+  गो-पद पयोधि करि होलिका ज्यों लाई लंक, निपट निसंक परपुर गलबल भो ।
+  द्रोन-सो पहार लियो ख्याल ही उखारि कर, कंदुक-ज्यों कपि खेल बेल कैसो फल भो ।।
+  संकट समाज असमंजस भो रामराज, काज जुग पूगनि को करतल पल भो ।
+  साहसी समत्थ तुलसी को नाह जाकी बांह, लोकपाल पालन को फिर थिर थल भो॥
+transliteration: |
+  go-pada payodhi kari holīkā jyōṃ lāī lanka, nipaṭa nisaṃka parapura galabala bhō | droṇa-sō pahāra liyō khyāla hī ukhāri kara, kanduka-jyōṃ kapi khēla bēla kaisō phala bhō || saṃkaṭa samāja asamaṃjasa bhō rāmarāja, kāja juga pūgani kō karatala pala bhō | sāhasī samattha tulasī kō nāha jākī bāṃha, lōkapāla pālana kō phira thira thala bhō॥
 phonetic_notes:
 - word: गो-पद
   phonetic: go-pada

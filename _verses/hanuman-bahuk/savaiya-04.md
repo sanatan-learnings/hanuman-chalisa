@@ -10,8 +10,16 @@ verse_type: savaiya
 previous_verse: /hanuman-bahuk/savaiya-03/
 next_verse: /hanuman-bahuk/ghanakshari-13/
 image: /images/hanuman-bahuk/modern-minimalist/savaiya-04.png
-devanagari: अच्छ-विमर्दन कानन-भानि दसानन आनन भा न निहारो । बारिदनाद अकंपन कुभकरन्न-से कुजर केहरि-बारो ॥ राम-प्रताप-हुतासन, कच्छ, बिपच्छ, समीर समीर-दुलारो । पाप-तें साप-तें ताप तिहूं-तें सदा तुलसी कहूं सो रखवारो॥
-transliteration: accha-vimardana kānana-bhāni dasānana ānana bhā na nihāro । bāridanāda akampana kubhakaranna-se kujara kehri-bāro ॥ rāma-pratāpa-hutāsana, kaccha, bipaccha, samīra samīra-dulāro । pāpa-teṁ sāpa-teṁ tāpa tihūṁ-teṁ sadā tulasī kahūṁ so rakhavāro॥
+devanagari: |
+  अच्छ-विमर्दन कानन-भानि दसानन आनन भा न निहारो ।
+  बारिदनाद अकंपन कुभकरन्न-से कुजर केहरि-बारो ॥
+  राम-प्रताप-हुतासन, कच्छ, बिपच्छ, समीर समीर-दुलारो ।
+  पाप-तें साप-तें ताप तिहूं-तें सदा तुलसी कहूं सो रखवारो॥
+transliteration: |
+  accha-vimardana kānana-bhāni dasānana ānana bhā na nihāro ।
+  bāridanāda akampana kubhakaranna-se kujara kehri-bāro ॥
+  rāma-pratāpa-hutāsana, kaccha, bipaccha, samīra samīra-dulāro ।
+  pāpa-teṁ sāpa-teṁ tāpa tihūṁ-teṁ sadā tulasī kahūṁ so rakhavāro॥
 phonetic_notes:
 - word: अच्छ-विमर्दन
   phonetic: ac-cha-vi-mar-dan

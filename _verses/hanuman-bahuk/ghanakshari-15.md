@@ -10,8 +10,13 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-14/
 next_verse: /hanuman-bahuk/ghanakshari-16/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-15.png
-devanagari: उथपे थपनथिर थपे उथपनहार, केसरी कुमार बल आपनो संभारिये | राम के गुलामनि को कामतरु रामदूत, मोसे दीन दूबरे को तकिया तिहारिये ।। साहेब समर्थ तोसों तुलसी के माथे पर, सोऊ अपराध बिनु बीर, बांधि मारिये । पोखरी बिसाल बांहु, बलि, बारिचर पीर, मकरी ज्यौ पकरि कै बदन बिदारिये॥
-transliteration: Uthape thapanathira thape uthapanahāra, Kesarī kumāra bala āpano sambhāriye | Rāma ke gulāmani ko kāmataru rāmadūta, mose dīna dūbare ko takiyā tihāriye ।। Sāheba samartha tosoṁ tulasī ke māthe par, soū aparādha binu bīra, bāndhi māriye | Pokharī bisāla bāhu, bali, bārichara pīra, makarī jyau pakari kai badana bidāriye॥
+devanagari: |
+  उथपे थपनथिर थपे उथपनहार, केसरी कुमार बल आपनो संभारिये | राम के गुलामनि को कामतरु रामदूत, मोसे दीन दूबरे को तकिया तिहारिये ।।
+  साहेब समर्थ तोसों तुलसी के माथे पर, सोऊ अपराध बिनु बीर, बांधि मारिये ।
+  पोखरी बिसाल बांहु, बलि, बारिचर पीर, मकरी ज्यौ पकरि कै बदन बिदारिये॥
+transliteration: |
+  Uthape thapanathira thape uthapanahāra, Kesarī kumāra bala āpano sambhāriye | Rāma ke gulāmani ko kāmataru rāmadūta, mose dīna dūbare ko takiyā tihāriye ।।
+  Sāheba samartha tosoṁ tulasī ke māthe par, soū aparādha binu bīra, bāndhi māriye | Pokharī bisāla bāhu, bali, bārichara pīra, makarī jyau pakari kai badana bidāriye॥
 phonetic_notes:
 - word: उथपे
   phonetic: u-tha-pe

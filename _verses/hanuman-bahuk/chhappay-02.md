@@ -10,8 +10,20 @@ verse_type: chhappay
 previous_verse: /hanuman-bahuk/chhappay-01/
 next_verse: /hanuman-bahuk/jhulna-01/
 image: /images/hanuman-bahuk/modern-minimalist/chhappay-02.png
-devanagari: स्वर्न-सैल-संकास कोटि-रबि-तरुन-तेज-घन । उर बिसाल भुज-दंड चंड नख-बज बज्र-तन ॥। पिग नयन, भृकुटी कराल रसना दसनानन । कपिस केस, करकस लंगूर, खल-दल बल भानन ॥। कह तुलसिदास बस जासु उर मारुतसुत मूरति बिकट । संताप पाप तेहि पुरुष पहिं सपनेहुं नहिं आवत निकट॥
-transliteration: svārṇa-saila-saṁkāsa koṭi-rabi-taruna-teja-ghana । ura bisāla bhuja-daṁḍa caṁḍa nakha-baja bajra-tana ॥। piga nayana, bhṛkuṭī karāla rasanā dasanānana । kapis keśa, karkaśa laṅgūra, khala-dala bala bhānana ॥। kaha tulasīdāsa basa jāsu ura mārutasuta mūrati bikāṭa । santāpa pāpa tehi puruṣa pahiṁ sapanehūṁ nahiṁ āvata nikāṭa॥
+devanagari: |
+  स्वर्न-सैल-संकास कोटि-रबि-तरुन-तेज-घन ।
+  उर बिसाल भुज-दंड चंड नख-बज बज्र-तन ॥।
+  पिग नयन, भृकुटी कराल रसना दसनानन ।
+  कपिस केस, करकस लंगूर, खल-दल बल भानन ॥।
+  कह तुलसिदास बस जासु उर मारुतसुत मूरति बिकट ।
+  संताप पाप तेहि पुरुष पहिं सपनेहुं नहिं आवत निकट॥
+transliteration: |
+  svārṇa-saila-saṁkāsa koṭi-rabi-taruna-teja-ghana ।
+  ura bisāla bhuja-daṁḍa caṁḍa nakha-baja bajra-tana ॥।
+  piga nayana, bhṛkuṭī karāla rasanā dasanānana ।
+  kapis keśa, karkaśa laṅgūra, khala-dala bala bhānana ॥।
+  kaha tulasīdāsa basa jāsu ura mārutasuta mūrati bikāṭa ।
+  santāpa pāpa tehi puruṣa pahiṁ sapanehūṁ nahiṁ āvata nikāṭa॥
 phonetic_notes:
 - word: स्वर्न-सैल-संकास
   phonetic: sva-rna-sai-la-saṁ-kā-sa

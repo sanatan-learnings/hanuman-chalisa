@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-24/
 next_verse: /hanuman-bahuk/ghanakshari-26/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-25.png
-devanagari: देवी देव दनुज मनुज मुनि सिद्ध नाग, छोटे बड़े जीव जेते चेतन अचेत हैं । पूतना पिसाची जातुधानी जातुधान बाम, राम दूत की रजाइ माथे मानि लेत हैं ।। घोर जन्त्र मन्त्र कूट कपट कुरोग जोग, हनुमान आन सुनि छाडत निकेत हैं । क्रोध कीजे कर्म को प्रबोध कीजे तुलसी को, सोध कीजे तिनको जो दोष दुख देत हैं॥
-transliteration: Devī deva danuja manuja muni siddha nāga, choṭe baṛe jīva jete cetana acet hai । Pūtanā pisācī jātudhānī jātudhāna bāma, rāma dūta kī rajāi māthe māni let hai ।। Ghor jantra mantra kūṭa kapaṭa kuroga yoga, hanumāna āna suni chāḍata niketa hai । Krodha kīje karma ko prabodha kīje tulasī ko, soḍha kīje tina ko jo doṣa dukha det hai॥
+devanagari: |
+  देवी देव दनुज मनुज मुनि सिद्ध नाग, छोटे बड़े जीव जेते चेतन अचेत हैं ।
+  पूतना पिसाची जातुधानी जातुधान बाम, राम दूत की रजाइ माथे मानि लेत हैं ।।
+  घोर जन्त्र मन्त्र कूट कपट कुरोग जोग, हनुमान आन सुनि छाडत निकेत हैं ।
+  क्रोध कीजे कर्म को प्रबोध कीजे तुलसी को, सोध कीजे तिनको जो दोष दुख देत हैं॥
+transliteration: |
+  Devī deva danuja manuja muni siddha nāga, choṭe baṛe jīva jete cetana acet hai ।
+  Pūtanā pisācī jātudhānī jātudhāna bāma, rāma dūta kī rajāi māthe māni let hai ।।
+  Ghor jantra mantra kūṭa kapaṭa kuroga yoga, hanumāna āna suni chāḍata niketa hai ।
+  Krodha kīje karma ko prabodha kīje tulasī ko, soḍha kīje tina ko jo doṣa dukha det hai॥
 phonetic_notes:
 - word: देवी
   phonetic: de-vī

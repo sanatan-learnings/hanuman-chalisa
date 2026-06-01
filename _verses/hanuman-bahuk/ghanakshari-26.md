@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-25/
 next_verse: /hanuman-bahuk/ghanakshari-27/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-26.png
-devanagari: तेरे बल बानर जिताये रन रावन सों, तेरे घाले जातुधान भये घर-घर के । तेरे बल रामराज किये सब सुरकाज, सकल समाज साज साजे रघुबर के ॥ तेरो गुनगान सुनि गीरबान पुलकत, सजल बिलोचन बिरंचि हरि हर के । तुलसी के माथे पर हाथ फेरो कीसनाथ, देखिये न दास दुखी तोसो कनिगर के॥
-transliteration: tere bala bānara jitāye rana rāvana soṁ, tere ghāle jātudhāna bhaye ghara-ghara ke । tere bala rāmarāja kīye saba surakāja, sakala samāja sāja sāje raghubara ke ॥ tero gunagāna suni gīrbāna pulakata, sajala bilocana biran̄ci hari hara ke । tulasi ke māthe para hātha phero kīsanātha, dekhiye na dāsa dukhī toso kanigara ke॥
+devanagari: |
+  तेरे बल बानर जिताये रन रावन सों, तेरे घाले जातुधान भये घर-घर के ।
+  तेरे बल रामराज किये सब सुरकाज, सकल समाज साज साजे रघुबर के ॥
+  तेरो गुनगान सुनि गीरबान पुलकत, सजल बिलोचन बिरंचि हरि हर के ।
+  तुलसी के माथे पर हाथ फेरो कीसनाथ, देखिये न दास दुखी तोसो कनिगर के॥
+transliteration: |
+  tere bala bānara jitāye rana rāvana soṁ, tere ghāle jātudhāna bhaye ghara-ghara ke ।
+  tere bala rāmarāja kīye saba surakāja, sakala samāja sāja sāje raghubara ke ॥
+  tero gunagāna suni gīrbāna pulakata, sajala bilocana biran̄ci hari hara ke ।
+  tulasi ke māthe para hātha phero kīsanātha, dekhiye na dāsa dukhī toso kanigara ke॥
 phonetic_notes:
 - word: तेरे
   phonetic: te-re

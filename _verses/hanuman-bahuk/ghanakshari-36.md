@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-35/
 next_verse: /hanuman-bahuk/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-36.png
-devanagari: कहों हनुमान सों सुजान राम राय सों, कृपानिधान संकर सों सावधान सुनिये । हरष विषाद राग रोष गुन दोष मई, बिरची बिरञ्ची सब देखियत दुनिये ।। माया जीव काल के करम के सुभाय के, करैया राम बेद कहैं सांची मन गुनिये । तुम्ह तं कहा न होय हा हा सो बुझैये मोहि, हौ हूं रहों मौनही बयो सो जानि लुनिये॥
-transliteration: kahoṁ hanumān soṁ sujān rām rāy soṁ, kṛpānidhān saṅkar soṁ sāvadhān suniye। harṣa viṣād rāg roṣa guna doṣa maī, biracī birañcī sab dekhiyat duniye।। māyā jīva kāla ke karam ke subhāya ke, karaiyā rām beda kahaiṁ sāñcī mana guniye। tuma taṁ kahā na hoya hā hā so bujhaiye mohi, hau hūṁ rahoṁ maunahī bayo so jāni luniye॥
+devanagari: |
+  कहों हनुमान सों सुजान राम राय सों, कृपानिधान संकर सों सावधान सुनिये ।
+  हरष विषाद राग रोष गुन दोष मई, बिरची बिरञ्ची सब देखियत दुनिये ।।
+  माया जीव काल के करम के सुभाय के, करैया राम बेद कहैं सांची मन गुनिये ।
+  तुम्ह तं कहा न होय हा हा सो बुझैये मोहि, हौ हूं रहों मौनही बयो सो जानि लुनिये॥
+transliteration: |
+  kahoṁ hanumān soṁ sujān rām rāy soṁ, kṛpānidhān saṅkar soṁ sāvadhān suniye।
+  harṣa viṣād rāg roṣa guna doṣa maī, biracī birañcī sab dekhiyat duniye।।
+  māyā jīva kāla ke karam ke subhāya ke, karaiyā rām beda kahaiṁ sāñcī mana guniye।
+  tuma taṁ kahā na hoya hā hā so bujhaiye mohi, hau hūṁ rahoṁ maunahī bayo so jāni luniye॥
 phonetic_notes:
 - word: कहों
   phonetic: ka-hoṁ

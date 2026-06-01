@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-18/
 next_verse: /hanuman-bahuk/ghanakshari-20/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-19.png
-devanagari: भालकी कि कालकी कि रोष की त्रिदोष की है, बेदन विषम पाप ताप छल छांह की । करमन कूट की कि जन्त्र मन्त्र बूट की, पराहि जाहि पापिनी मलीन मन मांह की ॥। पैटहि सजाय, नत कहत बजाय तोहि, बाबरी न होहि बानि जानि कपि नह की । आन हनुमान की दुहाई बलवान की, सपथ महाबीर की जो रहै पीर बांह की॥
-transliteration: Bhālakī ki kālakī ki roṣa kī tridoṣa kī hai, bedana viṣama pāpa tāpa chala chāṁha kī। Karamana kūṭa kī ki jantra mantra būṭa kī, parāhi jāhi pāpinī malīna mana māṁha kī॥ Paiṭahi sajāya, nata kahata bajāya tohi, bābarī na hohi bāni jāni kapi naha kī। Āna hanumāna kī duhāī balavāna kī, sapaṭha mahābīra kī jo rahai pīra bāṁha kī॥
+devanagari: |
+  भालकी कि कालकी कि रोष की त्रिदोष की है, बेदन विषम पाप ताप छल छांह की ।
+  करमन कूट की कि जन्त्र मन्त्र बूट की, पराहि जाहि पापिनी मलीन मन मांह की ॥।
+  पैटहि सजाय, नत कहत बजाय तोहि, बाबरी न होहि बानि जानि कपि नह की ।
+  आन हनुमान की दुहाई बलवान की, सपथ महाबीर की जो रहै पीर बांह की॥
+transliteration: |
+  Bhālakī ki kālakī ki roṣa kī tridoṣa kī hai, bedana viṣama pāpa tāpa chala chāṁha kī।
+  Karamana kūṭa kī ki jantra mantra būṭa kī, parāhi jāhi pāpinī malīna mana māṁha kī॥
+  Paiṭahi sajāya, nata kahata bajāya tohi, bābarī na hohi bāni jāni kapi naha kī।
+  Āna hanumāna kī duhāī balavāna kī, sapaṭha mahābīra kī jo rahai pīra bāṁha kī॥
 phonetic_notes:
 - word: भालकी
   phonetic: bhaa-la-ki

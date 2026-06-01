@@ -10,8 +10,14 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-33/
 next_verse: /hanuman-bahuk/ghanakshari-35/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-34.png
-devanagari: जीओं जग जानकी जीवन को कहाइ जन, मरिबे को बारानसी बारि सुरसरि को । तुलसी के दुहूं हाथ मोदक हैं ऐसे ठांउ, जाके जिये मुये सोच करिहैं न लरि को मोको झूटो सांचो लोग राम को कहत सब, मेरे मन मान है न हर को न हरि को । भारी पीर दुसह सरीर ते बिहाल होत, सोऊ रघुबीर बिनु सके दूर करि को॥
-transliteration: Jīoṁ jaga jānakī jīvana ko kahāi jana, maribe ko bārānasī bāri surasari ko । tulasī ke duhūṁ hātha modaka haiṁ aise ṭhāṁau, jāke jīye muye socha karihaiṁ na lari ko moko jhūṭo sāṁcho loga rāma ko kahta saba, mere mana māna hai na hara ko na hari ko । bhārī pīra dusaha sarīra te bihāla hota, soū raghubīra binu saka dūra kari ko॥
+devanagari: |
+  जीओं जग जानकी जीवन को कहाइ जन, मरिबे को बारानसी बारि सुरसरि को ।
+  तुलसी के दुहूं हाथ मोदक हैं ऐसे ठांउ, जाके जिये मुये सोच करिहैं न लरि को मोको झूटो सांचो लोग राम को कहत सब, मेरे मन मान है न हर को न हरि को ।
+  भारी पीर दुसह सरीर ते बिहाल होत, सोऊ रघुबीर बिनु सके दूर करि को॥
+transliteration: |
+  Jīoṁ jaga jānakī jīvana ko kahāi jana, maribe ko bārānasī bāri surasari ko ।
+  tulasī ke duhūṁ hātha modaka haiṁ aise ṭhāṁau, jāke jīye muye socha karihaiṁ na lari ko moko jhūṭo sāṁcho loga rāma ko kahta saba, mere mana māna hai na hara ko na hari ko ।
+  bhārī pīra dusaha sarīra te bihāla hota, soū raghubīra binu saka dūra kari ko॥
 phonetic_notes:
 - word: जीओं
   phonetic: jee-on

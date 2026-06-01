@@ -10,8 +10,16 @@ verse_type: savaiya
 previous_verse: /hanuman-bahuk/savaiya-01/
 next_verse: /hanuman-bahuk/savaiya-03/
 image: /images/hanuman-bahuk/modern-minimalist/savaiya-02.png
-devanagari: तेरे थपे उथपै न महेस, थपै थिरको कपि जे घर घाले । तेरे निवाजे गरीब निवाज बिराजत बैरिन के उर साले ॥। संकट सोच सबै तुलसी लिये नाम फट मकरी के से जाले । बूढ़ भये, बलि, मेरिहि बार, कि हारि परे बहुतै नत पाले॥
-transliteration: tere thape uthapai na mahesa, thapai thirako kapi je ghara ghāle । tere nivāje garība nivāja birājata bairina ke ura sāle ॥। sankata socha sabai tulasi liye nāma phata makarī ke se jāle । būḍha bhaye, bali, merihi bāra, ki hāri pare bahutai nata pāle॥
+devanagari: |
+  तेरे थपे उथपै न महेस, थपै थिरको कपि जे घर घाले ।
+  तेरे निवाजे गरीब निवाज बिराजत बैरिन के उर साले ॥।
+  संकट सोच सबै तुलसी लिये नाम फट मकरी के से जाले ।
+  बूढ़ भये, बलि, मेरिहि बार, कि हारि परे बहुतै नत पाले॥
+transliteration: |
+  tere thape uthapai na mahesa, thapai thirako kapi je ghara ghāle ।
+  tere nivāje garība nivāja birājata bairina ke ura sāle ॥।
+  sankata socha sabai tulasi liye nāma phata makarī ke se jāle ।
+  būḍha bhaye, bali, merihi bāra, ki hāri pare bahutai nata pāle॥
 phonetic_notes:
 - word: तेरे
   phonetic: te-re

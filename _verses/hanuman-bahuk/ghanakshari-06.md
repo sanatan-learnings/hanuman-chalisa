@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-05/
 next_verse: /hanuman-bahuk/ghanakshari-07/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-06.png
-devanagari: दवन-दुवन-दल भुवन-बिदित बल, बेद जस गावत बिबुध बंदीछोर को । पाप-ताप-तिमिर तुहिन-विघटन-पटु, सेवक-सरोरुह सुखद भानु भोर को ।। लोक-परलोक तें बिसोक सपने न सोक, तुलसी के हिये है भरोसो एक ओर को । राम को दुलारो दास बामदेव को निवास, नाम कलि-कामतरु केसरी-किसोर को॥
-transliteration: davan-duvan-dal bhuvan-bidit bal, beda jasa gāvat bibudha bandīchōra kō । pāpa-tāpa-timir tuhina-vighaṭana-paṭu, sevaka-sarōruha sukhada bhānu bhōra kō ।। lōka-paralōka tēṁ bisōka sapnē na sōka, tulasī kē hiyē hai bharōsō ēka ōra kō । rāma kō dulārō dāsa bāmadēva kō nivāsa, nāma kali-kāmataru kēsarī-kisōra kō॥
+devanagari: |
+  दवन-दुवन-दल भुवन-बिदित बल, बेद जस गावत बिबुध बंदीछोर को ।
+  पाप-ताप-तिमिर तुहिन-विघटन-पटु, सेवक-सरोरुह सुखद भानु भोर को ।।
+  लोक-परलोक तें बिसोक सपने न सोक, तुलसी के हिये है भरोसो एक ओर को ।
+  राम को दुलारो दास बामदेव को निवास, नाम कलि-कामतरु केसरी-किसोर को॥
+transliteration: |
+  davan-duvan-dal bhuvan-bidit bal, beda jasa gāvat bibudha bandīchōra kō ।
+  pāpa-tāpa-timir tuhina-vighaṭana-paṭu, sevaka-sarōruha sukhada bhānu bhōra kō ।।
+  lōka-paralōka tēṁ bisōka sapnē na sōka, tulasī kē hiyē hai bharōsō ēka ōra kō ।
+  rāma kō dulārō dāsa bāmadēva kō nivāsa, nāma kali-kāmataru kēsarī-kisōra kō॥
 phonetic_notes:
 - word: दवन-दुवन-दल
   phonetic: da-van-du-van-dal

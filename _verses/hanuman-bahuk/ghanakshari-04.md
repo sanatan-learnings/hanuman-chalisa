@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-03/
 next_verse: /hanuman-bahuk/ghanakshari-05/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-04.png
-devanagari: कमठ की पीठि जाके गोडनि की गाड मानो, नाप के भाजन भरि जल निधि जल भो । जातुधान-दावन परावन को दुर्ग भयो, महामीन बास तिमि तोमनि को थल भो ॥ कुम्भकरन-रावन पयोद-नाद-ईधन को, तुलसी प्रताप जाको प्रबल अनल भो । भीषम कहत मेरे अनुमान हनुमान, सारिखो त्रिकाल न त्रिलोक महाबल भो॥
-transliteration: kamaṭha kī pīṭhi jāke goḍani kī gāḍa māno, nāpa ke bhājana bhari jala nidhi jala bho। jātudhāna-dāvana parāvana ko durga bhayo, mahāmīna bāsa timi tomani ko thala bho॥ kumbhakarṇa-rāvaṇa payoda-nāda-īdhana ko, tulasī pratāpa jāko prabala anala bho। bhīṣma kahata mere anumāna hanumāna, sārikho trikāla na triloka mahābala bho॥
+devanagari: |
+  कमठ की पीठि जाके गोडनि की गाड मानो, नाप के भाजन भरि जल निधि जल भो ।
+  जातुधान-दावन परावन को दुर्ग भयो, महामीन बास तिमि तोमनि को थल भो ॥
+  कुम्भकरन-रावन पयोद-नाद-ईधन को, तुलसी प्रताप जाको प्रबल अनल भो ।
+  भीषम कहत मेरे अनुमान हनुमान, सारिखो त्रिकाल न त्रिलोक महाबल भो॥
+transliteration: |
+  kamaṭha kī pīṭhi jāke goḍani kī gāḍa māno, nāpa ke bhājana bhari jala nidhi jala bho।
+  jātudhāna-dāvana parāvana ko durga bhayo, mahāmīna bāsa timi tomani ko thala bho॥
+  kumbhakarṇa-rāvaṇa payoda-nāda-īdhana ko, tulasī pratāpa jāko prabala anala bho।
+  bhīṣma kahata mere anumāna hanumāna, sārikho trikāla na triloka mahābala bho॥
 phonetic_notes:
 - word: कमठ
   phonetic: ka-maṭha

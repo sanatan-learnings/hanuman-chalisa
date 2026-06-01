@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/jhulna-01/
 next_verse: /hanuman-bahuk/ghanakshari-02/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-01.png
-devanagari: भानुसों पढ़न हनुमान गये भानु मन-अनुमानि सिसु-केलि कियो फेरफार सो । पाछिले पगनि गम गगन मगन-मन, क्रम को न भ्रम, कपि बालक बिहार सो ।। कौतुक बिलोकि लोकपाल हरि हर बिधि, लोचननि चकाचौंधी चित्तनि खभार सो। बल कैंधौं बीर-रस धीरज कै, साहस कै, तुलसी सरीर धरे सबनि को सार सो॥
-transliteration: bhānusoṁ paḍhan hanumān gaye bhānu mana-anumāni sisu-keli kiyō pheraphāra sō। pāchilē pāgani gam gagan magan-mana, krama kō na bhrama, kapi bālaka bihāra sō।। kautuka bilōki lōkapāla hari hara bidhi, lōchanani chakāchaundhī chittani khabhāra sō। bala kaiṁdhauṁ bīra-rasa dhīraja kai, sāhasa kai, tulasī sarīra dhare sabani kō sāra sō॥
+devanagari: |
+  भानुसों पढ़न हनुमान गये भानु मन-अनुमानि सिसु-केलि कियो फेरफार सो ।
+  पाछिले पगनि गम गगन मगन-मन, क्रम को न भ्रम, कपि बालक बिहार सो ।।
+  कौतुक बिलोकि लोकपाल हरि हर बिधि, लोचननि चकाचौंधी चित्तनि खभार सो।
+  बल कैंधौं बीर-रस धीरज कै, साहस कै, तुलसी सरीर धरे सबनि को सार सो॥
+transliteration: |
+  bhānusoṁ paḍhan hanumān gaye bhānu mana-anumāni sisu-keli kiyō pheraphāra sō।
+  pāchilē pāgani gam gagan magan-mana, krama kō na bhrama, kapi bālaka bihāra sō।।
+  kautuka bilōki lōkapāla hari hara bidhi, lōchanani chakāchaundhī chittani khabhāra sō।
+  bala kaiṁdhauṁ bīra-rasa dhīraja kai, sāhasa kai, tulasī sarīra dhare sabani kō sāra sō॥
 phonetic_notes:
 - word: भानुसों
   phonetic: bhaa-nu-son

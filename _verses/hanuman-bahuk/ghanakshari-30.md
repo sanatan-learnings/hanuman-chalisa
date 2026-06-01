@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-29/
 next_verse: /hanuman-bahuk/ghanakshari-31/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-30.png
-devanagari: पंय पीर पेट पीर बह पीर मुंह पीर, जरजर सकल पीर मई है । देव भूत पितर करम खल काल ग्रह, मोहि पर दवरि दमानक सी दई है ।। हौ तो बिनु मोल के बिकानो बलि बारेही तें, ओट राम नाम की ललाट लिखि लई है । कुंभज के कंकर बिकल बूढ़े गोखुरनि, हाय राम राय ऐसी हाल कहूं भई है॥
-transliteration: paṇya pīra pēṭa pīra baha pīra muṁha pīra, jarajara sakala pīra maī hai । dēva bhūta pitar karama khala kāla graha, mōhi para davari damānaka sī daī hai ॥ hau tō binu mōla kē bikānō bali bārēhī tēṁ, ōṭa rāma nāma kī lalāṭa likhi laī hai । kumbhaja kē kaṅkara bikala būḍhē gōkhurani, hāya rāma rāya aisī hāla kahūṁ bhaī hai॥
+devanagari: |
+  पंय पीर पेट पीर बह पीर मुंह पीर, जरजर सकल पीर मई है ।
+  देव भूत पितर करम खल काल ग्रह, मोहि पर दवरि दमानक सी दई है ।।
+  हौ तो बिनु मोल के बिकानो बलि बारेही तें, ओट राम नाम की ललाट लिखि लई है ।
+  कुंभज के कंकर बिकल बूढ़े गोखुरनि, हाय राम राय ऐसी हाल कहूं भई है॥
+transliteration: |
+  paṇya pīra pēṭa pīra baha pīra muṁha pīra, jarajara sakala pīra maī hai ।
+  dēva bhūta pitar karama khala kāla graha, mōhi para davari damānaka sī daī hai ॥
+  hau tō binu mōla kē bikānō bali bārēhī tēṁ, ōṭa rāma nāma kī lalāṭa likhi laī hai ।
+  kumbhaja kē kaṅkara bikala būḍhē gōkhurani, hāya rāma rāya aisī hāla kahūṁ bhaī hai॥
 phonetic_notes:
 - word: पंय
   phonetic: pa-nya

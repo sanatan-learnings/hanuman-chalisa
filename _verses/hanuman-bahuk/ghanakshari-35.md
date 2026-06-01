@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-34/
 next_verse: /hanuman-bahuk/ghanakshari-36/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-35.png
-devanagari: सीतापति साहेब सहाय हनुमान नित, हित उपदेश को महेस मानो गुरु कै । मानस बचन काय सरन तिहारे पाय, तुम्हरे भरोसे सुर मैं न जाने सुर कै ।। व्याधि भूत जनित उपाधि काहु खल की, समाधि कीजे तुलसी को जानि जन फुर कै । कपिनाथ रघुनाथ भोलानाथ भूतनाथ, रोग सिंधु क्यों न डारियत गाय खुर कैः॥
-transliteration: Sītāpati sāheba sahāya hanumāna nita, hita upadeśa ko mehesa māno guru kai । Mānasa bacana kāya sarana tihāre pāya, tumhare bharose sura mai na jāne sura kai ।। Vyādhi bhūta janita upādhi kāhu khala kī, samādhi kīje tulasī ko jāni jana phura kai । Kapi-nātha raghunātha bholānātha bhūtanātha, roga sindhu kyo na dāriyat gāya khura kai ॥
+devanagari: |
+  सीतापति साहेब सहाय हनुमान नित, हित उपदेश को महेस मानो गुरु कै ।
+  मानस बचन काय सरन तिहारे पाय, तुम्हरे भरोसे सुर मैं न जाने सुर कै ।।
+  व्याधि भूत जनित उपाधि काहु खल की, समाधि कीजे तुलसी को जानि जन फुर कै ।
+  कपिनाथ रघुनाथ भोलानाथ भूतनाथ, रोग सिंधु क्यों न डारियत गाय खुर कैः॥
+transliteration: |
+  Sītāpati sāheba sahāya hanumāna nita, hita upadeśa ko mehesa māno guru kai ।
+  Mānasa bacana kāya sarana tihāre pāya, tumhare bharose sura mai na jāne sura kai ।।
+  Vyādhi bhūta janita upādhi kāhu khala kī, samādhi kīje tulasī ko jāni jana phura kai ।
+  Kapi-nātha raghunātha bholānātha bhūtanātha, roga sindhu kyo na dāriyat gāya khura kai ॥
 phonetic_notes:
 - word: सीतापति
   phonetic: sī-tā-pa-ti

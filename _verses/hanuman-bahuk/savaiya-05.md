@@ -10,8 +10,16 @@ verse_type: savaiya
 previous_verse: /hanuman-bahuk/ghanakshari-28/
 next_verse: /hanuman-bahuk/ghanakshari-29/
 image: /images/hanuman-bahuk/modern-minimalist/savaiya-05.png
-devanagari: राम गुलाम तु ही हनुमान गोसांई सुसांई सदा अनुकूलो । पाल्यो हौ बाल ज्यों आखर दू पितु मातु सों मंगल मोद समूलो ।। बांह की बेदन बांह पगार पुकारत आरत आनंद भूलो । श्री रघुबीर निवारिये पीर रहौ दरबार परो लटि लूलो॥
-transliteration: Rāma gulāma tu hī hanumāna gosāṃī susāṃī sadā anukūlo। pālyo hau bāla jyōṁ ākhara dū pitu mātu sōṁ mangala moda samūlo।। bāṁha kī bedana bāṁha pagāra pukārata ārata ānanda bhūlo। śrī raghubīra nivāriye pīra rahau darabāra paro laṭi lūlo॥
+devanagari: |
+  राम गुलाम तु ही हनुमान गोसांई सुसांई सदा अनुकूलो ।
+  पाल्यो हौ बाल ज्यों आखर दू पितु मातु सों मंगल मोद समूलो ।।
+  बांह की बेदन बांह पगार पुकारत आरत आनंद भूलो ।
+  श्री रघुबीर निवारिये पीर रहौ दरबार परो लटि लूलो॥
+transliteration: |
+  Rāma gulāma tu hī hanumāna gosāṃī susāṃī sadā anukūlo।
+  pālyo hau bāla jyōṁ ākhara dū pitu mātu sōṁ mangala moda samūlo।।
+  bāṁha kī bedana bāṁha pagāra pukārata ārata ānanda bhūlo।
+  śrī raghubīra nivāriye pīra rahau darabāra paro laṭi lūlo॥
 phonetic_notes:
 - word: राम
   phonetic: ra-ama

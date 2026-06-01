@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-19/
 next_verse: /hanuman-bahuk/ghanakshari-21/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-20.png
-devanagari: सिंहिका संहारि बल, सुरसा सुधारि छल, लंकिनी पछारि मारि बाटिका उजारी है । लंक परजारि मकरी बिदारि बारबार, जातुधान धारि धूरिधानी करि डारी है ।। तोरि जमकातरि मंदोदरी कढ़ोरि आनी, रावन की रानी मेघनाद महतारी है । भीर बांह पीर की निपट राखी महाबीर, कौन के सकोच तुलसी के सोच भारी है॥
-transliteration: siṁhikā saṁhāri bala, surasā sudhāri chala, laṅkinī pachāri māri bāṭikā ujārī hai । laṅka parajāri makarī bidāri bārabāra, jātudhāna dhāri dhūridhānī kari ḍārī hai ।। tori jamakātari maṇḍodarī kaḍhori ānī, rāvana kī rānī meghanāda mahatārī hai । bhīra bāṁha pīra kī nipata rākhī mahābīra, kauna ke sakocha tulasi ke socha bhārī hai॥
+devanagari: |
+  सिंहिका संहारि बल, सुरसा सुधारि छल, लंकिनी पछारि मारि बाटिका उजारी है ।
+  लंक परजारि मकरी बिदारि बारबार, जातुधान धारि धूरिधानी करि डारी है ।।
+  तोरि जमकातरि मंदोदरी कढ़ोरि आनी, रावन की रानी मेघनाद महतारी है ।
+  भीर बांह पीर की निपट राखी महाबीर, कौन के सकोच तुलसी के सोच भारी है॥
+transliteration: |
+  siṁhikā saṁhāri bala, surasā sudhāri chala, laṅkinī pachāri māri bāṭikā ujārī hai ।
+  laṅka parajāri makarī bidāri bārabāra, jātudhāna dhāri dhūridhānī kari ḍārī hai ।।
+  tori jamakātari maṇḍodarī kaḍhori ānī, rāvana kī rānī meghanāda mahatārī hai ।
+  bhīra bāṁha pīra kī nipata rākhī mahābīra, kauna ke sakocha tulasi ke socha bhārī hai॥
 phonetic_notes:
 - word: सिंहिका
   phonetic: si-mhi-ka

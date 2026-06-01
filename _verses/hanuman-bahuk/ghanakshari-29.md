@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/savaiya-05/
 next_verse: /hanuman-bahuk/ghanakshari-30/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-29.png
-devanagari: काल की करालता करम कठिनाई कर्थ, पाप के प्रभाव की सुभाय बाय बावरे। बेदन कुभांति सो सही न जाति राति दिन, सोई बांह गही जो गही समीर डाबरे ।। लायो तरु तुलसी तिहारो सो निहारि बारि, सींचिये मलीन भो तयो है तिहूं तावरे । भूतनि की आपनी पराये की कृपा निधान, जानियत सबही की रीति राम रावरे॥
-transliteration: Kāla kī karālatā karam kaṭhināī kartha, pāpa ke prabhāva kī subhāya bāya bāvare। bedana kubhānti so sahī na jāti rāti din, soī bānha gahī jo gahī samīra ḍābare ।। lāyo taru tulasī tihāro so nihārī bāri, sīnchiye malīna bho tayo hai tihūn tāvare । bhūtani kī āpanī parāye kī kṛpā nidhān, jāniyat sabahī kī rīti rāma rāvare॥
+devanagari: |
+  काल की करालता करम कठिनाई कर्थ, पाप के प्रभाव की सुभाय बाय बावरे।
+  बेदन कुभांति सो सही न जाति राति दिन, सोई बांह गही जो गही समीर डाबरे ।।
+  लायो तरु तुलसी तिहारो सो निहारि बारि, सींचिये मलीन भो तयो है तिहूं तावरे ।
+  भूतनि की आपनी पराये की कृपा निधान, जानियत सबही की रीति राम रावरे॥
+transliteration: |
+  Kāla kī karālatā karam kaṭhināī kartha, pāpa ke prabhāva kī subhāya bāya bāvare।
+  bedana kubhānti so sahī na jāti rāti din, soī bānha gahī jo gahī samīra ḍābare ।।
+  lāyo taru tulasī tihāro so nihārī bāri, sīnchiye malīna bho tayo hai tihūn tāvare ।
+  bhūtani kī āpanī parāye kī kṛpā nidhān, jāniyat sabahī kī rīti rāma rāvare॥
 phonetic_notes:
 - word: काल
   phonetic: ka-al

@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-23/
 next_verse: /hanuman-bahuk/ghanakshari-25/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-24.png
-devanagari: दूत राम राय को, सपूत पूत बाय को, समत्व हाथ पाय को सहाय असहाय को । बांकी बिरदावली बिदित बेद गाइयत, रावन सो भट भयो मुठिका के घाय को ॥ एते बड़े साहेब समर्थ को निवाजो आज, सीदत सुसेवक बचन मन काय को । थोरी बांह पीर की बड़ी गलानि तुलसी को, कौन पाप कोप, लोप प्रकट प्रभाय को॥
-transliteration: Dūta rāma rāya ko, sapūta pūta bāya ko, samatva hātha pāya ko sahāya asahāya ko। Bāṅkī biradāvalī bidita beda gāiyat, rāvana so bhaṭa bhayo muṭhikā ke ghāya ko॥ Ete baṛe sāheba samartha ko nivājo āja, sīdata susevaka bachana mana kāya ko। Thorī bāṅha pīra kī baṛī galāni tulasī ko, kauna pāpa kopa, lopa prakaṭa prabhāya ko॥
+devanagari: |
+  दूत राम राय को, सपूत पूत बाय को, समत्व हाथ पाय को सहाय असहाय को ।
+  बांकी बिरदावली बिदित बेद गाइयत, रावन सो भट भयो मुठिका के घाय को ॥
+  एते बड़े साहेब समर्थ को निवाजो आज, सीदत सुसेवक बचन मन काय को ।
+  थोरी बांह पीर की बड़ी गलानि तुलसी को, कौन पाप कोप, लोप प्रकट प्रभाय को॥
+transliteration: |
+  Dūta rāma rāya ko, sapūta pūta bāya ko, samatva hātha pāya ko sahāya asahāya ko।
+  Bāṅkī biradāvalī bidita beda gāiyat, rāvana so bhaṭa bhayo muṭhikā ke ghāya ko॥
+  Ete baṛe sāheba samartha ko nivājo āja, sīdata susevaka bachana mana kāya ko।
+  Thorī bāṅha pīra kī baṛī galāni tulasī ko, kauna pāpa kopa, lopa prakaṭa prabhāya ko॥
 phonetic_notes:
 - word: दूत
   phonetic: du-ta

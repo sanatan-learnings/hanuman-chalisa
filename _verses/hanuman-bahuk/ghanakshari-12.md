@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-11/
 next_verse: /hanuman-bahuk/savaiya-01/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-12.png
-devanagari: मन को अगम, तन सुगम किये कपीस, काज महाराज के समाज साज साजे हैं । देव-बंदी छोर रनरोर केसरी किसोर, जुग जुग जग तेरे बिरद बिराजे हैं । बीर बरजोर, घटि जोर तुलसी की ओर, सुनि सकुचाने साधु खल गन गाजे हैं । बिगरी संवार अंजनी कुमार कीजे मोहि, जैसे होत आये हनुमान के निवाजे हैं॥
-transliteration: mana ko agama, tana sugama kiye kapis, kāja mahārāja ke samāja sāja sāje hai । deva-bandī chhora ranarora kesari kisor, jug jug jag tere birada birāje hai । bīra barajor, ghati jora tulasi kī ora, suni sakuchāne sādhu khala gana gāje hai । bigarī sanvāra anjanī kumāra kīje mohi, jaise hota āye hanumāna ke nivāje hai॥
+devanagari: |
+  मन को अगम, तन सुगम किये कपीस, काज महाराज के समाज साज साजे हैं ।
+  देव-बंदी छोर रनरोर केसरी किसोर, जुग जुग जग तेरे बिरद बिराजे हैं ।
+  बीर बरजोर, घटि जोर तुलसी की ओर, सुनि सकुचाने साधु खल गन गाजे हैं ।
+  बिगरी संवार अंजनी कुमार कीजे मोहि, जैसे होत आये हनुमान के निवाजे हैं॥
+transliteration: |
+  mana ko agama, tana sugama kiye kapis, kāja mahārāja ke samāja sāja sāje hai ।
+  deva-bandī chhora ranarora kesari kisor, jug jug jag tere birada birāje hai ।
+  bīra barajor, ghati jora tulasi kī ora, suni sakuchāne sādhu khala gana gāje hai ।
+  bigarī sanvāra anjanī kumāra kīje mohi, jaise hota āye hanumāna ke nivāje hai॥
 phonetic_notes:
 - word: मन
   phonetic: ma-na

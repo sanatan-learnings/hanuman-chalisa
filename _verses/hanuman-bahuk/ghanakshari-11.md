@@ -10,8 +10,16 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-10/
 next_verse: /hanuman-bahuk/ghanakshari-12/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-11.png
-devanagari: करुनानिधान, बलबुद्धि के निधान मोद-महिमा निधान, गुन-ज्ञान के निधान हौ । बामदेव-रुप भूप राम के सनेही, नाम लेत-देत अर्थ धर्म काम निरबान हौ । आपने प्रभाव सीताराम के सुभाव सील, लोक-बेद-बिधि के बिदूष हनुमान हौ । मन की बचन की करम की तिहूं प्रकार, तुलसी तिहारो तुम साहेब सुजान हौ॥
-transliteration: karuṇānidhāna, balabuddhi ke nidhāna moda-mahimā nidhāna, guṇa-jñāna ke nidhāna hau । bāmadeva-rupa bhūpa rāma ke sanehī, nāma leta-deta artha dharma kāma nirabāna hau । āpane prabhāva sītārāma ke subhāva sīla, loka-beda-bidhi ke bidūṣa hanumāna hau । mana kī bacana kī karama kī tihūṁ prakāra, tulasī tihāro tum sāheba sujāna hau॥
+devanagari: |
+  करुनानिधान, बलबुद्धि के निधान मोद-महिमा निधान, गुन-ज्ञान के निधान हौ ।
+  बामदेव-रुप भूप राम के सनेही, नाम लेत-देत अर्थ धर्म काम निरबान हौ ।
+  आपने प्रभाव सीताराम के सुभाव सील, लोक-बेद-बिधि के बिदूष हनुमान हौ ।
+  मन की बचन की करम की तिहूं प्रकार, तुलसी तिहारो तुम साहेब सुजान हौ॥
+transliteration: |
+  karuṇānidhāna, balabuddhi ke nidhāna moda-mahimā nidhāna, guṇa-jñāna ke nidhāna hau ।
+  bāmadeva-rupa bhūpa rāma ke sanehī, nāma leta-deta artha dharma kāma nirabāna hau ।
+  āpane prabhāva sītārāma ke subhāva sīla, loka-beda-bidhi ke bidūṣa hanumāna hau ।
+  mana kī bacana kī karama kī tihūṁ prakāra, tulasī tihāro tum sāheba sujāna hau॥
 phonetic_notes:
 - word: बलबुद्धि
   phonetic: ba-la-bud-dhi

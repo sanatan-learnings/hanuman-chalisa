@@ -10,8 +10,15 @@ verse_type: ghanakshari
 previous_verse: /hanuman-bahuk/ghanakshari-13/
 next_verse: /hanuman-bahuk/ghanakshari-15/
 image: /images/hanuman-bahuk/modern-minimalist/ghanakshari-14.png
-devanagari: बालक बिलोकि, बलि बारेतें आपनो कियो, दीनबन्धु दया कीन्हीं निरुपाधि न्यारिये । रावरो भरोसो तुलसी के, रावरोई बल, आस रावरीयै दास रावरो बिचारिये ।। बड़ो बिकराल कलि, काको न बिहाल कियो, माथे पगु बलि को, निहारि सो निवारिये | केसरी किसोर, रनरोर, बरजोर बीर, बांहुपीर राहुमातु ज्यौ पारि मारिये॥
-transliteration: Bālaka biloki, bali bāretēṁ āpanō kiyō, dīnabandhu dayā kīnhīṁ nirupādhi nyāriyē। Rāvarō bharōsō tulasī kē, rāvarōī bal, āsa rāvarīyai dāsa rāvarō bicāriyē।। Barō bikarāla kali, kākō na bihāla kiyō, māthē pagu bali kō, nihāri sō nivāriyē। Kēsarī kisōra, ranarōra, barajōra bīra, bānhupīra rāhumātu jyau pāri māriyē॥
+devanagari: |
+  बालक बिलोकि, बलि बारेतें आपनो कियो, दीनबन्धु दया कीन्हीं निरुपाधि न्यारिये ।
+  रावरो भरोसो तुलसी के, रावरोई बल, आस रावरीयै दास रावरो बिचारिये ।।
+  बड़ो बिकराल कलि, काको न बिहाल कियो, माथे पगु बलि को, निहारि सो निवारिये | केसरी किसोर, रनरोर, बरजोर बीर, बांहुपीर राहुमातु ज्यौ पारि मारिये॥
+transliteration: |
+  Bālaka biloki, bali bāretēṁ āpanō kiyō, dīnabandhu dayā kīnhīṁ nirupādhi nyāriyē।
+  Rāvarō bharōsō tulasī kē, rāvarōī bal, āsa rāvarīyai dāsa rāvarō bicāriyē।।
+  Barō bikarāla kali, kākō na bihāla kiyō, māthē pagu bali kō, nihāri sō nivāriyē।
+  Kēsarī kisōra, ranarōra, barajōra bīra, bānhupīra rāhumātu jyau pāri māriyē॥
 phonetic_notes:
 - word: बालक
   phonetic: baa-la-ka
