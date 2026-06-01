@@ -34,6 +34,14 @@
         "en": 35,
         "hi": 35
       }
+    },
+    {
+      "collection": "hanuman-bahuk",
+      "path": "/data/embeddings/providers/openai/collections/hanuman-bahuk.json",
+      "counts": {
+        "en": 44,
+        "hi": 44
+      }
     }
   ]
 }
