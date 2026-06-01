@@ -35,6 +35,7 @@ See [Content Generation Guide](guides/content-generation.md) for complete docume
 docs/
 ├── guides/                      # Step-by-step how-to guides
 │   ├── local-development.md     # Setup and running locally
+│   ├── adding-a-collection.md   # Add a new normative text end-to-end (source → publish)
 │   ├── content-generation.md    # Creating verses and media
 │   └── cloudflare-worker-setup.md # API proxy deployment
 ├── reference/                   # Reference material

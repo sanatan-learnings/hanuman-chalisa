@@ -1,0 +1,242 @@
+# Modern Minimalist Theme - Comprehensive Specification
+# Hanuman Bahuk Visual Theme Definition
+
+theme:
+  # ===== Identity =====
+  id: modern-minimalist
+  version: "1.0"
+  created: "2026-05"
+  last_updated: "2026-05"
+  generator: DALL-E 3
+
+  # ===== Naming =====
+  name:
+    en: "Modern Minimalist"
+    hi: "आधुनिक न्यूनतम"
+    technical: "Contemporary Spiritual Aesthetic"
+
+  # ===== Purpose & Intent =====
+  purpose: "A visual interpretation of the Hanuman Bahuk that bridges traditional Hindu devotional art with contemporary design sensibilities. The Bahuk was composed by Tulsidas in physical agony, as a plea to Hanuman for relief from suffering, so the imagery centers Hanuman as healer, protector, and remover of pain."
+
+  intent:
+    primary: "Create a cohesive visual narrative across all images that conveys both Hanuman's immense power and his compassion as a reliever of suffering"
+    secondary: "Demonstrate that sacred art can be both culturally authentic and aesthetically modern"
+    spiritual: "Invoke divine presence through radiant, luminous depictions that inspire devotion, comfort, and hope in distress"
+    accessibility: "Appeal to younger, globally-distributed audiences while respecting traditional iconography"
+
+  target_audience:
+    age_range: "Young adults to seniors (18+)"
+    contexts:
+      - "Digital devotional platforms and websites"
+      - "Personal spiritual practice, healing, and meditation"
+      - "Modern Hindu community spaces"
+      - "Educational resources for adults"
+
+  # ===== Visual Style Core =====
+  style:
+    aesthetic: "Contemporary Spiritual Minimalism"
+    movement: "Modern Sacred Art"
+    influence:
+      - "Traditional Hindu devotional art"
+      - "Contemporary digital illustration"
+      - "Sacred geometry and mandala patterns"
+      - "Cinematic lighting and composition"
+
+    description:
+      primary: "Luminous, radiant depictions combining minimalist principles with divine opulence"
+      atmosphere: "Mystical, ethereal, and spiritually charged with golden divine energy; tender and consoling where the verses plead for relief"
+      approach: "Balance between simplicity and detail - minimalist where it serves clarity, detailed where it conveys divinity"
+
+  # ===== Color Palette =====
+  color_palette:
+    primary:
+      name: "Saffron Orange / Sacred Gold"
+      hex: "#FF8C00"
+      significance: "The color of divine fire, spiritual awakening, and Hindu sacred tradition"
+      usage: "Primary color for Hanuman's form, divine radiance, and spiritual energy"
+
+    secondary:
+      - name: "Deep Golden"
+        hex: "#FFA500"
+        usage: "Divine auras, heavenly light, mystical atmosphere"
+      - name: "Amber Glow"
+        hex: "#FFBF00"
+        usage: "Radiant energy, enlightenment, healing warmth"
+      - name: "Burnt Sienna"
+        hex: "#E97451"
+        usage: "Warmth, earthly connection, grounding elements"
+
+    background:
+      dark:
+        name: "Charcoal Black"
+        hex: "#2B2B2B"
+        usage: "Creates dramatic contrast, emphasizes luminosity of divine figures"
+      light:
+        name: "Cosmic Mist"
+        hex: "#F5E6D3"
+        usage: "Ethereal atmospheres, heavenly realms, soft divine spaces"
+
+    accents:
+      - name: "Divine Blue"
+        hex: "#4169E1"
+        significance: "Connection to Rama, cosmic consciousness"
+      - name: "Healing Green"
+        hex: "#3CB371"
+        significance: "Relief, restoration, renewal of health"
+      - name: "Lotus Pink"
+        hex: "#FFB6C1"
+        significance: "Purity, spiritual unfolding, compassion"
+
+    mood: "Warm, radiant, spiritually uplifting and consoling, with dramatic contrast between light and shadow"
+
+  # ===== Depiction Rules =====
+  depiction_rules:
+    hanuman:
+      form: "Anthropomorphic monkey deity with human-like proportions"
+      complexion: "Golden-orange to saffron, luminous and radiant"
+      physique: "Muscular and powerful, displaying divine strength"
+      face: "Simian features with expressive, compassionate eyes and noble bearing"
+      tail: "Long, curved, often visible as signature element"
+      attributes:
+        mandatory:
+          - "Gada (mace) - symbol of strength"
+          - "Janeu (sacred thread) - symbol of spiritual authority"
+          - "Tilak (forehead mark) - devotional marking"
+        common:
+          - "Crown or ornamental headpiece"
+          - "Earrings (kundala)"
+          - "Jewelry and ornaments"
+          - "Dhoti or minimal clothing"
+      expressions:
+        compassionate: "Gentle, reassuring gaze toward a suffering devotee"
+        powerful: "Fierce yet benevolent, displaying strength without aggression"
+        protective: "Alert, watchful, guardian stance"
+        devotional: "Eyes gazing upward in service to Rama, hands in anjali mudra"
+
+    rama:
+      when_depicted: "Often shown with Hanuman, in Hanuman's heart, or being served by him"
+      appearance: "Blue-complexioned deity with regal bearing, bow and arrows"
+      treatment: "Central and honored, with Hanuman in devoted service"
+
+    devotees:
+      representation: "Human figures in reverent or ailing poses, receiving blessings, comfort, or healing"
+      relationship: "Shown smaller in scale, looking up to divine figures"
+      note: "Tulsidas himself may be depicted as the suffering devotee pleading for relief"
+
+  # ===== Composition Principles =====
+  composition:
+    layout:
+      orientation: "Portrait (2:3 ratio)"
+      focus: "Central subject with supporting elements radiating outward"
+      balance: "Asymmetric balance weighted toward divine figures"
+    focal_points:
+      primary: "Hanuman's face or central divine action"
+      secondary: "Sacred symbols, divine attributes, supporting narrative elements"
+    perspective:
+      preferred: "Low angle looking up (enhances divine majesty)"
+      alternative: "Eye level for intimate devotional moments"
+
+  # ===== Lighting & Atmosphere =====
+  lighting:
+    primary_source: "Divine inner radiance emanating from sacred figures"
+    quality: "Soft, glowing, otherworldly"
+    direction: "Often emanating from the deity outward, creating halos and auras"
+    effects:
+      - "Rim lighting around divine forms"
+      - "Volumetric light rays (god rays)"
+      - "Glowing auras and halos"
+      - "Bokeh light spots in background"
+    mood: "Mystical, transcendent, spiritually charged and consoling"
+    contrast: "High contrast between illuminated divine figures and darker surroundings"
+
+  # ===== Symbolic Elements =====
+  symbolism:
+    recurring_motifs:
+      - element: "Divine radiance"
+        meaning: "Spiritual illumination, divine presence, dispelling of darkness/suffering"
+      - element: "Healing light over the body"
+        meaning: "Relief from pain, restoration of health - the central plea of the Bahuk"
+      - element: "Sacred geometry"
+        meaning: "Cosmic order, divine perfection, universal harmony"
+      - element: "Lotus imagery"
+        meaning: "Purity, spiritual awakening, transcendence"
+      - element: "Fire and flames"
+        meaning: "Purification, transformation, divine energy"
+    color_symbolism:
+      saffron: "Renunciation, spirituality, fire of knowledge"
+      gold: "Divine nature, purity, immortality"
+      blue: "Infinity, cosmic consciousness, connection to Rama"
+      green: "Healing, relief, restoration"
+
+  # ===== Technical Specifications =====
+  technical:
+    resolution:
+      width: 1024
+      height: 1536
+      unit: "pixels"
+      aspect_ratio: "2:3 (portrait)"
+    format:
+      file_type: "PNG"
+      color_space: "sRGB"
+    quality:
+      detail_level: "High"
+      clarity: "Sharp focus on primary subjects, atmospheric depth for background"
+
+  # ===== Generation Configuration =====
+  generation:
+    style_modifier: |
+      Modern minimalist spiritual art style with luminous golden-orange and saffron tones.
+      Divine radiance emanating from the figures with dramatic lighting and glowing auras.
+      Clean composition with intricate sacred geometry and mandala patterns in background.
+      Mystical, ethereal atmosphere with cinematic quality. High contrast between illuminated
+      divine figures and dark charcoal or soft cosmic mist backgrounds. Rim lighting,
+      volumetric light rays, and bokeh effects. Convey Hanuman as a compassionate healer and
+      protector who relieves suffering. Contemporary digital art aesthetic while maintaining
+      traditional Hindu devotional symbolism. Professional, reverent, and spiritually uplifting.
+
+    dalle_params:
+      model: "gpt-image-1"   # dall-e-3 retired; gpt-image-1 is the current image model
+      size: "1024x1536"      # Portrait 2:3 (gpt-image-1 valid sizes: 1024x1024, 1024x1536, 1536x1024)
+      quality: "medium"       # gpt-image-1 quality: low, medium, high
+      n: 1
+
+    retry_count: 3
+    rate_limit_delay: 2
+    skip_existing: true
+
+  # ===== File Organization =====
+  files:
+    total_count: 45
+    structure:
+      title: "title-page.png (1 file)"
+      chhappay: "chhappay-01.png, chhappay-02.png (2 files)"
+      jhulna: "jhulna-01.png (1 file)"
+      ghanakshari: "ghanakshari-01.png through ghanakshari-36.png (36 files)"
+      savaiya: "savaiya-01.png through savaiya-05.png (5 files)"
+    naming_convention: "lowercase-with-hyphens-and-number.png"
+    location: "images/hanuman-bahuk/modern-minimalist/"
+
+  # ===== Artistic Principles =====
+  principles:
+    cultural_authenticity:
+      - "Respect traditional Hindu iconography"
+      - "Maintain accepted artistic conventions for deity representation"
+      - "Ensure gestures (mudras) are traditionally accurate"
+      - "Honor the sacred nature of the subject matter"
+    spiritual_effectiveness:
+      - "Create images that inspire devotion, comfort, and hope"
+      - "Balance beauty with spiritual power"
+      - "Evoke the divine presence, not just illustrate stories"
+    visual_coherence:
+      - "Consistent saffron-gold palette across all images"
+      - "Unified lighting and atmospheric treatment"
+      - "Recognizable Hanuman appearance throughout"
+
+  # ===== Design Philosophy =====
+  philosophy: |
+    This theme bridges ancient devotional tradition and contemporary visual language.
+    Because the Hanuman Bahuk was composed in physical suffering as a plea for relief,
+    the imagery emphasizes Hanuman not only as the mighty vanquisher of demons but as
+    the compassionate physician of the distressed - the one who, with a glance, dispels
+    pain, disease, and fear. The luminous saffron-gold treatment aims to evoke the actual
+    experience of divine darshan and to offer the viewer consolation and courage.

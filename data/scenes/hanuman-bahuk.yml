@@ -1,0 +1,240 @@
+_meta:
+  collection: hanuman-bahuk
+  source: Derived from shdvef.com Hindi commentary and the canonical verses (data/verses/hanuman-bahuk.yml)
+  description: Scene descriptions for hanuman-bahuk image generation
+  format: theme-agnostic scene descriptions (narrative and spiritual meaning)
+scenes:
+  title-page:
+    title: Title Page
+    description: A reverent opening composition of Lord Hanuman as both mighty protector and compassionate healer. Hanuman
+      sits radiant and serene, one hand raised in blessing, golden light emanating outward and gently dispelling shadows of
+      pain and affliction. The mood is consoling and hopeful - the opening of a sacred plea for relief composed in suffering.
+  chhappay-01:
+    title: Crosser of the Ocean, Remover of Sorrow
+    description: Hanuman with a body the color of the rising sun, long mighty arms, leaping across a vast ocean toward Lanka.
+      His form is awesome - like the death of Death itself - yet his face is turned in compassion toward Sita's distant sorrow.
+      Burning Lanka glows behind him while he remains fearless and serene, the easy refuge of those who serve him.
+  chhappay-02:
+    title: The Fierce Radiant Form
+    description: A towering depiction of Hanuman like a golden Mount Sumeru, blazing with the radiance of countless suns.
+      Broad chest, vajra-hard limbs, tawny eyes, terrible brows - a form so fierce that whoever holds it in the heart is never
+      approached, even in dreams, by sin or sorrow. Dramatic high contrast, luminous gold against deep charcoal.
+  jhulna-01:
+    title: Unmatched Among the Valiant
+    description: Hanuman standing victorious amid a symbolic gathering of the mighty - gods, sages, and warriors who acknowledge
+      his supremacy. Vedas and celestial bards proclaim his fulfilled vows. Behind him, the great ocean of worldly existence
+      has dried at his power. He alone, the noble son of the Wind, can crush the hordes of the wicked.
+  ghanakshari-01:
+    title: The Child Who Chased the Sun
+    description: The infant Hanuman soaring backward through the sky toward the sun to learn his lessons, treating cosmic
+      feats as innocent play, never faltering. Indra, Vishnu, Shiva and Brahma look on dazzled and bewildered, wondering whether
+      strength, courage, and patience themselves have taken bodily form in this radiant child.
+  ghanakshari-02:
+    title: The Roar on Arjuna's Banner
+    description: Hanuman emblazoned and roaring upon the flag of Arjuna's chariot on the Mahabharata battlefield, the Kaurava
+      army trembling at the sound. Drona and Bhishma marvel at the wind-son whose strength is an ocean of valor. Warriors
+      bow with folded hands, feeling their very birth fulfilled by his sight.
+  ghanakshari-03:
+    title: Ages' Work in a Moment
+    description: Hanuman leaping the ocean as if it were a cow's hoof-print, uprooting the Drona mountain and tossing it like
+      a playful ball, burning Lanka without fear. When the vanar army and Rama himself stand in crisis, he accomplishes the
+      work of ages in a single moment - by his arm the guardians of the worlds are protected and the earth made stable.
+  ghanakshari-04:
+    title: Mightiest in the Three Worlds
+    description: Hanuman's mighty leap denting the cosmic tortoise's back like a vessel measuring the ocean; his form a fierce
+      fire poised to consume Ravana, Kumbhakarna and Meghnad like fuel. Bhishma proclaims that in all three times and three
+      worlds none has been as mighty as Hanuman. Vast cosmic scale, blazing divine energy.
+  ghanakshari-05:
+    title: Treasure of the Three Worlds
+    description: Hanuman as messenger of Rama and joy of Anjani, radiant as countless suns, remover of Sita's grief and dear
+      as life to Lakshman. He appears as a luminous treasure across the three worlds to destroy the demon of a devotee's poverty.
+      The scene invites all to meditate on the wise, virtuous, vigilant lord.
+  ghanakshari-06:
+    title: The Dawn that Dispels Suffering
+    description: Hanuman as a radiant dawn-sun rising over lotus-like devotees, his light dispelling the darkness of sin and
+      the cold of affliction. The Vedas sing that he frees the gods from their prison. Rama's beloved, abode of Shiva, son
+      of Kesari - his very name a wish-granting tree in the dark age of Kali.
+  ghanakshari-07:
+    title: Fierce in Battle, Tender in Heart
+    description: Hanuman with a vajra-hard body roaring in the chaos of war, yet his eyes brimming with compassion and righteous
+      calm. To the wicked he is like Death; to the good, a protector who removes pain by mere remembrance. Darling of Raghunath,
+      courageous helper of his servants.
+  ghanakshari-08:
+    title: The All-Sustaining One
+    description: A symbolic composition of Hanuman embodying the divine functions - creator, sustainer, destroyer, the nectar
+      that revives; earth that supports, sun that dispels darkness, moon that nourishes. He grants sweets to beggars and satisfies
+      his servants, the resolute remover of the distress of the three worlds.
+  ghanakshari-09:
+    title: Honored by Rama Himself
+    description: Hanuman honored by Rama, favored by Shiva, with Indra bowing low; gods and demons alike fold their hands
+      in reverence. His servant's every waking, sleeping, sitting and playing moment is auspicious. Radiant assurance that
+      faith in Hanuman secures everything, everywhere.
+  ghanakshari-10:
+    title: Cherished by Shiva and Rama
+    description: Hanuman's devotee surrounded by the pleased presences of Gauri-Shankar, all the world-guardians, and Rama,
+      Janaki and Lakshman. Freed from sorrow in both worlds, the devotee is nurtured like a child by sages and siddhas. Hanuman
+      of spotless fame, the ocean of compassion, uplifts all who hold his roar in their hearts.
+  ghanakshari-11:
+    title: Treasury of Compassion and Wisdom
+    description: Hanuman as the abode of compassion, strength, wisdom, joy and knowledge, in his Bamdev (Shiva) aspect and
+      beloved of Rama. The mere utterance of his name grants dharma, artha, kama and liberation. Learned in worldly and Vedic
+      ways, the wise master to whom the devotee belongs in thought, word and deed.
+  ghanakshari-12:
+    title: Mend My Ruin
+    description: A devotee kneeling before a luminous Hanuman, pleading. Hanuman who made the impossible easy for Rama's work,
+      freer of the gods, lion-cub whose glory shines age after age. Saints look on sorrowful and the wicked rejoice at the
+      devotee's plight - a tender plea to the one who has always blessed his own.
+  savaiya-01:
+    title: Crown-Jewel of the Wise
+    description: An intimate scene of Tulsidas addressing Hanuman, crown-jewel of the wise who dwells ever in his devotees'
+      minds. The poet, heart heavy, asks gently what fault has caused the lord's seeming displeasure, longing only to be told
+      so he may be careful. Soft, contemplative golden light.
+  savaiya-02:
+    title: Webs of Worry Torn Away
+    description: Hanuman's favor shown as worries and dangers dissolving like spider-webs torn apart at the utterance of his
+      name. Whom he establishes even Shiva cannot uproot; whom he favors shines like a thorn in enemies' hearts. The devotee
+      asks why relief is delayed, with trust undimmed.
+  savaiya-03:
+    title: The Lion and the Sky-Birds
+    description: Hanuman as the lion of the forest of war, having crossed the ocean, slain demon heroes and burned mighty
+      Lanka, tearing enemy elephant-cubs. Now the devotee, enduring the wildfire of suffering, calls on the vanar-falcon to
+      snatch away the multiplying sky-birds of affliction as easily as a falcon takes a quail.
+  savaiya-04:
+    title: Guardian from Sin, Curse and Affliction
+    description: Hanuman as a young lion before the elephant-demons Meghnad, Akampan and Kumbhakarna, slayer of Aksha and
+      destroyer of the Ashoka grove who would not even glance at Ravana's face. Rama's glory is the fire and Hanuman the wind
+      that burns the chaff of demons - ever the protector from sin, curse and the three afflictions.
+  ghanakshari-13:
+    title: Do Not Forget Your Word
+    description: A devotee with folded hands reminding Hanuman of his promise to favor his servants. Punish the offender a
+      thousand ways, he pleads, but do not kill with poison one who would die of a sweet. The courageous darling of the Wind,
+      dear to Raghuvir, is implored to swiftly remove the pain of his arm.
+  ghanakshari-14:
+    title: Lift Kali's Foot from My Head
+    description: Hanuman, who took the child as his own from infancy with pure mercy, confronting the fierce age of Kali depicted
+      as a dark force pressing its foot upon the devotee's head. Kesari's cub, fierce hero, is called to crush the arm-pain
+      as he once slew Simhika, the mother of Rahu.
+  ghanakshari-15:
+    title: Seize the Pain Like the Crocodile
+    description: Hanuman the re-establisher of the fallen, wish-tree for Rama's servants and support of the lowly. The devotee's
+      arm is shown as a vast pond and the pain as a creature within it; Hanuman is implored to seize and tear its mouth as
+      he once seized the crocodile in the sea.
+  ghanakshari-16:
+    title: Leap from the Mountain of Love
+    description: Hanuman poised to leap, the soul-as-Jambavan seated on the Subel-peak of the heart urging him on, the monkey
+      of joy nearly drowning in the ocean of disease. By Rama's love and devotion, Hanuman is called to crush the arm-pain
+      as he kicked away Lankini at Lanka's gate.
+  ghanakshari-17:
+    title: Uproot the Creeper of Pain
+    description: Hanuman, in whose hand rest karma, time, the world-guardians and all beings, gazing upon his suffering servant
+      in whose heart he dwells. The arm-pain is shown as a stinging kapikachhu-creeper sprung at the root of the arm-tree,
+      which Hanuman is asked to uproot in effortless monkey-play.
+  ghanakshari-18:
+    title: The Putana of Pain
+    description: The arm-pain personified as Putana, the child-killing demoness in fair disguise, relying on the strength
+      of fierce karma-Kamsa. Hanuman appears as the infant Krishna who alone can end her - the devotee trusting that this
+      Putana-like affliction will die by Hanuman's hand.
+  ghanakshari-19:
+    title: A Warning to the Affliction
+    description: Hanuman standing as guardian while the devotee boldly warns the personified pain - whatever its origin in
+      karma, anger, doshas, or cruel sorcery - to flee or be punished. He declares loudly the oath of mighty Hanuman, by whose
+      name the affliction must depart the arm.
+  ghanakshari-20:
+    title: Recounting the Deeds of Lanka
+    description: A sweeping montage of Hanuman's Lanka feats - slaying Simhika, reforming Surasa's trick, killing Lankini,
+      ravaging the grove, burning the city, tearing the crocodile, dragging out Mandodari. The great hero who has shielded
+      against every assault is asked why he holds back only from the devotee's arm-pain.
+  ghanakshari-21:
+    title: By Your Arm the Worlds Rest Sorrowless
+    description: Hanuman whose childhood play makes even the steadfast tremble, by whose arm all the world-guardians dwell
+      free of sorrow. In his hand lie the powers of sama-dana-bheda and the Vedic siddhis. The devotee wonders whether the
+      long delay is sloth, anger, jest, or a lesson.
+  ghanakshari-22:
+    title: Nurtured Like a Child
+    description: Hanuman who lifted the beggar from door-to-door wandering and nurtured him like a child. Capable beyond all
+      in the three worlds, he is gently reproached for smiling while his servant suffers - the helpless chick perishing in
+      what is to him mere child's play.
+  ghanakshari-23:
+    title: Vain Remedies, One True Refuge
+    description: A devotee surrounded by useless medicines, charms and mantras, the arm-pain only growing. Creator, sustainer,
+      destroyer, karma and time all obey Hanuman; called Rama's messenger and Hanuman's own servant, the devotee laments that
+      the lord's delay pains him more than the pain itself.
+  ghanakshari-24:
+    title: Felling Ravana with a Fist
+    description: Hanuman, capable in hand and foot and helper of the helpless, whose fame the Vedas sing and whose single
+      fist-blow felled Ravana. Favored by so great a master, the good servant yet suffers in mind, word and deed - small the
+      arm-pain, but great the shame that the lord's power seems hidden.
+  ghanakshari-25:
+    title: All Beings Bow to His Command
+    description: A vast assembly of beings - gods, demons, men, sages, siddhas, nagas, and even Putana and pisachis - bowing
+      their heads to the command of Rama's messenger. Terrible mantras, deceit and diseases flee at the sound of Hanuman's
+      name; the devotee asks him to correct all that gives pain.
+  ghanakshari-26:
+    title: Gods Thrill to Hear His Praise
+    description: Hanuman by whose strength the vanars overcame Ravana and Rama-raj accomplished the gods' work. Hearing his
+      praise the gods thrill and the eyes of Brahma, Vishnu and Shiva brim with tears. The devotee begs the kapinath to lay
+      a hand upon his head and not let his servant be seen suffering.
+  ghanakshari-27:
+    title: Run Your Tail Over My Arm
+    description: A tender scene - Hanuman as mother and water, the devotee as small child and fish. Raised on the lord's crumbs,
+      the devotee, though a worthless coin, begs not to be neglected over a small fault. Recognizing the child's love and
+      distress, Hanuman is asked to run his long healing tail over the aching arm.
+  ghanakshari-28:
+    title: Blown Away by His Breath
+    description: Hanuman laughing as he blows away whole armies of disease, bad-fortune and ill-company - shown as monsoon
+      storm-clouds scattering before his breath. The disease-demon had nearly devoured the devotee, but Kesari's cub forcibly
+      saved him. Dynamic, triumphant golden energy.
+  savaiya-05:
+    title: Lame in Your Court
+    description: An intimate plea - Hanuman who nurtured the devotee from childhood like the two letters Ra-Ma, the mother
+      and father of all joy. Clutching his pain-filled arms, the devotee cries out, forgetting all happiness, asking Raghuvir
+      to remove the pain so he may remain - even lame and crippled - in the divine court.
+  ghanakshari-29:
+    title: Water the Tree You Planted
+    description: The devotee as a withered Tulsi-tree, planted by Hanuman's own hand and scorched by the three afflictions,
+      beseeching the merciful lord to water it with the rain of grace. Whether the pain is of time, karma, sin or madness,
+      it has seized the very arm the Wind-son once seized. Soft restorative green light amid the gold.
+  ghanakshari-30:
+    title: Whole Body Wracked with Pain
+    description: A devotee bowed with pain in foot, belly, arm and mouth, his whole body decayed, assailed by gods, ghosts,
+      ancestors, karma, time and cruel planets. Sold to Hanuman without price since childhood, Rama's name written on his
+      brow, he likens his plight to Agastya's servant drowning in a hoof-print of water.
+  ghanakshari-31:
+    title: Demons of Disease, Slain by the Name
+    description: The afflictions personified as the demons Subahu, Marich and Tadaka, set against the devotee who longs to
+      perform the yajna of Rama's name. Remembering the two syllables Ra-Ma - by whom Tadaka was slain and warriors pierced
+      like banyan-fruit - the disease-demons are destroyed by the power of the Name.
+  ghanakshari-32:
+    title: From Tulsi to Goswami
+    description: A reflective scene of the devotee's life - turning to Rama in childhood, eating begged crumbs; then caught
+      in worldly delusion; then adopted by Anjani's son and purified by Rama's hands. Raised from humble Tulsi to honored
+      Goswami, he now reaps in pain the fruit of pride forgotten.
+  ghanakshari-33:
+    title: Rama's Salt Bursting Forth
+    description: Once foodless and thin, orphan-Tulsi made his own by Raghunath's ocean-of-virtue nature; then, status gained,
+      he swelled and abandoned worship. Now the body erupts in fierce boils - depicted symbolically as Rama's salt bursting
+      out of one who strayed - a humbling, penitent composition.
+  ghanakshari-34:
+    title: Sweets in Both Hands
+    description: The devotee serene between living and dying - to live, as Rama's servant; to die, with Kashi and Ganga at
+      hand - sweets in both hands, no worry either way. Yet the body's heavy unbearable pain remains, which none but Raghuvir
+      can remove. Calm, surrendered, luminous mood.
+  ghanakshari-35:
+    title: Toss the Ocean of Disease Away
+    description: Hanuman as ever-present helper and Mahesh as guru, the devotee taking refuge at the divine feet in mind,
+      word and deed, trusting no other god. He begs the lord - kapinath, raghunath, bholanath, bhutanath - to heal the affliction
+      and toss the whole ocean of disease away as easily as a cow's hoof-print of water.
+  ghanakshari-36:
+    title: What Cannot Be Done by You?
+    description: The closing plea - the devotee addressing Hanuman, wise Rama and merciful Shankar. Brahma has made the world
+      full of joy and sorrow, passion and anger; the Vedas declare Rama the doer of all. "What cannot be done by you?" he
+      asks; then he will fall silent, knowing one reaps what one has sown. A resolved, peaceful, surrendered finale.
+  cover:
+    title: Hanuman Bahuk Cover
+    description: 'A clean, iconic devotional composition for collection/site cover usage.
+
+      Focus on symbolic visual elements associated with the collection subject.
+
+      Balanced framing suitable for landscape cover display, warm saffron-gold palette,
+
+      and clear contrast for title text overlay if needed.'

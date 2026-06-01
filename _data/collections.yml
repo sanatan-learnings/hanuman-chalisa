@@ -48,7 +48,7 @@ hanuman-bahuk:
   permalink_base: "/hanuman-bahuk/"
   icon: "🙏"
   subdirectory: "hanuman-bahuk"
-  enabled: false
+  enabled: true
 
 sankat-mochan-hanumanashtak:
   key: "sankat-mochan-hanumanashtak"
