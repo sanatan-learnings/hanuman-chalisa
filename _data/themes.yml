@@ -69,12 +69,22 @@ hanuman-bahuk:
       description_hi: "हनुमान के उपचारक और रक्षक रूप के भक्तिपूर्ण चित्रण के साथ समकालीन आध्यात्मिक सौंदर्यशास्त्र"
       folder: "modern-minimalist"
       default: true
-      status: "not-started"
+      status: "complete"  # All 44 verse images + cover generated
+
+    traditional:
+      name_en: "Traditional Art"
+      name_hi: "पारंपरिक कला"
+      description_en: "Classical Indian devotional art with vermillion and gold, inspired by Mughal miniature and temple painting"
+      description_hi: "मुगल लघुचित्र और मंदिर चित्रकला से प्रेरित सिंदूरी और स्वर्ण रंगों की शास्त्रीय भारतीय भक्ति कला"
+      folder: "traditional"
+      default: false
+      status: "complete"  # All 44 verse images + cover/title generated
 
 # Global theme settings (for theme-switcher functionality)
 # Only applies to collections with multiple complete themes
 theme_switcher_enabled:
   - hanuman-chalisa  # Has 3 complete themes, enable switcher
+  - hanuman-bahuk    # Has 2 complete themes (modern-minimalist, traditional)
 
 # Notes:
 # - Each collection can have different themes available
