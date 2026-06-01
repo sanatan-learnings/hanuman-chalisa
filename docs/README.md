@@ -100,7 +100,7 @@ See [Embedding Provider Switching](guides/embedding-provider-switching.md) for:
 - `verse-generate` - Orchestrate complete multimedia generation (images + audio) for verses
 - `verse-fetch-text` - Fetch traditional Devanagari text from authoritative web sources
 - `verse-embeddings` - Generate embeddings for semantic search (supports `--multi-collection`)
-- `verse-images` - Generate images using DALL-E 3
+- `verse-images` - Generate images using gpt-image-1
 - `verse-audio` - Generate audio using ElevenLabs
 - `verse-deploy` - Deploy Cloudflare Worker
 

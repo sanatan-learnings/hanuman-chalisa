@@ -151,7 +151,7 @@ word_meanings:
   roman: mahābhīma
   meaning:
     en: Greatly fearsome
-    hi: अत्यंत भयानक
+    hi: अति प्रचंड
 - word: महाबान
   roman: mahābāna
   meaning:
@@ -256,7 +256,7 @@ word_meanings:
   roman: karāla
   meaning:
     en: terrible
-    hi: भयानक
+    hi: विकराल
 - word: पाल
   roman: pāla
   meaning:
@@ -354,13 +354,13 @@ word_meanings:
     hi: को
 literal_translation:
   en: The limit of great strength, greatly fearsome, greatly blessed, thus the greatly brave is known to bring forth Rama. With a body as hard as a thunderbolt, he roars with great force in battle, his mind filled with compassion and patience. He is like death to the wicked, a terrible protector to the virtuous, remembers and removes the pain of Tulsi. He is the beloved giver of joy to Sita, a helper to Rama, he is the brave wind (Hanuman).
-  hi: महाबल की सीमा, अत्यंत भयानक, अत्यंत धन्य, इस प्रकार अत्यंत बहादुर राम को उत्पन्न करने के लिए ज्ञात है। वज्र के समान कठोर शरीर वाले, वह युद्ध में बड़ी ताकत से गर्जता है, उसका मन करुणा और धैर्य से भरा हुआ है। वह दुष्टों के लिए मृत्यु के समान, सज्जनों के लिए भयानक संरक्षक है, वह तुलसी की पीड़ा को स्मरण करता है और दूर करता है। वह सीता को सुख देने वाला प्यारा है, राम का सहायक है, वह साहसी पवन (हनुमान) है।
+  hi: महाबल की सीमा, अति प्रचंड, अत्यंत धन्य, इस प्रकार अत्यंत बहादुर राम को उत्पन्न करने के लिए ज्ञात है। वज्र के समान कठोर शरीर वाले, वह युद्ध में बड़ी ताकत से गर्जता है, उसका मन करुणा और धैर्य से भरा हुआ है। वह दुष्टों के लिए मृत्यु के समान, सज्जनों के दृढ़ संरक्षक है, वह तुलसी की पीड़ा को स्मरण करता है और दूर करता है। वह सीता को सुख देने वाला प्यारा है, राम का सहायक है, वह साहसी पवन (हनुमान) है।
 interpretive_meaning:
   en: This verse highlights the dual nature of Hanuman as both a fierce warrior and a compassionate devotee. His strength and bravery are unmatched, yet his heart is filled with kindness and patience. He is a terror to the wicked, yet a protector to the virtuous. He is a beloved servant of Rama and Sita, and a remover of pain and distress.
-  hi: यह छंद हनुमान के एक भयानक योद्धा और एक करुणामय भक्त के रूप की द्विधात्मक प्रकृति को उजागर करता है। उनकी शक्ति और साहस अद्वितीय हैं, फिर भी उनका हृदय दया और धैर्य से भरा हुआ है। वह दुष्टों के लिए भयानक है, फिर भी सज्जनों का संरक्षक है। वह राम और सीता का प्यारा सेवक है, और पीड़ा और संकट को दूर करने वाला है।
+  hi: यह छंद हनुमान के एक प्रचंड योद्धा और एक करुणामय भक्त के रूप की द्विधात्मक प्रकृति को उजागर करता है। उनकी शक्ति और साहस अद्वितीय हैं, फिर भी उनका हृदय दया और धैर्य से भरा हुआ है। वह दुष्टों के लिए काल-समान है, फिर भी सज्जनों का संरक्षक है। वह राम और सीता का प्यारा सेवक है, और पीड़ा और संकट को दूर करने वाला है।
 story:
   en: This verse is from the Hanuman Bahuk, a prayer composed by Tulsidas. It is traditionally recited when one is in distress or illness, seeking protection and relief. The verse describes Hanuman's strength, bravery, and compassion, highlighting his role as a protector of the virtuous and a terror to the wicked. It also emphasizes his devotion to Rama and Sita, and his role as a remover of pain and distress.
-  hi: यह छंद तुलसीदास द्वारा रचित हनुमान बाहुक से है। यह परंपरागत रूप से संकट या बीमारी में होने पर, सुरक्षा और राहत की खोज में पढ़ा जाता है। छंद में हनुमान की शक्ति, साहस, और करुणा का वर्णन किया गया है, जिसमें उनकी भूमिका सज्जनों के संरक्षक और दुष्टों के प्रति भयानक के रूप में उजागर होती है। इसमें राम और सीता के प्रति उनकी भक्ति, और पीड़ा और संकट को दूर करने वाले के रूप में उनकी भूमिका पर भी बल दिया गया है।
+  hi: यह छंद तुलसीदास द्वारा रचित हनुमान बाहुक से है। यह परंपरागत रूप से संकट या बीमारी में होने पर, सुरक्षा और राहत की खोज में पढ़ा जाता है। छंद में हनुमान की शक्ति, साहस, और करुणा का वर्णन किया गया है, जिसमें उनकी भूमिका सज्जनों के संरक्षक और दुष्टों के प्रति काल-समान के रूप में उजागर होती है। इसमें राम और सीता के प्रति उनकी भक्ति, और पीड़ा और संकट को दूर करने वाले के रूप में उनकी भूमिका पर भी बल दिया गया है।
 practical_application:
   teaching:
     en: This verse teaches us about the dual nature of strength - it can be used to protect the virtuous and to terrify the wicked. It also emphasizes the importance of compassion and devotion.

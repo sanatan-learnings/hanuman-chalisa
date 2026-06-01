@@ -17,20 +17,20 @@ A detailed, verse-by-verse exploration of sacred Hindu texts related to Lord Han
 - **Sankat Mochan Hanumanashtak** ✅ Complete - 9 verses for removing obstacles
 - **Sundar Kaand** 🚧 In Progress - 35 verses from Ramcharitmanas describing Hanuman's journey to Lanka
 - **Bajrang Baan** ✅ Complete - 59 verses of protective Hanuman stuti by Goswami Tulsidas
+- **Hanuman Bahuk** ✅ Complete - 44 verses by Goswami Tulsidas, composed during illness as a prayer to Hanuman for relief
 
 **Coming soon:**
 - Hanuman Stuti - Devotional hymns
 - Hanuman Kavacham - Protective armor of Hanuman
-- Hanuman Bahuk - Additional sacred verses
 
 This guide provides deep understanding of each verse with translations, meanings, stories from the Ramayana, and practical applications for modern life - all available in **English** and **हिन्दी (Hindi)**.
 
 ## Features
 
-- **📖 4 Collections** - Hanuman Chalisa (43), Sankat Mochan Hanumanashtak (9), Sundar Kaand (35), Bajrang Baan (59)
+- **📖 5 Collections** - Hanuman Chalisa (43), Sankat Mochan Hanumanashtak (9), Sundar Kaand (35), Bajrang Baan (59), Hanuman Bahuk (44)
 - **🔤 Bilingual** - Full content in English and हिन्दी (Hindi) with word-by-word meanings, transliteration, and interpretive explanations
 - **🎵 Audio Pronunciation** - Regular and slow speed for every verse (AI-generated via Eleven Labs)
-- **🖼️ AI-Generated Images** - Beautiful artwork for each verse (DALL-E 3)
+- **🖼️ AI-Generated Images** - Beautiful artwork for each verse (gpt-image-1)
 - **💬 Spiritual Guidance** - Ask questions and receive GPT-4 powered guidance based on relevant verses → [Try it](https://hanumanji.ai/guidance) | [Learn more](docs/reference/spiritual-guidance.md)
 - **📕 Custom Books** - Generate printable books (Hanuman Chalisa only) → [Book Generator](https://hanumanji.ai/chalisa/book) | [Documentation](docs/reference/book-generation.md)
 - **🔍 Search** - Find verses across all collections
@@ -109,7 +109,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 ## Acknowledgments
 
 ### Content Creation
-- **DALL-E 3** (OpenAI) - AI-generated verse images
+- **gpt-image-1** (OpenAI) - AI-generated verse images
 - **Eleven Labs** - AI text-to-speech for audio recitations (eleven_multilingual_v2)
 - **ffmpeg** - Audio post-processing for speed control
 - **GPT-4** (OpenAI) - Spiritual guidance generation
@@ -123,7 +123,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 - **Hanuman Ashtak**: AI-generated content (OpenAI)
 
 ### Technology
-Built with Jekyll, GitHub Pages, DALL-E 3, ElevenLabs, GPT-4, and sanatan-verse-sdk.
+Built with Jekyll, GitHub Pages, gpt-image-1, ElevenLabs, GPT-4, and sanatan-verse-sdk.
 
 → See [Tech Stack](docs/reference/tech-stack.md) for complete architecture and technology details
 

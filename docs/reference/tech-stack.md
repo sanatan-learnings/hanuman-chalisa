@@ -269,7 +269,7 @@ Five-item fixed bottom nav (mobile only): Home · Chalisa · Sundar Kaand · �
 ## Media Generation
 
 ### Images
-**Technology**: DALL-E 3 via sanatan-verse-sdk
+**Technology**: gpt-image-1 via sanatan-verse-sdk
 
 ```bash
 verse-images --collection hanuman-chalisa --theme-name modern-minimalist
@@ -328,7 +328,7 @@ verse-embeddings --multi-collection \
 ~$0.05-0.06 (AI content + image + audio + embeddings)
 
 - **Hosting**: Free (GitHub Pages + custom domain ~$10-15/year)
-- **Images**: ~$0.04 per image (DALL-E 3)
+- **Images**: ~$0.06 per image (gpt-image-1, medium quality)
 - **Audio**: Free (Eleven Labs free tier)
 - **Embeddings**:
   - OpenAI: ~$0.001 per verse (text-embedding-3-small)

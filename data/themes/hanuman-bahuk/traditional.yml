@@ -1,0 +1,185 @@
+# Traditional Indian Devotional Art Theme
+# Hanuman Bahuk Visual Theme Definition
+
+theme:
+  # ===== Identity =====
+  id: traditional
+  version: "1.0"
+  created: "2026-06"
+  last_updated: "2026-06"
+  generator: gpt-image-1
+
+  # ===== Naming =====
+  name:
+    en: "Traditional Art"
+    hi: "पारंपरिक कला"
+    technical: "Classical Indian Devotional Painting"
+
+  # ===== Purpose & Intent =====
+  purpose: "A visual interpretation of the Hanuman Bahuk honoring classical Indian devotional art - Mughal miniature painting and temple mural traditions. Because the Bahuk was composed by Tulsidas in physical suffering as a plea for relief, the imagery presents Hanuman in classical iconography as both the mighty protector and the compassionate remover of pain."
+
+  intent:
+    primary: "Preserve and celebrate traditional Hindu devotional art styles"
+    secondary: "Create images that feel authentic to temple and manuscript traditions"
+    spiritual: "Invoke divine presence through classical iconography, conveying both Hanuman's power and his mercy toward the afflicted"
+    accessibility: "Connect with audiences who appreciate traditional religious art"
+
+  target_audience:
+    age_range: "All ages, especially those familiar with traditional temple art"
+    contexts:
+      - "Traditional devotional settings"
+      - "Religious education and temple displays"
+      - "Cultural heritage preservation"
+      - "Classical art appreciation"
+
+  # ===== Visual Style Core =====
+  style:
+    aesthetic: "Classical Indian Devotional Art"
+    movement: "Traditional Hindu Temple and Miniature Painting"
+    influence:
+      - "Mughal miniature paintings"
+      - "Pahari painting traditions"
+      - "Temple murals and iconography"
+      - "Classical Sanskrit manuscript illustrations"
+    description:
+      primary: "Rich, ornate depictions with intricate details, gold-leaf accents, and traditional iconography"
+      atmosphere: "Sacred, reverential, and steeped in classical Hindu artistic traditions; tender where the verses plead for relief"
+      approach: "Highly detailed ornamentation, traditional postures and gestures, authentic symbolic elements"
+
+  # ===== Color Palette =====
+  color_palette:
+    primary:
+      name: "Vermillion Red"
+      hex: "#E34234"
+      significance: "Traditional color of divine power and auspiciousness; the sindoor offered to Hanuman"
+      usage: "Hanuman's body color, divine energy, sacred elements"
+    secondary:
+      - name: "Royal Gold"
+        hex: "#D4AF37"
+        usage: "Gold-leaf halos, ornaments, crowns, decorative borders"
+      - name: "Deep Saffron"
+        hex: "#F4500C"
+        usage: "Robes, flames, devotional warmth"
+      - name: "Temple Maroon"
+        hex: "#800000"
+        usage: "Backgrounds, depth, grounding"
+    accents:
+      - name: "Peacock Green"
+        hex: "#1B7A57"
+        significance: "Classical miniature accent, nature, renewal"
+      - name: "Lapis Blue"
+        hex: "#26619C"
+        significance: "Connection to Rama, cosmic depth"
+      - name: "Ivory"
+        hex: "#FFF8E7"
+        significance: "Manuscript ground, purity"
+    mood: "Warm, rich, reverential - the glow of temple lamps on painted murals"
+
+  # ===== Depiction Rules =====
+  depiction_rules:
+    hanuman:
+      form: "Anthropomorphic vanara deity in classical iconographic proportions"
+      complexion: "Vermillion red to deep saffron, as in temple imagery"
+      physique: "Powerful and noble, in traditional devotional posture"
+      face: "Simian features rendered in classical style, with compassionate, reverent expression"
+      tail: "Long, curved, ornamented as in traditional depictions"
+      attributes:
+        mandatory:
+          - "Gada (mace)"
+          - "Janeu (sacred thread)"
+          - "Tilak and traditional forehead markings"
+        common:
+          - "Mukuta (crown) and elaborate jewelry"
+          - "Kundala (earrings), armlets, anklets"
+          - "Dhoti with ornate traditional patterns"
+          - "Golden halo (prabhamandala)"
+      expressions:
+        compassionate: "Serene, merciful gaze toward a suffering devotee"
+        powerful: "Majestic and resolute, in classical warrior posture"
+        devotional: "Hands in anjali mudra, eyes toward Rama"
+    rama:
+      when_depicted: "Classical blue-complexioned deity with bow, honored alongside or within Hanuman's heart"
+      treatment: "Central and revered, traditional iconography"
+    devotees:
+      representation: "Figures in classical poses, ailing or in prayer, receiving blessing/healing; Tulsidas as the suffering devotee"
+
+  # ===== Composition Principles =====
+  composition:
+    layout:
+      orientation: "Portrait (2:3 ratio)"
+      focus: "Centered, symmetrical, following traditional iconographic rules"
+      balance: "Formal, balanced composition with decorative borders"
+    perspective:
+      preferred: "Flat perspective typical of miniature paintings"
+
+  # ===== Symbolic Elements =====
+  symbolism:
+    recurring_motifs:
+      - element: "Gold halos and divine radiance"
+        meaning: "Sanctity, divine presence"
+      - element: "Healing gesture / light over the body"
+        meaning: "Relief from pain and disease - the central plea of the Bahuk"
+      - element: "Decorative temple borders and motifs"
+        meaning: "Sacred manuscript tradition"
+      - element: "Lotus, conch, flames"
+        meaning: "Purity, auspiciousness, divine energy"
+    color_symbolism:
+      vermillion: "Divine power, auspiciousness, devotion to Hanuman"
+      gold: "Divinity, immortality, temple sanctity"
+
+  # ===== Generation Configuration =====
+  generation:
+    style_modifier: |
+      Traditional Indian devotional art style inspired by Mughal miniature paintings and classical temple murals.
+      Rich colors with vermillion red for Hanuman, royal gold-leaf accents throughout, intricate ornamental detail.
+      Ornate traditional jewelry, crown (mukuta), and clothing with elaborate patterns.
+      Decorative borders with traditional Indian motifs and geometric patterns.
+      Classical iconographic proportions and postures, flat miniature-painting perspective.
+      Sacred atmosphere with golden halos and divine symbolism. Convey Hanuman as a compassionate
+      healer and protector who relieves suffering, in keeping with the Hanuman Bahuk's prayer for
+      relief from pain. Manuscript-quality detail with warm, rich color palette; reverent and
+      spiritually deep, in the Hindu temple mural aesthetic.
+
+    # gpt-image-1 API parameters (dall-e-3 is retired)
+    dalle_params:
+      model: "gpt-image-1"
+      size: "1024x1536"      # Portrait 2:3, consistent with the collection's verse images
+      quality: "medium"       # gpt-image-1 quality: low, medium, high
+      n: 1
+
+    retry_count: 3
+    rate_limit_delay: 2
+    skip_existing: true
+
+  # ===== File Organization =====
+  files:
+    total_count: 45
+    structure:
+      title: "title-page.png / cover (1 file)"
+      chhappay: "chhappay-01.png, chhappay-02.png (2 files)"
+      jhulna: "jhulna-01.png (1 file)"
+      ghanakshari: "ghanakshari-01.png through ghanakshari-36.png (36 files)"
+      savaiya: "savaiya-01.png through savaiya-05.png (5 files)"
+    naming_convention: "lowercase-with-hyphens-and-number.png"
+    location: "images/hanuman-bahuk/traditional/"
+
+  # ===== Artistic Principles =====
+  principles:
+    cultural_authenticity:
+      - "Respect traditional Hindu iconography and accepted deity representation"
+      - "Ensure gestures (mudras) and postures are traditionally accurate"
+      - "Honor the sacred nature of the subject matter"
+    spiritual_effectiveness:
+      - "Evoke darshan - the experience of viewing the sacred"
+      - "Convey both Hanuman's power and his compassion for the suffering"
+    visual_coherence:
+      - "Consistent vermillion-and-gold palette across all images"
+      - "Recognizable classical Hanuman iconography throughout"
+
+  # ===== Design Philosophy =====
+  philosophy: |
+    This theme renders the Hanuman Bahuk in the classical idiom of Indian temple and
+    miniature painting - vermillion and gold, ornate borders, formal iconographic
+    composition. Because the hymn is a plea for relief from suffering, the traditional
+    imagery emphasizes Hanuman as the merciful physician of the distressed as well as
+    the mighty vanquisher of demons, offering the viewer the comfort of darshan.
