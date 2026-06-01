@@ -83,9 +83,12 @@ Full options + the per-media commands (`verse-images`/`verse-audio`/`verse-embed
 2. **Verses not displaying**: Check collection_key, verse_type, permalink format
 3. **Section counts wrong**: Verify verse_type field is set correctly (chaupai/doha/shloka)
 4. **Embeddings not updating**: Re-run verse-generate command
+5. **Image generation 400 "Unknown parameter: 'style'" / "dall-e-3 does not exist"**: `dall-e-3` is retired. The SDK image module hardcodes `dall-e-3` + `style` + URL download; current accounts only have `gpt-image-1` (rejects `style`, different size/quality values, returns base64). Patch `verse_sdk/images/generate_theme_images.py` to use `gpt-image-1` (size `1024x1536`, quality `low|medium|high`, drop `style`, decode `b64_json`) and set the theme's `dalle_params` accordingly. Upstream SDK fix needed.
+6. **`verse-embeddings --collection` rewrites index.json schema**: single-collection mode rewrites the manifest to a `collections:[]` schema containing only that collection, dropping others. Either run `--multi-collection`, or hand-append to the existing `files:[]` array (the reader in `assets/js/guidance.js` prefers `files` when present).
+7. **Audio fails with `quota_exceeded`**: ElevenLabs monthly character quota hit. The SDK leaves 0-byte `.mp3` and `.temp.mp3` files behind — delete them, top up credits, and re-run `verse-audio --collection {collection}`.
 
 ## SDK Version
-Currently using sanatan-verse-sdk 0.30.1 — upgrade regularly: `./venv/bin/pip install --upgrade sanatan-verse-sdk`. Version history: [SDK releases](https://github.com/sanatan-learnings/sanatan-verse-sdk/releases).
+Currently using sanatan-verse-sdk 0.102.0 — upgrade regularly: `./venv/bin/pip install --upgrade sanatan-verse-sdk`. Version history: [SDK releases](https://github.com/sanatan-learnings/sanatan-verse-sdk/releases).
 
 ## Python Commands
 **ALWAYS run Python commands in the virtual environment:**
